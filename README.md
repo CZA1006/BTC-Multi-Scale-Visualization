@@ -170,3 +170,4 @@ http://127.0.0.1:8000
 - [docs/DATA_AND_APIS.md](docs/DATA_AND_APIS.md)
 - [docs/SCHEMAS.md](docs/SCHEMAS.md)
 - [docs/DEVELOPMENT_ROADMAP.md](docs/DEVELOPMENT_ROADMAP.md)
+- [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md)

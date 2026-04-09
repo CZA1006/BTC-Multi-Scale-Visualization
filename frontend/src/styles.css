@@ -1,0 +1,384 @@
+:root {
+  color: #162033;
+  background: #f5f7fb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.title-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.9fr);
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 24px;
+  padding: 20px 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #dbe3ef;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(22, 32, 51, 0.06);
+}
+
+.app-eyebrow {
+  margin: 0 0 8px;
+  color: #5a6b85;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.app-subtitle {
+  margin: 12px 0 0;
+  max-width: 58ch;
+  color: #5a6b85;
+  line-height: 1.5;
+}
+
+.dashboard-stack {
+  display: grid;
+  gap: 20px;
+}
+
+.dashboard-section {
+  display: block;
+}
+
+.view-card {
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(22, 32, 51, 0.06);
+}
+
+.view-header {
+  margin-bottom: 16px;
+}
+
+.view-kicker {
+  margin: 0 0 8px;
+  color: #5a6b85;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.view-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.control-group {
+  margin-bottom: 18px;
+}
+
+.control-label,
+.summary-title,
+.placeholder-title {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.range-button {
+  padding: 8px 12px;
+  border: 1px solid #c7d3e6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #162033;
+  cursor: pointer;
+}
+
+.range-button-active {
+  border-color: #407bff;
+  background: #eaf2ff;
+  color: #1b4bb8;
+}
+
+.placeholder-section {
+  margin-top: 18px;
+}
+
+.chart-shell {
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fbfdff 0%, #f4f8fe 100%);
+  padding: 14px 14px 10px;
+}
+
+.timeline-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-gridline {
+  stroke: #d7e1ef;
+  stroke-width: 1;
+}
+
+.chart-gridline-vertical {
+  stroke-dasharray: 4 4;
+}
+
+.chart-axis-label {
+  fill: #6f8099;
+  font-size: 11px;
+}
+
+.timeline-area {
+  fill: url(#timelineAreaFill);
+}
+
+.timeline-line-path {
+  fill: none;
+  stroke: #407bff;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.timeline-brush-selection {
+  fill: rgba(64, 123, 255, 0.14);
+  stroke: rgba(64, 123, 255, 0.55);
+  stroke-width: 1.2;
+}
+
+.timeline-brush-overlay {
+  fill: transparent;
+  cursor: crosshair;
+}
+
+.timeline-point {
+  cursor: pointer;
+  transition: opacity 120ms ease, r 120ms ease;
+}
+
+.timeline-point:hover {
+  opacity: 1;
+}
+
+.scatter-point {
+  cursor: pointer;
+  transition: opacity 120ms ease, r 120ms ease;
+}
+
+.scatter-point:hover {
+  opacity: 1;
+}
+
+.profile-line {
+  transition: opacity 120ms ease, stroke-width 120ms ease;
+}
+
+.chart-caption-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-top: 10px;
+}
+
+.chart-caption {
+  margin: 0;
+  color: #5a6b85;
+  font-size: 0.86rem;
+}
+
+.heatmap-shell {
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fbfdff 0%, #f4f8fe 100%);
+  padding: 14px;
+}
+
+.heatmap-month-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.heatmap-month-card {
+  padding: 12px;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.heatmap-month-label {
+  margin: 0 0 10px;
+  color: #33415c;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.heatmap-cells {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.heatmap-cell {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(22, 32, 51, 0.08);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.heatmap-cell-active {
+  outline: 2px solid #1b4bb8;
+  outline-offset: 1px;
+}
+
+.placeholder-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border: 2px dashed #c7d3e6;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.placeholder-box-small {
+  min-height: 120px;
+  margin-top: 14px;
+}
+
+.placeholder-label {
+  color: #6f8099;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.state-label {
+  margin: 14px 0 0;
+  color: #5a6b85;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.summary-box {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.selected-date-label {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #162033;
+}
+
+.asset-context-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.context-summary {
+  margin: 0 0 14px;
+  color: #33415c;
+  line-height: 1.5;
+}
+
+.context-chip-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.context-chip {
+  padding: 12px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.context-chip-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #5a6b85;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.context-section {
+  margin-top: 16px;
+}
+
+.context-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #33415c;
+  line-height: 1.6;
+}
+
+.context-backtracking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.asset-context-card {
+  padding: 12px;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.asset-context-ticker {
+  margin: 0 0 6px;
+  color: #33415c;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.asset-context-value {
+  margin: 0;
+  color: #162033;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .title-bar {
+    grid-template-columns: 1fr;
+  }
+}

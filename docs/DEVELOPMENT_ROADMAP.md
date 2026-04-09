@@ -23,6 +23,7 @@
 - Long-term BTC timeline
 - Calendar heatmap
 - Time brush
+- GDELT event markers on timeline and heatmap
 
 ### Meso
 - Embedding scatterplot
@@ -32,12 +33,23 @@
 ### Micro
 - Selected-day detail chart
 - Headline panel
+- Polymarket context panel
 
 ## Phase 4 — Linking and polish
 - Macro -> Meso filtering
 - Meso -> Micro selected day
 - Backtracking highlights
 - Basic case-study story flow
+
+## Current status snapshot
+- Phase 0 complete
+- Phase 1 partially complete
+  - yfinance complete
+  - GDELT recent-window integration complete
+  - Polymarket minimal snapshot complete
+- Phase 2 complete for the current MVP feature set
+- Phase 3 complete for the current MVP feature set
+- Phase 4 basic linking complete, polish still pending
 
 ## Phase 5 — Enhancements
 - GDELT feature enrichment

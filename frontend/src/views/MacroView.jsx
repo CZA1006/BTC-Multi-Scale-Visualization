@@ -37,6 +37,7 @@ export function MacroView() {
   const [overview, setOverview] = useState({
     btc_daily: [],
     external_assets_daily: [],
+    gdelt_daily_signals: [],
   });
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
@@ -97,12 +98,55 @@ export function MacroView() {
         !Number.isNaN(row.closeValue),
     );
 
+  const parsedEventSignals = overview.gdelt_daily_signals
+    .map((row) => {
+      const newsCount = Number(row.news_count);
+      const regulationCount = Number(row.theme_count_regulation);
+      const electionCount = Number(row.theme_count_election);
+      const warCount = Number(row.theme_count_war);
+      const cryptoCount = Number(row.theme_count_crypto);
+      const parsedDate = row.date ? new Date(`${row.date}T00:00:00`) : null;
+      const score =
+        (Number.isNaN(newsCount) ? 0 : newsCount) +
+        (Number.isNaN(regulationCount) ? 0 : regulationCount) +
+        (Number.isNaN(electionCount) ? 0 : electionCount) +
+        (Number.isNaN(warCount) ? 0 : warCount) +
+        (Number.isNaN(cryptoCount) ? 0 : cryptoCount);
+
+      let topHeadlines = [];
+      if (Array.isArray(row.top_headlines)) {
+        topHeadlines = row.top_headlines;
+      } else if (typeof row.top_headlines === 'string' && row.top_headlines.trim()) {
+        try {
+          topHeadlines = JSON.parse(row.top_headlines);
+        } catch {
+          topHeadlines = [row.top_headlines];
+        }
+      }
+
+      return {
+        ...row,
+        parsedDate,
+        newsCount: Number.isNaN(newsCount) ? 0 : newsCount,
+        score,
+        topHeadlines,
+      };
+    })
+    .filter(
+      (row) =>
+        row.parsedDate instanceof Date &&
+        row.status !== 'fetch_error' &&
+        row.status !== 'unavailable_historical_range' &&
+        row.newsCount > 0,
+    );
+  const eventSignalByDate = new Map(parsedEventSignals.map((row) => [row.date, row]));
   const timelineRows = parsedBtcRows;
   const heatmapCells = parsedBtcRows.map((row) => ({
     date: row.date,
     monthKey: d3.timeFormat('%Y-%m')(row.parsedDate),
     monthLabel: d3.timeFormat('%b %Y')(row.parsedDate),
     change: row.openValue === 0 ? 0 : (row.closeValue - row.openValue) / row.openValue,
+    eventSignal: eventSignalByDate.get(row.date) ?? null,
   }));
 
   const heatmapByMonth = heatmapCells.reduce((accumulator, cell) => {
@@ -122,6 +166,10 @@ export function MacroView() {
   const tickerList = [
     ...new Set(overview.external_assets_daily.map((row) => row.ticker).filter(Boolean)),
   ];
+  const highlightedEvents = [...parsedEventSignals]
+    .sort((left, right) => right.score - left.score)
+    .slice(0, 5);
+  const heatmapEventCount = heatmapCells.filter((cell) => cell.eventSignal).length;
 
   const timeRangeLabel = selectedTimeRange
     ? `${selectedTimeRange.start ?? 'unknown'} to ${selectedTimeRange.end ?? 'unknown'}`
@@ -139,6 +187,7 @@ export function MacroView() {
   let areaPath = '';
   let xTicks = [];
   let yTicks = [];
+  let eventSizeScale = null;
 
   if (hasTimelineData) {
     xScale = d3
@@ -169,6 +218,12 @@ export function MacroView() {
     areaPath = areaBuilder(timelineRows) ?? '';
     xTicks = xScale.ticks(5);
     yTicks = yScale.ticks(4);
+    if (parsedEventSignals.length > 0) {
+      eventSizeScale = d3
+        .scaleSqrt()
+        .domain(d3.extent(parsedEventSignals, (row) => row.newsCount))
+        .range([4, 10]);
+    }
   }
 
   function getSvgXCoordinate(event) {
@@ -263,6 +318,16 @@ export function MacroView() {
       return '#f08c9d';
     }
     return '#d9e2f0';
+  }
+
+  function heatmapEventClass(eventSignal) {
+    if (!eventSignal) {
+      return 'heatmap-cell-event';
+    }
+    if (eventSignal.newsCount >= 10) {
+      return 'heatmap-cell-event heatmap-cell-event-strong';
+    }
+    return 'heatmap-cell-event heatmap-cell-event-medium';
   }
 
   return (
@@ -380,6 +445,34 @@ export function MacroView() {
                 onPointerUp={handleBrushEnd}
               />
 
+              {parsedEventSignals.map((eventRow) => {
+                const isSelected = selectedDate === eventRow.date;
+                const markerX = xScale(eventRow.parsedDate);
+                const markerY = chartMargin.top + 12;
+                const markerSize = eventSizeScale
+                  ? eventSizeScale(eventRow.newsCount)
+                  : 6;
+
+                return (
+                  <g
+                    key={`event-${eventRow.date}`}
+                    transform={`translate(${markerX}, ${markerY})`}
+                    className="event-marker"
+                    onClick={() => setSelectedDate(eventRow.date)}
+                  >
+                    <circle
+                      r={isSelected ? markerSize + 2 : markerSize}
+                      fill={isSelected ? '#d9485f' : '#f08c00'}
+                      stroke="#ffffff"
+                      strokeWidth={isSelected ? 2 : 1.4}
+                    />
+                    <title>
+                      {`${eventRow.date} | ${eventRow.newsCount} headlines`}
+                    </title>
+                  </g>
+                );
+              })}
+
               {timelineRows.map((row) => {
                 const isSelected = selectedDate === row.date;
                 return (
@@ -411,6 +504,9 @@ export function MacroView() {
                 Selected date: {selectedDateLabel}
               </p>
               <p className="chart-caption">
+                Event markers: {parsedEventSignals.length}
+              </p>
+              <p className="chart-caption">
                 Drag on the timeline to brush a narrower range
               </p>
             </div>
@@ -432,6 +528,17 @@ export function MacroView() {
           </div>
         ) : orderedHeatmapMonths.length > 0 ? (
           <div className="heatmap-shell">
+            <div className="heatmap-legend">
+              <span className="heatmap-legend-title">Event intensity</span>
+              <span className="heatmap-legend-item">
+                <span className="heatmap-cell-event heatmap-cell-event-medium" />
+                1-9 headlines
+              </span>
+              <span className="heatmap-legend-item">
+                <span className="heatmap-cell-event heatmap-cell-event-strong" />
+                10+ headlines
+              </span>
+            </div>
             <div className="heatmap-month-grid">
               {orderedHeatmapMonths.map(([monthKey, month]) => (
                 <section key={monthKey} className="heatmap-month-card">
@@ -448,8 +555,19 @@ export function MacroView() {
                         }
                         style={{ backgroundColor: heatmapColor(cell.change) }}
                         onClick={() => setSelectedDate(cell.date)}
-                        title={`${cell.date} | ${`${(cell.change * 100).toFixed(2)}%`}`}
-                      />
+                        title={`${cell.date} | ${`${(cell.change * 100).toFixed(2)}%`}${
+                          cell.eventSignal
+                            ? ` | ${cell.eventSignal.newsCount} headlines`
+                            : ''
+                        }`}
+                      >
+                        {cell.eventSignal ? (
+                          <span
+                            className={heatmapEventClass(cell.eventSignal)}
+                            aria-hidden="true"
+                          />
+                        ) : null}
+                      </button>
                     ))}
                   </div>
                 </section>
@@ -459,6 +577,7 @@ export function MacroView() {
               <p className="chart-caption">
                 Selected date: {selectedDateLabel}
               </p>
+              <p className="chart-caption">Event days in heatmap: {heatmapEventCount}</p>
               <p className="chart-caption">Click a heatmap cell to update Micro view</p>
             </div>
           </div>
@@ -475,8 +594,39 @@ export function MacroView() {
         <p className="state-label">
           Available external asset tickers: {tickerList.length > 0 ? tickerList.join(', ') : 'None'}
         </p>
+        <p className="state-label">Event overlay rows: {overview.gdelt_daily_signals.length}</p>
         <p className="state-label">Shared state: {selectedDateLabel}</p>
         {errorMessage ? <p className="state-label">Load status: {errorMessage}</p> : null}
+      </div>
+
+      <div className="summary-box">
+        <p className="summary-title">Event overlay summary</p>
+        {highlightedEvents.length > 0 ? (
+          <div className="event-summary-list">
+            {highlightedEvents.map((eventRow) => (
+              <button
+                key={`summary-${eventRow.date}`}
+                type="button"
+                className={
+                  selectedDate === eventRow.date
+                    ? 'event-summary-card event-summary-card-active'
+                    : 'event-summary-card'
+                }
+                onClick={() => setSelectedDate(eventRow.date)}
+              >
+                <span className="event-summary-date">{eventRow.date}</span>
+                <span className="event-summary-value">{eventRow.newsCount} headlines</span>
+                <span className="event-summary-text">
+                  {(eventRow.topHeadlines?.[0] ?? '').slice(0, 88) || 'No top headline available'}
+                </span>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p className="state-label">
+            No event-overlay rows are available for the current window yet.
+          </p>
+        )}
       </div>
     </section>
   );

@@ -74,6 +74,11 @@ Use **GDELT GKG / daily aggregated exports or BigQuery queries**, not full raw y
 - `gdelt_selected_day.csv`
 - `events_selected_day.csv`
 
+### Current implementation note
+- The repo currently uses the **GDELT DOC API** for recent selected-day context and recent daily signals.
+- This works for recent windows and live demos, but not for a full 2019-2026 historical backfill.
+- Full-history event coverage still requires offline archive / GKG processing.
+
 ## 3. Polymarket
 ### Source
 - API intro: https://docs.polymarket.com/api-reference/introduction
@@ -88,6 +93,10 @@ Use **GDELT GKG / daily aggregated exports or BigQuery queries**, not full raw y
 ### Output tables
 - `polymarket_daily.csv`
 - `polymarket_selected_day.csv`
+
+### Current implementation note
+- The repo currently implements a **minimal current snapshot** using public search results for a few relevant themes.
+- This is enough for selected-day context cards, but not yet a full historical probability time series.
 
 ## 4. Final dataset mapping by layer
 ### Macro Overview

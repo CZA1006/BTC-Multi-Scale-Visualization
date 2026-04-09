@@ -10,8 +10,10 @@ from fastapi import APIRouter, HTTPException
 ROW_LIMIT = 200
 REPO_ROOT = Path(__file__).resolve().parents[3]
 PROCESSED_DIR = REPO_ROOT / "data" / "processed"
+DERIVED_DIR = REPO_ROOT / "data" / "derived"
 BTC_DAILY_PATH = PROCESSED_DIR / "btc_daily.csv"
 EXTERNAL_ASSETS_PATH = PROCESSED_DIR / "external_assets_daily.csv"
+GDELT_DAILY_SIGNALS_PATH = DERIVED_DIR / "gdelt_daily_signals.csv"
 
 router = APIRouter(prefix="/api/overview", tags=["overview"])
 
@@ -70,6 +72,17 @@ def load_csv_records(
     return limited.to_dict(orient="records")
 
 
+def load_optional_csv_records(
+    path: Path,
+    row_limit: int = ROW_LIMIT,
+    start: date | None = None,
+    end: date | None = None,
+) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    return load_csv_records(path, row_limit=row_limit, start=start, end=end)
+
+
 @router.get("")
 def get_overview(start: date | None = None, end: date | None = None) -> dict[str, Any]:
     return {
@@ -81,5 +94,8 @@ def get_overview(start: date | None = None, end: date | None = None) -> dict[str
         "btc_daily": load_csv_records(BTC_DAILY_PATH, start=start, end=end),
         "external_assets_daily": load_csv_records(
             EXTERNAL_ASSETS_PATH, start=start, end=end
+        ),
+        "gdelt_daily_signals": load_optional_csv_records(
+            GDELT_DAILY_SIGNALS_PATH, start=start, end=end
         ),
     }

@@ -14,18 +14,20 @@
 
 ## Role 3 — External signals and events
 - yfinance external assets
-- GDELT extraction and aggregation
-- Polymarket history fetch
+- GDELT recent-window extraction and aggregation
+- Polymarket current snapshot fetch
 - Event-table cleanup
 
 ## Role 4 — Macro + Meso frontend
 - Timeline
 - Calendar heatmap
+- Event overlays
 - Embedding scatterplot
 - Parallel coordinates
 
 ## Role 5 — Micro frontend + polish
 - Selected-day detail chart
 - Headline / context panel
+- Polymarket context card
 - Cross-view backtracking indicators
 - Styling and layout polish

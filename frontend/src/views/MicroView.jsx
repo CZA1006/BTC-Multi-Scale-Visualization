@@ -166,6 +166,14 @@ export function MicroView() {
     marketState.cluster_id === null || marketState.cluster_id === undefined
       ? selectedClusterLabel
       : `Cluster ${marketState.cluster_id}`;
+  const gdeltSummary = dayDetail.gdelt_selected_day ?? {};
+  const eventRows = Array.isArray(dayDetail.events_selected_day)
+    ? dayDetail.events_selected_day
+    : [];
+  const polymarketSummary = dayDetail.polymarket_selected_day ?? {};
+  const polymarketMarkets = Array.isArray(polymarketSummary.markets)
+    ? polymarketSummary.markets
+    : [];
 
   return (
     <section className="view-card">
@@ -411,10 +419,118 @@ export function MicroView() {
                   {context.event_context_status ?? 'placeholder'}
                 </p>
                 <p className="state-label">
-                  This round uses local heuristic context from BTC, features, clusters, and aligned
-                  external assets.
+                  {context.event_context_message ??
+                    'This round uses local heuristic context from BTC, features, clusters, and aligned external assets.'}
                 </p>
               </div>
+            </div>
+
+            <div className="context-section">
+              <p className="summary-title">Headline panel</p>
+              <div className="context-chip-row">
+                <div className="context-chip">
+                  <span className="context-chip-label">GDELT status</span>
+                  <strong>{gdeltSummary.status ?? 'placeholder'}</strong>
+                </div>
+                <div className="context-chip">
+                  <span className="context-chip-label">News count</span>
+                  <strong>{gdeltSummary.news_count ?? 0}</strong>
+                </div>
+                <div className="context-chip">
+                  <span className="context-chip-label">Regulation mentions</span>
+                  <strong>{gdeltSummary.theme_count_regulation ?? 0}</strong>
+                </div>
+                <div className="context-chip">
+                  <span className="context-chip-label">Election / war mentions</span>
+                  <strong>
+                    {(gdeltSummary.theme_count_election ?? 0) +
+                      (gdeltSummary.theme_count_war ?? 0)}
+                  </strong>
+                </div>
+              </div>
+
+              {eventRows.length > 0 ? (
+                <div className="headline-list">
+                  {eventRows.map((event, index) => (
+                    <article
+                      key={`${event.url ?? event.headline}-${index}`}
+                      className="headline-card"
+                    >
+                      <p className="headline-meta">
+                        {event.source ?? 'Unknown source'} · {event.category ?? 'general'}
+                        {event.timestamp ? ` · ${event.timestamp}` : ''}
+                      </p>
+                      {event.url ? (
+                        <a
+                          href={event.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="headline-link"
+                        >
+                          {event.headline}
+                        </a>
+                      ) : (
+                        <p className="headline-title">{event.headline}</p>
+                      )}
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <div className="placeholder-box placeholder-box-small">
+                  <span className="placeholder-label">
+                    {gdeltSummary.message ??
+                      'No selected-day headlines are available for the current date.'}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            <div className="context-section">
+              <p className="summary-title">Polymarket context</p>
+              <div className="context-chip-row">
+                <div className="context-chip">
+                  <span className="context-chip-label">Snapshot status</span>
+                  <strong>{polymarketSummary.status ?? 'placeholder'}</strong>
+                </div>
+                <div className="context-chip">
+                  <span className="context-chip-label">Snapshot date</span>
+                  <strong>{polymarketSummary.as_of_date ?? 'N/A'}</strong>
+                </div>
+                <div className="context-chip">
+                  <span className="context-chip-label">Markets loaded</span>
+                  <strong>{polymarketMarkets.length}</strong>
+                </div>
+              </div>
+
+              {polymarketMarkets.length > 0 ? (
+                <div className="headline-list">
+                  {polymarketMarkets.map((market) => (
+                    <article
+                      key={market.market_slug ?? market.market_name}
+                      className="headline-card"
+                    >
+                      <p className="headline-meta">
+                        {market.theme ?? 'market'} · {market.source_query ?? 'query'}
+                      </p>
+                      <p className="headline-title">{market.market_name}</p>
+                      <p className="state-label">
+                        Yes price: {formatPercent(market.yes_price)} | Volume:{' '}
+                        {formatCurrency(market.volume)}
+                      </p>
+                      <p className="state-label">
+                        End date: {market.end_date ?? 'N/A'}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <div className="placeholder-box placeholder-box-small">
+                  <span className="placeholder-label">
+                    {polymarketSummary.message ??
+                      'No Polymarket context is available in the current snapshot.'}
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         ) : (

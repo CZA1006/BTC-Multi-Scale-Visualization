@@ -41,10 +41,13 @@
 | date | date | day |
 | news_count | int | count of filtered relevant articles |
 | avg_tone | float | average GDELT tone |
-| crypto_theme_count | int | count of crypto-related themes |
-| regulation_theme_count | int | count of regulatory themes |
-| election_theme_count | int | count of election themes |
-| war_theme_count | int | count of war/geopolitical themes |
+| theme_count_crypto | int | count of crypto-related themes |
+| theme_count_regulation | int | count of regulatory themes |
+| theme_count_election | int | count of election themes |
+| theme_count_war | int | count of war/geopolitical themes |
+| top_headlines | string | JSON-encoded top headlines list |
+| status | string | live / cached / fetch_error / unavailable_* |
+| message | string | fetch or cache status message |
 
 ## events_selected_day.csv
 | column | type | description |
@@ -64,6 +67,9 @@
 | market_name | string | readable market name |
 | probability | float | daily probability / price |
 | volume | float | optional daily volume |
+| theme | string | theme bucket for the selected market |
+| source_query | string | search query used to retrieve the market |
+| status | string | live / cached / fetch_error |
 
 ## daily_features.csv
 | column | type | description |

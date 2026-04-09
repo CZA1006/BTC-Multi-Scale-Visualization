@@ -9,6 +9,7 @@ function buildFallbackOverview() {
     },
     btc_daily: [],
     external_assets_daily: [],
+    gdelt_daily_signals: [],
   };
 }
 

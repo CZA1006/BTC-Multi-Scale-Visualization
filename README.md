@@ -2,12 +2,14 @@
 
 ## Project overview
 This project is a web-based Bitcoin visual analytics system for `2019-01-01` to `2026-04-30`.
-The round-1 goal is to build a working full-stack scaffold with:
-- yfinance market data ingestion
-- BTC daily feature generation
-- 2D embedding generation for the meso view
-- a minimal FastAPI backend
-- a React frontend with Macro, Meso, and Micro placeholder sections
+
+Current implemented scope:
+- yfinance ingestion for BTC and external assets
+- BTC daily features and 2D embedding / clustering
+- FastAPI endpoints for overview, meso, and selected-day detail
+- React dashboard with linked Macro / Meso / Micro views
+- GDELT selected-day headlines and recent daily signal overlay
+- Polymarket minimal market-expectation snapshot in Micro context
 
 ## Folder structure
 ```text
@@ -32,11 +34,15 @@ notebooks/
 ```
 
 ## Backend setup
+Recommended local environment:
+- Python `3.11`
+- `conda` is recommended on macOS
+
 From the repo root:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+conda create -n btcviz python=3.11 -y
+conda activate btcviz
 pip install -r backend/requirements.txt
 ```
 
@@ -50,9 +56,7 @@ cd ..
 ```
 
 ## Data fetching steps
-Round 1 uses `yfinance` only.
-
-Fetch daily market data for:
+Fetch market data for:
 - `BTC-USD`
 - `COIN`
 - `MSTR`
@@ -66,6 +70,7 @@ python3 backend/scripts/fetch_market_data.py
 
 This creates:
 - `data/processed/btc_daily.csv`
+- `data/processed/btc_intraday.csv`
 - `data/processed/external_assets_daily.csv`
 
 ## Feature generation steps
@@ -78,7 +83,7 @@ python3 backend/scripts/build_daily_features.py
 This creates:
 - `data/derived/daily_features.csv`
 
-Build the round-1 embedding and placeholder clusters:
+Build the embedding and placeholder clusters:
 
 ```bash
 python3 backend/scripts/build_embedding.py
@@ -87,11 +92,36 @@ python3 backend/scripts/build_embedding.py
 This creates:
 - `data/derived/embedding_results.csv`
 
+## GDELT and Polymarket context
+Fetch recent GDELT selected-day context and build recent daily signals:
+
+```bash
+python3 backend/scripts/fetch_gdelt_context.py
+```
+
+This creates:
+- `data/raw/gdelt_selected_day/*.json`
+- `data/derived/gdelt_daily_signals.csv`
+
+Fetch the current minimal Polymarket context snapshot:
+
+```bash
+python3 backend/scripts/fetch_polymarket_context.py
+```
+
+This creates:
+- `data/raw/polymarket_selected_day/*.json`
+- `data/derived/polymarket_daily.csv`
+
+Notes:
+- The current GDELT script is limited to the recent DOC API lookback window.
+- The current Polymarket integration is a minimal live snapshot, not a full historical backfill.
+
 ## How to run the app locally
 Start the backend:
 
 ```bash
-source .venv/bin/activate
+conda activate btcviz
 uvicorn backend.app.main:app --reload
 ```
 
@@ -108,19 +138,31 @@ Then open the local Vite URL, usually:
 http://127.0.0.1:5173
 ```
 
-The backend API will usually run at:
+The backend API usually runs at:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-## Round-1 workflow
+## Current workflow
 1. Install backend and frontend dependencies.
 2. Run `fetch_market_data.py`.
 3. Run `build_daily_features.py`.
 4. Run `build_embedding.py`.
-5. Start FastAPI.
-6. Start the React app.
+5. Optionally run `fetch_gdelt_context.py`.
+6. Optionally run `fetch_polymarket_context.py`.
+7. Start FastAPI.
+8. Start the React app.
+
+## Current frontend status
+- Macro: BTC timeline, time brush, calendar heatmap, GDELT event markers
+- Meso: embedding scatterplot, cluster selector, parallel coordinates
+- Micro: selected-day intraday or fallback window chart, GDELT headline panel, Polymarket context
+
+## Current limitations
+- GDELT history is not backfilled for the full 2019-2026 range yet
+- Polymarket is currently a minimal current snapshot, not a full historical overlay
+- Macro event overlays are intentionally lightweight and presentation-focused
 
 ## Useful docs
 - [AGENTS.md](AGENTS.md)

@@ -185,6 +185,10 @@ body {
   transition: opacity 120ms ease, r 120ms ease;
 }
 
+.event-marker {
+  cursor: pointer;
+}
+
 .timeline-point:hover {
   opacity: 1;
 }
@@ -223,6 +227,28 @@ body {
   padding: 14px;
 }
 
+.heatmap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.heatmap-legend-title {
+  color: #5a6b85;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.heatmap-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #5a6b85;
+  font-size: 0.84rem;
+}
+
 .heatmap-month-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -250,6 +276,7 @@ body {
 }
 
 .heatmap-cell {
+  position: relative;
   width: 100%;
   aspect-ratio: 1;
   border: 1px solid rgba(22, 32, 51, 0.08);
@@ -260,6 +287,27 @@ body {
 .heatmap-cell-active {
   outline: 2px solid #1b4bb8;
   outline-offset: 1px;
+}
+
+.heatmap-cell-event {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #f08c00;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.heatmap-cell-event-medium {
+  background: #f08c00;
+}
+
+.heatmap-cell-event-strong {
+  width: 9px;
+  height: 9px;
+  background: #d9485f;
 }
 
 .placeholder-box {
@@ -354,6 +402,75 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
+}
+
+.event-summary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.event-summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: left;
+  color: #162033;
+  cursor: pointer;
+}
+
+.event-summary-card-active {
+  border-color: #1b4bb8;
+  background: #eef4ff;
+}
+
+.event-summary-date {
+  color: #5a6b85;
+  font-size: 0.84rem;
+}
+
+.event-summary-value {
+  font-weight: 700;
+}
+
+.event-summary-text {
+  color: #33415c;
+  line-height: 1.4;
+}
+
+.headline-list {
+  display: grid;
+  gap: 10px;
+}
+
+.headline-card {
+  padding: 12px;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.headline-meta {
+  margin: 0 0 6px;
+  color: #5a6b85;
+  font-size: 0.84rem;
+}
+
+.headline-link,
+.headline-title {
+  margin: 0;
+  color: #162033;
+  font-size: 0.96rem;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.headline-link:hover {
+  color: #1b4bb8;
 }
 
 .asset-context-card {

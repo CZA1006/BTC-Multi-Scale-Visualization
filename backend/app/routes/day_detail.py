@@ -6,6 +6,9 @@ from typing import Any
 import pandas as pd
 from fastapi import APIRouter, HTTPException
 
+from ..services.gdelt_service import get_selected_day_gdelt_context
+from ..services.polymarket_service import get_current_polymarket_context
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 PROCESSED_DIR = REPO_ROOT / "data" / "processed"
 DERIVED_DIR = REPO_ROOT / "data" / "derived"
@@ -329,6 +332,10 @@ def get_day_detail(date: str) -> dict[str, Any]:
                 orient="records"
             )
 
+    gdelt_context = get_selected_day_gdelt_context(date)
+    event_rows = gdelt_context.get("articles", [])
+    polymarket_context = get_current_polymarket_context()
+
     context_payload = build_context_payload(
         target_date=target_date,
         selected_row=selected_row,
@@ -339,6 +346,12 @@ def get_day_detail(date: str) -> dict[str, Any]:
         window_end_date=btc_window.iloc[-1]["date"] if not btc_window.empty else None,
     )
     context_payload["has_intraday"] = len(intraday_rows) > 0
+    context_payload["event_context_status"] = gdelt_context.get("status", "placeholder")
+    context_payload["event_context_message"] = gdelt_context.get("message")
+    context_payload["gdelt_news_count"] = gdelt_context.get("news_count", 0)
+    context_payload["gdelt_top_headlines"] = gdelt_context.get("top_headlines", [])
+    context_payload["has_polymarket"] = len(polymarket_context.get("markets", [])) > 0
+    context_payload["polymarket_status"] = polymarket_context.get("status", "placeholder")
 
     return {
         "date": date,
@@ -357,5 +370,10 @@ def get_day_detail(date: str) -> dict[str, Any]:
         "external_assets": selected_assets.where(pd.notna(selected_assets), None).to_dict(
             orient="records"
         ),
+        "gdelt_selected_day": {
+            key: value for key, value in gdelt_context.items() if key != "articles"
+        },
+        "events_selected_day": event_rows,
+        "polymarket_selected_day": polymarket_context,
         "context": context_payload,
     }

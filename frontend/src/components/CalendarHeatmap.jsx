@@ -1,22 +1,23 @@
 const MONTH_LABELS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 function colorForReturn(value) {
-  if (value === null || value === undefined) {
-    return 'var(--heat-neutral)';
+  const numericValue = Number(value);
+  if (value === null || value === undefined || Number.isNaN(numericValue)) {
+    return '#f0f2f5';
   }
-  if (value >= 0.04) {
-    return 'var(--heat-hot)';
+  if (numericValue > 0.04) {
+    return '#1b7f3a';
   }
-  if (value >= 0.015) {
-    return 'var(--heat-warm)';
+  if (numericValue > 0) {
+    return '#8fd19e';
   }
-  if (value <= -0.04) {
-    return 'var(--heat-cold)';
+  if (numericValue < -0.04) {
+    return '#b4233c';
   }
-  if (value <= -0.015) {
-    return 'var(--heat-cool)';
+  if (numericValue < 0) {
+    return '#f2a7b3';
   }
-  return 'var(--heat-neutral)';
+  return '#f0f2f5';
 }
 
 export function CalendarHeatmap({ calendar }) {
@@ -41,12 +42,23 @@ export function CalendarHeatmap({ calendar }) {
             </header>
             <div className="calendar-cells">
               {monthCells.map((cell) => (
-                <div
-                  key={cell.date}
-                  className="calendar-cell"
-                  title={`${cell.date} | ${((cell.daily_return ?? 0) * 100).toFixed(2)}%`}
-                  style={{ background: colorForReturn(cell.daily_return) }}
-                />
+                (() => {
+                  const numericReturn = Number(cell.daily_return);
+                  const hasValidReturn =
+                    cell.daily_return !== null &&
+                    cell.daily_return !== undefined &&
+                    !Number.isNaN(numericReturn);
+                  return (
+                    <div
+                      key={cell.date}
+                      className="calendar-cell"
+                      title={`${cell.date} | ${
+                        hasValidReturn ? `${(numericReturn * 100).toFixed(2)}%` : 'N/A'
+                      }`}
+                      style={{ background: colorForReturn(numericReturn) }}
+                    />
+                  );
+                })()
               ))}
             </div>
           </section>

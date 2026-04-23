@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { fetchMeso } from '../api/meso.js';
 import { useAppStore } from '../store/useAppStore.js';
+import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
 
 const FEATURE_COLUMNS = [
   'daily_return',
@@ -138,6 +139,8 @@ export function MesoView() {
     })
     .filter((row) => row.clusterValue !== null && row.clusterValue !== undefined);
 
+  const semanticLabelForCluster = (clusterId) => getClusterSemanticLabel(clusterId);
+
   const uniqueClusterIds = [
     ...new Set(
       visibleEmbeddingRows
@@ -152,7 +155,7 @@ export function MesoView() {
   const clusterLabel =
     selectedCluster === null || selectedCluster === undefined
       ? 'No cluster selected'
-      : `Cluster ${selectedCluster}`;
+      : semanticLabelForCluster(selectedCluster);
   const selectedDateLabel = selectedDate ?? 'No date selected yet';
 
   const chartWidth = 920;
@@ -297,7 +300,7 @@ export function MesoView() {
               }
               onClick={() => setSelectedCluster(clusterId)}
             >
-              Cluster {clusterId}
+              {semanticLabelForCluster(clusterId)}
             </button>
           ))}
         </div>
@@ -326,15 +329,6 @@ export function MesoView() {
                     y2={yScale(tick)}
                     className="chart-gridline"
                   />
-                  <text
-                    x={chartMargin.left - 10}
-                    y={yScale(tick)}
-                    textAnchor="end"
-                    dominantBaseline="middle"
-                    className="chart-axis-label"
-                  >
-                    {tick.toFixed(1)}
-                  </text>
                 </g>
               ))}
 
@@ -347,14 +341,6 @@ export function MesoView() {
                     y2={chartHeight - chartMargin.bottom}
                     className="chart-gridline chart-gridline-vertical"
                   />
-                  <text
-                    x={xScale(tick)}
-                    y={chartHeight - 10}
-                    textAnchor="middle"
-                    className="chart-axis-label"
-                  >
-                    {tick.toFixed(1)}
-                  </text>
                 </g>
               ))}
 
@@ -386,10 +372,19 @@ export function MesoView() {
                       setSelectedDate(row.date);
                     }}
                   >
-                    <title>{`${row.date} | cluster ${row.clusterValue}`}</title>
+                    <title>{`${row.date} | ${semanticLabelForCluster(row.clusterValue)}`}</title>
                   </circle>
                 );
               })}
+              <text
+                x={(chartMargin.left + (chartWidth - chartMargin.right)) / 2}
+                y={chartHeight - 8}
+                textAnchor="middle"
+                fill="#6f8099"
+                fontSize="11"
+              >
+                ← Market State Similarity Space (UMAP) →
+              </text>
             </svg>
 
             <div className="chart-caption-row">
@@ -453,8 +448,12 @@ export function MesoView() {
                     key={profile.clusterId}
                     d={profile.path}
                     fill="none"
-                    stroke={clusterColorScale(String(profile.clusterId))}
-                    strokeWidth={isSelected ? 3.4 : 2}
+                    stroke={
+                      selectedCluster === null || selectedCluster === undefined || isSelected
+                        ? clusterColorScale(String(profile.clusterId))
+                        : '#cccccc'
+                    }
+                    strokeWidth={isSelected ? 3.8 : 2}
                     opacity={
                       selectedCluster === null || selectedCluster === undefined || isSelected
                         ? 0.9
@@ -473,7 +472,7 @@ export function MesoView() {
               <p className="chart-caption">
                 {selectedCluster === null || selectedCluster === undefined
                   ? 'Showing all cluster-average feature profiles'
-                  : `Highlighting feature profile for cluster ${selectedCluster}`}
+                  : `Highlighting feature profile for ${semanticLabelForCluster(selectedCluster)}`}
               </p>
             </div>
           </div>
@@ -489,7 +488,10 @@ export function MesoView() {
         <p className="state-label">Feature rows: {filteredFeatureRows.length}</p>
         <p className="state-label">Embedding rows: {visibleEmbeddingRows.length}</p>
         <p className="state-label">
-          Unique cluster ids: {uniqueClusterIds.length > 0 ? uniqueClusterIds.join(', ') : 'None'}
+          Unique regimes:{' '}
+          {uniqueClusterIds.length > 0
+            ? uniqueClusterIds.map((clusterId) => semanticLabelForCluster(clusterId)).join(', ')
+            : 'None'}
         </p>
         <p className="state-label">Shared state: {timeRangeLabel}</p>
         <p className="state-label">Shared state: {clusterLabel}</p>

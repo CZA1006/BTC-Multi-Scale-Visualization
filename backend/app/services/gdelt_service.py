@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from collections import defaultdict
 from datetime import datetime, timedelta
 from typing import Any
 
@@ -51,6 +52,57 @@ def _parse_gdelt_timestamp(raw_timestamp: str | None) -> str | None:
     return None
 
 
+def _extract_raw_tone(article: dict[str, Any]) -> float | None:
+    # DOC ArtList may expose `tone`; GKG-style payloads expose `v2tone`
+    # where the first value is RawTone. Parse whichever is available.
+    direct_tone = article.get("tone")
+    if direct_tone is not None and str(direct_tone).strip() != "":
+        try:
+            return float(direct_tone)
+        except (TypeError, ValueError):
+            pass
+
+    v2tone = article.get("v2tone")
+    if v2tone is not None and str(v2tone).strip() != "":
+        first_value = str(v2tone).split(",")[0].strip()
+        try:
+            return float(first_value)
+        except (TypeError, ValueError):
+            pass
+    return None
+
+
+def _build_hourly_tones(articles: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    buckets: dict[str, dict[str, Any]] = defaultdict(
+        lambda: {"news_count": 0, "tone_acc": 0.0, "tone_n": 0}
+    )
+    for article in articles:
+        timestamp = article.get("timestamp")
+        if not timestamp:
+            continue
+        parsed = datetime.fromisoformat(str(timestamp))
+        hour_key = parsed.replace(minute=0, second=0, microsecond=0).isoformat()
+        tone = article.get("sentiment")
+        bucket = buckets[hour_key]
+        bucket["news_count"] += 1
+        if tone is not None:
+            bucket["tone_acc"] += float(tone)
+            bucket["tone_n"] += 1
+
+    hourly_rows: list[dict[str, Any]] = []
+    for hour, aggregate in sorted(buckets.items(), key=lambda item: item[0]):
+        tone_n = int(aggregate["tone_n"])
+        average_tone = float(aggregate["tone_acc"]) / tone_n if tone_n > 0 else None
+        hourly_rows.append(
+            {
+                "timestamp": hour,
+                "news_count": int(aggregate["news_count"]),
+                "average_tone": average_tone,
+            }
+        )
+    return hourly_rows
+
+
 def _build_empty_payload(date_str: str, status: str, message: str) -> dict[str, Any]:
     return {
         "date": date_str,
@@ -80,6 +132,7 @@ def _normalize_gdelt_articles(date_str: str, payload: dict[str, Any]) -> dict[st
         headline = (article.get("title") or "").strip()
         url = (article.get("url") or "").strip()
         category = _infer_category(headline, url)
+        raw_tone = _extract_raw_tone(article)
         if category in theme_counts:
             theme_counts[category] += 1
 
@@ -89,20 +142,25 @@ def _normalize_gdelt_articles(date_str: str, payload: dict[str, Any]) -> dict[st
                 "source": article.get("domain") or article.get("sourcecountry") or "Unknown",
                 "headline": headline or "Untitled article",
                 "category": category,
-                "sentiment": None,
+                "sentiment": raw_tone,
                 "url": url or None,
             }
         )
+
+    tone_values = [article["sentiment"] for article in articles if article.get("sentiment") is not None]
+    avg_tone = sum(tone_values) / len(tone_values) if tone_values else None
 
     return {
         "date": date_str,
         "status": "live",
         "message": "Loaded selected-day headlines from GDELT DOC API.",
         "news_count": len(articles),
+        "avg_tone": avg_tone,
         "theme_count_crypto": theme_counts["crypto"],
         "theme_count_regulation": theme_counts["regulation"],
         "theme_count_election": theme_counts["election"],
         "theme_count_war": theme_counts["war"],
+        "hourly_tones": _build_hourly_tones(articles),
         "top_headlines": [article["headline"] for article in articles[:5]],
         "articles": articles,
     }

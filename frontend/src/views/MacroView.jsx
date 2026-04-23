@@ -20,10 +20,24 @@ const TIME_RANGE_OPTIONS = [
     },
   },
   {
+    label: 'War Window',
+    value: {
+      start: '2022-02-01',
+      end: '2022-05-31',
+    },
+  },
+  {
     label: 'Election Window',
     value: {
       start: '2024-09-01',
       end: '2025-01-31',
+    },
+  },
+  {
+    label: 'Iran Window',
+    value: {
+      start: '2026-03-01',
+      end: '2026-04-09',
     },
   },
 ];
@@ -188,6 +202,7 @@ export function MacroView() {
   let xTicks = [];
   let yTicks = [];
   let eventSizeScale = null;
+  let xTickFormatter = d3.timeFormat('%Y-%m');
 
   if (hasTimelineData) {
     xScale = d3
@@ -218,6 +233,9 @@ export function MacroView() {
     areaPath = areaBuilder(timelineRows) ?? '';
     xTicks = xScale.ticks(5);
     yTicks = yScale.ticks(4);
+    const [domainStart, domainEnd] = xScale.domain();
+    const spanDays = Math.max(0, d3.timeDay.count(domainStart, domainEnd));
+    xTickFormatter = spanDays < 90 ? d3.timeFormat('%b %d') : d3.timeFormat('%Y-%m');
     if (parsedEventSignals.length > 0) {
       eventSizeScale = d3
         .scaleSqrt()
@@ -416,7 +434,7 @@ export function MacroView() {
                     textAnchor="middle"
                     className="chart-axis-label"
                   >
-                    {d3.timeFormat('%Y-%m')(tick)}
+                    {xTickFormatter(tick)}
                   </text>
                 </g>
               ))}

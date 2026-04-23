@@ -2,6 +2,9 @@
   color: #162033;
   background: #f5f7fb;
   font-family: "Segoe UI", sans-serif;
+  --color-positive: #2f9e44;
+  --color-negative: #d9485f;
+  --color-btc: #407bff;
 }
 
 * {
@@ -61,7 +64,7 @@ body {
 
 .dashboard-stack {
   display: grid;
-  gap: 20px;
+  gap: 14px;
 }
 
 .story-strip,
@@ -169,7 +172,7 @@ body {
   background: #ffffff;
   border: 1px solid #dbe3ef;
   border-radius: 16px;
-  padding: 20px;
+  padding: 16px;
   box-shadow: 0 10px 30px rgba(22, 32, 51, 0.06);
 }
 
@@ -218,7 +221,7 @@ body {
 }
 
 .range-button-active {
-  border-color: #407bff;
+  border-color: var(--color-btc);
   background: #eaf2ff;
   color: #1b4bb8;
 }
@@ -260,7 +263,7 @@ body {
 
 .timeline-line-path {
   fill: none;
-  stroke: #407bff;
+  stroke: var(--color-btc);
   stroke-width: 2.5;
   stroke-linejoin: round;
   stroke-linecap: round;
@@ -313,8 +316,14 @@ body {
 
 .chart-caption {
   margin: 0;
-  color: #5a6b85;
-  font-size: 0.86rem;
+  color: #8a97ab;
+  font-size: 0.78rem;
+}
+
+.chart-axis-title {
+  fill: #5a6b85;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .heatmap-shell {
@@ -430,17 +439,21 @@ body {
 
 .state-label {
   margin: 14px 0 0;
-  color: #5a6b85;
-  font-size: 0.9rem;
+  color: #8a97ab;
+  font-size: 0.82rem;
   line-height: 1.4;
 }
 
 .summary-box {
   margin-top: 18px;
-  padding: 14px;
+  padding: 12px;
   border: 1px solid #dbe3ef;
   border-radius: 12px;
   background: #f8fbff;
+}
+
+.panel {
+  padding: 16px;
 }
 
 .selected-date-label {
@@ -485,7 +498,7 @@ body {
 }
 
 .context-section {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .context-list {
@@ -583,6 +596,18 @@ body {
   border: 1px solid #e1e7f0;
   border-radius: 12px;
   background: #ffffff;
+}
+
+.micro-dual-grid-chart {
+  width: 100%;
+  height: 420px;
+}
+
+.micro-context-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  align-items: start;
 }
 
 .asset-context-ticker {

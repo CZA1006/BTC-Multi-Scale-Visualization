@@ -3,6 +3,7 @@ import { MacroView } from './views/MacroView.jsx';
 import { MesoView } from './views/MesoView.jsx';
 import { MicroView } from './views/MicroView.jsx';
 import { useAppStore } from './store/useAppStore.js';
+import { getClusterSemanticLabel } from './utils/clusterLabels.js';
 
 const CASE_STUDIES = [
   {
@@ -53,7 +54,7 @@ export default function App() {
   const activeClusterLabel =
     selectedCluster === null || selectedCluster === undefined
       ? 'No cluster selected'
-      : `Cluster ${selectedCluster}`;
+      : getClusterSemanticLabel(selectedCluster);
   const activeDateLabel = selectedDate ?? 'No date selected';
 
   function applyCaseStudy(range) {

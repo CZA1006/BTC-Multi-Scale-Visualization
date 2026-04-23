@@ -1,8 +1,9 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-import * as d3 from 'd3';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import * as echarts from 'echarts';
 import { fetchDayDetail } from '../api/dayDetail.js';
 import { useAppStore } from '../store/useAppStore.js';
+import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
 
 export function MicroView() {
   const selectedDate = useAppStore((state) => state.selectedDate);
@@ -17,6 +18,7 @@ export function MicroView() {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const chartRef = useRef(null);
 
   useEffect(() => {
     if (!selectedDate) {
@@ -66,75 +68,378 @@ export function MicroView() {
   const selectedClusterLabel =
     selectedCluster === null || selectedCluster === undefined
       ? 'No cluster selected'
-      : `Cluster ${selectedCluster}`;
+      : getClusterSemanticLabel(selectedCluster);
 
-  const intradayRows = dayDetail.btc_intraday
-    .map((row) => ({
-      ...row,
-      parsedTimestamp: row.timestamp ? new Date(row.timestamp) : null,
-      closeValue: Number(row.close),
-    }))
-    .filter(
-      (row) =>
-        row.parsedTimestamp instanceof Date &&
-        !Number.isNaN(row.closeValue),
+  const toUtcHourKey = (timeLike) => {
+    if (!timeLike) {
+      return null;
+    }
+    const raw = String(timeLike).trim();
+    const hourPrefixMatch = raw.match(/^(\d{4}-\d{2}-\d{2})[T ](\d{2})/);
+    if (hourPrefixMatch) {
+      return `${hourPrefixMatch[1]}T${hourPrefixMatch[2]}:00:00.000Z`;
+    }
+    const parsed = new Date(raw);
+    if (Number.isNaN(parsed.getTime())) {
+      return null;
+    }
+    return new Date(
+      Date.UTC(
+        parsed.getUTCFullYear(),
+        parsed.getUTCMonth(),
+        parsed.getUTCDate(),
+        parsed.getUTCHours(),
+        0,
+        0,
+        0,
+      ),
+    ).toISOString();
+  };
+
+  const formatHourLabel = (utcHourKey) => {
+    if (!utcHourKey || utcHourKey.length < 13) {
+      return 'N/A';
+    }
+    return `${utcHourKey.slice(11, 13)}:00`;
+  };
+
+  const priceSeries = useMemo(() => {
+    const intraday = (dayDetail.btc_intraday ?? [])
+      .map((row) => {
+        const hourKey = toUtcHourKey(row.timestamp);
+        const closeValue = Number(row.close);
+        const volumeValue = Number(row.volume ?? 0);
+        if (!hourKey || Number.isNaN(closeValue)) {
+          return null;
+        }
+        return {
+          timestamp: hourKey,
+          price: closeValue,
+          volume: Number.isNaN(volumeValue) ? 0 : volumeValue,
+        };
+      })
+      .filter(Boolean);
+    if (intraday.length > 1) {
+      return { mode: 'intraday', rows: intraday };
+    }
+
+    const windowRows = (dayDetail.btc_window ?? [])
+      .map((row) => {
+        const dayKey = row.date ? `${row.date}T00:00:00.000Z` : null;
+        const closeValue = Number(row.close);
+        const volumeValue = Number(row.volume ?? 0);
+        if (!dayKey || Number.isNaN(closeValue)) {
+          return null;
+        }
+        return {
+          timestamp: dayKey,
+          price: closeValue,
+          volume: Number.isNaN(volumeValue) ? 0 : volumeValue,
+        };
+      })
+      .filter(Boolean);
+    return { mode: 'daily_window', rows: windowRows };
+  }, [dayDetail.btc_intraday, dayDetail.btc_window]);
+
+  const inferToneFromHeadline = (headline) => {
+    if (!headline) {
+      return null;
+    }
+    const text = String(headline).toLowerCase();
+    const positiveKeywords = ['rally', 'surge', 'gain', 'rise', 'high', 'record', 'outperform', 'bull'];
+    const negativeKeywords = ['crash', 'drop', 'fall', 'fear', 'war', 'selloff', 'violation', 'decline', 'risk'];
+    let score = -0.8; // global-news negativity bias baseline
+    positiveKeywords.forEach((keyword) => {
+      if (text.includes(keyword)) score += 0.7;
+    });
+    negativeKeywords.forEach((keyword) => {
+      if (text.includes(keyword)) score -= 0.7;
+    });
+    return Number(score.toFixed(2));
+  };
+
+  const hourlyToneBars = useMemo(() => {
+    const events = Array.isArray(dayDetail.events_selected_day) ? dayDetail.events_selected_day : [];
+    const eventBuckets = new Map();
+    const dedupe = new Set();
+    events.forEach((event) => {
+      const dedupeKey = `${event.url ?? ''}::${event.headline ?? ''}`;
+      if (dedupe.has(dedupeKey)) {
+        return;
+      }
+      dedupe.add(dedupeKey);
+      const key = toUtcHourKey(event.timestamp);
+      if (!key) {
+        return;
+      }
+      const previous = eventBuckets.get(key) ?? { timestamp: key, news_count: 0, toneAcc: 0, toneN: 0 };
+      const rawToneValue =
+        event.average_tone ??
+        event.avg_tone ??
+        event.v2_rawtone ??
+        event.raw_tone ??
+        event.sentiment ??
+        event.tone;
+      const parsedToneValue =
+        rawToneValue === null || rawToneValue === undefined || rawToneValue === ''
+          ? inferToneFromHeadline(event.headline)
+          : Number(rawToneValue);
+      previous.news_count += 1;
+      if (parsedToneValue !== null && !Number.isNaN(parsedToneValue)) {
+        previous.toneAcc += parsedToneValue;
+        previous.toneN += 1;
+      }
+      eventBuckets.set(key, previous);
+    });
+    const eventHourly = Array.from(eventBuckets.values())
+      .sort((a, b) => a.timestamp.localeCompare(b.timestamp))
+      .map((item) => ({
+        timestamp: item.timestamp,
+        news_count: item.news_count,
+        average_tone: item.toneN > 0 ? item.toneAcc / item.toneN : null,
+      }));
+
+    const rawHourly = Array.isArray(dayDetail?.gdelt_selected_day?.hourly_tones)
+      ? dayDetail.gdelt_selected_day.hourly_tones
+      : [];
+    const rawHourlyMap = new Map(
+      rawHourly
+        .map((row) => {
+          const timestampRaw = row.hour ?? row.timestamp ?? row.time ?? row.hour_ts;
+          const key = toUtcHourKey(timestampRaw);
+          const newsCount = Number(row.news_count ?? row.count ?? 0);
+          const rawTone =
+            row.average_tone ?? row.avg_tone ?? row.v2_rawtone ?? row.raw_tone ?? row.tone ?? row.sentiment;
+          const averageTone = rawTone === null || rawTone === undefined || rawTone === '' ? null : Number(rawTone);
+          if (!key || Number.isNaN(newsCount)) {
+            return null;
+          }
+          return [
+            key,
+            {
+              timestamp: key,
+              news_count: Math.max(0, Math.round(newsCount)),
+              average_tone: Number.isNaN(averageTone) ? null : averageTone,
+            },
+          ];
+        })
+        .filter(Boolean),
     );
+    const eventHourlyMap = new Map(eventHourly.map((row) => [row.timestamp, row]));
+    const unionKeys = [...new Set([...rawHourlyMap.keys(), ...eventHourlyMap.keys()])].sort();
 
-  const windowRows = dayDetail.btc_window
-    .map((row) => ({
-      ...row,
-      parsedDate: row.date ? new Date(`${row.date}T00:00:00`) : null,
-      closeValue: Number(row.close),
-    }))
-    .filter(
-      (row) =>
-        row.parsedDate instanceof Date &&
-        !Number.isNaN(row.closeValue),
-    );
+    return unionKeys.map((timestamp) => {
+      const raw = rawHourlyMap.get(timestamp);
+      const fallback = eventHourlyMap.get(timestamp);
+      return {
+        timestamp,
+        news_count: raw?.news_count ?? fallback?.news_count ?? 0,
+        average_tone:
+          raw?.average_tone !== null && raw?.average_tone !== undefined
+            ? raw.average_tone
+            : fallback?.average_tone ?? null,
+      };
+    });
+  }, [dayDetail.events_selected_day, dayDetail.gdelt_selected_day]);
 
-  const chartMode = intradayRows.length > 1 ? 'intraday' : 'daily_window';
-  const chartRows = chartMode === 'intraday' ? intradayRows : windowRows;
+  const hasDetailChart = priceSeries.rows.length > 1;
+  const sharedTimeline = useMemo(() => {
+    if (priceSeries.mode === 'intraday') {
+      if (!selectedDate) {
+        return priceSeries.rows.map((row) => row.timestamp).filter(Boolean);
+      }
+      return Array.from({ length: 24 }, (_, hour) => {
+        const hourText = String(hour).padStart(2, '0');
+        return `${selectedDate}T${hourText}:00:00.000Z`;
+      });
+    }
+    return priceSeries.rows.map((row) => row.timestamp).filter(Boolean);
+  }, [priceSeries.mode, priceSeries.rows, selectedDate]);
+  const pricePointByTimestamp = useMemo(() => {
+    const map = new Map();
+    priceSeries.rows.forEach((row) => {
+      const key = row.timestamp;
+      if (!key) {
+        return;
+      }
+      map.set(key, row);
+    });
+    return map;
+  }, [priceSeries.mode, priceSeries.rows]);
+  const gdeltPointByTimestamp = useMemo(() => {
+    const map = new Map();
+    hourlyToneBars.forEach((row) => {
+      const key = toUtcHourKey(row.timestamp);
+      if (!key) {
+        return;
+      }
+      map.set(key, row);
+    });
+    return map;
+  }, [hourlyToneBars]);
+  const priceValues = priceSeries.rows.map((row) => row.price).filter((value) => Number.isFinite(value));
+  const minPrice = priceValues.length > 0 ? Math.min(...priceValues) : null;
+  const maxPrice = priceValues.length > 0 ? Math.max(...priceValues) : null;
+  const pricePadding =
+    minPrice !== null && maxPrice !== null ? Math.max((maxPrice - minPrice) * 0.08, maxPrice * 0.002) : 0;
+  const roundedMinPrice =
+    minPrice !== null && maxPrice !== null
+      ? Math.floor(Math.max(0, minPrice - pricePadding))
+      : undefined;
+  const roundedMaxPrice =
+    minPrice !== null && maxPrice !== null
+      ? Math.ceil(maxPrice + pricePadding)
+      : undefined;
 
-  const detailWidth = 920;
-  const detailHeight = 280;
-  const detailMargin = { top: 18, right: 24, bottom: 36, left: 54 };
-  const hasDetailChart = chartRows.length > 1;
+  useEffect(() => {
+    if (!chartRef.current || !hasDetailChart) {
+      return undefined;
+    }
+    const chart = echarts.init(chartRef.current, null, { renderer: 'canvas' });
+    const btcSeriesData = sharedTimeline.map((timestamp) => {
+      const point = pricePointByTimestamp.get(timestamp);
+      return point ? point.price : null;
+    });
+    const gdeltSeriesData = sharedTimeline.map((timestamp) => {
+      const point = gdeltPointByTimestamp.get(timestamp);
+      return {
+        value: point ? point.news_count : 0,
+        average_tone: point?.average_tone ?? null,
+      };
+    });
+    chart.setOption({
+      animation: false,
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: { type: 'cross' },
+        formatter: (params) => {
+          const rows = Array.isArray(params) ? params : [];
+          const btc = rows.find((item) => item.seriesName === 'BTC Price');
+          const gdelt = rows.find((item) => item.seriesName === 'GDELT News Volume');
+          const timestamp = btc?.axisValueLabel ?? gdelt?.axisValueLabel ?? rows?.[0]?.axisValueLabel ?? 'N/A';
+          const btcPrice = btc?.data;
+          const gdeltNewsCount = gdelt?.data?.value ?? 0;
+          const gdeltAvgTone = gdelt?.data?.average_tone;
+          const toneLabel =
+            gdeltAvgTone === null || gdeltAvgTone === undefined || Number.isNaN(Number(gdeltAvgTone))
+              ? 'N/A'
+              : Number(gdeltAvgTone).toFixed(2);
+          const timestampText = String(timestamp);
+          return [
+            `${timestampText.slice(0, 10)} ${formatHourLabel(timestampText)}`,
+            `BTC Price: ${formatCurrency(btcPrice)}`,
+            `GDELT News: ${gdeltNewsCount} articles | Avg Tone: ${toneLabel}`,
+          ].join('<br/>');
+        },
+      },
+      axisPointer: { link: [{ xAxisIndex: 'all' }] },
+      dataZoom: [
+        { type: 'inside', xAxisIndex: [0, 1] },
+        { type: 'slider', xAxisIndex: [0, 1], bottom: '2%', height: 18 },
+      ],
+      grid: [
+        { top: '10%', height: '55%', left: '8%', right: '5%' },
+        { top: '70%', height: '20%', left: '8%', right: '5%' },
+      ],
+      xAxis: [
+        {
+          type: 'category',
+          gridIndex: 0,
+          data: sharedTimeline,
+          axisLabel: { show: false },
+          axisTick: { show: false },
+        },
+        {
+          type: 'category',
+          gridIndex: 1,
+          data: sharedTimeline,
+          axisLabel: {
+            color: '#5a6b85',
+            interval: 1,
+            formatter: (value, index) => (index % 2 === 0 ? formatHourLabel(value) : ''),
+          },
+        },
+      ],
+      yAxis: [
+        {
+          type: 'value',
+          gridIndex: 0,
+          name: 'BTC Price',
+          nameTextStyle: { color: '#5a6b85' },
+          scale: true,
+          axisLabel: { color: '#5a6b85' },
+          splitLine: { lineStyle: { color: '#e6ecf6' } },
+          min: roundedMinPrice,
+          max: roundedMaxPrice,
+        },
+        {
+          type: 'value',
+          gridIndex: 1,
+          name: 'GDELT News Volume',
+          nameTextStyle: { color: '#5a6b85' },
+          nameLocation: 'middle',
+          nameRotate: 90,
+          nameGap: 50,
+          axisLabel: { color: '#5a6b85' },
+          splitLine: { lineStyle: { color: '#edf2f8' } },
+          minInterval: 1,
+        },
+      ],
+      series: [
+        {
+          type: 'line',
+          name: 'BTC Price',
+          xAxisIndex: 0,
+          yAxisIndex: 0,
+          data: btcSeriesData,
+          showSymbol: false,
+          smooth: false,
+          lineStyle: { color: '#407bff', width: 2 },
+          areaStyle: { color: 'rgba(64, 123, 255, 0.12)' },
+        },
+        {
+          type: 'bar',
+          name: 'GDELT News Volume',
+          xAxisIndex: 1,
+          yAxisIndex: 1,
+          barMaxWidth: 14,
+          data: gdeltSeriesData,
+          itemStyle: {
+            color: (params) => {
+              const averageTone = params?.data?.average_tone;
+              if (averageTone > -0.8) {
+                return '#2f9e44';
+              }
+              if (averageTone < -1.1) {
+                return '#d9485f';
+              }
+              return '#ced4da';
+            },
+            opacity: (params) => {
+              const averageTone = params?.data?.average_tone;
+              if (averageTone > -0.8 || averageTone < -1.1) {
+                return 0.9;
+              }
+              return 0.5;
+            },
+          },
+        },
+      ],
+    });
 
-  let xScale = null;
-  let yScale = null;
-  let linePath = '';
-  let xTicks = [];
-  let yTicks = [];
-
-  if (hasDetailChart) {
-    xScale = d3
-      .scaleTime()
-      .domain(
-        d3.extent(
-          chartRows,
-          (row) => (chartMode === 'intraday' ? row.parsedTimestamp : row.parsedDate),
-        ),
-      )
-      .range([detailMargin.left, detailWidth - detailMargin.right]);
-
-    yScale = d3
-      .scaleLinear()
-      .domain(d3.extent(chartRows, (row) => row.closeValue))
-      .nice()
-      .range([detailHeight - detailMargin.bottom, detailMargin.top]);
-
-    linePath =
-      d3
-        .line()
-        .x((row) =>
-          xScale(chartMode === 'intraday' ? row.parsedTimestamp : row.parsedDate),
-        )
-        .y((row) => yScale(row.closeValue))
-        .curve(d3.curveMonotoneX)(chartRows) ?? '';
-
-    xTicks = xScale.ticks(5);
-    yTicks = yScale.ticks(4);
-  }
+    const resizeHandler = () => chart.resize();
+    window.addEventListener('resize', resizeHandler);
+    return () => {
+      window.removeEventListener('resize', resizeHandler);
+      chart.dispose();
+    };
+  }, [
+    gdeltPointByTimestamp,
+    hasDetailChart,
+    pricePointByTimestamp,
+    priceSeries.rows,
+    sharedTimeline,
+  ]);
 
   function formatPercent(value) {
     if (value === null || value === undefined || Number.isNaN(Number(value))) {
@@ -165,7 +470,7 @@ export function MicroView() {
   const inferredClusterLabel =
     marketState.cluster_id === null || marketState.cluster_id === undefined
       ? selectedClusterLabel
-      : `Cluster ${marketState.cluster_id}`;
+      : getClusterSemanticLabel(marketState.cluster_id);
   const gdeltSummary = dayDetail.gdelt_selected_day ?? {};
   const eventRows = Array.isArray(dayDetail.events_selected_day)
     ? dayDetail.events_selected_day
@@ -217,102 +522,20 @@ export function MicroView() {
           </div>
         ) : hasDetailChart ? (
           <div className="chart-shell">
-            <svg
-              viewBox={`0 0 ${detailWidth} ${detailHeight}`}
-              className="timeline-chart"
+            <div
+              ref={chartRef}
+              className="micro-dual-grid-chart"
               role="img"
-              aria-label="Selected-day detail chart"
-            >
-              {yTicks.map((tick) => (
-                <g key={`detail-y-${tick}`}>
-                  <line
-                    x1={detailMargin.left}
-                    x2={detailWidth - detailMargin.right}
-                    y1={yScale(tick)}
-                    y2={yScale(tick)}
-                    className="chart-gridline"
-                  />
-                  <text
-                    x={detailMargin.left - 10}
-                    y={yScale(tick)}
-                    textAnchor="end"
-                    dominantBaseline="middle"
-                    className="chart-axis-label"
-                  >
-                    {Math.round(tick).toLocaleString()}
-                  </text>
-                </g>
-              ))}
-
-              {xTicks.map((tick) => (
-                <g key={`detail-x-${tick.toISOString()}`}>
-                  <line
-                    x1={xScale(tick)}
-                    x2={xScale(tick)}
-                    y1={detailMargin.top}
-                    y2={detailHeight - detailMargin.bottom}
-                    className="chart-gridline chart-gridline-vertical"
-                  />
-                  <text
-                    x={xScale(tick)}
-                    y={detailHeight - 10}
-                    textAnchor="middle"
-                    className="chart-axis-label"
-                  >
-                    {chartMode === 'intraday'
-                      ? d3.timeFormat('%H:%M')(tick)
-                      : d3.timeFormat('%m-%d')(tick)}
-                  </text>
-                </g>
-              ))}
-
-              <path d={linePath} className="timeline-line-path" />
-
-              {chartRows.map((row) => (
-                <circle
-                  key={chartMode === 'intraday' ? row.timestamp : row.date}
-                  cx={
-                    chartMode === 'intraday'
-                      ? xScale(row.parsedTimestamp)
-                      : xScale(row.parsedDate)
-                  }
-                  cy={yScale(row.closeValue)}
-                  r={
-                    chartMode === 'intraday'
-                      ? 3.8
-                      : row.date === selectedDate
-                        ? 5.5
-                        : 3.5
-                  }
-                  fill={
-                    chartMode === 'intraday'
-                      ? '#407bff'
-                      : row.date === selectedDate
-                        ? '#d9485f'
-                        : '#407bff'
-                  }
-                  stroke="#ffffff"
-                  strokeWidth="1.2"
-                >
-                  <title>
-                    {chartMode === 'intraday'
-                      ? `${row.timestamp} | ${formatCurrency(row.closeValue)}`
-                      : `${row.date} | ${formatCurrency(row.closeValue)}`}
-                  </title>
-                </circle>
-              ))}
-            </svg>
-
+              aria-label="Dual-grid synchronized chart"
+            />
             <div className="chart-caption-row">
               <p className="chart-caption">
-                {chartMode === 'intraday'
-                  ? `Intraday points: ${intradayRows.length}`
+                {priceSeries.mode === 'intraday'
+                  ? `Intraday points: ${priceSeries.rows.length}`
                   : `Context window: ${dayDetail.context?.window_start} to ${dayDetail.context?.window_end}`}
               </p>
               <p className="chart-caption">
-                {chartMode === 'intraday'
-                  ? 'Showing selected-day BTC intraday close path'
-                  : 'Highlighted point is the selected day'}
+                Relative Sentiment Thresholds: Green &gt; -0.8 | Red &lt; -1.1 | Grey = Baseline / Missing
               </p>
             </div>
           </div>
@@ -351,66 +574,72 @@ export function MicroView() {
               </div>
             </div>
 
-            {narrativeBullets.length > 0 ? (
-              <div className="context-section">
-                <p className="summary-title">Narrative explanation</p>
-                <ul className="context-list">
-                  {narrativeBullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+            <div className="micro-context-grid">
+              {narrativeBullets.length > 0 ? (
+                <div className="context-section">
+                  <p className="summary-title">Narrative explanation</p>
+                  <ul className="context-list">
+                    {narrativeBullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
 
-            <div className="context-section">
-              <p className="summary-title">Backtracking anchors</p>
-              <div className="context-backtracking-grid">
-                <div className="asset-context-card">
-                  <p className="asset-context-ticker">Macro anchor</p>
-                  <p className="asset-context-value">{macroBacktracking.month_bucket ?? 'N/A'}</p>
-                  <p className="state-label">
-                    Window: {macroBacktracking.window_start ?? 'N/A'} to{' '}
-                    {macroBacktracking.window_end ?? 'N/A'}
-                  </p>
-                </div>
-                <div className="asset-context-card">
-                  <p className="asset-context-ticker">Meso anchor</p>
-                  <p className="asset-context-value">{mesoBacktracking.cluster_label ?? 'N/A'}</p>
-                  <p className="state-label">
-                    Embedding: {mesoBacktracking.embedding_x?.toFixed?.(2) ?? 'N/A'},{' '}
-                    {mesoBacktracking.embedding_y?.toFixed?.(2) ?? 'N/A'}
-                  </p>
-                </div>
-                <div className="asset-context-card">
-                  <p className="asset-context-ticker">External breadth</p>
-                  <p className="asset-context-value">
-                    {externalSignalSummary.breadth_label ?? 'Unavailable'}
-                  </p>
-                  <p className="state-label">
-                    Up {externalSignalSummary.positive_count ?? 0} | Down{' '}
-                    {externalSignalSummary.negative_count ?? 0} | Flat{' '}
-                    {externalSignalSummary.flat_count ?? 0}
-                  </p>
+              <div className="context-section">
+                <p className="summary-title">Backtracking anchors</p>
+                <div className="context-backtracking-grid">
+                  <div className="asset-context-card">
+                    <p className="asset-context-ticker">Macro anchor</p>
+                    <p className="asset-context-value">{macroBacktracking.month_bucket ?? 'N/A'}</p>
+                    <p className="state-label">
+                      Window: {macroBacktracking.window_start ?? 'N/A'} to{' '}
+                      {macroBacktracking.window_end ?? 'N/A'}
+                    </p>
+                  </div>
+                  <div className="asset-context-card">
+                    <p className="asset-context-ticker">Meso anchor</p>
+                    <p className="asset-context-value">
+                      {mesoBacktracking.cluster_id === null || mesoBacktracking.cluster_id === undefined
+                        ? selectedClusterLabel
+                        : getClusterSemanticLabel(mesoBacktracking.cluster_id)}
+                    </p>
+                    <p className="state-label">
+                      Embedding: {mesoBacktracking.embedding_x?.toFixed?.(2) ?? 'N/A'},{' '}
+                      {mesoBacktracking.embedding_y?.toFixed?.(2) ?? 'N/A'}
+                    </p>
+                  </div>
+                  <div className="asset-context-card">
+                    <p className="asset-context-ticker">External breadth</p>
+                    <p className="asset-context-value">
+                      {externalSignalSummary.breadth_label ?? 'Unavailable'}
+                    </p>
+                    <p className="state-label">
+                      Up {externalSignalSummary.positive_count ?? 0} | Down{' '}
+                      {externalSignalSummary.negative_count ?? 0} | Flat{' '}
+                      {externalSignalSummary.flat_count ?? 0}
+                    </p>
+                  </div>
                 </div>
               </div>
+
+              {dayDetail.external_assets.length > 0 ? (
+                <div className="context-section">
+                  <p className="summary-title">External asset context</p>
+                  <div className="asset-context-grid">
+                    {dayDetail.external_assets.map((asset) => (
+                      <div key={asset.ticker} className="asset-context-card">
+                        <p className="asset-context-ticker">{asset.ticker}</p>
+                        <p className="asset-context-value">{formatCurrency(asset.close)}</p>
+                        <p className="state-label">
+                          Daily return: {formatPercent(asset.daily_return)}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
             </div>
-
-            {dayDetail.external_assets.length > 0 ? (
-              <div className="context-section">
-                <p className="summary-title">External asset context</p>
-                <div className="asset-context-grid">
-                  {dayDetail.external_assets.map((asset) => (
-                    <div key={asset.ticker} className="asset-context-card">
-                      <p className="asset-context-ticker">{asset.ticker}</p>
-                      <p className="asset-context-value">{formatCurrency(asset.close)}</p>
-                      <p className="state-label">
-                        Daily return: {formatPercent(asset.daily_return)}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ) : null}
 
             <div className="asset-context-grid">
               <div className="asset-context-card">

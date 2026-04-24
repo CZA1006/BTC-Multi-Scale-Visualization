@@ -74,16 +74,11 @@ export async function fetchDayDetail(date) {
     return buildFallbackDayDetail(null);
   }
 
-  try {
-    const response = await fetch(
-      `${API_BASE_URL}/api/day-detail?date=${encodeURIComponent(date)}`,
-    );
-    if (!response.ok) {
-      throw new Error(`Day-detail request failed: ${response.status}`);
-    }
-    return await response.json();
-  } catch (error) {
-    console.warn('Falling back to empty day-detail payload.', error);
-    return buildFallbackDayDetail(date);
+  const response = await fetch(
+    `${API_BASE_URL}/api/day-detail?date=${encodeURIComponent(date)}`,
+  );
+  if (!response.ok) {
+    throw new Error(`Day-detail request failed: ${response.status}`);
   }
+  return await response.json();
 }

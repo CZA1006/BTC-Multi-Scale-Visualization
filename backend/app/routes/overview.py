@@ -7,7 +7,7 @@ from typing import Any
 import pandas as pd
 from fastapi import APIRouter, HTTPException
 
-ROW_LIMIT = 200
+ROW_LIMIT = 5000
 REPO_ROOT = Path(__file__).resolve().parents[3]
 PROCESSED_DIR = REPO_ROOT / "data" / "processed"
 DERIVED_DIR = REPO_ROOT / "data" / "derived"

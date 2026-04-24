@@ -56,6 +56,8 @@ cd ..
 ```
 
 ## Data fetching steps
+A **canonical snapshot** is already committed under `data/` (see `data/README.md`) so the app runs offline for demos. Run the scripts below only when you want to **refresh** tables.
+
 Fetch market data for:
 - `BTC-USD`
 - `COIN`

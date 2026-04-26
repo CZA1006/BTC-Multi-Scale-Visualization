@@ -1,137 +1,193 @@
 # Demo Script
 
-## Goal
-Use this script for the final presentation demo of the coordinated BTC visual analytics system.
+A 5–8 minute live walkthrough of the BTC Multi-Scale Visualization
+dashboard. This script reflects the **post-P7** state of the system —
+it integrates the case-study navigator (P1), event overlays (P2),
+narrative overlay (P5), Bloomberg-style KPI ticker + Meso summary
+panels (P6), and the insight-log (P7).
 
-Recommended total demo time:
-- `5` to `8` minutes
+For the *why* behind each chart see `VISUAL_ENCODINGS.md`. For
+operational details see `USER_GUIDE.md`.
 
-## Before the demo
-1. Start the backend.
-2. Start the frontend.
-3. Make sure the dashboard loads without API errors.
-4. Preload recent GDELT and Polymarket context if needed:
+---
+
+## 0. Before the demo
+
+1. Backend up: `uvicorn backend.app.main:app --reload` (port 8000).
+2. Frontend up: `npm run dev` from `frontend/` (port 5173).
+3. Refresh recent context if presenting today:
    - `python3 backend/scripts/fetch_gdelt_context.py --days 14`
    - `python3 backend/scripts/fetch_polymarket_context.py`
+4. Open Chrome at `http://localhost:5173`. Browser zoom 100 %.
+5. In DevTools console, clear stale insights so the panel starts empty:
+   ```js
+   localStorage.removeItem('btc-multi-scale.insights.v1');
+   ```
+6. Confirm `/api/overview` returns 200 (Network tab).
 
-## Opening
-Suggested message:
+Recommended demo length: **5–8 minutes** (3 minutes if you skip the
+narrative auto-play).
 
-> This system is designed to analyze Bitcoin across three coordinated scales.  
-> We start with the full-period macro view, move into meso-level daily market states, then drill into one selected day with event and market-context explanations.
+---
 
-## Step 1 — Show the dashboard structure
-Point out:
-- `Case-Study Navigator`
-- `Global status strip`
-- `Macro Overview`
-- `Meso Pattern View`
-- `Micro Detail View`
+## 1. Opening (30 s)
 
-Suggested message:
+> "This is a coordinated multi-scale BTC market dashboard. Three views —
+> Macro, Meso, Micro — share one Zustand store, so a brush in one view
+> propagates everywhere. The hypothesis we're testing visually: BTC's
+> behavior is regime-driven, and regimes line up with macro events."
 
-> The workflow is stable and top-down: Macro for time navigation, Meso for pattern discovery, and Micro for selected-day explanation.
+Point out the **title bar**, the **case-study navigator**, the
+**KPI ticker**, and the **status strip** (provenance — yfinance + GDELT
++ Polymarket).
 
-## Step 2 — Use Macro to explain the long-term picture
-Use:
-- BTC timeline
-- time brush
-- calendar heatmap
-- event overlay markers
+---
 
-Suggested actions:
-1. Start in `Full Range`
-2. Drag the timeline brush to a narrower period
-3. Click one event marker on the timeline
-4. Click one heatmap cell
+## 2. Macro — the long-term picture (90 s)
 
-Suggested message:
+1. Click **Full Range** in the macro time-range strip.
+2. Read the **horizon graph** out loud: "this stacks 7-day rolling
+   returns into 3 mirrored bands — same data accuracy as a line chart
+   in 1/3 the height (Heer 2009)."
+3. Brush 2020 on the BTC timeline.
+4. Hover the deepest red cell in the **calendar heatmap** — *2020-03-12*.
+5. Click that cell. Note that the selectedDate propagates immediately
+   to Meso and Micro.
+6. Press **📌 Pin insight** on the Macro header: *"Black Thursday is the
+   single deepest cell in the heatmap for the COVID window."* Save with
+   ⌘/Ctrl+Enter.
 
-> In Macro, we first identify broad market regimes, then use event markers and the calendar structure to locate days with unusually dense narrative activity.
+> "We just used Macro to *locate* an anomaly. The pinned insight is the
+> reproducible state — view + window + date + note — saved to
+> localStorage."
 
-## Step 3 — Move into Meso
-Use:
-- scatterplot
-- cluster selector
-- parallel coordinates
+---
 
-Suggested actions:
-1. Select one cluster from the scatterplot or cluster buttons
-2. Show how the parallel-coordinates profile changes
-3. Click one point to select a day
+## 3. KPI ticker — Bloomberg-style situational awareness (30 s)
 
-Suggested message:
+Point at the 6-card row above the views:
 
-> In Meso, each point is one BTC trading day embedded from engineered features.  
-> Nearby points represent similar market states, and the parallel-coordinates plot helps explain what makes each cluster distinct.
+- BTC spot + 24 h delta chip
+- 30 d annualized vol
+- 30 d max drawdown
+- 1 d news volume
+- 30 d BTC ↔ QQQ correlation
 
-## Step 4 — Drill into Micro
-Use:
-- selected-day chart
-- narrative summary
-- GDELT headline panel
-- Polymarket context panel
+> "Each card is a tabular numeric + 60-pt sparkline (Tufte). The colored
+> ▲/▼ chip uses redundant shape + hue — readable for deuteranopes."
 
-Suggested actions:
-1. Let the selected date propagate from Macro or Meso
-2. Show the detail chart
-3. Read one or two headlines
-4. Show the Polymarket cards as expectation context
+---
 
-Suggested message:
+## 4. Meso — pattern discovery (90 s)
 
-> In Micro, we explain one day in detail through price behavior, narrative context, and a small market-expectation layer from Polymarket.
+1. Click the **War Regime** case-study chip (or stay in COVID).
+2. UMAP scatter: point out the **density splat** behind the dots and
+   the **convex hulls** with cluster centroids.
+3. Click one cluster swatch in the legend; the parallel-coordinates plot
+   below filters to that cluster.
+4. Scroll to the **Regime Summary** band:
+   - **Cluster summary table** — n / mean return / mean σ / equity-curve
+     sparkline per cluster.
+   - **4×4 correlation matrix** — Pearson(BTC, COIN, MSTR, QQQ) over the
+     active window. Diverging green↔red, anchored at zero.
+5. Toggle Parallel Coords ↔ SPLOM if time permits.
+6. Pin an insight from Meso: *"Risk-Off cluster dominates the war week —
+> visible as the bottom row of the summary table with the most days
+> and the steepest negative equity sparkline."*
+
+---
+
+## 5. Micro — drill into one day (75 s)
+
+1. With the date already propagated from the Macro click, scroll to
+   Micro.
+2. Walk through the 3-grid ECharts panel:
+   - Top: candlestick (OHLC)
+   - Middle: volume bars
+   - Bottom: GDELT count bars
+   "Shared x-axis = aligned position judgments — the highest-accuracy
+   channel in Cleveland & McGill."
+3. Read 2–3 tokens from the **word cloud** and call out the dominant
+   theme.
+4. Show the **theme river** (`stackOffsetSilhouette` — Havre 2002).
+5. Show the **asset-context strip** (BTC / COIN / MSTR / QQQ
+   sparklines) and the **Polymarket cards** if available.
+6. Pin an insight: theme + price candle direction.
+
+---
+
+## 6. Narrative overlay — guided story (60 s)
+
+1. Click **COVID Shock** in the case-study navigator.
+2. The narrative auto-plays: a spotlight dims non-active views by 70 %.
+3. Use the **right-arrow key** to advance through the 3 steps.
+4. Pin one insight per step (they show up in the slide-in panel
+   accumulating in real time).
+
+> "Pattern: Segel & Heer's *martini-glass* — start guided, end free.
+> The user is dropped back into full exploration after step 3."
+
+---
+
+## 7. Insight log — the analytic artifact (30 s)
+
+1. Click **📌 Insights (n)** pill in the title bar.
+2. The slide-in panel shows the four pinned insights from this demo.
+3. Click any row → **Restore context** — store snaps back to that
+   view/range/date/cluster.
+4. Click **Export JSON** — `insights-YYYY-MM-DD.json` downloads.
+
+> "This is the artifact format used in the user-study protocol
+> (`USER_STUDY_PROTOCOL.md`). It's also why the schema document exists —
+> we promise a stable v1 contract."
+
+---
+
+## 8. Closing (15 s)
+
+> "The contribution is not one chart but the coordinated *flow* —
+> overview → pattern → detail, each scale answering a different
+> question, all sharing one store, with insight-pinning turning each
+> demo session into a reproducible artifact."
+
+---
 
 ## Recommended case studies
 
-### 1. COVID Shock
-Window:
-- `2020-02-01` to `2020-06-30`
+### COVID Shock — `2020-02-01` to `2020-06-30`
+Emphasize regime shift, vol expansion, and the 2020-03-12 anomaly. No
+GDELT history (60-day rolling), so lean on price structure + heatmap.
 
-What to emphasize:
-- rapid regime shift
-- volatility expansion
-- cluster separation
-- no full GDELT history yet, so focus more on price structure
+### Election Cycle — `2024-09-01` to `2025-01-31`
+Emphasize policy framing, BTC/QQQ co-movement in the correlation
+matrix, and the 2024-11-06 election-day word cloud (`trump`, `crypto`,
+`etf`).
 
-### 2. Election Cycle
-Window:
-- `2024-09-01` to `2025-01-31`
+### Iran Tension — `2026-03-01` to `2026-04-09`
+Strongest live window — GDELT headlines, theme river, and Polymarket
+all available. Best for showing the full Macro → Meso → Micro chain.
 
-What to emphasize:
-- policy and regulation framing
-- relationship between BTC state clusters and macro narrative
-- use Macro -> Meso -> Micro linking
+### War Regime — `2022-02-01` to `2022-05-31`
+Best Meso story: invasion day clusters with 2020 panic days in
+*Risk-Off*. Use the cluster summary table to make the case quantitative.
 
-### 3. Iran Tension
-Window:
-- `2026-03-01` to `2026-04-09`
+---
 
-What to emphasize:
-- this is the strongest current live-demo window
-- GDELT headlines are available
-- event overlays, headlines, and Polymarket are easiest to demonstrate here
+## Failure mitigations
 
-## If something fails during the demo
+### GDELT headlines missing
+> "GDELT's API has a 60-day rolling window. Older case studies fall
+> back to local context — the design is intentionally tolerant."
 
-### If GDELT headlines are missing
-Say:
+### Polymarket missing
+> "Polymarket is a minimal live snapshot, not historical. It's
+> expectation context, not signal."
 
-> The GDELT selected-day panel is implemented, but recent API availability can vary.  
-> The fallback narrative and local context still keep the selected-day analysis usable.
+### Selected day has no intraday data
+> "Provider intraday limits vary; we fall back to the daily window so
+> the rest of the panel still works."
 
-### If Polymarket data is missing
-Say:
-
-> The Polymarket layer is currently a minimal live snapshot.  
-> It is included as expectation context rather than a full historical signal.
-
-### If a selected day has no intraday data
-Say:
-
-> Intraday data availability depends on provider limits, so the system falls back to a local daily context window.
-
-## Closing message
-
-> The contribution of this project is not just one chart, but the coordinated flow across time navigation, market-state discovery, and selected-day explanation.  
-> The system helps move from overview to insight with linked interactions and external context.
+### Insight panel empty after refresh
+The panel is `localStorage`-backed; if the user cleared it via the
+"Clear all" button or via DevTools, it's gone. Re-pin a few insights
+to seed the demo.

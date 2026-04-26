@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import { fetchOverview } from '../api/overview.js';
 import { useAppStore } from '../store/useAppStore.js';
+import { HorizonChart } from '../components/HorizonChart.jsx';
+import { PinInsightButton } from '../components/PinInsightButton.jsx';
+import { pctChange, rollingMean, rollingStd } from '../utils/derived.js';
 
 const TIME_RANGE_OPTIONS = [
   {
@@ -185,6 +188,15 @@ export function MacroView() {
     .slice(0, 5);
   const heatmapEventCount = heatmapCells.filter((cell) => cell.eventSignal).length;
 
+  // GDELT coverage in this repo is a recent-window snapshot (see docs/DATA_AND_APIS.md).
+  // If the selected window ends more than ~60 days ago, no event markers are expected.
+  const gdeltRecentCutoffMs = Date.now() - 60 * 24 * 60 * 60 * 1000;
+  const selectedRangeEndMs = selectedTimeRange?.end
+    ? new Date(`${selectedTimeRange.end}T00:00:00`).getTime()
+    : null;
+  const isHistoricalGdeltWindow =
+    selectedRangeEndMs !== null && selectedRangeEndMs < gdeltRecentCutoffMs;
+
   const timeRangeLabel = selectedTimeRange
     ? `${selectedTimeRange.start ?? 'unknown'} to ${selectedTimeRange.end ?? 'unknown'}`
     : 'No time range selected';
@@ -243,6 +255,19 @@ export function MacroView() {
         .range([4, 10]);
     }
   }
+
+  // Derived rolling series for horizon graphs.
+  const horizonRows = (() => {
+    if (!hasTimelineData) return { return7d: [], vol30d: [] };
+    const closes = timelineRows.map((r) => r.closeValue);
+    const ret = pctChange(closes);
+    const ret7d = rollingMean(ret, 7);
+    const vol30d = rollingStd(ret, 30);
+    return {
+      return7d: timelineRows.map((row, i) => ({ parsedDate: row.parsedDate, value: ret7d[i] })),
+      vol30d: timelineRows.map((row, i) => ({ parsedDate: row.parsedDate, value: vol30d[i] })),
+    };
+  })();
 
   function getSvgXCoordinate(event) {
     const svg = event.currentTarget.ownerSVGElement ?? event.currentTarget;
@@ -322,21 +347,26 @@ export function MacroView() {
       }
     : null;
 
+  // ColorBrewer RdYlGn 7-step, Western convention: green = up, red = down.
+  // Symmetric thresholds on absolute daily return.
   function heatmapColor(change) {
-    if (change >= 0.05) {
-      return '#2f9e44';
-    }
-    if (change >= 0.015) {
-      return '#8bcf78';
-    }
-    if (change <= -0.05) {
-      return '#d9485f';
-    }
-    if (change <= -0.015) {
-      return '#f08c9d';
-    }
-    return '#d9e2f0';
+    if (change >= 0.05) return '#1a9850';
+    if (change >= 0.02) return '#66bd63';
+    if (change >= 0.005) return '#a6d96a';
+    if (change <= -0.05) return '#a50026';
+    if (change <= -0.02) return '#d73027';
+    if (change <= -0.005) return '#fdae61';
+    return '#f5f5f5';
   }
+
+  // Annotated key events on the Macro timeline (5 anchor points).
+  const KEY_EVENTS = [
+    { date: '2020-03-12', label: 'COVID crash' },
+    { date: '2020-05-11', label: '3rd halving' },
+    { date: '2024-01-10', label: 'Spot ETF approval' },
+    { date: '2024-04-19', label: '4th halving' },
+    { date: '2026-03-26', label: 'Iran tension' },
+  ];
 
   function heatmapEventClass(eventSignal) {
     if (!eventSignal) {
@@ -350,9 +380,12 @@ export function MacroView() {
 
   return (
     <section className="view-card">
-      <header className="view-header">
-        <p className="view-kicker">View 1</p>
-        <h2 className="view-title">Macro Overview</h2>
+      <header className="view-header view-header-with-pin">
+        <div>
+          <p className="view-kicker">View 1</p>
+          <h2 className="view-title">Macro Overview</h2>
+        </div>
+        <PinInsightButton view="macro" />
       </header>
 
       <div className="control-group">
@@ -377,6 +410,58 @@ export function MacroView() {
         <p className="state-label">Shared state: {timeRangeLabel}</p>
       </div>
 
+      {hasTimelineData ? (
+        <section className="placeholder-section">
+          <h3 className="placeholder-title">Rolling Return &amp; Volatility (Horizon)</h3>
+          <div className="chart-shell">
+            <svg
+              viewBox={`0 0 ${chartWidth} 140`}
+              className="timeline-chart"
+              role="img"
+              aria-label="Rolling return and volatility horizon graphs"
+            >
+              <text x={chartMargin.left} y={12} className="chart-axis-title">
+                7-day rolling return
+              </text>
+              <g transform="translate(0, 16)">
+                <HorizonChart
+                  rows={horizonRows.return7d}
+                  xScale={xScale}
+                  width={chartWidth}
+                  height={56}
+                  margin={{ top: 0, right: 22, bottom: 4, left: chartMargin.left }}
+                  bands={4}
+                  valueFormatter={(v) => `${(v * 100).toFixed(2)}%`}
+                />
+              </g>
+              <text x={chartMargin.left} y={88} className="chart-axis-title">
+                30-day rolling volatility
+              </text>
+              <g transform="translate(0, 92)">
+                <HorizonChart
+                  rows={horizonRows.vol30d}
+                  xScale={xScale}
+                  width={chartWidth}
+                  height={48}
+                  margin={{ top: 0, right: 22, bottom: 4, left: chartMargin.left }}
+                  bands={4}
+                  centerOnZero={false}
+                  valueFormatter={(v) => `${(v * 100).toFixed(2)}%`}
+                />
+              </g>
+            </svg>
+            <div className="chart-caption-row">
+              <p className="chart-caption">
+                Mirror-folded horizon graph · Western convention (green = up).
+              </p>
+              <p className="chart-caption">
+                Each band ≈ 25% of |max|; darker band = more extreme.
+              </p>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section className="placeholder-section">
         <h3 className="placeholder-title">BTC Long-Term Timeline</h3>
         {isLoading ? (
@@ -393,8 +478,8 @@ export function MacroView() {
             >
               <defs>
                 <linearGradient id="timelineAreaFill" x1="0%" x2="0%" y1="0%" y2="100%">
-                  <stop offset="0%" stopColor="rgba(64, 123, 255, 0.28)" />
-                  <stop offset="100%" stopColor="rgba(64, 123, 255, 0.02)" />
+                  <stop offset="0%" stopColor="rgba(247, 147, 26, 0.22)" />
+                  <stop offset="100%" stopColor="rgba(247, 147, 26, 0.02)" />
                 </linearGradient>
               </defs>
 
@@ -470,19 +555,20 @@ export function MacroView() {
                 const markerSize = eventSizeScale
                   ? eventSizeScale(eventRow.newsCount)
                   : 6;
+                const d = markerSize + (isSelected ? 2 : 0);
 
                 return (
                   <g
                     key={`event-${eventRow.date}`}
                     transform={`translate(${markerX}, ${markerY})`}
-                    className="event-marker"
+                    className={
+                      isSelected ? 'event-marker event-marker-active' : 'event-marker'
+                    }
                     onClick={() => setSelectedDate(eventRow.date)}
                   >
-                    <circle
-                      r={isSelected ? markerSize + 2 : markerSize}
-                      fill={isSelected ? '#d9485f' : '#f08c00'}
-                      stroke="#ffffff"
-                      strokeWidth={isSelected ? 2 : 1.4}
+                    <path
+                      d={`M 0,${-d} L ${d},0 L 0,${d} L ${-d},0 Z`}
+                      className="event-marker-shape"
                     />
                     <title>
                       {`${eventRow.date} | ${eventRow.newsCount} headlines`}
@@ -491,17 +577,55 @@ export function MacroView() {
                 );
               })}
 
+              {/* Annotation overlay: leader lines + labels for KEY_EVENTS in domain */}
+              {(() => {
+                const [domainStart, domainEnd] = xScale.domain();
+                const visible = KEY_EVENTS
+                  .map((evt) => ({ ...evt, parsedDate: new Date(`${evt.date}T00:00:00`) }))
+                  .filter((evt) => evt.parsedDate >= domainStart && evt.parsedDate <= domainEnd);
+                return (
+                  <g className="annotations" pointerEvents="none">
+                    {visible.map((evt, i) => {
+                      const ax = xScale(evt.parsedDate);
+                      const labelY = chartMargin.top + 4 + (i % 2) * 12;
+                      const anchorY = chartMargin.top + 26;
+                      return (
+                        <g key={`annot-${evt.date}`}>
+                          <line
+                            x1={ax}
+                            x2={ax}
+                            y1={labelY + 4}
+                            y2={anchorY}
+                            className="event-annotation-leader"
+                          />
+                          <text
+                            x={ax}
+                            y={labelY}
+                            textAnchor="middle"
+                            className="event-annotation-label"
+                          >
+                            {evt.label}
+                          </text>
+                        </g>
+                      );
+                    })}
+                  </g>
+                );
+              })()}
+
               {timelineRows.map((row) => {
                 const isSelected = selectedDate === row.date;
+                const isDense = timelineRows.length > 120;
+                if (isDense && !isSelected) return null;
                 return (
                   <circle
                     key={row.date}
                     cx={xScale(row.parsedDate)}
                     cy={yScale(row.closeValue)}
-                    r={isSelected ? 5.8 : 3.2}
-                    fill={isSelected ? '#d9485f' : '#407bff'}
-                    stroke="#ffffff"
-                    strokeWidth={isSelected ? 2 : 1}
+                    r={isSelected ? 5.8 : 2.6}
+                    fill={isSelected ? 'var(--accent-btc)' : 'var(--accent-btc)'}
+                    stroke={isSelected ? '#ffffff' : 'rgba(11,15,23,0.7)'}
+                    strokeWidth={isSelected ? 2 : 0.8}
                     className="timeline-point"
                     onClick={() => setSelectedDate(row.date)}
                   >
@@ -547,13 +671,32 @@ export function MacroView() {
         ) : orderedHeatmapMonths.length > 0 ? (
           <div className="heatmap-shell">
             <div className="heatmap-legend">
-              <span className="heatmap-legend-title">Event intensity</span>
+              <span className="heatmap-legend-title">Daily return</span>
               <span className="heatmap-legend-item">
-                <span className="heatmap-cell-event heatmap-cell-event-medium" />
-                1-9 headlines
+                −5%
+                <span className="heatmap-legend-ramp" aria-hidden="true">
+                  <span style={{ background: '#a50026' }} />
+                  <span style={{ background: '#d73027' }} />
+                  <span style={{ background: '#fdae61' }} />
+                  <span style={{ background: '#f5f5f5' }} />
+                  <span style={{ background: '#a6d96a' }} />
+                  <span style={{ background: '#66bd63' }} />
+                  <span style={{ background: '#1a9850' }} />
+                </span>
+                +5%
+              </span>
+              <span className="heatmap-legend-title" style={{ marginLeft: 12 }}>
+                Event intensity
               </span>
               <span className="heatmap-legend-item">
-                <span className="heatmap-cell-event heatmap-cell-event-strong" />
+                <span className="heatmap-cell-event" style={{ position: 'static' }} />
+                1–9 headlines
+              </span>
+              <span className="heatmap-legend-item">
+                <span
+                  className="heatmap-cell-event heatmap-cell-event-strong"
+                  style={{ position: 'static' }}
+                />
                 10+ headlines
               </span>
             </div>
@@ -613,8 +756,7 @@ export function MacroView() {
           Available external asset tickers: {tickerList.length > 0 ? tickerList.join(', ') : 'None'}
         </p>
         <p className="state-label">Event overlay rows: {overview.gdelt_daily_signals.length}</p>
-        <p className="state-label">Shared state: {selectedDateLabel}</p>
-        {errorMessage ? <p className="state-label">Load status: {errorMessage}</p> : null}
+        {errorMessage ? <p className="state-label error-label">Load status: {errorMessage}</p> : null}
       </div>
 
       <div className="summary-box">
@@ -642,7 +784,9 @@ export function MacroView() {
           </div>
         ) : (
           <p className="state-label">
-            No event-overlay rows are available for the current window yet.
+            {isHistoricalGdeltWindow
+              ? 'GDELT coverage in this snapshot is limited to the recent window, so historical event overlays are not shown here. Switch to the Iran Tension window to see live headlines.'
+              : 'No event-overlay rows are available for the current window yet.'}
           </p>
         )}
       </div>

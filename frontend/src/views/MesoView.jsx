@@ -4,6 +4,11 @@ import * as d3 from 'd3';
 import { fetchMeso } from '../api/meso.js';
 import { useAppStore } from '../store/useAppStore.js';
 import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
+import { ParallelCoordsChart } from '../components/ParallelCoordsChart.jsx';
+import { SplomChart } from '../components/SplomChart.jsx';
+import { CorrelationMatrix } from '../components/CorrelationMatrix.jsx';
+import { ClusterSummaryTable } from '../components/ClusterSummaryTable.jsx';
+import { PinInsightButton } from '../components/PinInsightButton.jsx';
 
 const FEATURE_COLUMNS = [
   'daily_return',
@@ -149,15 +154,6 @@ export function MesoView() {
     ),
   ].sort((left, right) => Number(left) - Number(right));
 
-  const timeRangeLabel = selectedTimeRange
-    ? `${selectedTimeRange.start ?? 'unknown'} to ${selectedTimeRange.end ?? 'unknown'}`
-    : 'No time range selected';
-  const clusterLabel =
-    selectedCluster === null || selectedCluster === undefined
-      ? 'No cluster selected'
-      : semanticLabelForCluster(selectedCluster);
-  const selectedDateLabel = selectedDate ?? 'No date selected yet';
-
   const chartWidth = 920;
   const chartHeight = 300;
   const chartMargin = { top: 20, right: 22, bottom: 36, left: 40 };
@@ -167,6 +163,9 @@ export function MesoView() {
   let yScale = null;
   let xTicks = [];
   let yTicks = [];
+
+  let densityPaths = [];
+  let clusterHulls = [];
 
   if (hasEmbeddingData) {
     xScale = d3
@@ -183,12 +182,60 @@ export function MesoView() {
 
     xTicks = xScale.ticks(5);
     yTicks = yScale.ticks(4);
+
+    // Density splat — single-color underlay highlighting the overall point cloud.
+    const points = visibleEmbeddingRows.map((row) => [xScale(row.xValue), yScale(row.yValue)]);
+    if (points.length > 8) {
+      const density = d3
+        .contourDensity()
+        .x((p) => p[0])
+        .y((p) => p[1])
+        .size([chartWidth, chartHeight])
+        .bandwidth(18)
+        .thresholds(6)(points);
+      densityPaths = density.map((c) => d3.geoPath()(c));
+    }
+
+    // Convex hulls per cluster.
+    const byCluster = new Map();
+    for (const row of visibleEmbeddingRows) {
+      const key = String(row.clusterValue);
+      if (!byCluster.has(key)) byCluster.set(key, []);
+      byCluster.get(key).push([xScale(row.xValue), yScale(row.yValue)]);
+    }
+    clusterHulls = Array.from(byCluster.entries())
+      .map(([clusterId, pts]) => {
+        if (pts.length < 3) return null;
+        const hull = d3.polygonHull(pts);
+        if (!hull) return null;
+        const centroid = d3.polygonCentroid(hull);
+        return {
+          clusterId,
+          path: `M${hull.map((p) => p.join(',')).join('L')}Z`,
+          centroid,
+        };
+      })
+      .filter(Boolean);
   }
+
+  // ColorBrewer Set2 — BTC orange (#f7931a) deliberately excluded so the BTC
+  // price line stays unique. Eight colors cover up to 8 clusters.
+  const [hoveredClusterId, setHoveredClusterId] = useState(null);
+  const [mesoSecondaryView, setMesoSecondaryView] = useState('parallel');
 
   const clusterColorScale = d3
     .scaleOrdinal()
     .domain(uniqueClusterIds.map(String))
-    .range(['#407bff', '#f08c00', '#2f9e44', '#8a5cf6', '#d9485f']);
+    .range([
+      '#66c2a5',
+      '#8da0cb',
+      '#e78ac3',
+      '#a6d854',
+      '#ffd92f',
+      '#e5c494',
+      '#b3b3b3',
+      '#fc8d62',
+    ]);
 
   const clusterProfiles = uniqueClusterIds
     .map((clusterId) => {
@@ -216,63 +263,19 @@ export function MesoView() {
     })
     .filter(Boolean);
 
-  const profileWidth = 920;
-  const profileHeight = 280;
-  const profileMargin = { top: 20, right: 28, bottom: 48, left: 28 };
   const hasProfileData = clusterProfiles.length > 0;
-
-  let featureScale = null;
-  let verticalScales = {};
-  let profileLines = [];
-
-  if (hasProfileData) {
-    featureScale = d3
-      .scalePoint()
-      .domain(FEATURE_COLUMNS)
-      .range([profileMargin.left, profileWidth - profileMargin.right]);
-
-    verticalScales = Object.fromEntries(
-      FEATURE_COLUMNS.map((feature) => {
-        const featureValues = clusterProfiles
-          .map((profile) => profile.values[feature])
-          .filter((value) => value !== null && value !== undefined);
-
-        const [minValue, maxValue] = d3.extent(featureValues);
-        const domainMin = minValue ?? 0;
-        const domainMax = maxValue ?? 1;
-        const adjustedDomain =
-          domainMin === domainMax ? [domainMin - 1, domainMax + 1] : [domainMin, domainMax];
-
-        return [
-          feature,
-          d3
-            .scaleLinear()
-            .domain(adjustedDomain)
-            .range([profileHeight - profileMargin.bottom, profileMargin.top]),
-        ];
-      }),
-    );
-
-    const lineBuilder = d3
-      .line()
-      .x(([feature]) => featureScale(feature))
-      .y(([feature, value]) => verticalScales[feature](value))
-      .curve(d3.curveMonotoneX);
-
-    profileLines = clusterProfiles.map((profile) => ({
-      clusterId: profile.clusterId,
-      path:
-        lineBuilder(
-          FEATURE_COLUMNS.map((feature) => [feature, profile.values[feature]]),
-        ) ?? '',
-    }));
-  }
+  // Note: inline PC scales/lineBuilder removed in P4 — handled inside
+  // <ParallelCoordsChart /> now. Legacy variables (profileWidth/profileHeight/
+  // profileMargin/featureScale/verticalScales/profileLines) deleted with them.
 
   return (
     <section className="view-card">
-      <header className="view-header">
-        <p className="view-kicker">View 2</p>
-        <h2 className="view-title">Meso Pattern View</h2>
+      <header className="view-header view-header-with-pin">
+        <div>
+          <p className="view-kicker">View 2</p>
+          <h2 className="view-title">Meso Pattern View</h2>
+        </div>
+        <PinInsightButton view="meso" />
       </header>
 
       <div className="control-group">
@@ -300,6 +303,11 @@ export function MesoView() {
               }
               onClick={() => setSelectedCluster(clusterId)}
             >
+              <span
+                className="cluster-swatch"
+                style={{ backgroundColor: clusterColorScale(String(clusterId)) }}
+                aria-hidden="true"
+              />
               {semanticLabelForCluster(clusterId)}
             </button>
           ))}
@@ -307,7 +315,7 @@ export function MesoView() {
       </div>
 
       <section className="placeholder-section">
-        <h3 className="placeholder-title">Meso Pattern View</h3>
+        <h3 className="placeholder-title">Embedding Scatterplot</h3>
         {isLoading ? (
           <div className="placeholder-box">
             <span className="placeholder-label">Loading embedding data...</span>
@@ -344,6 +352,63 @@ export function MesoView() {
                 </g>
               ))}
 
+              {/* Density splat underlay (single-hue, low opacity, BTC orange tint) */}
+              <g className="density-splat" pointerEvents="none">
+                {densityPaths.map((d, i) => (
+                  <path
+                    key={`den-${i}`}
+                    d={d}
+                    fill="#f7931a"
+                    opacity={0.04 + i * 0.025}
+                  />
+                ))}
+              </g>
+
+              {/* Cluster hulls (GMap-style regions) */}
+              <g className="cluster-hulls">
+                {clusterHulls.map((hull) => {
+                  const isActive =
+                    selectedCluster !== null &&
+                    selectedCluster !== undefined &&
+                    String(selectedCluster) === hull.clusterId;
+                  const isHovered = hoveredClusterId === hull.clusterId;
+                  const fade =
+                    selectedCluster !== null &&
+                    selectedCluster !== undefined &&
+                    !isActive
+                      ? 0.05
+                      : isHovered
+                        ? 0.2
+                        : 0.12;
+                  return (
+                    <g
+                      key={`hull-${hull.clusterId}`}
+                      onMouseEnter={() => setHoveredClusterId(hull.clusterId)}
+                      onMouseLeave={() => setHoveredClusterId(null)}
+                    >
+                      <path
+                        d={hull.path}
+                        fill={clusterColorScale(hull.clusterId)}
+                        fillOpacity={fade}
+                        stroke={clusterColorScale(hull.clusterId)}
+                        strokeOpacity={isActive ? 0.85 : 0.45}
+                        strokeWidth={isActive ? 1.5 : 1}
+                        strokeDasharray="4 3"
+                      />
+                      <text
+                        x={hull.centroid[0]}
+                        y={hull.centroid[1]}
+                        textAnchor="middle"
+                        className="event-annotation-label"
+                        pointerEvents="none"
+                      >
+                        {semanticLabelForCluster(hull.clusterId)}
+                      </text>
+                    </g>
+                  );
+                })}
+              </g>
+
               {visibleEmbeddingRows.map((row) => {
                 const isSelectedCluster =
                   selectedCluster !== null &&
@@ -359,13 +424,18 @@ export function MesoView() {
                     cy={yScale(row.yValue)}
                     r={radius}
                     fill={clusterColorScale(String(row.clusterValue))}
-                    stroke={isSelectedDate ? '#162033' : '#ffffff'}
-                    strokeWidth={isSelectedDate ? 2.2 : 1.2}
-                    opacity={
-                      selectedCluster === null || selectedCluster === undefined || isSelectedCluster
-                        ? 0.9
-                        : 0.28
-                    }
+                    stroke={isSelectedDate ? '#ffffff' : 'rgba(11,15,23,0.6)'}
+                    strokeWidth={isSelectedDate ? 2.2 : 0.8}
+                    opacity={(() => {
+                      const isHovered = hoveredClusterId === String(row.clusterValue);
+                      if (selectedCluster !== null && selectedCluster !== undefined) {
+                        return isSelectedCluster ? 0.95 : 0.18;
+                      }
+                      if (hoveredClusterId !== null) {
+                        return isHovered ? 0.95 : 0.2;
+                      }
+                      return 0.9;
+                    })()}
                     className="scatter-point"
                     onClick={() => {
                       setSelectedCluster(row.clusterValue);
@@ -380,7 +450,7 @@ export function MesoView() {
                 x={(chartMargin.left + (chartWidth - chartMargin.right)) / 2}
                 y={chartHeight - 8}
                 textAnchor="middle"
-                fill="#6f8099"
+                className="chart-axis-label"
                 fontSize="11"
               >
                 ← Market State Similarity Space (UMAP) →
@@ -403,78 +473,94 @@ export function MesoView() {
         )}
       </section>
 
+      {hasProfileData ? (
+        <section className="placeholder-section">
+          <h3 className="placeholder-title">Regime Summary</h3>
+          <div className="meso-summary-grid">
+            <ClusterSummaryTable
+              clusterProfiles={clusterProfiles}
+              parsedFeatureRows={parsedFeatureRows}
+              clusterColorScale={clusterColorScale}
+              semanticLabelForCluster={semanticLabelForCluster}
+              selectedCluster={selectedCluster}
+              setSelectedCluster={setSelectedCluster}
+            />
+            <CorrelationMatrix />
+          </div>
+          <div className="chart-caption-row">
+            <p className="chart-caption">
+              Equity curve = cumulative (1 + daily return) restricted to days in that regime.
+            </p>
+            <p className="chart-caption">
+              Correlation uses Pearson on daily returns over the selected window.
+            </p>
+          </div>
+        </section>
+      ) : null}
+
       <section className="placeholder-section">
-        <h3 className="placeholder-title">Meso Feature Explanation</h3>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginBottom: 10,
+          }}
+        >
+          <h3 className="placeholder-title" style={{ margin: 0 }}>
+            Meso Feature Explanation
+          </h3>
+          <div className="tab-row">
+            <button
+              type="button"
+              className={
+                mesoSecondaryView === 'parallel'
+                  ? 'tab-button tab-button-active'
+                  : 'tab-button'
+              }
+              onClick={() => setMesoSecondaryView('parallel')}
+            >
+              Parallel Coords
+            </button>
+            <button
+              type="button"
+              className={
+                mesoSecondaryView === 'splom'
+                  ? 'tab-button tab-button-active'
+                  : 'tab-button'
+              }
+              onClick={() => setMesoSecondaryView('splom')}
+            >
+              SPLOM (top-4)
+            </button>
+          </div>
+        </div>
+
         {isLoading ? (
           <div className="placeholder-box placeholder-box-small">
             <span className="placeholder-label">Loading feature explanation data...</span>
           </div>
         ) : hasProfileData ? (
           <div className="chart-shell">
-            <svg
-              viewBox={`0 0 ${profileWidth} ${profileHeight}`}
-              className="timeline-chart"
-              role="img"
-              aria-label="Parallel coordinates plot"
-            >
-              {FEATURE_COLUMNS.map((feature) => (
-                <g key={feature}>
-                  <line
-                    x1={featureScale(feature)}
-                    x2={featureScale(feature)}
-                    y1={profileMargin.top}
-                    y2={profileHeight - profileMargin.bottom}
-                    className="chart-gridline chart-gridline-vertical"
-                  />
-                  <text
-                    x={featureScale(feature)}
-                    y={profileHeight - 16}
-                    textAnchor="middle"
-                    className="chart-axis-label"
-                  >
-                    {feature.replaceAll('_', ' ')}
-                  </text>
-                </g>
-              ))}
-
-              {profileLines.map((profile) => {
-                const isSelected =
-                  selectedCluster !== null &&
-                  selectedCluster !== undefined &&
-                  Number(selectedCluster) === Number(profile.clusterId);
-
-                return (
-                  <path
-                    key={profile.clusterId}
-                    d={profile.path}
-                    fill="none"
-                    stroke={
-                      selectedCluster === null || selectedCluster === undefined || isSelected
-                        ? clusterColorScale(String(profile.clusterId))
-                        : '#cccccc'
-                    }
-                    strokeWidth={isSelected ? 3.8 : 2}
-                    opacity={
-                      selectedCluster === null || selectedCluster === undefined || isSelected
-                        ? 0.9
-                        : 0.22
-                    }
-                    className="profile-line"
-                  />
-                );
-              })}
-            </svg>
-
-            <div className="chart-caption-row">
-              <p className="chart-caption">
-                Cluster profiles: {clusterProfiles.length}
-              </p>
-              <p className="chart-caption">
-                {selectedCluster === null || selectedCluster === undefined
-                  ? 'Showing all cluster-average feature profiles'
-                  : `Highlighting feature profile for ${semanticLabelForCluster(selectedCluster)}`}
-              </p>
-            </div>
+            {mesoSecondaryView === 'parallel' ? (
+              <ParallelCoordsChart
+                features={FEATURE_COLUMNS}
+                dailyRows={parsedFeatureRows}
+                clusterProfiles={clusterProfiles}
+                clusterColorScale={clusterColorScale}
+                selectedCluster={selectedCluster}
+                semanticLabelForCluster={semanticLabelForCluster}
+              />
+            ) : (
+              <SplomChart
+                dailyRows={parsedFeatureRows}
+                clusterColorScale={clusterColorScale}
+                selectedCluster={selectedCluster}
+                selectedDate={selectedDate}
+                setSelectedDate={setSelectedDate}
+                setSelectedCluster={setSelectedCluster}
+              />
+            )}
           </div>
         ) : (
           <div className="placeholder-box placeholder-box-small">
@@ -493,10 +579,7 @@ export function MesoView() {
             ? uniqueClusterIds.map((clusterId) => semanticLabelForCluster(clusterId)).join(', ')
             : 'None'}
         </p>
-        <p className="state-label">Shared state: {timeRangeLabel}</p>
-        <p className="state-label">Shared state: {clusterLabel}</p>
-        <p className="state-label">Shared state: {selectedDateLabel}</p>
-        {errorMessage ? <p className="state-label">Load status: {errorMessage}</p> : null}
+        {errorMessage ? <p className="state-label error-label">Load status: {errorMessage}</p> : null}
       </div>
     </section>
   );

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import * as echarts from 'echarts';
+import { HeadlineWordCloud } from '../components/HeadlineWordCloud.jsx';
+import { ThemeRiverMini } from '../components/ThemeRiverMini.jsx';
+import { PinInsightButton } from '../components/PinInsightButton.jsx';
 import { fetchDayDetail } from '../api/dayDetail.js';
 import { useAppStore } from '../store/useAppStore.js';
 import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
@@ -104,39 +106,37 @@ export function MicroView() {
   };
 
   const priceSeries = useMemo(() => {
+    const buildRow = (timestamp, row) => {
+      const closeValue = Number(row.close);
+      if (!timestamp || Number.isNaN(closeValue)) return null;
+      const openRaw = Number(row.open);
+      const highRaw = Number(row.high);
+      const lowRaw = Number(row.low);
+      const volumeValue = Number(row.volume ?? 0);
+      const open = Number.isNaN(openRaw) ? closeValue : openRaw;
+      const high = Number.isNaN(highRaw) ? Math.max(open, closeValue) : highRaw;
+      const low = Number.isNaN(lowRaw) ? Math.min(open, closeValue) : lowRaw;
+      return {
+        timestamp,
+        price: closeValue,
+        open,
+        high,
+        low,
+        close: closeValue,
+        volume: Number.isNaN(volumeValue) ? 0 : volumeValue,
+        hasOhlc: !Number.isNaN(openRaw) && !Number.isNaN(highRaw) && !Number.isNaN(lowRaw),
+      };
+    };
+
     const intraday = (dayDetail.btc_intraday ?? [])
-      .map((row) => {
-        const hourKey = toUtcHourKey(row.timestamp);
-        const closeValue = Number(row.close);
-        const volumeValue = Number(row.volume ?? 0);
-        if (!hourKey || Number.isNaN(closeValue)) {
-          return null;
-        }
-        return {
-          timestamp: hourKey,
-          price: closeValue,
-          volume: Number.isNaN(volumeValue) ? 0 : volumeValue,
-        };
-      })
+      .map((row) => buildRow(toUtcHourKey(row.timestamp), row))
       .filter(Boolean);
     if (intraday.length > 1) {
       return { mode: 'intraday', rows: intraday };
     }
 
     const windowRows = (dayDetail.btc_window ?? [])
-      .map((row) => {
-        const dayKey = row.date ? `${row.date}T00:00:00.000Z` : null;
-        const closeValue = Number(row.close);
-        const volumeValue = Number(row.volume ?? 0);
-        if (!dayKey || Number.isNaN(closeValue)) {
-          return null;
-        }
-        return {
-          timestamp: dayKey,
-          price: closeValue,
-          volume: Number.isNaN(volumeValue) ? 0 : volumeValue,
-        };
-      })
+      .map((row) => buildRow(row.date ? `${row.date}T00:00:00.000Z` : null, row))
       .filter(Boolean);
     return { mode: 'daily_window', rows: windowRows };
   }, [dayDetail.btc_intraday, dayDetail.btc_window]);
@@ -295,11 +295,30 @@ export function MicroView() {
     if (!chartRef.current || !hasDetailChart) {
       return undefined;
     }
-    const chart = echarts.init(chartRef.current, null, { renderer: 'canvas' });
-    const btcSeriesData = sharedTimeline.map((timestamp) => {
+    let chart = null;
+    let resizeHandler = null;
+    let cancelled = false;
+
+    const candleData = sharedTimeline.map((timestamp) => {
       const point = pricePointByTimestamp.get(timestamp);
-      return point ? point.price : null;
+      if (!point) return [null, null, null, null];
+      // ECharts candlestick expects [open, close, low, high]
+      return [point.open, point.close, point.low, point.high];
     });
+    const lineCloseData = sharedTimeline.map((timestamp) => {
+      const point = pricePointByTimestamp.get(timestamp);
+      return point ? point.close : null;
+    });
+    const volumeData = sharedTimeline.map((timestamp) => {
+      const point = pricePointByTimestamp.get(timestamp);
+      if (!point) return { value: 0, color: '#6b7890' };
+      const isUp = point.close >= point.open;
+      return {
+        value: point.volume,
+        itemStyle: { color: isUp ? '#2ca02c' : '#d62728', opacity: 0.75 },
+      };
+    });
+    const hasOhlc = priceSeries.rows.some((r) => r.hasOhlc);
     const gdeltSeriesData = sharedTimeline.map((timestamp) => {
       const point = gdeltPointByTimestamp.get(timestamp);
       return {
@@ -307,8 +326,10 @@ export function MicroView() {
         average_tone: point?.average_tone ?? null,
       };
     });
-    chart.setOption({
+    const chartOption = {
       animation: false,
+      backgroundColor: 'transparent',
+      textStyle: { color: '#aab6cc' },
       tooltip: {
         trigger: 'axis',
         axisPointer: { type: 'cross' },
@@ -317,7 +338,11 @@ export function MicroView() {
           const btc = rows.find((item) => item.seriesName === 'BTC Price');
           const gdelt = rows.find((item) => item.seriesName === 'GDELT News Volume');
           const timestamp = btc?.axisValueLabel ?? gdelt?.axisValueLabel ?? rows?.[0]?.axisValueLabel ?? 'N/A';
-          const btcPrice = btc?.data;
+          // For candlestick, btc.data = [idx, open, close, low, high] or [O,C,L,H]; for line it's the close.
+          let btcPrice = btc?.data;
+          if (Array.isArray(btcPrice)) {
+            btcPrice = btcPrice.length === 5 ? btcPrice[2] : btcPrice[1];
+          }
           const gdeltNewsCount = gdelt?.data?.value ?? 0;
           const gdeltAvgTone = gdelt?.data?.average_tone;
           const toneLabel =
@@ -334,12 +359,13 @@ export function MicroView() {
       },
       axisPointer: { link: [{ xAxisIndex: 'all' }] },
       dataZoom: [
-        { type: 'inside', xAxisIndex: [0, 1] },
-        { type: 'slider', xAxisIndex: [0, 1], bottom: '2%', height: 18 },
+        { type: 'inside', xAxisIndex: [0, 1, 2] },
+        { type: 'slider', xAxisIndex: [0, 1, 2], bottom: '2%', height: 16 },
       ],
       grid: [
-        { top: '10%', height: '55%', left: '8%', right: '5%' },
-        { top: '70%', height: '20%', left: '8%', right: '5%' },
+        { top: '6%', height: '50%', left: '8%', right: '5%' },
+        { top: '60%', height: '14%', left: '8%', right: '5%' },
+        { top: '78%', height: '14%', left: '8%', right: '5%' },
       ],
       xAxis: [
         {
@@ -353,8 +379,15 @@ export function MicroView() {
           type: 'category',
           gridIndex: 1,
           data: sharedTimeline,
+          axisLabel: { show: false },
+          axisTick: { show: false },
+        },
+        {
+          type: 'category',
+          gridIndex: 2,
+          data: sharedTimeline,
           axisLabel: {
-            color: '#5a6b85',
+            color: '#aab6cc',
             interval: 1,
             formatter: (value, index) => (index % 2 === 0 ? formatHourLabel(value) : ''),
           },
@@ -365,55 +398,90 @@ export function MicroView() {
           type: 'value',
           gridIndex: 0,
           name: 'BTC Price',
-          nameTextStyle: { color: '#5a6b85' },
+          nameTextStyle: { color: '#aab6cc' },
           scale: true,
-          axisLabel: { color: '#5a6b85' },
-          splitLine: { lineStyle: { color: '#e6ecf6' } },
+          axisLabel: { color: '#aab6cc' },
+          splitLine: { lineStyle: { color: '#263247' } },
           min: roundedMinPrice,
           max: roundedMaxPrice,
         },
         {
           type: 'value',
           gridIndex: 1,
-          name: 'GDELT News Volume',
-          nameTextStyle: { color: '#5a6b85' },
+          name: 'Volume',
+          nameTextStyle: { color: '#aab6cc' },
           nameLocation: 'middle',
           nameRotate: 90,
           nameGap: 50,
-          axisLabel: { color: '#5a6b85' },
-          splitLine: { lineStyle: { color: '#edf2f8' } },
+          axisLabel: { color: '#aab6cc' },
+          splitLine: { lineStyle: { color: '#1f2a40' } },
+          minInterval: 1,
+        },
+        {
+          type: 'value',
+          gridIndex: 2,
+          name: 'GDELT News',
+          nameTextStyle: { color: '#aab6cc' },
+          nameLocation: 'middle',
+          nameRotate: 90,
+          nameGap: 50,
+          axisLabel: { color: '#aab6cc' },
+          splitLine: { lineStyle: { color: '#1f2a40' } },
           minInterval: 1,
         },
       ],
       series: [
+        hasOhlc
+          ? {
+              type: 'candlestick',
+              name: 'BTC Price',
+              xAxisIndex: 0,
+              yAxisIndex: 0,
+              data: candleData,
+              itemStyle: {
+                color: '#2ca02c',       // bullish fill
+                color0: '#d62728',      // bearish fill
+                borderColor: '#2ca02c',
+                borderColor0: '#d62728',
+                borderWidth: 1,
+              },
+            }
+          : {
+              type: 'line',
+              name: 'BTC Price',
+              xAxisIndex: 0,
+              yAxisIndex: 0,
+              data: lineCloseData,
+              showSymbol: false,
+              smooth: false,
+              lineStyle: { color: '#f7931a', width: 2 },
+              areaStyle: { color: 'rgba(247, 147, 26, 0.12)' },
+            },
         {
-          type: 'line',
-          name: 'BTC Price',
-          xAxisIndex: 0,
-          yAxisIndex: 0,
-          data: btcSeriesData,
-          showSymbol: false,
-          smooth: false,
-          lineStyle: { color: '#407bff', width: 2 },
-          areaStyle: { color: 'rgba(64, 123, 255, 0.12)' },
+          type: 'bar',
+          name: 'Volume',
+          xAxisIndex: 1,
+          yAxisIndex: 1,
+          barMaxWidth: 14,
+          data: volumeData,
         },
         {
           type: 'bar',
           name: 'GDELT News Volume',
-          xAxisIndex: 1,
-          yAxisIndex: 1,
+          xAxisIndex: 2,
+          yAxisIndex: 2,
           barMaxWidth: 14,
           data: gdeltSeriesData,
           itemStyle: {
             color: (params) => {
               const averageTone = params?.data?.average_tone;
               if (averageTone > -0.8) {
-                return '#2f9e44';
+                return '#2ca02c';
               }
               if (averageTone < -1.1) {
-                return '#d9485f';
+                return '#d62728';
               }
-              return '#ced4da';
+              return '#6b7890';
             },
             opacity: (params) => {
               const averageTone = params?.data?.average_tone;
@@ -425,13 +493,27 @@ export function MicroView() {
           },
         },
       ],
-    });
+    };
 
-    const resizeHandler = () => chart.resize();
-    window.addEventListener('resize', resizeHandler);
+    (async () => {
+      const echarts = await import('echarts');
+      if (cancelled || !chartRef.current) {
+        return;
+      }
+      chart = echarts.init(chartRef.current, null, { renderer: 'canvas' });
+      chart.setOption(chartOption);
+      resizeHandler = () => chart && chart.resize();
+      window.addEventListener('resize', resizeHandler);
+    })();
+
     return () => {
-      window.removeEventListener('resize', resizeHandler);
-      chart.dispose();
+      cancelled = true;
+      if (resizeHandler) {
+        window.removeEventListener('resize', resizeHandler);
+      }
+      if (chart) {
+        chart.dispose();
+      }
     };
   }, [
     gdeltPointByTimestamp,
@@ -482,15 +564,17 @@ export function MicroView() {
 
   return (
     <section className="view-card">
-      <header className="view-header">
-        <p className="view-kicker">View 3</p>
-        <h2 className="view-title">Micro Detail View</h2>
+      <header className="view-header view-header-with-pin">
+        <div>
+          <p className="view-kicker">View 3</p>
+          <h2 className="view-title">Micro Detail View</h2>
+        </div>
+        <PinInsightButton view="micro" />
       </header>
 
       <div className="summary-box">
         <p className="summary-title">Selected day</p>
         <p className="selected-date-label">{selectedDateLabel}</p>
-        <p className="state-label">Shared state: {selectedClusterLabel}</p>
         {!selectedDate ? (
           <p className="state-label">
             Select a date from Macro or Meso to populate the selected-day detail view.
@@ -535,7 +619,7 @@ export function MicroView() {
                   : `Context window: ${dayDetail.context?.window_start} to ${dayDetail.context?.window_end}`}
               </p>
               <p className="chart-caption">
-                Relative Sentiment Thresholds: Green &gt; -0.8 | Red &lt; -1.1 | Grey = Baseline / Missing
+                Candles: green = bullish, red = bearish · Volume colored by direction · GDELT tone: &gt;−0.8 green, &lt;−1.1 red
               </p>
             </div>
           </div>
@@ -712,6 +796,25 @@ export function MicroView() {
                   </span>
                 </div>
               )}
+            </div>
+
+            <div className="context-section">
+              <p className="summary-title">Headline Themes</p>
+              <div className="micro-context-grid">
+                <div>
+                  <p className="chart-caption" style={{ marginTop: 0 }}>
+                    Word cloud · size = frequency · color = mean tone
+                    (green &gt; −0.8, red &lt; −1.6, grey neutral)
+                  </p>
+                  <HeadlineWordCloud events={eventRows} />
+                </div>
+                <div>
+                  <p className="chart-caption" style={{ marginTop: 0 }}>
+                    ThemeRiver · stacked count of themed headlines per UTC hour
+                  </p>
+                  <ThemeRiverMini events={eventRows} />
+                </div>
+              </div>
             </div>
 
             <div className="context-section">

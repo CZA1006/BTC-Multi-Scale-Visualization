@@ -1,118 +1,1188 @@
 {
+  "cache_schema_version": 8,
   "date": "2026-03-09",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
-  "theme_count_crypto": 6,
-  "theme_count_regulation": 1,
-  "theme_count_election": 0,
-  "theme_count_war": 4,
+  "data_quality": "full",
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 34733,
+  "avg_tone": -2.8318295900152597,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 0,
+  "theme_count_election": 2,
+  "theme_count_war": 152,
+  "theme_count_macro": 2,
+  "theme_count_covid": 0,
   "hourly_tones": [
     {
-      "timestamp": "2026-03-09T09:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-09T00:00:00.000Z",
+      "news_count": 1550,
+      "average_tone": -2.8726
     },
     {
-      "timestamp": "2026-03-09T10:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-09T01:00:00.000Z",
+      "news_count": 1211,
+      "average_tone": -2.6075749999999998
     },
     {
-      "timestamp": "2026-03-09T11:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-03-09T02:00:00.000Z",
+      "news_count": 916,
+      "average_tone": -2.722825
     },
     {
-      "timestamp": "2026-03-09T12:00:00",
-      "news_count": 6,
-      "average_tone": null
+      "timestamp": "2026-03-09T03:00:00.000Z",
+      "news_count": 1149,
+      "average_tone": -3.0447
     },
     {
-      "timestamp": "2026-03-09T16:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-09T04:00:00.000Z",
+      "news_count": 1010,
+      "average_tone": -2.634266666666667
     },
     {
-      "timestamp": "2026-03-09T17:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-09T05:00:00.000Z",
+      "news_count": 1674,
+      "average_tone": -2.85385
     },
     {
-      "timestamp": "2026-03-09T18:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-09T06:00:00.000Z",
+      "news_count": 1341,
+      "average_tone": -2.9845
     },
     {
-      "timestamp": "2026-03-09T19:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-09T07:00:00.000Z",
+      "news_count": 2447,
+      "average_tone": -3.059875
+    },
+    {
+      "timestamp": "2026-03-09T08:00:00.000Z",
+      "news_count": 1772,
+      "average_tone": -3.1495749999999996
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00.000Z",
+      "news_count": 1759,
+      "average_tone": -2.984125
+    },
+    {
+      "timestamp": "2026-03-09T10:00:00.000Z",
+      "news_count": 1757,
+      "average_tone": -2.8962333333333334
+    },
+    {
+      "timestamp": "2026-03-09T11:00:00.000Z",
+      "news_count": 1516,
+      "average_tone": -2.838375
+    },
+    {
+      "timestamp": "2026-03-09T12:00:00.000Z",
+      "news_count": 1695,
+      "average_tone": -2.6743
+    },
+    {
+      "timestamp": "2026-03-09T13:00:00.000Z",
+      "news_count": 930,
+      "average_tone": -3.054025
+    },
+    {
+      "timestamp": "2026-03-09T14:00:00.000Z",
+      "news_count": 846,
+      "average_tone": -2.499225
+    },
+    {
+      "timestamp": "2026-03-09T15:00:00.000Z",
+      "news_count": 851,
+      "average_tone": -2.6227
+    },
+    {
+      "timestamp": "2026-03-09T16:00:00.000Z",
+      "news_count": 812,
+      "average_tone": -2.711
+    },
+    {
+      "timestamp": "2026-03-09T17:00:00.000Z",
+      "news_count": 1468,
+      "average_tone": -2.7571333333333334
+    },
+    {
+      "timestamp": "2026-03-09T18:00:00.000Z",
+      "news_count": 1007,
+      "average_tone": -2.6021
+    },
+    {
+      "timestamp": "2026-03-09T19:00:00.000Z",
+      "news_count": 1436,
+      "average_tone": -2.708833333333333
+    },
+    {
+      "timestamp": "2026-03-09T20:00:00.000Z",
+      "news_count": 1707,
+      "average_tone": -2.7508999999999997
+    },
+    {
+      "timestamp": "2026-03-09T21:00:00.000Z",
+      "news_count": 2241,
+      "average_tone": -2.8518
+    },
+    {
+      "timestamp": "2026-03-09T22:00:00.000Z",
+      "news_count": 1575,
+      "average_tone": -2.6713
+    },
+    {
+      "timestamp": "2026-03-09T23:00:00.000Z",
+      "news_count": 2063,
+      "average_tone": -2.827575
     }
   ],
+  "timeline_status": "ok",
+  "volume_status": "ok",
   "top_headlines": [
-    "Coinbase Launches Perpetual Futures Contracts in Europe",
-    "Bitcoin Private Price Up 0 . 5 % Over Last 7 Days ( BTCP )",
-    "Coinbase Just Delivered Fantastic News to Its Customers . But Is It a Buy ?",
-    "Coinbase Just Delivered Fantastic News to Its Customers . But Is It a Buy ?",
-    "Stack BTC Plc - Strategic Investment by Nigel Farage MP"
+    "Bitcoin Is Suddenly Braced For A Surprise Fed Price Shock",
+    "Israel to have say on when to end Iran war : Trump",
+    "特朗普刚暗示有意  结束战争 ， 伊朗新领袖就下令开火|以色列|新总统|哈梅内伊|内塔尼亚胡|唐纳 · 川普",
+    "There was no nuclear threat . US - Israeli war on Iran is blind vengeance",
+    "美以打击伊朗油库 油价牵动欧美  神经 -- 国际 -- 人民网"
   ],
   "articles": [
     {
       "timestamp": "2026-03-09T12:45:00",
-      "source": "cointelegraph.com",
-      "headline": "Coinbase Launches Perpetual Futures Contracts in Europe",
-      "category": "general",
+      "source": "forbes.com",
+      "headline": "Bitcoin Is Suddenly Braced For A Surprise Fed Price Shock",
+      "category": "macro",
       "sentiment": null,
-      "url": "https://cointelegraph.com/news/coinbase-perpetual-futures-contracts-europe-esma"
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/03/09/the-feds-bitcoin-price-nightmare-is-suddenly-coming-true/"
     },
     {
-      "timestamp": "2026-03-09T16:45:00",
-      "source": "tickerreport.com",
-      "headline": "Bitcoin Private Price Up 0 . 5 % Over Last 7 Days ( BTCP )",
-      "category": "crypto",
+      "timestamp": "2026-03-09T16:30:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Israel to have say on when to end Iran war : Trump",
+      "category": "war",
       "sentiment": null,
-      "url": "https://www.tickerreport.com/banking-finance/13372785/bitcoin-private-price-up-0-5-over-last-7-days-btcp.html"
+      "raw_v2_tone": null,
+      "url": "https://www.washingtonexaminer.com/news/white-house/4485013/trump-decision-end-iran-war-mutual-netanyahu/"
     },
     {
-      "timestamp": "2026-03-09T12:45:00",
-      "source": "fool.com",
-      "headline": "Coinbase Just Delivered Fantastic News to Its Customers . But Is It a Buy ?",
+      "timestamp": "2026-03-09T14:15:00",
+      "source": "163.com",
+      "headline": "特朗普刚暗示有意  结束战争 ， 伊朗新领袖就下令开火|以色列|新总统|哈梅内伊|内塔尼亚胡|唐纳 · 川普",
       "category": "general",
       "sentiment": null,
-      "url": "https://www.fool.com/investing/2026/03/09/coinbase-just-delivered-fantastic-news-to-its-cust/?source=iedfolrf0000001"
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNJMR7JO055040N3.html"
     },
     {
       "timestamp": "2026-03-09T09:00:00",
-      "source": "fool.com",
-      "headline": "Coinbase Just Delivered Fantastic News to Its Customers . But Is It a Buy ?",
+      "source": "middleeasteye.net",
+      "headline": "There was no nuclear threat . US - Israeli war on Iran is blind vengeance",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.middleeasteye.net/opinion/there-was-no-nuclear-threat-us-israeli-war-iran-blind-vengeance"
+    },
+    {
+      "timestamp": "2026-03-09T04:15:00",
+      "source": "world.people.com.cn",
+      "headline": "美以打击伊朗油库 油价牵动欧美  神经 -- 国际 -- 人民网",
       "category": "general",
       "sentiment": null,
-      "url": "https://www.fool.com/investing/2026/03/09/coinbase-just-delivered-fantastic-news-to-its-cust/"
+      "raw_v2_tone": null,
+      "url": "https://world.people.com.cn/n1/2026/0309/c1002-40677864.html"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "cbg.cn",
+      "headline": "美以打击伊朗油库 油价牵动欧美  神经  -- 视界网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cbg.cn/a/5848/20260309/c65942b024204b91a868acff56322aec.html"
+    },
+    {
+      "timestamp": "2026-03-09T06:45:00",
+      "source": "military.china.com",
+      "headline": "刺杀哈梅内伊 、 导弹对轰 、 战火蔓延 …… 8分钟复盘美以伊一周战事 中东局势急剧恶化 _ 军事频道 _ 中华网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://military.china.com/news/13004177/20260309/49305741.html"
+    },
+    {
+      "timestamp": "2026-03-09T02:00:00",
+      "source": "moneycontrol.com",
+      "headline": "Tehran indicates Khamenei son will be named supreme leader as Israel expands Iran strikes",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.moneycontrol.com/world/tehran-indicates-khamenei-s-son-will-be-named-supreme-leader-as-israel-expands-iran-strikes-article-13854265.html"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "thedailybeast.com",
+      "headline": "Donald Trump Blindsided by What Happening in His Own War",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thedailybeast.com/donald-trump-blindsided-by-whats-happening-in-his-own-war/"
+    },
+    {
+      "timestamp": "2026-03-09T13:45:00",
+      "source": "clevelandjewishnews.com",
+      "headline": "Trump : End of Iran war to be decided jointly with Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.clevelandjewishnews.com/jns/trump-end-of-iran-war-to-be-decided-jointly-with-netanyahu/article_d01b977e-6f6c-5b0d-bb37-8f4f4dc47be8.html"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "hinews.cn",
+      "headline": "特朗普称将在  适当时机  作出结束对伊朗军事行动决定 - 南海网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hinews.cn/page?n=2805336&m=1&s=1044"
+    },
+    {
+      "timestamp": "2026-03-09T05:15:00",
+      "source": "hinews.cn",
+      "headline": "特朗普称将在  适当时机  作出结束对伊朗军事行动决定 - 南海网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hinews.cn:443/page?n=2805336&m=1&s=1044"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "news18.com",
+      "headline": "US - Israel - Iran War Rages On : 10 Key Questions Answered On Day 10",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.news18.com/explainers/us-israel-iran-war-rages-on-10-key-questions-answered-on-day-10-ws-l-9950295.html"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "yahoo.com",
+      "headline": "Fact Check : Hillary Clinton didnt supply Iran with uranium . Here how she impacted nuclear deal",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yahoo.com/news/articles/fact-check-hillary-clinton-didnt-230000091.html"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "news.ycwb.com",
+      "headline": "哈梅内伊次子当选伊朗最高领袖 ， 特朗普威胁其  难长久  ， 以色列扬言要  追杀",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.ycwb.com/ikimvkhtkb/content_53999305.htm"
+    }
+  ],
+  "all_articles": [
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Is Suddenly Braced For A Surprise Fed Price Shock",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/03/09/the-feds-bitcoin-price-nightmare-is-suddenly-coming-true/"
+    },
+    {
+      "timestamp": "2026-03-09T16:30:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Israel to have say on when to end Iran war : Trump",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.washingtonexaminer.com/news/white-house/4485013/trump-decision-end-iran-war-mutual-netanyahu/"
+    },
+    {
+      "timestamp": "2026-03-09T14:15:00",
+      "source": "163.com",
+      "headline": "特朗普刚暗示有意  结束战争 ， 伊朗新领袖就下令开火|以色列|新总统|哈梅内伊|内塔尼亚胡|唐纳 · 川普",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNJMR7JO055040N3.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00",
+      "source": "middleeasteye.net",
+      "headline": "There was no nuclear threat . US - Israeli war on Iran is blind vengeance",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.middleeasteye.net/opinion/there-was-no-nuclear-threat-us-israeli-war-iran-blind-vengeance"
+    },
+    {
+      "timestamp": "2026-03-09T04:15:00",
+      "source": "world.people.com.cn",
+      "headline": "美以打击伊朗油库 油价牵动欧美  神经 -- 国际 -- 人民网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://world.people.com.cn/n1/2026/0309/c1002-40677864.html"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "cbg.cn",
+      "headline": "美以打击伊朗油库 油价牵动欧美  神经  -- 视界网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cbg.cn/a/5848/20260309/c65942b024204b91a868acff56322aec.html"
+    },
+    {
+      "timestamp": "2026-03-09T06:45:00",
+      "source": "military.china.com",
+      "headline": "刺杀哈梅内伊 、 导弹对轰 、 战火蔓延 …… 8分钟复盘美以伊一周战事 中东局势急剧恶化 _ 军事频道 _ 中华网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://military.china.com/news/13004177/20260309/49305741.html"
+    },
+    {
+      "timestamp": "2026-03-09T02:00:00",
+      "source": "moneycontrol.com",
+      "headline": "Tehran indicates Khamenei son will be named supreme leader as Israel expands Iran strikes",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.moneycontrol.com/world/tehran-indicates-khamenei-s-son-will-be-named-supreme-leader-as-israel-expands-iran-strikes-article-13854265.html"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "thedailybeast.com",
+      "headline": "Donald Trump Blindsided by What Happening in His Own War",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thedailybeast.com/donald-trump-blindsided-by-whats-happening-in-his-own-war/"
+    },
+    {
+      "timestamp": "2026-03-09T13:45:00",
+      "source": "clevelandjewishnews.com",
+      "headline": "Trump : End of Iran war to be decided jointly with Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.clevelandjewishnews.com/jns/trump-end-of-iran-war-to-be-decided-jointly-with-netanyahu/article_d01b977e-6f6c-5b0d-bb37-8f4f4dc47be8.html"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "hinews.cn",
+      "headline": "特朗普称将在  适当时机  作出结束对伊朗军事行动决定 - 南海网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hinews.cn/page?n=2805336&m=1&s=1044"
+    },
+    {
+      "timestamp": "2026-03-09T05:15:00",
+      "source": "hinews.cn",
+      "headline": "特朗普称将在  适当时机  作出结束对伊朗军事行动决定 - 南海网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hinews.cn:443/page?n=2805336&m=1&s=1044"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "news18.com",
+      "headline": "US - Israel - Iran War Rages On : 10 Key Questions Answered On Day 10",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.news18.com/explainers/us-israel-iran-war-rages-on-10-key-questions-answered-on-day-10-ws-l-9950295.html"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "yahoo.com",
+      "headline": "Fact Check : Hillary Clinton didnt supply Iran with uranium . Here how she impacted nuclear deal",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yahoo.com/news/articles/fact-check-hillary-clinton-didnt-230000091.html"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "news.ycwb.com",
+      "headline": "哈梅内伊次子当选伊朗最高领袖 ， 特朗普威胁其  难长久  ， 以色列扬言要  追杀",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.ycwb.com/ikimvkhtkb/content_53999305.htm"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "hinews.cn",
+      "headline": "哈梅内伊次子当选伊朗最高领袖 特朗普威胁其  难长久  以色列扬言要  追杀 - 南海网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hinews.cn/page?n=2805248&m=1&s=1044"
+    },
+    {
+      "timestamp": "2026-03-09T22:00:00",
+      "source": "clevelandjewishnews.com",
+      "headline": "Trump : End of Iran war to be decided jointly with Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.clevelandjewishnews.com/jns/trump-end-of-iran-war-to-be-decided-jointly-with-netanyahu/article_d799310e-ae8b-4c91-b168-08e28dea5c40.html"
+    },
+    {
+      "timestamp": "2026-03-09T07:15:00",
+      "source": "arabi21.com",
+      "headline": "حرب ترامب على إيران بلا استراتيجية !",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://arabi21.com/story/1743363/%D8%AD%D8%B1%D8%A8-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%B9%D9%84%D9%89-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A8%D9%84%D8%A7-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9"
+    },
+    {
+      "timestamp": "2026-03-09T04:15:00",
+      "source": "news.hangzhou.com.cn",
+      "headline": "哈梅内伊次子当选伊朗最高领袖 特朗普威胁其  难长久  以色列扬言要  追杀",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.hangzhou.com.cn/gjxw/content/2026-03/09/content_9188124.htm"
+    },
+    {
+      "timestamp": "2026-03-09T06:00:00",
+      "source": "aboluowang.com",
+      "headline": "突发 ! 川普未开一枪 ！ 伊朗突然认输 ？",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.aboluowang.com/2026/0228/2353770.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00",
+      "source": "indianexpress.com",
+      "headline": "He Wont Last Long : Trump Issues Ultimatum to Iran New Leader Mojtaba Khamenei as Global Oil Prices Explode",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://indianexpress.com/article/world/israel-iran-war-day-10-updates-mojtaba-khamenei-trump-israel-middle-east-10572728/"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "news.cnnb.com.cn",
+      "headline": "哈梅内伊次子当选伊朗最高领袖 特朗普威胁其  难长久 - 新闻中心 - 中国宁波网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://news.cnnb.com.cn/system/2026/03/09/030752012.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T06:30:00",
+      "source": "163.com",
+      "headline": "哈梅内伊次子当选伊朗最高领袖 特朗普威胁其  难长久  以色列扬言要  追杀  |德黑兰",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNIF6J33051497H3.html"
+    },
+    {
+      "timestamp": "2026-03-09T11:45:00",
+      "source": "tvn24.pl",
+      "headline": "Donald Trump o zakończeniu wojny z Iranem : zdecydujemy razem z Benjaminem Netanjahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://tvn24.pl/polska/donald-trump-o-zakonczeniu-wojny-z-iranem-zdecydujemy-razem-z-benjaminem-netanjahu-st8937834"
+    },
+    {
+      "timestamp": "2026-03-09T09:15:00",
+      "source": "koreatimes.com",
+      "headline": "10일째 이어진 화염 … 테헤란 원유시설 타격  불바다",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.koreatimes.com/article/20260308/1604207"
+    },
+    {
+      "timestamp": "2026-03-09T21:00:00",
+      "source": "english.aawsat.com",
+      "headline": "Trump Says He Is  Nowhere Near  Deciding to Send Troops to Iran to Secure Nuclear Stockpile",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://english.aawsat.com/world/5249304-trump-says-he-%E2%80%98nowhere-near%E2%80%99-deciding-send-troops-iran-secure-nuclear-stockpile"
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00",
+      "source": "independent.ie",
+      "headline": "Ayatollah Ali Khamenei hardline son Mojtaba confirmed as Iran new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.independent.ie/world-news/middle-east/ayatollah-ali-khameneis-hardline-son-mojtaba-confirmed-as-irans-new-supreme-leader/a2054131055.html"
+    },
+    {
+      "timestamp": "2026-03-09T17:45:00",
+      "source": "moneycontrol.com",
+      "headline": "Trump tells NY Post he is  nowhere near  deciding to send troops to Iran to secure nuclear stockpile",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.moneycontrol.com/world/trump-tells-ny-post-he-is-nowhere-near-deciding-to-send-troops-to-iran-to-secure-nuclear-stockpile-article-13855222.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00",
+      "source": "24tv.ua",
+      "headline": "Виткофф и Кушнер едут в Израиль - США недовольны действиями союзника",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://24tv.ua/geopolitics/ru/vitkoff-i-kushner-edut-v-izrail-ssha-nedovolny-dejstvijami-sojuznika_n3024299"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "hkwb.net",
+      "headline": "美以打击伊朗油库 油价牵动欧美  神经 _ 海口网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.hkwb.net/news/content/2026-03/09/content_4355175.htm"
+    },
+    {
+      "timestamp": "2026-03-09T18:15:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto News : Pepeto Announces AI Market Protection by Binance Expert as Bitcoin Price Prediction Target $250K",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/10/tmt-newswire/globenewswire/crypto-news-pepeto-announces-ai-market-protection-by-binance-expert-as-bitcoin-price-prediction-target-250k/2296314"
+    },
+    {
+      "timestamp": "2026-03-09T22:45:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto News : Pepeto Presale Accelerates as Bitcoin Price Prediction Targets $100 , 000 After Trump Says War Could End Soon",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/10/tmt-newswire/globenewswire/crypto-news-pepeto-presale-accelerates-as-bitcoin-price-prediction-targets-100000-after-trump-says-war-could-end-soon/2296449"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "news1.co.il",
+      "headline": "News1 | נשיא אירן מברך על מינוי מוג  תבא חמינאי למנהיג העליון",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.news1.co.il/Archive/001-D-515661-00.html"
+    },
+    {
+      "timestamp": "2026-03-09T11:30:00",
+      "source": "yahoo.com",
+      "headline": "We are going make a tonne of money : US Senator Graham on US war on Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yahoo.com/news/articles/going-tonne-money-us-senator-093054435.html"
+    },
+    {
+      "timestamp": "2026-03-09T05:15:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "When will the Iran war end ? Trump hints at  mutual  decision with Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://timesofindia.indiatimes.com/world/middle-east/when-will-the-iran-war-end-trump-hints-at-mutual-decision-with-netanyahu/articleshow/129309840.cms"
+    },
+    {
+      "timestamp": "2026-03-09T06:30:00",
+      "source": "stabroeknews.com",
+      "headline": "Tehran indicates Khamenei son will be named supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.stabroeknews.com/2026/03/09/news/world/tehran-indicates-khameneis-son-will-be-named-supreme-leader/"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "breakingnews.ie",
+      "headline": "Senior Iranian cleric suggests Khamenei hardline son to be supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.breakingnews.ie/world/senior-iranian-cleric-suggests-khameneis-hardline-son-to-be-supreme-leader-1872647.html"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "news.ifeng.com",
+      "headline": "油价飙升至多年来最高点 ， 美参院民主党领袖敦促特朗普动用战略石油储备 _ 凤凰网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.ifeng.com/c/8rLcmhzeqZm"
+    },
+    {
+      "timestamp": "2026-03-09T06:45:00",
+      "source": "prabhasakshi.com",
+      "headline": "us israel iran war day 10 updates leakage of toxic fumes poses cancer risk in tehran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.prabhasakshi.com/international/us-israel-iran-war-day-10-updates-leakage-of-toxic-fumes-poses-cancer-risk-in-tehran"
+    },
+    {
+      "timestamp": "2026-03-09T07:45:00",
+      "source": "zerohedge.com",
+      "headline": "Oil surges as key producers cut output ; G7 to discuss release of emergency reserves - Newsquawk EU Market Open",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.zerohedge.com/markets/oil-surges-key-producers-cut-output-g7-discuss-release-emergency-reserves-newsquawk-eu"
+    },
+    {
+      "timestamp": "2026-03-09T05:15:00",
+      "source": "aljazeera.net",
+      "headline": "ترمب : قرار إنهاء الحرب مشترك مع نتنياهو ولست راضيا عن اختيار نجل خامنئي",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.aljazeera.net/news/2026/3/9/%D8%AA%D8%B1%D9%85%D8%A8-%D9%82%D8%B1%D8%A7%D8%B1-%D8%A5%D9%86%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D9%85%D8%B4%D8%AA%D8%B1%D9%83-%D9%85%D8%B9-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88"
+    },
+    {
+      "timestamp": "2026-03-09T02:00:00",
+      "source": "moneycontrol.com",
+      "headline": "Iran War News Live : Mojtaba Khamenei is Iran new supreme leader ; oil prices breach $100 - mark ; fresh missile alerts across Gulf",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.moneycontrol.com/world/us-iran-israel-war-news-live-updates-9th-march-2026-liveblog-13854361.html"
     },
     {
       "timestamp": "2026-03-09T12:45:00",
-      "source": "finanznachrichten.de",
-      "headline": "Stack BTC Plc - Strategic Investment by Nigel Farage MP",
-      "category": "crypto",
-      "sentiment": null,
-      "url": "https://www.finanznachrichten.de/nachrichten-2026-03/67886097-stack-btc-plc-strategic-investment-by-nigel-farage-mp-008.htm"
-    },
-    {
-      "timestamp": "2026-03-09T18:45:00",
-      "source": "openpr.com",
-      "headline": "Best Crypto to Buy Now : Strategy Holds 720 , 737 BTC at $7B",
-      "category": "crypto",
-      "sentiment": null,
-      "url": "https://www.openpr.com/news/4417771/best-crypto-to-buy-now-strategy-holds-720-737-btc-at-7b"
-    },
-    {
-      "timestamp": "2026-03-09T10:45:00",
-      "source": "dailymail.co.uk",
-      "headline": "Nigel Farage takes £215 , 000 stake in crypto firm run by Tory former Chancellor Kwasi Kwarteng",
+      "source": "dailysabah.com",
+      "headline": "US envoys call off Israel trip as strikes trigger Iran retaliation",
       "category": "war",
       "sentiment": null,
-      "url": "https://www.dailymail.co.uk/money/markets/article-15628171/Nigel-Farage-takes-215-000-stake-crypto-firm-run-Tory-former-Chancellor-Kwasi-Kwarteng.html"
+      "raw_v2_tone": null,
+      "url": "https://www.dailysabah.com/world/mid-east/us-envoys-call-off-israel-trip-as-strikes-trigger-iran-retaliation"
+    },
+    {
+      "timestamp": "2026-03-09T06:45:00",
+      "source": "trend.az",
+      "headline": "Iran set to hold oath - taking ceremony for new Supreme Leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.trend.az/iran/4162593.html"
+    },
+    {
+      "timestamp": "2026-03-10T00:00:00",
+      "source": "baijiahao.baidu.com",
+      "headline": "凌晨 ， 重大利好突袭 ！ 直线猛拉 ！ 特朗普 ： 对伊朗战事已基本结束",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://baijiahao.baidu.com/s?id=1859228822784611410"
+    },
+    {
+      "timestamp": "2026-03-09T00:00:00",
+      "source": "baijiahao.baidu.com",
+      "headline": "美国为何只剩下以色列这个  战争搭子 ？ ｜京酿馆",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://baijiahao.baidu.com/s?id=1858813932493021521"
+    },
+    {
+      "timestamp": "2026-03-09T00:45:00",
+      "source": "tribune.com.pk",
+      "headline": "Iran and the US",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://tribune.com.pk/story/2596504/iran-and-the-us"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "pnn.ps",
+      "headline": "ترامب : وقف الحرب على إيران بالتشاور مع نتنياهو",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://pnn.ps/news/720530"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "fnnews.com",
+      "headline": "국제 유가 , 약 4년 만에 장중 110달러까지 돌파 ( 종합 )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fnnews.com/news/202603091001524811"
+    },
+    {
+      "timestamp": "2026-03-09T08:15:00",
+      "source": "jamaica-gleaner.com",
+      "headline": "Iran hit a desalination plant , stoking fears of attacks on civilian sites",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://jamaica-gleaner.com/article/world-news/20260309/iran-hit-desalination-plant-stoking-fears-attacks-civilian-sites"
+    },
+    {
+      "timestamp": "2026-03-09T00:00:00",
+      "source": "salisburyjournal.co.uk",
+      "headline": "Iranian  strike on desalination plant  stokes fears of attacks on civilian sites",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.salisburyjournal.co.uk/news/national/25917956.iranian-strike-desalination-plant-stokes-fears-attacks-civilian-sites/"
+    },
+    {
+      "timestamp": "2026-03-09T22:15:00",
+      "source": "export.shobserver.com",
+      "headline": "一次越界打击揭开美以裂痕 ， 盟友的  伊朗算盘  为何打不到一起 ？",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://export.shobserver.com/baijiahao/html/1078802.html"
+    },
+    {
+      "timestamp": "2026-03-09T03:30:00",
+      "source": "vz.ru",
+      "headline": "Трамп раскрыл детали принятия решения об окончании войны в Иране :: Новости дня / ВЗГЛЯД",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://vz.ru/news/2026/3/9/1400712.html"
+    },
+    {
+      "timestamp": "2026-03-09T02:45:00",
+      "source": "indianexpress.com",
+      "headline": "War has reached India shores , strategic silence isnt an option",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://indianexpress.com/article/opinion/columns/war-has-reached-indias-shores-strategic-silence-isnt-an-option-10572044/"
+    },
+    {
+      "timestamp": "2026-03-09T11:00:00",
+      "source": "news.ifeng.com",
+      "headline": "冲突第10天 ， 油价突破100美元 ， 特朗普释放停火信号 ， 撑不住了 ？",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.ifeng.com/c/8rMBySZLQ7H"
+    },
+    {
+      "timestamp": "2026-03-09T07:15:00",
+      "source": "zazoom.it",
+      "headline": "Iran la diretta Drone iraniano sul Bahrein Trump | Fine della guerra concordata con Israele",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.zazoom.it/2026-03-09/iran-la-diretta-drone-iraniano-sul-bahrein-trump-fine-della-guerra-concordata-con-israele/18794696/"
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00",
+      "source": "163.com",
+      "headline": "伟伟道来 | 伊朗降温美以升级 ， 战争进入第二阶段",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNJF9SN105199DKK.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "news18.com",
+      "headline": "When Will US - Israel - Iran War End ? Who Will Decide : Donald Trump or Benjamin Netanyahu ? Explained",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.news18.com/explainers/when-will-west-asia-war-end-who-will-decide-what-trump-says-his-statements-so-far-explained-ws-l-9949866.html"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "bhaskar.com",
+      "headline": "Iran FM Claims US Senator , Israeli PM Conspired to Incite Trump to War",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bhaskar.com/g/international/news/iran-foreign-minister-claims-us-senator-israeli-pm-conspired-trump-war-137387217.html"
+    },
+    {
+      "timestamp": "2026-03-09T22:45:00",
+      "source": "kcbd.com",
+      "headline": "Trump provides update on Iran , higher gas prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kcbd.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T23:30:00",
+      "source": "wsaz.com",
+      "headline": "Oil prices and markets seesaw over uncertainty of war as Iran names new leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wsaz.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T05:15:00",
+      "source": "military.china.com",
+      "headline": "美国考虑派特种部队进入伊朗 ， 目标 ： 抢走伊朗浓缩铀 _ 军事频道 _ 中华网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://military.china.com/important/64/20260309/49303915.html"
+    },
+    {
+      "timestamp": "2026-03-09T20:15:00",
+      "source": "wjla.com",
+      "headline": "Iran installs another hardline leader , signaling long fight amid US - Israeli pressure",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://wjla.com/news/nation-world/iran-installs-another-hardline-leader-signaling-long-fight-amid-us-israeli-pressure-mojtaba-khamenei-middle-east-war-nuclear-weapons-ballistic-missiles"
+    },
+    {
+      "timestamp": "2026-03-09T18:00:00",
+      "source": "bgonair.bg",
+      "headline": "Тръмп не е доволен от новия лидер на Иран - какво да очаква Моджтаба Хаменей ?",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bgonair.bg/a/4-world/412299-tramp-ne-e-dovolen-ot-noviya-lider-na-iran-kakvo-da-ochakva-modzhtaba-hameney"
+    },
+    {
+      "timestamp": "2026-03-09T11:00:00",
+      "source": "gold.cnfol.com",
+      "headline": "国际油价第四次突破100美元大关 中东冲突重塑全球能源格局 _ 国际原油市场 _ 黄金网 _ 中金在线",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://gold.cnfol.com/guojiyuanyousc/20260309/32053981.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T09:15:00",
+      "source": "futures.cnfol.com",
+      "headline": "国际油价第四次突破100美元大关 中东冲突重塑全球能源格局 _ 期市动态 _ 期货 _ 中金在线",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://futures.cnfol.com/qishidongtai/20260309/32053828.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T00:15:00",
+      "source": "ideastream.org",
+      "headline": "Iran names Mojtaba Khamenei as its new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ideastream.org/2026-03-08/iran-names-mojtaba-khamenei-as-its-new-supreme-leader"
+    },
+    {
+      "timestamp": "2026-03-09T07:45:00",
+      "source": "orientaldaily.com.my",
+      "headline": "伊朗油库遇袭致油价飙涨 美国被曝对以色列不满 | 国际",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.orientaldaily.com.my/news/international/2026/03/09/802759"
+    },
+    {
+      "timestamp": "2026-03-09T07:00:00",
+      "source": "zamnpress.com",
+      "headline": "ترامب : قرار إنهاء الحرب مع إيران سيكون بالتنسيق مع نتنياهو",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://zamnpress.com/news/140580"
+    },
+    {
+      "timestamp": "2026-03-09T07:45:00",
+      "source": "zaobao.com.sg",
+      "headline": "美国被曝对以袭击伊朗燃料存储设施不满",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.zaobao.com.sg/news/world/story20260309-8702378"
+    },
+    {
+      "timestamp": "2026-03-09T07:15:00",
+      "source": "it.euronews.com",
+      "headline": "Live - Guerra in Medio Oriente : nuovi attacchi Israele in Libano , Mojtaba Khamenei nuova guida suprema Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://it.euronews.com/2026/03/09/guerra-in-medio-oriente-nuovi-attacchi-israele-in-libano-mojtaba-khamenei-nuova-guida-supr"
+    },
+    {
+      "timestamp": "2026-03-09T10:00:00",
+      "source": "baijiahao.baidu.com",
+      "headline": "美媒爆料 ： 美以出现重大分歧",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://baijiahao.baidu.com/s?id=1859174049828146917"
+    },
+    {
+      "timestamp": "2026-03-09T11:00:00",
+      "source": "yahoo.com",
+      "headline": "Trump Blindsided by What Happening in His Own War",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yahoo.com/news/articles/trump-blindsided-happening-own-war-024502200.html"
+    },
+    {
+      "timestamp": "2026-03-09T05:00:00",
+      "source": "163.com",
+      "headline": "还是哈梅内伊|德黑兰|新总统|内塔尼亚胡|唐纳德 · 特朗普 _ 网易订阅",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNIS01JA0550A0OW.html"
+    },
+    {
+      "timestamp": "2026-03-09T14:15:00",
+      "source": "express.co.uk",
+      "headline": "World War 3 fears explode as Putin lavishes praise on Iran new Ayatollah",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.express.co.uk/news/world/2180022/Vladimir-Putin-Donald-Trump-Iran-Middle-East-war"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "english.aawsat.com",
+      "headline": "The War to Change Features",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://english.aawsat.com/opinion/5249080-war-change-features"
+    },
+    {
+      "timestamp": "2026-03-09T02:45:00",
+      "source": "baijiahao.baidu.com",
+      "headline": "以防长称 ： 打死伊朗最高领袖军事秘书 ！ 战事速览→",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://baijiahao.baidu.com/s?id=1859137030220620584"
+    },
+    {
+      "timestamp": "2026-03-09T08:30:00",
+      "source": "news.qq.com",
+      "headline": "美国被曝对以袭击伊朗燃料存储设施不满 _ 腾讯新闻",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.qq.com/rain/a/20260309A04X3B00"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "edaily.co.kr",
+      "headline": "유가 급등 트리거  작동 … 비트코인 충격파는 [ 크립토 나우 ]",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03306246645381680&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-03-09T05:15:00",
+      "source": "dawn.com",
+      "headline": "Trump reckless gambit - Newspaper",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dawn.com/news/1980020"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "dawn.com",
+      "headline": "Trump reckless gambit - Newspaper",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dawn.com/news/1980020/trumps-reckless-gambit"
+    },
+    {
+      "timestamp": "2026-03-09T13:15:00",
+      "source": "panarmenian.net",
+      "headline": "В Тегеране пройдет церемония присяги нового верховного лидера Ирана",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.panarmenian.net/rus/news/331396/"
+    },
+    {
+      "timestamp": "2026-03-09T11:45:00",
+      "source": "export.shobserver.com",
+      "headline": "国际油价穿透100美元 ， 特朗普 ： 非常小的代价 ！ 我外交部 ： 能源安全至关重要",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://export.shobserver.com/baijiahao/html/1078865.html"
+    },
+    {
+      "timestamp": "2026-03-09T19:30:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin price news : BTC rises 5 % from worst overnight levels , re - taking $69 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/09/bitcoin-rises-to-usd69-000-stocks-reverse-big-early-losses-as-crude-oil-sinks-back-below-usd100"
+    },
+    {
+      "timestamp": "2026-03-09T04:15:00",
+      "source": "tpr.org",
+      "headline": "Iran names Mojtaba Khamenei as its new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tpr.org/news/2026-03-08/iran-names-mojtaba-khamenei-as-its-new-supreme-leader"
+    },
+    {
+      "timestamp": "2026-03-09T06:00:00",
+      "source": "kvia.com",
+      "headline": "What we know on the 10th day of the US and Israel war with Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://kvia.com/news/us-world/cnn-world/2026/03/08/what-we-know-on-the-tenth-day-of-the-us-and-israels-war-with-iran/"
+    },
+    {
+      "timestamp": "2026-03-09T09:45:00",
+      "source": "news.china.com.cn",
+      "headline": "伊朗选出新任最高领袖 伊各方表态 ： 战斗到底 特朗普 ： 将  适时  结束军事行动 _ 中国网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://news.china.com.cn/2026-03/09/content_118372787.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T07:30:00",
+      "source": "indiatvnews.com",
+      "headline": "When will Israel - Iran war end ? Trump says decision will be mutual with Israeli PM Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.indiatvnews.com/news/world/when-will-israel-iran-war-end-trump-says-decision-will-be-mutual-with-israeli-pm-netanyahu-2026-03-09-1033117"
+    },
+    {
+      "timestamp": "2026-03-09T06:00:00",
+      "source": "news.cn",
+      "headline": "伊朗选出新任最高领袖 伊各方表态 ： 战斗到底 特朗普 ： 将  适时  结束军事行动 - 新华网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.news.cn/world/20260309/21be941e49884795a80dd33f3e3d71a3/c.html"
+    },
+    {
+      "timestamp": "2026-03-09T21:30:00",
+      "source": "albawaba.com",
+      "headline": "Trump says Iran war  nearly complete",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.albawaba.com/news/trump-says-iran-war-%E2%80%98nearly-complete%E2%80%99-1623516"
+    },
+    {
+      "timestamp": "2026-03-09T22:15:00",
+      "source": "news.webindia123.com",
+      "headline": "Havent made any decision : Trump on idea of sending US troops into Iran to secure uranium",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.webindia123.com/news/Articles/World/20260310/4425438.html"
+    },
+    {
+      "timestamp": "2026-03-09T23:00:00",
+      "source": "the-star.co.ke",
+      "headline": "EXPLAINER : As younger Khamenei ascends in Iran , what lies ahead ?",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.the-star.co.ke/news/world/2026-03-09-explainer-what-lie-ahead-as-younger-khamenei-ascends"
+    },
+    {
+      "timestamp": "2026-03-09T21:00:00",
+      "source": "aninews.in",
+      "headline": "Havent made any decision : Trump on idea of sending US troops into Iran to secure uranium",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://aninews.in/news/world/us/havent-made-any-decision-trump-on-idea-of-sending-us-troops-into-iran-to-secure-uranium20260310015508/"
+    },
+    {
+      "timestamp": "2026-03-09T22:00:00",
+      "source": "wilsontimes.com",
+      "headline": "5 things Americans need to know about the US and Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wilsontimes.com/columns/5-things-americans-need-to-know-about-the-us-and-iran-08efad15"
+    },
+    {
+      "timestamp": "2026-03-09T13:00:00",
+      "source": "segye.com",
+      "headline": "유류고 공습 이어  생명선  파괴 … 중동 곳곳선  지상전  [ 美 · 이란 전쟁 ]",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://segye.com:443/newsView/20260309516543"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "dostor.org",
+      "headline": "عضو بالحزب الديموقراطي لـ  الدستور : إسرائيل المحرك الاستراتيجي للتصعيد مع ايران",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dostor.org/5449133"
+    },
+    {
+      "timestamp": "2026-03-09T20:45:00",
+      "source": "emaratalyoum.com",
+      "headline": "ترامب ينفي سعي واشنطن للاستيلاء على مخزون إيران النووي",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.emaratalyoum.com/politics/news/2026-03-09-1.2023530"
+    },
+    {
+      "timestamp": "2026-03-09T16:45:00",
+      "source": "fairobserver.com",
+      "headline": "FO Exclusive : A New Iran – US Conflict Looms Large",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fairobserver.com/world-news/middle-east-news/fo-exclusive-a-new-iran-us-conflict-looms-large/"
+    },
+    {
+      "timestamp": "2026-03-09T23:30:00",
+      "source": "vesti.ru",
+      "headline": "Трамп заявил , что Израиль не смог бы защититься от Ирана без вмешательства США",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vesti.ru/ns/tramp-zayavil-chto-izrail-ne-smog-by-zashchititsya-ot-irana-bez-vmeshatelstva-ssha"
+    },
+    {
+      "timestamp": "2026-03-09T06:30:00",
+      "source": "163.com",
+      "headline": "特朗普称将在  适当时机  作出结束对伊朗军事行动决定|华盛顿|以色列|内塔尼亚胡",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNIV41QT05346RC6.html"
     },
     {
       "timestamp": "2026-03-09T12:45:00",
@@ -120,63 +1190,1349 @@
       "headline": "Nigel Farage invests £215 , 000 in Kwasi Kwarteng bitcoin firm | Nigel Farage",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.theguardian.com/politics/2026/mar/09/nigel-farage-kwasi-kwarteng-bitcoin-reform-uk-crypto-stack-btc"
     },
     {
       "timestamp": "2026-03-09T12:45:00",
-      "source": "wpr.org",
-      "headline": "Wisconsin lawmakers debate crypto  staking  as bankers warn of fraud , consumer risks",
-      "category": "regulation",
-      "sentiment": null,
-      "url": "https://www.wpr.org/news/wisconsin-crypto-staking-securities-sec"
-    },
-    {
-      "timestamp": "2026-03-09T11:30:00",
-      "source": "dailypolitical.com",
-      "headline": "DeFiChain Trading 4 . 2 % Higher Over Last Week ( DFI )",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://www.dailypolitical.com/2026/03/09/defichain-trading-4-2-higher-over-last-week-dfi.html"
-    },
-    {
-      "timestamp": "2026-03-09T17:15:00",
       "source": "cointelegraph.com",
-      "headline": "Strategy Adds 17 , 994 BTC to Push Total Reserves Above 738 , 000",
-      "category": "crypto",
+      "headline": "Crypto ETPs Turn Green Year - To - Date With $619M Inflows",
+      "category": "war",
       "sentiment": null,
-      "url": "https://cointelegraph.com/news/michael-saylor-strategy-buys-17994-bitcoin-below-cost-basis"
-    },
-    {
-      "timestamp": "2026-03-09T12:00:00",
-      "source": "actionforex.com",
-      "headline": "Crypto Market Has Temporarily Found Balance",
-      "category": "crypto",
-      "sentiment": null,
-      "url": "https://www.actionforex.com/contributors/fundamental-analysis/632582-crypto-market-has-temporarily-found-balance/"
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/crypto-etp-619-million-inflows-resilience-iran-crisis"
     },
     {
       "timestamp": "2026-03-09T19:30:00",
-      "source": "bitcoinmagazine.com",
-      "headline": "Coinbase Launches Regulated Bitcoin And Crypto Futures Across Europe",
-      "category": "crypto",
-      "sentiment": null,
-      "url": "https://bitcoinmagazine.com/news/coinbase-regulated-bitcoin-futures"
-    },
-    {
-      "timestamp": "2026-03-09T11:30:00",
-      "source": "edp24.co.uk",
-      "headline": "Nigel Farage takes stake in Bitcoin company led by Kwasi Kwarteng",
+      "source": "coindesk.com",
+      "headline": "Bitcoin ( BTC ) could be the big winner if the U . S .- Iran conflict drags on for several months",
       "category": "war",
       "sentiment": null,
-      "url": "https://www.edp24.co.uk/news/national/25918716.nigel-farage-takes-stake-bitcoin-company-led-kwasi-kwarteng/"
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/09/bitcoin-could-be-the-big-winner-if-the-u-s-iran-conflict-drags-on-for-months"
+    },
+    {
+      "timestamp": "2026-03-09T16:30:00",
+      "source": "gold.cnfol.com",
+      "headline": "王奶贵 ： 战争进入第二阶段 ， 谁先TACO ？_ 名家点金 _ 黄金网 _ 中金在线",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://gold.cnfol.com/mingjiadianjin/20260309/32055026.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T08:15:00",
+      "source": "ichannela.com",
+      "headline": "트럼프  중동 전쟁 종료 시점 , 이스라엘과 공동으로 결정 … 최종 결정은 내가",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ichannela.com/news/detail/000000517999.do"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "koreatimes.com",
+      "headline": "이란 최고지도자에  美반대  하메네이 차남 모즈타바 … 강경노선 예고",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.koreatimes.com/article/20260308/1604156"
+    },
+    {
+      "timestamp": "2026-03-09T00:00:00",
+      "source": "biz.heraldcorp.com",
+      "headline": "美 · 이스라엘 , 특수부대 투입해 이란 고농축우라늄 회수 검토",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://biz.heraldcorp.com/article/10689580"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "zerohedge.com",
+      "headline": "Oil surges as Gulf producers cut output ; Yields climb sparking hawkish re - pricing - Newsquawk US Market Open",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.zerohedge.com/markets/oil-surges-gulf-producers-cut-output-yields-climb-sparking-hawkish-re-pricing-newsquawk-us"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "morningstar.com",
+      "headline": "U . S . stock futures sink after oil surges above $100 a barrel as Iran conflict rages",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.morningstar.com/news/marketwatch/20260308154/us-stock-futures-sink-after-oil-surges-above-100-a-barrel-as-iran-conflict-rages"
+    },
+    {
+      "timestamp": "2026-03-09T21:00:00",
+      "source": "wsvn.com",
+      "headline": "Oil prices jump and markets slide as Iran names new supreme leader and digs in - WSVN 7News | Miami News , Weather , Sports",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://wsvn.com/news/us-world/oil-prices-jump-and-markets-slide-as-iran-names-new-supreme-leader-and-digs-in/"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Oil Cools After Overnight Spike as G7 Eyes Reserve Release",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/oil-pulls-back-g7-emergency-reserve-hyperliquid-volume"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "ktvz.com",
+      "headline": "What we know on the 10th day of the US and Israel war with Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ktvz.com/news/national-world/cnn-world/2026/03/08/what-we-know-on-the-tenth-day-of-the-us-and-israels-war-with-iran/"
+    },
+    {
+      "timestamp": "2026-03-09T10:30:00",
+      "source": "dunya.com",
+      "headline": "Küresel risk dalgası kriptoyu baskılıyor : Bitcoinde sert geri çekilme",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dunya.com/finans/haberler/kuresel-risk-dalgasi-kriptoyu-baskiliyor-bitcoinde-sert-geri-cekilme-haberi-817561"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "fnnews.com",
+      "headline": "이란 최고지도자에  美반대  하메네이 차남 모즈타바 … 강경노선 예고 ( 종합2보 )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fnnews.com/news/202603090918575090"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "sohu.com",
+      "headline": "伟伟道来 | 伊朗降温美以升级 ， 战争进入第二阶段",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sohu.com/a/994258839_118622?edtsign=58F477F84ACF4AB6F233F0B891475FA695E86A8A&edtcode=t2LpbykuINx4I7go63iwYw==&scm=thor.283_14-200000.0.0-0-0-0-0."
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "vestikavkaza.ru",
+      "headline": "Израиль готовился к войне с Ираном без США - СМИ",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://vestikavkaza.ru/news/izrail-gotovilsa-k-vojne-s-iranom-bez-ssa-smi.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "israelnationalnews.com",
+      "headline": "MK Akram Hasson :  Israel a major power , Trump cannot succeed without Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.israelnationalnews.com/news/423615"
+    },
+    {
+      "timestamp": "2026-03-09T00:15:00",
+      "source": "topontiki.gr",
+      "headline": "Ιράν : Νεκρός έβδομος Αμερικανός στρατιώτης , ο Τραμπ θέλει να στείλει ειδικές δυνάμεις για να κατασχέσει εμπλουτισμένο ουράνιο",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.topontiki.gr/2026/03/08/iran-nekros-evdomos-amerikanos-stratiotis-o-trab-theli-na-stili-idikes-dinamis-gia-na-kataschesi-emploutismeno-ouranio/"
+    },
+    {
+      "timestamp": "2026-03-09T07:15:00",
+      "source": "kesq.com",
+      "headline": "What we know on the 10th day of the US and Israel war with Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://kesq.com/news/national-world/cnn-world/2026/03/08/what-we-know-on-the-tenth-day-of-the-us-and-israels-war-with-iran/"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bybit Pushes Ahead With Middle East Growth Plans",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/bybit-expands-middle-east-operations-despite-regional-conflict"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "chinatimes.com",
+      "headline": "《 國際產業 》 油價上漲引爆連鎖反應 金價一度跌破5050美元 - 財經",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.chinatimes.com/realtimenews/20260309001674-260410"
+    },
+    {
+      "timestamp": "2026-03-09T10:45:00",
+      "source": "edition.cnn.com",
+      "headline": "Live updates : Iran war and Trump news ; oil and gas prices soar , attacks in Bahrain",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://edition.cnn.com/world/live-news/iran-war-us-israel-trump-03-09-26?post-id=cmmipe4fo00033b6siqms52lz"
+    },
+    {
+      "timestamp": "2026-03-09T05:00:00",
+      "source": "almasryalyoum.com",
+      "headline": "سماء طهران تتشح بالسواد .. مستودعات نفط تحت القصف",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.almasryalyoum.com/news/details/4217343"
+    },
+    {
+      "timestamp": "2026-03-09T07:15:00",
+      "source": "annabaa.org",
+      "headline": "مُهمَّات عبثية",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://annabaa.org/arabic/views/45484"
+    },
+    {
+      "timestamp": "2026-03-09T20:00:00",
+      "source": "aol.com",
+      "headline": "Trump walks back criticism of Australia as Iranian soccer players take asylum",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.aol.com/articles/trump-walks-back-criticism-australia-183059069.html"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "edaily.co.kr",
+      "headline": "트럼프  이란 전쟁 종료 시점 , 네타냐후와 함께 결정할 것",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03345606645381680&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-03-09T21:00:00",
+      "source": "dailyadvance.com",
+      "headline": "Oil prices jump and markets slide as Iran names new supreme leader and digs in",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailyadvance.com/news/world/oil-prices-jump-and-markets-slide-as-iran-names-new-supreme-leader-and-digs-in/article_373d8bc5-a00c-5dd0-93a9-d3e48e71178b.html"
+    },
+    {
+      "timestamp": "2026-03-09T01:45:00",
+      "source": "staradvertiser.com",
+      "headline": "Iran names Khamenei son Mojtaba as new supreme leader | Honolulu Star - Advertiser",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.staradvertiser.com/2026/03/08/breaking-news/iran-names-khameneis-son-mojtaba-as-new-supreme-leader/"
+    },
+    {
+      "timestamp": "2026-03-09T18:00:00",
+      "source": "fortune.com",
+      "headline": "Current price of Bitcoin for March 9 , 2026",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://fortune.com/article/price-of-bitcoin-03-09-2026/"
+    },
+    {
+      "timestamp": "2026-03-09T18:30:00",
+      "source": "hindi.webdunia.com",
+      "headline": "Iran - US - Israel : डोनाल्ड ट्रंप और नेतन्याहू की बढ़ी टेंशन , मोजतबा खामेनेई को रूस का समर्थन , क्या बोले व्लादिमीर पुतिन",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://hindi.webdunia.com/international-hindi-news/iran-us-israel-conflict-putin-supports-mojtaba-khamenei-russia-backs-iran-trump-netanyahu-tension-126030900073_1.html"
     },
     {
       "timestamp": "2026-03-09T11:00:00",
-      "source": "thetelegraphandargus.co.uk",
-      "headline": "Nigel Farage takes stake in Bitcoin company led by Kwasi Kwarteng",
+      "source": "arn.ps",
+      "headline": "ترامب : وقف الحرب على إيران بالتشاور مع نتنياهو",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://arn.ps/post/301416.html"
+    },
+    {
+      "timestamp": "2026-03-09T21:30:00",
+      "source": "newkerala.com",
+      "headline": "Trump on US Troops in Iran for Uranium :  No Decision",
       "category": "war",
       "sentiment": null,
-      "url": "https://www.thetelegraphandargus.co.uk/news/national/25918716.nigel-farage-takes-stake-bitcoin-company-led-kwasi-kwarteng/"
+      "raw_v2_tone": null,
+      "url": "https://www.newkerala.com/news/a/havent-made-any-decision-trump-idea-sending-us-176.htm"
+    },
+    {
+      "timestamp": "2026-03-09T06:45:00",
+      "source": "kr.xinhuanet.com",
+      "headline": "트럼프  적절한 시점에 전쟁 종식 결정낼 것 ... 이란 , 對이스라엘 미사일 공격 단행 - Xinhua",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://kr.xinhuanet.com/20260309/50857dd83c834148a432f7b6ef041b99/c.html"
+    },
+    {
+      "timestamp": "2026-03-09T23:00:00",
+      "source": "dostor.org",
+      "headline": "عبدالحليم قنديل : ترامب شخصية متقلبة .. ونتنياهو يقود الحرب الحالية بدعم أمريكي",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dostor.org/5450450"
+    },
+    {
+      "timestamp": "2026-03-09T04:15:00",
+      "source": "krdo.com",
+      "headline": "What we know on the 10th day of the US and Israel war with Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://krdo.com/news/2026/03/08/what-we-know-on-the-tenth-day-of-the-us-and-israels-war-with-iran/"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "pnn.ps",
+      "headline": "الصحافة الأميركية كمصدر للمعلومات في إسرائيل : هل ترامب لا يعلم لماذا هاجم إيران ؟",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://pnn.ps/news/720541"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "edaily.co.kr",
+      "headline": "트럼프 , 이란 우라늄 확보 위해 특수부대 투입 검토",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03257046645381680&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-03-09T06:30:00",
+      "source": "vm.ru",
+      "headline": "Axios : Уиткофф и Кушнер проведут переговоры с Нетаньяху в Израиле 10 марта",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://vm.ru/news/1309135-axios-uitkoff-i-kushner-provedut-peregovory-s-netanyahu-v-izraile-10-marta"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "vava8.com",
+      "headline": "油价若再涨 全球经济将衰退 美国  几乎只有一个办法",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vava8.com/index.php?refer=park&app=index&act=view&id=15693"
+    },
+    {
+      "timestamp": "2026-03-09T01:00:00",
+      "source": "fox5atlanta.com",
+      "headline": "7th US service member dies in war with Iran , Pentagon says",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox5atlanta.com/news/7th-us-army-member-dies-war-iran-pentagon-says"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "busan.com",
+      "headline": "국제유가 WTI 배럴당 100달러 돌파 … 중동 산유국 저장공간 부족에 감산",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.busan.com/view/busan/view.php?code=2026030909394812177"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "nypost.com",
+      "headline": "Trump says he and Israel Netanyahu will make  mutual  decision on ending Iran war",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://nypost.com/2026/03/09/us-news/trump-says-he-and-israels-netanyahu-will-make-mutual-decision-on-ending-iran-war/"
+    },
+    {
+      "timestamp": "2026-03-09T02:30:00",
+      "source": "fox29.com",
+      "headline": "7th US service member dies in war with Iran , Pentagon says",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox29.com/news/7th-us-army-member-dies-war-iran-pentagon-says"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "morningstar.com",
+      "headline": "U . S . stock futures sink after oil surges above $100 a barrel as Iran conflict rages",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.morningstar.com/news/marketwatch/20260308158/us-stock-futures-sink-after-oil-surges-above-100-a-barrel-as-iran-conflict-rages"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "morningstar.com",
+      "headline": "U . S . stock futures sink after oil surges above $100 a barrel as Iran conflict rages",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.morningstar.com/news/marketwatch/20260308156/us-stock-futures-sink-after-oil-surges-above-100-a-barrel-as-iran-conflict-rages"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "morningstar.com",
+      "headline": "U . S . stock futures sink after oil surges above $100 a barrel as Iran conflict rages",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.morningstar.com/news/marketwatch/20260308160/us-stock-futures-sink-after-oil-surges-above-100-a-barrel-as-iran-conflict-rages"
+    },
+    {
+      "timestamp": "2026-03-09T11:00:00",
+      "source": "gold.cnfol.com",
+      "headline": "特朗普政府重大突发 ！ 彭博 ： 美国考虑派出地面特种行动部队夺取伊朗的铀 _ 财经要闻 _ 黄金网 _ 中金在线",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://gold.cnfol.com/caijingyaowen/20260309/32054045.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T10:45:00",
+      "source": "newsday.com",
+      "headline": "Iran names former supreme leader son to succeed him as war sends oil prices soaring",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsday.com/news/nation/iran-israel-us-march-9-2026-w58185"
+    },
+    {
+      "timestamp": "2026-03-09T06:30:00",
+      "source": "gulfnews.com",
+      "headline": "US - Israel War on Iran : Key Developments as Conflict Enters Day 10",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://gulfnews.com/world/mena/usisrael-war-on-iran-where-things-stand-after-another-weekend-of-strikes-1.500468095"
+    },
+    {
+      "timestamp": "2026-03-09T10:45:00",
+      "source": "samacharjagat.com",
+      "headline": "Donald Trump has now made a significant statement about ending the war with Iran| international News in Hindi | Iran के साथ जंग समाप्त करने को लेकर अब डोनाल्ड ट्रंप ने बोल दी ये बड़ी बात",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.samacharjagat.com/news/international/donald-trump-has-now-made-a-significant-statement-about-ending-the-war-with-iran-328487"
+    },
+    {
+      "timestamp": "2026-03-09T02:30:00",
+      "source": "lemonde.fr",
+      "headline": "Iran names Khamenei son as new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.lemonde.fr/en/international/article/2026/03/08/iran-names-khamenei-s-son-as-new-supreme-leader_6751224_4.html"
+    },
+    {
+      "timestamp": "2026-03-09T01:45:00",
+      "source": "kmib.co.kr",
+      "headline": "트럼프  이란 새 지도자 우리 승인 받아야  경고에도 … 이란 하메네이 차남 지도자 선출 - 국민일보",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kmib.co.kr/article/view.asp?arcid=0029497677&code=61131111&sid1=int"
+    },
+    {
+      "timestamp": "2026-03-09T01:45:00",
+      "source": "kmib.co.kr",
+      "headline": "트럼프  이란 새 지도자 우리 승인 받아야  경고에도 … 이란 하메네이 차남 지도자 선출 - 국민일보",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kmib.co.kr/article/view.asp?arcid=0029497677&code=61131111&stg=wm_rank"
+    },
+    {
+      "timestamp": "2026-03-09T21:30:00",
+      "source": "actualno.com",
+      "headline": "Тръмп : Войната в Иран е почти приключила , изпреварихме предварителния график",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.actualno.com/america/trymp-vojnata-v-iran-e-pochti-prikluchila-izprevarihme-predvaritelnija-grafik-news_2566012.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:15:00",
+      "source": "panarmenian.net",
+      "headline": "Mojtaba Khamenei chosen as Iran supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.panarmenian.net/eng/news/331382/"
+    },
+    {
+      "timestamp": "2026-03-09T07:15:00",
+      "source": "news.webindia123.com",
+      "headline": "Ill make a decision at the right time : Trump says end of Iran war will be  mutual  with Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.webindia123.com/news/Articles/World/20260309/4425141.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:15:00",
+      "source": "ynetnews.com",
+      "headline": "Why Israel is now striking more targets in Iran than US as the war enters its next ph",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ynetnews.com/article/rkzakjnf11e"
+    },
+    {
+      "timestamp": "2026-03-09T02:30:00",
+      "source": "fox5dc.com",
+      "headline": "7th US service member dies in war with Iran , Pentagon says",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox5dc.com/news/7th-us-army-member-dies-war-iran-pentagon-says"
+    },
+    {
+      "timestamp": "2026-03-09T21:00:00",
+      "source": "baltimoresun.com",
+      "headline": "Iran war biggest unknowns , from Tehran new leader to oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.baltimoresun.com/2026/03/09/iran-war-unknowns/"
+    },
+    {
+      "timestamp": "2026-03-09T20:45:00",
+      "source": "sandiegouniontribune.com",
+      "headline": "Iran war biggest unknowns , from Tehran new leader to oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sandiegouniontribune.com/2026/03/09/iran-war-unknowns/"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "sangbadpratidin.in",
+      "headline": "Khamenei Son Mojtaba Named Iran New Supreme Leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sangbadpratidin.in/world/khameneis-son-mojtaba-named-irans-new-supreme-leader/pid/1140654/"
+    },
+    {
+      "timestamp": "2026-03-09T20:15:00",
+      "source": "yakimaherald.com",
+      "headline": "Oil prices jump and markets slide as Iran names new supreme leader and digs in",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yakimaherald.com/news/nation_and_world/business/oil-prices-jump-and-markets-slide-as-iran-names-new-supreme-leader-and-digs-in/article_6420beaa-5fba-5e0a-9b2a-481a14b23dfa.html"
+    },
+    {
+      "timestamp": "2026-03-09T19:30:00",
+      "source": "koreatimes.co.kr",
+      "headline": "Iran names Khamenei son to succeed him , signaling no letup in war as oil prices surge",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.koreatimes.co.kr/world/20260310/iran-names-khameneis-son-to-succeed-him-signaling-no-letup-in-war-as-oil-prices-surge"
+    },
+    {
+      "timestamp": "2026-03-09T02:00:00",
+      "source": "bworldonline.com",
+      "headline": "Iran names Khamenei hardline son Mojtaba as new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bworldonline.com/world/2026/03/09/734949/iran-names-khameneis-hardline-son-mojtaba-as-new-supreme-leader/"
+    },
+    {
+      "timestamp": "2026-03-09T05:30:00",
+      "source": "aljoumhouria.com",
+      "headline": "الجمهورية | المرحلة الأصعب لم تبدأ بعد",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.aljoumhouria.com/ar/news/800752/%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%A7%D8%B5%D8%B9%D8%A8-%D9%84%D9%85-%D8%AA%D8%A8%D8%AF%D8%A7-%D8%A8%D8%B9%D8%AF"
+    },
+    {
+      "timestamp": "2026-03-09T01:45:00",
+      "source": "yahoo.com",
+      "headline": "For Israel , Iran war culminates battle begun by Hamas October 7 invasion",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yahoo.com/news/articles/israel-iran-war-culminates-battle-115432035.html"
+    },
+    {
+      "timestamp": "2026-03-09T20:15:00",
+      "source": "prospect.org",
+      "headline": "Trump Economy - The American Prospect",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://prospect.org/2026/03/09/trumps-economy-iran-war-unemployment/"
+    },
+    {
+      "timestamp": "2026-03-09T12:00:00",
+      "source": "indiatoday.in",
+      "headline": "US - Israel - Iran War Live : Israel launches fresh strike in Tehran , kills Hezbollah terrorists in Lebanon",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.indiatoday.in/world/story/us-israel-iran-war-updates-middle-east-crises-us-iran-israel-dubai-uae-donald-trump-netanyahu-lebanon-beirut-saudi-arabia-tehran-drones-missles-2879187-2026-03-09"
+    },
+    {
+      "timestamp": "2026-03-09T18:45:00",
+      "source": "columbian.com",
+      "headline": "Iran names Khamenei son to succeed him , signaling no letup in war as oil prices surge",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.columbian.com/news/2026/mar/09/iran-names-khameneis-son-to-succeed-him-signaling-no-letup-in-war-as-oil-prices-surge/"
+    },
+    {
+      "timestamp": "2026-03-09T21:00:00",
+      "source": "frontpagemag.com",
+      "headline": "Medvedev , Carlson , Mamdani : Three Appalled by Operation Epic Fury",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.frontpagemag.com/medvedev-carlson-mamdani-three-appalled-by-operation-epic-fury/"
+    },
+    {
+      "timestamp": "2026-03-09T01:15:00",
+      "source": "attackofthefanboy.com",
+      "headline": "Intelligence agencies confirmed Iran can reach its buried uranium at Isfahan , so Trump is now considering a commando raid to grab it before Iran does",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://attackofthefanboy.com/politics/intelligence-agencies-confirmed-iran-can-reach-its-buried-uranium-at-isfahan-so-trump-is-now-considering-a-commando-raid-to-grab-it-before-iran-does/"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "localnews8.com",
+      "headline": "What we know on the 10th day of the US and Israel war with Iran - LocalNews8 . com",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://localnews8.com/news/national-world/cnn-world/2026/03/08/what-we-know-on-the-tenth-day-of-the-us-and-israels-war-with-iran/"
+    },
+    {
+      "timestamp": "2026-03-09T05:00:00",
+      "source": "businesstoday.in",
+      "headline": "WTF : US dismayed by Israel strikes on 30 Iranian fuel depot , says report",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.businesstoday.in/world/story/wtf-us-dismayed-by-israels-strikes-on-30-iranian-fuel-depot-says-report-519646-2026-03-09"
+    },
+    {
+      "timestamp": "2026-03-09T15:45:00",
+      "source": "citizensvoice.com",
+      "headline": "Iran names Khamenei son to succeed him , signaling no letup in war",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.citizensvoice.com/2026/03/09/us-iran-war-mojtaba-khamenei/"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "thejakartapost.com",
+      "headline": "Iran war sends oil prices soaring on supply fears - Middle East and Africa",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thejakartapost.com/world/2026/03/09/iran-war-sends-oil-price-soaring-on-supply-fears.html"
+    },
+    {
+      "timestamp": "2026-03-09T22:45:00",
+      "source": "dailypress.com",
+      "headline": "Iran war biggest unknowns , from Tehran new leader to oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypress.com/2026/03/09/iran-war-unknowns/"
+    },
+    {
+      "timestamp": "2026-03-09T10:45:00",
+      "source": "globalsecurity.org",
+      "headline": "Israeli Opposition Leader Yair Lapid Tells RFE / RL Iran Oil  Lifeline  Must Be Cut",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/03/iran-260308-rferl02.htm"
+    },
+    {
+      "timestamp": "2026-03-09T22:00:00",
+      "source": "kpbs.org",
+      "headline": "Oil prices jump and markets slide as Iran names new supreme leader and digs in",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kpbs.org/news/politics/2026/03/09/oil-prices-jump-and-markets-slide-as-iran-names-new-supreme-leader-and-digs-in"
+    },
+    {
+      "timestamp": "2026-03-09T02:00:00",
+      "source": "newspim.com",
+      "headline": "하메네이 아들  지도자로 선출한 이란 , 지구전 택했다",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newspim.com/news/view/20260309000254"
+    },
+    {
+      "timestamp": "2026-03-09T19:30:00",
+      "source": "dailylocal.com",
+      "headline": "Iran war biggest unknowns , from Tehran new leader to oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailylocal.com/2026/03/09/iran-war-unknowns/"
+    },
+    {
+      "timestamp": "2026-03-09T22:45:00",
+      "source": "newsbtc.com",
+      "headline": "Why Did Bitcoin Price Crash To $67 , 000 , And Ethereum Price Fell Below $2 , 000 ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-price-crash-ethereum/"
+    },
+    {
+      "timestamp": "2026-03-09T01:45:00",
+      "source": "japantimes.co.jp",
+      "headline": "In unequivocal message to Trump , Iran elevates Khamenei son as successor",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.japantimes.co.jp/news/2026/03/09/world/politics/iran-mojtaba-khamenei-successor/"
+    },
+    {
+      "timestamp": "2026-03-09T11:00:00",
+      "source": "breakingnews.ie",
+      "headline": "Iran names ex - supreme leader son to succeed him as war sends oil price soaring",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.breakingnews.ie/world/iran-names-ex-supreme-leaders-son-to-succeed-him-as-war-sends-oil-price-soaring-2-1872730.html"
+    },
+    {
+      "timestamp": "2026-03-09T07:45:00",
+      "source": "yahoo.com",
+      "headline": "Iran new leader launches first attack on Israel",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yahoo.com/news/articles/iran-leader-launches-first-attack-020613743.html"
+    },
+    {
+      "timestamp": "2026-03-09T21:45:00",
+      "source": "yahoo.com",
+      "headline": "Putin offers  unwavering support  to Iran new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yahoo.com/news/articles/putin-offers-unwavering-support-iran-155938419.html"
+    },
+    {
+      "timestamp": "2026-03-09T20:45:00",
+      "source": "capitalgazette.com",
+      "headline": "Iran war biggest unknowns , from Tehran new leader to oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.capitalgazette.com/2026/03/09/iran-war-unknowns/"
+    },
+    {
+      "timestamp": "2026-03-09T06:45:00",
+      "source": "itbear.com.cn",
+      "headline": "暴跌熔断 ， 亚太股市又见  黑色星期一 ！ 国际油价暴力拉涨27 %- 信息流 - ITBear比尔科技",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.itbear.com.cn/html/2026-03/1193176.html"
+    },
+    {
+      "timestamp": "2026-03-09T06:45:00",
+      "source": "prabhasakshi.com",
+      "headline": "mojtaba khamenei takes power will tehran press the nuclear bomb button saudi arabia warns iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.prabhasakshi.com/international/mojtaba-khamenei-takes-power-will-tehran-press-the-nuclear-bomb-button-saudi-arabia-warns-iran"
+    },
+    {
+      "timestamp": "2026-03-09T05:15:00",
+      "source": "naftemporiki.gr",
+      "headline": "Τραμπ : « Μαζί με τον Νετανιάχου θα αποφασίσουμε πότε θα τελειώσει ο πόλεμος με το Ιράν »",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.naftemporiki.gr/kosmos/2082755/tramp-mazi-me-ton-netaniachoy-tha-apofasisoyme-pote-tha-teleiosei-o-polemos-me-to-iran/"
+    },
+    {
+      "timestamp": "2026-03-09T17:45:00",
+      "source": "fontanka.ru",
+      "headline": "Есть ли обогащенный уран у Ирана - 9 марта 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fontanka.ru/2026/03/09/76302882/"
+    },
+    {
+      "timestamp": "2026-03-09T01:45:00",
+      "source": "vesti.ru",
+      "headline": "США и Израиль изучают вариант с вводом спецназа в Иран для захвата урана",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vesti.ru/ns/ssha-i-izrail-izuchayut-variant-s-vvodom-specnaza-v-iran-dlya-zakhvata-urana"
+    },
+    {
+      "timestamp": "2026-03-09T01:45:00",
+      "source": "news.mail.ru",
+      "headline": "Трамп назвал лиц , которые примут решение о завершении операции против Ирана",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.mail.ru/society/70084305/"
+    },
+    {
+      "timestamp": "2026-03-09T19:00:00",
+      "source": "dailybreeze.com",
+      "headline": "Iran war biggest unknowns , from Tehran new leader to oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailybreeze.com/2026/03/09/iran-war-unknowns/"
+    },
+    {
+      "timestamp": "2026-03-09T23:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "us iran war over : Is US Israel Iran war going to end soon , and will President Donald Trump not target Iran new Supreme leader Mojtaba Khamenei ? Here Trump plan for Strait of Hormuz",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://economictimes.indiatimes.com/news/international/us/is-us-israel-iran-war-going-to-end-soon-and-will-president-donald-trump-not-target-irans-new-leader-mojtaba-khamenei-heres-trumps-plan-for-strait-of-hormuz/articleshow/129357074.cms"
+    },
+    {
+      "timestamp": "2026-03-09T22:45:00",
+      "source": "presstelegram.com",
+      "headline": "Iran war biggest unknowns , from Tehran new leader to oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.presstelegram.com/2026/03/09/iran-war-unknowns/"
+    },
+    {
+      "timestamp": "2026-03-09T21:30:00",
+      "source": "444.hu",
+      "headline": "Trump : Nincs döntés arról , hogy amerikai csapatokat küldenének Iránba",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://444.hu/2026/03/09/trump-nincs-dontes-arrol-hogy-amerikai-csapatokat-kuldenenek-iranba"
+    },
+    {
+      "timestamp": "2026-03-09T18:45:00",
+      "source": "local10.com",
+      "headline": "Oil prices jump and markets slide as Iran names new supreme leader and digs in",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.local10.com/news/world/2026/03/09/oil-prices-jump-and-markets-slide-as-iran-names-new-supreme-leader-and-digs-in/"
+    },
+    {
+      "timestamp": "2026-03-09T10:30:00",
+      "source": "jiji.com",
+      "headline": "トランプ氏 、 原油価格急騰は 「 小さな代償 」 イランとの戦争決断を擁護 ： 時事ドットコム",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jiji.com/jc/article?k=20260309048583a&g=afp"
+    },
+    {
+      "timestamp": "2026-03-09T15:00:00",
+      "source": "163.com",
+      "headline": "伊朗还能高强度作战至少半年 ？ 专家 ： 影响战争长短和走向的因素有很多",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNJUE1LS051492T3.html"
+    },
+    {
+      "timestamp": "2026-03-09T06:30:00",
+      "source": "news18.com",
+      "headline": "Death To Mojtaba  Chants Ring Out In Tehran As Son Of Khamenei Named Iran New Supreme Leader | World News",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.news18.com/world/death-to-mojtaba-chants-ring-out-in-tehran-as-son-of-khamenei-named-irans-new-supreme-leader-ws-l-9949838.html"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "winnipegfreepress.com",
+      "headline": "Where things stand after another weekend of war – Winnipeg Free Press",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.winnipegfreepress.com/arts-and-life/life/faith/2026/03/08/where-things-stand-after-another-weekend-of-war"
+    },
+    {
+      "timestamp": "2026-03-09T17:45:00",
+      "source": "thestar.com.my",
+      "headline": "First Thais evacuated from Iran arrive in Bangkok",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/03/09/first-thais-evacuated-from-iran-arrive-in-bangkok"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "In war first week , a punishing military campaign with no coherent endgame",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://economictimes.indiatimes.com/news/defence/in-wars-first-week-a-punishing-military-campaign-with-no-coherent-endgame/articleshow/129304048.cms"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "finance.sina.com.cn",
+      "headline": "A股油气板块集体高开 ， 中国海油股价创上市以来新高",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-09/doc-inhqizzp6954155.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T18:00:00",
+      "source": "orlandosentinel.com",
+      "headline": "Where things stand after another weekend of war",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.orlandosentinel.com/2026/03/09/iran-us-war-where-things-stand-week-two/"
+    },
+    {
+      "timestamp": "2026-03-09T20:45:00",
+      "source": "sandiegouniontribune.com",
+      "headline": "Where things stand after another weekend of war",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sandiegouniontribune.com/2026/03/09/iran-us-war-where-things-stand-week-two/"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "firstpost.com",
+      "headline": "US mulls ground operation in Iran to secure highly enriched uranium : Report",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.firstpost.com/world/us-mulls-ground-operation-in-iran-to-secure-highly-enriched-uranium-report-13987480.html"
+    },
+    {
+      "timestamp": "2026-03-09T18:15:00",
+      "source": "pilotonline.com",
+      "headline": "Where things stand after another weekend of war",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pilotonline.com/2026/03/09/iran-us-war-where-things-stand-week-two/"
+    },
+    {
+      "timestamp": "2026-03-09T19:00:00",
+      "source": "winnipegfreepress.com",
+      "headline": "Here are the Iran war biggest unknowns , from Tehran new leader to oil prices – Winnipeg Free Press",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.winnipegfreepress.com/world/2026/03/09/here-are-the-iran-wars-biggest-unknowns-from-tehrans-new-leader-to-oil-prices"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "thedailyblog.co.nz",
+      "headline": "Trump Iran Gamble Risks Destabilising Entire Middle East And What $150 Oil Barrel Means To NZ",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://thedailyblog.co.nz/trumps-iran-gamble-risks-destabilising-entire-middle-east-and-what-150-oil-barrel-means-to-nz/"
+    },
+    {
+      "timestamp": "2026-03-09T04:30:00",
+      "source": "forex.cnfol.com",
+      "headline": "3月9日财经早餐 ： 逊色非农助攻降息预期 ， 金价5100屹立不倒 ？ 战争溢价正在失控 ， 油价暴力拉升超20 %_ 汇市观察 _ 外汇 _ 中金在线",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://forex.cnfol.com/jingjiyaowen/20260309/32053063.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T07:45:00",
+      "source": "fnnews.com",
+      "headline": "이란 호르무즈 봉쇄 대책은 ? 美 씽크탱크의 뼈아픈 지적",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fnnews.com/news/202603091541322153"
+    },
+    {
+      "timestamp": "2026-03-09T12:00:00",
+      "source": "athens-times.com",
+      "headline": "Trump : Iran War End Will Be Mutual with Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://athens-times.com/trump-war-with-iran-to-end-by-mutual-decision-with-netanyahu/"
+    },
+    {
+      "timestamp": "2026-03-09T05:30:00",
+      "source": "fnnews.com",
+      "headline": "이란 오일탱크를 왜 때리냐  당황한 美 , 이스라엘에 특사 급파",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fnnews.com/news/202603091351078233"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "dawn.com",
+      "headline": "Oil rain  falls on Tehran after apocalyptic strikes on refineries - World",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dawn.com/news/1979990/oil-rain-falls-on-tehran-after-apocalyptic-strikes-on-refineries"
+    },
+    {
+      "timestamp": "2026-03-09T20:45:00",
+      "source": "dailymail.co.uk",
+      "headline": "French taskforce is streaming towards the Gulf after Macron ordered Navy ships in  unprecedented  move as conflict in the Middle East drives up oil prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailymail.co.uk/news/article-15629683/French-taskforce-streaming-Gulf-Macron-ordered-Navy-ships-unprecedented-conflict-Middle-East-drives-oil-prices.html"
+    },
+    {
+      "timestamp": "2026-03-09T11:30:00",
+      "source": "24tv.ua",
+      "headline": "Ядерна програма Ірану - як її знищили США",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://24tv.ua/yaderna-programa-iranu-yak-yiyi-znishhili-ssha_n3024451"
+    },
+    {
+      "timestamp": "2026-03-09T15:45:00",
+      "source": "163.com",
+      "headline": "美议员  一语点破 ： 一旦伊朗政权垮台 ， 美国将大赚特赚 ！ 英国计划派航母助战 ， 却遭特朗普嘲讽 ； 泽连斯基 ： 已向美军基地派遣无人机和专家|唐纳 · 川普",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.163.com/dy/article/KNK03SQ80512B07B.html"
+    },
+    {
+      "timestamp": "2026-03-09T16:45:00",
+      "source": "capital.gr",
+      "headline": "Τραμπ : Δεν είμαι ευχαριστημένος με την εκλογή του Μοτζταμπά Χαμενεΐ ως ...",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.capital.gr/diethni/3978691/tramp-den-eimai-euxaristimenos-me-tin-eklogi-tou-motztampa-xamenei-os-anotatou-igeti-tou-iran/"
+    },
+    {
+      "timestamp": "2026-03-09T04:15:00",
+      "source": "n.yam.com",
+      "headline": "中東緊張局勢升溫 油價飆漲恐衝擊美股及全球經濟",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://n.yam.com/Article/20260309430464"
+    },
+    {
+      "timestamp": "2026-03-09T12:45:00",
+      "source": "nbcnews.com",
+      "headline": "Markets in Asia are battered as oil surpasses $100 a barrel",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-oil-prices-khamenei-supreme-leader-israel-trump-rcna262378/rcrd103569"
+    },
+    {
+      "timestamp": "2026-03-09T11:30:00",
+      "source": "news.sina.com.cn",
+      "headline": "哈梅内伊次子掌舵伊朗 ， 政策延续还是转向 ？",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.sina.com.cn/o/2026-03-09/doc-inhqksxt6984250.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T07:15:00",
+      "source": "kyivpost.com",
+      "headline": "Iran Launches Missiles as Khamenei Son Takes Charge",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kyivpost.com/post/71500"
+    },
+    {
+      "timestamp": "2026-03-09T11:00:00",
+      "source": "news.ifeng.com",
+      "headline": "哈梅内伊次子掌舵伊朗 ， 政策延续还是转向",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.ifeng.com/c/8rMEgkqEWHJ"
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00",
+      "source": "independent.ie",
+      "headline": "US considers sending special forces to seize Tehran missing uranium",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.independent.ie/world-news/middle-east/us-considers-sending-special-forces-to-seize-tehrans-missing-uranium/a1116869859.html"
+    },
+    {
+      "timestamp": "2026-03-09T17:45:00",
+      "source": "taipeitimes.com",
+      "headline": "Khamenei son named leader - Taipei Times",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.taipeitimes.com/News/front/archives/2026/03/10/2003853550"
+    },
+    {
+      "timestamp": "2026-03-09T00:00:00",
+      "source": "canberratimes.com.au",
+      "headline": "Khamenei hardline son named as Iran supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.canberratimes.com.au/story/9193293/khameneis-hardline-son-named-as-irans-supreme-leader/"
+    },
+    {
+      "timestamp": "2026-03-10T00:00:00",
+      "source": "wflx.com",
+      "headline": "Oil prices and markets seesaw over uncertainty of war as Iran names new leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wflx.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T23:00:00",
+      "source": "firstalert4.com",
+      "headline": "Trump provides update on Iran , higher gas prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.firstalert4.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T22:45:00",
+      "source": "2news.com",
+      "headline": "Oil prices and markets seesaw over uncertainty of war as Iran names new leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.2news.com/news/national/oil-prices-and-markets-seesaw-over-uncertainty-of-war-as-iran-names-new-leader/article_d291ab12-231a-515e-88d8-ce73bac6c3ff.html"
+    },
+    {
+      "timestamp": "2026-03-09T23:30:00",
+      "source": "wvgazettemail.com",
+      "headline": "Oil prices and markets seesaw over uncertainty of war as Iran names new leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wvgazettemail.com/ap/business/oil-prices-and-markets-seesaw-over-uncertainty-of-war-as-iran-names-new-leader/article_c4372d36-6139-5b82-a1a3-c02df855f3ac.html"
+    },
+    {
+      "timestamp": "2026-03-09T23:45:00",
+      "source": "fox10tv.com",
+      "headline": "Oil prices and markets seesaw over uncertainty of war as Iran names new leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox10tv.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T23:45:00",
+      "source": "kplctv.com",
+      "headline": "Oil prices and markets seesaw over uncertainty of war as Iran names new leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kplctv.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T23:45:00",
+      "source": "knopnews2.com",
+      "headline": "Oil prices and markets seesaw over uncertainty of war as Iran names new leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.knopnews2.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T23:00:00",
+      "source": "ksnblocal4.com",
+      "headline": "Trump provides update on Iran , higher gas prices",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ksnblocal4.com/2026/03/09/trump-dismisses-concerns-gas-oil-prices-soar-amid-iran-conflict/"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "newkerala.com",
+      "headline": "Trump on Iran War End :  Mutual  Decision With Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newkerala.com/news/a/ill-make-decision-right-time-trump-says-end-135.htm"
+    },
+    {
+      "timestamp": "2026-03-09T20:00:00",
+      "source": "alwasat.ly",
+      "headline": "أوروبا تتسلح نووياً تحت المظلة الفرنسية : ماذا عن الشرق الأوسط ؟",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://alwasat.ly/news/bbc/c98qr6qn6zlo"
+    },
+    {
+      "timestamp": "2026-03-09T05:45:00",
+      "source": "mynorthwest.com",
+      "headline": "Where things stand after another weekend of war",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://mynorthwest.com/national/where-things-stand-after-another-weekend-of-war/4214299"
+    },
+    {
+      "timestamp": "2026-03-09T09:30:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Did Israel surprise US with strikes on Iran oil depots ? White House reportedly sent  WTF  message",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://timesofindia.indiatimes.com/world/middle-east/did-israel-surprise-us-with-strikes-on-iran-oil-depots-white-house-reportedly-sent-wtf-message/articleshow/129321167.cms"
+    },
+    {
+      "timestamp": "2026-03-09T11:30:00",
+      "source": "news.sina.com.cn",
+      "headline": "美以首次出现明显分歧 _ 新浪新闻",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.sina.com.cn/w/2026-03-09/doc-inhqkxfq0651324.shtml"
+    },
+    {
+      "timestamp": "2026-03-09T13:45:00",
+      "source": "finance.eastmoney.com",
+      "headline": "出现明显分歧 ！ 美国被曝对以军行动感到不满 _ 东方财富网",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.eastmoney.com/a/202603093666196257.html"
+    },
+    {
+      "timestamp": "2026-03-09T09:00:00",
+      "source": "pressdemocrat.com",
+      "headline": "Where things stand after another weekend of war",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pressdemocrat.com/2026/03/08/where-things-stand-after-another-weekend-of-war/"
+    },
+    {
+      "timestamp": "2026-03-09T20:45:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Pentagon shoots down  lie  that U . S . missile hit Bahrain civilian area",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.washingtonexaminer.com/policy/foreign-policy/4485318/pentagon-shoots-down-russia-iran-lie-us-missile-hit-bahrain-civilian-area/"
+    },
+    {
+      "timestamp": "2026-03-09T05:30:00",
+      "source": "sbs.com.au",
+      "headline": "Conflict enters new phase as Iran appoints Mojtaba Khamenei as Supreme Leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sbs.com.au/news/podcast-episode/conflict-enters-new-phase-as-iran-appoints-mojtaba-khamenei-as-supreme-leader/69z4656vq"
+    },
+    {
+      "timestamp": "2026-03-09T11:30:00",
+      "source": "english.hani.co.kr",
+      "headline": "Mojtaba Khamenei named new supreme leader of Iran after father assassination",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://english.hani.co.kr/arti/english_edition/e_international/1248436.html"
+    },
+    {
+      "timestamp": "2026-03-09T07:00:00",
+      "source": "moneycontrol.com",
+      "headline": "Death to Mojtaba  chants heard in Tehran after Khamenei son named Iran new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.moneycontrol.com/world/death-to-mojtaba-chants-heard-in-tehran-after-mojtaba-khamenei-named-iran-s-new-supreme-leader-watch-article-13854663.html"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "wypr.org",
+      "headline": "Iran names Mojtaba Khamenei as its new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wypr.org/2026-03-08/iran-names-mojtaba-khamenei-as-its-new-supreme-leader"
+    },
+    {
+      "timestamp": "2026-03-09T03:15:00",
+      "source": "wclk.com",
+      "headline": "Iran names Mojtaba Khamenei as its new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wclk.com/2026-03-08/iran-names-mojtaba-khamenei-as-its-new-supreme-leader"
+    },
+    {
+      "timestamp": "2026-03-09T03:00:00",
+      "source": "krcu.org",
+      "headline": "Iran names Mojtaba Khamenei as its new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.krcu.org/2026-03-08/iran-names-mojtaba-khamenei-as-its-new-supreme-leader"
+    },
+    {
+      "timestamp": "2026-03-09T03:30:00",
+      "source": "wfae.org",
+      "headline": "Iran names Mojtaba Khamenei as its new supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wfae.org/world/2026-03-08/iran-names-mojtaba-khamenei-as-its-new-supreme-leader"
     }
   ]
 }

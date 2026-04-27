@@ -94,10 +94,18 @@ emergency cuts, CARES Act, Russia invasion + SWIFT cut, Harris-Trump
 debate, election day, BTC $100k, Trump inauguration, Iran spikes.
 
 ```bash
-python3 backend/scripts/fetch_gdelt_historical.py            # hot dates only (~32 calls)
-python3 backend/scripts/fetch_gdelt_historical.py --full      # every day in every window (~480 calls)
-python3 backend/scripts/fetch_gdelt_historical.py --refresh   # ignore existing cache
+python3 backend/scripts/fetch_gdelt_historical.py                   # hot dates only (~32 calls)
+python3 backend/scripts/fetch_gdelt_historical.py --full             # every day in every window (~485 calls, slow)
+python3 backend/scripts/fetch_gdelt_historical.py --refresh          # ignore existing cache
+python3 backend/scripts/fetch_gdelt_historical.py --rebuild-signals  # rebuild daily_signals.csv from cache only (no API calls)
 ```
+
+The `--rebuild-signals` step (also auto-run at the end of every fetch
+mode) walks every cached per-day JSON and writes
+`data/derived/gdelt_daily_signals.csv` — the daily aggregate the Macro
+view's news-count timeline + heatmap event-dot indicator both read.
+Without this rollup the Macro view's news bars stay flat-zero for the
+COVID/War/Election windows even when their per-day caches are full.
 
 ### Caching
 - `data/raw/gdelt_selected_day/<YYYY-MM-DD>.json` — one file per day,

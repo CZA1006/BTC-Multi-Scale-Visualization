@@ -179,9 +179,15 @@ Best Meso story: invasion day clusters with 2020 panic days in
 > "GDELT's API has a 60-day rolling window. Older case studies fall
 > back to local context — the design is intentionally tolerant."
 
-### Polymarket missing
-> "Polymarket is a minimal live snapshot, not historical. It's
-> expectation context, not signal."
+### Polymarket missing or empty
+> "Polymarket coverage is curated per case-study window. Election 2024
+> and Iran 2026 have rich historical data; COVID 2020 and the 2022 war
+> window are intentionally empty (Polymarket was too young / too thin
+> there). The card shows daily YES probability sparklines with a marker
+> at the selected date."
+
+If a card *should* be there and isn't, re-run
+`python3 backend/scripts/fetch_polymarket_history.py --refresh`.
 
 ### Selected day has no intraday data
 > "Provider intraday limits vary; we fall back to the daily window so

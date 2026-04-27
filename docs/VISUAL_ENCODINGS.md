@@ -170,13 +170,30 @@ that informed the P6 craft pass.
 | **Why** | "Did the news lean *war* in the morning and *regulation* in the afternoon?" |
 | **How** | `d3.stack().offset(stackOffsetSilhouette)` (Havre et al. 2002 ThemeRiver) — symmetric around y = 0, so the eye reads *thickness* (length on common axis) instead of *top edge*, which is the wrong channel for additive aggregates. `curveBasis` smooths the noise without inventing data. |
 
-### 2.11 Micro: Asset context strip + Polymarket cards (P3)
+### 2.11 Micro: Asset context strip + Polymarket cards (P3, P8)
 
 | | |
 |---|---|
-| **What** | 4 sparklines (BTC/COIN/MSTR/QQQ) + 2-card Polymarket snapshot. |
-| **Why** | Anchors the day in a wider expectation frame. |
-| **How** | Sparklines (same justification as §2.1). Polymarket cards use *length on common scale* for "yes/no" probability — a horizontal bar, not a pie, because angle judgments rank below length (Cleveland & McGill). |
+| **What** | 4 sparklines (BTC/COIN/MSTR/QQQ) + up-to-8 historical Polymarket cards for the selected date. |
+| **Why** | Anchors the day in a wider expectation frame. The Polymarket cards answer *"what did the crowd believe on that day?"*, not *"what does the crowd believe today?"* — a strict P8 upgrade. |
+| **How** | Asset sparklines: same justification as §2.1. Polymarket cards: tabular percent (Mackinlay #1 for quantitative) + 140×32 sparkline of the market's daily YES price (Tufte). The selected date is marked by a hairline + filled dot at the closest data point — a **focus mark** in a small multiple, supporting before/after comparison without panning. |
+
+**Why a sparkline-with-marker instead of a single bar?** A bar would
+collapse the time series into a scalar, but the analytic question is
+*how did expectations evolve into and out of this day?*. The sparkline
+preserves the trajectory while staying inside a 32-px row, and the
+marker provides position-on-common-scale for the focal date — the
+highest-accuracy channel (Cleveland & McGill).
+
+**Color discipline.** Green when YES ≥ 0.5, red when YES < 0.5 — the
+same return-sign convention used everywhere. The sparkline never uses
+green/red to encode market identity (which is a nominal attribute);
+identity is conveyed by the question text + theme tag.
+
+**Why we cap at 8 markets.** Iran 2026 has 41 raw markets in the
+curated bucket, most with ≤$1k volume. Cleveland's "small multiples"
+work fails when each multiple is below the perception floor; we drop
+markets below $1k 24h volume and rank by volume desc.
 
 ---
 

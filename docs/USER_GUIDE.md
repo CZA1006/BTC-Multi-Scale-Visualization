@@ -276,11 +276,29 @@ Compact strip under the chart showing the selected day's price and 1-day
 % move for COIN, MSTR, and QQQ (whatever is in `external_assets_daily`).
 Useful for "did the equity proxies move with BTC?".
 
-### Polymarket context
+### Polymarket context (P8 — date-aware historical)
 
-Snapshot cards from the Polymarket Gamma API showing currently-active
-political / financial markets. **Note:** this is non-historical — clicking
-backwards in time does not change the markets.
+Cards now show the **historical** YES probability for curated markets
+that were live on the *selectedDate*:
+
+- **Big number** = YES price on the selected date (closest daily point ≤
+  target). Green ≥ 0.5, red < 0.5.
+- **Sparkline** = the market's full daily price history. The vertical
+  hairline + dot mark the selected date.
+- **Footer** = total volume + number of daily price observations.
+
+Coverage by case-study window:
+
+| Window | Polymarket coverage |
+|---|---|
+| COVID Shock (2020) | none — Polymarket too young |
+| War Regime (2022) | none — markets too illiquid |
+| Election Cycle (2024) | rich — Trump/Harris, BTC ATH, ETF |
+| Iran Tension (2026) | rich — Iran nuclear/strike, Fed |
+
+For dates outside a covered window the card shows a graceful
+"no Polymarket coverage for this date" message. Refresh the cache via
+`python3 backend/scripts/fetch_polymarket_history.py --refresh`.
 
 ---
 
@@ -381,7 +399,8 @@ in the insight modal without triggering accidental advances.
 |---|---|---|
 | KPI cards show "—" | Backend not running, or no data for the selected window | Confirm `uvicorn` is up; check the browser console for `/api/overview` errors. |
 | Event diamonds missing in Macro | GDELT recent-only API; window is older than 60 days | Switch to the Iran Tension window for live event data. |
-| Polymarket cards missing | Gamma API rate-limited or offline | Re-run `python3 backend/scripts/fetch_polymarket_context.py`; cards fall back to "Snapshot unavailable" copy. |
+| Polymarket cards missing | Gamma/CLOB API rate-limited or offline | Re-run `python3 backend/scripts/fetch_polymarket_history.py --refresh`; the dashboard always serves the on-disk cache when remote fails. |
+| "No Polymarket coverage for this date" | Selected date outside curated buckets (COVID, 2022 war) | Expected — coverage is only for the Election (2024) and Iran (2026) windows. |
 | Selected day shows daily fallback chart | yfinance has no intraday for that day | Expected on weekends and beyond the intraday lookback. The fallback is intentional. |
 | Insight panel empty after refresh | Different browser profile, or localStorage was cleared | Insights are scoped per browser. Use **Export JSON** to back up before clearing site data. |
 | Build fails on `npm run build` | Node < 18 | `nvm install 18 && nvm use 18`. |

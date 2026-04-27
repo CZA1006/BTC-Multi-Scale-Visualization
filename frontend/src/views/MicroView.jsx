@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { HeadlineWordCloud } from '../components/HeadlineWordCloud.jsx';
 import { ThemeRiverMini } from '../components/ThemeRiverMini.jsx';
 import { PinInsightButton } from '../components/PinInsightButton.jsx';
+import { PolymarketSparkline } from '../components/PolymarketSparkline.jsx';
 import { fetchDayDetail } from '../api/dayDetail.js';
 import { useAppStore } from '../store/useAppStore.js';
 import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
@@ -818,48 +819,71 @@ export function MicroView() {
             </div>
 
             <div className="context-section">
-              <p className="summary-title">Polymarket context</p>
+              <p className="summary-title">
+                Polymarket — expectations on {polymarketSummary.as_of_date ?? 'N/A'}
+              </p>
               <div className="context-chip-row">
                 <div className="context-chip">
-                  <span className="context-chip-label">Snapshot status</span>
+                  <span className="context-chip-label">Coverage</span>
                   <strong>{polymarketSummary.status ?? 'placeholder'}</strong>
                 </div>
                 <div className="context-chip">
-                  <span className="context-chip-label">Snapshot date</span>
-                  <strong>{polymarketSummary.as_of_date ?? 'N/A'}</strong>
+                  <span className="context-chip-label">Window</span>
+                  <strong>{polymarketSummary.bucket_label ?? 'N/A'}</strong>
                 </div>
                 <div className="context-chip">
-                  <span className="context-chip-label">Markets loaded</span>
+                  <span className="context-chip-label">Markets shown</span>
                   <strong>{polymarketMarkets.length}</strong>
                 </div>
               </div>
 
               {polymarketMarkets.length > 0 ? (
-                <div className="headline-list">
-                  {polymarketMarkets.map((market) => (
-                    <article
-                      key={market.market_slug ?? market.market_name}
-                      className="headline-card"
-                    >
-                      <p className="headline-meta">
-                        {market.theme ?? 'market'} · {market.source_query ?? 'query'}
-                      </p>
-                      <p className="headline-title">{market.market_name}</p>
-                      <p className="state-label">
-                        Yes price: {formatPercent(market.yes_price)} | Volume:{' '}
-                        {formatCurrency(market.volume)}
-                      </p>
-                      <p className="state-label">
-                        End date: {market.end_date ?? 'N/A'}
-                      </p>
-                    </article>
-                  ))}
+                <div className="polymarket-card-grid">
+                  {polymarketMarkets.map((market) => {
+                    const yesAt = market.yes_price_at_date;
+                    const aboveHalf = typeof yesAt === 'number' && yesAt >= 0.5;
+                    const directionClass = aboveHalf ? 'is-pos' : 'is-neg';
+                    return (
+                      <article
+                        key={market.market_slug ?? market.market_name}
+                        className="polymarket-card"
+                      >
+                        <p className="polymarket-card-meta">
+                          {market.theme ?? 'market'} ·{' '}
+                          {market.closed ? 'resolved' : 'live'} · ends{' '}
+                          {market.end_date ? market.end_date.slice(0, 10) : 'N/A'}
+                        </p>
+                        <p className="polymarket-card-title">{market.market_name}</p>
+                        <div className="polymarket-card-body">
+                          <div className={`polymarket-card-price ${directionClass}`}>
+                            <span className="polymarket-card-yes">
+                              {formatPercent(yesAt)}
+                            </span>
+                            <span className="polymarket-card-yes-label">
+                              {market.yes_label ?? 'Yes'} on{' '}
+                              {polymarketSummary.as_of_date ?? '—'}
+                            </span>
+                          </div>
+                          <PolymarketSparkline
+                            history={market.history ?? []}
+                            selectedDate={polymarketSummary.as_of_date}
+                            width={140}
+                            height={32}
+                          />
+                        </div>
+                        <p className="polymarket-card-foot">
+                          Vol {formatCurrency(market.volume)} ·{' '}
+                          {(market.history?.length ?? 0)} daily prices
+                        </p>
+                      </article>
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="placeholder-box placeholder-box-small">
                   <span className="placeholder-label">
                     {polymarketSummary.message ??
-                      'No Polymarket context is available in the current snapshot.'}
+                      'No Polymarket coverage for this date.'}
                   </span>
                 </div>
               )}

@@ -7,7 +7,7 @@ import pandas as pd
 from fastapi import APIRouter, HTTPException
 
 from ..services.gdelt_service import get_selected_day_gdelt_context
-from ..services.polymarket_service import get_current_polymarket_context
+from ..services.polymarket_history_service import get_polymarket_for_date
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 PROCESSED_DIR = REPO_ROOT / "data" / "processed"
@@ -334,7 +334,7 @@ def get_day_detail(date: str) -> dict[str, Any]:
 
     gdelt_context = get_selected_day_gdelt_context(date)
     event_rows = gdelt_context.get("articles", [])
-    polymarket_context = get_current_polymarket_context()
+    polymarket_context = get_polymarket_for_date(date)
 
     context_payload = build_context_payload(
         target_date=target_date,

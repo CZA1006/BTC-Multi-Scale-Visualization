@@ -49,6 +49,7 @@ tracked at every step against the gzip budget.
 | **P5 — Narrative overlay** | Segel & Heer martini-glass with auto-play, ←/→ keys, 70 % spotlight dim. | `NarrativeOverlay.jsx`, `data/narratives.js`, store narrative slice | +1.6 KB JS, +1.0 KB CSS | ✅ |
 | **P6 — Bloomberg craft pass** | KPI ticker (6 cards + sparklines + delta chips), 4×4 correlation matrix, cluster summary table with equity-curve sparklines, hairline-grid polish. | `KpiTicker.jsx`, `CorrelationMatrix.jsx`, `ClusterSummaryTable.jsx`, `useOverview.js`, `utils/derived.js` | +3.1 KB JS, +0.6 KB CSS | ✅ |
 | **P7 — Evaluation + insight log** | Pin button on every view, draft modal (⌘/Ctrl+Enter to save), slide-in log panel with restore-context + JSON export, localStorage persistence (`v1` schema). Heuristic eval + user-study protocol + insight-log spec docs. | `PinInsightButton.jsx`, `InsightDraftModal.jsx`, `InsightLogPanel.jsx`, store insight slice, `docs/HEURISTIC_EVALUATION.md`, `docs/USER_STUDY_PROTOCOL.md`, `docs/INSIGHT_LOG.md` | +2.0 KB JS, +0.8 KB CSS | ✅ |
+| **P8 — Date-aware historical Polymarket** | Replaces the today-only Gamma snapshot with curated historical events (Election 2024 + Iran 2026), CLOB `/prices-history` daily series, sparkline-with-marker per market, $1k volume floor + top-8 cap. | `polymarket_curated.py`, `polymarket_history_service.py`, `fetch_polymarket_history.py`, `PolymarketSparkline.jsx`, `MicroView.jsx`, `day_detail.py`, `DATA_AND_APIS.md` | +0.9 KB JS, +0.5 KB CSS | ✅ |
 
 ### End-of-P7 bundle (gzip)
 - CSS: **4.82 KB**

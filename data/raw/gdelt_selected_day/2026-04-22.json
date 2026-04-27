@@ -1,48 +1,134 @@
 {
+  "cache_schema_version": 5,
   "date": "2026-04-22",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 2915,
+  "avg_tone": -0.23034447970268726,
   "theme_count_crypto": 5,
   "theme_count_regulation": 3,
   "theme_count_election": 0,
   "theme_count_war": 0,
   "hourly_tones": [
     {
-      "timestamp": "2026-04-22T00:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-22T00:00:00.000Z",
+      "news_count": 85,
+      "average_tone": 0.348275
     },
     {
-      "timestamp": "2026-04-22T01:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-22T01:00:00.000Z",
+      "news_count": 75,
+      "average_tone": -0.8110499999999999
     },
     {
-      "timestamp": "2026-04-22T02:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-22T02:00:00.000Z",
+      "news_count": 39,
+      "average_tone": -0.11213333333333331
     },
     {
-      "timestamp": "2026-04-22T14:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-22T03:00:00.000Z",
+      "news_count": 53,
+      "average_tone": -0.147875
     },
     {
-      "timestamp": "2026-04-22T15:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-22T04:00:00.000Z",
+      "news_count": 56,
+      "average_tone": 0.15785000000000005
     },
     {
-      "timestamp": "2026-04-22T17:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-22T05:00:00.000Z",
+      "news_count": 45,
+      "average_tone": -0.1045
     },
     {
-      "timestamp": "2026-04-22T19:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-22T06:00:00.000Z",
+      "news_count": 133,
+      "average_tone": -0.5988000000000001
+    },
+    {
+      "timestamp": "2026-04-22T07:00:00.000Z",
+      "news_count": 174,
+      "average_tone": -0.8267
+    },
+    {
+      "timestamp": "2026-04-22T08:00:00.000Z",
+      "news_count": 169,
+      "average_tone": -0.8343333333333333
+    },
+    {
+      "timestamp": "2026-04-22T09:00:00.000Z",
+      "news_count": 115,
+      "average_tone": -1.73075
+    },
+    {
+      "timestamp": "2026-04-22T10:00:00.000Z",
+      "news_count": 203,
+      "average_tone": -1.1342750000000001
+    },
+    {
+      "timestamp": "2026-04-22T11:00:00.000Z",
+      "news_count": 102,
+      "average_tone": 0.500325
+    },
+    {
+      "timestamp": "2026-04-22T12:00:00.000Z",
+      "news_count": 68,
+      "average_tone": -0.26527500000000004
+    },
+    {
+      "timestamp": "2026-04-22T13:00:00.000Z",
+      "news_count": 237,
+      "average_tone": 0.74675
+    },
+    {
+      "timestamp": "2026-04-22T14:00:00.000Z",
+      "news_count": 278,
+      "average_tone": 0.7754
+    },
+    {
+      "timestamp": "2026-04-22T15:00:00.000Z",
+      "news_count": 196,
+      "average_tone": -0.5152
+    },
+    {
+      "timestamp": "2026-04-22T16:00:00.000Z",
+      "news_count": 143,
+      "average_tone": -0.920325
+    },
+    {
+      "timestamp": "2026-04-22T17:00:00.000Z",
+      "news_count": 114,
+      "average_tone": 0.500275
+    },
+    {
+      "timestamp": "2026-04-22T18:00:00.000Z",
+      "news_count": 62,
+      "average_tone": 0.12233333333333334
+    },
+    {
+      "timestamp": "2026-04-22T19:00:00.000Z",
+      "news_count": 118,
+      "average_tone": -1.193225
+    },
+    {
+      "timestamp": "2026-04-22T20:00:00.000Z",
+      "news_count": 115,
+      "average_tone": -0.413625
+    },
+    {
+      "timestamp": "2026-04-22T21:00:00.000Z",
+      "news_count": 135,
+      "average_tone": 0.5407666666666667
+    },
+    {
+      "timestamp": "2026-04-22T22:00:00.000Z",
+      "news_count": 73,
+      "average_tone": 0.29263333333333336
+    },
+    {
+      "timestamp": "2026-04-22T23:00:00.000Z",
+      "news_count": 127,
+      "average_tone": -0.015250000000000024
     }
   ],
   "top_headlines": [
@@ -50,7 +136,7 @@
     "Strategy Now Holds More Bitcoin Than BlackRock",
     "Top Performing Leveraged / Inverse ETFs : 04 / 19 / 2026",
     "Anthony Scaramucci Puts Bitcoin Market Cap At $21 Trillion , So How Much Will 1 BTC Be ?",
-    "LCX 1 - Day Trading Volume Tops $164 . 30 Thousand ( LCX )"
+    "MicroStrategy Makes Biggest Bitcoin Buy Since 2024 , Will It Move BTC Price ?"
   ],
   "articles": [
     {
@@ -59,6 +145,7 @@
       "headline": "Cryptocurrencies : Bitcoin Reaches 11 - Week High",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.etftrends.com/crypto-content-hub/cryptocurrencies-bitcoin-reaches-11-week-high/"
     },
     {
@@ -67,6 +154,7 @@
       "headline": "Strategy Now Holds More Bitcoin Than BlackRock",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.marketscreener.com/news/strategy-now-holds-more-bitcoin-than-blackrock-ce7f59d8de8af123"
     },
     {
@@ -75,6 +163,7 @@
       "headline": "Top Performing Leveraged / Inverse ETFs : 04 / 19 / 2026",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.etftrends.com/leveraged-inverse-content-hub/top-performing-leveraged-inverse-etfs-04-19-2026/"
     },
     {
@@ -83,15 +172,8 @@
       "headline": "Anthony Scaramucci Puts Bitcoin Market Cap At $21 Trillion , So How Much Will 1 BTC Be ?",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.newsbtc.com/bitcoin-news/bitcoin-21-trillion-market-cap/"
-    },
-    {
-      "timestamp": "2026-04-22T15:00:00",
-      "source": "dailypolitical.com",
-      "headline": "LCX 1 - Day Trading Volume Tops $164 . 30 Thousand ( LCX )",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://www.dailypolitical.com/2026/04/22/lcx-1-day-trading-volume-tops-164-30-thousand-lcx.html"
     },
     {
       "timestamp": "2026-04-22T02:30:00",
@@ -99,7 +181,17 @@
       "headline": "MicroStrategy Makes Biggest Bitcoin Buy Since 2024 , Will It Move BTC Price ?",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/microstrategy-makes-biggest-bitcoin-buy-141851431.html"
+    },
+    {
+      "timestamp": "2026-04-22T15:00:00",
+      "source": "dailypolitical.com",
+      "headline": "LCX 1 - Day Trading Volume Tops $164 . 30 Thousand ( LCX )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/22/lcx-1-day-trading-volume-tops-164-30-thousand-lcx.html"
     },
     {
       "timestamp": "2026-04-22T19:15:00",
@@ -107,6 +199,7 @@
       "headline": "Thailand Regulator Eyes Crypto Futures Expansion in Rule Proposal",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://cointelegraph.com/news/thailand-s-sec-proposes-allowing-crypto-companies-to-offer-futures-directly"
     },
     {
@@ -115,6 +208,7 @@
       "headline": "Crypto Lobbying Matures : How Coinbase Built the Most Lethal PAC in Washington",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.financial-news.co.uk/crypto-lobbying-matures-how-coinbase-built-the-most-lethal-pac-in-washington/"
     },
     {
@@ -123,6 +217,7 @@
       "headline": "TRON ( TRX ) Tops 24 Hour Volume of $856 . 73 Million",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/22/tron-trx-tops-24-hour-volume-of-856-73-million.html"
     },
     {
@@ -131,6 +226,7 @@
       "headline": "Aavegotchi ( GHST ) Price Reaches $0 . 0779 on Exchanges",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/22/aavegotchi-ghst-price-reaches-0-0779-on-exchanges.html"
     },
     {
@@ -139,6 +235,7 @@
       "headline": "Chromia Price Up 17 . 7 % Over Last Week ( CHR )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.dailypolitical.com/2026/04/22/chromia-price-up-17-7-over-last-week-chr.html"
     },
     {
@@ -147,15 +244,8 @@
       "headline": "Kalshi Eyes Crypto Perpetual Futures Expansion : Report",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://cointelegraph.com/news/kalshi-eyes-crypto-expansion-with-perpetual-futures-launch-report"
-    },
-    {
-      "timestamp": "2026-04-22T14:00:00",
-      "source": "dailypolitical.com",
-      "headline": "Terra Classic Price Hits $0 . 0000 on Exchanges ( LUNC )",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://www.dailypolitical.com/2026/04/22/terra-classic-price-hits-0-0000-on-exchanges-lunc.html"
     },
     {
       "timestamp": "2026-04-22T17:45:00",
@@ -163,7 +253,17 @@
       "headline": "BTC , MSTR , COIN , CRCL price news : Crypto rally accelerates as bitcoin tops $79 , 000",
       "category": "macro",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.coindesk.com/markets/2026/04/22/bitcoin-tops-usd79-000-as-crypto-rally-gathers-steam-circle-coinbase-strategy-lead"
+    },
+    {
+      "timestamp": "2026-04-22T14:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Terra Classic Price Hits $0 . 0000 on Exchanges ( LUNC )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/22/terra-classic-price-hits-0-0000-on-exchanges-lunc.html"
     },
     {
       "timestamp": "2026-04-22T17:00:00",
@@ -171,6 +271,7 @@
       "headline": "Golem One Day Volume Reaches $5 . 79 Million ( GLM )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.dailypolitical.com/2026/04/22/golem-one-day-volume-reaches-5-79-million-glm.html"
     }
   ]

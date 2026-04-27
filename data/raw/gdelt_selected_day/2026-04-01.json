@@ -1,68 +1,134 @@
 {
+  "cache_schema_version": 7,
   "date": "2026-04-01",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 2865,
+  "avg_tone": -0.4017394793484584,
   "theme_count_crypto": 9,
   "theme_count_regulation": 3,
   "theme_count_election": 2,
   "theme_count_war": 0,
   "hourly_tones": [
     {
-      "timestamp": "2026-04-01T00:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T00:00:00.000Z",
+      "news_count": 103,
+      "average_tone": -0.788
     },
     {
-      "timestamp": "2026-04-01T02:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-01T01:00:00.000Z",
+      "news_count": 67,
+      "average_tone": 0.17053333333333334
     },
     {
-      "timestamp": "2026-04-01T04:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T02:00:00.000Z",
+      "news_count": 87,
+      "average_tone": -0.26632500000000003
     },
     {
-      "timestamp": "2026-04-01T08:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T03:00:00.000Z",
+      "news_count": 50,
+      "average_tone": -0.02990000000000001
     },
     {
-      "timestamp": "2026-04-01T10:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T04:00:00.000Z",
+      "news_count": 53,
+      "average_tone": -0.4382
     },
     {
-      "timestamp": "2026-04-01T12:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T05:00:00.000Z",
+      "news_count": 60,
+      "average_tone": -1.2623750000000002
     },
     {
-      "timestamp": "2026-04-01T15:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-01T06:00:00.000Z",
+      "news_count": 57,
+      "average_tone": -0.4204250000000001
     },
     {
-      "timestamp": "2026-04-01T17:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T07:00:00.000Z",
+      "news_count": 20,
+      "average_tone": 0.4933
     },
     {
-      "timestamp": "2026-04-01T18:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-01T08:00:00.000Z",
+      "news_count": 101,
+      "average_tone": -0.132575
     },
     {
-      "timestamp": "2026-04-01T20:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T09:00:00.000Z",
+      "news_count": 76,
+      "average_tone": -0.5076999999999999
     },
     {
-      "timestamp": "2026-04-01T22:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-01T10:00:00.000Z",
+      "news_count": 170,
+      "average_tone": -1.55335
+    },
+    {
+      "timestamp": "2026-04-01T11:00:00.000Z",
+      "news_count": 6,
+      "average_tone": -1.4238
+    },
+    {
+      "timestamp": "2026-04-01T12:00:00.000Z",
+      "news_count": 345,
+      "average_tone": 0.19625
+    },
+    {
+      "timestamp": "2026-04-01T13:00:00.000Z",
+      "news_count": 245,
+      "average_tone": -0.251275
+    },
+    {
+      "timestamp": "2026-04-01T14:00:00.000Z",
+      "news_count": 181,
+      "average_tone": -0.012874999999999963
+    },
+    {
+      "timestamp": "2026-04-01T15:00:00.000Z",
+      "news_count": 198,
+      "average_tone": -0.4669
+    },
+    {
+      "timestamp": "2026-04-01T16:00:00.000Z",
+      "news_count": 203,
+      "average_tone": 0.2772
+    },
+    {
+      "timestamp": "2026-04-01T17:00:00.000Z",
+      "news_count": 186,
+      "average_tone": -1.301075
+    },
+    {
+      "timestamp": "2026-04-01T18:00:00.000Z",
+      "news_count": 146,
+      "average_tone": -1.05415
+    },
+    {
+      "timestamp": "2026-04-01T19:00:00.000Z",
+      "news_count": 56,
+      "average_tone": -0.2963333333333333
+    },
+    {
+      "timestamp": "2026-04-01T20:00:00.000Z",
+      "news_count": 162,
+      "average_tone": -0.7281333333333334
+    },
+    {
+      "timestamp": "2026-04-01T21:00:00.000Z",
+      "news_count": 89,
+      "average_tone": 0.7222500000000001
+    },
+    {
+      "timestamp": "2026-04-01T22:00:00.000Z",
+      "news_count": 101,
+      "average_tone": -1.2788750000000002
+    },
+    {
+      "timestamp": "2026-04-01T23:00:00.000Z",
+      "news_count": 103,
+      "average_tone": 0.08522500000000001
     }
   ],
   "top_headlines": [
@@ -79,6 +145,7 @@
       "headline": "BlackRock Files Ticker For Bitcoin Premium Income ETF As Bitcoin Strategy Expands",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://bitcoinmagazine.com/news/blackrock-files-ticker-bitcoin-premium-etf"
     },
     {
@@ -87,6 +154,7 @@
       "headline": "Franklin Templeton acquires digital assets investment firm in active crypto management push",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.cnbc.com/2026/04/01/franklin-templeton-acquires-digital-assets-investment-firm-in-active-crypto-management-push.html"
     },
     {
@@ -95,6 +163,7 @@
       "headline": "Bitcoin snaps five - month losing streak",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/news/bitcoin-snaps-five-month-losing-streak-020352265.html"
     },
     {
@@ -103,6 +172,7 @@
       "headline": "What is a crypto wallet ? A beginner guide to crypto storage .",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/personal-finance/investing/article/what-is-a-crypto-wallet-135059733.html"
     },
     {
@@ -111,6 +181,7 @@
       "headline": "Bitcoin Holds $67K As Fear Index Stays In Extreme Zone",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://cointelegraph.com/markets/crypto-fear-and-greed-index-stuck-on-extreme-fear-but-is-there-a-silver-lining"
     },
     {
@@ -119,6 +190,7 @@
       "headline": "Bitcoin Price Climbs 3 % to $68 , 500 as Morgan Stanley ETF Launch",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.openpr.com/news/4451201/bitcoin-price-climbs-3-to-68-500-as-morgan-stanley-etf-launch"
     },
     {
@@ -127,6 +199,7 @@
       "headline": "Bitcoin Treasury Sell - Off Could Signal Deeper Capitulation Coming : Analyst",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://cointelegraph.com/news/nakamoto-sale-signal-dat-contagion"
     },
     {
@@ -135,6 +208,7 @@
       "headline": "New Hampshire to Issue $100M Bitcoin - Backed Bond With Speculative Moody Rating",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.coinspeaker.com/new-hampshire-bitcoin-backed-bond-moodys-rating/"
     },
     {
@@ -143,6 +217,7 @@
       "headline": "STASIS EURO Trading 0 . 6 % Lower Over Last 7 Days ( EURS )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/01/stasis-euro-trading-0-6-lower-over-last-7-days-eurs.html"
     },
     {
@@ -151,6 +226,7 @@
       "headline": "Bitcoin Holds Modest Gains After Five - Month Losing Streak Ends",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-holds-modest-gains-five-070049071.html"
     },
     {
@@ -159,6 +235,7 @@
       "headline": "Best Cryptocurrency Stocks To Follow Today – March 29th",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.tickerreport.com/banking-finance/13396641/best-cryptocurrency-stocks-to-follow-today-march-29th.html"
     },
     {
@@ -167,6 +244,7 @@
       "headline": "Trump in serious talks with  new regime  as markets rebound",
       "category": "election",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/articles/trump-serious-talks-regime-markets-163411157.html"
     },
     {
@@ -175,6 +253,7 @@
       "headline": "Strategy Inc . Goes All - In on Bitcoin : $3B+ Hoard in March as Stock Plunges 60 % +",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "http://www.econotimes.com/Strategy-Inc-Goes-All-In-on-Bitcoin-3B-Hoard-in-March-as-Stock-Plunges-60-1737945"
     },
     {
@@ -183,6 +262,7 @@
       "headline": "Bitcoin ETFs See $290M in Outflows as Risk - Off Sentiment Intensifies",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-etfs-see-290m-outflows-134402847.html"
     },
     {
@@ -191,7 +271,11 @@
       "headline": "Bitcoin , Ethereum , XRP , Dogecoin Spike Amid Trump Iran Exit Signal : Analytics Firm Highlights  Best  Pl",
       "category": "election",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51589296/bitcoin-ethereum-xrp-dogecoin-spike-trump-iran-signal"
     }
-  ]
+  ],
+  "data_quality": "full",
+  "timeline_status": "ok",
+  "volume_status": "ok"
 }

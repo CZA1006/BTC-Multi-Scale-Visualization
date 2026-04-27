@@ -1,58 +1,134 @@
 {
+  "cache_schema_version": 7,
   "date": "2026-04-08",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 2302,
+  "avg_tone": -1.1330463908195771,
   "theme_count_crypto": 4,
   "theme_count_regulation": 4,
   "theme_count_election": 1,
   "theme_count_war": 6,
   "hourly_tones": [
     {
-      "timestamp": "2026-04-08T00:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-08T00:00:00.000Z",
+      "news_count": 47,
+      "average_tone": -1.5399749999999999
     },
     {
-      "timestamp": "2026-04-08T01:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-08T01:00:00.000Z",
+      "news_count": 99,
+      "average_tone": -1.8168749999999998
     },
     {
-      "timestamp": "2026-04-08T03:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-08T02:00:00.000Z",
+      "news_count": 60,
+      "average_tone": -0.855975
     },
     {
-      "timestamp": "2026-04-08T08:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-08T03:00:00.000Z",
+      "news_count": 65,
+      "average_tone": -1.74405
     },
     {
-      "timestamp": "2026-04-08T09:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-08T04:00:00.000Z",
+      "news_count": 72,
+      "average_tone": -1.0618
     },
     {
-      "timestamp": "2026-04-08T12:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-08T05:00:00.000Z",
+      "news_count": 40,
+      "average_tone": -0.27145
     },
     {
-      "timestamp": "2026-04-08T18:00:00",
-      "news_count": 4,
-      "average_tone": null
+      "timestamp": "2026-04-08T06:00:00.000Z",
+      "news_count": 101,
+      "average_tone": -0.28153333333333336
     },
     {
-      "timestamp": "2026-04-08T19:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-08T07:00:00.000Z",
+      "news_count": 93,
+      "average_tone": -0.36965000000000003
     },
     {
-      "timestamp": "2026-04-08T20:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-08T08:00:00.000Z",
+      "news_count": 89,
+      "average_tone": -0.14720000000000003
+    },
+    {
+      "timestamp": "2026-04-08T09:00:00.000Z",
+      "news_count": 191,
+      "average_tone": -0.6733
+    },
+    {
+      "timestamp": "2026-04-08T10:00:00.000Z",
+      "news_count": 115,
+      "average_tone": 0.26064999999999994
+    },
+    {
+      "timestamp": "2026-04-08T11:00:00.000Z",
+      "news_count": 106,
+      "average_tone": -0.026700000000000015
+    },
+    {
+      "timestamp": "2026-04-08T12:00:00.000Z",
+      "news_count": 182,
+      "average_tone": 0.4019666666666666
+    },
+    {
+      "timestamp": "2026-04-08T13:00:00.000Z",
+      "news_count": 185,
+      "average_tone": 0.42346666666666666
+    },
+    {
+      "timestamp": "2026-04-08T14:00:00.000Z",
+      "news_count": 77,
+      "average_tone": -1.12085
+    },
+    {
+      "timestamp": "2026-04-08T15:00:00.000Z",
+      "news_count": 38,
+      "average_tone": -0.7140999999999998
+    },
+    {
+      "timestamp": "2026-04-08T16:00:00.000Z",
+      "news_count": 55,
+      "average_tone": -1.5326666666666666
+    },
+    {
+      "timestamp": "2026-04-08T17:00:00.000Z",
+      "news_count": 84,
+      "average_tone": -1.9030999999999998
+    },
+    {
+      "timestamp": "2026-04-08T18:00:00.000Z",
+      "news_count": 199,
+      "average_tone": -2.8753999999999995
+    },
+    {
+      "timestamp": "2026-04-08T19:00:00.000Z",
+      "news_count": 112,
+      "average_tone": -3.1222250000000003
+    },
+    {
+      "timestamp": "2026-04-08T20:00:00.000Z",
+      "news_count": 85,
+      "average_tone": -3.407925
+    },
+    {
+      "timestamp": "2026-04-08T21:00:00.000Z",
+      "news_count": 56,
+      "average_tone": -3.3517
+    },
+    {
+      "timestamp": "2026-04-08T22:00:00.000Z",
+      "news_count": 70,
+      "average_tone": -3.523325
+    },
+    {
+      "timestamp": "2026-04-08T23:00:00.000Z",
+      "news_count": 81,
+      "average_tone": -0.9213666666666667
     }
   ],
   "top_headlines": [
@@ -69,6 +145,7 @@
       "headline": "Cryptocurrencies : Bitcoin Reaches 3 - Week High",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.etftrends.com/crypto-content-hub/cryptocurrencies-bitcoin-reaches-3-week-high/"
     },
     {
@@ -77,6 +154,7 @@
       "headline": "Bitcoin news : Morgan Stanley spot BTC ETF may begin trading Wednesday",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.coindesk.com/markets/2026/04/08/bitcoin-etf-by-a-major-u-s-bank-with-usd9-3-trillion-in-client-assets-could-debut-wednesday"
     },
     {
@@ -85,6 +163,7 @@
       "headline": "Bitcoin Price Breaks $72 , 000 After US - Iran Ceasefire What Comes Next ?",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.newsbtc.com/breaking-news-ticker/bitcoin-price-breaks-72000-after-us-iran-ceasefire-what-comes-next/"
     },
     {
@@ -93,6 +172,7 @@
       "headline": "Morgan Stanley Launches Bitcoin ETF With Lowest Fees",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.wealthmanagement.com/etfs/morgan-stanley-debuts-bitcoin-etf-as-price-slump-rattles-holders"
     },
     {
@@ -101,6 +181,7 @@
       "headline": "Bitcoin price analysis : BTC is rallying , but caution warranted",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.coindesk.com/markets/2026/04/08/bitcoin-is-above-usd70-000-on-iran-ceasefire-but-rally-is-turning-cautious-for-good-reasons"
     },
     {
@@ -109,6 +190,7 @@
       "headline": "Jamie Dimon warns of growing crypto competition in annual JPMorgan shareholder letter",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://fortune.com/2026/04/07/jamie-dimon-warns-growing-crypto-competition-jpmorgan-shareholder-letter-we-need-to-roll-out-blockchain-technology/"
     },
     {
@@ -117,6 +199,7 @@
       "headline": "Market Crash : Is This the Best Time to Load Up on Cryptocurrency ?",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/market-crash-best-time-load-173500111.html"
     },
     {
@@ -125,6 +208,7 @@
       "headline": "Virtune Expands in Poland with First - Ever Crypto Index ETP on the Warsaw Stock Exchange",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.manilatimes.net/2026/04/08/tmt-newswire/globenewswire/virtune-expands-in-poland-with-first-ever-crypto-index-etp-on-the-warsaw-stock-exchange/2316099"
     },
     {
@@ -133,6 +217,7 @@
       "headline": "Bitcoin Price Prediction as Companies Dump Their Bitcoin",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-price-prediction-companies-dump-154527312.html"
     },
     {
@@ -141,6 +226,7 @@
       "headline": "Bitcoin and ethereum price today , Wednesday , April 8 , 2026 : Prices rise after U . S .- Iran ceasefire announcement",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-wednesday-april-8-2026-prices-rise-after-us-iran-ceasefire-announcement-113837833.html"
     },
     {
@@ -149,6 +235,7 @@
       "headline": "Morning Minute : Ceasefire Hopes Rise , Fall Along with Bitcoin",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/morning-minute-ceasefire-hopes-rise-120334406.html"
     },
     {
@@ -157,6 +244,7 @@
       "headline": "Iran Demands Bitcoin and Crypto for Strait of Hormuz Toll Payments",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://gizmodo.com/iran-demands-bitcoin-and-crypto-for-strait-of-hormuz-toll-payments-2000744120"
     },
     {
@@ -165,6 +253,7 @@
       "headline": "Morgan Stanley Becomes Official First US Bank To Launch A Spot Bitcoin ETF",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://bitcoinmagazine.com/news/morgan-stanley-us-bank-spot-bitcoin-etf"
     },
     {
@@ -173,6 +262,7 @@
       "headline": "The Case for Owning Just 1 Cryptocurrency -- and Which One It Should Be",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.fool.com/investing/2026/04/08/the-case-for-owning-just-one-cryptocurrency-and-wh/"
     },
     {
@@ -181,7 +271,11 @@
       "headline": "Bitcoin Reclaims $72K After Trump Announces Iran Ceasefire",
       "category": "election",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://cointelegraph.com/news/bitcoin-price-spike-us-president-donald-trump-iran-ceasefire"
     }
-  ]
+  ],
+  "data_quality": "full",
+  "timeline_status": "ok",
+  "volume_status": "ok"
 }

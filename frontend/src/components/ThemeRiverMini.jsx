@@ -7,9 +7,11 @@ const HEIGHT = 120;
 const MARGIN = { top: 14, right: 12, bottom: 22, left: 32 };
 
 const THEME_COLORS = {
-  regulation: '#8da0cb',
   war:        '#d62728',
   election:   '#ffd92f',
+  covid:      '#1f9d55',
+  regulation: '#8da0cb',
+  macro:      '#9d6dd8',
   crypto:     '#f7931a',
   other:      '#6b7890',
 };
@@ -94,7 +96,7 @@ export function ThemeRiverMini({ events }) {
       ))}
       <g transform={`translate(${MARGIN.left}, ${HEIGHT + 14})`}>
         {THEME_LIST.map((key, i) => (
-          <g key={key} transform={`translate(${i * 92}, 0)`}>
+          <g key={key} transform={`translate(${i * 68}, 0)`}>
             <rect width="10" height="10" fill={THEME_COLORS[key]} rx="2" />
             <text x="14" y="9" className="chart-axis-label">
               {key}

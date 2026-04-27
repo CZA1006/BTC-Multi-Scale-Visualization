@@ -116,16 +116,27 @@ export function tokenizeHeadlines(events) {
     .sort((a, b) => b.count - a.count);
 }
 
+// Order mirrors backend `gdelt_service.CATEGORY_KEYWORDS` (war first so
+// Iran-mentioning crypto sidebars still tag as war, crypto last so an
+// unrelated bitcoin mention doesn't swamp a covid/macro day).
 const THEME_PATTERNS = [
-  { theme: 'regulation', regex: /sec\b|cftc|regulat|tariff|policy|tax|sanction/i },
-  { theme: 'war',        regex: /\bwar\b|attack|strike|military|missile|conflict|israel|iran|ukraine|russia/i },
-  { theme: 'election',   regex: /election|campaign|vote|senate|congress|trump|harris|biden/i },
-  { theme: 'crypto',     regex: /bitcoin|btc|crypto|etf|halving|on.?chain|mining|wallet/i },
+  { theme: 'war',        regex: /\bwar\b|attack|strike|military|missile|conflict|invasion|israel|iran|ukraine|russia|putin|tehran|nuclear/i },
+  { theme: 'election',   regex: /election|campaign|vote|debate|senate|congress|white house|swing state|trump|harris|biden/i },
+  { theme: 'covid',      regex: /covid|coronavirus|pandemic|lockdown|vaccine|black thursday/i },
+  { theme: 'regulation', regex: /\bsec\b|cftc|regulat|tariff|policy|tax|sanction|swift|lawsuit|\bban\b/i },
+  { theme: 'macro',      regex: /\bfed\b|federal reserve|inflation|\brate\b|\brates\b|\bcpi\b|powell|stimulus|\bqe\b/i },
+  { theme: 'crypto',     regex: /bitcoin|btc|crypto|etf|halving|on.?chain|mining|wallet|coinbase|microstrategy/i },
 ];
 
-export const THEME_LIST = ['regulation', 'war', 'election', 'crypto', 'other'];
+export const THEME_LIST = ['war', 'election', 'covid', 'regulation', 'macro', 'crypto', 'other'];
 
-export function classifyTheme(text) {
+export function classifyTheme(text, backendCategory) {
+  // Prefer the backend's per-article `category` when present — it uses
+  // the same category set and already saw the URL too. Fall back to a
+  // headline-only regex sweep otherwise.
+  if (backendCategory && THEME_LIST.includes(backendCategory)) {
+    return backendCategory;
+  }
   const s = String(text ?? '');
   for (const { theme, regex } of THEME_PATTERNS) {
     if (regex.test(s)) return theme;
@@ -188,22 +199,19 @@ export function cumulativeReturnIndex(returns) {
 }
 
 export function bucketHeadlinesByThemeHour(events) {
-  // Returns array of { hour: 0..23, regulation, war, election, crypto, other }.
-  const buckets = Array.from({ length: 24 }, (_, hour) => ({
-    hour,
-    regulation: 0,
-    war: 0,
-    election: 0,
-    crypto: 0,
-    other: 0,
-  }));
+  // Returns array of { hour: 0..23, war, election, covid, regulation, macro, crypto, other }.
+  const buckets = Array.from({ length: 24 }, (_, hour) => {
+    const row = { hour };
+    for (const k of THEME_LIST) row[k] = 0;
+    return row;
+  });
   for (const ev of events ?? []) {
     const ts = String(ev.timestamp ?? '');
     const m = ts.match(/[T ](\d{2})/);
     if (!m) continue;
     const hour = Number(m[1]);
     if (hour < 0 || hour > 23) continue;
-    const theme = classifyTheme(ev.headline);
+    const theme = classifyTheme(ev.headline, ev.category);
     buckets[hour][theme] += 1;
   }
   return buckets;

@@ -741,6 +741,12 @@ export function MicroView() {
 
             <div className="context-section">
               <p className="summary-title">Headline panel</p>
+              {gdeltSummary.bucket_label ? (
+                <p className="state-label">
+                  GDELT bucket · <strong>{gdeltSummary.bucket_label}</strong>
+                  {' '}— curated query routes the DOC API toward this window's narrative.
+                </p>
+              ) : null}
               <div className="context-chip-row">
                 <div className="context-chip">
                   <span className="context-chip-label">GDELT status</span>
@@ -750,17 +756,35 @@ export function MicroView() {
                   <span className="context-chip-label">News count</span>
                   <strong>{gdeltSummary.news_count ?? 0}</strong>
                 </div>
-                <div className="context-chip">
-                  <span className="context-chip-label">Regulation mentions</span>
-                  <strong>{gdeltSummary.theme_count_regulation ?? 0}</strong>
-                </div>
-                <div className="context-chip">
-                  <span className="context-chip-label">Election / war mentions</span>
-                  <strong>
-                    {(gdeltSummary.theme_count_election ?? 0) +
-                      (gdeltSummary.theme_count_war ?? 0)}
-                  </strong>
-                </div>
+                {(() => {
+                  // Top-2 non-zero theme counts so COVID/macro days show
+                  // their actual story instead of always crypto+regulation.
+                  const themes = [
+                    ['war', gdeltSummary.theme_count_war ?? 0],
+                    ['election', gdeltSummary.theme_count_election ?? 0],
+                    ['covid', gdeltSummary.theme_count_covid ?? 0],
+                    ['regulation', gdeltSummary.theme_count_regulation ?? 0],
+                    ['macro', gdeltSummary.theme_count_macro ?? 0],
+                    ['crypto', gdeltSummary.theme_count_crypto ?? 0],
+                  ]
+                    .filter(([, n]) => n > 0)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 3);
+                  if (themes.length === 0) {
+                    return (
+                      <div className="context-chip">
+                        <span className="context-chip-label">Top theme</span>
+                        <strong>—</strong>
+                      </div>
+                    );
+                  }
+                  return themes.map(([name, n]) => (
+                    <div className="context-chip" key={name}>
+                      <span className="context-chip-label">{name} mentions</span>
+                      <strong>{n}</strong>
+                    </div>
+                  ));
+                })()}
               </div>
 
               {eventRows.length > 0 ? (

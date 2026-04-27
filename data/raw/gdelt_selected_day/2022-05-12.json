@@ -1,0 +1,197 @@
+{
+  "date": "2022-05-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-12T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-12T20:00:00",
+      "news_count": 5,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russia - Ukraine crisis live updates | Ukraine to hold first war crimes trial over Russian invasion",
+    "Russia - Ukraine war live updates : Finland leaders back NATO bid",
+    "Ukraine to hold first war crimes trial as EU says Russia is  most direct threat to world order",
+    "War in Ukraine : Latest developments - Military - War in Ukraine",
+    "Live updates | 4 civilians dead in Ukraine Donetsk region"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-12T04:30:00",
+      "source": "thehindu.com",
+      "headline": "Russia - Ukraine crisis live updates | Ukraine to hold first war crimes trial over Russian invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thehindu.com/news/international/russia-ukraine-crisis-live-updates-ukraine-to-hold-first-war-crimes-trial-over-russian-invasion/article65406347.ece"
+    },
+    {
+      "timestamp": "2022-05-12T12:30:00",
+      "source": "nbcnews.com",
+      "headline": "Russia - Ukraine war live updates : Finland leaders back NATO bid",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/news/world/live-blog/russia-ukraine-war-live-updates-finland-nato-kharkiv-mariupol-rcna28462"
+    },
+    {
+      "timestamp": "2022-05-12T06:45:00",
+      "source": "thejournal.ie",
+      "headline": "Ukraine to hold first war crimes trial as EU says Russia is  most direct threat to world order",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thejournal.ie/ukraine-war-crimes-trial-5761478-May2022/"
+    },
+    {
+      "timestamp": "2022-05-12T18:30:00",
+      "source": "english.ahram.org.eg",
+      "headline": "War in Ukraine : Latest developments - Military - War in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.ahram.org.eg/NewsContent/54/1244/466110/War-in-Ukraine/Military/War-in-Ukraine-Latest-developments.aspx"
+    },
+    {
+      "timestamp": "2022-05-12T20:15:00",
+      "source": "startribune.com",
+      "headline": "Live updates | 4 civilians dead in Ukraine Donetsk region",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/live-updates-4-civilians-dead-in-ukraines-donetsk-region/600172572/"
+    },
+    {
+      "timestamp": "2022-05-12T20:30:00",
+      "source": "stltoday.com",
+      "headline": "Live updates | 4 civilians dead in Ukraine Donetsk region | Nation",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/news/national/live-updates-4-civilians-dead-in-ukraine-s-donetsk-region/article_6ea51ad8-b8be-5185-b316-de5b688fa385.html"
+    },
+    {
+      "timestamp": "2022-05-12T20:15:00",
+      "source": "stltoday.com",
+      "headline": "Live updates | 4 civilians dead in Ukraine Donetsk region | Nation",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/news/national/live-updates-zelenskyy-says-hes-ready-to-talk-with-putin/article_6ea51ad8-b8be-5185-b316-de5b688fa385.html"
+    },
+    {
+      "timestamp": "2022-05-12T03:00:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Pro - Russia leaders plan to ask Putin to annex Kherson as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-pro-russia-leaders-plan-to-ask-putin-to-annex-kherson-as-it-happened/a-61753566"
+    },
+    {
+      "timestamp": "2022-05-12T20:30:00",
+      "source": "tulsaworld.com",
+      "headline": "Live updates | 4 civilians dead in Ukraine Donetsk region | National News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tulsaworld.com/news/national/live-updates-4-civilians-dead-in-ukraine-s-donetsk-region/article_ebc3d6b8-ebab-5249-b86b-de072fec0c14.html"
+    },
+    {
+      "timestamp": "2022-05-12T11:30:00",
+      "source": "dispatch.com",
+      "headline": "Ukraine updates : Officials warn of offensive , Biden to meet G7",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dispatch.com/story/news/politics/2022/05/06/ukraine-russia-invasion-live-updates/9666514002/"
+    },
+    {
+      "timestamp": "2022-05-12T20:45:00",
+      "source": "siouxcityjournal.com",
+      "headline": "Live updates | 4 civilians dead in Ukraine Donetsk region | National",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://siouxcityjournal.com/news/national/live-updates-4-civilians-dead-in-ukraine-s-donetsk-region/article_323152b1-ab13-51d6-8be5-c5ffa249e0b2.html"
+    },
+    {
+      "timestamp": "2022-05-12T15:30:00",
+      "source": "forbes.com",
+      "headline": "Here What Putin Got Right And Wrong In His Boasts About The Russian Economy",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/dereksaul/2022/05/12/heres-what-putin-got-right-and-wrong-in-his-boasts-about-the-russian-economy/"
+    },
+    {
+      "timestamp": "2022-05-12T13:00:00",
+      "source": "economist.com",
+      "headline": "Russia is on track for a record trade surplus",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.economist.com/finance-and-economics/2022/05/14/russia-is-on-track-for-a-record-trade-surplus"
+    },
+    {
+      "timestamp": "2022-05-12T09:30:00",
+      "source": "m.lasvegassun.com",
+      "headline": "Western powers must act swiftly to KO Russian aggression in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://m.lasvegassun.com/news/2022/may/12/western-powers-must-act-swiftly-to-ko-russian-aggr/"
+    },
+    {
+      "timestamp": "2022-05-12T13:30:00",
+      "source": "lasvegassun.com",
+      "headline": "Western powers must act swiftly to KO Russian aggression in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://lasvegassun.com/news/2022/may/12/western-powers-must-act-swiftly-to-ko-russian-aggr/"
+    }
+  ]
+}

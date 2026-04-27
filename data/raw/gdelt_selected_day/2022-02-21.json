@@ -1,0 +1,192 @@
+{
+  "date": "2022-02-21",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-21T02:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-21T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Under Pressure Below $38 , 000 as Russia - Ukraine Tensions Hit Risk Assets",
+    "Cryptocurrency Price Today : Bitcoin , Ethereum drop ; Solana rises 5 %",
+    "Biden Agrees to Talks with Putin , If Russia Does Not Invade Ukraine",
+    "Ukraine : Biden , Putin may meet this week if Russia hasnt invaded",
+    "Biden agrees to meet with Putin so long as Russia holds off on invasion"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-21T13:15:00",
+      "source": "marketwatch.com",
+      "headline": "Bitcoin Under Pressure Below $38 , 000 as Russia - Ukraine Tensions Hit Risk Assets",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/articles/bitcoin-under-pressure-below-38-000-as-russia-ukraine-tensions-hit-risk-assets-51645444815"
+    },
+    {
+      "timestamp": "2022-02-21T06:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Cryptocurrency Price Today : Bitcoin , Ethereum drop ; Solana rises 5 %",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/top-cryptocurrency-prices-today-bitcoin-ethereum-drop-solana-rises-5/articleshow/89715539.cms"
+    },
+    {
+      "timestamp": "2022-02-21T06:00:00",
+      "source": "voanews.com",
+      "headline": "Biden Agrees to Talks with Putin , If Russia Does Not Invade Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/biden-agrees-to-talks-with-putin-if-russia-does-not-invade-ukraine-/6451893.html"
+    },
+    {
+      "timestamp": "2022-02-21T05:45:00",
+      "source": "azcentral.com",
+      "headline": "Ukraine : Biden , Putin may meet this week if Russia hasnt invaded",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.azcentral.com/story/news/politics/2022/02/20/ukraine-russia-nato-crisis/6870850001/"
+    },
+    {
+      "timestamp": "2022-02-21T07:30:00",
+      "source": "abqjournal.com",
+      "headline": "Biden agrees to meet with Putin so long as Russia holds off on invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.abqjournal.com/2472283/biden-agrees-to-meet-with-putin-so-long-as-russia-holds-off-on-invasion.html"
+    },
+    {
+      "timestamp": "2022-02-21T21:15:00",
+      "source": "msn.com",
+      "headline": "Stoking tensions , Putin recognizes two breakaway regions in eastern Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-nz/news/world/stoking-tensions-putin-recognizes-two-breakaway-regions-in-eastern-ukraine/ar-AAU7Uva"
+    },
+    {
+      "timestamp": "2022-02-21T21:00:00",
+      "source": "msn.com",
+      "headline": "Stoking tensions , Putin recognizes two breakaway regions in eastern Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/stoking-tensions-putin-recognizes-two-breakaway-regions-in-eastern-ukraine/ar-AAU7Uva"
+    },
+    {
+      "timestamp": "2022-02-21T21:00:00",
+      "source": "msn.com",
+      "headline": "Stoking tensions , Putin recognizes two breakaway regions in eastern Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/stoking-tensions-putin-recognizes-two-breakaway-regions-in-eastern-ukraine/ar-AAU7Uva"
+    },
+    {
+      "timestamp": "2022-02-21T07:30:00",
+      "source": "tribuneindia.com",
+      "headline": "US says Russia closer to invading Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.tribuneindia.com/news/world/us-says-russia-closer-to-invading-ukraine-371783"
+    },
+    {
+      "timestamp": "2022-02-21T04:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Crypto prices crash as threat of war looms",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/tech/technology/crypto-prices-crash-as-threat-of-war-looms/articleshow/89708757.cms"
+    },
+    {
+      "timestamp": "2022-02-21T20:00:00",
+      "source": "msn.com",
+      "headline": "Putin to Recognize Ukraine Separatist Regions , Kremlin Says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/putin-to-recognize-ukraine-separatist-regions-kremlin-says/ar-AAU8nWG"
+    },
+    {
+      "timestamp": "2022-02-21T02:30:00",
+      "source": "startribune.com",
+      "headline": "US says Russia closer to invading Ukraine , agrees to meeting",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/us-says-russia-closer-to-invading-ukraine-agrees-to-meeting/600148844/"
+    },
+    {
+      "timestamp": "2022-02-21T02:15:00",
+      "source": "ctvnews.ca",
+      "headline": "U . S .: Biden agrees to meet Putin if he halts Ukraine attack",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/u-s-biden-agrees-to-meet-putin-if-he-halts-ukraine-attack-1.5788853"
+    },
+    {
+      "timestamp": "2022-02-21T03:00:00",
+      "source": "greensboro.com",
+      "headline": "US says Russia closer to invading Ukraine , agrees to meeting",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://greensboro.com/news/national/govt-and-politics/us-says-russia-closer-to-invading-ukraine-agrees-to-meeting/article_ee2aa7bc-0a51-55bc-ae4c-db5a65353126.html"
+    },
+    {
+      "timestamp": "2022-02-21T02:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Risk - off sentiment triggers slump in cryptocurrencies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-prices-crash-as-threat-of-war-looms/articleshow/89713046.cms"
+    }
+  ]
+}

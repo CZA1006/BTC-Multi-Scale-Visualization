@@ -161,8 +161,11 @@ convention (green = up). Symmetric thresholds at ±0.5 % / ±2 % / ±5 %.
 The *5 highest-news-count days in the loaded window*, shown as cards with
 the top headline. Click a card to jump `selectedDate` there.
 
-When the window is older than ~60 days (GDELT's recent-only API window),
-the summary instead shows explanatory copy pointing at the Iran window.
+Since P9 each case-study window has its own curated DOC API query
+(COVID / War / Election / Iran) so the headline summary is meaningful
+inside *every* curated window, not just the recent Iran one. Dates
+outside any curated window fall back to a broadened generic query
+(bitcoin + macro + geopolitics).
 
 ---
 
@@ -398,7 +401,8 @@ in the insight modal without triggering accidental advances.
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | KPI cards show "—" | Backend not running, or no data for the selected window | Confirm `uvicorn` is up; check the browser console for `/api/overview` errors. |
-| Event diamonds missing in Macro | GDELT recent-only API; window is older than 60 days | Switch to the Iran Tension window for live event data. |
+| Event diamonds missing in Macro | GDELT cache for that date not yet warmed | Run `python3 backend/scripts/fetch_gdelt_historical.py` (or `--full` for every window day). |
+| Headline panel feels off-topic for the date | The date sits outside every curated window and is using the generic fallback query | Pick a date inside one of the four case-study chips (COVID / War / Election / Iran) — each has its own tailored query in `gdelt_curated.py`. |
 | Polymarket cards missing | Gamma/CLOB API rate-limited or offline | Re-run `python3 backend/scripts/fetch_polymarket_history.py --refresh`; the dashboard always serves the on-disk cache when remote fails. |
 | "No Polymarket coverage for this date" | Selected date outside curated buckets (COVID, 2022 war) | Expected — coverage is only for the Election (2024) and Iran (2026) windows. |
 | Selected day shows daily fallback chart | yfinance has no intraday for that day | Expected on weekends and beyond the intraday lookback. The fallback is intentional. |

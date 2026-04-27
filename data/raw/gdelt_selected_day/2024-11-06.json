@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-06",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-06T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T04:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-06T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin hits new all - time high of S$100 , 186",
+    "Donald Trump election win turbocharges stocks , cryptocurrency and Trump Media",
+    "Bitcoin hits record high as Trump election odds improve ; analysts maintain bullish calls amid risks",
+    "Jubilant crypto bros claim they made $100billion in 24 hours as Donald Trump was re - elected US President",
+    "Bitcoin jumps to record high as traders , investors bet on Trump victory"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-06T05:30:00",
+      "source": "mothership.sg",
+      "headline": "Bitcoin hits new all - time high of S$100 , 186",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://mothership.sg/2024/11/bitcoin-new-all-time-high-nov-6-update/"
+    },
+    {
+      "timestamp": "2024-11-06T16:15:00",
+      "source": "cbsnews.com",
+      "headline": "Donald Trump election win turbocharges stocks , cryptocurrency and Trump Media",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/sanfrancisco/news/donald-trump-election-win-stocks-cryptocurrency-trump-media/"
+    },
+    {
+      "timestamp": "2024-11-06T06:00:00",
+      "source": "moneycontrol.com",
+      "headline": "Bitcoin hits record high as Trump election odds improve ; analysts maintain bullish calls amid risks",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/business/markets/bitcoin-price-hits-new-high-tops-75000-as-trumps-election-odds-rise-analysts-keep-bullish-calls-amid-risks-12859119.html"
+    },
+    {
+      "timestamp": "2024-11-06T20:00:00",
+      "source": "dailymail.co.uk",
+      "headline": "Jubilant crypto bros claim they made $100billion in 24 hours as Donald Trump was re - elected US President",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-14049721/Jubilant-crypto-bros-billions-Donald-Trump-elected-President.html"
+    },
+    {
+      "timestamp": "2024-11-06T05:15:00",
+      "source": "firstpost.com",
+      "headline": "Bitcoin jumps to record high as traders , investors bet on Trump victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.firstpost.com/tech/bitcoin-jumps-to-record-high-as-traders-investors-bet-on-trumps-victory-13832506.html"
+    },
+    {
+      "timestamp": "2024-11-06T15:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto community celebrates Trump election victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/trump-declares-victory-crypto-community"
+    },
+    {
+      "timestamp": "2024-11-06T06:00:00",
+      "source": "gulfnews.com",
+      "headline": "Bitcoin jumps to record as traders watch US election results",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/business/markets/bitcoin-jumps-to-record-as-traders-watch-us-election-results-1.1730866963558"
+    },
+    {
+      "timestamp": "2024-11-06T11:00:00",
+      "source": "foxla.com",
+      "headline": "Crypto prices rise on Election Day as investors anticipate outcome",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxla.com/news/crypto-prices-rise-election-day-investors-anticipate-outcome"
+    },
+    {
+      "timestamp": "2024-11-06T09:30:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Trump claims presidential win . Here is what he promised the crypto industry ahead of the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/trump-claims-presidential-win-here-is-what-he-promised-the-crypto-industry-ahead-of-the-election/3427055/"
+    },
+    {
+      "timestamp": "2024-11-06T04:30:00",
+      "source": "tribuneindia.com",
+      "headline": "US Election 2024 Results LIVE : Trump defies exit polls , projected to win ; Kamala Harris trails",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.tribuneindia.com/liveblog/world/us-election-2024-results-live-trump-defies-exit-polls-projected-to-win-kamala-harris-trails/"
+    },
+    {
+      "timestamp": "2024-11-06T23:00:00",
+      "source": "foxnews.com",
+      "headline": "Harris formally concedes one day after Trump sweeping victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/harris-gives-concession-speech-one-day-after-trumps-sweeping-victory"
+    },
+    {
+      "timestamp": "2024-11-06T04:30:00",
+      "source": "newsweek.com",
+      "headline": "Bitcoin Hits Record High as Trump Takes Early 2024 Election Lead",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/bitcoin-record-high-donald-trump-win-election-musk-1980987"
+    },
+    {
+      "timestamp": "2024-11-06T19:30:00",
+      "source": "nhpr.org",
+      "headline": "The Dow Jones jumps over 1 , 300 points after Trump wins the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nhpr.org/2024-11-06/the-dow-jones-jumps-over-1-300-points-after-trump-wins-the-election"
+    },
+    {
+      "timestamp": "2024-11-06T02:15:00",
+      "source": "skynews.com.au",
+      "headline": "Trump Media shares soar 14 per cent – then plunge – on Election Day as traders bet on White House win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.skynews.com.au/business/markets/trump-media-shares-soar-14-per-cent-then-plunge-on-election-day-as-traders-bet-on-white-house-win/news-story/bcf592cdebcb6e54f95ea8d9b0deb691?nk=0685d0f73246476197462c5ec57f4612-1730858537"
+    },
+    {
+      "timestamp": "2024-11-06T04:30:00",
+      "source": "barrons.com",
+      "headline": "2024 Presidential Election Results : Trump Pulls Ahead of Harris ; Polls Close in Nevada ; Results for Congress Roll In",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.barrons.com/livecoverage/election-results-trump-harris-2024"
+    }
+  ]
+}

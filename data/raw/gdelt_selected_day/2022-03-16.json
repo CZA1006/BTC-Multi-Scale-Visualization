@@ -1,0 +1,197 @@
+{
+  "date": "2022-03-16",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-16T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-16T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Global Markets May Face Risk Of Virtual Currency Abuse As Russian Actors Seek To Circumvent Sanctions - International Law",
+    "Cryptocurrency as Sanctions Circumvention : Crisis ? Canard ? TBD ? | Bryan Cave Leighton Paisner",
+    "When and how the Russia - Ukraine war may end",
+    "Mike Novogratz says bitcoin wont have a massive rally as Fed hikes rate and Russia - Ukraine war continues",
+    "Mike Novogratz Sees No Big Bitcoin Rally As Fed Hikes Rates"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-16T07:15:00",
+      "source": "mondaq.com",
+      "headline": "Global Markets May Face Risk Of Virtual Currency Abuse As Russian Actors Seek To Circumvent Sanctions - International Law",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.mondaq.com/unitedstates/export-controls-trade-investment-sanctions/1172242/global-markets-may-face-risk-of-virtual-currency-abuse-as-russian-actors-seek-to-circumvent-sanctions"
+    },
+    {
+      "timestamp": "2022-03-16T19:15:00",
+      "source": "jdsupra.com",
+      "headline": "Cryptocurrency as Sanctions Circumvention : Crisis ? Canard ? TBD ? | Bryan Cave Leighton Paisner",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.jdsupra.com/legalnews/cryptocurrency-as-sanctions-2715437/"
+    },
+    {
+      "timestamp": "2022-03-16T13:15:00",
+      "source": "indiatoday.in",
+      "headline": "When and how the Russia - Ukraine war may end",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.indiatoday.in/world/russia-ukraine-war/story/when-and-how-the-russia-ukraine-war-may-end-1926140-2022-03-16"
+    },
+    {
+      "timestamp": "2022-03-16T15:30:00",
+      "source": "businessinsider.com.au",
+      "headline": "Mike Novogratz says bitcoin wont have a massive rally as Fed hikes rate and Russia - Ukraine war continues",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.com.au/mike-novogratz-crypto-bitcoin-rally-fed-rate-hike-ukraine-war-2022-3"
+    },
+    {
+      "timestamp": "2022-03-16T19:15:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Mike Novogratz Sees No Big Bitcoin Rally As Fed Hikes Rates",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://markets.businessinsider.com/news/currencies/mike-novogratz-crypto-bitcoin-rally-fed-rate-hike-ukraine-war-2022-3"
+    },
+    {
+      "timestamp": "2022-03-16T16:00:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Mike Novogratz Sees No Big Bitcoin Rally As Fed Hikes Rates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/mike-novogratz-crypto-bitcoin-rally-fed-rate-hike-ukraine-war-2022-3"
+    },
+    {
+      "timestamp": "2022-03-16T21:00:00",
+      "source": "aljazeera.com",
+      "headline": "Timeline : Week three of Russia invasion of Ukraine | Russia - Ukraine war News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/3/16/timeline-week-three-of-russias-war-in-ukraine"
+    },
+    {
+      "timestamp": "2022-03-16T20:15:00",
+      "source": "fox4news.com",
+      "headline": "Russia - Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox4news.com/tag/russia-ukraine"
+    },
+    {
+      "timestamp": "2022-03-16T09:45:00",
+      "source": "npr.org",
+      "headline": "Blinken : Standard for lifting sanctions is an  irreversible  Russian withdrawal : NPR",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.npr.org/2022/03/16/1086835380/blinken-sets-a-standard-for-lifting-sanctions-an-irreversible-russian-withdrawal"
+    },
+    {
+      "timestamp": "2022-03-16T23:15:00",
+      "source": "castanet.net",
+      "headline": "Russia - Ukraine war : Key things to know about the conflict - World News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.castanet.net/edition/news-story-363103-5-.htm"
+    },
+    {
+      "timestamp": "2022-03-16T23:15:00",
+      "source": "castanet.net",
+      "headline": "Russia - Ukraine war : Key things to know about the conflict - World News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.castanet.net/news/World/363103/Russia-Ukraine-war-Key-things-to-know-about-the-conflict"
+    },
+    {
+      "timestamp": "2022-03-16T09:45:00",
+      "source": "wusfnews.wusf.usf.edu",
+      "headline": "Blinken sets a standard for lifting sanctions : an  irreversible  Russian withdrawal",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://wusfnews.wusf.usf.edu/2022-03-16/blinken-sets-a-standard-for-lifting-sanctions-an-irreversible-russian-withdrawal"
+    },
+    {
+      "timestamp": "2022-03-16T13:15:00",
+      "source": "health.wusf.usf.edu",
+      "headline": "Blinken sets a standard for lifting sanctions : an  irreversible  Russian withdrawal",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://health.wusf.usf.edu/2022-03-16/blinken-sets-a-standard-for-lifting-sanctions-an-irreversible-russian-withdrawal"
+    },
+    {
+      "timestamp": "2022-03-16T10:45:00",
+      "source": "wbur.org",
+      "headline": "Blinken sets a standard for lifting sanctions : an  irreversible  Russian withdrawal",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wbur.org/npr/1086835380/blinken-sets-a-standard-for-lifting-sanctions-an-irreversible-russian-withdrawal"
+    },
+    {
+      "timestamp": "2022-03-16T20:15:00",
+      "source": "fox4news.com",
+      "headline": "Russia - Ukraine war : Russian forces keep up attacks amid continued talks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox4news.com/news/russia-ukraine-war-russian-forces-keep-up-attacks-as-negotiators-hold-talks"
+    }
+  ]
+}

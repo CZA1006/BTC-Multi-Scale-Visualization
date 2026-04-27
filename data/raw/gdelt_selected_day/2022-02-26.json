@@ -1,0 +1,192 @@
+{
+  "date": "2022-02-26",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 12,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-26T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-26T23:00:00",
+      "news_count": 4,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukrainian ambassador to U . S . says country sending accusations of war crimes to The Hague",
+    "Cryptocurrency donations pour in after Ukraine puts out call on Twitter",
+    "Under Martial Law , Ukrainians Look to Cryptocurrency",
+    "Here How Putin , Russia Could Use Bitcoin , Crypto to Bypass Sanctions",
+    "Putin shrugs off Western sanctions"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-26T22:30:00",
+      "source": "nbcnews.com",
+      "headline": "Ukrainian ambassador to U . S . says country sending accusations of war crimes to The Hague",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/news/world/live-blog/russia-ukraine-live-updates-n1289976/ncrd1290051"
+    },
+    {
+      "timestamp": "2022-02-26T23:45:00",
+      "source": "nbcnews.com",
+      "headline": "Cryptocurrency donations pour in after Ukraine puts out call on Twitter",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/news/world/live-blog/russia-ukraine-live-updates-n1289976/ncrd1290050"
+    },
+    {
+      "timestamp": "2022-02-26T09:15:00",
+      "source": "thestreet.com",
+      "headline": "Under Martial Law , Ukrainians Look to Cryptocurrency",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/crypto/news/under-martial-law-ukrainians-look-to-cryptocurrency"
+    },
+    {
+      "timestamp": "2022-02-26T14:15:00",
+      "source": "thestreet.com",
+      "headline": "Here How Putin , Russia Could Use Bitcoin , Crypto to Bypass Sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/investing/cryptocurrency/heres-how-putin-russia-could-use-bitcoin-crypto-to-bypass-sanctions"
+    },
+    {
+      "timestamp": "2022-02-26T14:00:00",
+      "source": "nationalpost.com",
+      "headline": "Putin shrugs off Western sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://nationalpost.com/news/world/putin-shrugs-off-western-sanctions"
+    },
+    {
+      "timestamp": "2022-02-26T04:00:00",
+      "source": "9news.com.au",
+      "headline": "Russia Ukraine update : Ukraine President Volodymyr Zelenskyy says kindergartens attacked by Russia , warns of  hardest  night",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.9news.com.au/world/russia-ukraine-update-volodymyr-zelenskyy-address-kindergartens-attacked/b6e3d5c6-0a74-4395-8edc-148df17dcff6"
+    },
+    {
+      "timestamp": "2022-02-26T23:45:00",
+      "source": "nbcnews.com",
+      "headline": "Germany readying to block airspace to Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/news/world/live-blog/russia-ukraine-live-updates-n1289976/ncrd1290058"
+    },
+    {
+      "timestamp": "2022-02-26T13:00:00",
+      "source": "deccanherald.com",
+      "headline": "Ukraine has  derailed  Russian attack plan , Zelenskyy says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.deccanherald.com/international/world-news-politics/ukraine-has-derailed-russian-attack-plan-zelenskyy-says-1085376.html"
+    },
+    {
+      "timestamp": "2022-02-26T04:00:00",
+      "source": "foxbusiness.com",
+      "headline": "Russia could use cryptocurrency to avoid Western sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.foxbusiness.com/markets/russia-could-use-cryptocurrency-to-avoid-western-sanctions"
+    },
+    {
+      "timestamp": "2022-02-26T23:15:00",
+      "source": "washingtontimes.com",
+      "headline": "World leaders ban Russia from SWIFT , cutting country off from financial transactions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2022/feb/26/world-leaders-ban-russia-swift-cutting-country-fin/"
+    },
+    {
+      "timestamp": "2022-02-26T21:45:00",
+      "source": "msn.com",
+      "headline": "Ukraine updates , Day Three : Russian advance faces  viable Ukrainian resistance  in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-ca/news/world/ukraine-updates-day-three-russian-advance-faces-viable-ukrainian-resistance-in-kyiv/ar-AAUlg0p"
+    },
+    {
+      "timestamp": "2022-02-26T23:15:00",
+      "source": "washingtontimes.com",
+      "headline": "World leaders ban Russia from SWIFT , cutting country off from financial transactions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com:443/news/2022/feb/26/world-leaders-ban-russia-swift-cutting-country-fin/"
+    },
+    {
+      "timestamp": "2022-02-26T00:30:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Zelenskyy rejects rumors he has fled country as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-zelenskyy-rejects-rumors-he-has-fled-country-as-it-happened/a-60908297"
+    },
+    {
+      "timestamp": "2022-02-26T05:15:00",
+      "source": "menafn.com",
+      "headline": "Gold Weakens , Bitcoin Follows Risk Rally - OANDA",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://menafn.com/1103765366/Gold-Weakens-Bitcoin-Follows-Risk-Rally-OANDA&source=28"
+    },
+    {
+      "timestamp": "2022-02-26T05:15:00",
+      "source": "menafn.com",
+      "headline": "Gold Weakens , Bitcoin Follows Risk Rally - OANDA",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://menafn.com/1103765366/Gold-Weakens-Bitcoin-Follows-Risk-Rally-OANDA&source=26"
+    }
+  ]
+}

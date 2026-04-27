@@ -1,0 +1,192 @@
+{
+  "date": "2020-03-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-27T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-27T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "S & P 500 Is More Volatile Than Bitcoin This Month",
+    "Covid - 19 - Could crypto be the biggest winner ?",
+    "[ 고란 ] 돈이 공포를 이겼다 ... 하지만 안심하기엔 이르다 ?",
+    "Bitcoin Price Decline Prompts US Mining Firm to Shut Down  Indefinitely",
+    "Bitcoin Price : Why Are Miners Selling More BTC Than Theyre Mining ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-27T19:00:00",
+      "source": "coindesk.com",
+      "headline": "S & P 500 Is More Volatile Than Bitcoin This Month",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/strange-days-sp-500-is-more-volatile-than-bitcoin-this-month"
+    },
+    {
+      "timestamp": "2020-03-27T16:30:00",
+      "source": "hedgeweek.com",
+      "headline": "Covid - 19 - Could crypto be the biggest winner ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.hedgeweek.com/2020/03/27/284259/covid-19-could-crypto-be-biggest-winner"
+    },
+    {
+      "timestamp": "2020-03-27T03:15:00",
+      "source": "news.joins.com",
+      "headline": "[ 고란 ] 돈이 공포를 이겼다 ... 하지만 안심하기엔 이르다 ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.joins.com/article/23740850"
+    },
+    {
+      "timestamp": "2020-03-27T14:30:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Price Decline Prompts US Mining Firm to Shut Down  Indefinitely",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-price-decline-prompts-us-mining-firm-to-shut-down-indefinitely"
+    },
+    {
+      "timestamp": "2020-03-27T15:00:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price : Why Are Miners Selling More BTC Than Theyre Mining ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-why-are-miners-selling-more-btc-theyre-mining-2947968"
+    },
+    {
+      "timestamp": "2020-03-27T11:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Dow Jones Leads Market Rally with 1 , 300 Points , Biggest 3 - Day Surge Since 1931",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/dow-jones-market-rally-1300/"
+    },
+    {
+      "timestamp": "2020-03-27T11:30:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - 세계증시 , 팬데믹 공포 되살아나 랠리 접고 하락",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200327001120"
+    },
+    {
+      "timestamp": "2020-03-27T19:00:00",
+      "source": "fxstreet.com",
+      "headline": "Fed president declare :  No end in our ability to print money … and congress has told us to",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/analysis/fed-president-declare-no-end-in-our-ability-to-print-moneyand-congress-has-told-us-to-202003271833"
+    },
+    {
+      "timestamp": "2020-03-27T14:30:00",
+      "source": "newsbtc.com",
+      "headline": "Factor That Foresaw Bitcoin Mid - March Crash to $3 , 800 Is Flipping Bullish",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/27/factor-that-foresaw-bitcoins-mid-march-crash-to-3800-is-flipping-bullish/"
+    },
+    {
+      "timestamp": "2020-03-27T03:15:00",
+      "source": "news1.kr",
+      "headline": "코로나 공포 속에 탄생한 불마켓 … 부양 약발 지속력 관건",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.news1.kr/articles/?3887613"
+    },
+    {
+      "timestamp": "2020-03-27T17:45:00",
+      "source": "prnewswire.com",
+      "headline": "BITLEAGUE is excited to announce it has received Money Transmitter License ( MTL ) in IDAHO state .",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.prnewswire.com:443/news-releases/bitleague-is-excited-to-announce-it-has-received-money-transmitter-license-mtl-in-idaho-state-301031003.html"
+    },
+    {
+      "timestamp": "2020-03-27T05:15:00",
+      "source": "marketpulse.com",
+      "headline": "Asia Open – Investors turn offensive amid stimulus rally , Virus spread should derail optimism , Oil higher on mixed virus news , Gold hangs onto majority of this week gains , Bitcoin rises",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.marketpulse.com/20200326/asia-open-investors-turn-offensive-amid-stimulus-rally-virus-spread-derail-optimism-oil-higher-mixed-virus-news-gold-hangs-onto-majority-weeks-gains-bitcoin-ri/"
+    },
+    {
+      "timestamp": "2020-03-27T15:45:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - 미 연준 수익률 곡선 제어 정책 채택론 급부상",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200328000002"
+    },
+    {
+      "timestamp": "2020-03-27T22:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "BITLEAGUE is excited to announce it has received Money Transmitter License ( MTL ) in IDAHO state .",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitleague-excited-announce-received-money-170000554.html"
+    },
+    {
+      "timestamp": "2020-03-27T17:30:00",
+      "source": "news.yahoo.com",
+      "headline": "BITLEAGUE is excited to announce it has received Money Transmitter License ( MTL ) in IDAHO state .",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/bitleague-excited-announce-received-money-170000554.html"
+    }
+  ]
+}

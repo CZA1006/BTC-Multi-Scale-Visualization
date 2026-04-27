@@ -1,0 +1,192 @@
+{
+  "date": "2025-01-20",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-20T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-20T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump Win Sparked Euphoria in Markets , Now Comes the Real Test",
+    "Republicans were given a nationwide mandate . Now let get to work .",
+    "Live updates : The inauguration of Donald Trump",
+    "Bitcoin Soars Past $109 , 000 Ahead of Possible Early Action on Crypto by Trump",
+    "Trump Team Marks Inauguration Day With Taunting Note For Biden"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-20T13:45:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Trump Win Sparked Euphoria in Markets , Now Comes the Real Test",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/investing/2025/01/20/trumps-win-sparked-euphoria-in-markets-now-comes-the-real-test/"
+    },
+    {
+      "timestamp": "2025-01-20T22:15:00",
+      "source": "startribune.com",
+      "headline": "Republicans were given a nationwide mandate . Now let get to work .",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.startribune.com/republicans-were-given-a-nationwide-mandate-now-lets-get-to-work/601208478"
+    },
+    {
+      "timestamp": "2025-01-20T15:00:00",
+      "source": "kjrh.com",
+      "headline": "Live updates : The inauguration of Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kjrh.com/politics/live-updates-the-inauguration-of-donald-trump"
+    },
+    {
+      "timestamp": "2025-01-20T11:45:00",
+      "source": "english.aawsat.com",
+      "headline": "Bitcoin Soars Past $109 , 000 Ahead of Possible Early Action on Crypto by Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://english.aawsat.com/business/5103152-bitcoin-soars-past-109000-ahead-possible-early-action-crypto-trump"
+    },
+    {
+      "timestamp": "2025-01-20T13:00:00",
+      "source": "huffingtonpost.co.uk",
+      "headline": "Trump Team Marks Inauguration Day With Taunting Note For Biden",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.huffingtonpost.co.uk/entry/trump-team-marks-inauguration-day-with-taunting-note-for-biden_uk_678e34b8e4b09387df891e94"
+    },
+    {
+      "timestamp": "2025-01-20T16:45:00",
+      "source": "nj.com",
+      "headline": "House Dem questions whether Trump , MAGA billionaire rigged election in critical swing state",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nj.com/politics/2025/01/house-dem-questions-whether-trump-maga-billionaire-rigged-election-in-critical-swing-state.html"
+    },
+    {
+      "timestamp": "2025-01-20T15:15:00",
+      "source": "huffingtonpost.co.uk",
+      "headline": "What Next For Kamala Harris And Doug Emhoff ? | HuffPost united kingdom Politics",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.huffingtonpost.co.uk/entry/whats-next-for-kamala-harris-and-doug-emhoff-after-trump-takes-over_uk_678e605be4b09387df893400"
+    },
+    {
+      "timestamp": "2025-01-20T04:00:00",
+      "source": "punchng.com",
+      "headline": "Fears over deportation , border closure as Trump returns to White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://punchng.com/fears-over-deportation-border-closure-as-trump-returns-to-white-house/"
+    },
+    {
+      "timestamp": "2025-01-20T10:45:00",
+      "source": "qz.com",
+      "headline": "Donald Trump inauguration : What next for Bitcoin and crypto",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://qz.com/donald-trump-inauguration-bitcoin-cryptocurrency-1851736370"
+    },
+    {
+      "timestamp": "2025-01-20T14:45:00",
+      "source": "wtkr.com",
+      "headline": "Live updates : The inauguration of Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wtkr.com/politics/live-updates-the-inauguration-of-donald-trump"
+    },
+    {
+      "timestamp": "2025-01-20T14:45:00",
+      "source": "slate.com",
+      "headline": "Elon Musk : Meet the tech billionaires who are betting big on Donald Trump .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://slate.com/news-and-politics/2025/01/tech-crypto-bros-donald-trump-silicon-valley-elon-musk.html"
+    },
+    {
+      "timestamp": "2025-01-20T09:00:00",
+      "source": "yahoo.com",
+      "headline": "Bitcoin soars past $100 , 000 ahead of possible early action on crypto by Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/bitcoin-soars-past-100-000-082124391.html"
+    },
+    {
+      "timestamp": "2025-01-20T09:15:00",
+      "source": "apnews.com",
+      "headline": "Bitcoin soars past $109 , 000 ahead of possible early action on crypto by Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://apnews.com/article/bitcoin-crypto-trump-currency-cfa22616701c94590e6f9d409651acac"
+    },
+    {
+      "timestamp": "2025-01-20T10:30:00",
+      "source": "local10.com",
+      "headline": "Bitcoin soars past $109 , 000 ahead of possible early action on crypto by Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.local10.com/news/2025/01/20/bitcoin-soars-past-109000-ahead-of-possible-early-action-on-crypto-by-trump/"
+    },
+    {
+      "timestamp": "2025-01-20T11:15:00",
+      "source": "dailyexcelsior.com",
+      "headline": "Bitcoin soars past USD 100 , 000 ahead of possible early action on crypto by Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailyexcelsior.com/bitcoin-soars-past-usd-100000-ahead-of-possible-early-action-on-crypto-by-trump/"
+    }
+  ]
+}

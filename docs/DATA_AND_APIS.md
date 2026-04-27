@@ -36,48 +36,105 @@ We will use:
 - `external_assets_daily.csv`
 - `external_assets_selected_day.csv`
 
-## 2. GDELT
+## 2. GDELT — date-aware historical (P9)
+
 ### Source
 - Homepage: https://www.gdeltproject.org/
-- Data page: https://www.gdeltproject.org/data.html
+- DOC API: https://api.gdeltproject.org/api/v2/doc/doc
 
-### Recommendation
-Use **GDELT GKG / daily aggregated exports or BigQuery queries**, not full raw yearly downloads.
+### Why this design
+The legacy implementation paired a single bitcoin-only `DEFAULT_QUERY`
+with a 90-day lookback guard. Two problems:
 
-### Why
-- GDELT GKG is better for narrative context, themes, and tone
-- A full year of GKG is huge, so start with filtered and aggregated subsets
+1. **Lookback** — the 90-day guard was overly conservative. The DOC API
+   actually returns useful headlines for 2020-03-12 (Black Thursday),
+   2022-02-24 (Russia invades Ukraine), and 2024-11-05 (election day).
+   The guard was the limiter, not the API.
+2. **Topical breadth** — querying `bitcoin OR crypto OR …` on a war or
+   election day produced near-empty headline panels and a crypto-only
+   word cloud. The chart "worked" but said nothing.
 
-### Fields to derive
-- `date`
-- `news_count`
-- `avg_tone`
-- `theme_count_crypto`
-- `theme_count_regulation`
-- `theme_count_election`
-- `theme_count_war`
-- `top_headlines`
+P9 replaces both with a **per-window curated DOC query** that pivots
+the keyword set to the dominant narrative of that window, plus a
+broadened generic fallback for dates outside any case study. The
+lookback is now 8 years.
 
-### Suggested themes / keywords
-- BITCOIN
-- CRYPTO
-- BLOCKCHAIN
-- ETF
-- SEC
-- REGULATORY
-- CENTRALBANK / FED
-- TRUMP / ELECTION
-- IRAN / WAR / UKRAINE
+### Curated queries
+See `backend/app/services/gdelt_curated.py`.
 
-### Output tables
-- `gdelt_daily_signals.csv`
-- `gdelt_selected_day.csv`
-- `events_selected_day.csv`
+| Bucket | Window | DOC query (excerpt) |
+|---|---|---|
+| `covid_shock` | 2020-02-01 → 2020-06-30 | `(covid OR coronavirus OR pandemic OR "black thursday" OR fed OR "interest rate" OR stimulus OR "stock market" OR crash OR bitcoin OR crypto)` |
+| `war_regime` | 2022-02-01 → 2022-05-31 | `(ukraine OR russia OR putin OR invasion OR war OR sanctions OR swift OR "oil price" OR bitcoin OR crypto OR ruble)` |
+| `election_cycle` | 2024-09-01 → 2025-01-31 | `(trump OR harris OR election OR vote OR campaign OR debate OR "white house" OR bitcoin OR "spot etf" OR crypto OR fed)` |
+| `iran_tension` | 2026-03-01 → 2026-04-30 | `(iran OR israel OR "middle east" OR strike OR "nuclear deal" OR uranium OR tehran OR netanyahu OR "oil price" OR bitcoin OR crypto OR fed)` |
+| *generic fallback* | (anywhere else) | `(bitcoin OR btc OR crypto OR "spot etf" OR fed OR inflation OR "interest rate" OR "stock market" OR election OR war OR "oil price")` |
 
-### Current implementation note
-- The repo currently uses the **GDELT DOC API** for recent selected-day context and recent daily signals.
-- This works for recent windows and live demos, but not for a full 2019-2026 historical backfill.
-- Full-history event coverage still requires offline archive / GKG processing.
+Every curated query keeps `bitcoin OR crypto` as a tail clause so the
+asset chart always has something tying back to BTC even on days
+dominated by non-financial news.
+
+### Theme inference (6 categories)
+`gdelt_service.py::CATEGORY_KEYWORDS` is now ordered:
+`war → election → covid → regulation → macro → crypto → general`. War
+comes first deliberately so an Iran headline outside the iran_tension
+window still tags as `war` rather than `crypto` because the article
+happens to mention bitcoin in a sidebar.
+
+The response payload exposes both the legacy four counts
+(`theme_count_crypto`, `theme_count_regulation`, `theme_count_election`,
+`theme_count_war`) and two new ones (`theme_count_macro`,
+`theme_count_covid`) plus `bucket`, `bucket_label`, and `query` for
+provenance.
+
+### Hot-dates seed cache
+`backend/scripts/fetch_gdelt_historical.py` warms the cache for 32
+hand-picked hot dates across the four windows — Black Thursday, Fed
+emergency cuts, CARES Act, Russia invasion + SWIFT cut, Harris-Trump
+debate, election day, BTC $100k, Trump inauguration, Iran spikes.
+
+```bash
+python3 backend/scripts/fetch_gdelt_historical.py            # hot dates only (~32 calls)
+python3 backend/scripts/fetch_gdelt_historical.py --full      # every day in every window (~480 calls)
+python3 backend/scripts/fetch_gdelt_historical.py --refresh   # ignore existing cache
+```
+
+### Caching
+- `data/raw/gdelt_selected_day/<YYYY-MM-DD>.json` — one file per day,
+  written on first fetch and re-served on every subsequent request.
+- `data/raw/gdelt_daily_signals.csv` — separate (legacy) recent-window
+  rolling table, untouched by P9.
+
+### Output payload (selected-day)
+```jsonc
+{
+  "date": "2024-11-05",
+  "status": "live",                              // or "cached"
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR …)",
+  "news_count": 15,
+  "avg_tone": -1.42,
+  "theme_count_election": 9,
+  "theme_count_macro": 2,
+  "theme_count_war": 1,
+  "theme_count_crypto": 2,
+  "theme_count_covid": 0,
+  "theme_count_regulation": 1,
+  "hourly_tones": [{"timestamp": "...", "news_count": 3, "average_tone": -2.1}, …],
+  "top_headlines": ["…"],
+  "articles": [{"timestamp": "...", "source": "...", "headline": "...", "category": "election", "sentiment": -2.1, "url": "..."}, …]
+}
+```
+
+### Limitations
+- DOC API rate-limits at roughly one request per second; the bulk
+  script defaults to a 0.7s sleep.
+- Theme inference is keyword-based and order-sensitive; it's good
+  enough for headline tagging but not for academic content analysis.
+- Full-archive (GKG raw 15-min files) is still out of scope — the DOC
+  API gives us titled, deduped articles, which is what the headline
+  panel needs.
 
 ## 3. Polymarket — date-aware historical (P8)
 

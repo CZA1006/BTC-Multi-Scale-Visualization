@@ -1,0 +1,212 @@
+{
+  "date": "2024-11-04",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-04T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "$61 , 000 Is Bitcoin  Line In The Sand For ETF Demand To Remain Steady , Says Analyst - Fidelity Wise Origin Bitcoin Fund Common Shares of Beneficial Interest ( BATS : FBTC )",
+    "Bitcoin Prices : Here How Harris And Trump Wins Would Impact Them",
+    "Bitcoin to move 10 %  either direction  depending on US election : Trader",
+    "Donald Trump Odds Of Election Victory Have Suddenly Gone Into Free Fall",
+    "3 bold Bitcoin price predictions as the US Election nears finishline"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-04T15:45:00",
+      "source": "benzinga.com",
+      "headline": "$61 , 000 Is Bitcoin  Line In The Sand For ETF Demand To Remain Steady , Says Analyst - Fidelity Wise Origin Bitcoin Fund Common Shares of Beneficial Interest ( BATS : FBTC )",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/11/41715056/61-000-is-bitcoin-line-in-the-sand-for-etf-demand-to-remain-steady-says-analyst"
+    },
+    {
+      "timestamp": "2024-11-04T17:30:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Prices : Here How Harris And Trump Wins Would Impact Them",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/dereksaul/2024/11/04/heres-where-analysts-expect-bitcoin-prices-will-head-under-harris-and-trump/"
+    },
+    {
+      "timestamp": "2024-11-04T05:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin to move 10 %  either direction  depending on US election : Trader",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-move-10-depending-us-election-analyst"
+    },
+    {
+      "timestamp": "2024-11-04T00:00:00",
+      "source": "forbes.com",
+      "headline": "Donald Trump Odds Of Election Victory Have Suddenly Gone Into Free Fall",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/11/03/donald-trumps-odds-of-election-victory-have-suddenly-gone-into-free-fall/"
+    },
+    {
+      "timestamp": "2024-11-04T19:15:00",
+      "source": "cointelegraph.com",
+      "headline": "3 bold Bitcoin price predictions as the US Election nears finishline",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-price-predictions-us-election-finishline"
+    },
+    {
+      "timestamp": "2024-11-04T06:15:00",
+      "source": "bravenewcoin.com",
+      "headline": "Digital Asset Markets Plummet Amid U . S . Election Drama",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/digital-asset-markets-plummet-amid-u-s-election-drama"
+    },
+    {
+      "timestamp": "2024-11-04T07:00:00",
+      "source": "politico.eu",
+      "headline": "Ranting Trump loses his way as Harris backers dare to hope",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.politico.eu/article/ranting-donald-trump-loses-way-as-kamala-harris-backers-dare-to-hope/"
+    },
+    {
+      "timestamp": "2024-11-04T14:00:00",
+      "source": "fortune.com",
+      "headline": "Bitcoin traders brace for fierce price swings as clock ticks to U . S . vote",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://fortune.com/crypto/2024/11/04/bitcoin-traders-brace-fierce-price-swings-clock-ticks-us-vote/"
+    },
+    {
+      "timestamp": "2024-11-04T18:30:00",
+      "source": "thisismoney.co.uk",
+      "headline": "Treasury yields fall as investors brace for US election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thisismoney.co.uk/money/markets/article-14038823/Treasury-yields-fall-investors-brace-election.html"
+    },
+    {
+      "timestamp": "2024-11-04T16:45:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Stock Market Today : Indexes Trade Flat As Investors Await US Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/stocks/stock-market-today-indexes-trade-flat-investors-await-us-election-2024-11"
+    },
+    {
+      "timestamp": "2024-11-04T07:15:00",
+      "source": "econotimes.com",
+      "headline": "Bitcoin Crashes Below $69K Amid Trump Election Uncertainty , Triggering Massive $350M Liquidation Wave",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Bitcoin-Crashes-Below-69K-Amid-Trumps-Election-Uncertainty-Triggering-Massive-350M-Liquidation-Wave-1692669"
+    },
+    {
+      "timestamp": "2024-11-04T13:15:00",
+      "source": "lbc.co.uk",
+      "headline": "Live : Harris and Trump make final pitch to voters before US election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lbc.co.uk/politics/us-election/live-harris-and-trump-make-final-pitch-to-voters-before-us-election/"
+    },
+    {
+      "timestamp": "2024-11-04T12:45:00",
+      "source": "gulfnews.com",
+      "headline": "Biden bites baby : A look at US election oddities",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/world/americas/biden-bites-baby-a-look-at-us-election-oddities-1.1730712685303"
+    },
+    {
+      "timestamp": "2024-11-04T01:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "US Fed to debate rate cut in shadow of presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/us-fed-debate-rate-cut-011706343.html"
+    },
+    {
+      "timestamp": "2024-11-04T05:30:00",
+      "source": "businesstimes.com.sg",
+      "headline": "US Fed to debate rate cut in shadow of presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/international/us-fed-debate-rate-cut-shadow-presidential-election"
+    }
+  ]
+}

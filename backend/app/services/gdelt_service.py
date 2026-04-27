@@ -8,21 +8,82 @@ from typing import Any
 import requests
 
 from .data_paths import GDELT_SELECTED_DAY_DIR
+from .gdelt_curated import GENERIC_QUERY, find_query_for_date
 
 GDELT_DOC_API_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
-GDELT_DOC_LOOKBACK_DAYS = 90
+# DOC API actually returns useful results several years back; keep a large
+# guard only to reject absurd/future dates.
+GDELT_DOC_LOOKBACK_DAYS = 365 * 8
 MAX_EVENT_RECORDS = 15
-DEFAULT_QUERY = (
-    "(bitcoin OR btc OR crypto OR cryptocurrency OR blockchain "
-    'OR "spot bitcoin etf" OR sec OR coinbase OR microstrategy)'
-)
 
+# Broad keyword map for theme inference. Order matters: first match wins.
+# Geopolitics first so Iran-news outside the iran_tension window still
+# surfaces as `war`/geopolitics (not as `crypto` because the article happens
+# to mention bitcoin in a sidebar).
 CATEGORY_KEYWORDS = {
-    "regulation": ["sec", "regulation", "regulatory", "etf", "lawsuit", "policy"],
-    "election": ["election", "trump", "biden", "white house", "campaign"],
-    "war": ["war", "ukraine", "russia", "iran", "israel", "missile", "conflict"],
-    "macro": ["fed", "federal reserve", "inflation", "rates", "cpi", "powell"],
-    "crypto": ["bitcoin", "btc", "crypto", "cryptocurrency", "blockchain"],
+    "war": [
+        "war",
+        "ukraine",
+        "russia",
+        "putin",
+        "iran",
+        "israel",
+        "tehran",
+        "missile",
+        "strike",
+        "invasion",
+        "conflict",
+        "nuclear",
+    ],
+    "election": [
+        "election",
+        "trump",
+        "harris",
+        "biden",
+        "white house",
+        "campaign",
+        "vote",
+        "debate",
+        "swing state",
+    ],
+    "covid": [
+        "covid",
+        "coronavirus",
+        "pandemic",
+        "lockdown",
+        "vaccine",
+    ],
+    "regulation": [
+        "sec",
+        "regulation",
+        "regulatory",
+        "lawsuit",
+        "policy",
+        "ban",
+        "sanction",
+        "swift",
+    ],
+    "macro": [
+        "fed",
+        "federal reserve",
+        "inflation",
+        "rate",
+        "rates",
+        "cpi",
+        "powell",
+        "stimulus",
+        "qe",
+    ],
+    "crypto": [
+        "bitcoin",
+        "btc",
+        "crypto",
+        "cryptocurrency",
+        "blockchain",
+        "etf",
+        "coinbase",
+        "microstrategy",
+    ],
 }
 
 
@@ -118,15 +179,17 @@ def _build_empty_payload(date_str: str, status: str, message: str) -> dict[str, 
     }
 
 
-def _normalize_gdelt_articles(date_str: str, payload: dict[str, Any]) -> dict[str, Any]:
+def _normalize_gdelt_articles(
+    date_str: str,
+    payload: dict[str, Any],
+    *,
+    bucket_key: str | None = None,
+    bucket_label: str | None = None,
+    query_used: str | None = None,
+) -> dict[str, Any]:
     raw_articles = payload.get("articles") or []
     articles: list[dict[str, Any]] = []
-    theme_counts = {
-        "crypto": 0,
-        "regulation": 0,
-        "election": 0,
-        "war": 0,
-    }
+    theme_counts: dict[str, int] = {key: 0 for key in CATEGORY_KEYWORDS.keys()}
 
     for article in raw_articles[:MAX_EVENT_RECORDS]:
         headline = (article.get("title") or "").strip()
@@ -154,12 +217,17 @@ def _normalize_gdelt_articles(date_str: str, payload: dict[str, Any]) -> dict[st
         "date": date_str,
         "status": "live",
         "message": "Loaded selected-day headlines from GDELT DOC API.",
+        "bucket": bucket_key,
+        "bucket_label": bucket_label,
+        "query": query_used,
         "news_count": len(articles),
         "avg_tone": avg_tone,
-        "theme_count_crypto": theme_counts["crypto"],
-        "theme_count_regulation": theme_counts["regulation"],
-        "theme_count_election": theme_counts["election"],
-        "theme_count_war": theme_counts["war"],
+        "theme_count_crypto": theme_counts.get("crypto", 0),
+        "theme_count_regulation": theme_counts.get("regulation", 0),
+        "theme_count_election": theme_counts.get("election", 0),
+        "theme_count_war": theme_counts.get("war", 0),
+        "theme_count_macro": theme_counts.get("macro", 0),
+        "theme_count_covid": theme_counts.get("covid", 0),
         "hourly_tones": _build_hourly_tones(articles),
         "top_headlines": [article["headline"] for article in articles[:5]],
         "articles": articles,
@@ -170,21 +238,30 @@ def _fetch_from_gdelt(date_str: str) -> dict[str, Any]:
     day_start = datetime.strptime(date_str, "%Y-%m-%d")
     day_end = day_start + timedelta(days=1) - timedelta(seconds=1)
 
+    target_date = day_start.date()
+    query, bucket = find_query_for_date(target_date)
+
     response = requests.get(
         GDELT_DOC_API_URL,
         params={
-            "QUERY": DEFAULT_QUERY,
+            "QUERY": query,
             "MODE": "ArtList",
             "FORMAT": "JSON",
             "MAXRECORDS": str(MAX_EVENT_RECORDS),
             "STARTDATETIME": day_start.strftime("%Y%m%d000000"),
             "ENDDATETIME": day_end.strftime("%Y%m%d235959"),
         },
-        timeout=20,
+        timeout=30,
     )
     response.raise_for_status()
     payload = response.json()
-    return _normalize_gdelt_articles(date_str, payload)
+    return _normalize_gdelt_articles(
+        date_str,
+        payload,
+        bucket_key=bucket.key if bucket else None,
+        bucket_label=bucket.label if bucket else None,
+        query_used=query,
+    )
 
 
 def get_selected_day_gdelt_context(date_str: str) -> dict[str, Any]:

@@ -1,0 +1,197 @@
+{
+  "date": "2022-03-08",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-08T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T08:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-08T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto Transactions Continue in Russia Despite Sanctions",
+    "Russian Crypto Trading Continues Even With Sanctions Over Ukraine War",
+    "Russian Central Bank again calls for banning crypto",
+    "Bitcoin Bros Turn Hyperbolic as Slump From Highs Dents Appeal",
+    "Here are the alternatives Russia can use as allies deploy  financial nuclear weapon"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-08T17:30:00",
+      "source": "thestreet.com",
+      "headline": "Crypto Transactions Continue in Russia Despite Sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/investing/cryptocurrency/crypto-transactions-continue-in-russia-despite-sanctions"
+    },
+    {
+      "timestamp": "2022-03-08T06:30:00",
+      "source": "ndtv.com",
+      "headline": "Russian Crypto Trading Continues Even With Sanctions Over Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ndtv.com/business/russian-crypto-trading-continues-even-with-sanctions-over-ukraine-war-2809809"
+    },
+    {
+      "timestamp": "2022-03-08T08:45:00",
+      "source": "businesstoday.in",
+      "headline": "Russian Central Bank again calls for banning crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businesstoday.in/latest/trends/story/russian-central-bank-again-calls-for-banning-crypto-325129-2022-03-08"
+    },
+    {
+      "timestamp": "2022-03-08T17:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Bitcoin Bros Turn Hyperbolic as Slump From Highs Dents Appeal",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/bitcoin-bros-turn-hyperbolic-as-slump-from-highs-dents-appeal-1.1734402"
+    },
+    {
+      "timestamp": "2022-03-08T14:15:00",
+      "source": "wionews.com",
+      "headline": "Here are the alternatives Russia can use as allies deploy  financial nuclear weapon",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wionews.com/world/what-alternatives-can-russia-use-as-allies-deploy-financial-nuclear-weapon-460269"
+    },
+    {
+      "timestamp": "2022-03-08T20:15:00",
+      "source": "dailymail.co.uk",
+      "headline": "Biden to sign EO regulating crypto trading amid concerns Russia will use it to escape sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-10587989/Biden-executive-order-cryptocurrency-expected-week.html"
+    },
+    {
+      "timestamp": "2022-03-08T22:45:00",
+      "source": "dealbreaker.com",
+      "headline": "The U . S . Economy Gonna Be Fine . The Russian Economy ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://dealbreaker.com/2022/03/russia-ukraine-roundup-3-1-2022"
+    },
+    {
+      "timestamp": "2022-03-08T16:15:00",
+      "source": "dailymail.co.uk",
+      "headline": "Republican and Democrat Senators propose bill to stop Putin liquidating $132billion in GOLD reserves",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-10590231/Republican-Democrat-Senators-propose-bill-stop-Putin-liquidating-132billion-GOLD-reserves.html"
+    },
+    {
+      "timestamp": "2022-03-08T02:30:00",
+      "source": "atlanticcouncil.org",
+      "headline": "Global Sanctions Dashboard : Special Russia Edition",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.atlanticcouncil.org/blogs/econographics/global-sanctions-dashboard-special-russia-edition/"
+    },
+    {
+      "timestamp": "2022-03-08T08:45:00",
+      "source": "businesstoday.in",
+      "headline": "Ukraine crisis : Coinbase bans 25 , 000 Russian addresses , reports them to US govt",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businesstoday.in/crypto/story/ukraine-crisis-coinbase-bans-25000-russian-addresses-reports-them-to-us-govt-325124-2022-03-08"
+    },
+    {
+      "timestamp": "2022-03-08T22:15:00",
+      "source": "forbes.com",
+      "headline": "Why No One From Ripple To Russia Has Been Able To Topple The SWIFT Monopoly",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/jasonbisnoff/2022/03/08/why-no-one-from-ripple-to-russia-has-been-able-to-topple-the-swift-monopoly/"
+    },
+    {
+      "timestamp": "2022-03-08T13:00:00",
+      "source": "msn.com",
+      "headline": "Lawmakers fear cryptocurrencies could be back door for sanctioned rubles",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/politics/lawmakers-fear-cryptocurrencies-could-be-back-door-for-sanctioned-rubles/ar-AAUMEx5"
+    },
+    {
+      "timestamp": "2022-03-08T06:00:00",
+      "source": "menafn.com",
+      "headline": "Biden Russian roulette may kill dollar dominance",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103809683/Bidens-Russian-roulette-may-kill-dollar-dominance&source=19"
+    },
+    {
+      "timestamp": "2022-03-08T05:30:00",
+      "source": "menafn.com",
+      "headline": "Biden Russian roulette may kill dollar dominance",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103809683/Bidens-Russian-roulette-may-kill-dollar-dominance&source=26"
+    },
+    {
+      "timestamp": "2022-03-08T05:30:00",
+      "source": "menafn.com",
+      "headline": "Biden Russian roulette may kill dollar dominance",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103809683/Bidens-Russian-roulette-may-kill-dollar-dominance&source=28"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "date": "2020-03-16",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 3,
+  "theme_count_war": 0,
+  "theme_count_macro": 8,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-16T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T13:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Is Back In Free Fall And Dropping Fast Here Why",
+    "Bitcoin Sinks to $4 , 390 as Dow 1 , 000 - Point Drop Risks Bigger Breakdown",
+    "Bitcoin Crashes Alongside Stocks As Fed Reserve Cuts Rates To 0 %",
+    "Dow Futures Plunged 1 , 000 Points after Fed Cuts Interest Rate to Zero",
+    "Bitcoin Sinks Below $5K Despite Fed Reserve Slashing of Interest Rates"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-16T09:30:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Is Back In Free Fall And Dropping Fast Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/03/16/bitcoin-is-back-in-free-fall-and-dropping-fast-heres-why/"
+    },
+    {
+      "timestamp": "2020-03-16T13:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Sinks to $4 , 390 as Dow 1 , 000 - Point Drop Risks Bigger Breakdown",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/16/bitcoin-sinks-to-4390-as-dows-1000-point-drop-risks-bigger-breakdown/"
+    },
+    {
+      "timestamp": "2020-03-16T12:00:00",
+      "source": "insidebitcoins.com",
+      "headline": "Bitcoin Crashes Alongside Stocks As Fed Reserve Cuts Rates To 0 %",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/bitcoin-crashes-alongside-stocks-as-fed-reserve-cuts-rates-to-0/253859"
+    },
+    {
+      "timestamp": "2020-03-16T12:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Dow Futures Plunged 1 , 000 Points after Fed Cuts Interest Rate to Zero",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/dow-futures-plunge-fed-rate-zero/"
+    },
+    {
+      "timestamp": "2020-03-16T14:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Sinks Below $5K Despite Fed Reserve Slashing of Interest Rates",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-sinks-below-5k-despite-fed-reserves-slashing-of-interest-rates"
+    },
+    {
+      "timestamp": "2020-03-16T13:00:00",
+      "source": "aljazeera.com",
+      "headline": "US Fed  desperate  move unnerves global markets",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/ajimpact/fed-desperate-unnerves-global-markets-200316090343928.html"
+    },
+    {
+      "timestamp": "2020-03-16T02:15:00",
+      "source": "ccn.com",
+      "headline": "Dow Futures Crash 1 , 041 Points as Fed Capitulates To Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ccn.com/dow-futures-crash-900-points-as-fed-capitulates-to-trump/"
+    },
+    {
+      "timestamp": "2020-03-16T13:45:00",
+      "source": "onenewspage.com",
+      "headline": "LIVE The Fed News | One News Page",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.onenewspage.com/topic/The_Fed.htm"
+    },
+    {
+      "timestamp": "2020-03-16T22:45:00",
+      "source": "forexcrunch.com",
+      "headline": "Wilshire Phoenix CEO comments on Fed injection of $168B funds into the market",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/wilshire-phoenix-ceo-comments-on-feds-injection-of-168b-funds-into-the-market/"
+    },
+    {
+      "timestamp": "2020-03-16T12:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Rose to $5 , 900 after Fed Zero - Rate Cut , Fell Below $5 , 000",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-rose-fed-zero-fell/"
+    },
+    {
+      "timestamp": "2020-03-16T20:45:00",
+      "source": "forbes.com",
+      "headline": "Dow Plunges 3 , 000 Points As Trump Says U . S .  May Be  Headed For Recession",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/sergeiklebnikov/2020/03/16/dow-plunges-3000-points-as-trump-says-us-may-be-headed-for-recession/"
+    },
+    {
+      "timestamp": "2020-03-16T13:00:00",
+      "source": "newsbtc.com",
+      "headline": "Scarily Accurate Fractal : Bitcoin Will Trade at $20 , 000 By Q1 2021",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/16/scarily-accurate-fractal-bitcoin-will-trade-20000-q1-2021/"
+    },
+    {
+      "timestamp": "2020-03-16T03:15:00",
+      "source": "finanzen.net",
+      "headline": "Bull Case : Krypto - Experten : Notenbanken könnten Bitcoin - Kurs anschieben | Nachricht",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.finanzen.net/nachricht/devisen/34-bull-case-34-krypto-experten-notenbanken-koennten-bitcoin-kurs-anschieben-8624529"
+    },
+    {
+      "timestamp": "2020-03-16T16:15:00",
+      "source": "insidebitcoins.com",
+      "headline": "Crypto Twitter Alight With Debate As Industry Crashes",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/crypto-twitter-alight-with-debate-as-industry-crashes/253876"
+    },
+    {
+      "timestamp": "2020-03-16T04:30:00",
+      "source": "kxly.com",
+      "headline": "Federal Reserve cuts rates to zero to support the economy during the coronavirus pandemic",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.kxly.com/i/federal-reserve-cuts-rates-to-zero-to-support-the-economy-during-the-coronavirus-pandemic/"
+    }
+  ]
+}

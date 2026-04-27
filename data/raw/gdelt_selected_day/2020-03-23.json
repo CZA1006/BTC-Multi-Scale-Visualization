@@ -1,0 +1,192 @@
+{
+  "date": "2020-03-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 4,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-23T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T02:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-23T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Coronavirus COVID - 19 Will Go Down In History As The Social Media And Bitcoin Pandemic",
+    "Bitcoin , Gold Spike as Fed Unveils Unlimited Coronavirus Stimulus Package",
+    "Bitcoin Price Holds Surprisingly Well as S & P 500 Futures Crash 5 % in 5 Minutes",
+    "Bitcoin and Gold : Evaluating Hard - Cap Currencies in Times of Financial Crisis",
+    "The Corona - Bitcoin Conundrum : Are Black Swan Events Forever Inevitable ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-23T23:30:00",
+      "source": "forbes.com",
+      "headline": "Coronavirus COVID - 19 Will Go Down In History As The Social Media And Bitcoin Pandemic",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/03/23/coronavirus-covid-19-will-go-down-in-history-as-the-social-media-and-bitcoin-pandemic/"
+    },
+    {
+      "timestamp": "2020-03-23T17:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin , Gold Spike as Fed Unveils Unlimited Coronavirus Stimulus Package",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-gold-spike-as-fed-reserve-unveils-unlimited-coronavirus-stimulus-package"
+    },
+    {
+      "timestamp": "2020-03-23T02:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price Holds Surprisingly Well as S & P 500 Futures Crash 5 % in 5 Minutes",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/22/bitcoin-price-holds-surprisingly-well-sp500-futures-crash-5-minutes/"
+    },
+    {
+      "timestamp": "2020-03-23T23:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin and Gold : Evaluating Hard - Cap Currencies in Times of Financial Crisis",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-and-gold-evaluating-hard-cap-currencies-in-times-of-financial-crisis"
+    },
+    {
+      "timestamp": "2020-03-23T17:30:00",
+      "source": "news.yahoo.com",
+      "headline": "The Corona - Bitcoin Conundrum : Are Black Swan Events Forever Inevitable ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/corona-bitcoin-conundrum-black-swan-170018959.html"
+    },
+    {
+      "timestamp": "2020-03-23T18:30:00",
+      "source": "insidermonkey.com",
+      "headline": "The Corona - Bitcoin Conundrum : Are Black Swan Events Forever Inevitable ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.insidermonkey.com/blog/the-corona-bitcoin-conundrum-are-black-swan-events-forever-inevitable-823346/"
+    },
+    {
+      "timestamp": "2020-03-23T02:15:00",
+      "source": "cointelegraph.com",
+      "headline": "After BitMEX Meltdown , Should Shorting Be Banned on Crypto Exchanges ?",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/after-bitmex-meltdown-should-shorting-be-banned-on-crypto-exchanges"
+    },
+    {
+      "timestamp": "2020-03-23T00:45:00",
+      "source": "ccn.com",
+      "headline": "Dow Futures Crash 1 , 000 Points as Fed Bullard Cites - 50 % U . S . GDP",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.ccn.com/dow-futures-crash-1000-points-as-feds-bullard-cites-50-u-s-gdp/"
+    },
+    {
+      "timestamp": "2020-03-23T20:30:00",
+      "source": "forbes.com",
+      "headline": "Stocks Slump , Dow Falls 600 Points As Congress Again Fails To Pass Coronavirus Stimulus Bill",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/sergeiklebnikov/2020/03/23/stocks-slump-dow-falls-600-points-as-congress-again-fails-to-pass-coronavirus-stimulus-bill/"
+    },
+    {
+      "timestamp": "2020-03-23T16:15:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin Price Analysis : BTC / USD needs to reclaim $6 , 400 to avoid another major sell - off",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-analysis-btc-usd-needs-to-reclaim-6-400-to-avoid-another-major-sell-off-202003231101"
+    },
+    {
+      "timestamp": "2020-03-23T20:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Bullish Fundamentals May Not be Enough to Stop a Violent Selloff ; Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/23/bitcoins-bullish-fundamentals-may-not-be-enough-to-stop-a-violent-selloff-heres-why/"
+    },
+    {
+      "timestamp": "2020-03-23T02:00:00",
+      "source": "newsbtc.com",
+      "headline": "Top Analyst Thinks Ripple XRP Will Retest $0 . 12 Lows : Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/23/top-analyst-thinks-ripple-xrp-retest-12-cent-lows-heres-why/"
+    },
+    {
+      "timestamp": "2020-03-23T04:45:00",
+      "source": "news.joins.com",
+      "headline": "[ 고란 ] 미 의회 막힌 부양책 ... 주가 폭락 , 비트코인은 선방",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.joins.com/article/23736498"
+    },
+    {
+      "timestamp": "2020-03-23T12:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Upcoming Bitcoin Halving Is 51 Days from Now , Could Save Crypto Market",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-halving-crashing-crypto-market/"
+    },
+    {
+      "timestamp": "2020-03-23T16:00:00",
+      "source": "xinhuanet.com",
+      "headline": "U . S . Fed announces asset purchases with no limit to support markets amid coronavirus uncertainty - Xinhua",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.xinhuanet.com/english/2020-03/23/c_138909042.htm"
+    }
+  ]
+}

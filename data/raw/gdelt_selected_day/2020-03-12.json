@@ -1,0 +1,202 @@
+{
+  "date": "2020-03-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 5,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-12T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T17:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-13T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Markets in virus panic : day plunge in charts",
+    "Markets in virus panic : day plunge in charts",
+    "Markets in virus panic : day plunge in charts",
+    "Markets in virus panic : day plunge in charts",
+    "Markets in virus panic : day plunge in charts"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-12T19:30:00",
+      "source": "kitco.com",
+      "headline": "Markets in virus panic : day plunge in charts",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.kitco.com/news/2020-03-12/Markets-in-virus-panic-day-s-plunge-in-charts.html"
+    },
+    {
+      "timestamp": "2020-03-12T18:30:00",
+      "source": "uk.reuters.com",
+      "headline": "Markets in virus panic : day plunge in charts",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/uk.reuters.com/article/uk-health-coronavirus-global-markets-gra/markets-in-virus-panic-days-plunge-in-charts-idUKKBN20Z2XA"
+    },
+    {
+      "timestamp": "2020-03-12T17:45:00",
+      "source": "in.reuters.com",
+      "headline": "Markets in virus panic : day plunge in charts",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/uk-health-coronavirus-global-markets-gra/markets-in-virus-panic-days-plunge-in-charts-idINKBN20Z310"
+    },
+    {
+      "timestamp": "2020-03-12T17:30:00",
+      "source": "uk.reuters.com",
+      "headline": "Markets in virus panic : day plunge in charts",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/article/uk-health-coronavirus-global-markets-gra/markets-in-virus-panic-days-plunge-in-charts-idUKKBN20Z2XA"
+    },
+    {
+      "timestamp": "2020-03-12T17:45:00",
+      "source": "reuters.com",
+      "headline": "Markets in virus panic : day plunge in charts",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-health-coronavirus-global-markets-gra/markets-in-virus-panic-days-plunge-in-charts-idUSKBN20Z2YY"
+    },
+    {
+      "timestamp": "2020-03-12T15:15:00",
+      "source": "webtekno.com",
+      "headline": "Bitcoin Nasıl Alınır ? Adım Adım Anlattık",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.webtekno.com/bitcoin-nasil-alinir-h87514.html"
+    },
+    {
+      "timestamp": "2020-03-12T20:15:00",
+      "source": "newsbtc.com",
+      "headline": "Record - Breaking Bitcoin Volume On Binance Points to Possible Capitulation and Bottom",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/12/record-breaking-bitcoin-volume-on-binance-points-to-possible-capitulation-and-bottom/"
+    },
+    {
+      "timestamp": "2020-03-12T01:15:00",
+      "source": "coindesk.com",
+      "headline": "As NY Fed Promises More Cash , What Will Christine Lagarde Do ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/as-ny-fed-promises-more-cash-what-will-christine-lagarde-do"
+    },
+    {
+      "timestamp": "2020-03-12T22:45:00",
+      "source": "biz.chosun.com",
+      "headline": "美뉴욕증시  검은 목요일 … 다우지수 9 . 99 % 대폭락",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://biz.chosun.com/site/data/html_dir/2020/03/13/2020031300512.html"
+    },
+    {
+      "timestamp": "2020-03-12T23:15:00",
+      "source": "yna.co.kr",
+      "headline": "뉴욕증시 , 유럽입국금지에 블랙먼데이 후 최악 … 다우 9 . 99 % 폭락",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yna.co.kr/view/AKR20200313013200009"
+    },
+    {
+      "timestamp": "2020-03-12T20:15:00",
+      "source": "newsbtc.com",
+      "headline": "Silver , Gold & Bitcoin : Safe Haven Assets Cannot Withstand Coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/12/silver-gold-bitcoin-even-safe-haven-coronavirus/"
+    },
+    {
+      "timestamp": "2020-03-13T00:00:00",
+      "source": "newsway.co.kr",
+      "headline": "뉴욕증시 , 美 유럽 입국금지 충격  블랙 먼데이  후 최악 … 다우 , 9 . 99 % 폭락 마감",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newsway.co.kr/news/view?tp=1&ud=2020031307154613740"
+    },
+    {
+      "timestamp": "2020-03-12T15:15:00",
+      "source": "newsbtc.com",
+      "headline": "2020 Gains Wiped as Bitcoin Crashes below $5 , 600",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/12/2020-gains-wiped-as-bitcoin-crashes-to-6300/"
+    },
+    {
+      "timestamp": "2020-03-12T21:00:00",
+      "source": "ibtimes.com",
+      "headline": "US Fed Ramps Up Cash Injections To Keep Market Gears Grinding",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/us-fed-ramps-cash-injections-keep-market-gears-grinding-2939062"
+    },
+    {
+      "timestamp": "2020-03-12T00:30:00",
+      "source": "etoday.co.kr",
+      "headline": "[ 종합 ] 뉴욕증시 , 코로나19  팬데믹  공포에 폭락 ... 약세장 진입",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.etoday.co.kr/news/view/1868841"
+    }
+  ]
+}

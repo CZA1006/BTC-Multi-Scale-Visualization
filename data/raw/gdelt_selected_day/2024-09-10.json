@@ -1,0 +1,202 @@
+{
+  "date": "2024-09-10",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 15,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-10T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-10T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-11T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Odds Slim that Crypto Will Feature in Tonight Debate",
+    "The Latest : Trump and Harris are set to debate in Philadelphia",
+    "Election 2024 : Where Trump And Harris Stand On Crypto",
+    "The Latest : Trump and Harris are set to debate in Philadelphia",
+    "Republicans who have endorsed Kamala Harris and spoken out against Trump"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-10T22:00:00",
+      "source": "bravenewcoin.com",
+      "headline": "Odds Slim that Crypto Will Feature in Tonight Debate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/odds-slim-that-crypto-will-feature-in-tonights-debate"
+    },
+    {
+      "timestamp": "2024-09-10T15:00:00",
+      "source": "local10.com",
+      "headline": "The Latest : Trump and Harris are set to debate in Philadelphia",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.local10.com/news/politics/2024/09/10/the-latest-trump-and-harris-are-set-to-debate-in-philadelphia/"
+    },
+    {
+      "timestamp": "2024-09-11T00:00:00",
+      "source": "bankrate.com",
+      "headline": "Election 2024 : Where Trump And Harris Stand On Crypto",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bankrate.com/investing/where-trump-and-harris-stand-on-crypto/"
+    },
+    {
+      "timestamp": "2024-09-10T14:45:00",
+      "source": "yakimaherald.com",
+      "headline": "The Latest : Trump and Harris are set to debate in Philadelphia",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yakimaherald.com/news/nation_and_world/nation/the-latest-trump-and-harris-are-set-to-debate-in-philadelphia/article_37080730-bf9c-5c92-9f37-6d2ba61c01c0.html"
+    },
+    {
+      "timestamp": "2024-09-10T19:45:00",
+      "source": "cbsnews.com",
+      "headline": "Republicans who have endorsed Kamala Harris and spoken out against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/republicans-endorsing-kamala-harris-2024/"
+    },
+    {
+      "timestamp": "2024-09-11T00:00:00",
+      "source": "theepochtimes.com",
+      "headline": "Trump , Harris to Square Off in High - Stakes Debate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theepochtimes.com/us/trump-harris-to-square-off-in-high-stakes-debate-5721833"
+    },
+    {
+      "timestamp": "2024-09-10T11:00:00",
+      "source": "yahoo.com",
+      "headline": "Harris and Trump face off in historic debate , experts point to  High , high stakes",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-trump-face-off-historic-080053370.html"
+    },
+    {
+      "timestamp": "2024-09-10T16:00:00",
+      "source": "wtsp.com",
+      "headline": "What time is the debate tonight ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wtsp.com/article/news/nation-world/presidential-debate-kamala-harris-donald-trump/507-9a4bff15-71ac-4575-9a0b-66886434410b"
+    },
+    {
+      "timestamp": "2024-09-10T07:45:00",
+      "source": "bostonglobe.com",
+      "headline": "How to watch the Harris - Trump debate on Tuesday night",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bostonglobe.com/2024/09/05/nation/how-watch-presidential-debate-between-trump-harris/"
+    },
+    {
+      "timestamp": "2024-09-10T00:00:00",
+      "source": "rte.ie",
+      "headline": "Harris arrives in Pennsylvania for crucial Trump clash",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.rte.ie/news/us/2024/0910/1469242-trump-harris/"
+    },
+    {
+      "timestamp": "2024-09-10T12:45:00",
+      "source": "gizmodo.com",
+      "headline": "Trump - Harris Debate : How to Watch the First Presidential Match - Up",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gizmodo.com/trump-harris-debate-how-to-watch-the-first-presidential-match-up-2000496284"
+    },
+    {
+      "timestamp": "2024-09-10T00:30:00",
+      "source": "wfaa.com",
+      "headline": "What time is the debate tomorrow ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wfaa.com/article/news/nation-world/presidential-debate-kamala-harris-donald-trump/507-9a4bff15-71ac-4575-9a0b-66886434410b"
+    },
+    {
+      "timestamp": "2024-09-10T00:15:00",
+      "source": "9news.com",
+      "headline": "What time is the debate tomorrow ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.9news.com/article/news/nation-world/presidential-debate-kamala-harris-donald-trump/507-9a4bff15-71ac-4575-9a0b-66886434410b"
+    },
+    {
+      "timestamp": "2024-09-10T01:15:00",
+      "source": "khou.com",
+      "headline": "What time is the debate tomorrow ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.khou.com/article/news/nation-world/presidential-debate-kamala-harris-donald-trump/507-9a4bff15-71ac-4575-9a0b-66886434410b"
+    },
+    {
+      "timestamp": "2024-09-10T01:00:00",
+      "source": "wfmynews2.com",
+      "headline": "What time is the debate tomorrow ? | wfmynews2 . com",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wfmynews2.com/article/news/nation-world/presidential-debate-kamala-harris-donald-trump/507-9a4bff15-71ac-4575-9a0b-66886434410b"
+    }
+  ]
+}

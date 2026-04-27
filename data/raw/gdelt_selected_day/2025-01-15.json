@@ -1,0 +1,182 @@
+{
+  "date": "2025-01-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-15T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-15T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-15T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-15T15:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-15T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-15T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-15T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Cryptos Gain As Markets Wait For CPI Update",
+    "Trump MAGA still raging at  sore loser  Kamala Harris",
+    "No invite for pre - inaugural tour of the VP home for Vance family , sources say",
+    "Bitcoin Struggles Under Pressure : Drops Below $98 , 000 As Treasury Yields Climb",
+    "5 days left for Trump as President : What should crypto investors keep in mind ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-15T12:15:00",
+      "source": "finanznachrichten.de",
+      "headline": "Cryptos Gain As Markets Wait For CPI Update",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2025-01/64296492-cryptos-gain-as-markets-wait-for-cpi-update-020.htm"
+    },
+    {
+      "timestamp": "2025-01-15T16:15:00",
+      "source": "nj.com",
+      "headline": "Trump MAGA still raging at  sore loser  Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nj.com/politics/2025/01/trumps-maga-still-raging-at-sore-loser-kamala-harris.html"
+    },
+    {
+      "timestamp": "2025-01-15T00:30:00",
+      "source": "yahoo.com",
+      "headline": "No invite for pre - inaugural tour of the VP home for Vance family , sources say",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/no-invite-pre-inaugural-tour-230728745.html"
+    },
+    {
+      "timestamp": "2025-01-15T16:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Struggles Under Pressure : Drops Below $98 , 000 As Treasury Yields Climb",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/bitcoin-struggles-under-pressure-drops-below-98000-as-treasury-yields-climb/"
+    },
+    {
+      "timestamp": "2025-01-15T04:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "5 days left for Trump as President : What should crypto investors keep in mind ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/5-days-left-for-trump-as-president-what-should-crypto-investors-keep-in-mind/articleshow/117252186.cms"
+    },
+    {
+      "timestamp": "2025-01-15T15:45:00",
+      "source": "whoradio.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://whoradio.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T15:00:00",
+      "source": "wilm.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wilm.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T15:00:00",
+      "source": "hallelujah955.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://hallelujah955.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T15:00:00",
+      "source": "powertalk967.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://powertalk967.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T15:30:00",
+      "source": "newstalk1049.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newstalk1049.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T17:30:00",
+      "source": "800wvhu.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://800wvhu.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T17:30:00",
+      "source": "newstalk1130.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newstalk1130.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T18:15:00",
+      "source": "whp580.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://whp580.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T18:15:00",
+      "source": "wbex.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wbex.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    },
+    {
+      "timestamp": "2025-01-15T16:00:00",
+      "source": "talkradio1080.iheart.com",
+      "headline": "Kamala Harris Blasted For  Word Salad  Response To California Fires",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://talkradio1080.iheart.com/content/2025-01-15-kamala-harris-blasted-for-word-salad-response-to-california-fires/"
+    }
+  ]
+}

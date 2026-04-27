@@ -176,8 +176,18 @@ Best Meso story: invasion day clusters with 2020 panic days in
 ## Failure mitigations
 
 ### GDELT headlines missing
-> "GDELT's API has a 60-day rolling window. Older case studies fall
-> back to local context — the design is intentionally tolerant."
+> "Since P9 each case-study window has its own curated DOC query and
+> the cache is pre-warmed for ~32 hot dates (Black Thursday, Russia
+> invasion, election day, …). If a date inside a curated window comes
+> back empty it's a network blip — re-run
+> `python3 backend/scripts/fetch_gdelt_historical.py --refresh`."
+
+### Headline panel is crypto-only on a non-crypto day
+> "P9 should have fixed this — every curated window has a tailored
+> query (war / election / covid / iran). If you still see crypto-only
+> headlines, the date is outside every curated window and falling back
+> to the generic broadened query. Pick a date inside one of the four
+> case-study chips."
 
 ### Polymarket missing or empty
 > "Polymarket coverage is curated per case-study window. Election 2024

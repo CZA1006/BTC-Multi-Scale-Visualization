@@ -1,0 +1,197 @@
+{
+  "date": "2024-11-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-05T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T05:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T08:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-05T22:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Stock market today : Indexes drop ahead of Tuesday presidential election",
+    "Trump vs . Harris : How will crypto markets react to US presidential election outcome ?",
+    "China And The Fed Are Quietly Adding To A  Perfect Storm  That Could Be About To Blow Up The Bitcoin Price",
+    "US election : Where do presidential candidates Trump and Harris stand on crypto ?",
+    "What to expect on crypto policies depending on US election outcomes"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-05T05:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Stock market today : Indexes drop ahead of Tuesday presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/stock-market-today-indexes-drop-050341311.html"
+    },
+    {
+      "timestamp": "2024-11-05T13:30:00",
+      "source": "fxstreet.com",
+      "headline": "Trump vs . Harris : How will crypto markets react to US presidential election outcome ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/crypto-markets-brace-for-volatility-in-tight-race-between-trump-and-harris-202411050845"
+    },
+    {
+      "timestamp": "2024-11-05T12:30:00",
+      "source": "forbes.com",
+      "headline": "China And The Fed Are Quietly Adding To A  Perfect Storm  That Could Be About To Blow Up The Bitcoin Price",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/11/05/china-and-the-fed-are-quietly-adding-to-a-perfect-storm-that-could-be-about-to-blow-up-the-bitcoin-price/"
+    },
+    {
+      "timestamp": "2024-11-05T08:15:00",
+      "source": "euronews.com",
+      "headline": "US election : Where do presidential candidates Trump and Harris stand on crypto ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.euronews.com/next/2024/11/05/where-do-us-presidential-candidates-trump-and-harris-stand-on-crypto"
+    },
+    {
+      "timestamp": "2024-11-05T20:00:00",
+      "source": "cointelegraph.com",
+      "headline": "What to expect on crypto policies depending on US election outcomes",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/crypto-policies-us-election-outcomes"
+    },
+    {
+      "timestamp": "2024-11-05T07:00:00",
+      "source": "indiatoday.in",
+      "headline": "Pennsylvania key swing state US election 2024 - US election Pennsylvania key swing state for Kamala Harris and Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.indiatoday.in/world/us-election-2024/story/pennsylvania-election-swing-state-significance-kamala-harris-donald-trump-2628257-2024-11-05"
+    },
+    {
+      "timestamp": "2024-11-05T05:30:00",
+      "source": "dawn.com",
+      "headline": "Kamala or Trump ? US decides today - World",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dawn.com/news/1869956/kamala-or-trump-us-decides-today"
+    },
+    {
+      "timestamp": "2024-11-05T22:45:00",
+      "source": "fxstreet.com",
+      "headline": "Cryptocurrencies Price Prediction : Ethereum , Solana & Bitcoin – American Wrap 05 November",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/cryptocurrencies-price-prediction-ethereum-solana-bitcoin-american-wrap-05-november-202411051925"
+    },
+    {
+      "timestamp": "2024-11-05T22:45:00",
+      "source": "fxstreet.com",
+      "headline": "Crypto Today : Bitcoin , Ethereum , Dogecoin gain traction while altcoins add $22B as Trump pulls ahead",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-ethereum-dogecoin-gain-traction-while-altcoins-add-22b-as-trump-pulls-ahead-202411052047"
+    },
+    {
+      "timestamp": "2024-11-05T00:00:00",
+      "source": "borneobulletin.com.bn",
+      "headline": "Fed to debate rate cut in shadow of US election | Borneo Bulletin Online",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://borneobulletin.com.bn/fed-to-debate-rate-cut-in-shadow-of-us-election/"
+    },
+    {
+      "timestamp": "2024-11-05T22:45:00",
+      "source": "lbc.co.uk",
+      "headline": "Road to the White House : The key swing states that will decide the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lbc.co.uk/news/road-to-white-house-key-swing-states-2024-us-election/"
+    },
+    {
+      "timestamp": "2024-11-05T05:30:00",
+      "source": "yahoo.com",
+      "headline": "Nevada politics expert predicts Harris will eke out a win in the state",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/nevada-politics-expert-predicts-harris-035832227.html"
+    },
+    {
+      "timestamp": "2024-11-05T08:00:00",
+      "source": "thehill.com",
+      "headline": "Nevada politics expert predicts Kamala Harris will win state",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4971813-nevada-politics-expert-predicts-harris-will-win-state/"
+    },
+    {
+      "timestamp": "2024-11-05T16:45:00",
+      "source": "mediapost.com",
+      "headline": "Gemini Kicks Off OOH Crypto Campaign , Shows Future Impact",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mediapost.com/publications/article/400832/gemini-kicks-off-ooh-crypto-campaign-shows-future.html"
+    },
+    {
+      "timestamp": "2024-11-05T02:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "5 parts of the market moving on Trump falling election odds",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/5-parts-market-moving-trumps-013058043.html"
+    }
+  ]
+}

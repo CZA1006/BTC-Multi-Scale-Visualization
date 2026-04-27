@@ -1,0 +1,202 @@
+{
+  "date": "2024-10-07",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-07T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-07T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-08T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "4 bold predictions for Bitcoin in the 2024 presidential election",
+    "Sen . Elizabeth Warren will debate lawyer John Deaton twice in October",
+    "VP Harris , Gov . Walz , Sen . Vance , Donald Trump Jr . to visit Arizona during the same week",
+    "Harris sees betting odds shrink over Trump to razor - thin margin",
+    "Here why analysts think Bitcoin will top $74 , 000 in October"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-08T00:00:00",
+      "source": "cointelegraph.com",
+      "headline": "4 bold predictions for Bitcoin in the 2024 presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/4-bold-predictions-bitcoin-2024-presidential-election"
+    },
+    {
+      "timestamp": "2024-10-07T19:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Sen . Elizabeth Warren will debate lawyer John Deaton twice in October",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/elizabeth-warren-john-deaton-october-debates-senate"
+    },
+    {
+      "timestamp": "2024-10-07T05:30:00",
+      "source": "fox10phoenix.com",
+      "headline": "VP Harris , Gov . Walz , Sen . Vance , Donald Trump Jr . to visit Arizona during the same week",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fox10phoenix.com/election/vp-harris-gov-walz-sen-vance-donald-trump-jr-visit-arizona-during-same-week"
+    },
+    {
+      "timestamp": "2024-10-07T15:15:00",
+      "source": "independent.co.uk",
+      "headline": "Harris sees betting odds shrink over Trump to razor - thin margin",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-harris-betting-odds-election-polls-b2625087.html"
+    },
+    {
+      "timestamp": "2024-10-07T06:15:00",
+      "source": "invezz.com",
+      "headline": "Here why analysts think Bitcoin will top $74 , 000 in October",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://invezz.com/news/2024/10/07/heres-why-analysts-think-bitcoin-will-top-74000-in-october/"
+    },
+    {
+      "timestamp": "2024-10-07T04:00:00",
+      "source": "koreatimes.co.kr",
+      "headline": "Trump on stump , Harris hits airwaves in razor - edge US election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.koreatimes.co.kr:443/www/world/2024/10/501_383726.html"
+    },
+    {
+      "timestamp": "2024-10-07T14:00:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "US Election 2024 : Harris vs Trump Latest Polls ( Oct 7 , 2024 ): How close are the swing states ? | World News",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/us/harris-vs-trump-latest-polls-oct-7-2024-how-close-are-the-swing-states/articleshow/114016773.cms"
+    },
+    {
+      "timestamp": "2024-10-07T00:00:00",
+      "source": "livemint.com",
+      "headline": "Harris , Walz Kick Off Weeklong Media Blitz With   Call Her Daddy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.livemint.com/news/harris-walz-kick-off-weeklong-media-blitz-with-call-her-daddy-11728252617471.html"
+    },
+    {
+      "timestamp": "2024-10-07T21:00:00",
+      "source": "vanguardngr.com",
+      "headline": "Trump says immigrants bringing  bad gene into US",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.vanguardngr.com/2024/10/trump-says-immigrants-bringing-bad-genes-into-us/"
+    },
+    {
+      "timestamp": "2024-10-07T05:30:00",
+      "source": "npr.org",
+      "headline": "Where Gaza protest voters stand ahead of Election Day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.npr.org/2024/10/06/nx-s1-5137126/where-gaza-protest-voters-stand-ahead-of-election-day"
+    },
+    {
+      "timestamp": "2024-10-07T06:00:00",
+      "source": "knpr.org",
+      "headline": "Where Gaza protest voters stand ahead of Election Day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://knpr.org/npr/2024-10-06/where-gaza-protest-voters-stand-ahead-of-election-day"
+    },
+    {
+      "timestamp": "2024-10-07T21:30:00",
+      "source": "ktbs.com",
+      "headline": "Trump : immigrants bringing  bad gene into US",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ktbs.com/news/national/trump-immigrants-bringing-bad-genes-into-us/article_647ac5ae-748b-54e8-95bb-7b1522883d44.html"
+    },
+    {
+      "timestamp": "2024-10-07T23:15:00",
+      "source": "washingtontimes.com",
+      "headline": "Anniversary of Hamas attack on Israel , protests show Harris and Democrats still face challenges",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2024/oct/7/anniversary-of-hamas-attack-on-israel-protests-sho/"
+    },
+    {
+      "timestamp": "2024-10-07T21:15:00",
+      "source": "gjsentinel.com",
+      "headline": "Trump : immigrants bringing  bad gene into US",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.gjsentinel.com/news/national/trump-immigrants-bringing-bad-genes-into-us/article_203ff219-d974-5ab6-b3ff-5c9061104d8f.html"
+    },
+    {
+      "timestamp": "2024-10-07T22:30:00",
+      "source": "dailytimes.com.pk",
+      "headline": "Harris , Trump step up attacks with less than a month before US elections",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dailytimes.com.pk/1232659/harris-trump-step-up-attacks-with-less-than-a-month-before-us-elections/"
+    }
+  ]
+}

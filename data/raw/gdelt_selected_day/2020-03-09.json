@@ -1,0 +1,187 @@
+{
+  "date": "2020-03-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 6,
+  "theme_count_regulation": 2,
+  "theme_count_election": 0,
+  "theme_count_war": 2,
+  "theme_count_macro": 2,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-09T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-09T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-09T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-09T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-09T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-09T19:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-09T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-09T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Could Fall 20 % in an Hour amidst Global Market Crash , Top Analyst Fears",
+    "Crypto Analyst : Digital Gold Narrative Out The Window Amidst Crisis",
+    "Bitcoin Collapses Below $8 , 000 as S & P Futures Post 5 % Loss : What Next ?",
+    "The Real Reasons Why Bitcoin Price Has Plunged 25 % in Two Weeks",
+    "美연준 , 증시 패닉에 90조원 유동성 긴급 투입"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-09T17:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Could Fall 20 % in an Hour amidst Global Market Crash , Top Analyst Fears",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/09/bitcoin-could-fall-20-in-an-hour-amidst-global-market-crash-top-analyst-fears/"
+    },
+    {
+      "timestamp": "2020-03-09T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Analyst : Digital Gold Narrative Out The Window Amidst Crisis",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/09/crypto-analyst-digital-gold-bitcoin-recession/"
+    },
+    {
+      "timestamp": "2020-03-09T08:30:00",
+      "source": "article.wn.com",
+      "headline": "Bitcoin Collapses Below $8 , 000 as S & P Futures Post 5 % Loss : What Next ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://article.wn.com/view/2020/03/09/Bitcoin_Collapses_Below_8000_as_S_P_Futures_Post_5_Loss_What_x/"
+    },
+    {
+      "timestamp": "2020-03-09T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "The Real Reasons Why Bitcoin Price Has Plunged 25 % in Two Weeks",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/09/bitcoin-price-25-percent-drop-risk-coronavirus/"
+    },
+    {
+      "timestamp": "2020-03-09T20:45:00",
+      "source": "news.mt.co.kr",
+      "headline": "美연준 , 증시 패닉에 90조원 유동성 긴급 투입",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2020031005011598771&MTS_P"
+    },
+    {
+      "timestamp": "2020-03-09T17:00:00",
+      "source": "newsbtc.com",
+      "headline": "The Fate of Bitcoin Rests On This Seven - Year Secular Bull Market Support",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/09/bitcoin-fate-bull-market-support/"
+    },
+    {
+      "timestamp": "2020-03-09T19:45:00",
+      "source": "exchangerates.org.uk",
+      "headline": "Euro - Dollar Keeps Surges To Best Exchange Rate Since January 2019",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.exchangerates.org.uk/news/28843/2020-03-09-euro-dollar-keeps-surges-to-best-exchange-rate-since-january-2019.html"
+    },
+    {
+      "timestamp": "2020-03-09T19:15:00",
+      "source": "infowars.com",
+      "headline": "Ron Paul : Central Banking is Socialism",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.infowars.com/ron-paul-central-banking-is-socialism/"
+    },
+    {
+      "timestamp": "2020-03-09T02:00:00",
+      "source": "newsbtc.com",
+      "headline": "Why Did Crypto Flash Crash 10 %? Analyst Gives 3 Potential Catalysts",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/08/why-did-bitcoin-flash-crash-10-percent-analyst-3-potential-catalysts/"
+    },
+    {
+      "timestamp": "2020-03-09T13:15:00",
+      "source": "khaleejtimes.com",
+      "headline": "Crypto market loses $21 billion in total market cap",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.khaleejtimes.com/business/banking-finance/crypto-market-loses-21-billion-in-total-market-cap"
+    },
+    {
+      "timestamp": "2020-03-09T07:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Suddenly Goes Into Meltdown Sending Ethereum , Ripple XRP , Bitcoin Cash And Litecoin Into Free Fall",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/03/09/bitcoin-suddenly-goes-into-meltdown-sending-ethereum-ripples-xrp-bitcoin-cash-and-litecoin-into-freefall/"
+    },
+    {
+      "timestamp": "2020-03-09T13:00:00",
+      "source": "focus.de",
+      "headline": "Bitcoin : Preise fallen auf breiter Front - Corona - Panik springt von Aktien über",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.focus.de/finanzen/boerse/kryptowaehrungen/weiterer-verkaufsdruck-erwartet-bitcoin-kurs-btc-gruende-fuer-den-groessten-crash-des-jahres_id_11748610.html"
+    },
+    {
+      "timestamp": "2020-03-09T13:00:00",
+      "source": "upi.com",
+      "headline": "U . S . cant do much to fight recession amid coronavirus outbreak",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.upi.com/Top_News/Voices/2020/03/09/US-cant-do-much-to-fight-recession-amid-coronavirus-outbreak/4401583754740/"
+    },
+    {
+      "timestamp": "2020-03-09T19:15:00",
+      "source": "investing.com",
+      "headline": "Forex - GBP / USD Rides united kingdom Fiscal Stimulus Optimism to 1 - Month Highs",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investing.com/news/forex-news/forex--gbpusd-rides-uk-fiscal-stimulus-optimism-to-1month-highs-2105123"
+    },
+    {
+      "timestamp": "2020-03-09T19:00:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Prices Plunge To Lowest Since January",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cbovaird/2020/03/09/bitcoin-prices-plunge-to-lowest-since-january/"
+    }
+  ]
+}

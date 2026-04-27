@@ -1,0 +1,187 @@
+{
+  "date": "2024-12-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 9,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-05T04:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-05T07:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-05T08:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-05T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-05T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-05T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-05T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-05T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin worth more than $100 , 000 for the first Time in History",
+    "Bitcoin hits $100K : Why BTC price hit a new all - time high",
+    "Bitcoin hits $100 , 000 milestone level as Trump - fueled rally reaches new heights",
+    "AP Business SummaryBrief at 11 : 20 p . m . EST",
+    "Crypto ETFs : Tailwinds Build Toward 2025"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-05T14:30:00",
+      "source": "sarajevotimes.com",
+      "headline": "Bitcoin worth more than $100 , 000 for the first Time in History",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://sarajevotimes.com/bitcoin-worth-more-than-100000-for-the-first-time-in-history/"
+    },
+    {
+      "timestamp": "2024-12-05T08:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin hits $100K : Why BTC price hit a new all - time high",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-hits-100k-btc-price-hit-a-new-all-time-high"
+    },
+    {
+      "timestamp": "2024-12-05T04:00:00",
+      "source": "aol.com",
+      "headline": "Bitcoin hits $100 , 000 milestone level as Trump - fueled rally reaches new heights",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/bitcoin-hits-100-000-milestone-025936330.html"
+    },
+    {
+      "timestamp": "2024-12-05T08:30:00",
+      "source": "mankatofreepress.com",
+      "headline": "AP Business SummaryBrief at 11 : 20 p . m . EST",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.mankatofreepress.com/news/business/ap-business-summarybrief-at-11-20-p-m-est/article_03ee3ac7-677a-5bfe-9559-19493f4da1f3.html"
+    },
+    {
+      "timestamp": "2024-12-05T16:00:00",
+      "source": "etftrends.com",
+      "headline": "Crypto ETFs : Tailwinds Build Toward 2025",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/crypto-channel/crypto-etfs-tailwinds-build-toward-2025/"
+    },
+    {
+      "timestamp": "2024-12-05T07:15:00",
+      "source": "upi.com",
+      "headline": "Bitcoin surges past $100 , 000 milestone on Trump - fueled rally",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.upi.com/Top_News/US/2024/12/05/bitcoin-hits-100000-milestone/1461733373883/"
+    },
+    {
+      "timestamp": "2024-12-05T10:45:00",
+      "source": "upi.com",
+      "headline": "Bitcoin surges past $100 , 000 milestone on Trump - fueled rally",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.upi.com/Top_News/US/2024/12/05/Bitcoin-surges-past-100000-milestone-on-Trump-fueled-rally/1461733373883/"
+    },
+    {
+      "timestamp": "2024-12-05T18:30:00",
+      "source": "cbsnews.com",
+      "headline": "Bitcoin tops $100 , 000 for the first time . Here what driving gains .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/bitcoin-price-trump-powell-atkins/"
+    },
+    {
+      "timestamp": "2024-12-05T04:45:00",
+      "source": "theonlinecitizen.com",
+      "headline": "Bitcoin reaches US$100 , 000 milestone after Trump administration picks signal crypto - friendly policies",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theonlinecitizen.com/2024/12/05/bitcoin-reaches-100000-milestone-after-trump-administration-picks-signal-crypto-friendly-policies/"
+    },
+    {
+      "timestamp": "2024-12-05T04:30:00",
+      "source": "bdtonline.com",
+      "headline": "AP Business SummaryBrief at 10 : 23 p . m . EST",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.bdtonline.com/news/nation_world/ap-business-summarybrief-at-10-23-p-m-est/article_bb4219e5-92b5-5d9a-8bde-1b2ea1e065d9.html"
+    },
+    {
+      "timestamp": "2024-12-05T07:15:00",
+      "source": "tribune.com.pk",
+      "headline": "Bitcoin price hits $100K as Trump Appoints Pro - Crypto SEC Chair Paul Atkins",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://tribune.com.pk/story/2513911/bitcoin-hits-100k-after-trump-appoints-pro-crypto-sec-chair"
+    },
+    {
+      "timestamp": "2024-12-05T04:30:00",
+      "source": "aol.co.uk",
+      "headline": "Bitcoin price tops $100 , 000 for first time as Trump win fuels crypto fever",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.co.uk/news/bitcoin-price-hits-record-high-030323066.html"
+    },
+    {
+      "timestamp": "2024-12-05T04:45:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Historic : Bitcoin surges past $100 , 000 in wake of Trump win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/policy/finance-and-economy/3239679/historic-bitcoin-surges-past-100000-in-wake-of-trump-win/"
+    },
+    {
+      "timestamp": "2024-12-05T15:45:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin has hit a new milestone , is Ethereum next ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-has-hit-a-new-milestone-is-ethereum-next-202412051249"
+    },
+    {
+      "timestamp": "2024-12-05T07:00:00",
+      "source": "oneindia.com",
+      "headline": "Bitcoin Reaches Historic $100 , 000 Milestone Amid Optimism Over Pro - Crypto Policies Under Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.oneindia.com/india/bitcoin-reaches-historic-100-000-milestone-amid-optimism-over-pro-crypto-policies-under-donald-trum-4006773.html"
+    }
+  ]
+}

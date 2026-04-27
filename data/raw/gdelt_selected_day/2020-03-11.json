@@ -1,0 +1,192 @@
+{
+  "date": "2020-03-11",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 1,
+  "theme_count_war": 3,
+  "theme_count_macro": 0,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-11T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-11T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-11T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-11T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-11T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-11T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-11T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-11T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-12T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "비트코인 시총 1450억달러 ,  디지털 금  이라기엔 덩치가 ...",
+    "11년 강세장 막 내렸다 … 팬데믹  선언에 다우 5 . 9 % 폭락",
+    "11년 강세장 막 내렸다 … 팬데믹  선언에 다우 5 . 9 % 폭락",
+    "Фондовий ринок США відновився після  чорного понеділка",
+    "Dow Jones Opens with Fall as Coronavirus Panic and Oil Price War Go On"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-11T03:15:00",
+      "source": "news.joins.com",
+      "headline": "비트코인 시총 1450억달러 ,  디지털 금  이라기엔 덩치가 ...",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.joins.com/article/23727417"
+    },
+    {
+      "timestamp": "2020-03-11T23:15:00",
+      "source": "news.nate.com",
+      "headline": "11년 강세장 막 내렸다 … 팬데믹  선언에 다우 5 . 9 % 폭락",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://news.nate.com/view/20200312n03928"
+    },
+    {
+      "timestamp": "2020-03-11T23:15:00",
+      "source": "edaily.co.kr",
+      "headline": "11년 강세장 막 내렸다 … 팬데믹  선언에 다우 5 . 9 % 폭락",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01338246625702664&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2020-03-11T12:45:00",
+      "source": "ua.korrespondent.net",
+      "headline": "Фондовий ринок США відновився після  чорного понеділка",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://ua.korrespondent.net/business/financial/4203002-fondovyi-rynok-ssha-vidnovyvsia-pislia-chornoho-ponedilka"
+    },
+    {
+      "timestamp": "2020-03-11T17:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Dow Jones Opens with Fall as Coronavirus Panic and Oil Price War Go On",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/dow-jones-fall-coronavirus-oil-price/"
+    },
+    {
+      "timestamp": "2020-03-11T16:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Risks Breakdown to $6 . 5k as Selling Continues Near Long - term Support",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/11/bitcoin-risks-breakdown-to-6-5k-as-selling-continues-near-long-term-support/"
+    },
+    {
+      "timestamp": "2020-03-11T17:30:00",
+      "source": "businessinsider.in",
+      "headline": "BANK OF AMERICA : These are the Fed 4 main tools for combating coronavirus economic fallout",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.businessinsider.in/stock-market/news/bank-of-america-these-are-the-feds-4-main-tools-for-combating-coronaviruss-economic-fallout/articleshow/74582534.cms"
+    },
+    {
+      "timestamp": "2020-03-11T22:00:00",
+      "source": "koreatimes.com",
+      "headline": "뉴욕증시 , 코로나19 팬데믹 선언에 약세장 진입 … 다우 , 5 . 86 % 폭락 마감",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.koreatimes.com/article/20200311/1300564"
+    },
+    {
+      "timestamp": "2020-03-11T20:45:00",
+      "source": "washingtonpost.com",
+      "headline": "What the Crash of 2020 means - The Washington Post",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.washingtonpost.com/opinions/2020/03/11/what-crash-2020-means/"
+    },
+    {
+      "timestamp": "2020-03-11T22:00:00",
+      "source": "yna.co.kr",
+      "headline": "뉴욕증시 , 코로나19 팬데믹 선언에 약세장 진입 … 다우 , 5 . 86 % 폭락 마감",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yna.co.kr/view/AKR20200312014300009"
+    },
+    {
+      "timestamp": "2020-03-11T15:00:00",
+      "source": "latinpost.com",
+      "headline": "The Costs for Bitcoin Are Going Down",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://www.latinpost.com/articles/144073/20200311/costs-cryptocurrency-bitcoin-getting-cheaper.htm"
+    },
+    {
+      "timestamp": "2020-03-12T00:00:00",
+      "source": "washingtonpost.com",
+      "headline": "Trump urged Mnuchin to pressure Fed Powell on economic stimulus in explosive tirade about coronavirus",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonpost.com/business/economy/trump-urged-mnuchin-to-pressure-feds-powell-on-economic-stimulus-in-explosive-tirade-about-coronavirus/2020/03/11/db7bfeea-63c9-11ea-b3fc-7841686c5c57_story.html"
+    },
+    {
+      "timestamp": "2020-03-11T16:00:00",
+      "source": "thehindubusinessline.com",
+      "headline": "Markets paying for the sins of central banks - The Hindu BusinessLine",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.thehindubusinessline.com/opinion/columns/markets-paying-for-the-sins-of-central-banks/article31042386.ece"
+    },
+    {
+      "timestamp": "2020-03-11T12:00:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Fed Zero Debate , BOE Rate Cut , ECB 2008 Warning : Eco Day",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/fed-s-zero-debate-boe-rate-cut-ecb-s-2008-warning-eco-day-1.1403822"
+    },
+    {
+      "timestamp": "2020-03-11T20:15:00",
+      "source": "newsbtc.com",
+      "headline": "Grim Observation Shows Bitcoin Could Crash 50 % Towards $4 , 000",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/11/grim-observation-shows-bitcoin-could-crash-50-towards-4000/"
+    }
+  ]
+}

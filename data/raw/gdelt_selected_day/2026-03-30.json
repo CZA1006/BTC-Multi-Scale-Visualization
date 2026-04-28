@@ -3,7 +3,7 @@
   "status": "live",
   "message": "Loaded selected-day headlines from GDELT DOC API.",
   "news_count": 15,
-  "avg_tone": null,
+  "avg_tone": 0.11999999999999998,
   "theme_count_crypto": 13,
   "theme_count_regulation": 1,
   "theme_count_election": 0,
@@ -188,5 +188,9 @@
       "sentiment": null,
       "url": "https://www.livemint.com/market/senator-queries-sec-on-crypto-after-enforcement-head-quits-11774898298153.html"
     }
-  ]
+  ],
+  "data_quality": "full",
+  "timeline_status": "ok",
+  "volume_status": "ok",
+  "cache_schema_version": 7
 }

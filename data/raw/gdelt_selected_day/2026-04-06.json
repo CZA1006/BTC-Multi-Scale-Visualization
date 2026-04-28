@@ -1,48 +1,134 @@
 {
+  "cache_schema_version": 7,
   "date": "2026-04-06",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 1661,
+  "avg_tone": -0.8213329269516355,
   "theme_count_crypto": 4,
   "theme_count_regulation": 1,
   "theme_count_election": 1,
   "theme_count_war": 0,
   "hourly_tones": [
     {
-      "timestamp": "2026-04-06T07:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-06T00:00:00.000Z",
+      "news_count": 11,
+      "average_tone": -0.542
     },
     {
-      "timestamp": "2026-04-06T10:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-06T01:00:00.000Z",
+      "news_count": 5,
+      "average_tone": -0.6715
     },
     {
-      "timestamp": "2026-04-06T12:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-06T02:00:00.000Z",
+      "news_count": 22,
+      "average_tone": 0.6778333333333334
     },
     {
-      "timestamp": "2026-04-06T13:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-06T03:00:00.000Z",
+      "news_count": 11,
+      "average_tone": 0.31415000000000004
     },
     {
-      "timestamp": "2026-04-06T15:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-06T04:00:00.000Z",
+      "news_count": 14,
+      "average_tone": -1.89865
     },
     {
-      "timestamp": "2026-04-06T17:00:00",
-      "news_count": 4,
-      "average_tone": null
+      "timestamp": "2026-04-06T05:00:00.000Z",
+      "news_count": 15,
+      "average_tone": -1.6031333333333333
     },
     {
-      "timestamp": "2026-04-06T19:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-06T06:00:00.000Z",
+      "news_count": 28,
+      "average_tone": -0.51095
+    },
+    {
+      "timestamp": "2026-04-06T07:00:00.000Z",
+      "news_count": 66,
+      "average_tone": 0.30862500000000004
+    },
+    {
+      "timestamp": "2026-04-06T08:00:00.000Z",
+      "news_count": 80,
+      "average_tone": -0.11185000000000002
+    },
+    {
+      "timestamp": "2026-04-06T09:00:00.000Z",
+      "news_count": 28,
+      "average_tone": -1.0756249999999998
+    },
+    {
+      "timestamp": "2026-04-06T10:00:00.000Z",
+      "news_count": 74,
+      "average_tone": -0.03156666666666667
+    },
+    {
+      "timestamp": "2026-04-06T11:00:00.000Z",
+      "news_count": 105,
+      "average_tone": -0.6796333333333333
+    },
+    {
+      "timestamp": "2026-04-06T12:00:00.000Z",
+      "news_count": 86,
+      "average_tone": 0.30289999999999995
+    },
+    {
+      "timestamp": "2026-04-06T13:00:00.000Z",
+      "news_count": 146,
+      "average_tone": -0.36219999999999997
+    },
+    {
+      "timestamp": "2026-04-06T14:00:00.000Z",
+      "news_count": 40,
+      "average_tone": 0.018333333333333313
+    },
+    {
+      "timestamp": "2026-04-06T15:00:00.000Z",
+      "news_count": 105,
+      "average_tone": -0.5030249999999999
+    },
+    {
+      "timestamp": "2026-04-06T16:00:00.000Z",
+      "news_count": 86,
+      "average_tone": -0.10903333333333332
+    },
+    {
+      "timestamp": "2026-04-06T17:00:00.000Z",
+      "news_count": 106,
+      "average_tone": -0.4937
+    },
+    {
+      "timestamp": "2026-04-06T18:00:00.000Z",
+      "news_count": 36,
+      "average_tone": -0.871
+    },
+    {
+      "timestamp": "2026-04-06T19:00:00.000Z",
+      "news_count": 67,
+      "average_tone": -0.6630750000000001
+    },
+    {
+      "timestamp": "2026-04-06T20:00:00.000Z",
+      "news_count": 70,
+      "average_tone": -0.5930333333333334
+    },
+    {
+      "timestamp": "2026-04-06T21:00:00.000Z",
+      "news_count": 110,
+      "average_tone": -1.257525
+    },
+    {
+      "timestamp": "2026-04-06T22:00:00.000Z",
+      "news_count": 217,
+      "average_tone": -2.0401
+    },
+    {
+      "timestamp": "2026-04-06T23:00:00.000Z",
+      "news_count": 133,
+      "average_tone": -2.834625
     }
   ],
   "top_headlines": [
@@ -59,6 +145,7 @@
       "headline": "Bitcoin Drops Below $67K on Trump Speech",
       "category": "election",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.riotimesonline.com/bitcoin-drops-67k-trump-iran-speech-liquidations-2/"
     },
     {
@@ -67,6 +154,7 @@
       "headline": "Elon Musk Crypto Investment : Bitcoin , Ethereum & Dogecoin ( 2026 )",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.directionsmag.com/crypto/elon-musk-crypto-investment"
     },
     {
@@ -75,6 +163,7 @@
       "headline": "5 Best Crypto Casinos in 2026 - Top Bitcoin Casino Sites",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://punchng.com/5-best-crypto-casinos-in-2026-list-of-top-bitcoin-casinos/"
     },
     {
@@ -83,6 +172,7 @@
       "headline": "Verge ( XVG ) Achieves Self Reported Market Capitalization of $72 . 00 Million",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.tickerreport.com/banking-finance/13400170/verge-xvg-achieves-self-reported-market-capitalization-of-72-00-million.html"
     },
     {
@@ -91,6 +181,7 @@
       "headline": "Revain 24 Hour Volume Hits $94 . 41 ( REV )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/06/revain-24-hour-volume-hits-94-41-rev.html"
     },
     {
@@ -99,6 +190,7 @@
       "headline": "Ergo Self Reported Market Cap Reaches $24 . 45 Million ( ERG )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/06/ergo-self-reported-market-cap-reaches-24-45-million-erg.html"
     },
     {
@@ -107,6 +199,7 @@
       "headline": "Buy Bitcoin With a Visa or Mastercard Gift Card ( 2026 Guide )",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.directionsmag.com/crypto/buy-visa-card-with-crypto"
     },
     {
@@ -115,6 +208,7 @@
       "headline": "PancakeSwap ( CAKE ) Hits 24 Hour Volume of $24 . 40 Million",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.dailypolitical.com/2026/04/06/pancakeswap-cake-hits-24-hour-volume-of-24-40-million.html"
     },
     {
@@ -123,6 +217,7 @@
       "headline": "Metadium ( META ) 24 Hour Trading Volume Hits $114 . 53 Thousand",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/06/metadium-meta-24-hour-trading-volume-hits-114-53-thousand.html"
     },
     {
@@ -131,6 +226,7 @@
       "headline": "Bitcoin  Ultimate Support  Lies At This Level , Says Leading Crypto Analyst , But Before That  Diamond Ha",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51652229/bitcoin-ultimate-support-level-analyst-diamond-hands-advice"
     },
     {
@@ -139,6 +235,7 @@
       "headline": "Nano ( XNO ) Achieves Market Cap of $60 . 57 Million",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/06/nano-xno-achieves-market-cap-of-60-57-million.html"
     },
     {
@@ -147,6 +244,7 @@
       "headline": "Electroneum Price Down 1 . 4 % Over Last 7 Days ( ETN )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.tickerreport.com/banking-finance/13400436/electroneum-price-down-1-4-over-last-7-days-etn.html"
     },
     {
@@ -155,6 +253,7 @@
       "headline": "Ark Price Reaches $0 . 17 ( ARK )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/06/ark-price-reaches-0-17-ark.html"
     },
     {
@@ -163,6 +262,7 @@
       "headline": "FBI  Best  Lead In Nancy Guthrie Case Is Traceable Bitcoin Demands",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://radaronline.com/p/nancy-guthrie-case-traceable-bitcoin-ransom-cyber-security-expert-claims/"
     },
     {
@@ -171,7 +271,11 @@
       "headline": "Basic Attention Token Self Reported Market Cap Hits $148 . 31 Million ( BAT )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.tickerreport.com/banking-finance/13400432/basic-attention-token-self-reported-market-cap-hits-148-31-million-bat.html"
     }
-  ]
+  ],
+  "data_quality": "full",
+  "timeline_status": "ok",
+  "volume_status": "ok"
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { HeadlineWordCloud } from '../components/HeadlineWordCloud.jsx';
+import { PolymarketSparkline } from '../components/PolymarketSparkline.jsx';
 import { ThemeRiverMini } from '../components/ThemeRiverMini.jsx';
 import { PolymarketSparkline } from '../components/PolymarketSparkline.jsx';
 import { fetchDayDetail } from '../api/dayDetail.js';
@@ -104,6 +105,9 @@ export function MicroView() {
     }
     return `${utcHourKey.slice(11, 13)}:00`;
   };
+
+  const GDELT_TONE_NEGATIVE_THRESHOLD = -0.5;
+  const GDELT_TONE_POSITIVE_THRESHOLD = 0.5;
 
   const priceSeries = useMemo(() => {
     const buildRow = (timestamp, row) => {
@@ -398,6 +402,7 @@ export function MicroView() {
           type: 'category',
           gridIndex: 1,
           data: sharedTimeline,
+          axisPointer: { label: { show: false } },
           axisLabel: { show: false },
           axisTick: { show: false },
         },
@@ -423,6 +428,7 @@ export function MicroView() {
             formatter: (value) => formatCompactNumber(value).replace(/\.0([KMB])$/, '$1'),
           },
           splitLine: { lineStyle: { color: '#263247' } },
+          axisPointer: { label: { show: false } },
           min: roundedMinPrice,
           max: roundedMaxPrice,
         },
@@ -439,6 +445,7 @@ export function MicroView() {
             formatter: (value) => formatCompactNumber(value),
           },
           splitLine: { lineStyle: { color: '#1f2a40' } },
+          axisPointer: { label: { show: false } },
           minInterval: 1,
         },
         {
@@ -451,6 +458,7 @@ export function MicroView() {
           nameGap: 50,
           axisLabel: { color: '#aab6cc' },
           splitLine: { lineStyle: { color: '#1f2a40' } },
+          axisPointer: { label: { show: false } },
           minInterval: 1,
         },
       ],
@@ -778,12 +786,6 @@ export function MicroView() {
 
             <div className="context-section">
               <p className="summary-title">Headline panel</p>
-              {gdeltSummary.bucket_label ? (
-                <p className="state-label">
-                  GDELT bucket · <strong>{gdeltSummary.bucket_label}</strong>
-                  {' '}— curated query routes the DOC API toward this window's narrative.
-                </p>
-              ) : null}
               <div className="context-chip-row">
                 <div className="context-chip">
                   <span className="context-chip-label">GDELT status</span>
@@ -791,37 +793,16 @@ export function MicroView() {
                 </div>
                 <div className="context-chip">
                   <span className="context-chip-label">News count</span>
-                  <strong>{gdeltSummary.news_count ?? 0}</strong>
+                  <strong>{fullDayNewsCount}</strong>
                 </div>
-                {(() => {
-                  // Top-2 non-zero theme counts so COVID/macro days show
-                  // their actual story instead of always crypto+regulation.
-                  const themes = [
-                    ['war', gdeltSummary.theme_count_war ?? 0],
-                    ['election', gdeltSummary.theme_count_election ?? 0],
-                    ['covid', gdeltSummary.theme_count_covid ?? 0],
-                    ['regulation', gdeltSummary.theme_count_regulation ?? 0],
-                    ['macro', gdeltSummary.theme_count_macro ?? 0],
-                    ['crypto', gdeltSummary.theme_count_crypto ?? 0],
-                  ]
-                    .filter(([, n]) => n > 0)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, 3);
-                  if (themes.length === 0) {
-                    return (
-                      <div className="context-chip">
-                        <span className="context-chip-label">Top theme</span>
-                        <strong>—</strong>
-                      </div>
-                    );
-                  }
-                  return themes.map(([name, n]) => (
-                    <div className="context-chip" key={name}>
-                      <span className="context-chip-label">{name} mentions</span>
-                      <strong>{n}</strong>
-                    </div>
-                  ));
-                })()}
+                <div className="context-chip">
+                  <span className="context-chip-label">Regulation mentions</span>
+                  <strong>{fullDayThemeCounts.regulation}</strong>
+                </div>
+                <div className="context-chip">
+                  <span className="context-chip-label">Election / war mentions</span>
+                  <strong>{fullDayThemeCounts.election + fullDayThemeCounts.war}</strong>
+                </div>
               </div>
 
               {eventRows.length > 0 ? (
@@ -866,9 +847,9 @@ export function MicroView() {
                 <div>
                   <p className="chart-caption" style={{ marginTop: 0 }}>
                     Word cloud · size = frequency · color = mean tone
-                    (green &gt; −0.8, red &lt; −1.6, grey neutral)
+                    (green &gt; 0.5, red &lt; -0.5, grey neutral)
                   </p>
-                  <HeadlineWordCloud events={eventRows} />
+                  <HeadlineWordCloud events={eventRowsFullDay} />
                 </div>
                 <div>
                   <p className="chart-caption" style={{ marginTop: 0 }}>
@@ -880,9 +861,7 @@ export function MicroView() {
             </div>
 
             <div className="context-section">
-              <p className="summary-title">
-                Polymarket — expectations on {polymarketSummary.as_of_date ?? 'N/A'}
-              </p>
+              <p className="summary-title">Polymarket context</p>
               <div className="context-chip-row">
                 <div className="context-chip">
                   <span className="context-chip-label">Coverage</span>
@@ -900,51 +879,44 @@ export function MicroView() {
 
               {polymarketMarkets.length > 0 ? (
                 <div className="polymarket-card-grid">
-                  {polymarketMarkets.map((market) => {
-                    const yesAt = market.yes_price_at_date;
-                    const aboveHalf = typeof yesAt === 'number' && yesAt >= 0.5;
-                    const directionClass = aboveHalf ? 'is-pos' : 'is-neg';
-                    return (
-                      <article
-                        key={market.market_slug ?? market.market_name}
-                        className="polymarket-card"
-                      >
-                        <p className="polymarket-card-meta">
-                          {market.theme ?? 'market'} ·{' '}
-                          {market.closed ? 'resolved' : 'live'} · ends{' '}
-                          {market.end_date ? market.end_date.slice(0, 10) : 'N/A'}
-                        </p>
-                        <p className="polymarket-card-title">{market.market_name}</p>
-                        <div className="polymarket-card-body">
-                          <div className={`polymarket-card-price ${directionClass}`}>
-                            <span className="polymarket-card-yes">
-                              {formatPercent(yesAt)}
-                            </span>
-                            <span className="polymarket-card-yes-label">
-                              {market.yes_label ?? 'Yes'} on{' '}
-                              {polymarketSummary.as_of_date ?? '—'}
-                            </span>
-                          </div>
-                          <PolymarketSparkline
-                            history={market.history ?? []}
-                            selectedDate={polymarketSummary.as_of_date}
-                            width={140}
-                            height={32}
-                          />
+                  {polymarketMarkets.map((market) => (
+                    <article key={market.market_slug ?? market.market_name} className="polymarket-card">
+                      <p className="polymarket-card-meta">
+                        {String(market.theme ?? 'market').toUpperCase()} ·{' '}
+                        {market.closed ? 'RESOLVED' : 'ACTIVE'} · ENDS {String(market.end_date ?? 'N/A').slice(0, 10)}
+                      </p>
+                      <p className="polymarket-card-title">{market.market_name}</p>
+                      <div className="polymarket-card-body">
+                        <div
+                          className={
+                            Number(market.yes_price_at_date ?? market.current_yes_price) >= 0.5
+                              ? 'polymarket-card-price is-pos'
+                              : 'polymarket-card-price is-neg'
+                          }
+                        >
+                          <span className="polymarket-card-yes">
+                            {formatPercent(market.yes_price_at_date ?? market.current_yes_price)}
+                          </span>
+                          <span className="polymarket-card-yes-label">
+                            Yes on {selectedDate ?? polymarketSummary.as_of_date ?? 'N/A'}
+                          </span>
                         </div>
-                        <p className="polymarket-card-foot">
-                          Vol {formatCurrency(market.volume)} ·{' '}
-                          {(market.history?.length ?? 0)} daily prices
-                        </p>
-                      </article>
-                    );
-                  })}
+                        <PolymarketSparkline
+                          history={Array.isArray(market.history) ? market.history : []}
+                          selectedDate={selectedDate ?? polymarketSummary.as_of_date}
+                        />
+                      </div>
+                      <p className="polymarket-card-foot">
+                        Vol {formatCompactNumber(market.volume)} · {Array.isArray(market.history) ? market.history.length : 0} daily prices
+                      </p>
+                    </article>
+                  ))}
                 </div>
               ) : (
                 <div className="placeholder-box placeholder-box-small">
                   <span className="placeholder-label">
                     {polymarketSummary.message ??
-                      'No Polymarket coverage for this date.'}
+                      'No Polymarket context is available in the current snapshot.'}
                   </span>
                 </div>
               )}

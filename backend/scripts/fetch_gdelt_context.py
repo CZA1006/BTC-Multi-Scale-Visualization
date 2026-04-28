@@ -18,6 +18,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import time
 import sys
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
@@ -31,6 +33,7 @@ if str(REPO_ROOT) not in sys.path:
 from backend.app.services.data_paths import GDELT_DAILY_SIGNALS_PATH
 from backend.app.services.gdelt_service import (
     GDELT_DOC_LOOKBACK_DAYS,
+    _cache_path_for_date,
     get_selected_day_gdelt_context,
 )
 
@@ -46,6 +49,28 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=30,
         help="Number of recent days to fetch when start/end are not provided.",
+    )
+    parser.add_argument(
+        "--strict-live",
+        action="store_true",
+        help="Only accept live/full payloads. Retry until success or max attempts.",
+    )
+    parser.add_argument(
+        "--max-retries",
+        type=int,
+        default=30,
+        help="Max retries per day in --strict-live mode.",
+    )
+    parser.add_argument(
+        "--retry-sleep",
+        type=float,
+        default=3.0,
+        help="Sleep seconds between strict retries.",
+    )
+    parser.add_argument(
+        "--from-existing-json",
+        action="store_true",
+        help="Ignore date arguments; rebuild exactly for dates already present under data/raw/gdelt_selected_day.",
     )
     return parser.parse_args()
 
@@ -97,17 +122,33 @@ def iter_dates(start_date: date, end_date: date) -> list[date]:
     return [start_date + timedelta(days=offset) for offset in range(day_count)]
 
 
+def iter_dates_from_existing_json() -> list[date]:
+    folder = _cache_path_for_date("2000-01-01").parent
+    if not folder.exists():
+        return []
+    dates: list[date] = []
+    for name in sorted(os.listdir(folder)):
+        if not name.endswith(".json"):
+            continue
+        try:
+            dates.append(datetime.strptime(name[:10], "%Y-%m-%d").date())
+        except ValueError:
+            continue
+    return dates
+
+
 def build_signal_row(payload: dict[str, object]) -> dict[str, object]:
     return {
         "date": payload.get("date"),
         "news_count": int(payload.get("news_count") or 0),
-        "avg_tone": None,
+        "avg_tone": payload.get("avg_tone"),
         "theme_count_crypto": int(payload.get("theme_count_crypto") or 0),
         "theme_count_regulation": int(payload.get("theme_count_regulation") or 0),
         "theme_count_election": int(payload.get("theme_count_election") or 0),
         "theme_count_war": int(payload.get("theme_count_war") or 0),
         "top_headlines": json.dumps(payload.get("top_headlines") or [], ensure_ascii=False),
         "status": payload.get("status"),
+        "data_quality": payload.get("data_quality"),
         "message": payload.get("message"),
     }
 
@@ -119,12 +160,41 @@ def save_daily_signals(frame: pd.DataFrame) -> None:
 
 def main() -> None:
     args = parse_args()
-    start_date, end_date = resolve_date_range(args)
+    if args.from_existing_json:
+        target_dates = iter_dates_from_existing_json()
+        if not target_dates:
+            raise ValueError("No existing JSON files found under data/raw/gdelt_selected_day.")
+    else:
+        start_date, end_date = resolve_date_range(args)
+        target_dates = iter_dates(start_date, end_date)
 
     signal_rows: list[dict[str, object]] = []
-    for current_date in iter_dates(start_date, end_date):
+    for current_date in target_dates:
         date_str = current_date.isoformat()
-        payload = get_selected_day_gdelt_context(date_str)
+        if args.strict_live:
+            payload = None
+            for attempt in range(1, max(1, args.max_retries) + 1):
+                cache_path = _cache_path_for_date(date_str)
+                if cache_path.exists():
+                    cache_path.unlink()
+                candidate = get_selected_day_gdelt_context(date_str)
+                if (
+                    candidate.get("status") == "live"
+                    and candidate.get("data_quality") == "full"
+                ):
+                    payload = candidate
+                    break
+                print(
+                    f"[gdelt] {date_str} attempt {attempt}/{args.max_retries} -> "
+                    f"{candidate.get('status')} ({candidate.get('message')})"
+                )
+                time.sleep(max(0.5, args.retry_sleep))
+            if payload is None:
+                raise RuntimeError(
+                    f"Strict live fetch failed for {date_str} after {args.max_retries} attempts."
+                )
+        else:
+            payload = get_selected_day_gdelt_context(date_str)
         signal_rows.append(build_signal_row(payload))
         print(
             f"[gdelt] {date_str} -> {payload.get('status')} "

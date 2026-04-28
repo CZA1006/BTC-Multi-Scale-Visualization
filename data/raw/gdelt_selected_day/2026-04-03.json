@@ -1,68 +1,134 @@
 {
+  "cache_schema_version": 7,
   "date": "2026-04-03",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
-  "theme_count_crypto": 10,
-  "theme_count_regulation": 1,
-  "theme_count_election": 0,
-  "theme_count_war": 1,
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 1754,
+  "avg_tone": -0.5981760072215887,
+  "theme_count_crypto": 73,
+  "theme_count_regulation": 15,
+  "theme_count_election": 4,
+  "theme_count_war": 14,
   "hourly_tones": [
     {
-      "timestamp": "2026-04-03T00:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T00:00:00.000Z",
+      "news_count": 92,
+      "average_tone": -1.3387499999999999
     },
     {
-      "timestamp": "2026-04-03T04:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T01:00:00.000Z",
+      "news_count": 79,
+      "average_tone": -0.28925
     },
     {
-      "timestamp": "2026-04-03T09:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T02:00:00.000Z",
+      "news_count": 39,
+      "average_tone": -0.9196
     },
     {
-      "timestamp": "2026-04-03T10:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T03:00:00.000Z",
+      "news_count": 28,
+      "average_tone": -0.3853
     },
     {
-      "timestamp": "2026-04-03T11:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-03T04:00:00.000Z",
+      "news_count": 76,
+      "average_tone": -0.53095
     },
     {
-      "timestamp": "2026-04-03T12:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T05:00:00.000Z",
+      "news_count": 67,
+      "average_tone": -0.17026666666666665
     },
     {
-      "timestamp": "2026-04-03T15:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T06:00:00.000Z",
+      "news_count": 80,
+      "average_tone": -0.7822
     },
     {
-      "timestamp": "2026-04-03T16:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-03T07:00:00.000Z",
+      "news_count": 46,
+      "average_tone": -1.07815
     },
     {
-      "timestamp": "2026-04-03T17:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T08:00:00.000Z",
+      "news_count": 136,
+      "average_tone": -0.581725
     },
     {
-      "timestamp": "2026-04-03T20:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-03T09:00:00.000Z",
+      "news_count": 82,
+      "average_tone": -0.2624666666666667
     },
     {
-      "timestamp": "2026-04-03T21:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-04-03T10:00:00.000Z",
+      "news_count": 89,
+      "average_tone": -0.410725
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00.000Z",
+      "news_count": 227,
+      "average_tone": -0.781075
+    },
+    {
+      "timestamp": "2026-04-03T12:00:00.000Z",
+      "news_count": 54,
+      "average_tone": -0.4478
+    },
+    {
+      "timestamp": "2026-04-03T13:00:00.000Z",
+      "news_count": 28,
+      "average_tone": -0.70055
+    },
+    {
+      "timestamp": "2026-04-03T14:00:00.000Z",
+      "news_count": 22,
+      "average_tone": -0.3807333333333333
+    },
+    {
+      "timestamp": "2026-04-03T15:00:00.000Z",
+      "news_count": 21,
+      "average_tone": -0.48435000000000006
+    },
+    {
+      "timestamp": "2026-04-03T16:00:00.000Z",
+      "news_count": 103,
+      "average_tone": -1.3439999999999999
+    },
+    {
+      "timestamp": "2026-04-03T17:00:00.000Z",
+      "news_count": 85,
+      "average_tone": -0.32084999999999997
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00.000Z",
+      "news_count": 90,
+      "average_tone": -0.10503333333333331
+    },
+    {
+      "timestamp": "2026-04-03T19:00:00.000Z",
+      "news_count": 83,
+      "average_tone": -0.481775
+    },
+    {
+      "timestamp": "2026-04-03T20:00:00.000Z",
+      "news_count": 48,
+      "average_tone": 0.5458666666666666
+    },
+    {
+      "timestamp": "2026-04-03T21:00:00.000Z",
+      "news_count": 91,
+      "average_tone": 0.02997500000000003
+    },
+    {
+      "timestamp": "2026-04-03T22:00:00.000Z",
+      "news_count": 66,
+      "average_tone": -1.205225
+    },
+    {
+      "timestamp": "2026-04-03T23:00:00.000Z",
+      "news_count": 22,
+      "average_tone": -2.2727999999999997
     }
   ],
   "top_headlines": [
@@ -79,6 +145,7 @@
       "headline": "How to set up a crypto wallet : A step - by - step guide",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/personal-finance/investing/article/how-to-set-up-a-crypto-wallet-a-step-by-step-guide-211638698.html"
     },
     {
@@ -87,6 +154,7 @@
       "headline": "Bitcoin Quantum Computing Threat : Coinbase CEO Warns 2029",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.forbes.com/sites/digital-assets/2026/04/03/solve-it-now-armstrong-quantum-warning-shakes-66k-bitcoin/"
     },
     {
@@ -95,6 +163,7 @@
       "headline": "The Beginner Guide to Buying Your First Cryptocurrency",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.fool.com/investing/2026/04/03/beginners-guide-to-buying-first-cryptocurrency/?source=iedfolrf0000001"
     },
     {
@@ -103,6 +172,7 @@
       "headline": "Riot Platforms Sold 3 , 778 Bitcoin In First Quarter",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/riot-platforms-sold-3-778-135800405.html"
     },
     {
@@ -111,6 +181,7 @@
       "headline": "FBTC Has $12 . 3 Billion in Assets but a 76 % Chance Bitcoin Falls Further This Year",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://247wallst.com/investing/2026/04/03/fbtc-has-12-3-billion-in-assets-but-a-76-chance-bitcoin-falls-further-this-year/"
     },
     {
@@ -119,6 +190,7 @@
       "headline": "Crypto . com Staked ETH Price Tops $2 , 194 . 56 on Exchanges ( CDCETH )",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.tickerreport.com/banking-finance/13398950/crypto-com-staked-eth-price-tops-2194-56-on-exchanges-cdceth.html"
     },
     {
@@ -127,6 +199,7 @@
       "headline": "Block sees lowest interest from short sellers in March among crypto firms with over $2B market cap",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://seekingalpha.com/news/4572489-block-sees-lowest-interest-from-short-sellers-in-march-among-crypto-firms-with-over-2b-market-cap"
     },
     {
@@ -135,6 +208,7 @@
       "headline": "Are The Rising Oil Prices Bullish Or Bearish For The Bitcoin Price ?",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.newsbtc.com/bitcoin-news/oil-impact-on-bitcoin-price/"
     },
     {
@@ -143,6 +217,7 @@
       "headline": "New Bitcoin Crash Ahead ? Bloomberg Strategist Forecasts Return To $10 , 000 – Here Why",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.newsbtc.com/bitcoin-news/new-bitcoin-crash-ahead-bloomberg-strategist-forecasts-return-to-10000-heres-why/"
     },
     {
@@ -151,6 +226,7 @@
       "headline": "FBI Says Athens , Tn ., Widow Money Laundered $2 . 3 Million For Online  Boyfriend ; Non - Profit Was Defrauded",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.chattanoogan.com/2026/4/3/516912/FBI-Says-Athens-Tn.-Widow-Money.aspx"
     },
     {
@@ -159,6 +235,7 @@
       "headline": "eToro Begins Crypto Trading Three Years After Receiving BitLicense",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/etoro-begins-crypto-trading-three-134900537.html"
     },
     {
@@ -167,6 +244,7 @@
       "headline": "CannabisCoin Self Reported Market Cap Tops $159 . 49 Thousand ( CANN )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/03/cannabiscoin-self-reported-market-cap-tops-159-49-thousand-cann.html"
     },
     {
@@ -175,6 +253,7 @@
       "headline": "Coinbase Receives Conditional Nod To Operate As National Trust Company CEO Brian Armstrong Says  Were No",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51643306/coinbase-conditional-approval-national-trust-company-not-a-bank-armstrong"
     },
     {
@@ -183,6 +262,7 @@
       "headline": "Morgan Stanley Ratches Up Bitcoin ETF Fee Wars",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.forbes.com/sites/astanley/2026/04/03/morgan-stanley-ratches-up-bitcoin-etf-fee-wars/"
     },
     {
@@ -191,7 +271,2263 @@
       "headline": "pippin ( PIPPIN ) Self Reported Market Cap Achieves $62 . 81 Million",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/03/pippin-pippin-self-reported-market-cap-achieves-62-81-million.html"
     }
-  ]
+  ],
+  "all_articles": [
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "How to set up a crypto wallet : A step - by - step guide",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/how-to-set-up-a-crypto-wallet-a-step-by-step-guide-211638698.html"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Quantum Computing Threat : Coinbase CEO Warns 2029",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/04/03/solve-it-now-armstrong-quantum-warning-shakes-66k-bitcoin/"
+    },
+    {
+      "timestamp": "2026-04-03T12:15:00",
+      "source": "fool.com",
+      "headline": "The Beginner Guide to Buying Your First Cryptocurrency",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/04/03/beginners-guide-to-buying-first-cryptocurrency/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-04-03T15:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Riot Platforms Sold 3 , 778 Bitcoin In First Quarter",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/riot-platforms-sold-3-778-135800405.html"
+    },
+    {
+      "timestamp": "2026-04-03T10:15:00",
+      "source": "247wallst.com",
+      "headline": "FBTC Has $12 . 3 Billion in Assets but a 76 % Chance Bitcoin Falls Further This Year",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://247wallst.com/investing/2026/04/03/fbtc-has-12-3-billion-in-assets-but-a-76-chance-bitcoin-falls-further-this-year/"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "Crypto . com Staked ETH Price Tops $2 , 194 . 56 on Exchanges ( CDCETH )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398950/crypto-com-staked-eth-price-tops-2194-56-on-exchanges-cdceth.html"
+    },
+    {
+      "timestamp": "2026-04-03T17:45:00",
+      "source": "seekingalpha.com",
+      "headline": "Block sees lowest interest from short sellers in March among crypto firms with over $2B market cap",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://seekingalpha.com/news/4572489-block-sees-lowest-interest-from-short-sellers-in-march-among-crypto-firms-with-over-2b-market-cap"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "newsbtc.com",
+      "headline": "Are The Rising Oil Prices Bullish Or Bearish For The Bitcoin Price ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/oil-impact-on-bitcoin-price/"
+    },
+    {
+      "timestamp": "2026-04-03T09:15:00",
+      "source": "newsbtc.com",
+      "headline": "New Bitcoin Crash Ahead ? Bloomberg Strategist Forecasts Return To $10 , 000 – Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/new-bitcoin-crash-ahead-bloomberg-strategist-forecasts-return-to-10000-heres-why/"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "chattanoogan.com",
+      "headline": "FBI Says Athens , Tn ., Widow Money Laundered $2 . 3 Million For Online  Boyfriend ; Non - Profit Was Defrauded",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.chattanoogan.com/2026/4/3/516912/FBI-Says-Athens-Tn.-Widow-Money.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "eToro Begins Crypto Trading Three Years After Receiving BitLicense",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/etoro-begins-crypto-trading-three-134900537.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "CannabisCoin Self Reported Market Cap Tops $159 . 49 Thousand ( CANN )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/cannabiscoin-self-reported-market-cap-tops-159-49-thousand-cann.html"
+    },
+    {
+      "timestamp": "2026-04-03T04:00:00",
+      "source": "benzinga.com",
+      "headline": "Coinbase Receives Conditional Nod To Operate As National Trust Company CEO Brian Armstrong Says  Were No",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51643306/coinbase-conditional-approval-national-trust-company-not-a-bank-armstrong"
+    },
+    {
+      "timestamp": "2026-04-03T20:45:00",
+      "source": "forbes.com",
+      "headline": "Morgan Stanley Ratches Up Bitcoin ETF Fee Wars",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/astanley/2026/04/03/morgan-stanley-ratches-up-bitcoin-etf-fee-wars/"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "pippin ( PIPPIN ) Self Reported Market Cap Achieves $62 . 81 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/pippin-pippin-self-reported-market-cap-achieves-62-81-million.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Crypterium Trading 4 . 3 % Lower Over Last Week ( CRPT )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/crypterium-trading-4-3-lower-over-last-week-crpt.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "AUSD ( AUSD ) Price Reaches $1 . 00",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398947/ausd-ausd-price-reaches-1-00.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Orderly Price Reaches $0 . 0487 on Top Exchanges ( ORDER )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/orderly-price-reaches-0-0487-on-top-exchanges-order.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "EverValue Coin ( EVA ) 1 - Day Volume Hits $681 . 68 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398953/evervalue-coin-eva-1-day-volume-hits-681-68-thousand.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "Pump . fun ( PUMP ) Trading 2 . 9 % Lower This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398948/pump-fun-pump-trading-2-9-lower-this-week.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "Doge Killer ( LEASH ) Self Reported Market Cap Reaches $1 . 40 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398949/doge-killer-leash-self-reported-market-cap-reaches-1-40-million.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "Bybit Staked SOL ( BBSOL ) Tops 24 Hour Volume of $3 . 87 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398951/bybit-staked-sol-bbsol-tops-24-hour-volume-of-3-87-million.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "DeAgentAI Trading 2 . 9 % Higher Over Last 7 Days ( AIA )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/deagentai-trading-2-9-higher-over-last-7-days-aia.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Tagger Self Reported Market Capitalization Achieves $75 . 58 Million ( TAG )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/tagger-self-reported-market-capitalization-achieves-75-58-million-tag.html"
+    },
+    {
+      "timestamp": "2026-04-03T09:45:00",
+      "source": "haberler.com",
+      "headline": "Bitcoin madencilerinin BTC satış dalgası sürüyor",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/kripto-para/bitcoin-madencilerinin-btc-satis-dalgasi-suruyor-19712559-haberi/"
+    },
+    {
+      "timestamp": "2026-04-03T12:00:00",
+      "source": "tomshardware.com",
+      "headline": "Crypto platform Drift suffers from hack suspected to total $270 million firm goes into damage control mode , suspends deposits and withdrawals",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tomshardware.com/tech-industry/cryptocurrency/crypto-platform-drift-suffers-from-hack-suspected-to-total-usd270-million-firm-goes-into-damage-control-mode-suspends-deposits-and-withdrawals"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Ducky ( DUCKY ) 24 - Hour Volume Reaches $1 . 40 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/ducky-ducky-24-hour-volume-reaches-1-40-million.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "HTX ( HTX ) Price Tops $0 . 0000",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/htx-htx-price-tops-0-0000.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Loaded Lions ( LION ) Price Down 6 . 4 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/loaded-lions-lion-price-down-6-4-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "MYX Finance Trading Down 22 . 7 % Over Last Week ( MYX )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/myx-finance-trading-down-22-7-over-last-week-myx.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "Sentient ( SENT ) Price Reaches $0 . 0167 on Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398946/sentient-sent-price-reaches-0-0167-on-exchanges.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "tickerreport.com",
+      "headline": "Ethena Labs ( USDTb ) Price Down 0 . 1 % Over Last Week ( USDTB )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13398952/ethena-labs-usdtb-price-down-0-1-over-last-week-usdtb.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Ribbita by Virtuals Tops One Day Volume of $1 . 65 Million ( TIBBIR )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/ribbita-by-virtuals-tops-one-day-volume-of-1-65-million-tibbir.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "ZEDXION Reaches 24 - Hour Trading Volume of $2 . 05 ( USDZ )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/zedxion-reaches-24-hour-trading-volume-of-2-05-usdz.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "MultiBank Group Price Tops $0 . 36 on Major Exchanges ( $MBG )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/multibank-group-price-tops-0-36-on-major-exchanges-mbg.html"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "ibtimes.com.au",
+      "headline": "Bitcoin Slips Below $67 , 000 as Geopolitical Tensions Weigh on Crypto Market Early Friday",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ibtimes.com.au/bitcoin-slips-below-67000-geopolitical-tensions-weigh-crypto-market-early-friday-1865300"
+    },
+    {
+      "timestamp": "2026-04-04T00:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "As digital asset treasuries face  acute stress , this Bitcoin firm continues to buy",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/digital-asset-treasuries-face-acute-164133191.html"
+    },
+    {
+      "timestamp": "2026-04-03T10:45:00",
+      "source": "banklesstimes.com",
+      "headline": "Bitcoin Price Prediction : Multiple Risky Patterns Form Ahead of NFP Data",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.banklesstimes.com/articles/2026/04/03/bitcoin-price-prediction-multiple-risky-patterns-form-ahead-of-nfp-data/"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "haberler.com",
+      "headline": "Telegramdan kripto para alanında önemli ortaklık",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/kripto-para/telegramdan-kripto-para-alaninda-onemli-ortaklik-19712894-haberi/"
+    },
+    {
+      "timestamp": "2026-04-03T02:15:00",
+      "source": "pymnts.com",
+      "headline": "Drift Crypto Exchange Remains Frozen as Cyberattack Continues",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/blockchain/2026/drift-crypto-exchange-remains-frozen-as-cyberattack-continues/"
+    },
+    {
+      "timestamp": "2026-04-03T02:00:00",
+      "source": "forbes.com",
+      "headline": "Quantum Advances Are An Opportunity For Crypto",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/04/02/quantum-advances-are-an-opportunity-for-crypto/"
+    },
+    {
+      "timestamp": "2026-04-03T04:45:00",
+      "source": "newsbtc.com",
+      "headline": "Buying Cardano Now Is Like Buying Bitcoin Before It Blew Up , Analyst Says",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/cardano/buy-cardano-like-buying-btc/"
+    },
+    {
+      "timestamp": "2026-04-03T03:45:00",
+      "source": "prnewswire.com",
+      "headline": "Backpack Appoints Nathan Smith as Chief Operating Officer",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.prnewswire.com/news-releases/backpack-appoints-nathan-smith-as-chief-operating-officer-302733431.html"
+    },
+    {
+      "timestamp": "2026-04-03T04:45:00",
+      "source": "finanznachrichten.de",
+      "headline": "Backpack Exchange : Backpack Appoints Nathan Smith as Chief Operating Officer",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68119114-backpack-exchange-backpack-appoints-nathan-smith-as-chief-operating-officer-008.htm"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Succinct Price Reaches $0 . 23 on Major Exchanges ( PROVE )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/succinct-price-reaches-0-23-on-major-exchanges-prove.html"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "US Community Banks Push Back on Coinbase Trust Charter Approval",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/community-banks-oppose-coinbase-trust-charter-approval-occ"
+    },
+    {
+      "timestamp": "2026-04-03T20:00:00",
+      "source": "banklesstimes.com",
+      "headline": "Cardano Foundation Moves from ADA - Heavy Treasury to More Bitcoin and Cash",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.banklesstimes.com/articles/2026/04/03/cardano-foundation-moves-from-ada-heavy-treasury-to-more-bitcoin-and-cash/"
+    },
+    {
+      "timestamp": "2026-04-03T18:15:00",
+      "source": "tickerreport.com",
+      "headline": "Bitcoin Stocks To Research – April 3rd",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13399144/bitcoin-stocks-to-research-april-3rd.html"
+    },
+    {
+      "timestamp": "2026-04-03T16:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Where Next for Bitcoin After Worst Quarter Since 2018 ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/where-next-bitcoin-worst-quarter-155125824.html"
+    },
+    {
+      "timestamp": "2026-04-03T00:15:00",
+      "source": "jdsupra.com",
+      "headline": "The SEC Releases New Interpretation on Crypto Assets | Stinson LLP",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jdsupra.com/legalnews/the-sec-releases-new-interpretation-on-8511916/"
+    },
+    {
+      "timestamp": "2026-04-03T09:15:00",
+      "source": "openpr.com",
+      "headline": "Top 7 Meme Coins Watchlist For Explosive Gains : How APEMARS",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4453813/top-7-meme-coins-watchlist-for-explosive-gains-how-apemars"
+    },
+    {
+      "timestamp": "2026-04-03T04:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price Teeters on Edge , Will Support Finally Snap ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/analysis/btc/bitcoin-price-teeters-on-edge-68k/"
+    },
+    {
+      "timestamp": "2026-04-03T08:15:00",
+      "source": "haberler.com",
+      "headline": "Bitcoinde kurumsal alım artarken talep daralıyor",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/kripto-para/bitcoinde-kurumsal-alim-artarken-talep-daraliyor-19712187-haberi/"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Coinbase Granted Conditional OCC National Trust Bank Charter",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-granted-conditional-occ-national-160107015.html"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "memeburn.com",
+      "headline": "Africrypt brothers allegedly vanish with billions in Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://memeburn.com/2021/06/africrypt-brothers-allegedly-vanish-with-billions-in-bitcoin/"
+    },
+    {
+      "timestamp": "2026-04-03T01:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Tether co - founder issues blunt warning on Bitcoin as a currency",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/tether-co-founder-issues-blunt-190823865.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Launch Coin on Believe Trading Down 4 . 5 % This Week ( LAUNCHCOIN )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/launch-coin-on-believe-trading-down-4-5-this-week-launchcoin.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Keeta ( KTA ) Hits 24 Hour Volume of $2 . 61 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/keeta-kta-hits-24-hour-volume-of-2-61-million.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "bemo staked TON ( STTON ) Price Reaches $1 . 37 on Top Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/03/bemo-staked-ton-stton-price-reaches-1-37-on-top-exchanges.html"
+    },
+    {
+      "timestamp": "2026-04-03T02:00:00",
+      "source": "portal.sina.com.hk",
+      "headline": "AsiaTokenFund Group Partners with 1MAX . com to Launch Curated Crypto Trading Platform",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://portal.sina.com.hk/finance/finance-mediaoutreachnewswire/media-outreach/2026/04/03/1664438/asiatokenfund-group-partners-with-1max-com-to-launch-curated-crypto-trading-platform/"
+    },
+    {
+      "timestamp": "2026-04-03T02:00:00",
+      "source": "manilatimes.net",
+      "headline": "AsiaTokenFund Group Partners with 1MAX . com to Launch Curated Crypto Trading Platform",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/media-outreach-newswire/asiatokenfund-group-partners-with-1maxcom-to-launch-curated-crypto-trading-platform/2313870"
+    },
+    {
+      "timestamp": "2026-04-03T05:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Whale Turns Bearish Ahead of $2 Billion Bitcoin and Ethereum Options Expiry",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/options/articles/whale-turns-bearish-ahead-2-052254702.html"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "nhregister.com",
+      "headline": "Fake letter led a CT resident to lose $234k in crypto heist , feds say",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.nhregister.com/news/article/weston-234k-crypto-currency-heist-22187151.php"
+    },
+    {
+      "timestamp": "2026-04-03T01:30:00",
+      "source": "natlawreview.com",
+      "headline": "CFTC Announces Innovation Task Force to Help Develop Regulatory F",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://natlawreview.com/article/cftc-launches-innovation-task-force-focused-emerging-derivatives-issues"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "thehour.com",
+      "headline": "Fake letter led a CT resident to lose $234k in crypto heist , feds say",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thehour.com/news/article/weston-234k-crypto-currency-heist-22187151.php"
+    },
+    {
+      "timestamp": "2026-04-03T15:30:00",
+      "source": "coindesk.com",
+      "headline": "CoinDesk 20 performance update : Bitcoin ( BTC ) trades flat while altcoins rise",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/coindesk-indices/2026/04/03/coindesk-20-performance-update-bitcoin-btc-trades-flat-while-altcoins-rise"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "lodinews.com",
+      "headline": "Backpack Appoints Nathan Smith as Chief Operating Officer",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.lodinews.com/online_features/press_releases/article_1c49eae4-f8cf-5d3c-b9c7-de87814c7b9d.html"
+    },
+    {
+      "timestamp": "2026-04-03T23:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Coinbase Gets Conditional Approval From Banking Regulator But Isnt Launching a Bank",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-gets-conditional-approval-banking-162041590.html"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Hashgraph CEO warns permissionless systems pose compliance risks",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/hashgraph-ceo-warns-permissionless-systems-000300721.html"
+    },
+    {
+      "timestamp": "2026-04-03T17:45:00",
+      "source": "dwell.com",
+      "headline": "Mexico City Landlords Are Evicting En Masse and Everything Else You Need to Know About This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dwell.com:443/article/design-news-mexico-city-evictions-white-house-ballroom-0b27179e"
+    },
+    {
+      "timestamp": "2026-04-03T15:30:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin rangebound as altcoins rally while derivatives signal downside risk : Crypto Markets Today",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/04/03/crypto-consolidates-as-volatility-cools-and-futures-markets-tilt-bearish"
+    },
+    {
+      "timestamp": "2026-04-03T23:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Why XRP Is Falling Today",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/why-xrp-falling-today-161000982.html"
+    },
+    {
+      "timestamp": "2026-04-03T01:45:00",
+      "source": "tpr.org",
+      "headline": "San Antonio City Council working on bitcoin scam sign ordinance",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tpr.org/news/2026-04-02/san-antonio-city-council-working-on-bitcoin-scam-sign-ordinance"
+    },
+    {
+      "timestamp": "2026-04-03T12:15:00",
+      "source": "247wallst.com",
+      "headline": "Why Ripple RLUSD Could Overtake USDC Following the CLARITY Act New Stablecoin Rules",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://247wallst.com/investing/2026/04/03/why-ripples-rlusd-could-overtake-usdc-following-the-clarity-acts-new-stablecoin-rules/"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "forbes.com",
+      "headline": "The Sacks Strategy : AI And Crypto As American Sovereign Tech",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/04/03/the-sacks-strategy-ai-and-crypto-as-american-sovereign-tech/"
+    },
+    {
+      "timestamp": "2026-04-03T12:00:00",
+      "source": "openpr.com",
+      "headline": "Late After Polygon and Avalanche Pump ? APEMARS Stage 14 Emerges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4454118/late-after-polygon-and-avalanche-pump-apemars-stage-14-emerges"
+    },
+    {
+      "timestamp": "2026-04-03T19:15:00",
+      "source": "russian.rt.com",
+      "headline": "Финансист Барышников : курс биткоина завис в диапазоне $60 76 тысяч",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://russian.rt.com/business/news/1615468-ekspert-finansy-kriptovalyuta"
+    },
+    {
+      "timestamp": "2026-04-03T06:15:00",
+      "source": "aninews.in",
+      "headline": "Upbit and ICEx Sign Strategic MOU to Fortify Indonesia Digital Asset Infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://aninews.in/news/business/upbit-and-icex-sign-strategic-mou-to-fortify-indonesias-digital-asset-infrastructure20260403105201/"
+    },
+    {
+      "timestamp": "2026-04-03T01:30:00",
+      "source": "manilatimes.net",
+      "headline": "Upbit and ICEx Sign Strategic MOU to Fortify Indonesia Digital Asset Infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/pr-newswire/upbit-and-icex-sign-strategic-mou-to-fortify-indonesias-digital-asset-infrastructure/2313862"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin May Be Mispricing Prolonged Iran War Risk , Hedge Fund Veteran Says",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/interview/bitcoin-underestimating-prolonged-iran-war-macro-investor-weighs-in"
+    },
+    {
+      "timestamp": "2026-04-03T00:00:00",
+      "source": "standard.net",
+      "headline": "Protection from scams : Layton City bans cryptocurrency ATMs due to fraud | News , Sports , Jobs",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.standard.net/news/2026/apr/02/protection-from-scams-layton-city-bans-cryptocurrency-atms-due-to-fraud/"
+    },
+    {
+      "timestamp": "2026-04-03T12:00:00",
+      "source": "openpr.com",
+      "headline": "HOO . com Reviews & News : Investors Can Trace Their Lost Funds",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4454129/hoo-com-reviews-news-investors-can-trace-their-lost-funds"
+    },
+    {
+      "timestamp": "2026-04-03T22:30:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto News : AlphaPepe Stage 10 Nearly Sold Out Prior Big Price Rise As XRP Eyes $5 Breakout",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/04/tmt-newswire/globenewswire/crypto-news-alphapepe-stage-10-nearly-sold-out-prior-big-price-rise-as-xrp-eyes-5-breakout/2314170"
+    },
+    {
+      "timestamp": "2026-04-03T03:45:00",
+      "source": "thailand-business-news.com",
+      "headline": "AsiaTokenFund Group Partners with 1MAX . com to Launch Curated Crypto Trading Platform",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thailand-business-news.com/pr-news/asiatokenfund-group-partners-with-1max-com-to-launch-curated-crypto-trading-platform"
+    },
+    {
+      "timestamp": "2026-04-03T05:15:00",
+      "source": "slguardian.org",
+      "headline": "Hackers Steal $280 Million from Crypto Exchange Drift in Sophisticated Attack",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://slguardian.org/hackers-steal-280-million-from-crypto-exchange-drift-in-sophisticated-attack/"
+    },
+    {
+      "timestamp": "2026-04-03T02:15:00",
+      "source": "bravenewcoin.com",
+      "headline": "Blockchain Forum 2026 - Brave New Coin",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bravenewcoin.com/events/blockchain-forum-2026"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "manilatimes.net",
+      "headline": "MoneyFlare Launches the Best AI Crypto Trading App Supporting One - Click Quantitative Trading",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/04/tmt-newswire/globenewswire/moneyflare-launches-the-best-ai-crypto-trading-app-supporting-one-click-quantitative-trading/2314124"
+    },
+    {
+      "timestamp": "2026-04-03T02:00:00",
+      "source": "forbes.com",
+      "headline": "The Privacy Paradox In On - Chain Finance",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/04/02/the-privacy-paradox-in-on-chain-finance/"
+    },
+    {
+      "timestamp": "2026-04-03T05:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Ripple Launches All - In - One Treasury Management System",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/ripple-launches-one-treasury-management-180500266.html"
+    },
+    {
+      "timestamp": "2026-04-03T00:15:00",
+      "source": "manilatimes.net",
+      "headline": "New Crypto : Pepeto Announces $8 . 65M Raised While Ethereum Price Prediction Hits New ATH as April Historically Delivers 18 % Gains",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/globenewswire/new-crypto-pepeto-announces-865m-raised-while-ethereum-price-prediction-hits-new-ath-as-april-historically-delivers-18-gains/2313850"
+    },
+    {
+      "timestamp": "2026-04-03T06:00:00",
+      "source": "benzinga.com",
+      "headline": "Dogecoin Admits Its A Joke Alright , But You Can Take The 16100 % Gains Seriously",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51643439/dogecoin-maybe-a-joke-but-it-has-shot-up-16100-percent"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "jdsupra.com",
+      "headline": "SEC Speaks – Are You Listening ? | Holland & Knight LLP",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jdsupra.com/legalnews/sec-speaks-are-you-listening-1641160/"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Can XRP Price Escape a 17 - Day Bearish Channel Despite a Weakening BTC Link ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-price-escape-17-day-110000821.html"
+    },
+    {
+      "timestamp": "2026-04-03T04:00:00",
+      "source": "manilatimes.net",
+      "headline": "T - RIZE Announces Particula Pre - Issuance Risk Rating for Kairos Secured Digital Loan Note Built on Canton Network Infrastructure",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/plentisoft/t-rize-announces-particula-pre-issuance-risk-rating-for-kairos-secured-digital-loan-note-built-on-canton-network-infrastructure/2313888"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "capitalfm.co.ke",
+      "headline": "Kibera Bitcoin economy signals new path for financial inclusion",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.capitalfm.co.ke/business/2026/04/kiberas-bitcoin-economy-signals-new-path-for-financial-inclusion/"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "61saat.com",
+      "headline": "Meteorolojiden Trabzon uyarısı ! Öğle saatlerinden sonra",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.61saat.com/meteorolojiden-trabzon-uyarisi-ogle-saatlerinden-sonra"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Fed Barr warns stablecoins pose risks to financial stability",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/feds-barr-warns-stablecoins-pose-204000447.html"
+    },
+    {
+      "timestamp": "2026-04-03T19:00:00",
+      "source": "newsbtc.com",
+      "headline": "Stablecoin Supply Rises To $315B As Institutional Flows Lift USDC",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/stablecoin-supply-surges-to-315b-as-institutional-flows-lift-usdc/"
+    },
+    {
+      "timestamp": "2026-04-03T04:45:00",
+      "source": "newsbtc.com",
+      "headline": "Ripple Introduces New System To Merge Corporate Finance And Digital Assets",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/ripple-2/ripple-introduces-new-system/"
+    },
+    {
+      "timestamp": "2026-04-03T02:15:00",
+      "source": "natlawreview.com",
+      "headline": "SEC and CFTC Address Application of Legislation to Digital Assets",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://natlawreview.com/article/sec-and-cftc-guidance-delivers-long-awaited-crypto-clarity"
+    },
+    {
+      "timestamp": "2026-04-03T04:45:00",
+      "source": "philippinetimes.com",
+      "headline": "Upbit and ICEx Sign Strategic MOU to Fortify Indonesia Digital Asset Infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.philippinetimes.com/news/278961292/upbit-and-icex-sign-strategic-mou-to-fortify-indonesia-digital-asset-infrastructure"
+    },
+    {
+      "timestamp": "2026-04-03T05:00:00",
+      "source": "singaporestar.com",
+      "headline": "Upbit and ICEx Sign Strategic MOU to Fortify Indonesia Digital Asset Infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.singaporestar.com/news/278961292/upbit-and-icex-sign-strategic-mou-to-fortify-indonesia-digital-asset-infrastructure"
+    },
+    {
+      "timestamp": "2026-04-03T04:45:00",
+      "source": "australiannews.net",
+      "headline": "Upbit and ICEx Sign Strategic MOU to Fortify Indonesia Digital Asset Infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.australiannews.net/news/278961292/upbit-and-icex-sign-strategic-mou-to-fortify-indonesia-digital-asset-infrastructure"
+    },
+    {
+      "timestamp": "2026-04-03T01:45:00",
+      "source": "asiabulletin.com",
+      "headline": "Upbit and ICEx Sign Strategic MOU to Fortify Indonesia Digital Asset Infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.asiabulletin.com/news/278961292/upbit-and-icex-sign-strategic-mou-to-fortify-indonesia-digital-asset-infrastructure"
+    },
+    {
+      "timestamp": "2026-04-03T05:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Miner Cango Raises $75M , NYSE Issues Delisting Notice",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-miner-cango-raises-75m-165700837.html"
+    },
+    {
+      "timestamp": "2026-04-03T12:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Analysts Offer Predictions for Bitfarms Q2 Earnings",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/03/analysts-offer-predictions-for-bitfarms-q2-earnings.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "haberekspres.com.tr",
+      "headline": "MSKÜ  de  Bisiklet Yolları Projesiyle yeşil geleceğe adım - Haber Ekspres - İzmir Haberleri - Son Dakika Haberleri",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberekspres.com.tr/mskude-bisiklet-yollari-projesiyle-yesil-gelecege-adim"
+    },
+    {
+      "timestamp": "2026-04-03T15:30:00",
+      "source": "pcmag.com",
+      "headline": "This Week in Cyber Mayhem : A Not - So - Dead Tortoise , a Very Alive Hack , and Free Money",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pcmag.com/news/this-week-in-cyber-mayhem-a-not-so-dead-tortoise-a-very-alive-hack-and"
+    },
+    {
+      "timestamp": "2026-04-03T09:45:00",
+      "source": "asia.nikkei.com",
+      "headline": "Editor Choice : Energy crisis forces Asia into COVID - like restrictions",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://asia.nikkei.com/editor-s-picks/editor-in-chief-s-picks/editor-s-choice-energy-crisis-forces-asia-into-covid-like-restrictions"
+    },
+    {
+      "timestamp": "2026-04-03T02:00:00",
+      "source": "portal.sina.com.hk",
+      "headline": "New Crypto Pepeto Binance Listing Update Following Shiba Inu Success and Cardano Price Prediction Target",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/04/03/1664392/new-crypto-pepeto-binance-listing-update-following-shiba-inu-success-and-cardano-price-prediction-target/"
+    },
+    {
+      "timestamp": "2026-04-03T01:30:00",
+      "source": "manilatimes.net",
+      "headline": "New Crypto Pepeto Binance Listing Update Following Shiba Inu Success and Cardano Price Prediction Target",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/globenewswire/new-crypto-pepeto-binance-listing-update-following-shiba-inu-success-and-cardano-price-prediction-target/2313864"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "success.com",
+      "headline": "Crypto in Your 401 ( k ) Here What You Actually Need to Know",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.success.com/401k-alternative-investments-crypto-2026"
+    },
+    {
+      "timestamp": "2026-04-03T06:15:00",
+      "source": "smh.com.au",
+      "headline": "Trump America is fast becoming a banana republic",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.smh.com.au/business/the-economy/trumps-america-is-fast-becoming-a-banana-republic-20260403-p5zl4t.html"
+    },
+    {
+      "timestamp": "2026-04-03T06:00:00",
+      "source": "theage.com.au",
+      "headline": "Trump America is fast becoming a banana republic",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.theage.com.au/business/the-economy/trumps-america-is-fast-becoming-a-banana-republic-20260403-p5zl4t.html"
+    },
+    {
+      "timestamp": "2026-04-03T07:00:00",
+      "source": "watoday.com.au",
+      "headline": "Trump America is fast becoming a banana republic",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.watoday.com.au/business/the-economy/trumps-america-is-fast-becoming-a-banana-republic-20260403-p5zl4t.html"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Cambodian Lawmakers Propose Severe Prison Time for Crypto Scammers",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/cambodia-law-prison-crypto-scammers"
+    },
+    {
+      "timestamp": "2026-04-03T01:30:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto News On Pepeto Project advancement And BNB Price Prediction Targets That Every BNB Holders Need to Know",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/globenewswire/crypto-news-on-pepeto-project-advancement-and-bnb-price-prediction-targets-that-every-bnb-holders-need-to-know/2313860"
+    },
+    {
+      "timestamp": "2026-04-03T12:15:00",
+      "source": "finanznachrichten.de",
+      "headline": "Figure Technology Solutions , Inc .: Figure Technology Solutions Reports Preliminary March & Q1 2026 Operating Data",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68120835-figure-technology-solutions-inc-figure-technology-solutions-reports-preliminary-march-q1-2026-operating-data-399.htm"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "manilatimes.net",
+      "headline": "Toobit $600 , 000 Easter Egg - venture Brings Interactive Quests to Global Traders",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/globenewswire/toobits-600000-easter-egg-venture-brings-interactive-quests-to-global-traders/2313988"
+    },
+    {
+      "timestamp": "2026-04-03T05:15:00",
+      "source": "cityam.com",
+      "headline": "Crypto , international competitiveness and consistency : where the united kingdom going wrong",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cityam.com/crypto-international-competitiveness-and-consistency-where-the-uks-going-wrong/"
+    },
+    {
+      "timestamp": "2026-04-03T08:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "CME Group ( CME ) Valuation Check After Record Volumes And New Digital Settlement Partnerships",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cme-group-cme-valuation-check-071150841.html"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "cairoscene.com",
+      "headline": "How Dubai is Regulating ETDs in Crypto Markets",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cairoscene.com/Business/How-Dubai-is-Regulating-ETDs-in-Crypto-Markets"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "XRP News : Ripple National Trust Bank Status Just Went Live Could This Fast - Track XRP Adoption ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-news-ripple-national-trust-211548358.html"
+    },
+    {
+      "timestamp": "2026-04-03T22:45:00",
+      "source": "wsiu.org",
+      "headline": "Trump administration sues Illinois over state attempts to regulate prediction markets",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wsiu.org/state-of-illinois/2026-04-03/trump-administration-sues-illinois-over-states-attempts-to-regulate-prediction-markets"
+    },
+    {
+      "timestamp": "2026-04-03T01:00:00",
+      "source": "bitcoinmagazine.com",
+      "headline": "How Real Is The Quantum Threat ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bitcoinmagazine.com/conference/how-real-is-the-quantum-threat"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "etoday.co.kr",
+      "headline": "이더리움 4 . 5 % 하락 … 비트코인 · 리플 등 코인 시세는",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.etoday.co.kr/news/view/2572326"
+    },
+    {
+      "timestamp": "2026-04-03T02:00:00",
+      "source": "dailymail.co.uk",
+      "headline": "How Jonathan - the 193 - year - old tortoise at the centre of a death hoax - was found sleeping under a tree as  scammer was trying to con mourners for crypto donations",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailymail.co.uk/news/article-15702915/Jonathan-tortoise-death-hoax-tree-scammer-crypto.html"
+    },
+    {
+      "timestamp": "2026-04-03T03:45:00",
+      "source": "liputan6.com",
+      "headline": "Metaplanet Membeli 5 . 075 Bitcoin Sepanjang Kuartal I 2026",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.liputan6.com/crypto/read/6309279/metaplanet-membeli-5075-bitcoin-sepanjang-kuartal-i-2026"
+    },
+    {
+      "timestamp": "2026-04-03T08:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Kaj Labs : Lithosphere Advances AI - Native Blockchain Infrastructure with Makalu Testnet and Integrated Protocol Stack",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68119541-kaj-labs-lithosphere-advances-ai-native-blockchain-infrastructure-with-makalu-testnet-and-integrated-protocol-stack-296.htm"
+    },
+    {
+      "timestamp": "2026-04-03T04:30:00",
+      "source": "freemalaysiatoday.com",
+      "headline": "Bitcoin lingers near lower bound of trading range amid conflict",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.freemalaysiatoday.com/category/business/2026/04/03/bitcoin-lingers-near-lower-bound-of-trading-range-amid-conflict"
+    },
+    {
+      "timestamp": "2026-04-03T05:15:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Bitcoin lingers near lower bound of trading range amid conflict",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.businesstimes.com.sg/companies-markets/bitcoin-lingers-near-lower-bound-trading-range-amid-conflict"
+    },
+    {
+      "timestamp": "2026-04-03T00:00:00",
+      "source": "edaily.co.kr",
+      "headline": "트럼프 발언 , 매도세 촉발 … 비트코인 1억원선 위기",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=02722406645412512&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-04-03T08:15:00",
+      "source": "edaily.co.kr",
+      "headline": "양자컴 시대 올수록 이더리움 급부상 … 비트코인보다 대응력 우위",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=04303366645412512&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-04-03T01:30:00",
+      "source": "insidermonkey.com",
+      "headline": "H . C . Wainwright Lowers BitFuFu Inc . ( FUFU ) PT on Weaker Bitcoin Mining Backdrop",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.insidermonkey.com/blog/h-c-wainwright-lowers-bitfufu-inc-fufu-pt-on-weaker-bitcoin-mining-backdrop-1730359/"
+    },
+    {
+      "timestamp": "2026-04-03T02:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Goldman Sachs predicts new low for Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/goldman-sachs-predicts-low-bitcoin-005113544.html"
+    },
+    {
+      "timestamp": "2026-04-03T01:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "H . C . Wainwright Lowers BitFuFu Inc . ( FUFU ) PT on Weaker Bitcoin Mining Backdrop",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/h-c-wainwright-lowers-bitfufu-004228940.html"
+    },
+    {
+      "timestamp": "2026-04-03T01:15:00",
+      "source": "prnewswire.com",
+      "headline": "Rosen Law Firm Encourages FLOW Cryptocurrency Investors to Inquire About Securities Class Action Investigation",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.prnewswire.com/news-releases/rosen-law-firm-encourages-flow-cryptocurrency-investors-to-inquire-about-securities-class-action-investigation-302733269.html"
+    },
+    {
+      "timestamp": "2026-04-03T06:45:00",
+      "source": "aksam.com.tr",
+      "headline": "Hürmüz  ün anahtarý Petro - Yuan",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.aksam.com.tr/guncel/hurmuzun-anahtari-petro-yuan/haber-1655615"
+    },
+    {
+      "timestamp": "2026-04-03T09:15:00",
+      "source": "dealstreetasia.com",
+      "headline": "Indonesia Crypto Exchange launches integrated platform under OJK framework",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dealstreetasia.com/stories/indonesia-crypto-exchange-launches-integrated-platform-under-ojk-framework-477889"
+    },
+    {
+      "timestamp": "2026-04-03T06:00:00",
+      "source": "morningstar.com",
+      "headline": "Dow Jones Top Financial Services Headlines at 12 AM ET : Blue Owl Investors Seek to Pull $5 . 4 Billion From Two Private - Credit Funds | The ...",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.morningstar.com/news/dow-jones/2026040326/dow-jones-top-financial-services-headlines-at-12-am-et-blue-owl-investors-seek-to-pull-54-billion-from-two-private-credit-funds-the"
+    },
+    {
+      "timestamp": "2026-04-03T09:15:00",
+      "source": "openpr.com",
+      "headline": "Cardano Price Prediction : ADA at $0 . 248 as Cardano Foundation",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4453798/cardano-price-prediction-ada-at-0-248-as-cardano-foundation"
+    },
+    {
+      "timestamp": "2026-04-03T04:30:00",
+      "source": "independent.ie",
+      "headline": "ATU will offer 40 free courses to those who wish to upskill in key growth areas",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.independent.ie/regionals/sligo/news/atu-will-offer-40-free-courses-to-those-who-wish-to-upskill-in-key-growth-areas/a1153632325.html"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "newsbtc.com",
+      "headline": "XRP Whales Move $592 Million From Exchanges In Two Days . Discover What Triggered It",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/xrp-news/xrp-whales-move-592-million-from-exchanges-in-two-days-discover-what-triggered-it/"
+    },
+    {
+      "timestamp": "2026-04-03T16:00:00",
+      "source": "openpr.com",
+      "headline": "Can Solana ( SOL ) Reach $170 Again ? Experts Analyze Trends",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4454434/can-solana-sol-reach-170-again-experts-analyze-trends"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "sabah.com.tr",
+      "headline": "Sahte polis ve savcı çetesi kertildi : 2 Milyon TLlik dolandırıcılıkta kripto detayı",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sabah.com.tr/yasam/sahte-polis-ve-savci-cetesi-cokertildi-2-milyon-tllik-dolandiricilikta-kripto-detayi-7556050"
+    },
+    {
+      "timestamp": "2026-04-03T05:15:00",
+      "source": "munhwa.com",
+      "headline": "마약왕  박왕열이 유통시킨 마약이 무려 … 경찰 , 131억 유통 파악 ... 비트코인 94개 추적중",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.munhwa.com:443/article/11579708"
+    },
+    {
+      "timestamp": "2026-04-03T12:15:00",
+      "source": "haberler.com",
+      "headline": "Coinbase ulusal banka onayı aldı",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/kripto-para/coinbase-ulusal-banka-onayi-aldi-19713149-haberi/"
+    },
+    {
+      "timestamp": "2026-04-03T06:00:00",
+      "source": "star.com.tr",
+      "headline": "Yuan - Coin veren Boðazdan geçer !  Bayrak  tavsiyesi",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.star.com.tr/ekonomi/yuan-coin-veren-bogazdan-gecer-bayrak-tavsiyesi-haber-2006840/"
+    },
+    {
+      "timestamp": "2026-04-03T22:00:00",
+      "source": "merkur.de",
+      "headline": "Wie Russlands Öl - Schattenflotte westliche Technologie missbraucht",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.merkur.de/politik/wie-russlands-oel-schattenflotte-westliche-technologie-missbraucht-zr-94248939.html"
+    },
+    {
+      "timestamp": "2026-04-03T21:15:00",
+      "source": "merkur.de",
+      "headline": "Wie Russlands Öl - Schattenflotte westliche Technologie missbraucht",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.merkur.de/politik/wie-russlands-oel-schattenflotte-westliche-technologie-missbraucht-zr-94248939.html"
+    },
+    {
+      "timestamp": "2026-04-03T23:00:00",
+      "source": "tz.de",
+      "headline": "Wie Russlands Öl - Schattenflotte westliche Technologie missbraucht",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.tz.de/politik/wie-russlands-oel-schattenflotte-westliche-technologie-missbraucht-zr-94248939.html"
+    },
+    {
+      "timestamp": "2026-04-03T09:45:00",
+      "source": "benzinga.com",
+      "headline": "MSTR Stock May Bottom After  Final Shakeout  Toward $90 - $100 , Says Analyst : ... A Buy Signal  - Strategy",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51643911/mstr-stock-may-bottom-after-final-shakeout-toward-90-100-says-analyst-a-buy-signal"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "jdsupra.com",
+      "headline": "CFTC No - Action Letter for Self - Custodial Crypto Wallet Reflects Shift in Regulatory Approach | Jenner & Block",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jdsupra.com/legalnews/cftc-no-action-letter-for-self-7918636/"
+    },
+    {
+      "timestamp": "2026-04-03T06:15:00",
+      "source": "securitylab.ru",
+      "headline": "« Это не первоапрельская шутка ». Хакеры вынесли из Drift сотни миллионов долларов",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.securitylab.ru/news/571078.php"
+    },
+    {
+      "timestamp": "2026-04-03T09:30:00",
+      "source": "liputan6.com",
+      "headline": "Bitcoin Terjun ke Level Terendah Pekan Ini , Harga Minyak Jadi Biang Kerok",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.liputan6.com/crypto/read/6309360/bitcoin-terjun-ke-level-terendah-pekan-ini-harga-minyak-jadi-biang-kerok"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "op-online.de",
+      "headline": "Wie Russlands Öl - Schattenflotte westliche Technologie missbraucht",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.op-online.de/politik/wie-russlands-oel-schattenflotte-westliche-technologie-missbraucht-zr-94248939.html"
+    },
+    {
+      "timestamp": "2026-04-03T01:30:00",
+      "source": "manilatimes.net",
+      "headline": "Ethereum Based Crypto Pepeto Updates Bridge on Binance Level Exchange While Dogecoin and Elon Musk Drives Crypto",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/globenewswire/ethereum-based-crypto-pepeto-updates-bridge-on-binance-level-exchange-while-dogecoin-and-elon-musk-drives-crypto/2313858"
+    },
+    {
+      "timestamp": "2026-04-03T07:00:00",
+      "source": "newspim.com",
+      "headline": "마약왕  박왕열 구속 송치 … 17 . 7㎏ 밀수 · 범죄수익 131억원",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newspim.com/news/view/20260403000671"
+    },
+    {
+      "timestamp": "2026-04-03T11:30:00",
+      "source": "manilatimes.net",
+      "headline": "MEXC Announces USD1 Launchpool Event with 1 , 500 , 000 WLFI Prize Pool",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/03/tmt-newswire/globenewswire/mexc-announces-usd1-launchpool-event-with-1500000-wlfi-prize-pool/2313983"
+    },
+    {
+      "timestamp": "2026-04-03T06:15:00",
+      "source": "independent.ie",
+      "headline": "Dont worry , Jonathan the tortoise is still alive at 193 – news of his death was part of  crypto con",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.independent.ie/world-news/dont-worry-jonathan-the-tortoise-is-still-alive-at-193-news-of-his-death-was-part-of-crypto-con/a2055274817.html"
+    },
+    {
+      "timestamp": "2026-04-03T13:45:00",
+      "source": "finanznachrichten.de",
+      "headline": "Bitcoin : Google gibt Horror - Warnung heraus - jetzt könnte es gefährlich werden",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68096109-bitcoin-google-gibt-horror-warnung-heraus-jetzt-koennte-es-gefaehrlich-werden-511.htm"
+    },
+    {
+      "timestamp": "2026-04-03T09:45:00",
+      "source": "dailypost.ng",
+      "headline": "Lagos : Police arrest three suspects over cybercrime , forgery , cult - related activities",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://dailypost.ng/2026/04/03/lagos-police-arrest-three-suspects-over-cybercrime-forgery-cult-related-activities/"
+    },
+    {
+      "timestamp": "2026-04-03T05:00:00",
+      "source": "chip.de",
+      "headline": "Phishing - Mail im Umlauf : Angeblicher Datenabgleich mit Krypto - Steuerprüfung",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.chip.de/news/cyber-security/phishing-mail-ist-im-umlauf-angeblicher-datenabgleich-mit-krypto-steuerpruefung_b1996da1-0851-4782-bec5-7ca3ed77daf4.html"
+    },
+    {
+      "timestamp": "2026-04-03T03:45:00",
+      "source": "markets.com",
+      "headline": "Best South Africa Investment ETFs in 2026 : EZA ETF , STX40 , Satrix RESI ETF",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/research/best-south-africa-investment-et-fs-in-2026-eza-etf-stx-40-satrix-resi-etf"
+    },
+    {
+      "timestamp": "2026-04-03T03:45:00",
+      "source": "markets.com",
+      "headline": "EUR / USD Analysis Today : EUR / USD Gains to 1 . 1550 as Middle East Uncertainty Lingers",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/analysis/eur-usd-analysis-today-eur-usd-gains-to-1-1550-as-middle-east-uncertainty-lingers"
+    },
+    {
+      "timestamp": "2026-04-03T16:45:00",
+      "source": "markets.com",
+      "headline": "CFDs vs Options : What the Difference ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/education-centre/cf-ds-vs-options-what-s-the-difference"
+    },
+    {
+      "timestamp": "2026-04-03T16:45:00",
+      "source": "markets.com",
+      "headline": "Investing basics for beginners : What are the 4 economic indicators ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/education-centre/investing-basics-for-beginners-what-are-the-4-economic-indicators-1"
+    },
+    {
+      "timestamp": "2026-04-03T16:45:00",
+      "source": "markets.com",
+      "headline": "Crude oil prices rise to $112 per barrel : Will UAE fuel prices rise in April 2026 ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/research/crude-oil-prices-rise-to-112-per-barrel-will-uae-fuel-prices-rise-in-april-2026"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "finanzen.ch",
+      "headline": "Wie viel Verlust ein Avalanche - Investment von vor 1 Jahr eingefahren hätte",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.ch/nachrichten/devisen/wie-viel-verlust-ein-avalanche-investment-von-vor-1-jahr-eingefahren-haette-1035993620"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "news1.co.il",
+      "headline": "News1 | קבוצת לוזון ( 2025 ): צמיחה אגרסיבית בצל הנפקות ונדל  ן",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.news1.co.il/Archive/002-D-180133-00.html"
+    },
+    {
+      "timestamp": "2026-04-03T19:15:00",
+      "source": "derstandard.at",
+      "headline": "Kryptobetrüger verbreiten Falschmeldung vom Tod der ältesten Schildkröte",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.derstandard.at/consent/tcf/story/3000000315261/kryptobetrueger-verbreiten-falschmeldung-vom-tod-der-aeltesten-schildkroete"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "finanzen.net",
+      "headline": "Live - Kurse : Kryptowährungen am Freitagmittag im Detail",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.net/nachricht/devisen/kryptokurse-am-mittag-15593754"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "infoworld.com",
+      "headline": "CERT - EU blames Trivy supply chain attack for Europa . eu data breach",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.infoworld.com/article/4154187/cert-eu-blames-trivy-supply-chain-attack-for-europa-eu-data-breach-3.html"
+    },
+    {
+      "timestamp": "2026-04-03T16:45:00",
+      "source": "csoonline.com",
+      "headline": "CERT - EU blames Trivy supply chain attack for Europa . eu data breach",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.csoonline.com/article/4154176/cert-eu-blames-trivy-supply-chain-attack-for-europa-eu-data-breach.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "finanzen.ch",
+      "headline": "So viel hätte eine Uniswap - Investition von vor 5 Jahren gekostet",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.ch/nachrichten/devisen/so-viel-haette-eine-uniswap-investition-von-vor-5-jahren-gekostet-1035993619"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "finanzen.net",
+      "headline": "Top - Kryptos : Bitcoin , Ripple , Bitcoin Cash , Ethereum – Kurs - Check am Vormittag",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.net/nachricht/devisen/bitcoinkurs-co-aktuell-so-steht-es-am-freitagvormittag-um-die-kurse-der-digitalwaehrungen-15593572"
+    },
+    {
+      "timestamp": "2026-04-03T18:45:00",
+      "source": "aljazeera.com",
+      "headline": "Cambodia parliament approves law to combat cybercrime scam rings",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.aljazeera.com/news/2026/4/3/cambodia-parliament-approves-law-to-combat-cybercrime-scam-rings"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "newstomato.com",
+      "headline": "입법 표류에 증권계 가세 … 가상업계 혼선 가중",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.newstomato.com/ReadNews.aspx?no=1296665"
+    },
+    {
+      "timestamp": "2026-04-03T01:15:00",
+      "source": "wtop.com",
+      "headline": "Scammers pose as Pepco workers , steal thousands , police say",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://wtop.com/crime/2026/04/scammers-pose-as-pepco-workers-steal-thousands-police-say/"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "index.hr",
+      "headline": "U Dubrovniku se prodaje povijesni ljetnikovac . Cijena ? 1 . 800 . 000 €",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/shopping/clanak/u-dubrovniku-se-prodaje-povijesni-ljetnikovac-cijena-1800000/2778243.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "bankier.pl",
+      "headline": "Zondacrypto kontra urzędy i bessa . Między umorzonymi śledztwami a skargami klientów",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bankier.pl/wiadomosc/Zondacrypto-kontra-urzedy-i-bessa-Miedzy-umorzonymi-sledztwami-a-skargami-klientow-9109005.html"
+    },
+    {
+      "timestamp": "2026-04-03T17:15:00",
+      "source": "glasistre.hr",
+      "headline": "Jedan od najpoznatijih talijanskih pjevača nastupa u Malom rimskom kazalištu",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.glasistre.hr/glazba/2026/04/03/jedan-od-najpoznatijih-talijanskih-pjevaca-nastupa-u-malom-rimskom-kazalistu-1060910"
+    },
+    {
+      "timestamp": "2026-04-03T21:30:00",
+      "source": "net.hr",
+      "headline": "Antonela Jukičić za Net . hr priznala  To mi je bio jasan znak da taj odnos ne ide u pravom smjeru",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://net.hr/hot/gospodin-savrseni/antonela-za-net-hr-priznala-to-mi-je-bio-jasan-znak-da-taj-odnos-ne-ide-u-pravom-smjeru-cf502101-2f3a-11f1-936f-9600040c8f8e"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "haberler.com",
+      "headline": "Tuncelide kendilerini polis ve savcı olarak tanıtıp dolandırıcılık yapan 3 zanlı tutuklandı",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/guncel/tunceli-de-dolandiricilik-kilifiyla-2-milyon-lira-gasbeden-3-supheli-tutuklandi-19712193-haberi/"
+    },
+    {
+      "timestamp": "2026-04-03T15:30:00",
+      "source": "bleacherreport.com",
+      "headline": "LeBron James Reacts to Luka Doncic Hamstring Injury , Says Lakers Have to  Pray for the Best",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bleacherreport.com/articles/25414271-lebron-james-reacts-luka-doncics-hamstring-injury-says-lakers-have-pray-best"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "wesh.com",
+      "headline": "Scammers exploit Iran conflict with new fraud tactics",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wesh.com/article/ftc-iran-conflict-scams-warning/70918957"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "cantechletter.com",
+      "headline": "Lithosphere Advances AI - Native Blockchain Infrastructure with Makalu Testnet and Integrated Protocol Stack",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cantechletter.com/newswires/lithosphere-advances-ai-native-blockchain-infrastructure-with-makalu-testnet-and-integrated-protocol-stack/"
+    },
+    {
+      "timestamp": "2026-04-03T17:00:00",
+      "source": "index.hr",
+      "headline": "SAD ukinuo sankcije ruskom bankaru Mihailu Zadornovu",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/sad-ukinuo-sankcije-ruskom-bankaru-mihailu-zadornovu/2778436.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T09:45:00",
+      "source": "money.kompas.com",
+      "headline": "Sempat Terkoreksi Imbas Ketidakpastian Geopolitik , Bagaimana Nasib Bitcoin ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://money.kompas.com/read/2026/04/03/162200226/sempat-terkoreksi-imbas-ketidakpastian-geopolitik-bagaimana-nasib-bitcoin-"
+    },
+    {
+      "timestamp": "2026-04-03T21:00:00",
+      "source": "index.hr",
+      "headline": "Veliki skandal potresa vladu Meloni . Oženjeni ministar u vezi s bivšom manekenkom",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/veliki-skandal-potresa-vladu-meloni-ozenjeni-ministar-u-vezi-s-bivsom-manekenkom/2778495.aspx?index_tid=977570&index_ref=naslovnica_vijesti_najnovije_d"
+    },
+    {
+      "timestamp": "2026-04-03T21:30:00",
+      "source": "index.hr",
+      "headline": "Veliki skandal potresa vladu Meloni . Oženjeni ministar u vezi s bivšom manekenkom",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/veliki-skandal-potresa-vladu-meloni-ozenjeni-ministar-u-vezi-s-bivsom-manekenkom/2778495.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T21:00:00",
+      "source": "index.hr",
+      "headline": "Veliki skandal potresa vladu Meloni . Oženjeni ministar u vezi s bivšom manekenkom",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/veliki-skandal-potresa-vladu-meloni-ozenjeni-ministar-u-vezi-s-bivsom-manekenkom/2778495.aspx?index_tid=977570&index_ref=naslovnica_vijesti_ostalo_d_0"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "index.hr",
+      "headline": "Što se događa sa šećerom u krvi kada jedete svježi sir ?",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/fit/clanak/sto-se-dogadja-sa-secerom-u-krvi-kada-jedete-svjezi-sir/2778234.aspx?index_tid=976692&index_ref=naslovnica_fit_d"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "index.hr",
+      "headline": "Što se događa sa šećerom u krvi kada jedete svježi sir ?",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/fit/clanak/sto-se-dogadja-sa-secerom-u-krvi-kada-jedete-svjezi-sir/2778234.aspx?index_tid=976692&index_ref=naslovnica_magazin_ostalo_d_2"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "index.hr",
+      "headline": "Što se događa sa šećerom u krvi kada jedete svježi sir ?",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/fit/clanak/sto-se-dogadja-sa-secerom-u-krvi-kada-jedete-svjezi-sir/2778234.aspx?index_tid=976692&index_ref=naslovnica_magazin_najnovije_d"
+    },
+    {
+      "timestamp": "2026-04-03T15:30:00",
+      "source": "telegram.hr",
+      "headline": "Penava se oglasio o Telegramovom otkriću da gradi novu kuću",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.telegram.hr/politika-kriminal/penava-o-telegramovom-otkricu-da-gradi-novu-kucu-stara-je-izgradena-od-cerpica-zivimo-u-vlazi/"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "hola.com",
+      "headline": "Lily - Rose Depp and 070 Shake rock baggy jeans during sweet , laughter - filled shopping date",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hola.com/us/celebrities/20260403893554/lily-rose-depp-070-shake-baggy-jeans-shopping-date/"
+    },
+    {
+      "timestamp": "2026-04-03T18:15:00",
+      "source": "jutarnji.hr",
+      "headline": "Dom i dizajn - Godinama je nepravedno bio na lošem glasu , a sada ga svi žele vidjeti u kuhinjama i dnevnim boravcima",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/domidizajn/interijeri/godinama-je-nepravedno-bio-na-losem-glasu-a-sada-ga-svi-zele-vidjeti-u-kuhinjama-i-dnevnim-boravcima-15695098"
+    },
+    {
+      "timestamp": "2026-04-03T03:30:00",
+      "source": "stockbiz.vn",
+      "headline": "Bitcoin chịu sức ép từ  cá voi",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://stockbiz.vn/tin-tuc/bitcoin-chiu-suc-ep-tu-ca-voi/39275956"
+    },
+    {
+      "timestamp": "2026-04-03T17:30:00",
+      "source": "haberler.com",
+      "headline": "Bitcoinde kritik eşik",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/kripto-para/bitcoinde-kritik-esik-19714278-haberi/"
+    },
+    {
+      "timestamp": "2026-04-03T08:00:00",
+      "source": "jutarnji.hr",
+      "headline": "Jutarnji list - Netanyahu najavio novu vojnu doktrinu . Kritičari ga uvjeravaju : Izrael će ovo skupo platiti",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/vijesti/svijet/netanyahu-trajni-rat-tampon-zone-preventivni-udari-izrael-libanon-gaza-15695374"
+    },
+    {
+      "timestamp": "2026-04-03T14:00:00",
+      "source": "24sata.hr",
+      "headline": "Uskrsni TV program : Evo što sve prikazuju HRT , RTL i Nova TV",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.24sata.hr/show/uskrsni-tv-program-evo-sto-sve-prikazuju-hrt-rtl-i-nova-tv-1119196"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "ensonhaber.com",
+      "headline": "Tuncelide kendilerini polis ve savcı olarak tanıtıp 2 milyonluk vurgun yaptılar",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ensonhaber.com/3-sayfa/tuncelide-kendilerini-polis-ve-savci-olarak-tanitip-2-milyonluk-vurgun-yaptilar"
+    },
+    {
+      "timestamp": "2026-04-03T10:45:00",
+      "source": "index.hr",
+      "headline": "Nemate puno vremena za današnji ručak ? Imamo 6 brzih ribljih recepata",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/food/clanak/nemate-puno-vremena-za-danasnji-rucak-imamo-6-brzih-ribljih-recepata/2778290.aspx?index_tid=976844&index_ref=naslovnica_food_d"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "index.hr",
+      "headline": "Još nemate ideje za ručak za Veliki petak ? Izabrali smo top 6 najbržih jela",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/food/clanak/nemate-puno-vremena-za-danasnji-rucak-imamo-6-brzih-ribljih-recepata/2778290.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T19:30:00",
+      "source": "net.hr",
+      "headline": "Sin Britney Spears objavio slovo  P , misterij mnogi shvatili na jedan način : Evo što je to !",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://net.hr/hot/zvijezde/sin-britney-spears-objavio-slovo-p-misterij-mnogi-shvatili-na-jedan-nacin-evo-sto-je-to-59e6af77-2f84-11f1-936f-9600040c8f8e"
+    },
+    {
+      "timestamp": "2026-04-03T19:30:00",
+      "source": "net.hr",
+      "headline": "Sin Britney Spears objavio slovo  P , misterij mnogi shvatili na jedan način : Evo što je to !",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://net.hr/hot/zvijezde/sin-britney-spears-objavio-slovo-p-misterij-mnogi-shvatili-na-jedan-nacin-evo-sto-je-to-59e6af77-2f84-11f1-936f-9600040c8f8e"
+    },
+    {
+      "timestamp": "2026-04-03T17:45:00",
+      "source": "jutarnji.hr",
+      "headline": "Jutarnji list - VIDEO Macronovi u Koreji dočekani kao filmske zvijezde , ljudi tražili selfie :  Je li ovo stvarno ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/vijesti/svijet/macron-u-seulu-topao-docek-odusevljenih-prolaznika-brisite-vecernja-setnja-15695571"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "fnnews.com",
+      "headline": "이재용 · 정의선 , 佛 마크롱 만났다 … 반도체 · 수소 협력 확대 기대감↑",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fnnews.com/news/202604040600121211"
+    },
+    {
+      "timestamp": "2026-04-03T07:00:00",
+      "source": "livemint.com",
+      "headline": "Tejas Mk - 1A engine delivery delay : HAL imposes penalty on GE Aerospace , chairman says jets to return to skies next week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.livemint.com/news/india/tejas-mk-1a-engine-delivery-delay-hal-imposes-delay-on-ge-aerospace-chairman-says-jets-to-return-to-skies-next-week-11775186262696.html"
+    },
+    {
+      "timestamp": "2026-04-03T07:00:00",
+      "source": "livemint.com",
+      "headline": "Explained Why the government rolled back its 60 % free flight seat allocation plan",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.livemint.com/news/india/explained-why-the-government-rolled-back-its-60-free-flight-seat-allocation-plan-11775193835704.html"
+    },
+    {
+      "timestamp": "2026-04-03T17:45:00",
+      "source": "index.hr",
+      "headline": "Obitelj izbačena s leta jer je beba plakala i bila crvena u licu , ljudi su bijesni",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/mame/clanak/tiktokerica-izbacili-su-nas-s-leta-i-prijetili-nam-policijom-jer-nam-je-beba-plakala/2778443.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T09:30:00",
+      "source": "index.hr",
+      "headline": "Je li zdravo jesti mljevenu junetinu svaki dan ? Imamo odgovor",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/food/clanak/je-li-zdravo-jesti-mljevenu-junetinu-svaki-dan-imamo-odgovor/2778254.aspx?index_tid=976747&index_ref=naslovnica_magazin_ostalo_d_1"
+    },
+    {
+      "timestamp": "2026-04-03T06:00:00",
+      "source": "bug.hr",
+      "headline": "Profiliranje kandidata pomoću prompta - biste li otvorili dušu svojem budućem poslodavcu ?",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bug.hr/komentar/profiliranje-kandidata-pomocu-prompta-biste-li-otvorili-dusu-svojem-buducem-58691"
+    },
+    {
+      "timestamp": "2026-04-03T22:45:00",
+      "source": "24sata.hr",
+      "headline": "Dnevni horoskop za subotu 4 . travnja : Rakovi će zavoditi , a Djevice imaju novu simpatiju",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.24sata.hr/lifestyle/dnevni-horoskop-za-subotu-4-travnja-rakovi-ce-zavoditi-a-djevice-imaju-novu-simpatiju-1118928"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "nw.de",
+      "headline": "Aktien - Tipps von Influencern : Bloß nicht blind vertrauen",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.nw.de/nachrichten/wirtschaft/24304393_Aktien-Tipps-von-Influencern-Bloss-nicht-blind-vertrauen.html"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "jutarnji.hr",
+      "headline": "Jutarnji list -  Grintalo  je hit . Vidi se da je Šibenik bio pod Mlecima . I da više nije",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/kultura/kazaliste/grintalo-je-hit-vidi-se-da-je-sibenik-bio-pod-mlecima-i-da-vise-nije-15695468"
+    },
+    {
+      "timestamp": "2026-04-03T15:30:00",
+      "source": "fox10phoenix.com",
+      "headline": "Nancy Guthrie disappearance : Day 62 latest updates",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox10phoenix.com/news/nancy-guthrie-disappearance-day-62-latest-updates"
+    },
+    {
+      "timestamp": "2026-04-03T13:45:00",
+      "source": "index.hr",
+      "headline": "Sharon Stone prisjetila se najboljeg filmskog poljupca u karijeri :  Oborio me s nogu",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/magazin/clanak/sharon-stone-prisjetila-se-najboljeg-filmskog-poljupca-u-karijeri-oborio-me-s-nogu/2778356.aspx?index_tid=977041&index_ref=naslovnica_magazin_ostalo_d_0"
+    },
+    {
+      "timestamp": "2026-04-03T11:00:00",
+      "source": "jutarnji.hr",
+      "headline": "Dobra Hrana - Riblji meni za Veliki petak ! Imamo recepte za brudet , oslića u škartocu , srdele , hrskavog šarana , perkelt ...",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/dobrahrana/price/riblji-meni-za-veliki-petak-imamo-recepte-za-brudet-oslica-u-skartocu-srdele-hrskavog-sarana-perkelt-15695341"
+    },
+    {
+      "timestamp": "2026-04-03T16:45:00",
+      "source": "finanznachrichten.de",
+      "headline": "EQS - PVR : K+S Aktiengesellschaft : Release according to Article 40 , Section 1 of the WpHG [ the German Securities Trading Act ] with the objective of Europe - wide distribution",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68121839-eqs-pvr-k-s-aktiengesellschaft-release-according-to-article-40-section-1-of-the-wphg-the-german-securities-trading-act-with-the-objective-of-euro-023.htm"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "fox2detroit.com",
+      "headline": "Nancy Guthrie disappearance : Day 62 latest updates",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox2detroit.com/news/nancy-guthrie-disappearance-day-62-latest-updates"
+    },
+    {
+      "timestamp": "2026-04-03T21:45:00",
+      "source": "fox5ny.com",
+      "headline": "Nancy Guthrie disappearance : Day 62 latest updates",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox5ny.com/news/nancy-guthrie-disappearance-day-62-latest-updates"
+    },
+    {
+      "timestamp": "2026-04-03T06:00:00",
+      "source": "24sata.hr",
+      "headline": "FOTO PlayStation 5 ruši dugu tradiciju : Prva konzola koja je s vremenom dosta poskupjela",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.24sata.hr/tech/foto-playstation-5-rusi-dugu-tradiciju-prva-konzola-koja-je-s-vremenom-dosta-poskupjela-1118967"
+    },
+    {
+      "timestamp": "2026-04-03T22:00:00",
+      "source": "fox13news.com",
+      "headline": "Nancy Guthrie disappearance : Day 62 latest updates",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox13news.com/news/nancy-guthrie-disappearance-day-62-latest-updates"
+    },
+    {
+      "timestamp": "2026-04-03T10:15:00",
+      "source": "defenseworld.net",
+      "headline": "Core Scientific , Inc . ( NASDAQ : CORZ ) Receives Consensus Recommendation of  Moderate Buy  from Analysts",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.defenseworld.net/2026/04/03/core-scientific-inc-nasdaqcorz-receives-consensus-recommendation-of-moderate-buy-from-analysts.html"
+    },
+    {
+      "timestamp": "2026-04-03T05:45:00",
+      "source": "biz.heraldcorp.com",
+      "headline": "삼성메디슨 · 하만  M & A 선구안  빛봤다",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://biz.heraldcorp.com/article/10709393"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "vecernji.hr",
+      "headline": "Naša radijska voditeljica i glumica shrvana zbog gubitka oca , poznatog glazbenika :  Toliko te ljudi voljelo",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vecernji.hr/showbiz/nasa-radijska-voditeljica-i-glumica-shrvana-zbog-gubitka-oca-poznatog-glazbenika-toliko-te-ljudi-voljelo-1948294"
+    },
+    {
+      "timestamp": "2026-04-03T01:00:00",
+      "source": "bug.hr",
+      "headline": "Imam dva Outlooka i nijedan ne radi , žale se astronauti misije Artemis II - Događaji @ Bug . hr",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bug.hr/dogadjaji/imam-dva-outlooka-i-nijedan-ne-radi-zale-se-astronauti-misije-artemis-ii-58704"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "glasistre.hr",
+      "headline": "Moljci , vlaga i neugodni mirisi : Saznajte kako ih izbjeći pri spremanju zimske odjeće",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.glasistre.hr/moda-i-stil/2026/04/02/moljci-vlaga-i-neugodni-mirisi-saznajte-kako-ih-izbjeci-pri-spremanju-zimske-odjece-1060703"
+    },
+    {
+      "timestamp": "2026-04-03T17:45:00",
+      "source": "index.hr",
+      "headline": "FOTO Ovo je novi Mercedesov volan",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/auto/clanak/foto-ovo-je-novi-mercedesov-volan/2778259.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T17:15:00",
+      "source": "index.hr",
+      "headline": "FOTO Ovo je novi Mercedesov volan",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/auto/clanak/foto-ovo-je-novi-mercedesov-volan/2778259.aspx?index_tid=976767&index_ref=naslovnica_magazin_ostalo_d_1"
+    },
+    {
+      "timestamp": "2026-04-03T17:15:00",
+      "source": "index.hr",
+      "headline": "FOTO Ovo je novi Mercedesov volan",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/auto/clanak/foto-ovo-je-novi-mercedesov-volan/2778259.aspx?index_tid=976767&index_ref=naslovnica_magazin_najnovije_d"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "index.hr",
+      "headline": "Cijene dizela u Njemačkoj opet narasle . Uskoro nova korekcija cijena u Hrvatskoj",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/cijene-dizela-u-njemackoj-opet-narasle-uskoro-nova-korekcija-cijena-u-hrvatskoj/2778448.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "index.hr",
+      "headline": "Rekordne cijene dizela u Njemačkoj . Novo poskupljenje moguće i u Hrvatskoj",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/cijene-dizela-u-njemackoj-opet-narasle-uskoro-nova-korekcija-cijena-u-hrvatskoj/2778448.aspx?index_tid=977410&index_ref=naslovnica_vijesti_ostalo_d_0"
+    },
+    {
+      "timestamp": "2026-04-03T18:00:00",
+      "source": "index.hr",
+      "headline": "Rekordne cijene dizela u Njemačkoj . Novo poskupljenje moguće i u Hrvatskoj",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/cijene-dizela-u-njemackoj-opet-narasle-uskoro-nova-korekcija-cijena-u-hrvatskoj/2778448.aspx?index_tid=977410&index_ref=naslovnica_vijesti_najnovije_d"
+    },
+    {
+      "timestamp": "2026-04-03T15:30:00",
+      "source": "telegram.hr",
+      "headline": "Roditelji poginuli u prometnoj u BiH , troje djece preživjelo",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.telegram.hr/vijesti/horor-nesreca-kod-dervente-dvoje-mladih-roditelja-poginulo-troje-djece-u-bolnici-u-slavonskom-brodu/"
+    },
+    {
+      "timestamp": "2026-04-03T07:00:00",
+      "source": "jutarnji.hr",
+      "headline": "Živim - Jeftin dodatak prehrani za zdravlje crijeva može ublažiti jaku osteoartritičnu bol",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/zivim/ucim/jeftin-dodatak-prehrani-za-zdravlje-crijeva-moze-ublaziti-jaku-osteoartriticnu-bol-15695364"
+    },
+    {
+      "timestamp": "2026-04-03T06:15:00",
+      "source": "vecernji.hr",
+      "headline": "Hrvati razumiju kinesku kuhinju pa smo jela i ugođaj željeli dignuti na višu razinu",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vecernji.hr/lifestyle/hrvati-razumiju-kinesku-kuhinju-pa-smo-jela-i-ugodaj-zeljeli-dignuti-na-visu-razinu-1947388"
+    },
+    {
+      "timestamp": "2026-04-03T16:30:00",
+      "source": "glas-slavonije.hr",
+      "headline": "Potpora za one koji su  drukčiji",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.glas-slavonije.hr/regija/2026/04/03/potpora-za-one-koji-su-drukciji-756248/"
+    },
+    {
+      "timestamp": "2026-04-03T17:45:00",
+      "source": "networkworld.com",
+      "headline": "CERT - EU blames Trivy supply chain attack for Europa . eu data breach",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.networkworld.com/article/4154185/cert-eu-blames-trivy-supply-chain-attack-for-europa-eu-data-breach-2.html"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "novilist.hr",
+      "headline": "Beljak dobio novi posao u firmi zeta Gojka Šuška . Tvrdi da HDZ nema baš nikakve veze s tim gdje sada radi",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.novilist.hr/novosti/hrvatska/beljak-dobio-novi-posao-u-firmi-zeta-gojka-suska-tvrdi-da-hdz-nema-bas-nikakve-veze-s-tim-gdje-sada-radi/"
+    },
+    {
+      "timestamp": "2026-04-03T00:30:00",
+      "source": "index.hr",
+      "headline": "Hegseth smjenio šefa američke vojske . Iranci :  Oborili smo neprijateljski avion",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/hegseth-smjenio-sefa-americke-vojske-iranci-oborili-smo-neprijateljski-avion/2777760.aspx?index_ref=homepage_comment_box_d&commentId=10898840"
+    },
+    {
+      "timestamp": "2026-04-03T09:30:00",
+      "source": "index.hr",
+      "headline": "Zagreb s 1 , 55 milijuna eura obnavlja pothodnik na Držićevoj",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/zagreb-s-155-milijuna-eura-obnavlja-pothodnik-na-drzicevoj/2778256.aspx"
+    },
+    {
+      "timestamp": "2026-04-03T07:00:00",
+      "source": "jutarnji.hr",
+      "headline": "Jutarnji list - Umro poznati hrvatski gitarist . Od oca se emotivno oprostila naša radijska voditeljica i glumica",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/scena/domace-zvijezde/preminuo-ranko-svorcan-pulski-gitarist-atomsko-skloniste-15695367"
+    },
+    {
+      "timestamp": "2026-04-03T20:00:00",
+      "source": "vecernji.hr",
+      "headline": "YouTube uvodi 24 / 7 kanale i AI asistenta koji će odgovarati na sva pitanja o programu",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vecernji.hr/kultura/youtube-uvodi-24-7-kanale-i-ai-asistenta-koji-ce-odgovarati-na-sva-pitanja-o-programu-1948536"
+    },
+    {
+      "timestamp": "2026-04-03T00:15:00",
+      "source": "glas-slavonije.hr",
+      "headline": "HRT pripremio bogat prigodni program za uskrsne blagdane",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.glas-slavonije.hr/mozaik/film-i-tv/2026/04/02/hrt-pripremio-bogat-prigodni-program-za-uskrsne-blagdane-754720/"
+    },
+    {
+      "timestamp": "2026-04-03T08:30:00",
+      "source": "vecernji.hr",
+      "headline": "Natječaj za novi Centar za autizam u Splitu do ljeta",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vecernji.hr/vijesti/natjecaj-za-novi-centar-za-autizam-u-splitu-do-ljeta-1948200"
+    },
+    {
+      "timestamp": "2026-04-03T04:30:00",
+      "source": "amic.ru",
+      "headline": "Ресторан  Панда и рамен  прекратил работу в барнаульском ТРЦ  Весна",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.amic.ru/news/restoran-panda-i-ramen-prekratil-rabotu-v-barnaulskom-trc-vesna-581165"
+    },
+    {
+      "timestamp": "2026-04-03T08:00:00",
+      "source": "tsn.ua",
+      "headline": "У Сумах дрон влучив у ТРЦ Укрaїнa",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://tsn.ua/ukrayina/u-velykomu-oblasnomu-tsentri-dron-vluchyv-u-trts-pershi-detali-3054551.html"
+    }
+  ],
+  "data_quality": "full",
+  "timeline_status": "ok",
+  "volume_status": "ok"
 }

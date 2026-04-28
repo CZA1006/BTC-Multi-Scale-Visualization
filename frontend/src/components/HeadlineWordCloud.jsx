@@ -7,10 +7,10 @@ const WIDTH = 520;
 const HEIGHT = 220;
 
 function toneColor(meanTone) {
-  if (meanTone === null || meanTone === undefined || Number.isNaN(meanTone)) return '#8a94a6';
-  if (meanTone > -0.8) return '#2ca02c';
-  if (meanTone < -1.6) return '#d62728';
-  return '#aab6cc';
+  if (meanTone === null || meanTone === undefined || Number.isNaN(meanTone)) return '#ced4da';
+  if (meanTone > 0.5) return '#2f9e44';
+  if (meanTone < -0.5) return '#d9485f';
+  return '#ced4da';
 }
 
 export function HeadlineWordCloud({ events }) {

@@ -1,70 +1,139 @@
 {
+  "cache_schema_version": 7,
   "date": "2026-03-29",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
-  "theme_count_crypto": 6,
-  "theme_count_regulation": 1,
-  "theme_count_election": 0,
-  "theme_count_war": 1,
+  "data_quality": "full",
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 1755,
+  "avg_tone": -0.5362441785375118,
+  "theme_count_crypto": 54,
+  "theme_count_regulation": 7,
+  "theme_count_election": 1,
+  "theme_count_war": 5,
   "hourly_tones": [
     {
-      "timestamp": "2026-03-29T03:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T00:00:00.000Z",
+      "news_count": 40,
+      "average_tone": -2.422
     },
     {
-      "timestamp": "2026-03-29T09:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T01:00:00.000Z",
+      "news_count": 17,
+      "average_tone": -0.25005
     },
     {
-      "timestamp": "2026-03-29T11:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T02:00:00.000Z",
+      "news_count": 22,
+      "average_tone": -0.37794999999999995
     },
     {
-      "timestamp": "2026-03-29T12:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T03:00:00.000Z",
+      "news_count": 28,
+      "average_tone": -0.93515
     },
     {
-      "timestamp": "2026-03-29T13:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T04:00:00.000Z",
+      "news_count": 15,
+      "average_tone": -1.571
     },
     {
-      "timestamp": "2026-03-29T14:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-03-29T05:00:00.000Z",
+      "news_count": 48,
+      "average_tone": 0.8443666666666667
     },
     {
-      "timestamp": "2026-03-29T15:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T06:00:00.000Z",
+      "news_count": 43,
+      "average_tone": -1.2104
     },
     {
-      "timestamp": "2026-03-29T16:00:00",
-      "news_count": 4,
-      "average_tone": null
+      "timestamp": "2026-03-29T07:00:00.000Z",
+      "news_count": 84,
+      "average_tone": -0.926775
     },
     {
-      "timestamp": "2026-03-29T19:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T08:00:00.000Z",
+      "news_count": 99,
+      "average_tone": -0.453975
     },
     {
-      "timestamp": "2026-03-29T20:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T09:00:00.000Z",
+      "news_count": 125,
+      "average_tone": -0.9478999999999999
     },
     {
-      "timestamp": "2026-03-29T22:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-29T10:00:00.000Z",
+      "news_count": 242,
+      "average_tone": -0.594275
+    },
+    {
+      "timestamp": "2026-03-29T11:00:00.000Z",
+      "news_count": 69,
+      "average_tone": 0.14565
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00.000Z",
+      "news_count": 110,
+      "average_tone": 0.57865
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00.000Z",
+      "news_count": 102,
+      "average_tone": -0.7450000000000001
+    },
+    {
+      "timestamp": "2026-03-29T14:00:00.000Z",
+      "news_count": 96,
+      "average_tone": -0.027725
+    },
+    {
+      "timestamp": "2026-03-29T15:00:00.000Z",
+      "news_count": 73,
+      "average_tone": -0.10813333333333335
+    },
+    {
+      "timestamp": "2026-03-29T16:00:00.000Z",
+      "news_count": 93,
+      "average_tone": 0.3985666666666667
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00.000Z",
+      "news_count": 80,
+      "average_tone": -1.610175
+    },
+    {
+      "timestamp": "2026-03-29T18:00:00.000Z",
+      "news_count": 53,
+      "average_tone": -0.44090000000000007
+    },
+    {
+      "timestamp": "2026-03-29T19:00:00.000Z",
+      "news_count": 103,
+      "average_tone": -1.373025
+    },
+    {
+      "timestamp": "2026-03-29T20:00:00.000Z",
+      "news_count": 81,
+      "average_tone": -0.5449
+    },
+    {
+      "timestamp": "2026-03-29T21:00:00.000Z",
+      "news_count": 44,
+      "average_tone": -2.2326
+    },
+    {
+      "timestamp": "2026-03-29T22:00:00.000Z",
+      "news_count": 75,
+      "average_tone": 0.27405
+    },
+    {
+      "timestamp": "2026-03-29T23:00:00.000Z",
+      "news_count": 13,
+      "average_tone": 0.4536
     }
   ],
+  "timeline_status": "ok",
+  "volume_status": "ok",
   "top_headlines": [
     "Crypto Market Recap : BTC Heads for 6th Red Month ; Tether Hires KPMG for First Full Audit ; Morgan Stanley Eyes Own BTC ETF ; and More ( Mar 22 – 28 , 2026 )",
     "Crypto Ends The Week In The Red As Market Volatility Continues",
@@ -79,6 +148,7 @@
       "headline": "Crypto Market Recap : BTC Heads for 6th Red Month ; Tether Hires KPMG for First Full Audit ; Morgan Stanley Eyes Own BTC ETF ; and More ( Mar 22 – 28 , 2026 )",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.banklesstimes.com/articles/2026/03/29/crypto-market-recap-btc-heads-for-6th-red-month-tether-hires-kpmg-for-first-full-audit-morgan-stanley-eyes-own-btc-etf-and-more-mar-22-28-2026/"
     },
     {
@@ -87,6 +157,7 @@
       "headline": "Crypto Ends The Week In The Red As Market Volatility Continues",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://finance.yahoo.com/markets/crypto/articles/crypto-ends-week-red-market-204700262.html"
     },
     {
@@ -95,6 +166,7 @@
       "headline": "Weekend Round - Up : Crypto Exchange Gets Fed Approval , Ethereum Outperforms S & P 500 And More",
       "category": "macro",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51529184/weekend-round-up-crypto-exchange-gets-fed-approval-ethereum-outperforms-sp-500-and-more"
     },
     {
@@ -103,6 +175,7 @@
       "headline": "Sologenic Trading 32 . 1 % Higher This Week ( SOLO )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/03/29/sologenic-trading-32-1-higher-this-week-solo.html"
     },
     {
@@ -111,6 +184,7 @@
       "headline": "BTC Forecast Points to $49 , 000 Bear Case as Veteran Analyst Warns",
       "category": "war",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.openpr.com/news/4445319/btc-forecast-points-to-49-000-bear-case-as-veteran-analyst-warns"
     },
     {
@@ -119,6 +193,7 @@
       "headline": "Bitcoin Price Prediction : Veteran Analyst Targets BTC Drop",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.openpr.com/news/4445036/bitcoin-price-prediction-veteran-analyst-targets-btc-drop"
     },
     {
@@ -127,6 +202,7 @@
       "headline": "Michael Saylor Spent A Decade Doing  Everything Under The Sun , But Still Couldnt  Get Ahead  Success Hit When He Understood This One Thing",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51529589/michael-saylor-spent-a-decade-doing-everything-under-the-sun-but-still-couldnt-get-ahead-su"
     },
     {
@@ -135,6 +211,7 @@
       "headline": "Michael Saylor Spent A Decade Doing  Everything Under The Sun , But Still Couldnt  Get Ahead  Success Hit When He Understood This One Thing",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51529589/michael-saylor-spent-a-decade-doing-everything-under-the-sun-but-still-couldnt-get-ahead-success-hit-when-he-understood-this-one-thing"
     },
     {
@@ -143,6 +220,7 @@
       "headline": "Stacks ( STX ) Achieves Self Reported Market Capitalization of $226 . 79 Million",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/03/29/stacks-stx-achieves-self-reported-market-capitalization-of-226-79-million.html"
     },
     {
@@ -151,6 +229,7 @@
       "headline": "Bitcoin Private ( BTCP ) Tops One Day Trading Volume of $24 . 10",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.dailypolitical.com/2026/03/29/bitcoin-private-btcp-tops-one-day-trading-volume-of-24-10.html"
     },
     {
@@ -159,6 +238,7 @@
       "headline": "Monero ( XMR ) Price Down 6 . 5 % This Week",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/03/29/monero-xmr-price-down-6-5-this-week.html"
     },
     {
@@ -167,6 +247,7 @@
       "headline": "Coinbase Wrapped BTC ( CBBTC ) Self Reported Market Capitalization Tops $5 . 62 Billion",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/03/29/coinbase-wrapped-btc-cbbtc-self-reported-market-capitalization-tops-5-62-billion.html"
     },
     {
@@ -175,6 +256,7 @@
       "headline": "Pax Dollar Reaches 24 - Hour Trading Volume of $799 . 57 Thousand ( USDP )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/03/29/pax-dollar-reaches-24-hour-trading-volume-of-799-57-thousand-usdp.html"
     },
     {
@@ -183,6 +265,7 @@
       "headline": "Verge ( XVG ) Price Reaches $0 . 0044 on Major Exchanges",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.dailypolitical.com/2026/03/29/verge-xvg-price-reaches-0-0044-on-major-exchanges.html"
     },
     {
@@ -191,7 +274,2260 @@
       "headline": "ABBC Coin Price Tops $0 . 0070 on Major Exchanges ( ABBC )",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.dailypolitical.com/2026/03/29/abbc-coin-price-tops-0-0070-on-major-exchanges-abbc.html"
+    }
+  ],
+  "all_articles": [
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "banklesstimes.com",
+      "headline": "Crypto Market Recap : BTC Heads for 6th Red Month ; Tether Hires KPMG for First Full Audit ; Morgan Stanley Eyes Own BTC ETF ; and More ( Mar 22 – 28 , 2026 )",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.banklesstimes.com/articles/2026/03/29/crypto-market-recap-btc-heads-for-6th-red-month-tether-hires-kpmg-for-first-full-audit-morgan-stanley-eyes-own-btc-etf-and-more-mar-22-28-2026/"
+    },
+    {
+      "timestamp": "2026-03-29T03:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Crypto Ends The Week In The Red As Market Volatility Continues",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/crypto-ends-week-red-market-204700262.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:45:00",
+      "source": "benzinga.com",
+      "headline": "Weekend Round - Up : Crypto Exchange Gets Fed Approval , Ethereum Outperforms S & P 500 And More",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51529184/weekend-round-up-crypto-exchange-gets-fed-approval-ethereum-outperforms-sp-500-and-more"
+    },
+    {
+      "timestamp": "2026-03-29T15:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Sologenic Trading 32 . 1 % Higher This Week ( SOLO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/sologenic-trading-32-1-higher-this-week-solo.html"
+    },
+    {
+      "timestamp": "2026-03-29T19:45:00",
+      "source": "openpr.com",
+      "headline": "BTC Forecast Points to $49 , 000 Bear Case as Veteran Analyst Warns",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445319/btc-forecast-points-to-49-000-bear-case-as-veteran-analyst-warns"
+    },
+    {
+      "timestamp": "2026-03-29T09:00:00",
+      "source": "openpr.com",
+      "headline": "Bitcoin Price Prediction : Veteran Analyst Targets BTC Drop",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445036/bitcoin-price-prediction-veteran-analyst-targets-btc-drop"
+    },
+    {
+      "timestamp": "2026-03-29T22:45:00",
+      "source": "benzinga.com",
+      "headline": "Michael Saylor Spent A Decade Doing  Everything Under The Sun , But Still Couldnt  Get Ahead  Success Hit When He Understood This One Thing",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51529589/michael-saylor-spent-a-decade-doing-everything-under-the-sun-but-still-couldnt-get-ahead-su"
+    },
+    {
+      "timestamp": "2026-03-29T20:00:00",
+      "source": "benzinga.com",
+      "headline": "Michael Saylor Spent A Decade Doing  Everything Under The Sun , But Still Couldnt  Get Ahead  Success Hit When He Understood This One Thing",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51529589/michael-saylor-spent-a-decade-doing-everything-under-the-sun-but-still-couldnt-get-ahead-success-hit-when-he-understood-this-one-thing"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Stacks ( STX ) Achieves Self Reported Market Capitalization of $226 . 79 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/stacks-stx-achieves-self-reported-market-capitalization-of-226-79-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Bitcoin Private ( BTCP ) Tops One Day Trading Volume of $24 . 10",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/bitcoin-private-btcp-tops-one-day-trading-volume-of-24-10.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Monero ( XMR ) Price Down 6 . 5 % This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/monero-xmr-price-down-6-5-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Coinbase Wrapped BTC ( CBBTC ) Self Reported Market Capitalization Tops $5 . 62 Billion",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/coinbase-wrapped-btc-cbbtc-self-reported-market-capitalization-tops-5-62-billion.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Pax Dollar Reaches 24 - Hour Trading Volume of $799 . 57 Thousand ( USDP )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/pax-dollar-reaches-24-hour-trading-volume-of-799-57-thousand-usdp.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Verge ( XVG ) Price Reaches $0 . 0044 on Major Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/verge-xvg-price-reaches-0-0044-on-major-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "dailypolitical.com",
+      "headline": "ABBC Coin Price Tops $0 . 0070 on Major Exchanges ( ABBC )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/abbc-coin-price-tops-0-0070-on-major-exchanges-abbc.html"
+    },
+    {
+      "timestamp": "2026-03-29T19:00:00",
+      "source": "manilatimes.net",
+      "headline": "Bitcoin Everlight Opens Phase 3 as Stablecoin Adoption Expands Access to Blockchain Participation",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/30/tmt-newswire/globenewswire/bitcoin-everlight-opens-phase-3-as-stablecoin-adoption-expands-access-to-blockchain-participation/2310081"
+    },
+    {
+      "timestamp": "2026-03-29T11:15:00",
+      "source": "cointelegraph.com",
+      "headline": "BNP Paribas Adds Bitcoin , Ether ETNs for France Retail Users",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/bnp-paribas-bitcoin-ether-etns-france-retail"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "CoinLoan ( CLT ) 24 Hour Trading Volume Hits $4 . 98",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394531/coinloan-clt-24-hour-trading-volume-hits-4-98.html"
+    },
+    {
+      "timestamp": "2026-03-29T21:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Walmart OnePay Adds a Dozen New Cryptos to Nascent Superapp Offering",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/walmart-backed-onepay-adds-a-dozen-new-tokens-in-push-to-serve-new-to-crypto-customers"
+    },
+    {
+      "timestamp": "2026-03-29T14:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Aergo 1 - Day Volume Hits $1 . 54 Million ( AERGO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/aergo-1-day-volume-hits-1-54-million-aergo.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "tickerreport.com",
+      "headline": "Shiba Inu ( SHIB ) Self Reported Market Cap Hits $3 . 41 Billion",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394644/shiba-inu-shib-self-reported-market-cap-hits-3-41-billion.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Siacoin ( SC ) Trading Down 9 . 7 % This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/siacoin-sc-trading-down-9-7-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Chiliz Trading 13 . 7 % Higher Over Last 7 Days ( CHZ )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394768/chiliz-trading-13-7-higher-over-last-7-days-chz.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "tickerreport.com",
+      "headline": "Coinbase Wrapped Staked ETH Price Tops $2 , 245 . 41 on Exchanges ( CBETH )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394691/coinbase-wrapped-staked-eth-price-tops-2245-41-on-exchanges-cbeth.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Compound ( COMP ) 24 Hour Volume Hits $40 . 48 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/compound-comp-24-hour-volume-hits-40-48-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "IDEX ( IDEX ) 24 Hour Volume Reaches $2 . 67 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/idex-idex-24-hour-volume-reaches-2-67-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Orbs 1 - Day Volume Reaches $4 . 47 Million ( ORBS )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/orbs-1-day-volume-reaches-4-47-million-orbs.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00",
+      "source": "tickerreport.com",
+      "headline": "Civic Trading 4 . 8 % Lower This Week ( CVC )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394806/civic-trading-4-8-lower-this-week-cvc.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "WAXE ( WAXE ) 24 Hour Trading Volume Reaches $1 . 93 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394528/waxe-waxe-24-hour-trading-volume-reaches-1-93-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "Adshares ( ADS ) Trading Down 2 . 2 % This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/adshares-ads-trading-down-2-2-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Dash ( DASH ) Trading 2 . 2 % Higher Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/dash-dash-trading-2-2-higher-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "Ardor ( ARDR ) Self Reported Market Capitalization Tops $42 . 78 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394535/ardor-ardr-self-reported-market-capitalization-tops-42-78-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Uniswap Price Down 3 . 6 % Over Last Week ( UNI )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/uniswap-price-down-3-6-over-last-week-uni.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "WazirX Market Capitalization Tops $8 . 17 Million ( WRX )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/wazirx-market-capitalization-tops-8-17-million-wrx.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "VVS Finance ( VVS ) Price Reaches $0 . 0000 on Top Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/vvs-finance-vvs-price-reaches-0-0000-on-top-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "Best Cryptocurrency Stocks To Follow Today – March 29th",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/best-cryptocurrency-stocks-to-follow-today-march-29th.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "BitShares Hits Self Reported Market Capitalization of $2 . 91 Million ( BTS )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/bitshares-hits-self-reported-market-capitalization-of-2-91-million-bts.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Locus Chain ( LOCUS ) Trading 6 . 4 % Lower Over Last Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/locus-chain-locus-trading-6-4-lower-over-last-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "CEEK VR Reaches Market Capitalization of $2 . 42 Million ( CEEK )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/ceek-vr-reaches-market-capitalization-of-2-42-million-ceek.html"
+    },
+    {
+      "timestamp": "2026-03-29T19:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin ETFs Pull In $56B As CEO Pitches Crypto Over Gold",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-etfs-pull-in-56b-as-ceo-pitches-crypto-over-gold/"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Chia ( XCH ) Self Reported Market Capitalization Achieves $48 . 04 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/chia-xch-self-reported-market-capitalization-achieves-48-04-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "DeFiChain Trading Up 15 . 9 % Over Last Week ( DFI )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/defichain-trading-up-15-9-over-last-week-dfi.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "This Glorious Cryptocurrency Is Up Almost 17 , 000 % in 10 Years : Here Are the 5 Biggest Risks You Need to Know .",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/glorious-cryptocurrency-almost-17-000-113000466.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:30:00",
+      "source": "pymnts.com",
+      "headline": "Fannie Mae to Accept Crypto - backed Mortgages for the First Time",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/cpi-posts/fannie-mae-to-accept-crypto-backed-mortgages-for-the-first-time/"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Coin98 ( C98 ) Tops One Day Volume of $4 . 17 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/coin98-c98-tops-one-day-volume-of-4-17-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "SKALE Network ( SKL ) Hits 24 - Hour Volume of $5 . 04 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/skale-network-skl-hits-24-hour-volume-of-5-04-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "MVL Self Reported Market Capitalization Achieves $31 . 14 Million ( MVL )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/mvl-self-reported-market-capitalization-achieves-31-14-million-mvl.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Hive Reaches Self Reported Market Capitalization of $27 . 13 Million ( HIVE )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/hive-reaches-self-reported-market-capitalization-of-27-13-million-hive.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Constellation ( DAG ) Price Reaches $0 . 0095 on Top Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/constellation-dag-price-reaches-0-0095-on-top-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "yearn . finance ( YFI ) Achieves Market Capitalization of $85 . 55 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394779/yearn-finance-yfi-achieves-market-capitalization-of-85-55-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Bitcoin Standard Hashrate Token Trading Up 6 . 8 % Over Last 7 Days ( BTCST )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/bitcoin-standard-hashrate-token-trading-up-6-8-over-last-7-days-btcst.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "tickerreport.com",
+      "headline": "Algorand Self Reported Market Cap Reaches $720 . 77 Million ( ALGO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394690/algorand-self-reported-market-cap-reaches-720-77-million-algo.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "Shentu ( CTK ) Trading Up 2 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394529/shentu-ctk-trading-up-2-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "XSGD Market Cap Reaches $16 . 97 Million ( XSGD )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/xsgd-market-cap-reaches-16-97-million-xsgd.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Chiliz Self Reported Market Capitalization Tops $408 . 95 Million ( CHZ )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/chiliz-self-reported-market-capitalization-tops-408-95-million-chz.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "SafeMoon Achieves Market Cap of $2 . 80 Million ( SAFEMOON )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394770/safemoon-achieves-market-cap-of-2-80-million-safemoon.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "MagnetGold ( MTG ) Price Reaches $0 . 0177",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/magnetgold-mtg-price-reaches-0-0177.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "TomoChain ( TOMO ) Hits Market Capitalization of $5 . 12 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/tomochain-tomo-hits-market-capitalization-of-5-12-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "WhiteCoin ( XWC ) Price Hits $0 . 0037 on Major Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/whitecoin-xwc-price-hits-0-0037-on-major-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "WhiteCoin ( XWC ) 24 Hour Trading Volume Tops $90 . 53 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394769/whitecoin-xwc-24-hour-trading-volume-tops-90-53-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "USDX [ Kava ] ( USDX ) Achieves Market Cap of $74 . 00 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/usdx-kava-usdx-achieves-market-cap-of-74-00-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "tickerreport.com",
+      "headline": "Amp ( AMP ) Reaches 24 - Hour Volume of $3 . 93 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394485/amp-amp-reaches-24-hour-volume-of-3-93-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Anoma ( XAN ) Self Reported Market Cap Achieves $16 . 36 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/anoma-xan-self-reported-market-cap-achieves-16-36-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Orchid ( OXT ) Price Down 7 . 9 % This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/orchid-oxt-price-down-7-9-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "XYO Self Reported Market Capitalization Tops $50 . 73 Million ( XYO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/xyo-self-reported-market-capitalization-tops-50-73-million-xyo.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Prom Achieves Self Reported Market Cap of $17 . 65 Million ( PROM )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/prom-achieves-self-reported-market-cap-of-17-65-million-prom.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:30:00",
+      "source": "tickerreport.com",
+      "headline": "Atomic Wallet Coin ( AWC ) Market Cap Reaches $763 . 15 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394760/atomic-wallet-coin-awc-market-cap-reaches-763-15-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Polymath ( POLY ) Price Down 1 . 3 % This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394777/polymath-poly-price-down-1-3-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Terran Coin ( TRR ) Hits Self Reported Market Capitalization of $564 . 83",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/terran-coin-trr-hits-self-reported-market-capitalization-of-564-83.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Rune Price Tops $0 . 40 on Major Exchanges ( RUNE )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/rune-price-tops-0-40-on-major-exchanges-rune.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "dailypolitical.com",
+      "headline": "ether . fi Price Tops $0 . 46 on Top Exchanges ( ETHFI )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/ether-fi-price-tops-0-46-on-top-exchanges-ethfi.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Worldcoin ( WLD ) One Day Volume Hits $161 . 91 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/worldcoin-wld-one-day-volume-hits-161-91-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Rublix Market Capitalization Tops $57 . 24 Thousand ( RBLX )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/rublix-market-capitalization-tops-57-24-thousand-rblx.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Mina Self Reported Market Capitalization Tops $66 . 00 Million ( MINA )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394771/mina-self-reported-market-capitalization-tops-66-00-million-mina.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "tickerreport.com",
+      "headline": "Kaia ( KAIA ) Reaches Self Reported Market Cap of $286 . 64 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394643/kaia-kaia-reaches-self-reported-market-cap-of-286-64-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "HashAI Trading 0 % Higher This Week ( HASHAI )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/hashai-trading-0-higher-this-week-hashai.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Falcon Finance Hits 24 Hour Volume of $10 . 43 Million ( FF )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/falcon-finance-hits-24-hour-volume-of-10-43-million-ff.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Numeraire ( NMR ) Price Tops $6 . 44",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/numeraire-nmr-price-tops-6-44.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "Axie Infinity ( AXS ) Reaches Self Reported Market Cap of $194 . 01 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394534/axie-infinity-axs-reaches-self-reported-market-cap-of-194-01-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Vulcan Forged PYR ( PYR ) Reaches 24 Hour Trading Volume of $3 . 60 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394772/vulcan-forged-pyr-pyr-reaches-24-hour-trading-volume-of-3-60-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Vulcan Forged PYR Achieves Self Reported Market Capitalization of $7 . 30 Million ( PYR )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/vulcan-forged-pyr-achieves-self-reported-market-capitalization-of-7-30-million-pyr.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "dailypolitical.com",
+      "headline": "UFO Gaming ( UFO ) 1 - Day Volume Hits $3 . 43",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/ufo-gaming-ufo-1-day-volume-hits-3-43.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "COTI Self Reported Market Capitalization Hits $34 . 01 Million ( COTI )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394765/coti-self-reported-market-capitalization-hits-34-01-million-coti.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "COTI ( COTI ) Price Reaches $0 . 0124",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/coti-coti-price-reaches-0-0124.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "tickerreport.com",
+      "headline": "io . net Trading 2 . 3 % Lower Over Last 7 Days ( IO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394640/io-net-trading-2-3-lower-over-last-7-days-io.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "tickerreport.com",
+      "headline": "Numbers Protocol ( NUM ) Tops 1 - Day Volume of $180 . 50 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394639/numbers-protocol-num-tops-1-day-volume-of-180-50-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Solidus Ai Tech ( AITECH ) Achieves Self Reported Market Capitalization of $10 . 04 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/solidus-ai-tech-aitech-achieves-self-reported-market-capitalization-of-10-04-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Beta Finance Price Hits $0 . 0086 on Top Exchanges ( BETA )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/beta-finance-price-hits-0-0086-on-top-exchanges-beta.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "STP ( STPT ) Trading 5 % Lower Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394783/stp-stpt-trading-5-lower-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Decentralized Social ( DESO ) Trading Down 3 . 2 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/decentralized-social-deso-trading-down-3-2-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Symbol ( XYM ) Achieves Self Reported Market Cap of $16 . 27 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/symbol-xym-achieves-self-reported-market-cap-of-16-27-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "Plume ( PLUME ) Self Reported Market Capitalization Tops $53 . 83 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394536/plume-plume-self-reported-market-capitalization-tops-53-83-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "PlayDapp ( PLA ) Price Hits $0 . 0015 on Major Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/playdapp-pla-price-hits-0-0015-on-major-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "UniBot Price Tops $0 . 78 on Major Exchanges ( UNIBOT )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/unibot-price-tops-0-78-on-major-exchanges-unibot.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "GensoKishi Metaverse ( MV ) Market Cap Achieves $449 . 68 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/gensokishi-metaverse-mv-market-cap-achieves-449-68-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:30:00",
+      "source": "tickerreport.com",
+      "headline": "Myria ( MYRIA ) One Day Trading Volume Reaches $193 . 52 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394754/myria-myria-one-day-trading-volume-reaches-193-52-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "DataHighway ( DHX ) Trading Down 13 . 4 % Over Last Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/datahighway-dhx-trading-down-13-4-over-last-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Genesis Vision ( GVT ) Hits Market Cap of $413 . 40 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/genesis-vision-gvt-hits-market-cap-of-413-40-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Mask Network ( MASK ) Price Hits $0 . 40 on Major Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/mask-network-mask-price-hits-0-40-on-major-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Mask Network ( MASK ) 24 Hour Trading Volume Hits $14 . 38 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394766/mask-network-mask-24-hour-trading-volume-hits-14-38-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Bend DAO Price Down 1 . 9 % Over Last Week ( BEND )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394778/bend-dao-price-down-1-9-over-last-week-bend.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "tickerreport.com",
+      "headline": "USDB ( USDB ) Price Down 0 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394641/usdb-usdb-price-down-0-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "tickerreport.com",
+      "headline": "Stargate Finance Price Reaches $0 . 24 ( STG )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394642/stargate-finance-price-reaches-0-24-stg.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "dailypolitical.com",
+      "headline": "USDS Price Reaches $1 . 00 on Exchanges ( USDS )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/usds-price-reaches-1-00-on-exchanges-usds.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Dawn Protocol Price Tops $0 . 0011 on Exchanges ( DAWN )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/dawn-protocol-price-tops-0-0011-on-exchanges-dawn.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "tickerreport.com",
+      "headline": "Render Token ( RNDR ) Reaches Self Reported Market Capitalization of $863 . 98 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394688/render-token-rndr-reaches-self-reported-market-capitalization-of-863-98-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "dailypolitical.com",
+      "headline": "SPX6900 Self Reported Market Cap Achieves $249 . 00 Million ( SPX )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/spx6900-self-reported-market-cap-achieves-249-00-million-spx.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "OmniaVerse ( OMNIA ) 24 Hour Trading Volume Tops $5 . 79 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394532/omniaverse-omnia-24-hour-trading-volume-tops-5-79-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Euler Hits 24 - Hour Trading Volume of $3 . 40 Million ( EUL )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/euler-hits-24-hour-trading-volume-of-3-40-million-eul.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "tickerreport.com",
+      "headline": "Moo Deng ( moodengsol . com ) ( MOODENG ) One Day Volume Reaches $7 . 46 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394744/moo-deng-moodengsol-com-moodeng-one-day-volume-reaches-7-46-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "dailypolitical.com",
+      "headline": "币安人生 Price Reaches $0 . 0433 ( 币安人生 )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/%E5%B8%81%E5%AE%89%E4%BA%BA%E7%94%9F-price-reaches-0-0433-%E5%B8%81%E5%AE%89%E4%BA%BA%E7%94%9F.html"
+    },
+    {
+      "timestamp": "2026-03-29T23:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "LandWolf ( SOL ) Trading 0 % Lower Over Last 7 Days ( WOLF )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/landwolf-sol-trading-0-lower-over-last-7-days-wolf.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "NetMind Token Self Reported Market Capitalization Achieves $4 . 94 Million ( NMT )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/netmind-token-self-reported-market-capitalization-achieves-4-94-million-nmt.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Mina Self Reported Market Capitalization Tops $66 . 00 Million ( MINA )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/mina-self-reported-market-capitalization-tops-66-00-million-mina.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Gearbox Protocol ( GEAR ) Trading 11 . 2 % Lower This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394781/gearbox-protocol-gear-trading-11-2-lower-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Jupiter ( JUP ) One Day Trading Volume Tops $13 . 80 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/jupiter-jup-one-day-trading-volume-tops-13-80-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "TokenFi ( TOKEN ) Price Down 2 . 6 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/tokenfi-token-price-down-2-6-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Venom Price Hits $0 . 0298 on Exchanges ( VENOM )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/venom-price-hits-0-0298-on-exchanges-venom.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "VerusCoin Hits Self Reported Market Cap of $53 . 20 Million ( VRSC )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/veruscoin-hits-self-reported-market-cap-of-53-20-million-vrsc.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "CDbio ( MCD ) Price Up 0 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/cdbio-mcd-price-up-0-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Metahero ( HERO ) Trading Down 3 . 6 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/metahero-hero-trading-down-3-6-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "tickerreport.com",
+      "headline": "Radio Caca ( RACA ) Trading 8 % Lower This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394689/radio-caca-raca-trading-8-lower-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "XYO Trading 4 % Lower Over Last 7 Days ( XYO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394767/xyo-trading-4-lower-over-last-7-days-xyo.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "RichQUACK . com ( QUACK ) Trading 7 . 6 % Lower Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/richquack-com-quack-trading-7-6-lower-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Meta Games Coin ( MGC ) Price Hits $9 . 20",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/meta-games-coin-mgc-price-hits-9-20.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "dailypolitical.com",
+      "headline": "The Root Network ( ROOT ) Price Reaches $0 . 0001 on Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/the-root-network-root-price-reaches-0-0001-on-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Persistence Reaches Self Reported Market Cap of $1 . 04 Million ( XPRT )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/persistence-reaches-self-reported-market-cap-of-1-04-million-xprt.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "ECOMI Trading Down 2 . 1 % Over Last 7 Days ( OMI )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394776/ecomi-trading-down-2-1-over-last-7-days-omi.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "1inch Network ( 1INCH ) Price Reaches $0 . 0872 on Top Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/1inch-network-1inch-price-reaches-0-0872-on-top-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Mirror Protocol ( MIR ) 1 - Day Trading Volume Hits $772 . 30",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/mirror-protocol-mir-1-day-trading-volume-hits-772-30.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "OriginTrail ( TRAC ) Self Reported Market Capitalization Tops $141 . 93 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/origintrail-trac-self-reported-market-capitalization-tops-141-93-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Balancer ( BAL ) Price Reaches $0 . 14 on Top Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/balancer-bal-price-reaches-0-14-on-top-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:00:00",
+      "source": "newsbtc.com",
+      "headline": "The Crowd Is Bearish On Bitcoin , But History Says That Bullish",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/the-crowd-is-bearish-on-bitcoin-but-history-says-thats-bullish/"
+    },
+    {
+      "timestamp": "2026-03-29T18:30:00",
+      "source": "pr.com",
+      "headline": "Conflux Capital Launches Next - Generation Quantitative Strategy Platform to Expand Digital Asset Value Growth Paths",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pr.com/press-release/964456"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "SafeMoon ( SAFEMOON ) 24 - Hour Volume Hits $3 . 15",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/safemoon-safemoon-24-hour-volume-hits-3-15.html"
+    },
+    {
+      "timestamp": "2026-03-29T04:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Short - Term Holders Capitulate As 22K BTC Flow To Exchanges",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-sth-capitulate-21k-btc-hit-exchanges/"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "banklesstimes.com",
+      "headline": "Crypto Market News : Top Catalysts for Bitcoin , Altcoins This Week",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.banklesstimes.com/articles/2026/03/29/crypto-market-news-top-catalysts-for-bitcoin-altcoins-this-week/"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "MobileCoin Trading 2 . 8 % Lower Over Last Week ( MOB )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/mobilecoin-trading-2-8-lower-over-last-week-mob.html"
+    },
+    {
+      "timestamp": "2026-03-29T22:15:00",
+      "source": "asia.nikkei.com",
+      "headline": "China - born crypto billionaire Justin Sun settles US fraud case for $10m",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://asia.nikkei.com/spotlight/cryptocurrencies/china-born-crypto-billionaire-justin-sun-settles-us-fraud-case-for-10m"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Wrapped Pulse Price Hits $0 . 0000 on Exchanges ( WPLS )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/wrapped-pulse-price-hits-0-0000-on-exchanges-wpls.html"
+    },
+    {
+      "timestamp": "2026-03-29T04:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Breakdown Confirmed : Bearish Continuation Looms Despite Short - Term Bounce Setup",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-breakdown-confirmed/"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "openpr.com",
+      "headline": "Chainlink ( LINK ) Price Prediction : CCIP Now Spans 17 Chains as",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445102/chainlink-link-price-prediction-ccip-now-spans-17-chains-as"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Hoppy ( HOPPY ) 24 - Hour Volume Reaches $275 . 43 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/hoppy-hoppy-24-hour-volume-reaches-275-43-thousand.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "JPMorgan Cuts S & P 500 Target to 7 , 200 as Nasdaq Slides 2 . 38 %",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445163/jpmorgan-cuts-s-p-500-target-to-7-200-as-nasdaq-slides-2-38"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "Dogecoin ( DOGE ) Price Prediction : Fear and Greed Index Hits 29",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445162/dogecoin-doge-price-prediction-fear-and-greed-index-hits-29"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "Bitcoin ( BTC ) Miners Squeeze Margins at $68K as Post - Halving",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445165/bitcoin-btc-miners-squeeze-margins-at-68k-as-post-halving"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Wrapped Cardano ( WADA ) Price Down 6 % Over Last Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/wrapped-cardano-wada-price-down-6-over-last-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00",
+      "source": "dailypolitical.com",
+      "headline": "Lido Staked Matic Self Reported Market Capitalization Achieves $944 . 73 Thousand ( STMATIC )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/lido-staked-matic-self-reported-market-capitalization-achieves-944-73-thousand-stmatic.html"
+    },
+    {
+      "timestamp": "2026-03-29T10:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "KMG Fiduciary Partners LLC Has $1 . 54 Million Holdings in Coinbase Global , Inc . $COIN",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/kmg-fiduciary-partners-llc-has-1-54-million-holdings-in-coinbase-global-inc-coin.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Euro Coin ( EUROC ) Trading 0 . 5 % Lower Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394780/euro-coin-euroc-trading-0-5-lower-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "HEX ( HEX ) Hits Self Reported Market Cap of $323 . 28 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/hex-hex-hits-self-reported-market-cap-of-323-28-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T15:15:00",
+      "source": "tickerreport.com",
+      "headline": "HedgeTrade ( HEDG ) 24 - Hour Volume Hits $101 . 10",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394741/hedgetrade-hedg-24-hour-volume-hits-101-10.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Radix Reaches 24 Hour Volume of $300 . 33 Thousand ( XRD )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/radix-reaches-24-hour-volume-of-300-33-thousand-xrd.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Moonriver Trading 12 . 4 % Lower This Week ( MOVR )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/moonriver-trading-12-4-lower-this-week-movr.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Audius ( AUDIO ) Price Down 11 . 5 % This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/audius-audio-price-down-11-5-this-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Chellitcoin ( CHLT ) Price Tops $0 . 0081 on Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/chellitcoin-chlt-price-tops-0-0081-on-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Bitwise Trendwise BTC / ETH and Treasuries Rotation Strategy ETF ( NYSEARCA : BTOP ) Sees Significant Drop in Short Interest",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/bitwise-trendwise-btc-eth-and-treasuries-rotation-strategy-etf-nysearcabtop-sees-significant-drop-in-short-interest.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "Guild of Guardians Price Tops $0 . 0032 on Top Exchanges ( GOG )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/guild-of-guardians-price-tops-0-0032-on-top-exchanges-gog.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "tickerreport.com",
+      "headline": "HitBTC Token Price Tops $0 . 20 ( HIT )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394645/hitbtc-token-price-tops-0-20-hit.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:00:00",
+      "source": "tickerreport.com",
+      "headline": "Badger DAO ( BADGER ) Price Reaches $0 . 36 on Major Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394682/badger-dao-badger-price-reaches-0-36-on-major-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "tickerreport.com",
+      "headline": "GMX One Day Trading Volume Tops $4 . 45 Million ( GMX )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394533/gmx-one-day-trading-volume-tops-4-45-million-gmx.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "dailypolitical.com",
+      "headline": "World Mobile Token Price Hits $0 . 0688 on Top Exchanges ( WMT )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/world-mobile-token-price-hits-0-0688-on-top-exchanges-wmt.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Enzyme Trading 8 . 9 % Lower Over Last Week ( MLN )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/enzyme-trading-8-9-lower-over-last-week-mln.html"
+    },
+    {
+      "timestamp": "2026-03-29T21:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin price analysis : Bullish bets on Bitfinex surge",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/29/bitcoin-bullish-bets-hit-a-28-month-high-on-bitfinex-and-that-s-music-to-bears-ears"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "tickerreport.com",
+      "headline": "sudeng Self Reported Market Cap Hits $5 . 17 Million ( HIPPO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394695/sudeng-self-reported-market-cap-hits-5-17-million-hippo.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "dailypolitical.com",
+      "headline": "ThetaDrop Reaches Self Reported Market Capitalization of $6 . 57 Million ( TDROP )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/thetadrop-reaches-self-reported-market-capitalization-of-6-57-million-tdrop.html"
+    },
+    {
+      "timestamp": "2026-03-29T13:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Wrapped XDC Price Down 2 . 1 % Over Last 7 Days ( WXDC )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/wrapped-xdc-price-down-2-1-over-last-7-days-wxdc.html"
+    },
+    {
+      "timestamp": "2026-03-29T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Heroes of Mavia ( MAVIA ) Trading Down 4 . 7 % Over Last Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/heroes-of-mavia-mavia-trading-down-4-7-over-last-week.html"
+    },
+    {
+      "timestamp": "2026-03-29T21:15:00",
+      "source": "coindesk.com",
+      "headline": "MSTR may have paused it BTC accumulation last week",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/29/strategy-may-have-paused-bitcoin-accumulation-last-week-ending-a-thirteen-week-buying-streak"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "tickerreport.com",
+      "headline": "Bone ShibaSwap Price Tops $0 . 0568 on Top Exchanges ( BONE )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13394782/bone-shibaswap-price-tops-0-0568-on-top-exchanges-bone.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "P2P Solutions foundation ( P2PS ) Price Tops $178 . 83 on Major Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/p2p-solutions-foundation-p2ps-price-tops-178-83-on-major-exchanges.html"
+    },
+    {
+      "timestamp": "2026-03-29T12:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Davinci Jeremie Behind  $1 BTC , Now Says Sell Your Bitcoin Crypto",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coinspeaker.com/davinci-jeremie-bitcoin-sell-warning-crypto/"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Crypto Bitcoin Outlook : Why Bitcoin Still Leads the Digital",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445342/crypto-bitcoin-outlook-why-bitcoin-still-leads-the-digital"
+    },
+    {
+      "timestamp": "2026-03-29T12:15:00",
+      "source": "247wallst.com",
+      "headline": "XRP Price Prediction : Standard Chartered Predicts XRP Could Reach $28",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://247wallst.com/investing/2026/03/29/xrp-price-prediction-standard-chartered-predicts-xrp-could-reach-28/"
+    },
+    {
+      "timestamp": "2026-03-29T11:15:00",
+      "source": "openpr.com",
+      "headline": "Solana ( SOL ) ETF Potential Grows After SEC - CFTC Commodity Tag ,",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445085/solana-sol-etf-potential-grows-after-sec-cftc-commodity-tag"
+    },
+    {
+      "timestamp": "2026-03-29T11:15:00",
+      "source": "openpr.com",
+      "headline": "Tron And XRP Price Surge Again - But APEMAR Best Crypto Presale",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445066/tron-and-xrp-price-surge-again-but-apemars-best-crypto-presale"
+    },
+    {
+      "timestamp": "2026-03-29T11:15:00",
+      "source": "openpr.com",
+      "headline": "Shiba Inu News : SHIB Drops Alongside Broader Market as Fear Index",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445077/shiba-inu-news-shib-drops-alongside-broader-market-as-fear-index"
+    },
+    {
+      "timestamp": "2026-03-29T11:15:00",
+      "source": "openpr.com",
+      "headline": "Blazpay Meteoric Crypto Presale 2026 Surges as Polygon Price",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445056/blazpay-meteoric-crypto-presale-2026-surges-as-polygon-price"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Ultra - Dynamic New Crypto Presale Expansion : Blazpay Ignites",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445340/ultra-dynamic-new-crypto-presale-expansion-blazpay-ignites"
+    },
+    {
+      "timestamp": "2026-03-29T07:00:00",
+      "source": "openpr.com",
+      "headline": "Ethereum Price Prediction 2026 Darkens as ETH Trading Volume",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445031/ethereum-price-prediction-2026-darkens-as-eth-trading-volume"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Ignored Chainlink and BNB Early Gains ? APEMARS Presale Rockets",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445353/ignored-chainlink-and-bnb-early-gains-apemars-presale-rockets"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "10 Top Coins Making Waves : Could APEMARS Steal the Spotlight as",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445354/10-top-coins-making-waves-could-apemars-steal-the-spotlight-as"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Next 100x Crypto Alert : Pax Gold Stability Meets Peanut",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445355/next-100x-crypto-alert-pax-gold-stability-meets-peanut"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Altcoin Traders Spotlight 9 Top Altcoins : APEMARS Stage 14 -",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445346/altcoin-traders-spotlight-9-top-altcoins-apemars-stage-14"
+    },
+    {
+      "timestamp": "2026-03-29T04:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Last Line Of Defense Revealed : Can BTC Price Still Go To $40 , 000 ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-last-line-of-defense-revealed-can-btc-price-still-go-to-40000/"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "bfm.ru",
+      "headline": "Покупка недвижимости в США теперь может быть частично оплачена криптой",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bfm.ru/news/602131"
+    },
+    {
+      "timestamp": "2026-03-29T16:45:00",
+      "source": "openpr.com",
+      "headline": "Bitcoin ( BTC ) Price Prediction : $336M in Liquidations Hit",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445210/bitcoin-btc-price-prediction-336m-in-liquidations-hit"
+    },
+    {
+      "timestamp": "2026-03-29T16:45:00",
+      "source": "openpr.com",
+      "headline": "Bitcoin ( BTC ) Price Prediction : Miners Face Growing Revenue",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445186/bitcoin-btc-price-prediction-miners-face-growing-revenue"
+    },
+    {
+      "timestamp": "2026-03-29T22:15:00",
+      "source": "dunya.com",
+      "headline": "Çatışmaların gölgesinde yatırımcı yön arıyor",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dunya.com/kose-yazisi/catismalarin-golgesinde-yatirimci-yon-ariyor/819838"
+    },
+    {
+      "timestamp": "2026-03-29T03:00:00",
+      "source": "openpr.com",
+      "headline": "Dogecoin ( DOGE ) Has Just 22 Full - Time Developers While AI",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445002/dogecoin-doge-has-just-22-full-time-developers-while-ai"
+    },
+    {
+      "timestamp": "2026-03-29T03:00:00",
+      "source": "openpr.com",
+      "headline": "Dogecoin ( DOGE ) Price Prediction : Mining Difficulty Surges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445004/dogecoin-doge-price-prediction-mining-difficulty-surges"
+    },
+    {
+      "timestamp": "2026-03-29T03:00:00",
+      "source": "openpr.com",
+      "headline": "Ripple ( XRP ) Price Prediction : S & P 500 Posts Fifth Weekly Loss as",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445005/ripple-xrp-price-prediction-s-p-500-posts-fifth-weekly-loss-as"
+    },
+    {
+      "timestamp": "2026-03-29T03:00:00",
+      "source": "openpr.com",
+      "headline": "Bitcoin ( BTC ) Price Prediction : Two - Year Treasury Yields Climb",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445003/bitcoin-btc-price-prediction-two-year-treasury-yields-climb"
+    },
+    {
+      "timestamp": "2026-03-29T09:00:00",
+      "source": "openpr.com",
+      "headline": "Polygon and Ethereum Price Prediction Trends : APEMARS Stage 14",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445042/polygon-and-ethereum-price-prediction-trends-apemars-stage-14"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "openpr.com",
+      "headline": "Best Crypto Presale : IONIX Chain ( $IONX ) Draws U . S .",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445109/best-crypto-presale-ionix-chain-ionx-draws-u-s"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "Best Crypto to Buy : $IONX Bonuses Look Timely With ETF Flows",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445166/best-crypto-to-buy-ionx-bonuses-look-timely-with-etf-flows"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "Ethereum Price Prediction 2026 : ETH Approaches $1 , 984 Support",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445158/ethereum-price-prediction-2026-eth-approaches-1-984-support"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "openpr.com",
+      "headline": "Top Crypto Presale : $IONX Stage 18 Stays Hot While Bitcoin Spot",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445138/top-crypto-presale-ionx-stage-18-stays-hot-while-bitcoin-spot"
+    },
+    {
+      "timestamp": "2026-03-29T04:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "American Bitcoin ( ABTC ) Expands Mining Fleet With 11 , 298 New Units",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/american-bitcoin-abtc-expands-mining-213339799.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "coindesk.com",
+      "headline": "Here is why traders are pricing in a rate hike and how it impacts bitcoin",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/29/markets-move-to-price-in-rate-hikes-as-inflation-fears-and-geopolitics-reshape-fed-expectations"
+    },
+    {
+      "timestamp": "2026-03-29T11:15:00",
+      "source": "openpr.com",
+      "headline": "Crypto News Today Reveals Why Crypto Is Down as Total Market Cap",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445082/crypto-news-today-reveals-why-crypto-is-down-as-total-market-cap"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "openpr.com",
+      "headline": "Apemars Joins a Busy Presale Landscape While AlphaPepe Stands",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445119/apemars-joins-a-busy-presale-landscape-while-alphapepe-stands"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "Crypto News Today : Total Market Cap Falls 3 . 1 % and Only 21 Cryptos",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445175/crypto-news-today-total-market-cap-falls-3-1-and-only-21-cryptos"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "5 Best Crypto Presales to Buy in the 2026 Bear Market : Why",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445334/5-best-crypto-presales-to-buy-in-the-2026-bear-market-why"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "How To Buy AlphaPepe on March 29 With Fear at 13 and BTC at $66K as",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445178/how-to-buy-alphapepe-on-march-29-with-fear-at-13-and-btc-at-66k-as"
+    },
+    {
+      "timestamp": "2026-03-29T15:45:00",
+      "source": "openpr.com",
+      "headline": "Dogeball Enters the Meme Coin Race While AlphaPepe Separates",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445164/dogeball-enters-the-meme-coin-race-while-alphapepe-separates"
+    },
+    {
+      "timestamp": "2026-03-29T11:15:00",
+      "source": "openpr.com",
+      "headline": "Ripple News : XRP Falls 8 . 19 % on the Week After Failing $1 . 45 While",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445079/ripple-news-xrp-falls-8-19-on-the-week-after-failing-1-45-while"
+    },
+    {
+      "timestamp": "2026-03-29T21:15:00",
+      "source": "coindesk.com",
+      "headline": "No one is 100 % happy with the stablecoin yield agreement : State of Crypto",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/policy/2026/03/29/no-one-is-100-happy-with-the-stablecoin-yield-agreement-state-of-crypto"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Dacxi ( DACXI ) Achieves Self Reported Market Capitalization of $4 . 20 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/29/dacxi-dacxi-achieves-self-reported-market-capitalization-of-4-20-million.html"
+    },
+    {
+      "timestamp": "2026-03-29T17:00:00",
+      "source": "themarketsdaily.com",
+      "headline": "ReddCoin ( RDD ) Trading 5 . 5 % Lower Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/reddcoin-rdd-trading-5-5-lower-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-03-29T14:30:00",
+      "source": "soyacincau.com",
+      "headline": "Luno Malaysia now supports 51 crypto assets after adding 29 new SC - approved digital assets",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://soyacincau.com/2026/03/29/luno-malaysia-now-supports-51-crypto-digital-assets/"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "itnews.com.au",
+      "headline": "Australian court fines Binance unit $10 million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.itnews.com.au/news/australian-court-fines-binance-unit-10-million-624653"
+    },
+    {
+      "timestamp": "2026-03-29T14:15:00",
+      "source": "themarketsdaily.com",
+      "headline": "Pocket Network Achieves Self Reported Market Capitalization of $13 . 29 Million ( POKT )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/29/pocket-network-achieves-self-reported-market-capitalization-of-13-29-million-pokt.html"
+    },
+    {
+      "timestamp": "2026-03-29T10:45:00",
+      "source": "hurhaber.com",
+      "headline": "Rüzgar tersine döndü Bitcoin yükselişi yarım kaldı",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hurhaber.com/ekonomi-haberleri/ruzgar-tersine-dondu-bitcoin-yukselisi-yarim-kaldi-498994"
+    },
+    {
+      "timestamp": "2026-03-29T00:45:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto News Today : Pepeto Project News While Bull Run Signals Align and Dogecoin SEC Commodity Ruling Opens the Door for What Comes Next",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/29/tmt-newswire/globenewswire/crypto-news-today-pepeto-project-news-while-bull-run-signals-align-and-dogecoin-sec-commodity-ruling-opens-the-door-for-what-comes-next/2309932"
+    },
+    {
+      "timestamp": "2026-03-29T21:15:00",
+      "source": "coindesk.com",
+      "headline": "Stablecoin payments go  invisible  in Southeast Asia as crypto card business surges",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/business/2026/03/29/stablecoin-payments-go-invisible-in-southeast-asia-as-crypto-card-business-surges"
+    },
+    {
+      "timestamp": "2026-03-29T05:45:00",
+      "source": "pr-inside.com",
+      "headline": "Pomerantz LLP Announces Commencement of Class Action Against Gemini ...",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pr-inside.com/pomerantz-llp-announces-commencement-of-class-action-against-gemini-r5176773.htm"
+    },
+    {
+      "timestamp": "2026-03-29T18:30:00",
+      "source": "techstory.in",
+      "headline": "The Unsolved Mystery of Nikolai Mushegian",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://techstory.in/the-unsolved-mystery-of-nikolai-mushegian-a-crypto-pioneers-tragic-end-and-lasting-legacy/"
+    },
+    {
+      "timestamp": "2026-03-29T10:00:00",
+      "source": "vv.com.ua",
+      "headline": "Глава Ripple сравнил роль стейблкоинов с « эффектом ChatGPT »",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://vv.com.ua/20260329/glava-ripple-sravnil-rol-steiblkoinov-s-effektom-chatgpt/"
+    },
+    {
+      "timestamp": "2026-03-29T05:45:00",
+      "source": "portal.sina.com.hk",
+      "headline": "Pepeto Announces Stage Sold Out While BNB Price Prediction Targets $3 , 000 as Crypto News Reveals What BNB Holders Need to Know",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/03/29/1650088/pepeto-announces-stage-sold-out-while-bnb-price-prediction-targets-3000-as-crypto-news-reveals-what-bnb-holders-need-to-know/"
+    },
+    {
+      "timestamp": "2026-03-29T00:45:00",
+      "source": "manilatimes.net",
+      "headline": "Pepeto Announces Stage Sold Out While BNB Price Prediction Targets $3 , 000 as Crypto News Reveals What BNB Holders Need to Know",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/29/tmt-newswire/globenewswire/pepeto-announces-stage-sold-out-while-bnb-price-prediction-targets-3000-as-crypto-news-reveals-what-bnb-holders-need-to-know/2309933"
+    },
+    {
+      "timestamp": "2026-03-29T20:00:00",
+      "source": "gizmodo.com",
+      "headline": "Bluesky Has a New App , and It All About AI",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://gizmodo.com/bluesky-has-a-new-app-and-its-all-about-ai-2000739514"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Crypto Outlook : How the Digital Asset Market Is Changing",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445344/crypto-outlook-how-the-digital-asset-market-is-changing"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Crypto News Outlook : Why Global Attention on Digital Assets",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445343/crypto-news-outlook-why-global-attention-on-digital-assets"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Cryptocurrencies Outlook : How Digital Assets Keep Growing",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445345/cryptocurrencies-outlook-how-digital-assets-keep-growing"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Crypto Currency Outlook : How Digital Assets Keep Changing",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445341/crypto-currency-outlook-how-digital-assets-keep-changing"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "electroiq.com",
+      "headline": "Know Your Customer Statistics By Trends and Facts ( 2026 )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://electroiq.com/stats/know-your-customer-kyc-statistics/"
+    },
+    {
+      "timestamp": "2026-03-30T00:00:00",
+      "source": "nbcnews.com",
+      "headline": "Ukraine says Russia is helping Iran , and a shutdown record is eclipsed : Weekend Rundown",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.nbcnews.com/news/us-news/weekend-rundown-march-29-rcna265567"
+    },
+    {
+      "timestamp": "2026-03-29T06:00:00",
+      "source": "huffingtonpost.kr",
+      "headline": "허프포스트코리아",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.huffingtonpost.kr:443/article/256214"
+    },
+    {
+      "timestamp": "2026-03-29T22:45:00",
+      "source": "edaily.co.kr",
+      "headline": "골드만삭스  비트코인 바닥 왔다 … 3개월 뒤 상승장",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01826966645388568&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-03-29T09:15:00",
+      "source": "newsbtc.com",
+      "headline": "XRP Price Flashes Bullish Signal as BMIC Solves Crypto Biggest Problem",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/sponsored/xrp-price-flashes-bullish-signal-as-bmic-solves-cryptos-biggest-problem/"
+    },
+    {
+      "timestamp": "2026-03-29T22:15:00",
+      "source": "capital.ro",
+      "headline": "Aurul vs . Bitcoin și rolul lor în economia de astăzi . Ce au în comun cele două și ce le diferențiază ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.capital.ro/aurul-vs-bitcoin-si-rolul-lor-in-economia-de-astazi-ce-au-in-comun-cele-doua-si-ce-le-diferentiaza.html"
+    },
+    {
+      "timestamp": "2026-03-29T00:15:00",
+      "source": "edaily.co.kr",
+      "headline": "트럼프  비트코인 매우 강력 … 1억원선 돌파",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01180806645388240&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-03-29T01:30:00",
+      "source": "thanhnien.vn",
+      "headline": "Giá Bitcoin hôm nay 29 . 3 . 2026 : BTC trải qua một tuần nhiều thăng trầm",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://thanhnien.vn/gia-bitcoin-hom-nay-2932026-btc-trai-qua-mot-tuan-nhieu-thang-tram-18526032907395809.htm"
+    },
+    {
+      "timestamp": "2026-03-29T03:00:00",
+      "source": "ddaily.co.kr",
+      "headline": "전쟁 끝나야 반등 ?… 비트코인 6만 달러대  추락 , 개미들  눈물의 손절  [ 주간 블록체인 ]",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ddaily.co.kr:443/page/view/2026032910400475565"
+    },
+    {
+      "timestamp": "2026-03-29T22:45:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Investor unease builds entering war fifth week - The Business Times",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.businesstimes.com.sg/international/investor-unease-builds-entering-wars-fifth-week"
+    },
+    {
+      "timestamp": "2026-03-29T17:15:00",
+      "source": "benzinga.com",
+      "headline": "Were Not Anti - Crypto , Says  The Ramsey Show  Host .  All We Are Is Anti - Get - Rich - Quick , Anti - Greed , Anti - Pride , Anti - Destroying Your Marriage",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/personal-finance/management/26/03/51529251/were-not-anti-crypto-says-the-ramsey-show-host-all-we-are-is-anti-get-rich-quick-anti-greed-anti-pride-anti-destroying-your-marriage"
+    },
+    {
+      "timestamp": "2026-03-29T02:45:00",
+      "source": "livemint.com",
+      "headline": "How Pakistan wooed Trump and styled itself as a peace broker in Iran conflict",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.livemint.com/global/how-pakistan-wooed-trump-and-styled-itself-as-a-peace-broker-in-iran-conflict-11774747421383.html"
+    },
+    {
+      "timestamp": "2026-03-29T06:00:00",
+      "source": "benzinga.com",
+      "headline": "Mark Cuban Fires Back At Musk  Work Optional  Vision With Mock IPO Risk Filing As SpaceX IPO Looms",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/news/fda/26/03/51528510/mark-cuban-fires-back-at-musks-work-optional-vision-with-mock-ipo-risk-filing-as-spacex-ipo-looms"
+    },
+    {
+      "timestamp": "2026-03-29T02:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Stocks Settle Sharply Lower on Fears Iran War is Escalating",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-settle-sharply-lower-fears-203614832.html"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "1prime.ru",
+      "headline": "Правительство рассмотрит законопроекты об обращении криптовалют",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://1prime.ru/20260330/pravitelstvo-868740767.html"
+    },
+    {
+      "timestamp": "2026-03-29T01:30:00",
+      "source": "liputan6.com",
+      "headline": "Harga Kripto Hari Ini 29 Maret 2026 : Bitcoin Lesu , Ethereum Menguat",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.liputan6.com/crypto/read/6305743/harga-kripto-hari-ini-29-maret-2026-bitcoin-lesu-ethereum-menguat"
+    },
+    {
+      "timestamp": "2026-03-29T10:00:00",
+      "source": "n.yam.com",
+      "headline": "幣市 Q1 大幅修正比特幣重挫兩成 地緣政治與監管成關鍵阻力",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://n.yam.com/Article/20260329626331"
+    },
+    {
+      "timestamp": "2026-03-29T18:15:00",
+      "source": "vietnamnet.vn",
+      "headline": "US firms eye expanding fintech investment in Vietnam",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://vietnamnet.vn/en/us-firms-eye-expanding-fintech-investment-in-vietnam-2501556.html"
+    },
+    {
+      "timestamp": "2026-03-29T16:15:00",
+      "source": "coindesk.com",
+      "headline": "Bittensor ecosystem token value hits $1 . 5 billion as TAO rockets 90 % in March",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/tech/2026/03/25/bittensor-ecosystem-tokens-value-hit-usd1-5-billion-as-jensen-huang-endorsement-supports-tao-rally"
+    },
+    {
+      "timestamp": "2026-03-29T22:30:00",
+      "source": "openpr.com",
+      "headline": "Dogecoin Slides as 78 of Top 100 Cryptos Post Losses on March 28",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445331/dogecoin-slides-as-78-of-top-100-cryptos-post-losses-on-march-28"
+    },
+    {
+      "timestamp": "2026-03-29T06:00:00",
+      "source": "nzz.ch",
+      "headline": "Quantencomputer : Gefahr für Bitcoin und Ethereum ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.nzz.ch/wirtschaft/wenn-quantencomputer-realitaet-werden-haben-kryptowaehrungen-ein-problem-ld.1931438"
+    },
+    {
+      "timestamp": "2026-03-29T22:45:00",
+      "source": "edaily.co.kr",
+      "headline": "BNP파리바 , 비트코인 · 이더리움 연계 ETN 첫선 … 디지털자산 사업 본격 확장",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01810566645388568&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2026-03-29T08:15:00",
+      "source": "fnnews.com",
+      "headline": "로버트 기요사키  다가올 시장붕괴가 오히려 부를 축적할 기회 될 것",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fnnews.com/news/202603290000289756"
+    },
+    {
+      "timestamp": "2026-03-29T13:00:00",
+      "source": "openpr.com",
+      "headline": "Solana ( SOL ) Stablecoin Supply Reaches $17 . 4B ATH , Analysts",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4445122/solana-sol-stablecoin-supply-reaches-17-4b-ath-analysts"
     }
   ]
 }

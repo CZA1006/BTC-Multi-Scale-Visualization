@@ -1,197 +1,278 @@
 {
+  "cache_schema_version": 5,
   "date": "2026-03-11",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "bucket": "iran_tension",
-  "bucket_label": "Iran Tension (2026)",
-  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
-  "news_count": 15,
-  "avg_tone": null,
-  "theme_count_crypto": 2,
-  "theme_count_regulation": 1,
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 2800,
+  "avg_tone": 0.07046341964285711,
+  "theme_count_crypto": 11,
+  "theme_count_regulation": 3,
   "theme_count_election": 0,
-  "theme_count_war": 3,
-  "theme_count_macro": 0,
-  "theme_count_covid": 0,
+  "theme_count_war": 0,
   "hourly_tones": [
     {
-      "timestamp": "2026-03-11T00:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-11T00:00:00.000Z",
+      "news_count": 93,
+      "average_tone": 0.09697499999999998
     },
     {
-      "timestamp": "2026-03-11T01:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-03-11T01:00:00.000Z",
+      "news_count": 104,
+      "average_tone": 0.12737499999999996
     },
     {
-      "timestamp": "2026-03-11T02:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-11T02:00:00.000Z",
+      "news_count": 42,
+      "average_tone": 0.910525
     },
     {
-      "timestamp": "2026-03-11T03:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-03-11T03:00:00.000Z",
+      "news_count": 36,
+      "average_tone": 0.3834666666666666
     },
     {
-      "timestamp": "2026-03-11T05:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-11T04:00:00.000Z",
+      "news_count": 39,
+      "average_tone": -2.07225
     },
     {
-      "timestamp": "2026-03-11T06:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-11T05:00:00.000Z",
+      "news_count": 76,
+      "average_tone": -0.11982499999999999
     },
     {
-      "timestamp": "2026-03-11T08:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-03-11T06:00:00.000Z",
+      "news_count": 127,
+      "average_tone": 0.250775
     },
     {
-      "timestamp": "2026-03-11T12:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-03-11T07:00:00.000Z",
+      "news_count": 76,
+      "average_tone": 0.49822500000000003
     },
     {
-      "timestamp": "2026-03-11T14:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-03-11T08:00:00.000Z",
+      "news_count": 220,
+      "average_tone": -0.580175
     },
     {
-      "timestamp": "2026-03-11T15:00:00",
-      "news_count": 2,
-      "average_tone": null
+      "timestamp": "2026-03-11T09:00:00.000Z",
+      "news_count": 147,
+      "average_tone": -0.24965
+    },
+    {
+      "timestamp": "2026-03-11T10:00:00.000Z",
+      "news_count": 157,
+      "average_tone": 0.3279
+    },
+    {
+      "timestamp": "2026-03-11T11:00:00.000Z",
+      "news_count": 306,
+      "average_tone": -0.04137500000000005
+    },
+    {
+      "timestamp": "2026-03-11T12:00:00.000Z",
+      "news_count": 250,
+      "average_tone": -0.294325
+    },
+    {
+      "timestamp": "2026-03-11T13:00:00.000Z",
+      "news_count": 139,
+      "average_tone": 0.44355
+    },
+    {
+      "timestamp": "2026-03-11T14:00:00.000Z",
+      "news_count": 109,
+      "average_tone": 0.6675249999999999
+    },
+    {
+      "timestamp": "2026-03-11T15:00:00.000Z",
+      "news_count": 32,
+      "average_tone": 0.6123666666666666
+    },
+    {
+      "timestamp": "2026-03-11T16:00:00.000Z",
+      "news_count": 165,
+      "average_tone": -0.410175
+    },
+    {
+      "timestamp": "2026-03-11T17:00:00.000Z",
+      "news_count": 87,
+      "average_tone": -0.10409999999999997
+    },
+    {
+      "timestamp": "2026-03-11T18:00:00.000Z",
+      "news_count": 81,
+      "average_tone": 0.35119999999999996
+    },
+    {
+      "timestamp": "2026-03-11T19:00:00.000Z",
+      "news_count": 199,
+      "average_tone": 0.23419999999999996
+    },
+    {
+      "timestamp": "2026-03-11T20:00:00.000Z",
+      "news_count": 89,
+      "average_tone": 0.637425
+    },
+    {
+      "timestamp": "2026-03-11T21:00:00.000Z",
+      "news_count": 116,
+      "average_tone": 0.6312333333333333
+    },
+    {
+      "timestamp": "2026-03-11T22:00:00.000Z",
+      "news_count": 28,
+      "average_tone": 0.695325
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00.000Z",
+      "news_count": 82,
+      "average_tone": 0.49445000000000006
     }
   ],
   "top_headlines": [
-    "Bitcoin Sentiment Flipped to FOMO After Rebounding Above $70K",
-    "Bitcoin , ETH , ADA , SOL price news : What next as Bitcoin steady above $70 , 000",
-    "جو 24 : يديعوت أحرونوت : هكذا أسقطت مفاجآت إيران الأربع حسابات ترامب ونتنياهو",
-    "美战争目标不明 与以同盟裂痕渐明 海湾国家不安",
-    "最新 ！ 伊朗发起第37波打击 美军投放穿甲弹 ！ 特朗普发出警告 ！ 油价剧烈波动 金银走势分化 _ 东方财富网"
+    "US Bitcoin ETFs See $250M Inflows ; $BTC Dips , Holds At $69K",
+    "FinancialContent - Bitcoin Holds $70 , 000 Support as S & P 500 Cracks : The  Digital Gold  Thesis Faces Its Ultimate Test Amid Middle East Escalation",
+    "Coinbase rolls out 10x levered Bitcoin contracts for Europeans",
+    "Dont Do This 1 Very Tempting Thing With Your Bitcoin , Ethereum , or XRP Right Now",
+    "Promising Cryptocurrency Stocks Worth Watching – March 11th"
   ],
   "articles": [
     {
-      "timestamp": "2026-03-11T06:45:00",
-      "source": "cointelegraph.com",
-      "headline": "Bitcoin Sentiment Flipped to FOMO After Rebounding Above $70K",
-      "category": "crypto",
-      "sentiment": null,
-      "url": "https://cointelegraph.com/news/bitcoin-sentiment-jumps-back-into-fomo-territory-santiment"
-    },
-    {
-      "timestamp": "2026-03-11T08:45:00",
-      "source": "coindesk.com",
-      "headline": "Bitcoin , ETH , ADA , SOL price news : What next as Bitcoin steady above $70 , 000",
-      "category": "crypto",
-      "sentiment": null,
-      "url": "https://www.coindesk.com/markets/2026/03/11/bitcoin-steady-above-usd70-000-as-iea-proposes-largest-ever-oil-reserve-release"
-    },
-    {
-      "timestamp": "2026-03-11T03:15:00",
-      "source": "jo24.net",
-      "headline": "جو 24 : يديعوت أحرونوت : هكذا أسقطت مفاجآت إيران الأربع حسابات ترامب ونتنياهو",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://jo24.net/article/561264"
-    },
-    {
-      "timestamp": "2026-03-11T15:45:00",
-      "source": "wenxuecity.com",
-      "headline": "美战争目标不明 与以同盟裂痕渐明 海湾国家不安",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://www.wenxuecity.com/news/2026/03/11/126568797.html"
-    },
-    {
-      "timestamp": "2026-03-11T01:00:00",
-      "source": "finance.eastmoney.com",
-      "headline": "最新 ！ 伊朗发起第37波打击 美军投放穿甲弹 ！ 特朗普发出警告 ！ 油价剧烈波动 金银走势分化 _ 东方财富网",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://finance.eastmoney.com/a/202603113668131732.html"
-    },
-    {
-      "timestamp": "2026-03-11T14:30:00",
-      "source": "benzinga.com",
-      "headline": "Arthur Hayes : Iran War Means Fed Prints  That When I Buy Bitcoin",
-      "category": "war",
-      "sentiment": null,
-      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51186031/arthur-hayes-iran-war-means-fed-prints-thats-when-i-buy-bitcoin"
-    },
-    {
-      "timestamp": "2026-03-11T05:45:00",
-      "source": "munhwa.com",
-      "headline": "예고했던 대규모 공습에 민간인 1300명 사망",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://www.munhwa.com:443/article/11573808"
-    },
-    {
-      "timestamp": "2026-03-11T01:00:00",
-      "source": "news.antiwar.com",
-      "headline": "Witkoff Admits He Doesnt Know How Iran War Ends - News From Antiwar . com",
-      "category": "war",
-      "sentiment": null,
-      "url": "https://news.antiwar.com/2026/03/10/witkoff-admits-he-doesnt-know-how-iran-war-ends/"
-    },
-    {
-      "timestamp": "2026-03-11T08:45:00",
-      "source": "coindesk.com",
-      "headline": "Next week could spice things up for BTC as seven central banks face an inflation test",
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "cryptonewsz.com",
+      "headline": "US Bitcoin ETFs See $250M Inflows ; $BTC Dips , Holds At $69K",
       "category": "regulation",
       "sentiment": null,
-      "url": "https://www.coindesk.com/markets/2026/03/11/next-week-could-spice-things-up-for-bitcoin-as-seven-central-banks-face-an-inflation-test"
+      "raw_v2_tone": null,
+      "url": "https://www.cryptonewsz.com/us-bitcoin-etfs-see-250m-inflows-btc-69k/"
     },
     {
-      "timestamp": "2026-03-11T03:30:00",
-      "source": "gold.cnfol.com",
-      "headline": "【 黄金收评 】 伊朗向特朗普发出死亡威胁 ！ 金价大涨56美元 接下来如何交易 ？_ 金市直播 _ 黄金网 _ 中金在线",
+      "timestamp": "2026-03-11T19:00:00",
+      "source": "markets.financialcontent.com",
+      "headline": "FinancialContent - Bitcoin Holds $70 , 000 Support as S & P 500 Cracks : The  Digital Gold  Thesis Faces Its Ultimate Test Amid Middle East Escalation",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-3-11-bitcoin-holds-70000-support-as-s-and-p-500-cracks-the-digital-gold-thesis-faces-its-ultimate-test-amid-middle-east-escalation"
+    },
+    {
+      "timestamp": "2026-03-11T00:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Coinbase rolls out 10x levered Bitcoin contracts for Europeans",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/coinbase-rolls-10x-levered-bitcoin-121921209.html"
+    },
+    {
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Dont Do This 1 Very Tempting Thing With Your Bitcoin , Ethereum , or XRP Right Now",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/dont-1-very-tempting-thing-102000173.html"
+    },
+    {
+      "timestamp": "2026-03-11T17:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Promising Cryptocurrency Stocks Worth Watching – March 11th",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/11/promising-cryptocurrency-stocks-worth-watching-march-11th.html"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin  Sandwiched  Between Two Key Zones As Price Tops $71K",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-sandwiched-between-two-key-zones/"
+    },
+    {
+      "timestamp": "2026-03-11T06:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Crypto Crash : 2 Top Coins Id Consider Buying Before Prices Rebound",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/crypto-crash-2-top-coins-054100023.html"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "source": "fool.com",
+      "headline": "This Fund Dumped a $23 Million Ether ETF Stake Last Quarter but Held Onto Other Crypto Positions",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/coverage/filings/2026/03/11/this-fund-dumped-a-usd23-million-ether-etf-stake-last-quarter-but-held-onto-other-crypto-positions/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "fool.com",
+      "headline": "Crypto Crash : 2 Top Coins Id Consider Buying Before Prices Rebound",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/03/11/crypto-crash-2-top-coins-id-consider-buying-before/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T01:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Pakistan Moves From Crypto Ban to Regulation as Parliament Passes Virtual Assets Act 2026",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/pakistan-moves-crypto-ban-regulation-133215277.html"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Could Zcash Flip Bitcoin Someday ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/could-zcash-flip-bitcoin-someday-095000903.html"
+    },
+    {
+      "timestamp": "2026-03-11T00:45:00",
+      "source": "ambcrypto.com",
+      "headline": "Bitcoin : Bhutan sells amid MSTR $1 . 28B BTC buy - Strategic move ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ambcrypto.com/bitcoin-bhutan-sells-amid-mstrs-1-28b-btc-buy-strategic-move/"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "coindesk.com",
+      "headline": "Mining giant Foundry to introduce institutional zcash mining pool",
       "category": "general",
       "sentiment": null,
-      "url": "http://gold.cnfol.com/jinshizhibo/20260311/32059518.shtml"
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/business/2026/03/10/mining-giant-foundry-to-introduce-institutional-zcash-mining-pool"
     },
     {
-      "timestamp": "2026-03-11T12:45:00",
-      "source": "bankingnews.gr",
-      "headline": "US - Iran conflict : Trump weighs five  exit strategie as pressure mounts to end the war",
-      "category": "war",
+      "timestamp": "2026-03-11T11:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Fintech Stock Block Just Proved That the Ultimate Cryptocurrency Has a Clear Use Case",
+      "category": "crypto",
       "sentiment": null,
-      "url": "https://www.bankingnews.gr/diethni/articles/861684/us-iran-conflict-trump-weighs-five-exit-strategies-as-pressure-mounts-to-end-the-war"
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/fintech-stock-block-just-proved-104300441.html"
     },
     {
-      "timestamp": "2026-03-11T02:15:00",
-      "source": "military.china.com",
-      "headline": "加仓 ！ 特朗普一定会妥协 ？ 油价与金银走势关键 _ 军事频道 _ 中华网",
-      "category": "general",
+      "timestamp": "2026-03-11T18:15:00",
+      "source": "baystreet.ca",
+      "headline": "Baystreet . ca - Traders Begin Placing Bets That Bitcoin Will Rise Above $80 , 000",
+      "category": "crypto",
       "sentiment": null,
-      "url": "https://military.china.com/news/13004177/20260311/49310963.html"
-    },
-    {
-      "timestamp": "2026-03-11T14:15:00",
-      "source": "news.ifeng.com",
-      "headline": "特朗普称伊朗战争即将结束 ， 但以色列另有打算",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://news.ifeng.com/c/8rPjRqhg8hx"
-    },
-    {
-      "timestamp": "2026-03-11T15:45:00",
-      "source": "wenxuecity.com",
-      "headline": "特朗普称伊朗战争即将结束 ， 但以色列另有打算",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://www.wenxuecity.com/news/2026/03/11/126568665.html"
-    },
-    {
-      "timestamp": "2026-03-11T00:15:00",
-      "source": "alquds.com",
-      "headline": "جريدة القدس",
-      "category": "general",
-      "sentiment": null,
-      "url": "https://www.alquds.com/ar/posts/231116"
+      "raw_v2_tone": null,
+      "url": "http://baystreet.ca/cryptonews/1261/Traders-Begin-Placing-Bets-That-Bitcoin-Will-Rise-Above-80000"
     }
   ]
 }

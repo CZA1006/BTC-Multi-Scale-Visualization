@@ -1,0 +1,192 @@
+{
+  "date": "2024-10-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-09T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-09T20:00:00",
+      "news_count": 7,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Is Buying Bitcoin the Ultimate  Trump Trade  in 2024 ?",
+    "Trump Win Could Send Bitcoin Soaring to $90K , Says Bernstein",
+    "2024 election update : Trump books MSG rally ; latest polls , news | Oct . 9",
+    "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+    "Fox News offers  one final pitch  to get Trump and Harris to debate again"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-09T17:00:00",
+      "source": "valuewalk.com",
+      "headline": "Is Buying Bitcoin the Ultimate  Trump Trade  in 2024 ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.valuewalk.com/is-buying-bitcoin-the-ultimate-trump-trade-in-2024/"
+    },
+    {
+      "timestamp": "2024-10-09T15:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Trump Win Could Send Bitcoin Soaring to $90K , Says Bernstein",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/trump-win-could-send-bitcoin-90k-bernstein/"
+    },
+    {
+      "timestamp": "2024-10-09T20:00:00",
+      "source": "fox5ny.com",
+      "headline": "2024 election update : Trump books MSG rally ; latest polls , news | Oct . 9",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fox5ny.com/news/2024-election-update-polls-news-presidential-candidates-today-oct-9"
+    },
+    {
+      "timestamp": "2024-10-09T20:00:00",
+      "source": "wpde.com",
+      "headline": "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wpde.com/news/beyond-the-podium/fox-news-offers-one-final-pitch-to-get-former-president-donald-trump-and-vice-president-kamala-harris-to-debate-again-2024-election-presidential-race-politics"
+    },
+    {
+      "timestamp": "2024-10-09T19:00:00",
+      "source": "wset.com",
+      "headline": "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wset.com/news/nation-world/fox-news-offers-one-final-pitch-to-get-former-president-donald-trump-and-vice-president-kamala-harris-to-debate-again-2024-election-presidential-race-politics"
+    },
+    {
+      "timestamp": "2024-10-09T20:00:00",
+      "source": "katv.com",
+      "headline": "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://katv.com/news/beyond-the-podium/fox-news-offers-one-final-pitch-to-get-former-president-donald-trump-and-vice-president-kamala-harris-to-debate-again-2024-election-presidential-race-politics"
+    },
+    {
+      "timestamp": "2024-10-09T08:00:00",
+      "source": "de.investing.com",
+      "headline": "Bitcoin vor Fed - Protokoll : Warten auf das nächste große Signal ! Von Investing . com",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://de.investing.com/news/cryptocurrency-news/bitcoin-vor-fedprotokoll-warten-auf-das-nachste-grose-signal-2729076"
+    },
+    {
+      "timestamp": "2024-10-09T20:00:00",
+      "source": "nbcmontana.com",
+      "headline": "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcmontana.com/news/beyond-the-podium/fox-news-offers-one-final-pitch-to-get-former-president-donald-trump-and-vice-president-kamala-harris-to-debate-again-2024-election-presidential-race-politics"
+    },
+    {
+      "timestamp": "2024-10-09T13:45:00",
+      "source": "courant.com",
+      "headline": "Jill Biden to campaign for Harris - Walz ticket in the Philadelphia suburbs next week",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.courant.com/2024/10/09/jill-biden-to-campaign-for-harris-walz-ticket-in-the-philadelphia-suburbs-next-week/"
+    },
+    {
+      "timestamp": "2024-10-09T20:45:00",
+      "source": "cnycentral.com",
+      "headline": "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cnycentral.com/news/beyond-the-podium/fox-news-offers-one-final-pitch-to-get-former-president-donald-trump-and-vice-president-kamala-harris-to-debate-again-2024-election-presidential-race-politics"
+    },
+    {
+      "timestamp": "2024-10-09T07:00:00",
+      "source": "koreatimes.co.kr",
+      "headline": "Harris holds slight edge nationally over Trump : poll",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.koreatimes.co.kr:443/www/world/2024/10/501_383896.html"
+    },
+    {
+      "timestamp": "2024-10-09T14:45:00",
+      "source": "theguardian.com",
+      "headline": "New Trump January 6 court filing highlights perils of possible JD Vance vice - presidency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theguardian.com/us-news/2024/oct/09/jd-vance-pence-january-6-jack-smith"
+    },
+    {
+      "timestamp": "2024-10-09T20:45:00",
+      "source": "abc6onyourside.com",
+      "headline": "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://abc6onyourside.com/news/beyond-the-podium/fox-news-offers-one-final-pitch-to-get-former-president-donald-trump-and-vice-president-kamala-harris-to-debate-again-2024-election-presidential-race-politics"
+    },
+    {
+      "timestamp": "2024-10-09T16:00:00",
+      "source": "foxnews.com",
+      "headline": "Dems with data are  extremely bullish  on Trump winning , Harris may lose six swing states : Analyst",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/media/dems-data-extremely-bullish-trump-winning-harris-may-lose-six-swing-states-analyst"
+    },
+    {
+      "timestamp": "2024-10-09T20:45:00",
+      "source": "newschannel20.com",
+      "headline": "Fox News offers  one final pitch  to get Trump and Harris to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newschannel20.com/news/nation-world/fox-news-offers-one-final-pitch-to-get-former-president-donald-trump-and-vice-president-kamala-harris-to-debate-again-2024-election-presidential-race-politics"
+    }
+  ]
+}

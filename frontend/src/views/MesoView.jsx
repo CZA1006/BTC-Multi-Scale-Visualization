@@ -5,10 +5,8 @@ import { fetchMeso } from '../api/meso.js';
 import { useAppStore } from '../store/useAppStore.js';
 import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
 import { ParallelCoordsChart } from '../components/ParallelCoordsChart.jsx';
-import { SplomChart } from '../components/SplomChart.jsx';
 import { CorrelationMatrix } from '../components/CorrelationMatrix.jsx';
 import { ClusterSummaryTable } from '../components/ClusterSummaryTable.jsx';
-import { PinInsightButton } from '../components/PinInsightButton.jsx';
 
 const FEATURE_COLUMNS = [
   'daily_return',
@@ -53,6 +51,10 @@ export function MesoView() {
           return;
         }
         setErrorMessage(error instanceof Error ? error.message : 'Failed to load meso data');
+        setMesoPayload({
+          daily_features: [],
+          embedding_results: [],
+        });
       } finally {
         if (!isCancelled) {
           setIsLoading(false);
@@ -154,6 +156,10 @@ export function MesoView() {
     ),
   ].sort((left, right) => Number(left) - Number(right));
 
+  const timeRangeLabel = selectedTimeRange
+    ? `${selectedTimeRange.start ?? 'unknown'} to ${selectedTimeRange.end ?? 'unknown'}`
+    : 'No time range selected';
+
   const chartWidth = 920;
   const chartHeight = 300;
   const chartMargin = { top: 20, right: 22, bottom: 36, left: 40 };
@@ -221,7 +227,6 @@ export function MesoView() {
   // ColorBrewer Set2 — BTC orange (#f7931a) deliberately excluded so the BTC
   // price line stays unique. Eight colors cover up to 8 clusters.
   const [hoveredClusterId, setHoveredClusterId] = useState(null);
-  const [mesoSecondaryView, setMesoSecondaryView] = useState('parallel');
 
   const clusterColorScale = d3
     .scaleOrdinal()
@@ -270,12 +275,11 @@ export function MesoView() {
 
   return (
     <section className="view-card">
-      <header className="view-header view-header-with-pin">
+      <header className="view-header">
         <div>
           <p className="view-kicker">View 2</p>
-          <h2 className="view-title">Meso Pattern View</h2>
+          <h2 className="view-title">Meso Overview: Market Regime View</h2>
         </div>
-        <PinInsightButton view="meso" />
       </header>
 
       <div className="control-group">
@@ -290,7 +294,7 @@ export function MesoView() {
             }
             onClick={() => setSelectedCluster(null)}
           >
-            Clear
+            All Regimes
           </button>
           {uniqueClusterIds.map((clusterId) => (
             <button
@@ -315,10 +319,24 @@ export function MesoView() {
       </div>
 
       <section className="placeholder-section">
-        <h3 className="placeholder-title">Embedding Scatterplot</h3>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+          <h3 className="placeholder-title" style={{ margin: 0 }}>Embedding Scatterplot: Daily Market States</h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span className="chart-range-pill">{timeRangeLabel}</span>
+            {selectedDate ? (
+              <span className="chart-range-pill" title={`Selected date: ${selectedDate}`}>
+                {selectedDate}
+              </span>
+            ) : null}
+          </div>
+        </div>
         {isLoading ? (
           <div className="placeholder-box">
             <span className="placeholder-label">Loading embedding data...</span>
+          </div>
+        ) : errorMessage ? (
+          <div className="placeholder-box">
+            <span className="placeholder-label">Failed to load meso data: {errorMessage}</span>
           </div>
         ) : hasEmbeddingData ? (
           <div className="chart-shell">
@@ -390,20 +408,9 @@ export function MesoView() {
                         d={hull.path}
                         fill={clusterColorScale(hull.clusterId)}
                         fillOpacity={fade}
-                        stroke={clusterColorScale(hull.clusterId)}
-                        strokeOpacity={isActive ? 0.85 : 0.45}
-                        strokeWidth={isActive ? 1.5 : 1}
-                        strokeDasharray="4 3"
+                        stroke="none"
                       />
-                      <text
-                        x={hull.centroid[0]}
-                        y={hull.centroid[1]}
-                        textAnchor="middle"
-                        className="event-annotation-label"
-                        pointerEvents="none"
-                      >
-                        {semanticLabelForCluster(hull.clusterId)}
-                      </text>
+
                     </g>
                   );
                 })}
@@ -453,17 +460,21 @@ export function MesoView() {
                 className="chart-axis-label"
                 fontSize="11"
               >
-                ← Market State Similarity Space (UMAP) →
+                X-axis: UMAP Dimension 1
+              </text>
+              <text
+                transform={`translate(14 ${(chartMargin.top + (chartHeight - chartMargin.bottom)) / 2}) rotate(-90)`}
+                textAnchor="middle"
+                className="chart-axis-label"
+                fontSize="11"
+              >
+                Y-axis: UMAP Dimension 2
               </text>
             </svg>
 
             <div className="chart-caption-row">
-              <p className="chart-caption">
-                Rendered points: {visibleEmbeddingRows.length}
-              </p>
-              <p className="chart-caption">
-                Click a point to update cluster and selected day
-              </p>
+              <p className="chart-caption">Rendered points: {visibleEmbeddingRows.length}</p>
+              <p className="chart-caption">Click a point to update cluster and selected day</p>
             </div>
           </div>
         ) : (
@@ -488,11 +499,23 @@ export function MesoView() {
             <CorrelationMatrix />
           </div>
           <div className="chart-caption-row">
-            <p className="chart-caption">
-              Equity curve = cumulative (1 + daily return) restricted to days in that regime.
+            <p style={{ margin: '0 0 4px 0', fontSize: '0.76rem', color: 'var(--text-muted)', fontWeight: 500 }}>
+              Notes:
             </p>
             <p className="chart-caption">
-              Correlation uses Pearson on daily returns over the selected window.
+              • Mean Ret = average daily return; positive indicates gains, negative indicates losses.
+            </p>
+            <p className="chart-caption">
+              • Mean Vol = average 30-day rolling volatility; higher values indicate larger price swings.
+            </p>
+            <p className="chart-caption">
+              • Mean DD = average drawdown from 30-day high; how far the regime typically falls from recent peaks.
+            </p>
+            <p className="chart-caption">
+              • Equity curve = cumulative (1 + daily return) restricted to days in that regime.
+            </p>
+            <p className="chart-caption">
+              • Correlation uses Pearson on daily returns over the selected window.
             </p>
           </div>
         </section>
@@ -510,30 +533,7 @@ export function MesoView() {
           <h3 className="placeholder-title" style={{ margin: 0 }}>
             Meso Feature Explanation
           </h3>
-          <div className="tab-row">
-            <button
-              type="button"
-              className={
-                mesoSecondaryView === 'parallel'
-                  ? 'tab-button tab-button-active'
-                  : 'tab-button'
-              }
-              onClick={() => setMesoSecondaryView('parallel')}
-            >
-              Parallel Coords
-            </button>
-            <button
-              type="button"
-              className={
-                mesoSecondaryView === 'splom'
-                  ? 'tab-button tab-button-active'
-                  : 'tab-button'
-              }
-              onClick={() => setMesoSecondaryView('splom')}
-            >
-              SPLOM (top-4)
-            </button>
-          </div>
+          <span className="chart-range-pill">Parallel Coordinates</span>
         </div>
 
         {isLoading ? (
@@ -542,25 +542,15 @@ export function MesoView() {
           </div>
         ) : hasProfileData ? (
           <div className="chart-shell">
-            {mesoSecondaryView === 'parallel' ? (
-              <ParallelCoordsChart
-                features={FEATURE_COLUMNS}
-                dailyRows={parsedFeatureRows}
-                clusterProfiles={clusterProfiles}
-                clusterColorScale={clusterColorScale}
-                selectedCluster={selectedCluster}
-                semanticLabelForCluster={semanticLabelForCluster}
-              />
-            ) : (
-              <SplomChart
-                dailyRows={parsedFeatureRows}
-                clusterColorScale={clusterColorScale}
-                selectedCluster={selectedCluster}
-                selectedDate={selectedDate}
-                setSelectedDate={setSelectedDate}
-                setSelectedCluster={setSelectedCluster}
-              />
-            )}
+            <ParallelCoordsChart
+              features={FEATURE_COLUMNS}
+              dailyRows={parsedFeatureRows}
+              clusterProfiles={clusterProfiles}
+              clusterColorScale={clusterColorScale}
+              selectedCluster={selectedCluster}
+              selectedDate={selectedDate}
+              semanticLabelForCluster={semanticLabelForCluster}
+            />
           </div>
         ) : (
           <div className="placeholder-box placeholder-box-small">
@@ -568,19 +558,6 @@ export function MesoView() {
           </div>
         )}
       </section>
-
-      <div className="summary-box">
-        <p className="summary-title">Meso summary</p>
-        <p className="state-label">Feature rows: {filteredFeatureRows.length}</p>
-        <p className="state-label">Embedding rows: {visibleEmbeddingRows.length}</p>
-        <p className="state-label">
-          Unique regimes:{' '}
-          {uniqueClusterIds.length > 0
-            ? uniqueClusterIds.map((clusterId) => semanticLabelForCluster(clusterId)).join(', ')
-            : 'None'}
-        </p>
-        {errorMessage ? <p className="state-label error-label">Load status: {errorMessage}</p> : null}
-      </div>
     </section>
   );
 }

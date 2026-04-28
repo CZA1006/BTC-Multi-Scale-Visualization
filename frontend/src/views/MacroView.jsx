@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import { fetchOverview } from '../api/overview.js';
 import { useAppStore } from '../store/useAppStore.js';
-import { HorizonChart } from '../components/HorizonChart.jsx';
-import { PinInsightButton } from '../components/PinInsightButton.jsx';
 import { pctChange, rollingMean, rollingStd } from '../utils/derived.js';
 
 const TIME_RANGE_OPTIONS = [
@@ -45,6 +43,8 @@ const TIME_RANGE_OPTIONS = [
   },
 ];
 
+const FULL_RANGE = TIME_RANGE_OPTIONS[0].value;
+
 export function MacroView() {
   const selectedTimeRange = useAppStore((state) => state.selectedTimeRange);
   const setSelectedTimeRange = useAppStore((state) => state.setSelectedTimeRange);
@@ -57,7 +57,6 @@ export function MacroView() {
     gdelt_daily_signals: [],
   });
   const [isLoading, setIsLoading] = useState(true);
-  const [errorMessage, setErrorMessage] = useState('');
   const [brushSelection, setBrushSelection] = useState(null);
 
   useEffect(() => {
@@ -75,7 +74,6 @@ export function MacroView() {
 
     async function loadOverview() {
       setIsLoading(true);
-      setErrorMessage('');
 
       try {
         const payload = await fetchOverview(selectedTimeRange);
@@ -87,7 +85,11 @@ export function MacroView() {
         if (isCancelled) {
           return;
         }
-        setErrorMessage(error instanceof Error ? error.message : 'Failed to load overview');
+        setOverview({
+          btc_daily: [],
+          external_assets_daily: [],
+          gdelt_daily_signals: [],
+        });
       } finally {
         if (!isCancelled) {
           setIsLoading(false);
@@ -180,22 +182,11 @@ export function MacroView() {
   const orderedHeatmapMonths = Object.entries(heatmapByMonth).sort(([left], [right]) =>
     left.localeCompare(right),
   );
-  const tickerList = [
-    ...new Set(overview.external_assets_daily.map((row) => row.ticker).filter(Boolean)),
-  ];
-  const highlightedEvents = [...parsedEventSignals]
-    .sort((left, right) => right.score - left.score)
-    .slice(0, 5);
   const heatmapEventCount = heatmapCells.filter((cell) => cell.eventSignal).length;
-
-  // GDELT coverage in this repo is a recent-window snapshot (see docs/DATA_AND_APIS.md).
-  // If the selected window ends more than ~60 days ago, no event markers are expected.
-  const gdeltRecentCutoffMs = Date.now() - 60 * 24 * 60 * 60 * 1000;
-  const selectedRangeEndMs = selectedTimeRange?.end
-    ? new Date(`${selectedTimeRange.end}T00:00:00`).getTime()
-    : null;
-  const isHistoricalGdeltWindow =
-    selectedRangeEndMs !== null && selectedRangeEndMs < gdeltRecentCutoffMs;
+  const isFullRangeSelected =
+    selectedTimeRange?.start === FULL_RANGE.start &&
+    selectedTimeRange?.end === FULL_RANGE.end;
+  const shouldShowHeatmap = !isFullRangeSelected;
 
   const timeRangeLabel = selectedTimeRange
     ? `${selectedTimeRange.start ?? 'unknown'} to ${selectedTimeRange.end ?? 'unknown'}`
@@ -256,18 +247,160 @@ export function MacroView() {
     }
   }
 
-  // Derived rolling series for horizon graphs.
-  const horizonRows = (() => {
-    if (!hasTimelineData) return { return7d: [], vol30d: [] };
+  const shortTermPanels = (() => {
+    if (!hasTimelineData) return { return7d: [], vol30dAnnualized: [] };
     const closes = timelineRows.map((r) => r.closeValue);
     const ret = pctChange(closes);
     const ret7d = rollingMean(ret, 7);
-    const vol30d = rollingStd(ret, 30);
+    const vol30d = rollingStd(ret, 30).map((value) =>
+      Number.isFinite(value) ? value * Math.sqrt(365) : value,
+    );
     return {
       return7d: timelineRows.map((row, i) => ({ parsedDate: row.parsedDate, value: ret7d[i] })),
-      vol30d: timelineRows.map((row, i) => ({ parsedDate: row.parsedDate, value: vol30d[i] })),
+      vol30dAnnualized: timelineRows.map((row, i) => ({ parsedDate: row.parsedDate, value: vol30d[i] })),
     };
   })();
+
+  const returnRows = shortTermPanels.return7d.filter((row) => Number.isFinite(row.value));
+  const volatilityRows = shortTermPanels.vol30dAnnualized.filter((row) => Number.isFinite(row.value));
+  const sortedAbsReturns = returnRows
+    .map((row) => Math.abs(row.value))
+    .filter((value) => Number.isFinite(value))
+    .sort((a, b) => a - b);
+  const returnAbsP95 =
+    sortedAbsReturns.length > 0 ? d3.quantileSorted(sortedAbsReturns, 0.95) ?? 0 : 0;
+
+  const shortTermHeight = 250;
+  const shortTermLeft = chartMargin.left;
+  const shortTermRight = 26;
+  const returnPanelTop = 36;
+  const returnPanelHeight = 74;
+  const volatilityPanelTop = 146;
+  const volatilityPanelHeight = 72;
+
+  const shortTermXScale = hasTimelineData
+    ? xScale.copy().range([shortTermLeft, chartWidth - shortTermRight])
+    : null;
+
+  const returnLimit = Math.max(0.04, Math.min(0.16, returnAbsP95 * 1.35));
+  const returnTickValues = [-returnLimit, -returnLimit / 2, 0, returnLimit / 2, returnLimit];
+
+  function formatSignedPercent(value) {
+    const pct = value * 100;
+    const useOneDecimal = Math.abs(pct) < 10;
+    const text = `${useOneDecimal ? pct.toFixed(1) : Math.round(pct)}%`;
+    return pct > 0 ? `+${text}` : text;
+  }
+
+  const returnYScale = d3
+    .scaleLinear()
+    .domain([returnLimit, -returnLimit])
+    .range([returnPanelTop, returnPanelTop + returnPanelHeight]);
+
+  const volatilityMax = Math.max(
+    1,
+    (d3.max(volatilityRows, (row) => row.value) ?? 0.6) * 1.08,
+  );
+  const volatilityTickMax = Math.max(1, Math.ceil(volatilityMax / 0.2) * 0.2);
+  const volatilityTickValues = d3.range(0.2, volatilityTickMax + 0.001, 0.2);
+  const volatilityYScale = d3
+    .scaleLinear()
+    .domain([0, volatilityTickMax])
+    .range([volatilityPanelTop + volatilityPanelHeight, volatilityPanelTop]);
+
+  const volatilityAreaPath =
+    shortTermXScale && volatilityRows.length > 1
+      ? d3
+          .area()
+          .x((row) => shortTermXScale(row.parsedDate))
+          .y0(volatilityPanelTop + volatilityPanelHeight)
+          .y1((row) => volatilityYScale(row.value))(volatilityRows) ?? ''
+      : '';
+
+  const returnBarWidth = Math.max(
+    1,
+    Math.min(
+      8,
+      ((chartWidth - shortTermLeft - shortTermRight) / Math.max(returnRows.length, 1)) * 0.85,
+    ),
+  );
+  const volatilityBarWidth = Math.max(
+    1,
+    Math.min(
+      10,
+      ((chartWidth - shortTermLeft - shortTermRight) / Math.max(volatilityRows.length, 1)) * 0.9,
+    ),
+  );
+
+  function returnBandColor(value) {
+    if (value <= -0.08) return '#d70040';
+    if (value <= -0.02) return '#f39c3d';
+    if (value < 0.02) return '#fff3a3';
+    if (value < 0.08) return '#97d35f';
+    return '#1fbf76';
+  }
+
+  function volatilityBandColor(value) {
+    if (value < 0.4) return '#8eb8df';
+    if (value < 0.6) return '#5f9fd8';
+    if (value < 0.8) return '#357fcb';
+    return '#1f5fb5';
+  }
+
+  const returnLegendItems = [
+    { label: '<= -8%', color: '#d70040' },
+    { label: '-8% to -2%', color: '#f39c3d' },
+    { label: '-2% to +2%', color: '#fff3a3' },
+    { label: '+2% to +8%', color: '#97d35f' },
+    { label: '>= +8%', color: '#1fbf76' },
+  ];
+
+  const volatilityLegendItems = [
+    { label: '< 40%', color: '#8eb8df' },
+    { label: '40-60%', color: '#5f9fd8' },
+    { label: '60-80%', color: '#357fcb' },
+    { label: '> 80%', color: '#1f5fb5' },
+  ];
+
+  function estimateLegendItemWidth(label) {
+    return label.length * 6.2 + 26;
+  }
+
+  function buildInlineLegendLayout(items, rightEdge) {
+    let cursor = rightEdge;
+    return [...items]
+      .reverse()
+      .map((item) => {
+        const width = estimateLegendItemWidth(item.label);
+        cursor -= width;
+        const placed = { ...item, x: cursor };
+        cursor -= 10;
+        return placed;
+      })
+      .reverse();
+  }
+
+  const rightLegendEdge = chartWidth - shortTermRight - 4;
+  const returnLegendLayout = buildInlineLegendLayout(returnLegendItems, rightLegendEdge);
+  const volatilityLegendLayout = buildInlineLegendLayout(volatilityLegendItems, rightLegendEdge);
+
+  function setRangeStart(nextStart) {
+    const start = nextStart || FULL_RANGE.start;
+    const end = selectedTimeRange?.end ?? FULL_RANGE.end;
+    setSelectedTimeRange({
+      start,
+      end: end < start ? start : end,
+    });
+  }
+
+  function setRangeEnd(nextEnd) {
+    const start = selectedTimeRange?.start ?? FULL_RANGE.start;
+    const end = nextEnd || FULL_RANGE.end;
+    setSelectedTimeRange({
+      start: start > end ? end : start,
+      end,
+    });
+  }
 
   function getSvgXCoordinate(event) {
     const svg = event.currentTarget.ownerSVGElement ?? event.currentTarget;
@@ -356,7 +489,7 @@ export function MacroView() {
     if (change <= -0.05) return '#a50026';
     if (change <= -0.02) return '#d73027';
     if (change <= -0.005) return '#fdae61';
-    return '#f5f5f5';
+    return '#fff3a3';
   }
 
   // Annotated key events on the Macro timeline (5 anchor points).
@@ -380,90 +513,216 @@ export function MacroView() {
 
   return (
     <section className="view-card">
-      <header className="view-header view-header-with-pin">
-        <div>
-          <p className="view-kicker">View 1</p>
-          <h2 className="view-title">Macro Overview</h2>
-        </div>
-        <PinInsightButton view="macro" />
-      </header>
-
-      <div className="control-group">
-        <span className="control-label">Selected time range</span>
-        <div className="control-row">
-          {TIME_RANGE_OPTIONS.map((option) => (
+      <header className="view-header">
+        <div className="macro-header-row">
+          <div>
+            <p className="view-kicker">View 1</p>
+            <h2 className="view-title">Marco Overview: Identify Market-Wide Trend &amp; Volatility</h2>
+          </div>
+          <div className="macro-range-controls" aria-label="Macro time range controls">
             <button
-              key={option.label}
               type="button"
-              className={
-                selectedTimeRange?.start === option.value.start &&
-                selectedTimeRange?.end === option.value.end
-                  ? 'range-button range-button-active'
-                  : 'range-button'
-              }
-              onClick={() => setSelectedTimeRange(option.value)}
+              className="range-button"
+              onClick={() => setSelectedTimeRange(FULL_RANGE)}
             >
-              {option.label}
+              Full Range
             </button>
-          ))}
+            <div className="macro-range-inputs">
+              <input
+                type="date"
+                className="macro-date-input"
+                value={selectedTimeRange?.start ?? FULL_RANGE.start}
+                min={FULL_RANGE.start}
+                max={FULL_RANGE.end}
+                onChange={(event) => setRangeStart(event.target.value)}
+                aria-label="Start date"
+              />
+              <span className="macro-range-separator">to</span>
+              <input
+                type="date"
+                className="macro-date-input"
+                value={selectedTimeRange?.end ?? FULL_RANGE.end}
+                min={FULL_RANGE.start}
+                max={FULL_RANGE.end}
+                onChange={(event) => setRangeEnd(event.target.value)}
+                aria-label="End date"
+              />
+            </div>
+          </div>
         </div>
-        <p className="state-label">Shared state: {timeRangeLabel}</p>
-      </div>
+      </header>
 
       {hasTimelineData ? (
         <section className="placeholder-section">
-          <h3 className="placeholder-title">Rolling Return &amp; Volatility (Horizon)</h3>
-          <div className="chart-shell">
+          <h3 className="placeholder-title">Short-Term Return &amp; Volatility</h3>
+          <div className="chart-shell short-term-shell">
+            <p className="short-term-subtitle">
+              7D rolling return and 30D annualized volatility in the selected window
+            </p>
             <svg
-              viewBox={`0 0 ${chartWidth} 140`}
+              viewBox={`0 0 ${chartWidth} ${shortTermHeight}`}
               className="timeline-chart"
               role="img"
-              aria-label="Rolling return and volatility horizon graphs"
+              aria-label="Short-term return and volatility chart"
             >
-              <text x={chartMargin.left} y={12} className="chart-axis-title">
-                7-day rolling return
+              {returnTickValues.map((tick) => (
+                <g key={`short-return-grid-${tick}`}>
+                  <line
+                    x1={shortTermLeft}
+                    x2={chartWidth - shortTermRight}
+                    y1={returnYScale(tick)}
+                    y2={returnYScale(tick)}
+                    className="chart-gridline"
+                  />
+                  <text
+                    x={shortTermLeft - 10}
+                    y={returnYScale(tick)}
+                    textAnchor="end"
+                    dominantBaseline="middle"
+                    className="chart-axis-label"
+                  >
+                    {tick === 0 ? '0' : formatSignedPercent(tick)}
+                  </text>
+                </g>
+              ))}
+
+              <text x={shortTermLeft} y={returnPanelTop - 10} className="short-term-panel-title">
+                7D Rolling Return (%)
               </text>
-              <g transform="translate(0, 16)">
-                <HorizonChart
-                  rows={horizonRows.return7d}
-                  xScale={xScale}
-                  width={chartWidth}
-                  height={56}
-                  margin={{ top: 0, right: 22, bottom: 4, left: chartMargin.left }}
-                  bands={4}
-                  valueFormatter={(v) => `${(v * 100).toFixed(2)}%`}
-                />
-              </g>
-              <text x={chartMargin.left} y={88} className="chart-axis-title">
-                30-day rolling volatility
+
+              {returnLegendLayout.map((item) => (
+                <g
+                  key={`short-return-legend-${item.label}`}
+                  transform={`translate(${item.x}, ${returnPanelTop - 10})`}
+                  className="short-term-inline-legend"
+                >
+                  <rect
+                    x={0}
+                    y={-9}
+                    width={10}
+                    height={10}
+                    rx={2}
+                    fill={item.color}
+                    stroke="rgba(255,255,255,0.25)"
+                  />
+                  <text x={16} y={0} className="short-term-inline-legend-label">
+                    {item.label}
+                  </text>
+                </g>
+              ))}
+
+              {returnRows.map((row) => {
+                const clamped = Math.max(-returnLimit, Math.min(returnLimit, row.value));
+                const zeroY = returnYScale(0);
+                const valueY = returnYScale(clamped);
+                return (
+                  <rect
+                    key={`return-bar-${row.parsedDate.toISOString()}`}
+                    x={shortTermXScale(row.parsedDate) - returnBarWidth / 2}
+                    y={Math.min(zeroY, valueY)}
+                    width={returnBarWidth}
+                    height={Math.max(1, Math.abs(zeroY - valueY))}
+                    fill={returnBandColor(clamped)}
+                    opacity={0.95}
+                  />
+                );
+              })}
+
+              <line
+                x1={shortTermLeft}
+                x2={chartWidth - shortTermRight}
+                y1={returnYScale(0)}
+                y2={returnYScale(0)}
+                className="short-term-zero-line"
+              />
+
+              {volatilityTickValues.map((tick) => (
+                <g key={`short-vol-grid-${tick}`}>
+                  <line
+                    x1={shortTermLeft}
+                    x2={chartWidth - shortTermRight}
+                    y1={volatilityYScale(tick)}
+                    y2={volatilityYScale(tick)}
+                    className="chart-gridline"
+                  />
+                  <text
+                    x={shortTermLeft - 10}
+                    y={volatilityYScale(tick)}
+                    textAnchor="end"
+                    dominantBaseline="middle"
+                    className="chart-axis-label"
+                  >
+                    {`${Math.round(tick * 100)}%`}
+                  </text>
+                </g>
+              ))}
+
+              <text
+                x={shortTermLeft}
+                y={volatilityPanelTop - 10}
+                className="short-term-panel-title"
+              >
+                30D Annualized Volatility (%)
               </text>
-              <g transform="translate(0, 92)">
-                <HorizonChart
-                  rows={horizonRows.vol30d}
-                  xScale={xScale}
-                  width={chartWidth}
-                  height={48}
-                  margin={{ top: 0, right: 22, bottom: 4, left: chartMargin.left }}
-                  bands={4}
-                  centerOnZero={false}
-                  valueFormatter={(v) => `${(v * 100).toFixed(2)}%`}
+
+              {volatilityLegendLayout.map((item) => (
+                <g
+                  key={`short-vol-legend-${item.label}`}
+                  transform={`translate(${item.x}, ${volatilityPanelTop - 10})`}
+                  className="short-term-inline-legend"
+                >
+                  <rect
+                    x={0}
+                    y={-9}
+                    width={10}
+                    height={10}
+                    rx={2}
+                    fill={item.color}
+                    stroke="rgba(255,255,255,0.25)"
+                  />
+                  <text x={16} y={0} className="short-term-inline-legend-label">
+                    {item.label}
+                  </text>
+                </g>
+              ))}
+
+              {volatilityRows.map((row) => (
+                <rect
+                  key={`vol-bar-${row.parsedDate.toISOString()}`}
+                  x={shortTermXScale(row.parsedDate) - volatilityBarWidth / 2}
+                  y={volatilityYScale(row.value)}
+                  width={volatilityBarWidth}
+                  height={volatilityPanelTop + volatilityPanelHeight - volatilityYScale(row.value)}
+                  fill={volatilityBandColor(row.value)}
+                  opacity={0.85}
                 />
-              </g>
+              ))}
+
+              {volatilityAreaPath ? (
+                <path d={volatilityAreaPath} className="short-term-volatility-line" />
+              ) : null}
+
+              {xTicks.map((tick) => (
+                <text
+                  key={`short-term-tick-${tick.toISOString()}`}
+                  x={shortTermXScale(tick)}
+                  y={shortTermHeight - 10}
+                  textAnchor="middle"
+                  className="chart-axis-label"
+                >
+                  {xTickFormatter(tick)}
+                </text>
+              ))}
             </svg>
-            <div className="chart-caption-row">
-              <p className="chart-caption">
-                Mirror-folded horizon graph · Western convention (green = up).
-              </p>
-              <p className="chart-caption">
-                Each band ≈ 25% of |max|; darker band = more extreme.
-              </p>
-            </div>
           </div>
         </section>
       ) : null}
 
       <section className="placeholder-section">
-        <h3 className="placeholder-title">BTC Long-Term Timeline</h3>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+          <h3 className="placeholder-title" style={{ margin: 0 }}>BTC Price Trend in Selected Window</h3>
+          <span className="chart-range-pill">{timeRangeLabel}</span>
+        </div>
         {isLoading ? (
           <div className="placeholder-box">
             <span className="placeholder-label">Loading BTC overview data...</span>
@@ -472,6 +731,7 @@ export function MacroView() {
           <div className="chart-shell">
             <svg
               viewBox={`0 0 ${chartWidth} ${chartHeight}`}
+              preserveAspectRatio="xMidYMid meet"
               className="timeline-chart"
               role="img"
               aria-label="BTC long-term timeline"
@@ -548,34 +808,7 @@ export function MacroView() {
                 onPointerUp={handleBrushEnd}
               />
 
-              {parsedEventSignals.map((eventRow) => {
-                const isSelected = selectedDate === eventRow.date;
-                const markerX = xScale(eventRow.parsedDate);
-                const markerY = chartMargin.top + 12;
-                const markerSize = eventSizeScale
-                  ? eventSizeScale(eventRow.newsCount)
-                  : 6;
-                const d = markerSize + (isSelected ? 2 : 0);
-
-                return (
-                  <g
-                    key={`event-${eventRow.date}`}
-                    transform={`translate(${markerX}, ${markerY})`}
-                    className={
-                      isSelected ? 'event-marker event-marker-active' : 'event-marker'
-                    }
-                    onClick={() => setSelectedDate(eventRow.date)}
-                  >
-                    <path
-                      d={`M 0,${-d} L ${d},0 L 0,${d} L ${-d},0 Z`}
-                      className="event-marker-shape"
-                    />
-                    <title>
-                      {`${eventRow.date} | ${eventRow.newsCount} headlines`}
-                    </title>
-                  </g>
-                );
-              })}
+              {/* Event markers removed: headlines not shown in timeline */}
 
               {/* Annotation overlay: leader lines + labels for KEY_EVENTS in domain */}
               {(() => {
@@ -635,22 +868,9 @@ export function MacroView() {
               })}
             </svg>
 
-            <div className="chart-caption-row">
-              <p className="chart-caption">
-                Rendered points: {timelineRows.length}
-              </p>
-              <p className="chart-caption">
-                Loaded window: {timelineRows[0]?.date} to {timelineRows.at(-1)?.date}
-              </p>
-              <p className="chart-caption">
-                Selected date: {selectedDateLabel}
-              </p>
-              <p className="chart-caption">
-                Event markers: {parsedEventSignals.length}
-              </p>
-              <p className="chart-caption">
-                Drag on the timeline to brush a narrower range
-              </p>
+              <div className="chart-caption-row">
+              <p className="chart-caption">Rendered points: {timelineRows.length}</p>
+              <p className="chart-caption">Drag on the timeline to brush a narrower range</p>
             </div>
           </div>
         ) : (
@@ -663,12 +883,15 @@ export function MacroView() {
       </section>
 
       <section className="placeholder-section">
-        <h3 className="placeholder-title">Calendar Heatmap</h3>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+          <h3 className="placeholder-title" style={{ margin: 0 }}>Calendar Heatmap</h3>
+          <span className="chart-range-pill">{selectedDateLabel}</span>
+        </div>
         {isLoading ? (
           <div className="placeholder-box placeholder-box-small">
             <span className="placeholder-label">Loading heatmap data...</span>
           </div>
-        ) : orderedHeatmapMonths.length > 0 ? (
+        ) : shouldShowHeatmap && orderedHeatmapMonths.length > 0 ? (
           <div className="heatmap-shell">
             <div className="heatmap-legend">
               <span className="heatmap-legend-title">Daily return</span>
@@ -678,26 +901,12 @@ export function MacroView() {
                   <span style={{ background: '#a50026' }} />
                   <span style={{ background: '#d73027' }} />
                   <span style={{ background: '#fdae61' }} />
-                  <span style={{ background: '#f5f5f5' }} />
+                  <span style={{ background: '#fff3a3' }} />
                   <span style={{ background: '#a6d96a' }} />
                   <span style={{ background: '#66bd63' }} />
                   <span style={{ background: '#1a9850' }} />
                 </span>
                 +5%
-              </span>
-              <span className="heatmap-legend-title" style={{ marginLeft: 12 }}>
-                Event intensity
-              </span>
-              <span className="heatmap-legend-item">
-                <span className="heatmap-cell-event" style={{ position: 'static' }} />
-                1–9 headlines
-              </span>
-              <span className="heatmap-legend-item">
-                <span
-                  className="heatmap-cell-event heatmap-cell-event-strong"
-                  style={{ position: 'static' }}
-                />
-                10+ headlines
               </span>
             </div>
             <div className="heatmap-month-grid">
@@ -716,18 +925,9 @@ export function MacroView() {
                         }
                         style={{ backgroundColor: heatmapColor(cell.change) }}
                         onClick={() => setSelectedDate(cell.date)}
-                        title={`${cell.date} | ${`${(cell.change * 100).toFixed(2)}%`}${
-                          cell.eventSignal
-                            ? ` | ${cell.eventSignal.newsCount} headlines`
-                            : ''
-                        }`}
+                        title={`${cell.date} | ${(cell.change * 100).toFixed(2)}%`}
                       >
-                        {cell.eventSignal ? (
-                          <span
-                            className={heatmapEventClass(cell.eventSignal)}
-                            aria-hidden="true"
-                          />
-                        ) : null}
+                        {/* Event badge removed: headlines not shown in heatmap */}
                       </button>
                     ))}
                   </div>
@@ -735,12 +935,12 @@ export function MacroView() {
               ))}
             </div>
             <div className="chart-caption-row">
-              <p className="chart-caption">
-                Selected date: {selectedDateLabel}
-              </p>
-              <p className="chart-caption">Event days in heatmap: {heatmapEventCount}</p>
               <p className="chart-caption">Click a heatmap cell to update Micro view</p>
             </div>
+          </div>
+        ) : !shouldShowHeatmap ? (
+          <div className="placeholder-box placeholder-box-small">
+            <span className="placeholder-label">Please select a time range to show the heatmap.</span>
           </div>
         ) : (
           <div className="placeholder-box placeholder-box-small">
@@ -749,47 +949,6 @@ export function MacroView() {
         )}
       </section>
 
-      <div className="summary-box">
-        <p className="summary-title">Overview summary</p>
-        <p className="state-label">BTC rows loaded: {overview.btc_daily.length}</p>
-        <p className="state-label">
-          Available external asset tickers: {tickerList.length > 0 ? tickerList.join(', ') : 'None'}
-        </p>
-        <p className="state-label">Event overlay rows: {overview.gdelt_daily_signals.length}</p>
-        {errorMessage ? <p className="state-label error-label">Load status: {errorMessage}</p> : null}
-      </div>
-
-      <div className="summary-box">
-        <p className="summary-title">Event overlay summary</p>
-        {highlightedEvents.length > 0 ? (
-          <div className="event-summary-list">
-            {highlightedEvents.map((eventRow) => (
-              <button
-                key={`summary-${eventRow.date}`}
-                type="button"
-                className={
-                  selectedDate === eventRow.date
-                    ? 'event-summary-card event-summary-card-active'
-                    : 'event-summary-card'
-                }
-                onClick={() => setSelectedDate(eventRow.date)}
-              >
-                <span className="event-summary-date">{eventRow.date}</span>
-                <span className="event-summary-value">{eventRow.newsCount} headlines</span>
-                <span className="event-summary-text">
-                  {(eventRow.topHeadlines?.[0] ?? '').slice(0, 88) || 'No top headline available'}
-                </span>
-              </button>
-            ))}
-          </div>
-        ) : (
-          <p className="state-label">
-            {isHistoricalGdeltWindow
-              ? 'GDELT coverage in this snapshot is limited to the recent window, so historical event overlays are not shown here. Switch to the Iran Tension window to see live headlines.'
-              : 'No event-overlay rows are available for the current window yet.'}
-          </p>
-        )}
-      </div>
     </section>
   );
 }

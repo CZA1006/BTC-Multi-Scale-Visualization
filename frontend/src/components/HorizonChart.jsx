@@ -21,6 +21,12 @@ export function HorizonChart({
   centerOnZero = true,
 }) {
   const innerHeight = height - margin.top - margin.bottom;
+  const localXScale = useMemo(() => {
+    if (!xScale || typeof xScale.copy !== 'function') {
+      return xScale;
+    }
+    return xScale.copy().range([margin.left, width - margin.right]);
+  }, [xScale, margin.left, margin.right, width]);
 
   const { posPaths, negPaths, maxAbs } = useMemo(() => {
     const valid = rows.filter(
@@ -53,7 +59,7 @@ export function HorizonChart({
       });
       const area = d3
         .area()
-        .x((r) => xScale(r.parsedDate))
+        .x((r) => localXScale(r.parsedDate))
         .y0(innerHeight)
         .y1((r) => yBand(Math.max(0, Math.min(bandSize, r._y))))
         .curve(d3.curveMonotoneX);
@@ -67,7 +73,7 @@ export function HorizonChart({
       negPathsLocal.push(buildBandPath('neg', k));
     }
     return { posPaths: posPathsLocal, negPaths: negPathsLocal, maxAbs: maxAbsLocal };
-  }, [rows, xScale, innerHeight, bands, centerOnZero]);
+  }, [rows, localXScale, innerHeight, bands, centerOnZero]);
 
   return (
     <g transform={`translate(0, ${margin.top})`}>
@@ -107,9 +113,10 @@ export function HorizonChart({
 
       {/* Right-side scale hint */}
       <text
-        x={width - margin.right + 4}
+        x={width - 8}
         y={innerHeight / 2}
         className="chart-axis-label"
+        textAnchor="end"
         dominantBaseline="middle"
       >
         ±{valueFormatter(maxAbs)}

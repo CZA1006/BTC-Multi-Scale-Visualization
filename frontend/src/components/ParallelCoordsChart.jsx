@@ -7,8 +7,18 @@ import * as d3 from 'd3';
 
 const WIDTH = 920;
 const HEIGHT = 320;
-const MARGIN = { top: 24, right: 28, bottom: 56, left: 28 };
+const MARGIN = { top: 24, right: 54, bottom: 56, left: 54 };
 const MAX_DAILY_ROWS = 600;
+
+const FEATURE_LABELS = {
+  daily_return: 'Daily Ret',
+  open_close_change: 'Open-Close',
+  high_low_range: 'High-Low Range',
+  volume_zscore: 'Volume Z',
+  rolling_volatility_7d: 'Vol 7D',
+  rolling_volatility_30d: 'Vol 30D',
+  drawdown_from_30d_high: 'DD 30D',
+};
 
 export function ParallelCoordsChart({
   features, // string[]
@@ -16,6 +26,7 @@ export function ParallelCoordsChart({
   clusterProfiles, // [{clusterId, values:{feature:mean}}]
   clusterColorScale,
   selectedCluster,
+  selectedDate,
   semanticLabelForCluster,
 }) {
   const [axisOrder, setAxisOrder] = useState(features);
@@ -168,27 +179,58 @@ export function ParallelCoordsChart({
   }
 
   const hasBrushes = Object.keys(axisBrushes).length > 0;
-  const passingRows = hasBrushes ? sampledRows.filter(passesBrushes) : sampledRows;
+  const dateSelectedRows = selectedDate
+    ? sampledRows.filter((row) => row.date === selectedDate)
+    : sampledRows;
+  const passingRows = hasBrushes ? dateSelectedRows.filter(passesBrushes) : dateSelectedRows;
   const passingCount = passingRows.length;
-  const passingRatio = sampledRows.length > 0 ? passingCount / sampledRows.length : 0;
+  const passingRatio = dateSelectedRows.length > 0 ? passingCount / dateSelectedRows.length : 0;
+  const selectedDateCluster = selectedDate
+    ? dailyRows.find((row) => row.date === selectedDate)?.clusterValue
+    : null;
+  const targetClusterId =
+    selectedDateCluster !== null && selectedDateCluster !== undefined
+      ? selectedDateCluster
+      : selectedCluster;
+  const legendItems = [...clusterProfiles]
+    .sort((a, b) => Number(a.clusterId) - Number(b.clusterId))
+    .map((profile) => ({
+      clusterId: profile.clusterId,
+      label: semanticLabelForCluster(profile.clusterId),
+      color: clusterColorScale(String(profile.clusterId)),
+    }));
 
   return (
     <div>
-      <div className="control-row" style={{ marginBottom: 8 }}>
-        <button
-          type="button"
-          className="range-button"
-          onClick={() => setAxisOrder(features)}
-        >
-          Reset axes
-        </button>
-        <button
-          type="button"
-          className="range-button"
-          onClick={() => setAxisBrushes({})}
-        >
-          Clear brushes ({Object.keys(axisBrushes).length})
-        </button>
+      <div className="pc-toolbar-row">
+        <div className="control-row" style={{ marginBottom: 8 }}>
+          <button
+            type="button"
+            className="range-button"
+            onClick={() => setAxisOrder(features)}
+          >
+            Reset axes
+          </button>
+          <button
+            type="button"
+            className="range-button"
+            onClick={() => setAxisBrushes({})}
+          >
+            Clear brushes ({Object.keys(axisBrushes).length})
+          </button>
+        </div>
+        <div className="pc-legend" aria-label="Regime color legend">
+          {legendItems.map((item) => (
+            <span key={`pc-legend-${item.clusterId}`} className="pc-legend-item">
+              <span
+                className="cluster-swatch"
+                style={{ backgroundColor: item.color }}
+                aria-hidden="true"
+              />
+              {item.label}
+            </span>
+          ))}
+        </div>
       </div>
 
       <svg
@@ -208,14 +250,14 @@ export function ParallelCoordsChart({
       >
         {/* Faint daily rows */}
         <g className="pc-daily-rows" pointerEvents="none">
-          {sampledRows.map((row) => {
+          {passingRows.map((row) => {
             const passing = !hasBrushes || passesBrushes(row);
             const isSelectedCluster =
-              selectedCluster !== null &&
-              selectedCluster !== undefined &&
-              Number(selectedCluster) === Number(row.clusterValue);
+              targetClusterId !== null &&
+              targetClusterId !== undefined &&
+              Number(targetClusterId) === Number(row.clusterValue);
             const opacity = passing
-              ? selectedCluster === null || selectedCluster === undefined
+              ? targetClusterId === null || targetClusterId === undefined
                 ? 0.18
                 : isSelectedCluster
                   ? 0.32
@@ -237,24 +279,31 @@ export function ParallelCoordsChart({
 
         {/* Cluster mean lines on top */}
         <g className="pc-mean-lines">
-          {clusterProfiles.map((profile) => {
+          {clusterProfiles
+            .filter((profile) => {
+              if (targetClusterId === null || targetClusterId === undefined) {
+                return true;
+              }
+              return Number(profile.clusterId) === Number(targetClusterId);
+            })
+            .map((profile) => {
             const isSelected =
-              selectedCluster !== null &&
-              selectedCluster !== undefined &&
-              Number(selectedCluster) === Number(profile.clusterId);
+              targetClusterId !== null &&
+              targetClusterId !== undefined &&
+              Number(targetClusterId) === Number(profile.clusterId);
             return (
               <path
                 key={`pcm-${profile.clusterId}`}
                 d={lineForRow(profile, 'profile')}
                 fill="none"
                 stroke={
-                  selectedCluster === null || selectedCluster === undefined || isSelected
+                  targetClusterId === null || targetClusterId === undefined || isSelected
                     ? clusterColorScale(String(profile.clusterId))
                     : '#4a5670'
                 }
                 strokeWidth={isSelected ? 3.6 : 2}
                 opacity={
-                  selectedCluster === null || selectedCluster === undefined || isSelected
+                  targetClusterId === null || targetClusterId === undefined || isSelected
                     ? 0.95
                     : 0.3
                 }
@@ -350,7 +399,7 @@ export function ParallelCoordsChart({
                   textAnchor="middle"
                   className="chart-axis-label"
                 >
-                  {feature.replaceAll('_', ' ')}
+                  {FEATURE_LABELS[feature] ?? feature.replaceAll('_', ' ')}
                 </text>
               </g>
             </g>
@@ -359,7 +408,7 @@ export function ParallelCoordsChart({
       </svg>
 
       <div className="chart-caption-row">
-        <p className="chart-caption">Daily rows: {sampledRows.length}</p>
+        <p className="chart-caption">Daily rows: {dateSelectedRows.length}</p>
         <p className="chart-caption">
           Brushed: {hasBrushes ? `${passingCount} (${(passingRatio * 100).toFixed(0)}%)` : 'none'}
         </p>

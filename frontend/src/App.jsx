@@ -8,8 +8,6 @@ import { NARRATIVES } from './data/narratives.js';
 import { NarrativeOverlay } from './components/NarrativeOverlay.jsx';
 import { SpotlightHighlight } from './components/SpotlightHighlight.jsx';
 import { KpiTicker } from './components/KpiTicker.jsx';
-import { InsightDraftModal } from './components/InsightDraftModal.jsx';
-import { InsightLogPanel } from './components/InsightLogPanel.jsx';
 
 const DATA_PROVENANCE = [
   {
@@ -73,8 +71,6 @@ export default function App() {
   const setSelectedDate = useAppStore((state) => state.setSelectedDate);
   const setSelectedCluster = useAppStore((state) => state.setSelectedCluster);
   const setNarrative = useAppStore((state) => state.setNarrative);
-  const insightCount = useAppStore((state) => state.insights.length);
-  const toggleInsightPanel = useAppStore((state) => state.toggleInsightPanel);
 
   const activeRangeLabel = selectedTimeRange
     ? `${selectedTimeRange.start ?? 'N/A'} to ${selectedTimeRange.end ?? 'N/A'}`
@@ -107,16 +103,6 @@ export default function App() {
           Follow the workflow from Macro to Meso to Micro: brush a window, pick a
           market regime, then drill into a selected day and its event context.
         </p>
-        <button
-          type="button"
-          className="title-bar-insight-pill"
-          onClick={toggleInsightPanel}
-          aria-label="Open pinned insights panel"
-        >
-          <span aria-hidden="true">📌</span>
-          Insights
-          <span className="title-bar-insight-count">{insightCount}</span>
-        </button>
       </header>
 
       <section className="story-strip">
@@ -125,10 +111,6 @@ export default function App() {
             <p className="app-eyebrow">Presentation Mode</p>
             <h2 className="story-strip-title">Case-Study Navigator</h2>
           </div>
-          <p className="story-strip-copy">
-            Use these windows to move quickly between the main narrative scenarios in the
-            final demo.
-          </p>
         </div>
 
         <div className="story-card-grid">
@@ -203,8 +185,6 @@ export default function App() {
       </section>
 
       <NarrativeOverlay />
-      <InsightDraftModal />
-      <InsightLogPanel />
     </main>
   );
 }

@@ -1,0 +1,187 @@
+{
+  "date": "2024-10-20",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 15,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-20T00:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Global broker Octa explains the reasons for lower US dollar after the U . S . presidential debate",
+    "Michael Cohen Predicts Swing State That Will Be  Called Early",
+    "Harris turns 60 , but prefers to talk about Trump age",
+    "Is Kamala Harris stumbling as presidential race gets tighter ?",
+    "Harris , Trump court early voters , Lizzo revs up Detroit"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-20T23:45:00",
+      "source": "manilatimes.net",
+      "headline": "Global broker Octa explains the reasons for lower US dollar after the U . S . presidential debate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.manilatimes.net/2024/10/21/tmt-newswire/media-outreach-newswire/global-broker-octa-explains-the-reasons-for-lower-us-dollar-after-the-us-presidential-debate/1987892"
+    },
+    {
+      "timestamp": "2024-10-20T00:00:00",
+      "source": "newsweek.com",
+      "headline": "Michael Cohen Predicts Swing State That Will Be  Called Early",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/michael-cohen-donald-trump-lose-election-swing-states-1971730"
+    },
+    {
+      "timestamp": "2024-10-20T11:00:00",
+      "source": "digitaljournal.com",
+      "headline": "Harris turns 60 , but prefers to talk about Trump age",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.digitaljournal.com/world/harris-turns-60-but-prefers-to-talk-about-trumps-age/article"
+    },
+    {
+      "timestamp": "2024-10-20T15:15:00",
+      "source": "theweek.in",
+      "headline": "Is Kamala Harris stumbling as presidential race gets tighter ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theweek.in/news/world/2024/10/20/is-kamala-harris-stumbling-as-presidential-race-gets-tighter.html"
+    },
+    {
+      "timestamp": "2024-10-20T01:00:00",
+      "source": "batemansbaypost.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.batemansbaypost.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/?cs=14264"
+    },
+    {
+      "timestamp": "2024-10-20T00:15:00",
+      "source": "easternriverinachronicle.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.easternriverinachronicle.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/?cs=6364"
+    },
+    {
+      "timestamp": "2024-10-20T00:00:00",
+      "source": "newcastleherald.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newcastleherald.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/"
+    },
+    {
+      "timestamp": "2024-10-20T00:00:00",
+      "source": "yasstribune.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yasstribune.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/?cs=14264"
+    },
+    {
+      "timestamp": "2024-10-20T01:00:00",
+      "source": "singletonargus.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.singletonargus.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/"
+    },
+    {
+      "timestamp": "2024-10-20T00:30:00",
+      "source": "dailymail.co.uk",
+      "headline": "Usher rallies support for Kamala Harris in Georgia saying they can  make a difference  as state sees razor - thin race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-13979179/usher-kamala-harris-georgia-early-voting.html"
+    },
+    {
+      "timestamp": "2024-10-20T09:45:00",
+      "source": "nbcnews.com",
+      "headline": "Kamala Harris has no current plans to campaign with Biden before Election Day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/politics/2024-election/kamala-harris-no-current-plans-campaign-biden-election-day-rcna176254"
+    },
+    {
+      "timestamp": "2024-10-20T03:45:00",
+      "source": "cbsnews.com",
+      "headline": "Trump , Harris go on campaign blitz in battleground states as race enters final stretch",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/trump-harris-campaign-blitz-battleground-states-race-enters-final-stretch/"
+    },
+    {
+      "timestamp": "2024-10-20T15:45:00",
+      "source": "dailymail.co.uk",
+      "headline": "Kamala birthday blues : VP has to spend her big day on the trail as betters predict Trump win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-13980319/kamala-harris-panic-donald-trump-betting-market-polls.html"
+    },
+    {
+      "timestamp": "2024-10-20T03:45:00",
+      "source": "yahoo.com",
+      "headline": "Harris returns to Georgia to rally supporters to the polls as turnout soars",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-returns-georgia-rally-supporters-021937302.html"
+    },
+    {
+      "timestamp": "2024-10-20T14:00:00",
+      "source": "npr.org",
+      "headline": "Harris says Trump is  cruel  at Georgia rally as she spotlights abortion restrictions",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.npr.org/2024/10/20/g-s1-29102/harris-says-trump-is-cruel-at-georgia-rally-as-she-spotlights-abortion-restrictions"
+    }
+  ]
+}

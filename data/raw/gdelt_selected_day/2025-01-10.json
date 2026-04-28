@@ -1,0 +1,202 @@
+{
+  "date": "2025-01-10",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 1,
+  "theme_count_election": 7,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-10T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T07:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-10T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Biden to deliver farewell address from Oval Office as presidency concludes on January 15",
+    "Two Trump crypto trades are in conflict and could derail the bitcoin rally",
+    "Google , Boeing , crypto firms among donors of Trump inauguration fund : Report",
+    "2025 Crypto ETF Outlook : Will Regulatory Changes Spark Rally ?",
+    "Bitcoin : Why The Trump Inauguration Is A  Buy The New Event"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-10T23:30:00",
+      "source": "13wham.com",
+      "headline": "Biden to deliver farewell address from Oval Office as presidency concludes on January 15",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://13wham.com/news/nation-world/biden-to-deliver-farewell-address-from-oval-office-as-presidency-concludes-on-january-15-kamala-harris-donald-trump-presidential-inauguration"
+    },
+    {
+      "timestamp": "2025-01-10T20:45:00",
+      "source": "cnbc.com",
+      "headline": "Two Trump crypto trades are in conflict and could derail the bitcoin rally",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2025/01/10/two-trump-crypto-trades-are-in-conflict-and-could-derail-the-bitcoin-rally.html"
+    },
+    {
+      "timestamp": "2025-01-10T07:00:00",
+      "source": "hindustantimes.com",
+      "headline": "Google , Boeing , crypto firms among donors of Trump inauguration fund : Report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hindustantimes.com/business/google-boeing-crypto-firms-among-donors-of-trump-inauguration-fund-report-101736483406423.html"
+    },
+    {
+      "timestamp": "2025-01-10T20:30:00",
+      "source": "coinspeaker.com",
+      "headline": "2025 Crypto ETF Outlook : Will Regulatory Changes Spark Rally ?",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/2025-crypto-etf-outlook-will-regulatory-changes-spark-rally/"
+    },
+    {
+      "timestamp": "2025-01-10T02:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin : Why The Trump Inauguration Is A  Buy The New Event",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-trump-inauguration-buy-the-news-event/"
+    },
+    {
+      "timestamp": "2025-01-10T12:15:00",
+      "source": "cointelegraph.com",
+      "headline": "US and Canada Bitcoin ETFs : Biggest buyer vs worst loser",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-etfs-usa-versus-canada-2024"
+    },
+    {
+      "timestamp": "2025-01-10T22:30:00",
+      "source": "forbes.com",
+      "headline": "Why Crypto Market Crashed : Overreaction To Interest Rate Speculation ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/clorischen/2025/01/10/crypto-market-panic-dump-overreaction-to-interest-rate-speculation/"
+    },
+    {
+      "timestamp": "2025-01-10T07:30:00",
+      "source": "cointelegraph.com",
+      "headline": "56 % of advisers more likely to invest in crypto after Trump win : Bitwise survey",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/financial-advisors-more-likely-invest-crypto-donald-trump-president-bitwise-survey"
+    },
+    {
+      "timestamp": "2025-01-10T16:30:00",
+      "source": "hellomagazine.com",
+      "headline": "Donald Trump sentenced in hush - money case in New York",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hellomagazine.com/celebrities/740308/donald-trump-sentenced-in-hush-money-case-in-new-york/"
+    },
+    {
+      "timestamp": "2025-01-10T03:45:00",
+      "source": "fxstreet.com",
+      "headline": "Pro - crypto Senator Lummis likely to chair potential crypto subcommittee",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/pro-crypto-senator-lummis-likely-to-chair-potential-crypto-subcommittee-202501100301"
+    },
+    {
+      "timestamp": "2025-01-10T04:30:00",
+      "source": "bdnews24.com",
+      "headline": "Trump shakes hands with Pence at Carter funeral",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://bdnews24.com/politics/6a69f857519b"
+    },
+    {
+      "timestamp": "2025-01-10T05:15:00",
+      "source": "econotimes.com",
+      "headline": "Bitcoin Drops Amid Fed Signals and DOJ Bitcoin Sales",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Bitcoin-Drops-Amid-Fed-Signals-and-DOJ-Bitcoin-Sales-1698805"
+    },
+    {
+      "timestamp": "2025-01-10T21:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin analysts explain why BTC could avoid a drop under $90K",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-analysts-explain-why-btc-could-avoid-a-drop-under-90-k"
+    },
+    {
+      "timestamp": "2025-01-10T07:00:00",
+      "source": "turkiyegazetesi.com.tr",
+      "headline": "Bitcoin 1 , 5 ayın dibini gördü ! Türkiyede kriptoya güven artarken !..",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.turkiyegazetesi.com.tr/ekonomi/bitcoin-1-5-ayin-dibini-gordu-turkiyede-kriptoya-guven-artarken--1085999"
+    },
+    {
+      "timestamp": "2025-01-10T05:00:00",
+      "source": "koat.com",
+      "headline": "Kamala Harris cancels trip amid California wildfire crisis",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.koat.com/article/kamala-harris-cancels-final-foreign-trip-california-wildfires/63387039"
+    }
+  ]
+}

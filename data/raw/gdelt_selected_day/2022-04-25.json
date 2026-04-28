@@ -1,0 +1,197 @@
+{
+  "date": "2022-04-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-25T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T07:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T09:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-25T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "IMF apprehends Russia and Iran for diverting their resources to crypto mining to circumvent sanctions",
+    "Timeline of Russia - Ukraine war as it enters third month , 20 key moments",
+    "Crypto Column : Prices Mixed as Stocks Slump Over Fed - Policy Concern",
+    "Russia - Ukraine war : List of key events on day 61 | Russia - Ukraine war News",
+    "OnPolitics : War in Ukraine reaches 2 - month mark"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-25T07:00:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "IMF apprehends Russia and Iran for diverting their resources to crypto mining to circumvent sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/business/cryptocurrency/blockchain/imf-apprehends-russia-and-iran-for-diverting-their-resources-to-crypto-mining-to-circumvent-sanctions/articleshow/91065514.cms"
+    },
+    {
+      "timestamp": "2022-04-25T07:30:00",
+      "source": "dnaindia.com",
+      "headline": "Timeline of Russia - Ukraine war as it enters third month , 20 key moments",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dnaindia.com/world/report-timeline-of-russia-ukraine-war-as-it-enters-third-month-20-key-moments-zelenskyy-putin-bucha-massacre-mariupol-2948297"
+    },
+    {
+      "timestamp": "2022-04-25T19:30:00",
+      "source": "thestreet.com",
+      "headline": "Crypto Column : Prices Mixed as Stocks Slump Over Fed - Policy Concern",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/investing/cryptocurrency/crypto-column-prices-mixed-stocks-slump-fed-policy-concern"
+    },
+    {
+      "timestamp": "2022-04-25T09:15:00",
+      "source": "aljazeera.com",
+      "headline": "Russia - Ukraine war : List of key events on day 61 | Russia - Ukraine war News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/4/25/russia-ukraine-war-list-of-key-events-on-day-61"
+    },
+    {
+      "timestamp": "2022-04-25T18:15:00",
+      "source": "msn.com",
+      "headline": "OnPolitics : War in Ukraine reaches 2 - month mark",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/onpolitics-war-in-ukraine-reaches-2-month-mark/ar-AAWzXUW"
+    },
+    {
+      "timestamp": "2022-04-25T07:45:00",
+      "source": "thestreet.com",
+      "headline": "Binance Denies Giving Russian Authorities Data on Users",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/crypto/news/binance-denies-giving-russian-authorities-data-on-users"
+    },
+    {
+      "timestamp": "2022-04-25T12:15:00",
+      "source": "news.yahoo.com",
+      "headline": "America Road to the Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/americas-road-ukraine-war-114659016.html"
+    },
+    {
+      "timestamp": "2022-04-25T09:15:00",
+      "source": "bdnews24.com",
+      "headline": "America road to the Ukraine war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://bdnews24.com/world/2022/04/25/americas-road-to-the-ukraine-war"
+    },
+    {
+      "timestamp": "2022-04-25T01:45:00",
+      "source": "app.com",
+      "headline": "Live Ukraine updates : Austin and Blinken meet with Zelenskyy in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.app.com/story/news/politics/2022/04/24/ukraine-russia-invasion-live-updates/7424003001/"
+    },
+    {
+      "timestamp": "2022-04-25T09:00:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine : Russia advances slow , U . S . says Moscow  failing",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/russia-s-advances-in-ukraine-slow-u-s-says-moscow-failing-1.5874610"
+    },
+    {
+      "timestamp": "2022-04-25T23:30:00",
+      "source": "aljazeera.com",
+      "headline": "Russia - Ukraine live news : Russian FM warns of World War III | Russia - Ukraine war News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/4/25/russia-fm-lavrov-warns-of-real-danger-world-war-iii-liveblog"
+    },
+    {
+      "timestamp": "2022-04-25T08:15:00",
+      "source": "dunyanews.tv",
+      "headline": "Ukraine to call for heavy arms when top US officials visit Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://dunyanews.tv/en/World/650151-Ukraine-to-call-for-heavy-arms-when-top-US-officials-visit-Kyiv"
+    },
+    {
+      "timestamp": "2022-04-25T09:30:00",
+      "source": "mynorthwest.com",
+      "headline": "Russian advance in Ukraine slow ; US says Moscow  is failing",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://mynorthwest.com/3448340/us-promises-new-aid-to-ukraine-in-fight-against-russia/"
+    },
+    {
+      "timestamp": "2022-04-25T11:45:00",
+      "source": "wfmz.com",
+      "headline": "Russian advance in Ukraine slow ; US says Moscow  is failing",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wfmz.com/news/russian-advance-in-ukraine-slow-us-says-moscow-is-failing/article_a11c9f44-2837-5f45-abf1-0d999da3d195.html"
+    },
+    {
+      "timestamp": "2022-04-25T10:30:00",
+      "source": "channel3000.com",
+      "headline": "Russian advance in Ukraine slow ; US says Moscow  is failing",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.channel3000.com/i/us-promises-new-aid-to-ukraine-in-fight-against-russia/"
+    }
+  ]
+}

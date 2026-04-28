@@ -1,0 +1,207 @@
+{
+  "date": "2020-02-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 2,
+  "theme_count_macro": 1,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-02-05T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-05T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Wednesday Market Minute : Bitcoin Looks Poised For Another Big Drop",
+    "Bitcoin is Going to Dump Hard , Prominent Analyst Warns",
+    "Bitcoin Volatility Reached A 7 - Week High In January",
+    "Top five assets to run to in coronavirus times",
+    "Bitcoin And Tesla Are Absolutely Nothing Alike"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-02-05T15:15:00",
+      "source": "benzinga.com",
+      "headline": "Wednesday Market Minute : Bitcoin Looks Poised For Another Big Drop",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/20/02/15258428/wednesdays-market-minute-bitcoin-looks-poised-for-another-big-drop"
+    },
+    {
+      "timestamp": "2020-02-05T16:30:00",
+      "source": "article.wn.com",
+      "headline": "Bitcoin is Going to Dump Hard , Prominent Analyst Warns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://article.wn.com/view/2020/02/05/Bitcoin_is_Going_to_Dump_Hard_Prominent_Analyst_Warns/"
+    },
+    {
+      "timestamp": "2020-02-05T13:30:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Volatility Reached A 7 - Week High In January",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cbovaird/2020/02/05/bitcoin-volatility-reached-a-7-week-high-in-january/"
+    },
+    {
+      "timestamp": "2020-02-05T09:30:00",
+      "source": "forexcrunch.com",
+      "headline": "Top five assets to run to in coronavirus times",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/top-five-assets-to-run-to-in-coronavirus-times/"
+    },
+    {
+      "timestamp": "2020-02-05T13:30:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin And Tesla Are Absolutely Nothing Alike",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/02/05/bitcoin-and-tesla-are-absolutely-nothing-alike/"
+    },
+    {
+      "timestamp": "2020-02-05T22:00:00",
+      "source": "news.bitcoin.com",
+      "headline": "Hong Kong Crypto Exchange Bitspark Shuts Down Amid Coronavirus Outbreak and Protests",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://news.bitcoin.com/bitspark-shuts-down/"
+    },
+    {
+      "timestamp": "2020-02-05T00:45:00",
+      "source": "seekingalpha.com",
+      "headline": "PCE : Closer To Fed Targets , Thus Fed Action Less Likely",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://seekingalpha.com/article/4321410-pce-closer-to-fed-targets-thus-fed-action-less-likely"
+    },
+    {
+      "timestamp": "2020-02-05T14:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin is Going to Dump Hard , Prominent Analyst Warns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/05/bitcoin-is-going-to-dump-hard-prominent-analyst-warns/"
+    },
+    {
+      "timestamp": "2020-02-05T09:15:00",
+      "source": "scotsman.com",
+      "headline": "Highs and lows on the Bitcoin rollercoaster - Jim Duffy",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.scotsman.com/business/highs-and-lows-on-the-bitcoin-rollercoaster-jim-duffy-1-5085811"
+    },
+    {
+      "timestamp": "2020-02-05T02:30:00",
+      "source": "nbcnews.com",
+      "headline": "Fed makes no change to interest rate , is monitoring economic impact of coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/business/economy/fed-makes-no-change-interest-rate-first-meeting-2020-n1125671?cid=public-rss_20200205"
+    },
+    {
+      "timestamp": "2020-02-05T23:45:00",
+      "source": "economiccollapsenews.com",
+      "headline": "Why are central banks in love with digital currencies ?",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "http://economiccollapsenews.com/2020/02/05/why-are-central-banks-in-love-with-digital-currencies/"
+    },
+    {
+      "timestamp": "2020-02-05T00:45:00",
+      "source": "digitaljournal.com",
+      "headline": "Zloadr to Pay Users 4 % to 7 . 25 % Interest on Cryptocurrency Holdings - Press Release",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://www.digitaljournal.com/pr/4578415"
+    },
+    {
+      "timestamp": "2020-02-05T19:30:00",
+      "source": "newsbtc.com",
+      "headline": "Litecoin Forming a Multi - Year Top Pattern May Cause an Epic Plunge",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/05/litecoin-multi-year-top-pattern/"
+    },
+    {
+      "timestamp": "2020-02-05T08:00:00",
+      "source": "news.bitcoin.com",
+      "headline": "Croatian Post Crypto Exchange 2 Months in : More Local Users , BTC , ETH , and XRP Favored by Customers",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://news.bitcoin.com/croatian-post-crypto-exchange-bitcoin/"
+    },
+    {
+      "timestamp": "2020-02-05T01:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto CEO : Bitcoin Will Hit Record High of $30 , 000 in 2020 for This Reason",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/04/crypto-bitcoin-record-30000/"
+    }
+  ]
+}

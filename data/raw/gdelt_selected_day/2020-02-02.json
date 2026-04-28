@@ -1,0 +1,192 @@
+{
+  "date": "2020-02-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 14,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-02-02T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T02:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-02T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin is soaring as investors panic about coronavirus",
+    "Bitcoin is soaring as investors panic about coronavirus :: WRAL . com",
+    "Interest rate cuts could be on the way as the economy takes a hit from the coronavirus outbreak - ABC News ( Australian Broadcasting Corporation )",
+    "Bitcoin is soaring as investors panic about coronavirus",
+    "Bitcoin is soaring as investors panic about coronavirus"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-02-02T03:00:00",
+      "source": "fox2now.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://fox2now.com/2020/02/01/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T12:00:00",
+      "source": "wral.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus :: WRAL . com",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.wral.com/bitcoin-is-soaring-as-investors-panic-about-coronavirus/18924349/"
+    },
+    {
+      "timestamp": "2020-02-02T21:30:00",
+      "source": "abc.net.au",
+      "headline": "Interest rate cuts could be on the way as the economy takes a hit from the coronavirus outbreak - ABC News ( Australian Broadcasting Corporation )",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.abc.net.au/news/2020-02-03/interest-rates-coronavirus-pandemic-economy-contraction/11922348"
+    },
+    {
+      "timestamp": "2020-02-02T01:30:00",
+      "source": "newsradio1440.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsradio1440.com/news/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T02:15:00",
+      "source": "wjr.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.wjr.com/news/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T02:15:00",
+      "source": "kvor.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.kvor.com/news/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T02:00:00",
+      "source": "klif.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.klif.com/news/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T00:45:00",
+      "source": "wmac-am.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.wmac-am.com/news/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T00:45:00",
+      "source": "wbap.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.wbap.com/news/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T02:30:00",
+      "source": "wfnc640am.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.wfnc640am.com/news/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T02:30:00",
+      "source": "kplr11.com",
+      "headline": "Bitcoin is soaring as investors panic about coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://kplr11.com/2020/02/01/bitcoin-is-soaring-as-investors-panic-about-coronavirus/"
+    },
+    {
+      "timestamp": "2020-02-02T02:45:00",
+      "source": "edaily.co.kr",
+      "headline": "[ 주간 증시전망 ] 우한 폐렴 공포 절정 달할까 … 바닥 확인  기대",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01269366625666584&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2020-02-02T17:45:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Surges Amid Coronavirus Outbreak ; Can Blockchain Save Social Media ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2020/02/02/bitcoin-surges-amid-coronavirus-outbreak-can-blockchain-save-social-media"
+    },
+    {
+      "timestamp": "2020-02-02T15:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Surges Amid Coronavirus Outbreak ; Can Blockchain Save Social Media ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2020/02/02/bitcoin-surges-amid-coronavirus-outbreak-can-blockchain-save-social-media/"
+    },
+    {
+      "timestamp": "2020-02-02T04:45:00",
+      "source": "nbcnews.com",
+      "headline": "Fed makes no change to interest rate , is monitoring economic impact of coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/business/economy/fed-makes-no-change-interest-rate-first-meeting-2020-n1125671?cid=public-rss_20200202"
+    }
+  ]
+}

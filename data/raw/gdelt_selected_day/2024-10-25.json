@@ -1,0 +1,187 @@
+{
+  "date": "2024-10-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 10,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-25T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-25T02:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-25T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-25T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-25T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-25T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-25T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-25T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Price Dynamics : Analyzing The Effect of Trump Political Agenda On Crypto Markets",
+    "The Herald - Breaking news .",
+    "Bitcoin Weekly Forecast : New all - time high at $78 , 900 looks feasible",
+    "Protecting Ted Cruz Senate seat is a  top priority  Crypto PAC",
+    "SOL , XRP ETF filings are  call option on Trump win : Bloomberg analyst"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-25T08:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price Dynamics : Analyzing The Effect of Trump Political Agenda On Crypto Markets",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/bitcoin-price-dynamics-analyzing-the-effect-of-trumps-political-agenda-on-crypto-markets/"
+    },
+    {
+      "timestamp": "2024-10-25T01:45:00",
+      "source": "herald.co.zw",
+      "headline": "The Herald - Breaking news .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.herald.co.zw/bitcoin-cools-as-trump-trades-present-hurdles-for-crypto/"
+    },
+    {
+      "timestamp": "2024-10-25T17:30:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin Weekly Forecast : New all - time high at $78 , 900 looks feasible",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-weekly-forecast-new-all-time-high-at-78-900-looks-feasible-202410251017"
+    },
+    {
+      "timestamp": "2024-10-25T23:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Protecting Ted Cruz Senate seat is a  top priority  Crypto PAC",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/texas-ted-cruz-senate-priority-crypto-pac"
+    },
+    {
+      "timestamp": "2024-10-25T23:30:00",
+      "source": "cointelegraph.com",
+      "headline": "SOL , XRP ETF filings are  call option on Trump win : Bloomberg analyst",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/sol-xrp-etf-filings-call-options-trump-win"
+    },
+    {
+      "timestamp": "2024-10-25T19:30:00",
+      "source": "oann.com",
+      "headline": "The Washington Post Wont Endorse Presidential Candidate For First Time In 36 Years , NY Post Endorses Trump – One America News Network",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.oann.com/newsroom/the-washington-post-wont-endorse-presidential-candidate-for-first-time-in-36-years-ny-post-endorses-trump/"
+    },
+    {
+      "timestamp": "2024-10-25T17:00:00",
+      "source": "yahoo.com",
+      "headline": "Donald Trump to hold Milwaukee rally at Fiserv Forum , site of the RNC , days before election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/donald-trump-hold-milwaukee-rally-162816215.html"
+    },
+    {
+      "timestamp": "2024-10-25T19:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto future at stake : How the 2024 US election could shape the industry",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/crypto-future-2024-us-election-impact-industry"
+    },
+    {
+      "timestamp": "2024-10-25T02:30:00",
+      "source": "hindustantimes.com",
+      "headline": "Bruce Springsteen , at Harris rally , warns of  American tyrant  Trump",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.hindustantimes.com/world-news/us-news/bruce-springsteen-at-harris-rally-warns-of-american-tyrant-trump-101729816898370.html"
+    },
+    {
+      "timestamp": "2024-10-25T02:30:00",
+      "source": "surinametimes.com",
+      "headline": "Bitcoin investors eye rally if Trump beats Harris in US election | Times of Suriname – grootste landelijk dagblad van Suriname",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.surinametimes.com/bitcoin-investors-eye-rally-if-trump-beats-harris-in-us-election/"
+    },
+    {
+      "timestamp": "2024-10-25T22:30:00",
+      "source": "fox6now.com",
+      "headline": "Kamala Harris Madison visit scheduled for Oct . 30",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fox6now.com/news/kamala-harris-madison-visit-103024"
+    },
+    {
+      "timestamp": "2024-10-25T03:15:00",
+      "source": "dunyanews.tv",
+      "headline": "Harris showcases Springsteen in star - studded swing state stop",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dunyanews.tv/en/World/846270-harris-showcases-springsteen-in-starstudded-swing-state-stop"
+    },
+    {
+      "timestamp": "2024-10-25T03:00:00",
+      "source": "takungpao.com",
+      "headline": "﻿公评世界 | 哈里斯与美国选民的对话为什么无法赢得掌声 _ 大公网",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.takungpao.com/opinion/233123/2024/1025/1024474.html"
+    },
+    {
+      "timestamp": "2024-10-25T22:45:00",
+      "source": "baltimoresun.com",
+      "headline": "Maryland Andy Harris said North Carolina should consider awarding electoral votes to Trump before election – Baltimore Sun",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.baltimoresun.com/2024/10/25/marylands-andy-harris-said-north-carolina-should-consider-awarding-electoral-votes-to-trump-before-election/"
+    },
+    {
+      "timestamp": "2024-10-25T02:45:00",
+      "source": "dailymail.co.uk",
+      "headline": "Kamala Harris turns to Beyoncé and Obama as Trump sees a surge in momentum and a lead in national polls",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-13999905/Kamala-Harris-turns-Beyonc-Obama-Trump-sees-surge-momentum-lead-national-polls.html"
+    }
+  ]
+}

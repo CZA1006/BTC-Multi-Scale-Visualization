@@ -1,0 +1,192 @@
+{
+  "date": "2022-04-28",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-28T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-28T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-28T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-28T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-28T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-28T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-28T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-28T23:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-29T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "How Western Sanctions on Russia Could Make Crypto an International Reserve Currency",
+    "Russia steps up assault on east Ukraine ; Putin threatens countries that intervene",
+    "Russia steps up assault on east Ukraine ; Putin threatens countries that intervene",
+    "Russia steps up assault on east Ukraine ; Putin threatens countries that intervene",
+    "Biden Seeks Aid , Power to Seize Russian Wealth"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-28T19:15:00",
+      "source": "news.yahoo.com",
+      "headline": "How Western Sanctions on Russia Could Make Crypto an International Reserve Currency",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/western-sanctions-russia-could-crypto-183105835.html"
+    },
+    {
+      "timestamp": "2022-04-28T14:45:00",
+      "source": "inforum.com",
+      "headline": "Russia steps up assault on east Ukraine ; Putin threatens countries that intervene",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/russia-steps-up-assault-on-east-ukraine-putin-threatens-countries-that-intervene"
+    },
+    {
+      "timestamp": "2022-04-28T15:00:00",
+      "source": "grandforksherald.com",
+      "headline": "Russia steps up assault on east Ukraine ; Putin threatens countries that intervene",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/russia-steps-up-assault-on-east-ukraine-putin-threatens-countries-that-intervene"
+    },
+    {
+      "timestamp": "2022-04-28T15:15:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Russia steps up assault on east Ukraine ; Putin threatens countries that intervene",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/russia-steps-up-assault-on-east-ukraine-putin-threatens-countries-that-intervene"
+    },
+    {
+      "timestamp": "2022-04-28T16:00:00",
+      "source": "msn.com",
+      "headline": "Biden Seeks Aid , Power to Seize Russian Wealth",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-za/news/other/biden-seeks-aid-power-to-seize-russian-wealth/ar-AAWHvsH"
+    },
+    {
+      "timestamp": "2022-04-28T18:15:00",
+      "source": "dailymaverick.co.za",
+      "headline": "Biden Seeks Aid , Power to Seize Russian Wealth",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailymaverick.co.za/article/2022-04-28-biden-seeks-aid-power-to-seize-russian-wealth/"
+    },
+    {
+      "timestamp": "2022-04-28T13:45:00",
+      "source": "postbulletin.com",
+      "headline": "Russia steps up assault on east Ukraine ; Putin threatens countries that intervene",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/russia-steps-up-assault-on-east-ukraine-putin-threatens-countries-that-intervene"
+    },
+    {
+      "timestamp": "2022-04-29T00:00:00",
+      "source": "tulsaworld.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tulsaworld.com/business/article_0f028dc1-a013-59ff-8bc1-f15e95059dcf.html"
+    },
+    {
+      "timestamp": "2022-04-29T00:00:00",
+      "source": "missoulian.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://missoulian.com/business/live-updates-russia-ukraine-war/article_b6dcfd7d-9548-558e-a3e0-2455a45a7a5a.html"
+    },
+    {
+      "timestamp": "2022-04-28T05:30:00",
+      "source": "jamaicaobserver.com",
+      "headline": "EU defies gas  blackmail  as Russia pushes deeper into Ukraine – Jamaica Observer",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/news/eu-defies-gas-blackmail-as-russia-pushes-deeper-into-ukraine/"
+    },
+    {
+      "timestamp": "2022-04-28T13:45:00",
+      "source": "cbsnews.com",
+      "headline": "Watch Live : Biden to ask Congress for new Ukraine aid package to ramp up pressure on Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/live-updates/biden-ukraine-congress-aid-russia-watch-live-stream-today-2022-04-28/"
+    },
+    {
+      "timestamp": "2022-04-28T23:15:00",
+      "source": "stltoday.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/lifestyles/health-med-fit/live-updates-russia-ukraine-war/article_ed423901-75de-5554-b87b-d393881ca215.html"
+    },
+    {
+      "timestamp": "2022-04-28T23:30:00",
+      "source": "omaha.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/lifestyles/health-med-fit/live-updates-russia-ukraine-war/article_dc7c9c61-a4c6-549a-ab2e-1bc9f22995a0.html"
+    },
+    {
+      "timestamp": "2022-04-28T23:45:00",
+      "source": "journalnow.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://journalnow.com/lifestyles/health-med-fit/live-updates-russia-ukraine-war/article_1f56a079-3fd3-526e-a81d-04421984cfa3.html"
+    },
+    {
+      "timestamp": "2022-04-28T23:30:00",
+      "source": "madison.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/lifestyles/health-med-fit/live-updates-russia-ukraine-war/article_dcd71727-5f6e-53eb-baf6-1d667d1f2f0f.html"
+    }
+  ]
+}

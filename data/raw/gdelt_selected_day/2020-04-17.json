@@ -1,0 +1,202 @@
+{
+  "date": "2020-04-17",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 6,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 1,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-17T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T22:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-17T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Stocks Print TD9 Sell Signal , Correlated Bitcoin Could Plunge in Tandem",
+    "Bitcoin Halving Searches on Google Hits All - Time Highs",
+    "Bitcoin Options Trading Hits One - Month High as Price Turns Bullish",
+    "Crypto markets flatten as global fears ease somewhat",
+    "This Time Might Be Different"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-17T22:30:00",
+      "source": "newsbtc.com",
+      "headline": "Stocks Print TD9 Sell Signal , Correlated Bitcoin Could Plunge in Tandem",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/17/stock-market-prints-td9-sell-signal-correlated-bitcoin-could-plunge-in-tandem/"
+    },
+    {
+      "timestamp": "2020-04-17T19:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Halving Searches on Google Hits All - Time Highs",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-halving-searches-on-google-hits-all-time-highs"
+    },
+    {
+      "timestamp": "2020-04-17T15:00:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Options Trading Hits One - Month High as Price Turns Bullish",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-options-trading-hits-one-month-high-as-price-turns-bullish"
+    },
+    {
+      "timestamp": "2020-04-17T22:15:00",
+      "source": "fxstreet.com",
+      "headline": "Crypto markets flatten as global fears ease somewhat",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/crypto-markets-flatten-as-global-fears-ease-somewhat-202004171851"
+    },
+    {
+      "timestamp": "2020-04-17T18:45:00",
+      "source": "zerohedge.com",
+      "headline": "This Time Might Be Different",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/markets/time-might-be-different"
+    },
+    {
+      "timestamp": "2020-04-17T22:15:00",
+      "source": "investmentwatchblog.com",
+      "headline": "This Time Might Be Different – Investment Watch",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.investmentwatchblog.com/this-time-might-be-different/"
+    },
+    {
+      "timestamp": "2020-04-17T15:45:00",
+      "source": "econotimes.com",
+      "headline": "Digital Currency Revolution Series : Is Concept of Crypto Playing Its Role of Safe - Haven Amid Economic Crisis Owing To Pandemic Covid - 19 ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Digital-Currency-Revolution-Series-Is-Concept-of-Crypto-Playing-Its-Role-of-Safe-Haven-Amid-Economic-Crisis-Owing-To-Pandemic-Covid-19-1580193"
+    },
+    {
+      "timestamp": "2020-04-17T06:15:00",
+      "source": "fintechnews.ch",
+      "headline": "Crypto Market Down Amid COVID - 19 Crisis : Crypto Valley Startups Impacted | Fintech Schweiz Digital Finance News",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://fintechnews.ch/blockchain_bitcoin/crypto-market-down-amid-covid-19-crisis-crypto-valley-startups-impacted/34493/"
+    },
+    {
+      "timestamp": "2020-04-17T22:00:00",
+      "source": "moneymorning.com",
+      "headline": "Markets Live Recap : Our Experts Break Down Gilead , Bitcoin , and the Fed",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://moneymorning.com/2020/04/17/markets-live-recap-our-experts-break-down-gilead-bitcoin-and-the-fed/"
+    },
+    {
+      "timestamp": "2020-04-17T17:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Recent Action Eerily Identical to $10 , 500 Top , Buyers Be Aware",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/17/bitcoin-recent-action-eerily-identical-to-10500-top/"
+    },
+    {
+      "timestamp": "2020-04-17T14:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Wyoming to Allow Domestic Insurance Companies Invest in Digital Assets",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/wyoming-companies-invest-digital/"
+    },
+    {
+      "timestamp": "2020-04-17T12:45:00",
+      "source": "news18.com",
+      "headline": "Crypto Exchanges in India Grow Even as FIIs Pull Over Rs 35 , 000 cr Out of Stock Markets",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.news18.com/news/tech/crypto-exchanges-in-india-grow-even-as-fiis-pull-over-rs-35000-cr-out-of-stock-markets-2581893.html"
+    },
+    {
+      "timestamp": "2020-04-17T07:30:00",
+      "source": "forbes.com",
+      "headline": "Crypto Market Surges Over $200 Billion As Bitcoin , Ethereum , Ripple XRP And Litecoin Soar Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/04/17/crypto-market-surges-over-200-billion-as-bitcoin-ethereum-ripples-xrp-and-litecoin-soar-heres-why/"
+    },
+    {
+      "timestamp": "2020-04-17T11:30:00",
+      "source": "investors.com",
+      "headline": "Coronavirus Stock Market Crash Survival Guide | Investor Business Daily",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.investors.com/research/coronavirus-stock-market-crash-survival-guide/"
+    },
+    {
+      "timestamp": "2020-04-17T23:45:00",
+      "source": "morningstar.com",
+      "headline": "The Stock Market Is Ignoring the Economy",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.morningstar.com/news/dow-jones/2020041711024/the-stock-market-is-ignoring-the-economy"
+    }
+  ]
+}

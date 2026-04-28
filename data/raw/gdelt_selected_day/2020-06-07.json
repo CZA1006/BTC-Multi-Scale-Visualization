@@ -1,0 +1,197 @@
+{
+  "date": "2020-06-07",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 6,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 4,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-07T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T20:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Why Nasdaq Setting A New All Time Could Be The Boost Bitcoin Needs",
+    "Bitcoin Will Appreciate Unless Something Goes  Really Wrong  Price Expected To Double",
+    "Crypto Trading in Russia Has Exploded These Past Few Months",
+    "Chinese Buyers Are Kickstarting A Generational Housing Market Rally , And Bitcoin May Be Next",
+    "[ 주간증시전망 ] 2200선 코앞 코스피 … 美 연준으로 시선이동"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-07T20:45:00",
+      "source": "newsbtc.com",
+      "headline": "Why Nasdaq Setting A New All Time Could Be The Boost Bitcoin Needs",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/07/nasdaq-setting-new-all-time-bitcoin/"
+    },
+    {
+      "timestamp": "2020-06-07T00:45:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Will Appreciate Unless Something Goes  Really Wrong  Price Expected To Double",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/06/06/bitcoin-will-appreciate-unless-something-goes-really-wrong-price-expected-to-double/"
+    },
+    {
+      "timestamp": "2020-06-07T17:30:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Crypto Trading in Russia Has Exploded These Past Few Months",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/crypto-trading-in-russia-has-exploded-lately/"
+    },
+    {
+      "timestamp": "2020-06-07T18:30:00",
+      "source": "forbes.com",
+      "headline": "Chinese Buyers Are Kickstarting A Generational Housing Market Rally , And Bitcoin May Be Next",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/youngjoseph/2020/06/07/chinese-buyers-are-kickstarting-a-generational-housing-market-rally-and-bitcoin-may-be-next/"
+    },
+    {
+      "timestamp": "2020-06-07T07:30:00",
+      "source": "edaily.co.kr",
+      "headline": "[ 주간증시전망 ] 2200선 코앞 코스피 … 美 연준으로 시선이동",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01279206625799424&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2020-06-07T08:45:00",
+      "source": "thenational.ae",
+      "headline": "Can investors trust the surprise market recovery ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.thenational.ae/business/money/can-investors-trust-the-surprise-market-recovery-1.1029959"
+    },
+    {
+      "timestamp": "2020-06-07T13:15:00",
+      "source": "sputniknews.com",
+      "headline": "Germany , France Ditch Differences Over Push to Rescue EU Economy From Pandemic - Triggered Recession",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://sputniknews.com/europe/202006071079546955-germany-france-ditch-differences-over-push-to-rescue-eu-economy-from-pandemic-triggered-recession/"
+    },
+    {
+      "timestamp": "2020-06-07T00:00:00",
+      "source": "yna.co.kr",
+      "headline": "<뉴욕증시 주간전망> 경제 바닥 통과 기대 강화 … FOMC 주목",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yna.co.kr/view/AKR20200607005300009"
+    },
+    {
+      "timestamp": "2020-06-07T20:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Is at the Apex of a Key Pattern the Breakout Will Decide BTC Trend",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/07/bitcoin-apex-pattern-breakout-trend/"
+    },
+    {
+      "timestamp": "2020-06-07T05:30:00",
+      "source": "naija247news.com",
+      "headline": "U . S Fed Chair Talks Leveraging an Ethereum - Based Libor Replacement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://naija247news.com/2020/06/07/u-s-fed-chair-talks-leveraging-an-ethereum-based-libor-replacement/"
+    },
+    {
+      "timestamp": "2020-06-07T12:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto Crime on the Rise Good Odds of 2020 Becoming a Record - Breaker",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/crypto-crime-on-the-rise-good-odds-of-2020-becoming-a-record-breaker"
+    },
+    {
+      "timestamp": "2020-06-07T20:45:00",
+      "source": "newsbtc.com",
+      "headline": "Scary  Fractal : It Only a Matter of Time Before Bitcoin Trades at $14 , 000 Again",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/07/scary-fractal-bitcoin-rally-14000/"
+    },
+    {
+      "timestamp": "2020-06-07T04:15:00",
+      "source": "malaymail.com",
+      "headline": "Bond investors look for Fed to justify steepening yield curve | Money",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.malaymail.com/news/money/2020/06/06/bond-investors-look-for-fed-to-justify-steepening-yield-curve/1873009"
+    },
+    {
+      "timestamp": "2020-06-07T12:30:00",
+      "source": "reuters.com",
+      "headline": "RPT - Wall St Week Ahead - Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/usa-stocks-weekahead/rpt-wall-st-week-ahead-bond-investors-look-for-fed-to-justify-steepening-yield-curve-idUSL1N2DI1SB"
+    },
+    {
+      "timestamp": "2020-06-07T12:30:00",
+      "source": "theedgemarkets.com",
+      "headline": "Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.theedgemarkets.com/article/bond-investors-look-fed-justify-steepening-yield-curve"
+    }
+  ]
+}

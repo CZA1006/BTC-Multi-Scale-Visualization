@@ -1,0 +1,197 @@
+{
+  "date": "2022-04-19",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-19T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-19T18:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russian Central Banker Nabiullina Gets Hit With Sanctions",
+    "Russian Central Banker Nabiullina Gets Hit With Sanctions",
+    "Deadly Missile Strikes Hit Ukraine Lviv",
+    "Live Update | Zelenskyy : Troops inflict  deliberate terror",
+    "Ukraine latest : Kyiv says Russia focusing on Donetsk , Luhansk regions - Nikkei Asia"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-19T18:15:00",
+      "source": "msn.com",
+      "headline": "Russian Central Banker Nabiullina Gets Hit With Sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/money/other/russian%20central%20banker%20nabiullina%20gets%20hit%20with%20sanctions/ar-AAWnnUw"
+    },
+    {
+      "timestamp": "2022-04-19T18:30:00",
+      "source": "msn.com",
+      "headline": "Russian Central Banker Nabiullina Gets Hit With Sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/money/other/russian-central-banker-nabiullina-hit-with-sanctions/ar-AAWnnUw"
+    },
+    {
+      "timestamp": "2022-04-19T03:00:00",
+      "source": "english.chosun.com",
+      "headline": "Deadly Missile Strikes Hit Ukraine Lviv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.chosun.com/site/data/html_dir/2022/04/19/2022041900613.html"
+    },
+    {
+      "timestamp": "2022-04-19T18:45:00",
+      "source": "ca.news.yahoo.com",
+      "headline": "Live Update | Zelenskyy : Troops inflict  deliberate terror",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://ca.news.yahoo.com/live-updates-bulgaria-bans-russian-075226952.html"
+    },
+    {
+      "timestamp": "2022-04-19T09:15:00",
+      "source": "asia.nikkei.com",
+      "headline": "Ukraine latest : Kyiv says Russia focusing on Donetsk , Luhansk regions - Nikkei Asia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://asia.nikkei.com/Politics/Ukraine-war/Ukraine-war-Free-to-read/Ukraine-latest-Kyiv-says-Russia-focusing-on-Donetsk-Luhansk-regions"
+    },
+    {
+      "timestamp": "2022-04-19T14:15:00",
+      "source": "dw.com",
+      "headline": "Ukraine says Russia is launching attacks in Donetsk , Luhansk as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-says-russia-is-launching-attacks-in-donetsk-luhansk-as-it-happened/a-61501627"
+    },
+    {
+      "timestamp": "2022-04-19T11:30:00",
+      "source": "arkansasonline.com",
+      "headline": "Russian officials split on economy",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2022/apr/19/russian-officials-split-on-economy/"
+    },
+    {
+      "timestamp": "2022-04-19T14:30:00",
+      "source": "econotimes.com",
+      "headline": "Russia - Ukraine conflict : Volodymyr Zelenskyy says Moscow launched offensive for eastern Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Russia-Ukraine-conflict-Volodymyr-Zelenskyy-says-Moscow-launched-offensive-for-eastern-Ukraine-1631684"
+    },
+    {
+      "timestamp": "2022-04-19T01:00:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine news : Russians fight in streets of Ukrainian town",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/russians-fight-in-streets-of-ukrainian-town-1.5865222"
+    },
+    {
+      "timestamp": "2022-04-19T07:15:00",
+      "source": "cincinnati.com",
+      "headline": "Ukraine live updates : Russia begins offensive in eastern Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cincinnati.com/story/news/politics/2022/04/18/ukraine-russia-invasion-live-updates/7352111001/"
+    },
+    {
+      "timestamp": "2022-04-19T09:00:00",
+      "source": "moneyweb.co.za",
+      "headline": "Ukraine update : Russia assault in Donbas , EU mulls postwar costs",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.moneyweb.co.za/news/international/ukraine-update-russia-assault-in-donbas-eu-mulls-postwar-costs/"
+    },
+    {
+      "timestamp": "2022-04-19T08:45:00",
+      "source": "madison.com",
+      "headline": "Live Updates | Russians fight in streets of Ukrainian town",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/news/national/live-updates-6-dead-11-wounded-in-russian-strikes-on-lviv/article_b129bc94-d1d5-508b-a19b-7d9bbbf62b24.html"
+    },
+    {
+      "timestamp": "2022-04-19T00:30:00",
+      "source": "tucson.com",
+      "headline": "Live Updates | Russians fight in streets of Ukrainian town",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tucson.com/news/national/live-updates-russians-fight-in-streets-of-ukrainian-town/article_1111bd58-ef8c-59e9-9301-0290a083d52c.html"
+    },
+    {
+      "timestamp": "2022-04-19T02:15:00",
+      "source": "gazette.com",
+      "headline": "Live Updates | Russians fight in streets of Ukrainian town",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://gazette.com/ap/politics/live-updates-russians-fight-in-streets-of-ukrainian-town/article_841aac16-1f04-5c3b-8953-eb192ca7e20f.html"
+    },
+    {
+      "timestamp": "2022-04-19T01:30:00",
+      "source": "lancasteronline.com",
+      "headline": "Live Updates | Russians fight in streets of Ukrainian town",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://lancasteronline.com/business/stock_market/live-updates-russians-fight-in-streets-of-ukrainian-town/article_c77a1e41-70ee-5753-95cc-6ecf321574b4.html"
+    }
+  ]
+}

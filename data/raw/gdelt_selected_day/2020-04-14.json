@@ -1,0 +1,217 @@
+{
+  "date": "2020-04-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-14T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-14T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Stuck Below $7K Even as Gold Surges to 7 - Year High",
+    "Is This When To Buy Bitcoin ?",
+    "It a Critical Time for Bitcoin Traders as Global Markets Are Volatile",
+    "First Mover : Bitcoin Market Goes Into  Backwardation  Despite Fed Trillions",
+    "The Bitcoin Price Has Outperformed All Other Major Asset Classes Over The Past Year"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-14T12:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Stuck Below $7K Even as Gold Surges to 7 - Year High",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-stuck-below-7k-even-as-gold-surges-to-7-year-high"
+    },
+    {
+      "timestamp": "2020-04-14T07:15:00",
+      "source": "forbes.com",
+      "headline": "Is This When To Buy Bitcoin ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/04/14/is-this-when-to-buy-bitcoin/"
+    },
+    {
+      "timestamp": "2020-04-14T19:15:00",
+      "source": "newsbtc.com",
+      "headline": "It a Critical Time for Bitcoin Traders as Global Markets Are Volatile",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/14/its-critical-time-bitcoin-traders-as-global-markets-are-volatile/"
+    },
+    {
+      "timestamp": "2020-04-14T15:45:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Bitcoin Market Goes Into  Backwardation  Despite Fed Trillions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-bitcoin-market-goes-into-backwardation-despite-feds-trillions"
+    },
+    {
+      "timestamp": "2020-04-14T03:30:00",
+      "source": "forbes.com",
+      "headline": "The Bitcoin Price Has Outperformed All Other Major Asset Classes Over The Past Year",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/ktorpey/2020/04/13/the-bitcoin-price-has-outperformed-all-other-major-asset-classes-over-the-past-year/"
+    },
+    {
+      "timestamp": "2020-04-14T19:15:00",
+      "source": "newsbtc.com",
+      "headline": "Last Time Bitcoin Broke This Level , It Soared 40 %. Were Testing It Again",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/14/last-time-bitcoin-broke-this-level-it-soared-40-were-testing-it-again/"
+    },
+    {
+      "timestamp": "2020-04-14T01:00:00",
+      "source": "news1.kr",
+      "headline": "골드만삭스  뉴욕증시 , 정책 부양에 추가 하락 없다",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.news1.kr/articles/?3906121"
+    },
+    {
+      "timestamp": "2020-04-14T11:00:00",
+      "source": "cnnturk.com",
+      "headline": "Kripto para borsası güvenli mi ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.cnnturk.com/teknoloji/kripto-para-borsasi-guvenli-mi"
+    },
+    {
+      "timestamp": "2020-04-14T04:45:00",
+      "source": "paymentssource.com",
+      "headline": "How coronavirus can ease pressure on crypto payments",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.paymentssource.com/news/how-coronavirus-can-ease-pressure-on-crypto-payments"
+    },
+    {
+      "timestamp": "2020-04-14T09:15:00",
+      "source": "financialexpress.com",
+      "headline": "Gold price surges 18 % this year , may rise even more to hit new highs as investors rush to safe havens",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.financialexpress.com/market/cafeinvest/gold-price-surges-18-this-year-may-rise-even-more-to-hit-new-highs-as-investors-rush-to-safe-havens/1927937/"
+    },
+    {
+      "timestamp": "2020-04-14T14:15:00",
+      "source": "newsbtc.com",
+      "headline": "The 42 % Growth of This Crypto Market Cap Shows More Upside Is Imminent : Analysis",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/14/the-42-growth-of-this-cryptos-market-cap-shows-more-upside-is-imminent-analysis/"
+    },
+    {
+      "timestamp": "2020-04-14T18:30:00",
+      "source": "accountingtoday.com",
+      "headline": "Breaking down the proposed cryptodollar",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.accountingtoday.com/opinion/breaking-down-the-proposed-cryptodollar"
+    },
+    {
+      "timestamp": "2020-04-14T00:30:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - JP모건  미국 증시 , 연준 슈퍼 돈풀기로 내년 상반기 사상 최고치로 반등",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200414000037"
+    },
+    {
+      "timestamp": "2020-04-14T06:45:00",
+      "source": "koreatimes.co.kr",
+      "headline": "Macro - market discrepancy growing amid COVID - 19",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.koreatimes.co.kr/www/biz/2020/04/175_287874.html"
+    },
+    {
+      "timestamp": "2020-04-14T17:45:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Bitcoin at inflection point , with technicals signaling weakness",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/bitcoin-at-inflection-point-with-technicals-signaling-weakness-1.1421287"
+    }
+  ]
+}

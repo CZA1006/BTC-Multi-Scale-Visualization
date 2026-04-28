@@ -1,0 +1,192 @@
+{
+  "date": "2022-05-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-23T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T12:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-23T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russian Ruble Strongest It Been In Years , Mere Months After Biden Imposes Sanctions",
+    "Live updates | Zelenskyy : Recent attack on Desna killed 87",
+    "Ukraine updates : Joe Biden and Kamala Harris on Russia banned list",
+    "Russian sentenced to life in Ukraine 1st war crimes trial :: WRAL . com",
+    "Russian sentenced to life in Ukraine 1st war crimes trial"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-23T22:45:00",
+      "source": "dailycaller.com",
+      "headline": "Russian Ruble Strongest It Been In Years , Mere Months After Biden Imposes Sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://dailycaller.com/2022/05/23/russian-ruble-strongest-years-months-biden-sanctions/"
+    },
+    {
+      "timestamp": "2022-05-23T23:45:00",
+      "source": "news-gazette.com",
+      "headline": "Live updates | Zelenskyy : Recent attack on Desna killed 87",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.news-gazette.com/news/nation-world/live-updates-zelenskyy-recent-attack-on-desna-killed-87/article_458fcc71-c12d-501c-ab74-fb8a085c7e06.html"
+    },
+    {
+      "timestamp": "2022-05-23T18:45:00",
+      "source": "dispatch.com",
+      "headline": "Ukraine updates : Joe Biden and Kamala Harris on Russia banned list",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dispatch.com/story/news/politics/2022/05/22/ukraine-russia-invasion-live-updates/9878332002/"
+    },
+    {
+      "timestamp": "2022-05-23T12:15:00",
+      "source": "wral.com",
+      "headline": "Russian sentenced to life in Ukraine 1st war crimes trial :: WRAL . com",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wral.com/russian-offensive-turns-to-key-donbas-city-heavy-shelling/20295464/"
+    },
+    {
+      "timestamp": "2022-05-23T13:15:00",
+      "source": "dailyherald.com",
+      "headline": "Russian sentenced to life in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailyherald.com/news/20220523/russian-sentenced-to-life-in-ukraines-1st-war-crimes-trial"
+    },
+    {
+      "timestamp": "2022-05-23T13:30:00",
+      "source": "news-gazette.com",
+      "headline": "Russian sentenced to life in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.news-gazette.com/news/nation-world/russian-sentenced-to-life-in-ukraines-1st-war-crimes-trial/article_292fea35-f0d2-565e-ab0a-1e75f4d10d77.html"
+    },
+    {
+      "timestamp": "2022-05-23T12:30:00",
+      "source": "wdrb.com",
+      "headline": "Russian sentenced to life in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wdrb.com/news/national/russian-sentenced-to-life-in-ukraines-1st-war-crimes-trial/article_e3441bc2-058e-5539-ab56-56c824c41fb1.html"
+    },
+    {
+      "timestamp": "2022-05-23T11:45:00",
+      "source": "voanews.com",
+      "headline": "Biden : Russia Must Pay a Price for Ukraine Invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/biden-russia-must-pay-a-price-for-ukraine-invasion/6585239.html"
+    },
+    {
+      "timestamp": "2022-05-23T17:15:00",
+      "source": "fox4news.com",
+      "headline": "Russian soldier sentenced to life in prison in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox4news.com/news/russian-soldier-vadim-shishimarin-sentenced-life-prison-ukraines-war-crimes-trial"
+    },
+    {
+      "timestamp": "2022-05-23T12:45:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine : Russian sentenced to life in war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/russian-sentenced-to-life-in-ukraine-s-1st-war-crimes-trial-1.5914934"
+    },
+    {
+      "timestamp": "2022-05-23T12:00:00",
+      "source": "smdailyjournal.com",
+      "headline": "Russian sentenced to life in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.smdailyjournal.com/business/russian-sentenced-to-life-in-ukraines-1st-war-crimes-trial/article_1ca6a626-98fe-53d7-85ca-c29f19592568.html"
+    },
+    {
+      "timestamp": "2022-05-23T16:00:00",
+      "source": "fox10phoenix.com",
+      "headline": "Russian soldier sentenced to life in prison in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox10phoenix.com/news/russian-soldier-vadim-shishimarin-sentenced-life-prison-ukraines-war-crimes-trial"
+    },
+    {
+      "timestamp": "2022-05-23T14:00:00",
+      "source": "fox29.com",
+      "headline": "Russian soldier sentenced to life in prison in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox29.com/news/russian-soldier-vadim-shishimarin-sentenced-life-prison-ukraines-war-crimes-trial"
+    },
+    {
+      "timestamp": "2022-05-23T22:45:00",
+      "source": "channel3000.com",
+      "headline": "Live updates | Zelenskyy : Russia aims for maximum casualties",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.channel3000.com/i/live-updates-zelenskyy-russia-aims-for-maximum-casualties/"
+    },
+    {
+      "timestamp": "2022-05-23T16:00:00",
+      "source": "fox6now.com",
+      "headline": "Russian soldier sentenced to life in prison in Ukraine 1st war crimes trial",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox6now.com/news/russian-soldier-vadim-shishimarin-sentenced-life-prison-ukraines-war-crimes-trial"
+    }
+  ]
+}

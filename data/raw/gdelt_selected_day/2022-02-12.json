@@ -1,0 +1,187 @@
+{
+  "date": "2022-02-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-12T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T17:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T18:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T20:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Canada shutters embassy in Ukraine , relocates diplomatic staff amid fears of war | iNFOnews",
+    "The Geopolitical Impact Of Cryptocurrency",
+    "Biden and Putin to speak as US warns Russia could attack Ukraine  any day",
+    "Байден і Путін провели телефонну розмову - портал новин LB . ua",
+    "US , Russian Diplomats to Discuss Mounting Crisis in Ukraine"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-12T23:30:00",
+      "source": "infotel.ca",
+      "headline": "Canada shutters embassy in Ukraine , relocates diplomatic staff amid fears of war | iNFOnews",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://infotel.ca/newsitem/cda-ukraine/cp507244157"
+    },
+    {
+      "timestamp": "2022-02-12T20:45:00",
+      "source": "oilprice.com",
+      "headline": "The Geopolitical Impact Of Cryptocurrency",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://oilprice.com/Geopolitics/International/The-Geopolitical-Impact-Of-Cryptocurrency.html"
+    },
+    {
+      "timestamp": "2022-02-12T10:00:00",
+      "source": "timesofisrael.com",
+      "headline": "Biden and Putin to speak as US warns Russia could attack Ukraine  any day",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.timesofisrael.com/biden-and-putin-to-speak-as-us-warns-russia-could-attack-ukraine-any-day/"
+    },
+    {
+      "timestamp": "2022-02-12T19:30:00",
+      "source": "lb.ua",
+      "headline": "Байден і Путін провели телефонну розмову - портал новин LB . ua",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://lb.ua/world/2022/02/12/505427_bayden_i_putin_obgovorili_situatsiyu.html"
+    },
+    {
+      "timestamp": "2022-02-12T09:45:00",
+      "source": "voanews.com",
+      "headline": "US , Russian Diplomats to Discuss Mounting Crisis in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/us-russian-diplomats-to-discuss-mounting-crisis-in-ukraine/6438903.html"
+    },
+    {
+      "timestamp": "2022-02-12T22:30:00",
+      "source": "ndtv.com",
+      "headline": "Joe Biden Warns Vladimir Putin Of Swift And Severe Costs If Ukraine Attacked",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ndtv.com/world-news/joe-biden-warns-vladimir-putin-of-swift-and-severe-costs-if-ukraine-attacked-2765455"
+    },
+    {
+      "timestamp": "2022-02-12T18:15:00",
+      "source": "thetelegraphandargus.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thetelegraphandargus.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T18:00:00",
+      "source": "theargus.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theargus.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T20:15:00",
+      "source": "echo-news.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.echo-news.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T17:45:00",
+      "source": "lancashiretelegraph.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.lancashiretelegraph.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T18:45:00",
+      "source": "yorkpress.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.yorkpress.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T20:30:00",
+      "source": "theboltonnews.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theboltonnews.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T17:45:00",
+      "source": "thenorthernecho.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thenorthernecho.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T17:45:00",
+      "source": "swindonadvertiser.co.uk",
+      "headline": "Putin and Biden hold high - stakes phone call over Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.swindonadvertiser.co.uk/news/national/19920306.putin-biden-hold-high-stakes-phone-call-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-12T20:45:00",
+      "source": "voanews.com",
+      "headline": "Biden Warns Putin Again of  Severe Cost as They Discuss Ukraine Crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/biden-warns-putin-again-of-severe-costs-as-they-discuss-ukraine-crisis/6439260.html"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "date": "2024-10-19",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-19T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-19T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-19T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-19T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-19T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-19T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-19T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-19T23:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-20T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Global broker Octa explains the reasons for lower US dollar after the U . S . presidential debate",
+    "Harris targets Trump age after report of exhaustion",
+    "Fox News Politics : Crunch time for Harris - WFIN Local News",
+    "Crypto events turn to regulation and politics as US election looms",
+    "Harris , Trump court early voters , Lizzo revs up Detroit"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-19T23:45:00",
+      "source": "manilatimes.net",
+      "headline": "Global broker Octa explains the reasons for lower US dollar after the U . S . presidential debate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.manilatimes.net/2024/10/20/tmt-newswire/media-outreach-newswire/global-broker-octa-explains-the-reasons-for-lower-us-dollar-after-the-us-presidential-debate/1987722"
+    },
+    {
+      "timestamp": "2024-10-19T08:00:00",
+      "source": "standardmedia.co.ke",
+      "headline": "Harris targets Trump age after report of exhaustion",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.standardmedia.co.ke/america/article/2001504908/harris-targets-trumps-age-after-report-of-exhaustion"
+    },
+    {
+      "timestamp": "2024-10-19T04:45:00",
+      "source": "wfin.com",
+      "headline": "Fox News Politics : Crunch time for Harris - WFIN Local News",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wfin.com/fox-political-news/fox-news-politics-crunch-time-for-harris/"
+    },
+    {
+      "timestamp": "2024-10-19T02:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto events turn to regulation and politics as US election looms",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/crypto-conferences-swell-permissionless-regulation-election"
+    },
+    {
+      "timestamp": "2024-10-19T23:45:00",
+      "source": "juneesoutherncross.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.juneesoutherncross.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/?cs=6409"
+    },
+    {
+      "timestamp": "2024-10-19T23:45:00",
+      "source": "merimbulanewsweekly.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.merimbulanewsweekly.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/?cs=14264"
+    },
+    {
+      "timestamp": "2024-10-19T23:45:00",
+      "source": "edenmagnet.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.edenmagnet.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/?cs=14264"
+    },
+    {
+      "timestamp": "2024-10-19T23:45:00",
+      "source": "juneesoutherncross.com.au",
+      "headline": "Harris , Trump court early voters , Lizzo revs up Detroit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.juneesoutherncross.com.au/story/8796568/harris-trump-court-early-voters-lizzo-revs-up-detroit/?cs=6417"
+    },
+    {
+      "timestamp": "2024-10-19T04:45:00",
+      "source": "mtdemocrat.com",
+      "headline": "Harris targets Trump age after report of exhaustion",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mtdemocrat.com/news/national/harris-targets-trumps-age-after-report-of-exhaustion/article_fc3d8f6f-8cb2-57a1-a67d-e21b61cf2bb3.html"
+    },
+    {
+      "timestamp": "2024-10-19T05:15:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Bitcoin resumes push towards US$70 , 000 after setting fresh high",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/bitcoin-resumes-push-towards-us70000-after-setting-fresh-high"
+    },
+    {
+      "timestamp": "2024-10-19T05:00:00",
+      "source": "10news.com",
+      "headline": "Candidates trade barbs in critical Michigan appearances",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.10news.com/politics/path-to-the-white-house/candidates-trade-barbs-in-critical-michigan-appearances"
+    },
+    {
+      "timestamp": "2024-10-19T07:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "What to know about the potential $30 million whale moving betting markets toward Trump",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/5-things-know-mystery-30-172117294.html"
+    },
+    {
+      "timestamp": "2024-10-19T03:00:00",
+      "source": "livemint.com",
+      "headline": "US Presidential polls 2024 : Will Donald Trump be next US President ? Here what betting markets predict",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.livemint.com/news/us-news/us-presidential-polls-2024-donald-trump-betting-dynamics-market-prediction-kamala-harris-polymarket-swing-states-11729300733035.html"
+    },
+    {
+      "timestamp": "2024-10-20T00:00:00",
+      "source": "newsweek.com",
+      "headline": "Michael Cohen Predicts Swing State That Will Be  Called Early",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/michael-cohen-donald-trump-lose-election-swing-states-1971730"
+    },
+    {
+      "timestamp": "2024-10-19T01:00:00",
+      "source": "rnz.co.nz",
+      "headline": "US election : Harris targets Trump age after report of exhaustion",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.rnz.co.nz/news/us-election-2024/531267/us-election-harris-targets-trump-s-age-after-report-of-exhaustion"
+    }
+  ]
+}

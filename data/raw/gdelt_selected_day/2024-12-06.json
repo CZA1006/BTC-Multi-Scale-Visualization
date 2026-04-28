@@ -1,0 +1,197 @@
+{
+  "date": "2024-12-06",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-06T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-06T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin zooms past $100 , 000 on Trump bump",
+    "Who is David Sacks , Trump crypto and AI chief ?",
+    "Tim Walz  Surprised  He and Kamala Harris Lost Election",
+    "Trump announces more administration picks",
+    "Trump announces more administration picks"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-06T02:45:00",
+      "source": "financialexpress.com",
+      "headline": "Bitcoin zooms past $100 , 000 on Trump bump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.financialexpress.com/business/digital-transformation-bitcoin-zooms-past-100000-on-trump-bump-3685397/"
+    },
+    {
+      "timestamp": "2024-12-06T22:45:00",
+      "source": "yahoo.com",
+      "headline": "Who is David Sacks , Trump crypto and AI chief ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/david-sacks-trump-crypto-ai-204245467.html"
+    },
+    {
+      "timestamp": "2024-12-06T16:00:00",
+      "source": "newsweek.com",
+      "headline": "Tim Walz  Surprised  He and Kamala Harris Lost Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/tim-walz-election-loss-surprise-1996672"
+    },
+    {
+      "timestamp": "2024-12-06T13:45:00",
+      "source": "kmbc.com",
+      "headline": "Trump announces more administration picks",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kmbc.com/article/trump-administration-grows/63114181"
+    },
+    {
+      "timestamp": "2024-12-06T12:00:00",
+      "source": "nbc-2.com",
+      "headline": "Trump announces more administration picks",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbc-2.com/article/trump-administration-grows/63114181"
+    },
+    {
+      "timestamp": "2024-12-06T12:00:00",
+      "source": "wgal.com",
+      "headline": "Trump announces more administration picks",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wgal.com/article/trump-administration-grows/63114181"
+    },
+    {
+      "timestamp": "2024-12-06T12:00:00",
+      "source": "wdsu.com",
+      "headline": "Trump announces more administration picks",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wdsu.com/article/trump-administration-grows/63114181"
+    },
+    {
+      "timestamp": "2024-12-06T22:15:00",
+      "source": "theguardian.com",
+      "headline": "Tim Walz  surprised  that he and Kamala Harris lost election to Donald Trump | Tim Walz",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theguardian.com/us-news/2024/dec/06/walz-harris-election-loss-interview"
+    },
+    {
+      "timestamp": "2024-12-06T04:45:00",
+      "source": "gjsentinel.com",
+      "headline": "Trump appoints  czar  of AI and crypto policy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.gjsentinel.com/news/national/trump-appoints-czar-of-ai-and-crypto-policy/article_89658184-71ba-53c2-86f3-a44f45361ad5.html"
+    },
+    {
+      "timestamp": "2024-12-06T02:15:00",
+      "source": "redstate.com",
+      "headline": "NEW : Trump Announces  White House AI and Crypto Czar",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://redstate.com/smoosieq/2024/12/05/new-trump-announces-white-house-ai-and-crypto-czar-n2182866"
+    },
+    {
+      "timestamp": "2024-12-06T08:15:00",
+      "source": "borneobulletin.com.bn",
+      "headline": "Trump appoints  czar  of AI and crypto policy | Borneo Bulletin Online",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://borneobulletin.com.bn/trump-appoints-czar-of-ai-and-crypto-policy/"
+    },
+    {
+      "timestamp": "2024-12-06T11:15:00",
+      "source": "proactiveinvestors.com",
+      "headline": "Bitcoin ends brief fling with $100 , 000 as Trump announces crypto  czar",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.proactiveinvestors.com/companies/news/1062272/bitcoin-ends-brief-fling-with-100-000-as-trump-announces-crypto-czar-1062272.html"
+    },
+    {
+      "timestamp": "2024-12-06T05:15:00",
+      "source": "rte.ie",
+      "headline": "Trump appoints  czar  of AI and crypto policy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.rte.ie/news/us/2024/1206/1484993-trump-cabinet/"
+    },
+    {
+      "timestamp": "2024-12-06T18:45:00",
+      "source": "techspot.com",
+      "headline": "Donald Trump names David Sacks  White House AI and crypto czar",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.techspot.com/news/105862-donald-trump-announces-david-sacks-white-house-ai.html"
+    },
+    {
+      "timestamp": "2024-12-06T13:45:00",
+      "source": "investopedia.com",
+      "headline": "Dow Jones Today : Stock Futures Flat as Investors Await Release of Monthly Jobs Report",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.investopedia.com/dow-jones-today-12062024-8757257"
+    }
+  ]
+}

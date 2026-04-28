@@ -1,0 +1,182 @@
+{
+  "date": "2022-03-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-27T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-27T10:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-27T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-27T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-27T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-27T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-27T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin And Crypto Now Braced For A $10 Trillion Earthquake As Ethereum , BNB , XRP , Solana And Cardano Soar",
+    "Crypto Confronts the War in Ukraine",
+    "Crypto Confronts the War in Ukraine",
+    "With Russia War On The Brain , Could Congress Levy A Kill Shot To DeFi ?",
+    "Live updates : Blinken : US not seeking Russian regime change"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-27T12:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin And Crypto Now Braced For A $10 Trillion Earthquake As Ethereum , BNB , XRP , Solana And Cardano Soar",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2022/03/27/bitcoin-and-crypto-now-braced-for-a-10-trillion-earthquake-as-ethereum-bnb-xrp-solana-and-cardano-soar/"
+    },
+    {
+      "timestamp": "2022-03-27T13:00:00",
+      "source": "msn.com",
+      "headline": "Crypto Confronts the War in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/crypto-confronts-the-war-in-ukraine/ar-AAVxQ1s"
+    },
+    {
+      "timestamp": "2022-03-27T16:30:00",
+      "source": "nymag.com",
+      "headline": "Crypto Confronts the War in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://nymag.com/intelligencer/2022/03/crypto-ukraine-russia-war.html"
+    },
+    {
+      "timestamp": "2022-03-27T14:30:00",
+      "source": "forbes.com",
+      "headline": "With Russia War On The Brain , Could Congress Levy A Kill Shot To DeFi ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/kenrapoza/2022/03/27/with-russia-war-on-the-brain-could-congress-levy-a-kill-shot-to-defi/"
+    },
+    {
+      "timestamp": "2022-03-27T13:15:00",
+      "source": "stltoday.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/news/national/live-updates-blinken-us-not-seeking-russian-regime-change/article_4d708d6b-63e6-5a56-927e-761d168cc935.html"
+    },
+    {
+      "timestamp": "2022-03-27T12:15:00",
+      "source": "omaha.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/lifestyles/technology/live-updates-kharkiv-nuclear-facility-again-hit-by-shelling/article_8d0e776c-94b7-5230-ae69-e099dcd9c92f.html"
+    },
+    {
+      "timestamp": "2022-03-27T10:15:00",
+      "source": "omaha.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/national/live-updates-blinken-us-not-seeking-russian-regime-change/article_8d0e776c-94b7-5230-ae69-e099dcd9c92f.html"
+    },
+    {
+      "timestamp": "2022-03-27T11:00:00",
+      "source": "omaha.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change | National News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/national/live-updates-blinken-us-not-seeking-russian-regime-change/article_8d0e776c-94b7-5230-ae69-e099dcd9c92f.amp.html"
+    },
+    {
+      "timestamp": "2022-03-27T14:45:00",
+      "source": "buffalonews.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://buffalonews.com/news/national/live-updates-blinken-us-not-seeking-russian-regime-change/article_67756033-1383-5f0f-9910-97321320f083.html"
+    },
+    {
+      "timestamp": "2022-03-27T10:00:00",
+      "source": "madison.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/news/national/live-updates-blinken-us-not-seeking-russian-regime-change/article_c21eccf5-7870-55d9-ad18-1135eb14d920.html"
+    },
+    {
+      "timestamp": "2022-03-27T11:45:00",
+      "source": "nwitimes.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nwitimes.com/lifestyles/technology/live-updates-kharkiv-nuclear-facility-again-hit-by-shelling/article_12defbfa-9a47-5973-a157-eb5884d61af3.html"
+    },
+    {
+      "timestamp": "2022-03-27T09:30:00",
+      "source": "wfmz.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wfmz.com/news/ap/ap-business/live-updates-imf-chief-warns-of-unrest-caused-by-crisis/article_e1f09581-c5a6-564d-87de-78df41ac0724.html"
+    },
+    {
+      "timestamp": "2022-03-27T10:45:00",
+      "source": "tucson.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tucson.com/news/national/live-updates-blinken-us-not-seeking-russian-regime-change/article_8610e272-936a-5d2f-88e0-1da08d121050.html"
+    },
+    {
+      "timestamp": "2022-03-27T09:30:00",
+      "source": "kstp.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://kstp.com/associated-press/ap-regional/live-updates-blinken-us-not-seeking-russian-regime-change/"
+    },
+    {
+      "timestamp": "2022-03-27T09:30:00",
+      "source": "lancasteronline.com",
+      "headline": "Live updates : Blinken : US not seeking Russian regime change",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://lancasteronline.com/business/nation/live-updates-imf-chief-warns-of-unrest-caused-by-crisis/article_a607ac7d-17fd-57fa-9adb-c5c437a6dbf1.html"
+    }
+  ]
+}

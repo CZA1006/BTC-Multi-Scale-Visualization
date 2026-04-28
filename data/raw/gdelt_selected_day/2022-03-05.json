@@ -1,0 +1,192 @@
+{
+  "date": "2022-03-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-05T01:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-05T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-05T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-05T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-05T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-05T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-05T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-05T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "A Legendary Investor Just Issued A Stark Russia Warning Along With A  Bullish  Bitcoin Price Prediction",
+    "Russia - Ukraine War : What to know as Russians advance on Kyiv",
+    "Russia Invasion of Ukraine Puts Cryptocurrencies at the Heart of War",
+    "What the Ukraine War Means for Crypto Future",
+    "Notes from the CIO : Crypto and Ukraine"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-05T13:45:00",
+      "source": "forbes.com",
+      "headline": "A Legendary Investor Just Issued A Stark Russia Warning Along With A  Bullish  Bitcoin Price Prediction",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2022/03/05/a-legendary-investor-just-issued-a-stark-russia-warning-along-with-a-bullish-bitcoin-price-prediction/"
+    },
+    {
+      "timestamp": "2022-03-05T18:30:00",
+      "source": "apnews.com",
+      "headline": "Russia - Ukraine War : What to know as Russians advance on Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/article/russia-ukraine-war-what-to-know-1c7a5fc5e9cf84134592c855c363e791"
+    },
+    {
+      "timestamp": "2022-03-05T04:00:00",
+      "source": "vanityfair.com",
+      "headline": "Russia Invasion of Ukraine Puts Cryptocurrencies at the Heart of War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.vanityfair.com/news/2022/03/russias-invasion-of-ukraine-puts-cryptocurrencies-at-the-heart-of-war"
+    },
+    {
+      "timestamp": "2022-03-05T01:30:00",
+      "source": "etftrends.com",
+      "headline": "What the Ukraine War Means for Crypto Future",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/crypto-channel/what-the-ukraine-war-means-for-cryptos-future/"
+    },
+    {
+      "timestamp": "2022-03-05T01:30:00",
+      "source": "etftrends.com",
+      "headline": "Notes from the CIO : Crypto and Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/crypto-channel/notes-from-the-cio-crypto-and-ukraine/"
+    },
+    {
+      "timestamp": "2022-03-05T02:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Ukraine finds unlikely ally in efforts to bar Russian access to crypto : The Central Bank of Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/ukraine-finds-unlikely-ally-in-efforts-to-bar-russian-access-to-crypto-the-central-bank-of-russia"
+    },
+    {
+      "timestamp": "2022-03-05T04:00:00",
+      "source": "madison.com",
+      "headline": "Russia - Ukraine War : Russia steps up attack on Ukraine cities",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/news/article_648d56bd-ac48-5b39-92e7-31ec75547934.html"
+    },
+    {
+      "timestamp": "2022-03-05T11:00:00",
+      "source": "thenextweb.com",
+      "headline": "Crypto is helping both sides in the Ukraine war , but it wont save Russia from sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://thenextweb.com/news/crypto-helping-both-sides-in-war-wont-save-russia-from-sanctions"
+    },
+    {
+      "timestamp": "2022-03-05T13:00:00",
+      "source": "scroll.in",
+      "headline": "Cryptocurrencies are helping both Russia and Ukraine – but can Putin use them to bypass sanctions ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://scroll.in/article/1018732/cryptocurrencies-are-helping-both-russia-and-ukraine-but-can-putin-use-them-to-bypass-sanctions"
+    },
+    {
+      "timestamp": "2022-03-05T19:45:00",
+      "source": "thecable.ng",
+      "headline": "Sanctions imposed on Russia akin to declaration of war , says Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thecable.ng/sanctions-imposed-on-russia-akin-to-declaration-of-war-says-putin"
+    },
+    {
+      "timestamp": "2022-03-06T00:00:00",
+      "source": "health.wusf.usf.edu",
+      "headline": "Putin calls sanctions a declaration of war as Zelenskyy pleads for more aid",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://health.wusf.usf.edu/2022-03-05/putin-calls-sanctions-a-declaration-of-war-as-zelenskyy-pleads-for-more-aid"
+    },
+    {
+      "timestamp": "2022-03-05T13:45:00",
+      "source": "forbes.com",
+      "headline": "Crypto Interrupted : How The Russian Invasion Dramatically Changed Ukraine Blockchain Strategy To Focus On The War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/stevenehrlich/2022/03/05/crypto-interrupted-how-the-russian-invasion-dramatically-changed-ukraines-blockchain-strategy-to-focus-on-the-war/"
+    },
+    {
+      "timestamp": "2022-03-05T01:45:00",
+      "source": "marketwatch.com",
+      "headline": "Why War and Sanctions Are Good for Bitcoin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/articles/bitcoin-russia-ukraine-51646441835"
+    },
+    {
+      "timestamp": "2022-03-06T00:00:00",
+      "source": "michiganradio.org",
+      "headline": "Putin calls sanctions a declaration of war as Zelenskyy pleads for more aid",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.michiganradio.org/2022-03-05/putin-calls-sanctions-a-declaration-of-war-as-zelenskyy-pleads-for-more-aid"
+    },
+    {
+      "timestamp": "2022-03-05T22:15:00",
+      "source": "grandforksherald.com",
+      "headline": "Putin likens Western sanctions to war as Russian assault traps Ukrainian civilians",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/putin-likens-western-sanctions-to-war-as-russian-assault-traps-ukrainian-civilians"
+    }
+  ]
+}

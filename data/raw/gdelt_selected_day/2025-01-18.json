@@ -1,0 +1,207 @@
+{
+  "date": "2025-01-18",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-18T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T10:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-18T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "XRP Prices Surge Over 30 % After Leak of Trump America - First Strategic Reserve Plans and ETF Buzz",
+    "Bitcoin push pits SNB orthodoxy against Swiss crypto crowd",
+    "Coinbase CEO calls on countries to establish Bitcoin reserves",
+    "Gensler imminent exit triggers wave of crypto ETF submissions",
+    "Sorry , President Biden , You Would Not Have Beaten Trump"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-18T17:30:00",
+      "source": "ibtimes.co.uk",
+      "headline": "XRP Prices Surge Over 30 % After Leak of Trump America - First Strategic Reserve Plans and ETF Buzz",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.co.uk/xrp-prices-surge-over-30-after-leak-trumps-america-first-strategic-reserve-plans-etf-buzz-1730263"
+    },
+    {
+      "timestamp": "2025-01-18T08:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin push pits SNB orthodoxy against Swiss crypto crowd",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-push-pits-snbs-orthodoxy-against-swiss-crypto-crowd/articleshow/117350413.cms"
+    },
+    {
+      "timestamp": "2025-01-18T01:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Coinbase CEO calls on countries to establish Bitcoin reserves",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/coinbase-ceo-brian-armstrong-bitcoin-reserve"
+    },
+    {
+      "timestamp": "2025-01-18T11:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Gensler imminent exit triggers wave of crypto ETF submissions",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/gensler-imminent-exit-triggers-wave-of-crypto-etf-submissions"
+    },
+    {
+      "timestamp": "2025-01-18T13:15:00",
+      "source": "nymag.com",
+      "headline": "Sorry , President Biden , You Would Not Have Beaten Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nymag.com/intelligencer/article/sorry-president-biden-you-would-not-have-beaten-trump.html"
+    },
+    {
+      "timestamp": "2025-01-18T10:15:00",
+      "source": "arkansasonline.com",
+      "headline": "Pre - Trump cheer lifts Bitcoin price above $100 , 000 | The Arkansas Democrat - Gazette",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2025/jan/18/pre-trump-cheer-lifts-bitcoin-price-above-100000/"
+    },
+    {
+      "timestamp": "2025-01-18T05:00:00",
+      "source": "thehindu.com",
+      "headline": "Bitcoin soars past $100 , 000 ahead of possible early action on crypto by Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thehindu.com/sci-tech/technology/bitcoin-soars-past-100000-ahead-of-possible-early-action-on-crypto-by-trump/article69111568.ece"
+    },
+    {
+      "timestamp": "2025-01-18T16:00:00",
+      "source": "cointelegraph.com",
+      "headline": "How did Donald Trump deal with crypto during his first term ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/donald-trump-crypto-first-term-us-president"
+    },
+    {
+      "timestamp": "2025-01-18T07:15:00",
+      "source": "smdailyjournal.com",
+      "headline": "Bitcoin soars past $100 , 000 ahead of possible early action on crypto by Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.smdailyjournal.com/news/national/bitcoin-soars-past-100-000-ahead-of-possible-early-action-on-crypto-by-trump/article_52027476-d522-11ef-8715-6762272cb816.html"
+    },
+    {
+      "timestamp": "2025-01-18T23:00:00",
+      "source": "bankrate.com",
+      "headline": "Donald Trump Launches His Own $TRUMP Meme Coin",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bankrate.com/investing/donald-trump-meme-crypto-coin-launched/"
+    },
+    {
+      "timestamp": "2025-01-18T21:00:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Crypto firms celebrate Trump inauguration with star - studded party and millions in donations",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/policy/technology/3291751/crypto-firms-celebrate-trump-inauguration-with-star-studded-party-and-millions-in-donations/"
+    },
+    {
+      "timestamp": "2025-01-18T13:45:00",
+      "source": "cnn.com",
+      "headline": "Biden Leaves Office Nostalgic About Five - Decade Career , and Frustrated by How It Ended",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnn.com/2025/01/18/politics/president-joe-biden-legacy-kamala-harris/"
+    },
+    {
+      "timestamp": "2025-01-18T14:00:00",
+      "source": "edition.cnn.com",
+      "headline": "Biden leaves office nostalgic about five - decade career , and frustrated by how it ended",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://edition.cnn.com/2025/01/18/politics/president-joe-biden-legacy-kamala-harris/"
+    },
+    {
+      "timestamp": "2025-01-18T10:00:00",
+      "source": "foxnews.com",
+      "headline": "Highlights from President - elect Donald Trump first Inauguration Day ; what to expect from Monday",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/highlights-from-president-elect-donald-trumps-first-inauguration-day-what-expect-from-monday"
+    },
+    {
+      "timestamp": "2025-01-18T10:00:00",
+      "source": "foxnews.com",
+      "headline": "As Biden wraps up half - century political career , his failure to turn page on Trump weighs on president",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/biden-wraps-up-half-century-political-career-failure-turn-page-trump-weighs-on-president"
+    }
+  ]
+}

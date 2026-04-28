@@ -1,0 +1,187 @@
+{
+  "date": "2020-05-11",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 12,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-11T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-11T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-11T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-11T08:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-11T11:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-11T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-11T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-11T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Halving : Is Now When To Buy Bitcoin ?",
+    "Bitcoin can offer greater economic stability than the Federal Reserve",
+    "Bitcoin Dominance Is Making Investors Rich , Thanks to Crypto Hedge Funds",
+    "Final Wave in Current Bitcoin Rising Wedge Could Target $11 , 000",
+    "Ripple Reclaims Downtrend Resistance As Support With Bullish XRP Weekly Close"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-11T08:00:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Halving : Is Now When To Buy Bitcoin ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/05/11/bitcoin-halving-is-now-when-to-buy-bitcoin/"
+    },
+    {
+      "timestamp": "2020-05-11T22:30:00",
+      "source": "tennessean.com",
+      "headline": "Bitcoin can offer greater economic stability than the Federal Reserve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.tennessean.com/story/opinion/2020/05/11/bitcoin-can-offer-greater-economic-stability-than-federal-reserve/5179832002/"
+    },
+    {
+      "timestamp": "2020-05-11T01:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Dominance Is Making Investors Rich , Thanks to Crypto Hedge Funds",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-dominance-is-making-investors-rich-thanks-to-crypto-hedge-funds"
+    },
+    {
+      "timestamp": "2020-05-11T21:00:00",
+      "source": "newsbtc.com",
+      "headline": "Final Wave in Current Bitcoin Rising Wedge Could Target $11 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/11/final-wave-in-current-bitcoin-rising-wedge-could-target-11000/"
+    },
+    {
+      "timestamp": "2020-05-11T21:00:00",
+      "source": "newsbtc.com",
+      "headline": "Ripple Reclaims Downtrend Resistance As Support With Bullish XRP Weekly Close",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/11/ripple-reclaims-downtrend-resistance-as-support-with-bullish-xrp-weekly-close/"
+    },
+    {
+      "timestamp": "2020-05-11T11:15:00",
+      "source": "newsbtc.com",
+      "headline": "Nasdaq Fractal Shows Bitcoin En Route for Multi - Year Bull Market",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/11/nasdaq-fractal-shows-bitcoin-en-route-for-multi-year-bull-market/"
+    },
+    {
+      "timestamp": "2020-05-11T01:45:00",
+      "source": "whatech.com",
+      "headline": "BTC News Review : $10 , 000 Bitcoin , Libra appoints first CEO , Coinbase outage",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.whatech.com/cryptocurrency/news/651283-btc-news-review-10-000-bitcoin-libra-appoints-first-ceo-coinbase-outage"
+    },
+    {
+      "timestamp": "2020-05-11T16:15:00",
+      "source": "business.financialpost.com",
+      "headline": "Bitcoin had a rough weekend as price slumped back below $10 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://business.financialpost.com/technology/blockchain/bitcoin-has-rough-weekend-as-price-slumps-back-below-10000"
+    },
+    {
+      "timestamp": "2020-05-11T03:00:00",
+      "source": "cfi.net.cn",
+      "headline": "曾在1987年股市崩盘中一战成名的传奇亿万富翁 ： 这一资产将是对冲通胀的最佳工具 - CFi . CN 中财网",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.cfi.net.cn/p20200511000084.html"
+    },
+    {
+      "timestamp": "2020-05-11T16:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Post - Halving Crash Theory Has One Serious Flaw",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/11/bitcoin-post-halving-crash-theory-has-one-serious-flaw/"
+    },
+    {
+      "timestamp": "2020-05-11T11:15:00",
+      "source": "newsbtc.com",
+      "headline": "Market Study : There a 77 % Chance Bitcoin Trades At $10 , 000 This Week",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/11/market-study-theres-a-77-chance-bitcoin-trades-at-10000-this-week/"
+    },
+    {
+      "timestamp": "2020-05-11T16:15:00",
+      "source": "investorplace.com",
+      "headline": "Dont Buy Into the Bitcoin Halvening Hype",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://investorplace.com/2020/05/dont-buy-into-the-bitcoin-halvening-hype/"
+    },
+    {
+      "timestamp": "2020-05-11T08:15:00",
+      "source": "aachener-nachrichten.de",
+      "headline": "Kryptowährung : Bitcoin - Kurs stürzt ab",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.aachener-nachrichten.de/digital/bitcoin-kurs-stuerzt-ab_aid-50480769"
+    },
+    {
+      "timestamp": "2020-05-11T07:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Has Rough Weekend as Price Slumps Back Below $10 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-rough-weekend-price-slumps-003340284.html"
+    },
+    {
+      "timestamp": "2020-05-11T11:15:00",
+      "source": "japantimes.co.jp",
+      "headline": "Dollar rises above ¥107 . 10 in Tokyo , taking cue from uptick in global equities",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2020/05/11/business/financial-markets/dollar-rises-%C2%A5107-10-tokyo-taking-cue-uptick-global-equities/"
+    }
+  ]
+}

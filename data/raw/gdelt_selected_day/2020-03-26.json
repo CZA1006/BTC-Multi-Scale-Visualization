@@ -1,0 +1,202 @@
+{
+  "date": "2020-03-26",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 3,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-26T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T19:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Binance CEO Makes  Modest  $2 Trillion Bitcoin Forecast",
+    "CNBC Africa Cryptotrader , Ran Neuner , Launches $10M Fund",
+    "Covid - 19 Pandemic Affecting Bitcoin :: The Market Oracle ::",
+    "All Eyes On $8 , 000 : Why Bitcoin Needs to Clear This Crucial Level",
+    "Bitcoin in Rangebound Trading as Equity Markets Fail to See Stimulus Boost"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-26T09:45:00",
+      "source": "forbes.com",
+      "headline": "Binance CEO Makes  Modest  $2 Trillion Bitcoin Forecast",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/03/26/binance-ceo-makes-modest-2-trillion-bitcoin-forecast/"
+    },
+    {
+      "timestamp": "2020-03-26T08:15:00",
+      "source": "forbes.com",
+      "headline": "CNBC Africa Cryptotrader , Ran Neuner , Launches $10M Fund",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/lukefitzpatrick/2020/03/26/cnbc-africa-cryptotrader-ran-neuner-launches-10m-fund/"
+    },
+    {
+      "timestamp": "2020-03-26T22:45:00",
+      "source": "marketoracle.co.uk",
+      "headline": "Covid - 19 Pandemic Affecting Bitcoin :: The Market Oracle ::",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.marketoracle.co.uk/Article66834.html"
+    },
+    {
+      "timestamp": "2020-03-26T05:15:00",
+      "source": "newsbtc.com",
+      "headline": "All Eyes On $8 , 000 : Why Bitcoin Needs to Clear This Crucial Level",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/26/all-eyes-on-8000-why-bitcoin-needs-to-clear-this-crucial-level/"
+    },
+    {
+      "timestamp": "2020-03-26T15:00:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin in Rangebound Trading as Equity Markets Fail to See Stimulus Boost",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-in-rangebound-trading-as-equity-markets-fail-to-see-stimulus-boost"
+    },
+    {
+      "timestamp": "2020-03-26T19:30:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Mike Novogratz : Bitcoin Needs to  Rally This Year",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/mike-novogratz-bitcoin-needs-to-rally-this-year/"
+    },
+    {
+      "timestamp": "2020-03-26T01:00:00",
+      "source": "nypost.com",
+      "headline": "Washington corona economic crisis Rx moving in right direction",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://nypost.com/2020/03/25/its-a-mess-but-washingtons-corona-economic-crisis-rx-moving-in-right-direction/"
+    },
+    {
+      "timestamp": "2020-03-26T00:00:00",
+      "source": "thedailyworld.com",
+      "headline": "Commentary : The stock market crashed five times before coronavirus . Those disasters can show us how to face this one",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.thedailyworld.com/opinion/commentary-the-stock-market-crashed-five-times-before-coronavirus-those-disasters-can-show-us-how-to-face-this-one/"
+    },
+    {
+      "timestamp": "2020-03-26T19:30:00",
+      "source": "coindesk.com",
+      "headline": "Gold - Backed Stablecoins Race to Keep Up With Crisis - Driven Demand",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/gold-backed-stablecoins-race-to-keep-up-with-crisis-driven-demand"
+    },
+    {
+      "timestamp": "2020-03-26T12:15:00",
+      "source": "dailyrepublic.com",
+      "headline": "Commentary : Market crashes can show how to face this one",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dailyrepublic.com/all-dr-news/opinion/state-national-columnists/commentary-market-crashes-can-show-how-to-face-this-one/"
+    },
+    {
+      "timestamp": "2020-03-26T12:15:00",
+      "source": "chron.com",
+      "headline": "Fed chair Powell says will provide nearly unlimited lending",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.chron.com/neighborhood/news/us/article/Fed-chair-Powell-says-will-provide-nearly-15158214.php"
+    },
+    {
+      "timestamp": "2020-03-26T12:15:00",
+      "source": "sfgate.com",
+      "headline": "Fed chair Powell says will provide nearly unlimited lending",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.sfgate.com/news/us/article/Fed-chair-Powell-says-will-provide-nearly-15158214.php"
+    },
+    {
+      "timestamp": "2020-03-26T16:45:00",
+      "source": "edaily.co.kr",
+      "headline": "美실업대란 직전 등장한 파월 … 실탄 동날 일 없다",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01262806625707584&mediaCodeNo=257&gtrack=sok"
+    },
+    {
+      "timestamp": "2020-03-26T13:45:00",
+      "source": "foxbusiness.com",
+      "headline": "Does coronavirus mean negative Treasury yields are here to stay ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.foxbusiness.com/markets/negative-yields-here-to-stay-in-us"
+    },
+    {
+      "timestamp": "2020-03-26T19:30:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Is a Safe Haven for a Worse Storm Than This",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-is-a-safe-haven-for-a-worse-storm-than-this"
+    }
+  ]
+}

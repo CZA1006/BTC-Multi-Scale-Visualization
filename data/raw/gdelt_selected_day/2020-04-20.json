@@ -1,0 +1,202 @@
+{
+  "date": "2020-04-20",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 10,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 3,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-20T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-20T22:00:00",
+      "news_count": 4,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "This One Chart Confirms Crypto Bottomed During March  Black Thursday  Crash",
+    "Some U . S . Citizens Look to Be Splashing Their Stimulus Cash on Cryptocurrency",
+    "Bitcoin Correction Fears , Libra U - Turn , Maker Sued : Hodler Digest , April 13 – 19",
+    "Bitcoin Price Dives to $6 , 800 , Leaving $40 Million in Longs Liquidated",
+    "Bitcoin Price Dragged Below $7 , 000 By Return to Market Chaos"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-20T02:30:00",
+      "source": "newsbtc.com",
+      "headline": "This One Chart Confirms Crypto Bottomed During March  Black Thursday  Crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/20/this-one-chart-confirms-crypto-bottomed-during-marchs-black-thursday-crash/"
+    },
+    {
+      "timestamp": "2020-04-20T21:45:00",
+      "source": "article.wn.com",
+      "headline": "Some U . S . Citizens Look to Be Splashing Their Stimulus Cash on Cryptocurrency",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://article.wn.com/view/2020/04/20/Some_US_Citizens_Look_to_Be_Splashing_Their_Stimulus_Cash_on_o/"
+    },
+    {
+      "timestamp": "2020-04-20T01:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin Correction Fears , Libra U - Turn , Maker Sued : Hodler Digest , April 13 – 19",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-correction-fears-libra-u-turn-maker-sued-hodlers-digest-april-1319"
+    },
+    {
+      "timestamp": "2020-04-20T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price Dives to $6 , 800 , Leaving $40 Million in Longs Liquidated",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/20/bitcoin-price-dives-to-6800-leaving-40-million-in-longs-liquidated/"
+    },
+    {
+      "timestamp": "2020-04-20T17:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price Dragged Below $7 , 000 By Return to Market Chaos",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/20/bitcoin-price-dragged-below-7000-by-return-to-market-chaos/"
+    },
+    {
+      "timestamp": "2020-04-20T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "This Is Bitcoin Fifth Green Week in a Row . Analysts Think It Unlikely the Last",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/20/this-is-bitcoins-fifth-green-week-in-a-row-analysts-think-its-unlikely-the-last/"
+    },
+    {
+      "timestamp": "2020-04-20T10:45:00",
+      "source": "coindesk.com",
+      "headline": "Some U . S . Citizens Look to Be Splashing Their Stimulus Cash on Cryptocurrency",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/some-u-s-citizens-look-to-be-splashing-their-stimulus-cash-on-cryptocurrency"
+    },
+    {
+      "timestamp": "2020-04-20T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "What Ive Learned Learned From Trading Bitcoin , Stocks , and Gold",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/20/what-ive-learned-learned-from-trading-bitcoin-stocks-and-gold-side-by-side/"
+    },
+    {
+      "timestamp": "2020-04-20T08:00:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin Price Prediction : BTC / USD lift - off to $9 , 000 in the Q2 of 2020 imminent – Confluence Detector",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-prediction-btc-usd-lift-off-to-9-000-in-the-q2-of-2020-imminent-confluence-detector-202004200741"
+    },
+    {
+      "timestamp": "2020-04-20T13:00:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Volatility at 3 - Month Low as Market Awaits Big Price Move",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-volatility-at-3-month-low-as-market-awaits-big-price-move"
+    },
+    {
+      "timestamp": "2020-04-20T22:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Below $7 , 000 , Clear Regulations Related to BTC Price Volatility",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-below-7000-regulations-volatility/"
+    },
+    {
+      "timestamp": "2020-04-20T10:15:00",
+      "source": "forexcrunch.com",
+      "headline": "Bitcoin Price Prediction : BTC / USD lift - off to $9 , 000 in the Q2 of 2020 imminent – Confluence Detector",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/bitcoin-price-prediction-btc-usd-lift-off-to-9000-in-the-q2-of-2020-imminent-confluence-detector/"
+    },
+    {
+      "timestamp": "2020-04-20T22:00:00",
+      "source": "blacklistednews.com",
+      "headline": "Rather Than Being Drained , the Swamp Is Draining the U . S . Treasury Via the New York Fed",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.blacklistednews.com/article/76825/rather-than-being-drained-the-swamp-is-draining-the-us-treasury-via-the-new-york.html"
+    },
+    {
+      "timestamp": "2020-04-20T11:45:00",
+      "source": "foxnews.com",
+      "headline": "Read the plan : Bipartisan group unveils proposal for reopening economy",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/read-the-plan-bipartisan-group-unveils-proposal-for-reopening-economy"
+    },
+    {
+      "timestamp": "2020-04-20T15:00:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Bitcoin Attracting More Buyers , Even With Market Stuck in  Extreme Fear",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-bitcoin-attracting-more-buyers-even-with-market-stuck-in-extreme-fear"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 0,
+  "theme_count_election": 8,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-12T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-12T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Hits $81K , Boosted by Election Wins and Pro - Crypto Momentum",
+    "Bitcoin surges to a new record high , topping $84 , 000",
+    "The rise of the tech bro - conomy : How Trump presidency could make world crypto bros BILLIONS with experts predicting Bitcoin to hit $100K next year as shares in Elon Musk Tesla soar",
+    "Marjorie Taylor Greene lays out her anti - trans plan now that the GOP will control everything",
+    "Bitcoin soars above US$82 , 000 as Trump win boosts crypto prospects"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-12T01:45:00",
+      "source": "econotimes.com",
+      "headline": "Bitcoin Hits $81K , Boosted by Election Wins and Pro - Crypto Momentum",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Bitcoin-Hits-81K-Boosted-by-Election-Wins-and-Pro-Crypto-Momentum-1693518"
+    },
+    {
+      "timestamp": "2024-11-12T02:30:00",
+      "source": "foxla.com",
+      "headline": "Bitcoin surges to a new record high , topping $84 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.foxla.com/news/bitcoin-surges-new-record-high-topping-84000"
+    },
+    {
+      "timestamp": "2024-11-12T12:30:00",
+      "source": "dailymail.co.uk",
+      "headline": "The rise of the tech bro - conomy : How Trump presidency could make world crypto bros BILLIONS with experts predicting Bitcoin to hit $100K next year as shares in Elon Musk Tesla soar",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-14071781/The-rise-tech-bro-conomy-Trump-presidency-make-worlds-crypto.html"
+    },
+    {
+      "timestamp": "2024-11-12T17:30:00",
+      "source": "lgbtqnation.com",
+      "headline": "Marjorie Taylor Greene lays out her anti - trans plan now that the GOP will control everything",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.lgbtqnation.com/2024/11/marjorie-taylor-greene-lays-out-her-anti-trans-plan-now-that-the-gop-will-control-everything/"
+    },
+    {
+      "timestamp": "2024-11-12T04:30:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Bitcoin soars above US$82 , 000 as Trump win boosts crypto prospects",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/wealth/crypto-alternative-assets/bitcoin-soars-above-us82000-trump-win-boosts-crypto-prospects"
+    },
+    {
+      "timestamp": "2024-11-12T12:30:00",
+      "source": "ria.ru",
+      "headline": "Опра Уинфри отрицает , что штаб Харрис заплатил ей миллион долларов",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://ria.ru/20241112/kharris-1983302325.html"
+    },
+    {
+      "timestamp": "2024-11-12T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin pushes past $90K amid meteoric 24 - hour rally",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-price-rallies-hits-90k-peak-high"
+    },
+    {
+      "timestamp": "2024-11-12T10:30:00",
+      "source": "investing.com",
+      "headline": "7 Charts to Assess Who Benefited the Most From Trump Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.investing.com/analysis/7-charts-to-assess-who-benefited-the-most-from-trumps-election-200654040"
+    },
+    {
+      "timestamp": "2024-11-12T15:45:00",
+      "source": "qz.com",
+      "headline": "Bitcoin price nears $90 , 000 now with bigger market cap than silver",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://qz.com/bitcoin-rally-btc-crypto-market-cap-silver-gold-assets-1851695613"
+    },
+    {
+      "timestamp": "2024-11-12T03:30:00",
+      "source": "telegraph.co.uk",
+      "headline": "How to buy Bitcoin and should you invest in it ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.telegraph.co.uk/money/investing/how-to-buy-bitcoin-and-should-you-invest-in-it/"
+    },
+    {
+      "timestamp": "2024-11-12T11:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Arthur Hayes Sees USD Depreciation and Bitcoin Boom under Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/arthur-hayes-sees-usd-depreciation-donald-trump-bitcoin-boom/"
+    },
+    {
+      "timestamp": "2024-11-12T12:15:00",
+      "source": "jpost.com",
+      "headline": "Muslim dislike for Biden admin might have affected election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.jpost.com/international/article-828763"
+    },
+    {
+      "timestamp": "2024-11-12T02:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Dow Jones Industrial Average notches record high close",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/dow-jones-industrial-average-notches-record-high-close/articleshow/115197834.cms"
+    },
+    {
+      "timestamp": "2024-11-12T01:00:00",
+      "source": "straitstimes.com",
+      "headline": "Dow Jones Industrial Average notches record high close",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.straitstimes.com/business/companies-markets/dow-jones-industrial-average-notches-record-high-close"
+    },
+    {
+      "timestamp": "2024-11-12T19:45:00",
+      "source": "nypost.com",
+      "headline": "White House staff chant  MVP  for Kamala Harris on first visit since election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2024/11/12/us-news/white-house-staff-chant-mvp-for-kamala-harris-on-first-visit-since-election/"
+    }
+  ]
+}

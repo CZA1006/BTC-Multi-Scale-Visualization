@@ -1,0 +1,187 @@
+{
+  "date": "2024-10-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-02T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-02T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-02T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-02T06:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-02T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-02T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-02T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-03T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "JD Vance to campaign in Marne today",
+    "Who is winning the 2024 election right now ?",
+    "Who is winning the 2024 election right now ?",
+    "The Latest : VP candidates Vance and Walz meet in last scheduled debate for 2024 tickets",
+    "해리스 , 경제  여론조사서 트럼프 맹추격 - 미주 한국일보"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-02T11:00:00",
+      "source": "yahoo.com",
+      "headline": "JD Vance to campaign in Marne today",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/jd-vance-campaign-marne-today-083837341.html"
+    },
+    {
+      "timestamp": "2024-10-02T06:45:00",
+      "source": "yahoo.com",
+      "headline": "Who is winning the 2024 election right now ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/winning-2024-election-now-020144224.html"
+    },
+    {
+      "timestamp": "2024-10-02T05:30:00",
+      "source": "fox5ny.com",
+      "headline": "Who is winning the 2024 election right now ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fox5ny.com/news/harris-trump-polls-election-white-house"
+    },
+    {
+      "timestamp": "2024-10-02T06:45:00",
+      "source": "newsday.com",
+      "headline": "The Latest : VP candidates Vance and Walz meet in last scheduled debate for 2024 tickets",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsday.com/news/nation/election-2024-harris-trump-walz-vance-debate-w82510"
+    },
+    {
+      "timestamp": "2024-10-02T11:00:00",
+      "source": "koreatimes.com",
+      "headline": "해리스 , 경제  여론조사서 트럼프 맹추격 - 미주 한국일보",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.koreatimes.com/article/20241001/1532301"
+    },
+    {
+      "timestamp": "2024-10-02T12:30:00",
+      "source": "thehill.com",
+      "headline": "Tim Walz , JD Vance joust for votes with policy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/newsletters/4911203-morning-report-tim-walz-jd-vance-joust-for-votes-with-policy/"
+    },
+    {
+      "timestamp": "2024-10-03T00:00:00",
+      "source": "yahoo.com",
+      "headline": "Judge unseals filing in special counsel election case against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/judge-unseals-filing-special-counsels-233656120.html"
+    },
+    {
+      "timestamp": "2024-10-02T05:15:00",
+      "source": "independent.co.uk",
+      "headline": "It took nearly 90 minutes , but Tim Walz made clear exactly why Donald Trump chose JD Vance",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/vp-debate-reaction-walz-vance-results-b2622359.html"
+    },
+    {
+      "timestamp": "2024-10-02T03:15:00",
+      "source": "ndtv.com",
+      "headline": "US Veep Candidates Clash Over Abortion , Middle East In Debate Showdown",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ndtv.com/world-news/us-elections-2024-us-veep-candidates-take-on-middle-east-crisis-in-pre-election-debate-6696960"
+    },
+    {
+      "timestamp": "2024-10-03T00:00:00",
+      "source": "yahoo.com",
+      "headline": "JD Vance Defends His Alarming Debate Answer About The 2020 Election Results",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/jd-vance-defends-alarming-debate-232713016.html"
+    },
+    {
+      "timestamp": "2024-10-02T00:45:00",
+      "source": "yahoo.com",
+      "headline": "Trump Pulls Out of  60 Minute Election Interview",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-pulls-60-minutes-election-220000069.html"
+    },
+    {
+      "timestamp": "2024-10-02T00:45:00",
+      "source": "yahoo.com",
+      "headline": "CBS News says Trump is dropping out of  60 Minute interview after accepting invitation",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/cbs-news-says-trump-dropping-234939105.html"
+    },
+    {
+      "timestamp": "2024-10-02T06:45:00",
+      "source": "inform.kz",
+      "headline": "Как прошли дебаты кандидатов на пост вице - президента США",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.inform.kz/ru/kak-proshli-debati-kandidatov-na-post-vitse-prezidenta-ssha-ccf73b"
+    },
+    {
+      "timestamp": "2024-10-02T08:45:00",
+      "source": "naturalnews.com",
+      "headline": "POLL : Trump and Harris locked in DEAD HEAT as November approaches – NaturalNews . com",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.naturalnews.com/2024-10-01-poll-shows-trump-harris-locked-dead-heat.html"
+    },
+    {
+      "timestamp": "2024-10-02T03:15:00",
+      "source": "wgal.com",
+      "headline": "Campaign surrogates talk about what VP candidates debate goals",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wgal.com/article/campaign-surrogates-talk-about-what-vp-candidates-need-to-do-debate/62475979"
+    }
+  ]
+}

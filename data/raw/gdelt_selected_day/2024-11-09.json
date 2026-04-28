@@ -1,0 +1,207 @@
+{
+  "date": "2024-11-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 10,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-09T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-09T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-10T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Biden , Trump to meet at White House on Wednesday",
+    "Why are cryptocurrencies seeing a boost after Trump victory ?",
+    "What Is Donald Trump Victory Margin Over Kamala Harris In US Elections ? Result Of Arizona Will Decide",
+    "US election : Joe Biden to host Donald Trump at White House as Democrats start soul - searching",
+    "Harris says nation must accept election results while urging supporters to keep fighting"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-09T19:15:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Biden , Trump to meet at White House on Wednesday",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/us/biden-trump-to-meet-at-white-house-on-wednesday/articleshow/115121747.cms"
+    },
+    {
+      "timestamp": "2024-11-09T10:00:00",
+      "source": "thisismoney.co.uk",
+      "headline": "Why are cryptocurrencies seeing a boost after Trump victory ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thisismoney.co.uk/money/crypto/article-14055507/Why-cryptocurrencies-seeing-boost-Trumps-victory.html"
+    },
+    {
+      "timestamp": "2024-11-09T15:45:00",
+      "source": "news18.com",
+      "headline": "What Is Donald Trump Victory Margin Over Kamala Harris In US Elections ? Result Of Arizona Will Decide",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.news18.com/world/what-is-donald-trumps-victory-margin-over-kamala-harris-in-us-elections-result-of-arizona-will-9114975.html"
+    },
+    {
+      "timestamp": "2024-11-10T00:00:00",
+      "source": "watoday.com.au",
+      "headline": "US election : Joe Biden to host Donald Trump at White House as Democrats start soul - searching",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.watoday.com.au/world/north-america/joe-biden-to-host-donald-trump-at-the-white-house-as-democrats-start-soul-searching-20241110-p5kpbm.html"
+    },
+    {
+      "timestamp": "2024-11-09T14:00:00",
+      "source": "dunyanews.tv",
+      "headline": "Harris says nation must accept election results while urging supporters to keep fighting",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dunyanews.tv/en/World/849399-harris-says-nation-must-accept-election-results-while-urging-supporter"
+    },
+    {
+      "timestamp": "2024-11-09T12:45:00",
+      "source": "money.pl",
+      "headline": "Trump nie chciał słyszeć o bitcoinie . Nagle zmienił zdanie . I rynek wpadł w euforię",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.money.pl/gospodarka/trump-nie-chcial-slyszec-o-bitcoinie-nagle-zmienil-zdanie-i-rynek-wpadl-w-euforie-7090208375122688a.html"
+    },
+    {
+      "timestamp": "2024-11-09T01:30:00",
+      "source": "bbs.clutchfans.net",
+      "headline": "What went wrong for Kamala ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://bbs.clutchfans.net/threads/what-went-wrong-for-kamala.324540/page-17"
+    },
+    {
+      "timestamp": "2024-11-10T00:00:00",
+      "source": "canberratimes.com.au",
+      "headline": "Biden , Trump to meet in the White House Oval Office",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.canberratimes.com.au/story/8815438/biden-trump-to-meet-in-the-white-houses-oval-office/?cs=14329"
+    },
+    {
+      "timestamp": "2024-11-09T23:15:00",
+      "source": "radaronline.com",
+      "headline": "Joe Biden Team Allegedly Briefed Reporters Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://radaronline.com/p/joe-biden-democrats-election-briefing-reporters-kamala-harris-trump/"
+    },
+    {
+      "timestamp": "2024-11-09T23:15:00",
+      "source": "dailymail.co.uk",
+      "headline": "Will Trump burgeoning bromance with Elon Musk spark Bitcoin boom ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/money/crypto/article-14062767/Will-Trumps-burgeoning-bromance-Elon-Musk-spark-Bitcoin-boom.html"
+    },
+    {
+      "timestamp": "2024-11-09T01:00:00",
+      "source": "fool.com",
+      "headline": "Why Crytocurrency Stocks Were All the Rage This Week",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/11/08/why-crytocurrency-stocks-were-all-the-rage-this-we/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2024-11-09T16:00:00",
+      "source": "yahoo.com",
+      "headline": "The dreary future of the powerless and broken Democrats – and where they go next",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/inside-dreary-future-powerless-broken-150000633.html"
+    },
+    {
+      "timestamp": "2024-11-09T17:45:00",
+      "source": "telegraph.co.uk",
+      "headline": "Inside the dreary future of the powerless and broken Democrats – and where they go next",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.telegraph.co.uk/us/politics/2024/11/09/dreary-future-powerless-broken-democrats/"
+    },
+    {
+      "timestamp": "2024-11-09T20:00:00",
+      "source": "yahoo.com",
+      "headline": "Biden , Trump to meet Wednesday at Oval Office : White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/biden-trump-meet-wednesday-oval-165328614.html"
+    },
+    {
+      "timestamp": "2024-11-09T11:30:00",
+      "source": "fool.com",
+      "headline": "Should You Forget Bitcoin and Buy Ethereum Instead ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/11/09/should-you-forget-bitcoin-and-buy-ethereum-instead/?source=iedfolrf0000001"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "date": "2024-12-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 8,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-27T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-27T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "2024 review : News that made global headlines",
+    "Greater reckoning : Obama spot in the Democratic sun fading after Harris loss",
+    "Year in review : The Hollywood op - ed that stirred a  coup  and an election loss | News",
+    "Tesla CEO Elon Musk Issues U . S . Bankruptcy Warning Amid Calls For A Bitcoin - Inspired  Fix",
+    "There Only One Way Kamala Reported $20 Million Book Deal Wont Flop"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-27T02:45:00",
+      "source": "businesstimes.com.sg",
+      "headline": "2024 review : News that made global headlines",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/international/2024-review-news-made-global-headlines"
+    },
+    {
+      "timestamp": "2024-12-27T11:45:00",
+      "source": "yahoo.com",
+      "headline": "Greater reckoning : Obama spot in the Democratic sun fading after Harris loss",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/greater-reckoning-obamas-spot-democratic-090019676.html"
+    },
+    {
+      "timestamp": "2024-12-27T09:30:00",
+      "source": "gazette.com",
+      "headline": "Year in review : The Hollywood op - ed that stirred a  coup  and an election loss | News",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gazette.com/news/wex/year-in-review-the-hollywood-op-ed-that-stirred-a-coup-and-an-election-loss/article_afdb2fba-cc04-55d1-93b0-4b5a628bb13e.html"
+    },
+    {
+      "timestamp": "2024-12-27T14:45:00",
+      "source": "forbes.com",
+      "headline": "Tesla CEO Elon Musk Issues U . S . Bankruptcy Warning Amid Calls For A Bitcoin - Inspired  Fix",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/12/27/tesla-ceo-elon-musk-issues-us-bankruptcy-warning-amid-calls-for-a-bitcoin-inspired-fix/"
+    },
+    {
+      "timestamp": "2024-12-27T20:30:00",
+      "source": "dailycaller.com",
+      "headline": "There Only One Way Kamala Reported $20 Million Book Deal Wont Flop",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://dailycaller.com/2024/12/27/theres-only-one-way-kamalas-reported-20-million-book-deal-wont-flop/"
+    },
+    {
+      "timestamp": "2024-12-27T14:15:00",
+      "source": "shorouknews.com",
+      "headline": "عودة ترامب وسقوط بشار الأسد .. تغيرات في الخريطة السياسية العالمية خلال 2024",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.shorouknews.com/news/view.aspx?cdate=27122024&id=f3e9f185-3b43-461f-aae1-9d865c8b1bb2"
+    },
+    {
+      "timestamp": "2024-12-27T07:30:00",
+      "source": "firstpost.com",
+      "headline": "Did Sriram Krishnan , Trump AI advisor donate to Kamala Harri campaign ? What the truth ? – Firstpost",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.firstpost.com/explainers/trump-ai-advisor-sriram-krishnan-laura-loomer-kamala-harris-campaign-13847878.html"
+    },
+    {
+      "timestamp": "2024-12-27T14:00:00",
+      "source": "wfin.com",
+      "headline": "Greater reckoning : Obama spot in the Democratic sun fading after Harris loss",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wfin.com/fox-political-news/greater-reckoning-obamas-spot-in-the-democratic-sun-fading-after-harris-loss/"
+    },
+    {
+      "timestamp": "2024-12-27T19:30:00",
+      "source": "hotair.com",
+      "headline": "Did Liz Cheney Cost Kamala Harris the Election ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://hotair.com/ed-morrissey/2024/12/27/did-liz-cheney-cost-kamala-harris-the-election-n3798265"
+    },
+    {
+      "timestamp": "2024-12-27T18:45:00",
+      "source": "news8000.com",
+      "headline": "Americans exhausted by political news , poll shows | National Politics",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.news8000.com/news/politics/national-politics/election-2024-media-political-coverage-americans-tuning-out-ap-norc-poll-tv-ratings/article_5f324d9b-73ea-5b97-a57b-0cb90faba169.html"
+    },
+    {
+      "timestamp": "2024-12-27T16:45:00",
+      "source": "kommersant.ru",
+      "headline": "Итоги года : как Америка выбрала президентом республиканца Дональда Трампа",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.kommersant.ru/doc/7365728"
+    },
+    {
+      "timestamp": "2024-12-27T02:45:00",
+      "source": "fool.com",
+      "headline": "Why XRP Is Sinking Today | The Motley Fool",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/12/26/why-xrp-is-sinking-today/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2024-12-27T15:15:00",
+      "source": "english.elpais.com",
+      "headline": "Bitcoin golden year : From ETF approval to Donald Trump win | Economy and Business",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html"
+    },
+    {
+      "timestamp": "2024-12-27T07:15:00",
+      "source": "morningstar.com",
+      "headline": "News Highlights : Top Global Markets News of the Day - Friday at 1 AM ET",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.morningstar.com/news/dow-jones/20241227232/news-highlights-top-global-markets-news-of-the-day-friday-at-1-am-et"
+    },
+    {
+      "timestamp": "2024-12-27T19:00:00",
+      "source": "techtimes.com",
+      "headline": "Citi Predicts Crypto Surge in 2025 : Trump , ETF Inflows , and MORE Influence The Rally",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.techtimes.com/articles/308883/20241227/citi-predicts-crypto-surge-2025-trump-etf-inflows-more-influence-rally.htm"
+    }
+  ]
+}

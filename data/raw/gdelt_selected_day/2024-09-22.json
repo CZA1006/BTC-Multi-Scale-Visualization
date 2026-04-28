@@ -1,0 +1,197 @@
+{
+  "date": "2024-09-22",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-22T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-22T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "A  Huge  BlackRock Bitcoin ETF Price  Surprise  Is Suddenly About To Hit",
+    "Barclays playbook for the election : Stocks that win under Trump or Harris",
+    "Trump rejects Harri challenge to debate again",
+    "Trump rejects Harri challenge to debate again on CNN",
+    "Trump rejects Harri challenge to debate again on CNN"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-22T11:45:00",
+      "source": "forbes.com",
+      "headline": "A  Huge  BlackRock Bitcoin ETF Price  Surprise  Is Suddenly About To Hit",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/09/22/blackrock-reveals-its-quietly-preparing-for-a-35-trillion-federal-reserve-crisis-with-bitcoin-predicted-to-spark-a-sudden-price-boom/"
+    },
+    {
+      "timestamp": "2024-09-22T14:30:00",
+      "source": "cnbc.com",
+      "headline": "Barclays playbook for the election : Stocks that win under Trump or Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2024/09/22/barclays-playbook-for-the-election-stocks-that-win-under-trump-or-harris.html"
+    },
+    {
+      "timestamp": "2024-09-22T00:00:00",
+      "source": "odt.co.nz",
+      "headline": "Trump rejects Harri challenge to debate again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.odt.co.nz/news/world/trump-rejects-harris-challenge-debate-again"
+    },
+    {
+      "timestamp": "2024-09-22T05:15:00",
+      "source": "bdnews24.com",
+      "headline": "Trump rejects Harri challenge to debate again on CNN",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://bdnews24.com/world/americas/6ac58e45fbd4"
+    },
+    {
+      "timestamp": "2024-09-22T05:00:00",
+      "source": "gazette.com",
+      "headline": "Trump rejects Harri challenge to debate again on CNN",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gazette.com/news/us-world/trump-rejects-harris-challenge-to-debate-again-on-cnn/article_7c22a320-714b-5106-bcbc-60e2fe164e38.html"
+    },
+    {
+      "timestamp": "2024-09-22T10:15:00",
+      "source": "thestandard.com.hk",
+      "headline": "Trump rejects Harri challenge to debate again on CNN",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thestandard.com.hk/breaking-news/section/6/220732/Trump-rejects-Harris"
+    },
+    {
+      "timestamp": "2024-09-22T09:15:00",
+      "source": "gdnonline.com",
+      "headline": "World News : Trump snubs new debate challenge",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.gdnonline.com:443/Details/1333284"
+    },
+    {
+      "timestamp": "2024-09-22T01:45:00",
+      "source": "stabroeknews.com",
+      "headline": "Trump rejects Harri challenge to debate again on CNN",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.stabroeknews.com/2024/09/21/news/world/trump-rejects-harris-challenge-to-debate-again-on-cnn/"
+    },
+    {
+      "timestamp": "2024-09-22T17:30:00",
+      "source": "newsweek.com",
+      "headline": "Kamala Harri Chances of Beating Donald Trump in 7 Swing States : Poll",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/kamala-harris-chances-swing-states-poll-1957486"
+    },
+    {
+      "timestamp": "2024-09-22T23:00:00",
+      "source": "yahoo.com",
+      "headline": "Melania Trump social media campaign is in full swing . But she still MIA less than 2 months before the election .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/melania-trumps-social-media-campaign-220137166.html"
+    },
+    {
+      "timestamp": "2024-09-22T23:00:00",
+      "source": "yahoo.com",
+      "headline": "Melania Trump social media campaign is in full swing . But she still MIA less than 2 months before the election .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/melania-trumps-social-media-campaign-220137941.html"
+    },
+    {
+      "timestamp": "2024-09-22T23:00:00",
+      "source": "thenews.com.pk",
+      "headline": "Trump says he wont run again if he loses in November",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thenews.com.pk/latest/1232949-trump-says-he-wont-run-again-if-he-loses-in-november"
+    },
+    {
+      "timestamp": "2024-09-22T16:30:00",
+      "source": "independent.co.uk",
+      "headline": "Harris surges ahead of Trump in latest national poll but swing states remain toss - up",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/harris-trump-august-nbc-poll-b2617012.html"
+    },
+    {
+      "timestamp": "2024-09-22T00:00:00",
+      "source": "aol.co.uk",
+      "headline": "Donald Trump rejects Kamala Harris debate re - match because it is  too late",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.co.uk/news/donald-trump-rejects-kamala-harris-224748299.html"
+    },
+    {
+      "timestamp": "2024-09-22T16:45:00",
+      "source": "news.pn",
+      "headline": "Трамп отказался от новых дебатов с Харрис , несмотря на ее согласие на участие",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.pn/ru/politics/315297"
+    }
+  ]
+}

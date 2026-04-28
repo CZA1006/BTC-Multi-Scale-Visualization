@@ -1,0 +1,197 @@
+{
+  "date": "2024-12-22",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 7,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-22T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-22T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "What does Trump crypto support mean for Americans ?",
+    "Powell battle - ready Fed gives the Trump trade a stress test",
+    "5 Crypto Predictions For 2025",
+    "Big Crypto poses a systemic risk to global financial markets , reports warn",
+    "Fetterman believes  fascist  label of Trump did not connect with people"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-22T00:30:00",
+      "source": "capitalgazette.com",
+      "headline": "What does Trump crypto support mean for Americans ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.capitalgazette.com/2024/12/21/trumps-crypto-support-mean-for-americans/"
+    },
+    {
+      "timestamp": "2024-12-22T03:45:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Powell battle - ready Fed gives the Trump trade a stress test",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/international/powells-battle-ready-fed-gives-trump-trade-stress-test"
+    },
+    {
+      "timestamp": "2024-12-22T17:30:00",
+      "source": "forbes.com",
+      "headline": "5 Crypto Predictions For 2025",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/12/22/5-crypto-predictions-for-2025/"
+    },
+    {
+      "timestamp": "2024-12-22T23:00:00",
+      "source": "baltimoresun.com",
+      "headline": "Big Crypto poses a systemic risk to global financial markets , reports warn",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.baltimoresun.com/2024/12/22/big-crypto-poses-a-systemic-risk/"
+    },
+    {
+      "timestamp": "2024-12-22T22:45:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Fetterman believes  fascist  label of Trump did not connect with people",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/news/senate/3268480/fetterman-believes-fascist-label-of-trump-did-not-connect-with-people/"
+    },
+    {
+      "timestamp": "2024-12-22T21:15:00",
+      "source": "yahoo.com",
+      "headline": "Trump tech appointees point to a deregulated industry , tech players say",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-tech-appointees-point-deregulated-194615825.html"
+    },
+    {
+      "timestamp": "2024-12-22T01:45:00",
+      "source": "fool.com",
+      "headline": "Why Dogecoin Is Sinking This Week | The Motley Fool",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/12/21/why-dogecoin-is-sinking-this-week/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2024-12-22T09:30:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Why Nevada Asian American population embraced Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/news/campaigns/presidential/3265055/nevada-asian-population-embraced-trump/"
+    },
+    {
+      "timestamp": "2024-12-22T11:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "You Wont Believe What Michael Saylor Just Said About Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/wont-believe-michael-saylor-just-103000455.html"
+    },
+    {
+      "timestamp": "2024-12-22T09:45:00",
+      "source": "telegraphherald.com",
+      "headline": "Leubsdorf : Is a California governor race in Kamala Harri future ? | National",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.telegraphherald.com/ap/national/article_d5e5772d-4fe6-5b3d-9fdc-016f484647b9.html"
+    },
+    {
+      "timestamp": "2024-12-22T15:30:00",
+      "source": "bravenewcoin.com",
+      "headline": "The United States of Bitcoin ? States Weigh BTC Reserves as Crypto Gains Traction",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/the-united-states-of-bitcoin-states-weigh-btc-reserves-as-crypto-gains-traction"
+    },
+    {
+      "timestamp": "2024-12-22T22:45:00",
+      "source": "foxnews.com",
+      "headline": "FLASHBACK : Top Democrats ran passionate defense of Biden ability to serve",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/media/flashback-media-top-democrats-leaders-ran-passionate-defense-bidens-ability-serve"
+    },
+    {
+      "timestamp": "2024-12-22T23:30:00",
+      "source": "edaily.co.kr",
+      "headline": "비트코인 , 트럼프 승리 후 첫 주간 하락 … 일주일 새 7 % ↓",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01331686639121472&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2024-12-22T09:30:00",
+      "source": "irishtimes.com",
+      "headline": "A year of political drama and shocks nears its end – The Irish Times",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.irishtimes.com/media/2024/12/22/a-year-of-political-drama-and-shocks-nears-its-end/"
+    },
+    {
+      "timestamp": "2024-12-22T11:45:00",
+      "source": "nydailynews.com",
+      "headline": "Can Trump pull a Nixon ?: The new president can help end the outdated Electoral College",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nydailynews.com/2024/12/22/can-trump-pull-a-nixon-the-new-president-can-help-end-the-outdated-electoral-college/"
+    }
+  ]
+}

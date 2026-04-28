@@ -1,0 +1,192 @@
+{
+  "date": "2024-09-29",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-29T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-29T22:00:00",
+      "news_count": 4,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Former Republican Sen . Jeff Flake Endorses Harris",
+    "Kamala Harris Gets New Republican Endorsement From Critical Swing State",
+    "Most Likely Kamala Harris Scenario Is 7 Swing State Sweep Nate Silver Model",
+    "Doug Emhoff to speak at Kamala Harris campaign event",
+    "VP Kamala Harris Must Add Substance To Platitudes To Woo Crypto Voters : Kravchunovsky"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-29T16:45:00",
+      "source": "forbes.com",
+      "headline": "Former Republican Sen . Jeff Flake Endorses Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/mollybohannon/2024/09/29/former-gop-senator-jeff-flake-endorses-harris-joining-these-republicans-crossing-party-lines/"
+    },
+    {
+      "timestamp": "2024-09-29T15:30:00",
+      "source": "newsweek.com",
+      "headline": "Kamala Harris Gets New Republican Endorsement From Critical Swing State",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/kamala-harris-gets-new-republican-endorsement-jeff-flake-arizona-1960919"
+    },
+    {
+      "timestamp": "2024-09-29T22:45:00",
+      "source": "newsweek.com",
+      "headline": "Most Likely Kamala Harris Scenario Is 7 Swing State Sweep Nate Silver Model",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/kamala-harris-donald-trump-swing-state-nate-silver-polls-1961004"
+    },
+    {
+      "timestamp": "2024-09-29T06:45:00",
+      "source": "kgw.com",
+      "headline": "Doug Emhoff to speak at Kamala Harris campaign event",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kgw.com/article/news/politics/kamala-harris-doug-emhoff-portland-campaign/283-c41cba20-d19b-403b-b8ca-226db4f76f21"
+    },
+    {
+      "timestamp": "2024-09-29T22:30:00",
+      "source": "crowdfundinsider.com",
+      "headline": "VP Kamala Harris Must Add Substance To Platitudes To Woo Crypto Voters : Kravchunovsky",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.crowdfundinsider.com/2024/09/230593-vp-kamala-harris-must-add-substance-to-platitudes-to-woo-crypto-voters-kravchunovsky/"
+    },
+    {
+      "timestamp": "2024-09-29T19:30:00",
+      "source": "ktbs.com",
+      "headline": "Harris is set to rally again in Las Vegas as both campaigns emphasize swing - state Nevada",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ktbs.com/news/national/harris-is-set-to-rally-again-in-las-vegas-as-both-campaigns-emphasize-swing-state/article_298365d5-5b28-50a7-bb6e-de09255c49a7.html"
+    },
+    {
+      "timestamp": "2024-09-29T22:00:00",
+      "source": "khq.com",
+      "headline": "Harris is set to rally again in Las Vegas as both campaigns emphasize swing - state Nevada",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.khq.com/politics/harris-is-set-to-rally-again-in-las-vegas-as-both-campaigns-emphasize-swing-state/article_d988da8c-61ce-57f8-ad63-9bdde0c3b28b.html"
+    },
+    {
+      "timestamp": "2024-09-29T20:15:00",
+      "source": "columbian.com",
+      "headline": "Harris is set to rally again in Las Vegas as both campaigns emphasize swing - state Nevada",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.columbian.com/news/2024/sep/29/harris-is-set-to-rally-again-in-las-vegas-as-both-campaigns-emphasize-swing-state-nevada/"
+    },
+    {
+      "timestamp": "2024-09-29T11:00:00",
+      "source": "lasvegassun.com",
+      "headline": "Candidate multiple appearances here show the importance of Nevada vote",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://lasvegassun.com/news/2024/sep/29/candidates-multiple-appearances-here-show-the-impo/"
+    },
+    {
+      "timestamp": "2024-09-29T17:45:00",
+      "source": "yahoo.com",
+      "headline": "Former GOP Sen . Jeff Flake endorses Harris for president",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/former-gop-sen-jeff-flake-171142273.html"
+    },
+    {
+      "timestamp": "2024-09-29T16:30:00",
+      "source": "aol.com",
+      "headline": "Former GOP Sen . Jeff Flake endorses Harris for president",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/former-gop-sen-jeff-flake-140009519.html"
+    },
+    {
+      "timestamp": "2024-09-29T16:45:00",
+      "source": "independent.co.uk",
+      "headline": "The Vance - Walz vice - presidential debate could change the course of the election , polls show",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/vp-debate-vance-walz-poll-b2620177.html"
+    },
+    {
+      "timestamp": "2024-09-29T17:00:00",
+      "source": "kolotv.com",
+      "headline": "Harris is set to rally again in Las Vegas as both campaigns emphasize swing - state Nevada",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kolotv.com/2024/09/29/harris-is-set-rally-again-las-vegas-both-campaigns-emphasize-swing-state-nevada/"
+    },
+    {
+      "timestamp": "2024-09-29T01:00:00",
+      "source": "m.metroseoul.co.kr",
+      "headline": "순항중인 가상자산 … 업토버  바람에 상승 기대",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://m.metroseoul.co.kr:443/article/20240929500018"
+    },
+    {
+      "timestamp": "2024-09-29T22:30:00",
+      "source": "independent.co.uk",
+      "headline": "Republicans condemn Trump  insulting  and false claims on Harris mental fitness",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-harris-mental-disability-speech-republican-criticism-b2620968.html"
+    }
+  ]
+}

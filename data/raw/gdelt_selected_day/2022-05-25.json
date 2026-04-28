@@ -1,0 +1,187 @@
+{
+  "date": "2022-05-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-25T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-25T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-25T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-25T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-25T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-25T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-25T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-25T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine Latest : Zelenskiy Wants Russia to Pull Back Before Talks",
+    "Russia launches new assault on eastern Ukraine towns",
+    "Russia launches new assault on eastern Ukraine towns",
+    "Russia launches new assault on eastern Ukraine towns",
+    "Russia launches new assault on eastern Ukraine towns"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-25T11:00:00",
+      "source": "nz.news.yahoo.com",
+      "headline": "Ukraine Latest : Zelenskiy Wants Russia to Pull Back Before Talks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://nz.news.yahoo.com/ukraine-latest-bank-russia-hold-073445352.html"
+    },
+    {
+      "timestamp": "2022-05-25T15:15:00",
+      "source": "inforum.com",
+      "headline": "Russia launches new assault on eastern Ukraine towns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/russia-launches-new-assault-on-eastern-ukraine-towns"
+    },
+    {
+      "timestamp": "2022-05-25T15:00:00",
+      "source": "grandforksherald.com",
+      "headline": "Russia launches new assault on eastern Ukraine towns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/russia-launches-new-assault-on-eastern-ukraine-towns"
+    },
+    {
+      "timestamp": "2022-05-25T14:15:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Russia launches new assault on eastern Ukraine towns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/russia-launches-new-assault-on-eastern-ukraine-towns"
+    },
+    {
+      "timestamp": "2022-05-25T15:45:00",
+      "source": "postbulletin.com",
+      "headline": "Russia launches new assault on eastern Ukraine towns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/russia-launches-new-assault-on-eastern-ukraine-towns"
+    },
+    {
+      "timestamp": "2022-05-25T09:30:00",
+      "source": "ibtimes.co.uk",
+      "headline": "Ukraine : 200 rotting corpses found in basement in Mariupol",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ibtimes.co.uk/ukraine-200-rotting-corpses-found-basement-mariupol-1700068"
+    },
+    {
+      "timestamp": "2022-05-25T19:45:00",
+      "source": "arabnews.com",
+      "headline": "The art of currencies in the Ukraine war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.arabnews.com/node/2089746"
+    },
+    {
+      "timestamp": "2022-05-25T05:30:00",
+      "source": "lsm.lv",
+      "headline": "Ekonomisti : Sankciju smagā ietekme uz Krievijas ekonomiku vēl tikai gaidāma",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.lsm.lv/raksts/zinas/ekonomika/ekonomisti-sankciju-smaga-ietekme-uz-krievijas-ekonomiku-vel-tikai-gaidama.a458360/"
+    },
+    {
+      "timestamp": "2022-05-25T13:00:00",
+      "source": "fxempire.com",
+      "headline": "Mercado Bitcoin Exchange and Stellar Join the Brazilian CBDC Push",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxempire.com/news/article/mercado-bitcoin-exchange-and-stellar-join-the-brazilian-cbdc-push-1012826"
+    },
+    {
+      "timestamp": "2022-05-25T05:15:00",
+      "source": "dw.com",
+      "headline": "Ukraine says 200 bodies have been found in Mariupol basement as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-says-200-bodies-have-been-found-in-mariupol-basement-as-it-happened/a-61909793"
+    },
+    {
+      "timestamp": "2022-05-25T11:00:00",
+      "source": "msn.com",
+      "headline": "Davos updates | Ukraine energy firm wants to sell to Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/davos-updates-zelenskyy-says-ukraine-wont-give-up-land/ar-AAXHe5s"
+    },
+    {
+      "timestamp": "2022-05-25T04:30:00",
+      "source": "albawaba.com",
+      "headline": "Russia War on Ukraine Enters its 4th Month",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.albawaba.com/news/russias-war-ukraine-enters-its-4th-month-1478039"
+    },
+    {
+      "timestamp": "2022-05-25T14:15:00",
+      "source": "parkrapidsenterprise.com",
+      "headline": "Russia launches new assault on eastern Ukraine towns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.parkrapidsenterprise.com/news/world/russia-launches-new-assault-on-eastern-ukraine-towns"
+    },
+    {
+      "timestamp": "2022-05-25T14:15:00",
+      "source": "bemidjipioneer.com",
+      "headline": "Russia launches new assault on eastern Ukraine towns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bemidjipioneer.com/news/world/russia-launches-new-assault-on-eastern-ukraine-towns"
+    },
+    {
+      "timestamp": "2022-05-25T13:45:00",
+      "source": "thedickinsonpress.com",
+      "headline": "Russia launches new assault on eastern Ukraine towns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thedickinsonpress.com/news/world/russia-launches-new-assault-on-eastern-ukraine-towns"
+    }
+  ]
+}

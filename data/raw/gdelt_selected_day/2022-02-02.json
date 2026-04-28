@@ -1,0 +1,192 @@
+{
+  "date": "2022-02-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-02T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T11:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-02T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine warns of  full - scale war  and tragedy in Europe if Russia attacks",
+    "Візит прем  єра Великої Британії Бориса Джонсона в Київ",
+    "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC 5 Dallas - Fort Worth",
+    "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC Los Angeles",
+    "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC 7 San Diego"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-02T09:30:00",
+      "source": "msn.com",
+      "headline": "Ukraine warns of  full - scale war  and tragedy in Europe if Russia attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-xl/europe/top-stories/ukraine-warns-of-full-scale-war-and-tragedy-in-europe-if-russia-attacks/ar-AATo7Lw"
+    },
+    {
+      "timestamp": "2022-02-02T18:15:00",
+      "source": "gazeta.ua",
+      "headline": "Візит прем  єра Великої Британії Бориса Джонсона в Київ",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://gazeta.ua/articles/world-life/_v-ukrayini-zi-zbroyeyu-200-tis-lyudej-batki-v-rosiyi-mayut-zamislitis-nad-cim-scho-pishe-pro-nas-britanska-presa/1069120"
+    },
+    {
+      "timestamp": "2022-02-02T11:30:00",
+      "source": "nbcdfw.com",
+      "headline": "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC 5 Dallas - Fort Worth",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcdfw.com/news/business/money-report/ukraine-warns-of-full-scale-war-and-tragedy-in-europe-if-russia-attacks/2877046/"
+    },
+    {
+      "timestamp": "2022-02-02T09:30:00",
+      "source": "nbclosangeles.com",
+      "headline": "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC Los Angeles",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbclosangeles.com/news/business/money-report/ukraine-warns-of-full-scale-war-and-tragedy-in-europe-if-russia-attacks/2814630/"
+    },
+    {
+      "timestamp": "2022-02-02T09:15:00",
+      "source": "nbcsandiego.com",
+      "headline": "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC 7 San Diego",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcsandiego.com/news/business/money-report/ukraine-warns-of-full-scale-war-and-tragedy-in-europe-if-russia-attacks/2857541/"
+    },
+    {
+      "timestamp": "2022-02-02T10:45:00",
+      "source": "nbcchicago.com",
+      "headline": "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC Chicago",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcchicago.com/news/business/money-report/ukraine-warns-of-full-scale-war-and-tragedy-in-europe-if-russia-attacks/2746465/"
+    },
+    {
+      "timestamp": "2022-02-02T11:15:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC Connecticut",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/ukraine-warns-of-full-scale-war-and-tragedy-in-europe-if-russia-attacks/2707655/"
+    },
+    {
+      "timestamp": "2022-02-02T11:45:00",
+      "source": "nbcphiladelphia.com",
+      "headline": "Ukraine Warns of  Full - Scale War  and Tragedy in Europe If Russia Attacks – NBC10 Philadelphia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcphiladelphia.com/news/business/money-report/ukraine-warns-of-full-scale-war-and-tragedy-in-europe-if-russia-attacks/3130821/"
+    },
+    {
+      "timestamp": "2022-02-02T23:45:00",
+      "source": "dailyreckoning.com",
+      "headline": "The $64 , 000 Question - The Daily Reckoning",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://dailyreckoning.com/the-64000-question/"
+    },
+    {
+      "timestamp": "2022-02-02T10:15:00",
+      "source": "dailymail.co.uk",
+      "headline": "America is trying to draw Russia into a war in Ukraine , Putin claims",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-10467485/America-trying-draw-Russia-war-Ukraine-Putin-claims.html"
+    },
+    {
+      "timestamp": "2022-02-02T02:45:00",
+      "source": "laverdadnoticias.com",
+      "headline": "EE . UU . united states a Ucrania como  herramienta  para contener a Rusia : Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://laverdadnoticias.com/mundo/EE.UU.-usa-a-Ucrania-como-herramienta-para-contener-a-Rusia-Putin-20220201-0176.html"
+    },
+    {
+      "timestamp": "2022-02-02T08:15:00",
+      "source": "sunjournal.com",
+      "headline": "Ukraine - Russia crisis : What to know about the rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sunjournal.com/2022/02/01/ukraine-russia-crisis-what-to-know-about-the-rising-fear-of-war/"
+    },
+    {
+      "timestamp": "2022-02-02T22:00:00",
+      "source": "tennessean.com",
+      "headline": "Ukraine : Russian attack would bring  significant  casualties , Milley says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.tennessean.com/story/news/politics/2022/01/28/ukraine-russia-says-wont-start-war-tensions-neighbor-soar/9251890002/"
+    },
+    {
+      "timestamp": "2022-02-02T18:15:00",
+      "source": "jdsupra.com",
+      "headline": "U . S . Government Signals that Increased Sanctions and Export Controls Will Likely Follow if Russia Invades Ukraine | Husch Blackwell LLP",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jdsupra.com/legalnews/u-s-government-signals-that-increased-7777070/"
+    },
+    {
+      "timestamp": "2022-02-02T16:00:00",
+      "source": "msn.com",
+      "headline": "To prevent an invasion of Ukraine , threaten to sanction Russia central bank",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/politics/to-prevent-an-invasion-of-ukraine-threaten-to-sanction-russias-central-bank/ar-AAToQj0"
+    }
+  ]
+}

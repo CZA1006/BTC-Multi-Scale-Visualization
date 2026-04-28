@@ -1,0 +1,197 @@
+{
+  "date": "2022-04-26",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-26T03:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-26T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russia - Ukraine war : List of key events on day 62 | Russia - Ukraine war News",
+    "ukraine : united kingdom cuts all tariffs on Ukraine , bans more exports to Russia",
+    "US to return diplomats to Ukraine , says Russia  failed  in war",
+    "Russia warns of nuclear tensions as US , NATO officials meet in Germany",
+    "Emboldened by Ukraine grit , U . S . wants to see Russia weakened"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-26T10:00:00",
+      "source": "aljazeera.com",
+      "headline": "Russia - Ukraine war : List of key events on day 62 | Russia - Ukraine war News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/4/26/russia-ukraine-war-list-of-key-events-on-day-62"
+    },
+    {
+      "timestamp": "2022-04-26T03:30:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "ukraine : united kingdom cuts all tariffs on Ukraine , bans more exports to Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/rest-of-world/uk-cuts-all-tariffs-on-ukraine-bans-more-exports-to-russia/articleshow/91088132.cms"
+    },
+    {
+      "timestamp": "2022-04-26T03:00:00",
+      "source": "mainichi.jp",
+      "headline": "US to return diplomats to Ukraine , says Russia  failed  in war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://mainichi.jp/english/articles/20220426/p2g/00m/0in/018000c"
+    },
+    {
+      "timestamp": "2022-04-26T15:45:00",
+      "source": "eagletribune.com",
+      "headline": "Russia warns of nuclear tensions as US , NATO officials meet in Germany",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.eagletribune.com/region/russia-warns-of-nuclear-tensions-as-us-nato-officials-meet-in-germany/article_1d9b53e8-d920-58f3-aab1-5b8987cc38ad.html"
+    },
+    {
+      "timestamp": "2022-04-26T11:45:00",
+      "source": "japantimes.co.jp",
+      "headline": "Emboldened by Ukraine grit , U . S . wants to see Russia weakened",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/04/26/world/emboldened-ukraine-us-russia-weakened/"
+    },
+    {
+      "timestamp": "2022-04-26T03:30:00",
+      "source": "indiatoday.in",
+      "headline": "Russia warns  seriou nuclear war risks should not be underestimated",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.indiatoday.in/world/russia-ukraine-war/story/russia-ukraine-nuclear-war-risks-us-targets-1941856-2022-04-26"
+    },
+    {
+      "timestamp": "2022-04-26T03:30:00",
+      "source": "voanews.com",
+      "headline": "US to Host Military Talks on Ukraine in Germany",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/us-hosts-military-talks-on-ukraine-in-germany/6545296.html"
+    },
+    {
+      "timestamp": "2022-04-26T16:45:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Binance Launches Crypto Payments Card for Ukraine Refugees",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/ukraine-cryptocurrencies-binance-crypto-card-visa-refugees-russia-war-payments-2022-4"
+    },
+    {
+      "timestamp": "2022-04-26T20:45:00",
+      "source": "businessinsider.co.za",
+      "headline": "Binance launching crypto payments card for Ukrainians fleeing their country during Russia invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.co.za/ukraine-cryptocurrencies-binance-crypto-card-visa-refugees-russia-war-payments-2022-4"
+    },
+    {
+      "timestamp": "2022-04-26T19:45:00",
+      "source": "voanews.com",
+      "headline": "US Supports Sending Seized Oligarch Assets to Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/us-supports-sending-seized-oligarchs-assets-to-ukraine-/6546133.html"
+    },
+    {
+      "timestamp": "2022-04-26T23:45:00",
+      "source": "inforum.com",
+      "headline": "Ukraine accuses Russia of blackmail with plan to halt gas to Poland",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/ukraine-accuses-russia-of-blackmail-with-plan-to-halt-gas-to-poland"
+    },
+    {
+      "timestamp": "2022-04-26T03:15:00",
+      "source": "msn.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/live-updates-russia-ukraine-war/ar-AAWzh6z"
+    },
+    {
+      "timestamp": "2022-04-26T11:15:00",
+      "source": "msn.com",
+      "headline": "Russia is  failing  in its war aims , Blinken says ; Biden names US ambassador to Ukraine : Live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/russia-is-failing-in-its-war-aims-blinken-says-biden-names-us-ambassador-to-ukraine-live-updates/ar-AAWBoDJ"
+    },
+    {
+      "timestamp": "2022-04-26T07:30:00",
+      "source": "msn.com",
+      "headline": "Blinken says Russia is  falling  in its war aims ; Biden names new US ambassador to Ukraine : Live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/blinken-says-russia-is-falling-in-its-war-aims-biden-names-new-us-ambassador-to-ukraine-live-updates/ar-AAWBoDJ"
+    },
+    {
+      "timestamp": "2022-04-26T08:15:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Not just exports : How India could gain from geopolitical tensions in Russia , Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/business/india-business/not-just-exports-how-india-could-gain-from-geopolitical-tensions-in-russia-ukraine/articleshow/91089155.cms"
+    }
+  ]
+}

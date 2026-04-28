@@ -1,0 +1,192 @@
+{
+  "date": "2022-04-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-02T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T08:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-02T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russia biggest bank has been cut out of global financial markets – now it launched a cryptocurrency",
+    "Russia biggest bank has been cut out of the global financial markets and now it launched a cryptocurrency .",
+    "Sberbank Launched Crypto Sbercoin As Financial Sanctions Hit Russia",
+    "What Impact Can Western Sanctions Have On Russia , Their Econ ...",
+    "What Impact Can Western Sanctions Have On Russia , Their Econ ..."
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-02T13:15:00",
+      "source": "businessinsider.co.za",
+      "headline": "Russia biggest bank has been cut out of global financial markets – now it launched a cryptocurrency",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.co.za/russian-bank-issues-cryptocurrency-amid-onslaught-of-sanctions-war-ukraine-2022-4"
+    },
+    {
+      "timestamp": "2022-04-02T18:30:00",
+      "source": "businessinsider.in",
+      "headline": "Russia biggest bank has been cut out of the global financial markets and now it launched a cryptocurrency .",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.in/investment/news/russias-biggest-bank-has-been-cut-out-of-the-global-financial-markets-and-now-its-launched-a-cryptocurrency-/articleshow/90608919.cms"
+    },
+    {
+      "timestamp": "2022-04-02T09:30:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Sberbank Launched Crypto Sbercoin As Financial Sanctions Hit Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/russian-bank-issues-cryptocurrency-amid-onslaught-of-sanctions-war-ukraine-2022-4"
+    },
+    {
+      "timestamp": "2022-04-02T08:30:00",
+      "source": "menafn.com",
+      "headline": "What Impact Can Western Sanctions Have On Russia , Their Econ ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103952372/What-Impact-Can-Western-Sanctions-Have-On-Russia-Their-Economy-And-War-In-Ukraine&source=28"
+    },
+    {
+      "timestamp": "2022-04-02T08:30:00",
+      "source": "menafn.com",
+      "headline": "What Impact Can Western Sanctions Have On Russia , Their Econ ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103952372/What-Impact-Can-Western-Sanctions-Have-On-Russia-Their-Economy-And-War-In-Ukraine&source=24"
+    },
+    {
+      "timestamp": "2022-04-02T08:30:00",
+      "source": "menafn.com",
+      "headline": "What Impact Can Western Sanctions Have On Russia , Their Econ ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103952372/What-Impact-Can-Western-Sanctions-Have-On-Russia-Their-Economy-And-War-In-Ukraine&source=26"
+    },
+    {
+      "timestamp": "2022-04-02T08:30:00",
+      "source": "menafn.com",
+      "headline": "What Impact Can Western Sanctions Have On Russia , Their Econ ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103952372/What-Impact-Can-Western-Sanctions-Have-On-Russia-Their-Economy-And-War-In-Ukraine&source=22"
+    },
+    {
+      "timestamp": "2022-04-02T09:00:00",
+      "source": "menafn.com",
+      "headline": "What Impact Can Western Sanctions Have On Russia , Their Econ ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103952372/What-Impact-Can-Western-Sanctions-Have-On-Russia-Their-Economy-And-War-In-Ukraine&source=30"
+    },
+    {
+      "timestamp": "2022-04-02T17:00:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine crisis LIVE | Pope Francis implicitly criticises Putin on invasion , considers Kyiv trip",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/money/topstories/russia-ukraine-crisis-live-pope-francis-implicitly-criticises-putin-on-invasion-considers-kyiv-trip/ar-AAVLHjH"
+    },
+    {
+      "timestamp": "2022-04-02T15:15:00",
+      "source": "dw.com",
+      "headline": "Ukraine says 30 settlements near Kyiv taken from Russian troops live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-says-30-settlements-near-kyiv-taken-from-russian-troops-live-updates/a-61337996"
+    },
+    {
+      "timestamp": "2022-04-02T21:00:00",
+      "source": "forbes.pl",
+      "headline": "Wojna na Ukrainie . Rosję czeka recesja przez sankcje Zachodu . Inwestorzy uciekają - Finanse",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.forbes.pl/finanse/wojna-na-ukrainie-rosje-czeka-recesja-przez-sankcje-zachodu-inwestorzy-uciekaja/g92jkz3"
+    },
+    {
+      "timestamp": "2022-04-02T04:45:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Red Cross convoy forced to turn back from Mariupol as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-red-cross-convoy-forced-to-turn-back-from-mariupol-as-it-happened/a-61324198"
+    },
+    {
+      "timestamp": "2022-04-02T19:45:00",
+      "source": "dw.com",
+      "headline": "Ukraine says its troops regain full control of Kyiv region live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-says-its-troops-regain-full-control-of-kyiv-region-live-updates/a-61337996"
+    },
+    {
+      "timestamp": "2022-04-02T09:15:00",
+      "source": "businessinsider.com",
+      "headline": "Russia Economy Is Crashing , Devastated by Putin War in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.com/russia-economy-gdp-crash-ukraine-war-inflation-sanctions-energy-putin-2022-3"
+    },
+    {
+      "timestamp": "2022-04-02T04:15:00",
+      "source": "japantimes.co.jp",
+      "headline": "Russia headed for recession and closed economy despite ruble rebound , U . S . says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/04/02/business/economy-business/russia-recession-ruble-ukraine-war/"
+    }
+  ]
+}

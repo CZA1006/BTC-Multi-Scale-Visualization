@@ -1,0 +1,212 @@
+{
+  "date": "2024-09-24",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-24T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-24T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump Blames Democrats For Food Inflation , But Experts Suggest Blockchain Could Solve Underlying Factors",
+    "Trump tells supporters to vote early even as he still criticizes the practice",
+    "[ 코인 시황 ] 비트코인 62K대 숨 고르기 ... 美 대선 관망세",
+    "Scaramucci : Trump  has lost his fighting spirit",
+    "ETH ETFs See Largest Outflows Since July"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-24T22:00:00",
+      "source": "benzinga.com",
+      "headline": "Trump Blames Democrats For Food Inflation , But Experts Suggest Blockchain Could Solve Underlying Factors",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/09/41012309/trump-blames-democrats-for-food-inflation-but-experts-suggest-blockchain-could-solve-under"
+    },
+    {
+      "timestamp": "2024-09-24T03:45:00",
+      "source": "yahoo.com",
+      "headline": "Trump tells supporters to vote early even as he still criticizes the practice",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-tells-supporters-vote-early-031751275.html"
+    },
+    {
+      "timestamp": "2024-09-24T02:45:00",
+      "source": "newspim.com",
+      "headline": "[ 코인 시황 ] 비트코인 62K대 숨 고르기 ... 美 대선 관망세",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.newspim.com/news/view/20240924000224"
+    },
+    {
+      "timestamp": "2024-09-24T18:45:00",
+      "source": "yahoo.com",
+      "headline": "Scaramucci : Trump  has lost his fighting spirit",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/scaramucci-trump-lost-fighting-spirit-164523031.html"
+    },
+    {
+      "timestamp": "2024-09-24T23:45:00",
+      "source": "bravenewcoin.com",
+      "headline": "ETH ETFs See Largest Outflows Since July",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/eth-etfs-see-largest-outflows-since-july"
+    },
+    {
+      "timestamp": "2024-09-24T15:45:00",
+      "source": "independent.co.uk",
+      "headline": "Trump teased over rambling  word salad  at rally as he insists he is  cognitively very strong",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-rally-crowd-pennsylvania-media-b2617964.html"
+    },
+    {
+      "timestamp": "2024-09-24T03:30:00",
+      "source": "idahostatejournal.com",
+      "headline": "Election 2024 Latest : Trump and Harris work to expand their coalitions in final weeks of election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.idahostatejournal.com/news/national/election-2024-latest-trump-and-harris-work-to-expand-their-coalitions-in-final-weeks-of/article_60d27a34-67aa-57bd-b25f-1c418ad21056.html"
+    },
+    {
+      "timestamp": "2024-09-24T16:45:00",
+      "source": "forbes.com",
+      "headline": "Harris Backs Crypto : 5 Ways Web3 Could Bolster Her Opportunity Economy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/tonyaevans/2024/09/24/harris-backs-crypto-5-ways-web3-could-bolster-her-opportunity-economy/"
+    },
+    {
+      "timestamp": "2024-09-24T09:00:00",
+      "source": "forbes.com",
+      "headline": "Harris Backs Crypto : 5 Ways To Leverage It For Her Opportunity Economy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/tonyaevans/2024/09/24/harris-backs-crypto-5-ways-to-leverage-it-for-her-opportunity-economy/"
+    },
+    {
+      "timestamp": "2024-09-25T00:00:00",
+      "source": "yahoo.com",
+      "headline": "Will the US presidential election define the future of crypto ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/us-presidential-election-define-future-231142658.html"
+    },
+    {
+      "timestamp": "2024-09-24T04:00:00",
+      "source": "yahoo.com",
+      "headline": "Trump Says People Who Criticize Supreme Court Justices Should Be Jailed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-says-people-criticize-supreme-032022484.html"
+    },
+    {
+      "timestamp": "2024-09-24T07:15:00",
+      "source": "rollingstone.com",
+      "headline": "Trump Says People Criticizing Supreme Court Justices Should Be Jailed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.rollingstone.com/politics/politics-news/trump-supreme-court-people-who-criticize-jailed-1235110537/"
+    },
+    {
+      "timestamp": "2024-09-24T12:45:00",
+      "source": "yahoo.com",
+      "headline": "The Deciders : The issues and states that will determine who wins the White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/deciders-issues-states-determine-wins-120029158.html"
+    },
+    {
+      "timestamp": "2024-09-24T18:45:00",
+      "source": "yahoo.com",
+      "headline": "Zelensky is a salesman and does not want me to win the election , says Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/zelensky-salesman-does-not-want-182152374.html"
+    },
+    {
+      "timestamp": "2024-09-24T05:00:00",
+      "source": "yahoo.com",
+      "headline": "The Deciders : The issues and states that will determine who wins the White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/deciders-issues-states-determine-wins-043220172.html"
+    }
+  ]
+}

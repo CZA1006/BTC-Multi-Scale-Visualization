@@ -1,0 +1,192 @@
+{
+  "date": "2022-02-04",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-04T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T17:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-04T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "What to Know About Ukraine - Russia Crisis – NBC New York",
+    "What to Know About Ukraine - Russia Crisis – NBC Bay Area",
+    "Ukraine - Russia Conflict : What to Know About Rising Fear of War – NBC4 Washington",
+    "Putin Financial Fortress Blunts Impact of Threatened Sanctions",
+    "Putin financial fortress blunts impact of threatened sanctions"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-04T17:00:00",
+      "source": "nbcnewyork.com",
+      "headline": "What to Know About Ukraine - Russia Crisis – NBC New York",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/national-international/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/3535097/"
+    },
+    {
+      "timestamp": "2022-02-04T17:15:00",
+      "source": "nbcbayarea.com",
+      "headline": "What to Know About Ukraine - Russia Crisis – NBC Bay Area",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcbayarea.com/news/national-international/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/2801141/"
+    },
+    {
+      "timestamp": "2022-02-04T17:45:00",
+      "source": "nbcwashington.com",
+      "headline": "Ukraine - Russia Conflict : What to Know About Rising Fear of War – NBC4 Washington",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcwashington.com/news/national-international/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/2961320/"
+    },
+    {
+      "timestamp": "2022-02-04T07:00:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Putin Financial Fortress Blunts Impact of Threatened Sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/putin-s-financial-fortress-blunts-impact-of-threatened-sanctions-1.1718264"
+    },
+    {
+      "timestamp": "2022-02-04T10:00:00",
+      "source": "japantimes.co.jp",
+      "headline": "Putin financial fortress blunts impact of threatened sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/02/04/world/putin-financial-fortress/"
+    },
+    {
+      "timestamp": "2022-02-04T11:45:00",
+      "source": "msn.com",
+      "headline": "Oligarch London Wealth Is Key to Unlock Russia - Ukraine Standoff",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/oligarchs-london-wealth-is-key-to-unlock-russia-ukraine-standoff/ar-AATsGEe"
+    },
+    {
+      "timestamp": "2022-02-04T21:00:00",
+      "source": "palmbeachpost.com",
+      "headline": "Ukraine : Russian attack would bring  significant  casualties , Milley says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.palmbeachpost.com/story/news/politics/2022/01/28/ukraine-russia-says-wont-start-war-tensions-neighbor-soar/9251890002/"
+    },
+    {
+      "timestamp": "2022-02-04T20:45:00",
+      "source": "statesman.com",
+      "headline": "Ukraine : Russian attack would bring  significant  casualties , Milley says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.statesman.com/story/news/politics/2022/01/28/ukraine-russia-says-wont-start-war-tensions-neighbor-soar/9251890002/"
+    },
+    {
+      "timestamp": "2022-02-04T02:00:00",
+      "source": "watchingamerica.com",
+      "headline": "Biden Warned Zelenskiy about Donbass Invasion – Watching America",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://watchingamerica.com/WA/2022/02/03/biden-warned-zelenskyy-about-donbass-invasion/"
+    },
+    {
+      "timestamp": "2022-02-04T17:45:00",
+      "source": "newsweek.com",
+      "headline": "Vladimir Putin Caught Between Choosing Expensive Ukraine War or Humiliating Retreat",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/russia-vladimir-putin-ukraine-invasion-1676270"
+    },
+    {
+      "timestamp": "2022-02-04T05:00:00",
+      "source": "wacotrib.com",
+      "headline": "Jonah Goldberg : Ukraine president may be our only hope | Columnists",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://wacotrib.com/opinion/columnists/jonah-goldberg-ukraine-s-president-may-be-our-only-hope/article_d323a294-8518-11ec-af0a-d37ce13f2725.html"
+    },
+    {
+      "timestamp": "2022-02-04T17:45:00",
+      "source": "11alive.com",
+      "headline": "Russia : Little optimism in US response to Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.11alive.com/article/news/nation-world/us-russia-ukraine-tensions/507-9fab370b-4656-4d90-b5cc-3cb0a9752cf4"
+    },
+    {
+      "timestamp": "2022-02-04T18:00:00",
+      "source": "ksdk.com",
+      "headline": "Russia : Little optimism in US response to Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ksdk.com/article/news/nation-world/us-russia-ukraine-tensions/507-9fab370b-4656-4d90-b5cc-3cb0a9752cf4"
+    },
+    {
+      "timestamp": "2022-02-04T17:45:00",
+      "source": "ksdk.com",
+      "headline": "Ukranian leaders urge calm despite threat from Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ksdk.com/article/news/nation-world/ukraine-leaders-urge-calm/507-d81a0e3e-cd56-4848-bddb-b4ff5bec648d"
+    },
+    {
+      "timestamp": "2022-02-04T21:30:00",
+      "source": "aljazeera.com",
+      "headline": "Russia wins China backing in NATO showdown over Ukraine | Ukraine - Russia crisis News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/2/4/russia-wins-chinese-backing-in-showdown-over-ukraine"
+    }
+  ]
+}

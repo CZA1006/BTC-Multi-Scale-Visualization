@@ -1,0 +1,182 @@
+{
+  "date": "2022-05-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-14T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-14T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-14T19:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-14T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-14T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-14T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-14T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine says Russian forces withdrawing from Kharkiv live updates | News | DW",
+    "Ukraine wages counteroffensive in east",
+    "Ukraine wages counteroffensive in east",
+    "Ukraine wages counteroffensive against Russian forces in east",
+    "Ukraine wages counteroffensive against Russian forces in east"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-14T09:45:00",
+      "source": "dw.com",
+      "headline": "Ukraine says Russian forces withdrawing from Kharkiv live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-says-russian-forces-withdrawing-from-kharkiv-live-updates/a-61795866"
+    },
+    {
+      "timestamp": "2022-05-14T23:00:00",
+      "source": "calgarysun.com",
+      "headline": "Ukraine wages counteroffensive in east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://calgarysun.com/news/world/ukraine-wages-counteroffensive-in-east/wcm/a2b6e9da-1834-496c-973e-1058f5065551"
+    },
+    {
+      "timestamp": "2022-05-14T19:30:00",
+      "source": "torontosun.com",
+      "headline": "Ukraine wages counteroffensive in east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://torontosun.com/news/world/ukraine-wages-counteroffensive-in-east"
+    },
+    {
+      "timestamp": "2022-05-14T21:15:00",
+      "source": "inforum.com",
+      "headline": "Ukraine wages counteroffensive against Russian forces in east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/ukraine-wages-counteroffensive-against-russian-forces-in-east"
+    },
+    {
+      "timestamp": "2022-05-14T20:30:00",
+      "source": "grandforksherald.com",
+      "headline": "Ukraine wages counteroffensive against Russian forces in east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/ukraine-wages-counteroffensive-against-russian-forces-in-east"
+    },
+    {
+      "timestamp": "2022-05-14T19:30:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Ukraine wages counteroffensive against Russian forces in east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/ukraine-wages-counteroffensive-against-russian-forces-in-east"
+    },
+    {
+      "timestamp": "2022-05-14T21:45:00",
+      "source": "postbulletin.com",
+      "headline": "Ukraine wages counteroffensive against Russian forces in east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/ukraine-wages-counteroffensive-against-russian-forces-in-east"
+    },
+    {
+      "timestamp": "2022-05-14T19:45:00",
+      "source": "marketwatch.com",
+      "headline": "Russians withdraw from around Kharkiv , batter east , Ukraine says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/russians-withdraw-from-around-kharkiv-batter-east-ukraine-says-01652555878"
+    },
+    {
+      "timestamp": "2022-05-14T22:30:00",
+      "source": "voanews.com",
+      "headline": "Ukraine Launches Counteroffensive as Russians Leave Key Eastern City",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/ukraine-launches-counteroffensive-as-russians-leave-key-eastern-city-/6573662.html"
+    },
+    {
+      "timestamp": "2022-05-14T19:30:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine : Russians withdraw from around Kharkiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/ukraine-russians-withdraw-from-around-kharkiv-batter-east-1.5903267"
+    },
+    {
+      "timestamp": "2022-05-14T23:15:00",
+      "source": "nydailynews.com",
+      "headline": "Ukraine says Russians are withdrawing from Kharkiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.nydailynews.com/news/world/ny-ukraine-russia-war-20220514-4jg6c7sc3jevdkb7mhp6lei324-story.html"
+    },
+    {
+      "timestamp": "2022-05-14T20:30:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Ukraine : Russians withdraw from around Kharkiv , batter east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/latest-news/ukraine-russians-withdraw-from-around-kharkiv-batter-east/"
+    },
+    {
+      "timestamp": "2022-05-14T18:15:00",
+      "source": "arkansasonline.com",
+      "headline": "Ukraine : Russians withdraw from around Kharkiv , batter east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2022/may/14/ukraine-russians-withdraw-from-around-kharkiv-batter-east/"
+    },
+    {
+      "timestamp": "2022-05-14T19:15:00",
+      "source": "washingtontimes.com",
+      "headline": "Ukraine : Russians withdraw from around Kharkiv , batter east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com:443/news/2022/may/13/ukraine-russians-withdraw-from-around-kharkiv-batt/"
+    },
+    {
+      "timestamp": "2022-05-14T19:45:00",
+      "source": "washingtontimes.com",
+      "headline": "Ukraine : Russians withdraw from around Kharkiv , batter east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2022/may/13/ukraine-russians-withdraw-from-around-kharkiv-batt/"
+    }
+  ]
+}

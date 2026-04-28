@@ -1,0 +1,202 @@
+{
+  "date": "2025-01-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 12,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-23T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-23T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "What Behind  Rigged  2024 Election Claims",
+    "Crypto : The Trump administration well - stocked wallets - Crypto Recap - 2025 - 01 - 23",
+    "Cryptos Dip But Bitcoin Firmly Above $101k",
+    "Trump signs executive order on crypto , digital asset stockpile",
+    "Vine Meme Coin Soars As Elon Musk Considers Resurrecting App"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-23T19:15:00",
+      "source": "newsweek.com",
+      "headline": "What Behind  Rigged  2024 Election Claims",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/2024-election-rigged-donald-trump-elon-musk-2019482"
+    },
+    {
+      "timestamp": "2025-01-23T16:15:00",
+      "source": "marketscreener.com",
+      "headline": "Crypto : The Trump administration well - stocked wallets - Crypto Recap - 2025 - 01 - 23",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/news/latest/Crypto-The-Trump-administration-s-well-stocked-wallets-Crypto-Recap-48852780/"
+    },
+    {
+      "timestamp": "2025-01-23T15:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Cryptos Dip But Bitcoin Firmly Above $101k",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2025-01/64367040-cryptos-dip-but-bitcoin-firmly-above-dollar-101k-020.htm"
+    },
+    {
+      "timestamp": "2025-01-23T21:45:00",
+      "source": "cnbc.com",
+      "headline": "Trump signs executive order on crypto , digital asset stockpile",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2025/01/23/trump-signs-executive-order-on-crypto-digital-asset-stockpile.html"
+    },
+    {
+      "timestamp": "2025-01-23T14:45:00",
+      "source": "newsweek.com",
+      "headline": "Vine Meme Coin Soars As Elon Musk Considers Resurrecting App",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/vine-cryptocurrency-launch-elon-musk-tiktok-ban-2019527"
+    },
+    {
+      "timestamp": "2025-01-23T21:45:00",
+      "source": "nbcmiami.com",
+      "headline": "Trump signs executive order promoting crypto , paving way for digital asset stockpile",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcmiami.com/news/business/money-report/trump-signs-executive-order-promoting-crypto-paving-way-for-digital-asset-stockpile/3524255/"
+    },
+    {
+      "timestamp": "2025-01-23T09:15:00",
+      "source": "nbcnewyork.com",
+      "headline": "Crypto execs see clear path for U . S . to pass regulation this year as Trump fuels market hype",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/crypto-execs-see-clear-path-for-u-s-to-pass-regulation-this-year-as-trump-fuels-market-hype/6118645/"
+    },
+    {
+      "timestamp": "2025-01-23T06:45:00",
+      "source": "nbclosangeles.com",
+      "headline": "Crypto execs see clear path for U . S . to pass regulation this year as Trump fuels market hype",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbclosangeles.com/news/business/money-report/crypto-execs-see-clear-path-for-u-s-to-pass-regulation-this-year-as-trump-fuels-market-hype/3612917/"
+    },
+    {
+      "timestamp": "2025-01-23T06:45:00",
+      "source": "nbcsandiego.com",
+      "headline": "Crypto execs see clear path for U . S . to pass regulation this year as Trump fuels market hype",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcsandiego.com/news/business/money-report/crypto-execs-see-clear-path-for-u-s-to-pass-regulation-this-year-as-trump-fuels-market-hype/3732112/"
+    },
+    {
+      "timestamp": "2025-01-23T13:30:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin Price Forecast : Will BTC exceed $109K or correct to $90K ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-edges-below-102k-ahead-of-mid-tier-us-data-and-trumps-tariff-threats-202501231105"
+    },
+    {
+      "timestamp": "2025-01-23T13:00:00",
+      "source": "iol.co.za",
+      "headline": "Put it back : 43 million Spanish speakers affected as White House removes language support",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.iol.co.za/news/world/put-it-back-43-million-spanish-speakers-affected-as-white-house-removes-language-support-5ff5c782-5177-44e6-a843-00a37c121f6c"
+    },
+    {
+      "timestamp": "2025-01-23T23:30:00",
+      "source": "investing.com",
+      "headline": "Bitcoin : Time for Another Major Move as Volatility Measures Tighten up ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.investing.com/analysis/bitcoin-time-for-another-major-move-as-volatility-measures-tighten-up-200656565"
+    },
+    {
+      "timestamp": "2025-01-23T15:00:00",
+      "source": "thepeninsulaqatar.com",
+      "headline": "Trump administration shutters White House Spanish language page",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://thepeninsulaqatar.com/article/23/01/2025/trump-administration-shutters-white-house-spanish-language-page"
+    },
+    {
+      "timestamp": "2025-01-23T22:15:00",
+      "source": "turkiyegazetesi.com.tr",
+      "headline": "Trumptan kripto para piyasalarına yönelik kararname ! Bitcoin ve popüler altcoinlerde sert dalgalanmalar",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.turkiyegazetesi.com.tr/ekonomi/trumptan-kripto-para-piyasalarina-yonelik-kararname-bitcoin-ve-populer-altcoinlerde-sert-dalgalanmalar-1088967"
+    },
+    {
+      "timestamp": "2025-01-23T12:45:00",
+      "source": "urdupoint.com",
+      "headline": "Trump Administration Shutters White House Spanish Language Page",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.urdupoint.com/en/world/trump-administration-shutters-white-house-spa-1910913.html"
+    }
+  ]
+}

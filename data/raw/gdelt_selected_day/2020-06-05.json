@@ -1,0 +1,202 @@
+{
+  "date": "2020-06-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 9,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 1,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-05T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T05:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-05T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin to Rise to $20K This Year Spurred by Government Money Printing and Covid - 19 : Bloomberg",
+    "Bitcoin Targets $20K against Fed and ECB Savage QE Policies",
+    "The Week Ahead : Moving from rescue to recovery",
+    "Coronavirus Boosts Bitcoin Trading In Russia",
+    "Market Wrap : Bitcoin Flat as Stocks Swell on Positive Jobs Report"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-05T05:45:00",
+      "source": "news.bitcoin.com",
+      "headline": "Bitcoin to Rise to $20K This Year Spurred by Government Money Printing and Covid - 19 : Bloomberg",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://news.bitcoin.com/bitcoin-to-rise-to-20k-this-year-spurred-by-government-money-printing-and-covid-19-bloomberg/"
+    },
+    {
+      "timestamp": "2020-06-05T16:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Targets $20K against Fed and ECB Savage QE Policies",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/05/bitcoin-20k-fed-and-ecb-infinite-qe/"
+    },
+    {
+      "timestamp": "2020-06-05T15:15:00",
+      "source": "stltoday.com",
+      "headline": "The Week Ahead : Moving from rescue to recovery",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/business/the-week-ahead-moving-from-rescue-to-recovery/article_8af0382a-2c51-5195-b0ab-4a179cbf3e47.html"
+    },
+    {
+      "timestamp": "2020-06-05T05:00:00",
+      "source": "ibtimes.com",
+      "headline": "Coronavirus Boosts Bitcoin Trading In Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/coronavirus-boosts-bitcoin-trading-russia-2988450"
+    },
+    {
+      "timestamp": "2020-06-05T20:45:00",
+      "source": "coindesk.com",
+      "headline": "Market Wrap : Bitcoin Flat as Stocks Swell on Positive Jobs Report",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/market-wrap-bitcoin-flat-as-stocks-swell-on-positive-jobs-report"
+    },
+    {
+      "timestamp": "2020-06-05T01:30:00",
+      "source": "multimedios.com",
+      "headline": "La pandemia ha impulsado el uso y crecimiento de la criptomoneda",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.multimedios.com/television/la-pandemia-ha-impulsado-el-uso-y-crecimiento-de-la-criptomoneda"
+    },
+    {
+      "timestamp": "2020-06-05T12:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Tether Might Surpass Ethereum , Says Bloomberg Report",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/tether-surpass-ethereum-bloomberg/"
+    },
+    {
+      "timestamp": "2020-06-05T07:15:00",
+      "source": "uk.reuters.com",
+      "headline": "Expecting a spike in bitcoin ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/uk.reuters.com/article/uk-crypto-currencies-bitcoin-analysis/expecting-a-spike-in-bitcoin-investors-say-it-may-take-time-idUKKBN23C0H1"
+    },
+    {
+      "timestamp": "2020-06-05T05:45:00",
+      "source": "uk.reuters.com",
+      "headline": "Expecting a spike in bitcoin ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/article/uk-crypto-currencies-bitcoin-analysis/expecting-a-spike-in-bitcoin-investors-say-it-may-take-time-idUKKBN23C0H1"
+    },
+    {
+      "timestamp": "2020-06-05T06:00:00",
+      "source": "in.reuters.com",
+      "headline": "Expecting a spike in bitcoin ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/crypto-currencies-bitcoin/expecting-a-spike-in-bitcoin-investors-say-it-may-take-time-idINKBN23C0I6"
+    },
+    {
+      "timestamp": "2020-06-05T05:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Expecting a spike in bitcoin ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/expecting-spike-bitcoin-investors-may-051333068.html"
+    },
+    {
+      "timestamp": "2020-06-05T17:45:00",
+      "source": "kitco.com",
+      "headline": "Expecting a spike in bitcoin ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.kitco.com/news/2020-06-05/Expecting-a-spike-in-bitcoin-Investors-say-it-may-take-time.html"
+    },
+    {
+      "timestamp": "2020-06-05T11:15:00",
+      "source": "theglobeandmail.com",
+      "headline": "Expecting a spike in bitcoin ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.theglobeandmail.com/investing/investment-ideas/article-expecting-a-spike-in-bitcoin-investors-say-it-may-take-time/"
+    },
+    {
+      "timestamp": "2020-06-05T08:00:00",
+      "source": "business-standard.com",
+      "headline": "Expecting a spike in bitcoin price ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.business-standard.com/article/markets/expecting-a-spike-in-bitcoin-price-investors-say-it-may-take-time-120060500476_1.html"
+    },
+    {
+      "timestamp": "2020-06-05T06:45:00",
+      "source": "channelnewsasia.com",
+      "headline": "Expecting a spike in bitcoin ? Investors say it may take time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.channelnewsasia.com/news/business/expecting-a-spike-in-bitcoin--investors-say-it-may-take-time-12807256"
+    }
+  ]
+}

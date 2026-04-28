@@ -1,0 +1,187 @@
+{
+  "date": "2024-09-18",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 1,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-18T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-18T03:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-18T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-18T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-18T12:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-18T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-18T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-18T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump launches crypto service in web interview , omits details | The Arkansas Democrat - Gazette",
+    "Powell downplays impact of rate cut on Trump - Harris presidential race",
+    "Anthony Scaramucci Calls For Bipartisan Crypto Regulation ,  Applaud Donald Trump For Coming Towards The Industry",
+    "Will the U . S . elections impact crypto markets ? Insiders weigh in",
+    "Will the U . S . elections impact crypto markets ? Insiders weigh in"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-18T12:00:00",
+      "source": "arkansasonline.com",
+      "headline": "Trump launches crypto service in web interview , omits details | The Arkansas Democrat - Gazette",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2024/sep/18/trump-launches-crypto-service-in-web-interview/"
+    },
+    {
+      "timestamp": "2024-09-18T22:15:00",
+      "source": "nbcchicago.com",
+      "headline": "Powell downplays impact of rate cut on Trump - Harris presidential race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcchicago.com/news/business/money-report/powell-downplays-impact-of-rate-cut-on-trump-harris-presidential-race/3551659/"
+    },
+    {
+      "timestamp": "2024-09-18T12:15:00",
+      "source": "benzinga.com",
+      "headline": "Anthony Scaramucci Calls For Bipartisan Crypto Regulation ,  Applaud Donald Trump For Coming Towards The Industry",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/09/40916521/anthony-scaramucci-calls-for-bipartisan-crypto-regulation-applauds-donald-trump-for-coming"
+    },
+    {
+      "timestamp": "2024-09-18T12:30:00",
+      "source": "cnbc.com",
+      "headline": "Will the U . S . elections impact crypto markets ? Insiders weigh in",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2024/09/18/will-the-us-elections-impact-crypto-markets-insiders-weigh-in.html"
+    },
+    {
+      "timestamp": "2024-09-18T12:45:00",
+      "source": "nbcnewyork.com",
+      "headline": "Will the U . S . elections impact crypto markets ? Insiders weigh in",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/will-the-u-s-elections-impact-crypto-markets-insiders-weigh-in/5806474/"
+    },
+    {
+      "timestamp": "2024-09-18T12:30:00",
+      "source": "nbcphiladelphia.com",
+      "headline": "Will the U . S . elections impact crypto markets ? Insiders weigh in",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcphiladelphia.com/news/business/money-report/will-the-u-s-elections-impact-crypto-markets-insiders-weigh-in/3972998/"
+    },
+    {
+      "timestamp": "2024-09-18T16:30:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin trades in tight range ahead of crucial Fed interest - rate decision",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-softens-slightly-as-traders-brace-for-fed-interest-rate-cut-202409181230"
+    },
+    {
+      "timestamp": "2024-09-18T01:45:00",
+      "source": "yahoo.com",
+      "headline": "2024 presidential election odds : Harris maintains narrow lead over Trump with 49 days left",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/2024-presidential-election-odds-harris-010734281.html"
+    },
+    {
+      "timestamp": "2024-09-18T03:45:00",
+      "source": "radaronline.com",
+      "headline": "ABC Denies  Whistleblower  Claim Kamala Harris Got Help in Trump Debate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://radaronline.com/p/abc-kamala-harris-conspiracy-affidavit-donald-trump-debate-help/"
+    },
+    {
+      "timestamp": "2024-09-18T03:45:00",
+      "source": "nbcnewyork.com",
+      "headline": "Harris victory seen as most likely election outcome , according to CNBC Fed Survey",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/harris-victory-seen-as-most-likely-election-outcome-according-to-cnbc-fed-survey/5805668/"
+    },
+    {
+      "timestamp": "2024-09-18T08:15:00",
+      "source": "nbcdfw.com",
+      "headline": "Harris victory seen as most likely election outcome , according to CNBC Fed Survey",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcdfw.com/news/business/money-report/harris-victory-seen-as-most-likely-election-outcome-according-to-cnbc-fed-survey/3648422/"
+    },
+    {
+      "timestamp": "2024-09-18T03:30:00",
+      "source": "nbcchicago.com",
+      "headline": "Harris victory seen as most likely election outcome , according to CNBC Fed Survey",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcchicago.com/news/business/money-report/harris-victory-seen-as-most-likely-election-outcome-according-to-cnbc-fed-survey/3550943/"
+    },
+    {
+      "timestamp": "2024-09-18T03:30:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Harris victory seen as most likely election outcome , according to CNBC Fed Survey",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/harris-victory-seen-as-most-likely-election-outcome-according-to-cnbc-fed-survey/3388553/"
+    },
+    {
+      "timestamp": "2024-09-18T04:45:00",
+      "source": "nbcphiladelphia.com",
+      "headline": "Harris victory seen as most likely election outcome , according to CNBC Fed Survey",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcphiladelphia.com/news/business/money-report/harris-victory-seen-as-most-likely-election-outcome-according-to-cnbc-fed-survey/3972831/"
+    },
+    {
+      "timestamp": "2024-09-18T13:30:00",
+      "source": "thehill.com",
+      "headline": "Where the White House race stands with fewer than 50 days left",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4885162-trump-harris-polls-debate-race/"
+    }
+  ]
+}

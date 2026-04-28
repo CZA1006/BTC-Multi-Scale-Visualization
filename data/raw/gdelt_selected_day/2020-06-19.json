@@ -1,0 +1,187 @@
+{
+  "date": "2020-06-19",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-19T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-19T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-19T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-19T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-19T20:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-19T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-19T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-19T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Chief Investment Officer Calls For Violent Stock Market Reckoning , How Will Bitcoin Respond ?",
+    "Cryptocurrency Market News : Ethereum dips below $230 , XRP drops to $0 . 188",
+    "Mike Novogratz Pushes Galaxy Digital Course to Drive Adoption of Bitcoin",
+    "Ethereum Renaissance Creates An Opportunity – and a Major Test",
+    "Cryptocurrency Market News : Ethereum dips below $230 , XRP drops to $0 . 188"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-19T20:45:00",
+      "source": "newsbtc.com",
+      "headline": "Chief Investment Officer Calls For Violent Stock Market Reckoning , How Will Bitcoin Respond ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/19/bitcoin-day-reckoning-stock-market/"
+    },
+    {
+      "timestamp": "2020-06-19T20:30:00",
+      "source": "fxstreet.com",
+      "headline": "Cryptocurrency Market News : Ethereum dips below $230 , XRP drops to $0 . 188",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/cryptocurrency-market-news-ethereum-dips-below-230-xrp-drops-to-0188-202006192004"
+    },
+    {
+      "timestamp": "2020-06-19T14:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Mike Novogratz Pushes Galaxy Digital Course to Drive Adoption of Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/mike-novogratz-galaxy-digital-bitcoin/"
+    },
+    {
+      "timestamp": "2020-06-19T17:15:00",
+      "source": "coindesk.com",
+      "headline": "Ethereum Renaissance Creates An Opportunity – and a Major Test",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/money-reimagined-ethereums-renaissance-creates-an-opportunity-major-test"
+    },
+    {
+      "timestamp": "2020-06-19T22:30:00",
+      "source": "forexcrunch.com",
+      "headline": "Cryptocurrency Market News : Ethereum dips below $230 , XRP drops to $0 . 188",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/cryptocurrency-market-news-ethereum-dips-below-230-xrp-drops-to-0-188/"
+    },
+    {
+      "timestamp": "2020-06-19T21:45:00",
+      "source": "coindesk.com",
+      "headline": "New York Fed  Bitcoin Is Fiat  Claim Sparks Controversy",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/is-bitcoin-fiat-new-york-federal-reserve"
+    },
+    {
+      "timestamp": "2020-06-19T23:15:00",
+      "source": "news.mt.co.kr",
+      "headline": "[ 뉴욕마감 ] 애플스토어 폐쇄  발표에 상승→하락  널뛰기 … 다우 0 . 8 % ↓",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2020062006354668692&type=2&sec=politics&pDepth2=Ptotal&MNE_T"
+    },
+    {
+      "timestamp": "2020-06-19T20:15:00",
+      "source": "theglobeandmail.com",
+      "headline": "Oaktree Marks says odds not in investor favor in stock rally",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.theglobeandmail.com/investing/investment-ideas/article-oaktrees-marks-says-odds-not-in-investors-favor-in-stock-rally/"
+    },
+    {
+      "timestamp": "2020-06-19T20:30:00",
+      "source": "marketscreener.com",
+      "headline": "Oaktree Marks says odds not in investor favor in stock rally",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/business-leaders/Howard-Marks-1580/news/Oaktree-s-Marks-says-odds-not-in-investors-favor-in-stock-rally--30797158/"
+    },
+    {
+      "timestamp": "2020-06-19T17:00:00",
+      "source": "insights.tradestation.com",
+      "headline": "Sleepy Action in Bitcoin Persists - Market Insights",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://insights.tradestation.com/2020/06/19/sleepy-action-in-bitcoin-persists/"
+    },
+    {
+      "timestamp": "2020-06-19T19:30:00",
+      "source": "in.reuters.com",
+      "headline": "Oaktree Marks says odds not in investor favor in stock rally",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/us-usa-funds-oaktree/oaktrees-marks-says-odds-not-in-investors-favor-in-stock-rally-idINKBN23Q33V"
+    },
+    {
+      "timestamp": "2020-06-19T19:15:00",
+      "source": "reuters.com",
+      "headline": "Oaktree Marks says odds not in investor favor in stock rally",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-usa-funds-oaktree/oaktrees-marks-says-odds-not-in-investors-favor-in-stock-rally-idUSKBN23Q33V"
+    },
+    {
+      "timestamp": "2020-06-19T20:45:00",
+      "source": "marketwatch.com",
+      "headline": "Fed Clarida says he doesnt see any asset bubbles resulting from recent policy response to pandemic",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/feds-clarida-says-he-doesnt-see-any-asset-bubbles-resulting-from-recent-policy-response-to-pandemic-2020-06-19"
+    },
+    {
+      "timestamp": "2020-06-19T18:00:00",
+      "source": "insidebitcoins.com",
+      "headline": "Delta Exchange Launched New Crypto Interest Rate Swaps",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/delta-exchange-launched-new-crypto-interest-rate-swaps"
+    },
+    {
+      "timestamp": "2020-06-19T23:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "US STOCKS - S & P 500 closes lower as COVID - 19 resurgence casts a shadow on sentiment",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/us-stocks-p-500-closes-202425781.html"
+    }
+  ]
+}

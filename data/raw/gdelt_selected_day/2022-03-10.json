@@ -1,0 +1,192 @@
+{
+  "date": "2022-03-10",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 8,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-10T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T04:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-10T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto War Test Leaves Future of Money Debate Wide Open",
+    "What Assets are Most Impacted by Russia Invasion of Ukrain ...",
+    "War in Ukraine could drive more people to crypto , analysts say",
+    "Russians dump the ruble as Moscow exchange reopens for trade after pause amid Ukraine war",
+    "Cryptos : War And Inflation Could Be Bullish Or Trigger Regulatory Tightening"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-10T23:00:00",
+      "source": "msn.com",
+      "headline": "Crypto War Test Leaves Future of Money Debate Wide Open",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/money/other/crypto-s-war-test-leaves-future-of-money-debate-wide-open/ar-AAUTEs0"
+    },
+    {
+      "timestamp": "2022-03-10T00:00:00",
+      "source": "menafn.com",
+      "headline": "What Assets are Most Impacted by Russia Invasion of Ukrain ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103808603/What-Assets-are-Most-Impacted-by-Russias-Invasion-of-Ukraine&source=138"
+    },
+    {
+      "timestamp": "2022-03-10T04:00:00",
+      "source": "aljazeera.com",
+      "headline": "War in Ukraine could drive more people to crypto , analysts say",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/economy/2022/3/10/war-in-europe-is-a-major-driver-of-cryptocurrency-adoption"
+    },
+    {
+      "timestamp": "2022-03-10T04:15:00",
+      "source": "businessinsider.in",
+      "headline": "Russians dump the ruble as Moscow exchange reopens for trade after pause amid Ukraine war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.in/stock-market/news/russians-dump-the-ruble-as-moscows-exchange-reopens-for-trade-after-pause-amid-ukraine-war/articleshow/90108661.cms"
+    },
+    {
+      "timestamp": "2022-03-10T13:00:00",
+      "source": "investing.com",
+      "headline": "Cryptos : War And Inflation Could Be Bullish Or Trigger Regulatory Tightening",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.investing.com/analysis/cryptos-war-and-inflation-could-be-bullish-or-trigger-regulatory-tightening-200619562"
+    },
+    {
+      "timestamp": "2022-03-10T04:15:00",
+      "source": "msn.com",
+      "headline": "War in Ukraine could drive more people to crypto , analysts say",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-nz/news/world/war-in-ukraine-could-drive-more-people-to-crypto-analysts-say/ar-AAURGJA"
+    },
+    {
+      "timestamp": "2022-03-10T06:45:00",
+      "source": "deccanherald.com",
+      "headline": "Ukraine war : Two weeks that changed the world",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.deccanherald.com/international/world-news-politics/ukraine-war-two-weeks-that-changed-the-world-1089943.html"
+    },
+    {
+      "timestamp": "2022-03-10T19:15:00",
+      "source": "theepochtimes.com",
+      "headline": "China Eases Control to Let Ruble Fall Faster Against Yuan",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.theepochtimes.com/china-eases-control-to-let-ruble-fall-faster-against-yuan_4329087.html"
+    },
+    {
+      "timestamp": "2022-03-10T15:00:00",
+      "source": "freepressjournal.in",
+      "headline": "China eases control to let ruble fall faster against yuan to help insulate Beijing from economic sanctions on Moscow",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.freepressjournal.in/business/china-eases-control-to-let-ruble-fall-faster-against-yuan-to-help-insulate-beijing-from-economic-sanctions-on-moscow"
+    },
+    {
+      "timestamp": "2022-03-10T04:45:00",
+      "source": "naija247news.com",
+      "headline": "Crypto enthusiasts say trillion market offers financial stability in an increasingly volatile world .",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.naija247news.com/2022/03/10/crypto-enthusiasts-say-3-trillion-market-offers-financial-stability-in-an-increasingly-volatile-world/"
+    },
+    {
+      "timestamp": "2022-03-10T12:00:00",
+      "source": "chron.com",
+      "headline": "China eases control to let ruble fall faster against yuan",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.chron.com/news/article/China-eases-control-to-let-ruble-fall-faster-16991216.php"
+    },
+    {
+      "timestamp": "2022-03-10T11:30:00",
+      "source": "sfgate.com",
+      "headline": "China eases control to let ruble fall faster against yuan",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.sfgate.com/news/article/China-eases-control-to-let-ruble-fall-faster-16991216.php"
+    },
+    {
+      "timestamp": "2022-03-10T12:15:00",
+      "source": "abcnews.go.com",
+      "headline": "China eases control to let ruble fall faster against yuan",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/International/wireStory/china-eases-control-ruble-fall-faster-yuan-83360995"
+    },
+    {
+      "timestamp": "2022-03-10T12:30:00",
+      "source": "abcnews.go.com",
+      "headline": "China eases control to let ruble fall faster against yuan",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/Business/wireStory/china-eases-control-ruble-fall-faster-yuan-83361605"
+    },
+    {
+      "timestamp": "2022-03-10T11:45:00",
+      "source": "apnews.com",
+      "headline": "China eases control to let ruble fall faster against yuan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/article/russia-ukraine-putin-business-europe-moscow-9fd75c74e0b3728b692da6bd2b7c692e"
+    }
+  ]
+}

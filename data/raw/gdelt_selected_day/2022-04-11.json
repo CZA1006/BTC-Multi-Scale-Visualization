@@ -1,0 +1,187 @@
+{
+  "date": "2022-04-11",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-11T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-11T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-11T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-11T11:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-11T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-11T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-11T15:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-11T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Canada imposes sanctions on Russian defence sector",
+    "Canada takes aim at Russian defence sector with new sanctions over attack on Ukraine | iNFOnews",
+    "EU to help ICC investigate war crimes in Ukraine live updates | News | DW",
+    "Russia invasion of Ukraine : List of key events on day 47 | Russia - Ukraine war News",
+    "Russia zeros in on east Ukraine"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-11T15:00:00",
+      "source": "winnipegfreepress.com",
+      "headline": "Canada imposes sanctions on Russian defence sector",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.winnipegfreepress.com/canada/canada-takes-aim-at-russian-defence-sector-with-new-sanctions-over-attack-on-ukraine-576385252.html"
+    },
+    {
+      "timestamp": "2022-04-11T11:30:00",
+      "source": "infotel.ca",
+      "headline": "Canada takes aim at Russian defence sector with new sanctions over attack on Ukraine | iNFOnews",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://infotel.ca/newsitem/cda-ukraine/cp1657854451"
+    },
+    {
+      "timestamp": "2022-04-11T17:30:00",
+      "source": "dw.com",
+      "headline": "EU to help ICC investigate war crimes in Ukraine live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/eu-to-help-icc-investigate-war-crimes-in-ukraine-live-updates/a-61427944"
+    },
+    {
+      "timestamp": "2022-04-11T11:45:00",
+      "source": "aljazeera.com",
+      "headline": "Russia invasion of Ukraine : List of key events on day 47 | Russia - Ukraine war News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/4/11/russia-invasion-of-ukraine-list-of-key-events-on-day-47"
+    },
+    {
+      "timestamp": "2022-04-11T10:30:00",
+      "source": "arkansasonline.com",
+      "headline": "Russia zeros in on east Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2022/apr/11/russia-zeros-in-on-east-ukraine/"
+    },
+    {
+      "timestamp": "2022-04-11T14:15:00",
+      "source": "nationalobserver.com",
+      "headline": "Canada issues new sanctions against Russia defence industry",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nationalobserver.com/2022/04/11/news/canada-issues-sanctions-russias-defence-industry"
+    },
+    {
+      "timestamp": "2022-04-11T09:15:00",
+      "source": "ctvnews.ca",
+      "headline": "Canada takes aim at Russian defence sector with sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/politics/canada-takes-aim-at-russian-defence-sector-with-new-sanctions-1.5856768"
+    },
+    {
+      "timestamp": "2022-04-11T11:00:00",
+      "source": "cp24.com",
+      "headline": "Canada targets Russian defence industry with wave of fresh sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cp24.com/mobile/news/canada-targets-russia-s-defence-industry-with-wave-of-fresh-sanctions-1.5856771"
+    },
+    {
+      "timestamp": "2022-04-11T09:45:00",
+      "source": "cp24.com",
+      "headline": "Canada targets Russian defence industry with wave of fresh sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cp24.com/news/canada-targets-russia-s-defence-industry-with-wave-of-fresh-sanctions-1.5856771"
+    },
+    {
+      "timestamp": "2022-04-11T15:15:00",
+      "source": "castanet.net",
+      "headline": "Canada takes aim at Russian defence sector with new sanctions over attack on Ukraine - Canada News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.castanet.net/news/Canada/365620/Canada-takes-aim-at-Russian-defence-sector-with-new-sanctions-over-attack-on-Ukraine"
+    },
+    {
+      "timestamp": "2022-04-11T11:45:00",
+      "source": "timescolonist.com",
+      "headline": "Canada takes aim at Russian defence sector with new sanctions over attack on Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.timescolonist.com/national-news/canada-takes-aim-at-russian-defence-sector-with-new-sanctions-over-attack-on-ukraine-5252177"
+    },
+    {
+      "timestamp": "2022-04-11T13:00:00",
+      "source": "kelownanow.com",
+      "headline": "Canada takes aim at Russian defence sector with new sanctions over attack on Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.kelownanow.com/news/news/National_News/Canada_takes_aim_at_Russian_defence_sector_with_new_sanctions_over_attack_on_Ukraine"
+    },
+    {
+      "timestamp": "2022-04-11T15:30:00",
+      "source": "wbal.com",
+      "headline": "Russia  planned  attacks on Ukrainian civilians : National security adviser Sullivan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wbal.com/article/561605/193/russia-planned-attacks-on-ukrainian-civilians-national-security-adviser-sullivan"
+    },
+    {
+      "timestamp": "2022-04-11T15:30:00",
+      "source": "wbal.com",
+      "headline": "Russia  planned  attacks on Ukrainian civilians : National security adviser Sullivan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wbal.com/article/561605/3/russia-planned-attacks-on-ukrainian-civilians-national-security-adviser-sullivan"
+    },
+    {
+      "timestamp": "2022-04-11T06:15:00",
+      "source": "japantimes.co.jp",
+      "headline": "Ukraine calls for more support as it prepares for new Russian assault",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/04/11/world/ukraine-russia-support-east/"
+    }
+  ]
+}

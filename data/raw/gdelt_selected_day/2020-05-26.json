@@ -1,0 +1,197 @@
+{
+  "date": "2020-05-26",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 11,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-26T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T16:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-26T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Hash Rate Falls Lower Than Black Thursday , More Severe Selloff Incoming ?",
+    "Bilinenden Çok Daha Fazla Bitcoin Olduğu İddia Ediliyor",
+    "Ethereum Chart Makes It Clear : Altcoin Season Is Already Over",
+    "You Cant Just Print More Gold",
+    "Over 310 , 000 Bitcoin has Left Exchanges Since  Black Thursday"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-26T16:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Hash Rate Falls Lower Than Black Thursday , More Severe Selloff Incoming ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/26/bitcoin-miner-hash-rate-black-thursday/"
+    },
+    {
+      "timestamp": "2020-05-26T11:15:00",
+      "source": "webtekno.com",
+      "headline": "Bilinenden Çok Daha Fazla Bitcoin Olduğu İddia Ediliyor",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.webtekno.com/bilinenden-fazla-bitcoin-oldugu-iddia-ediliyor-h93312.html"
+    },
+    {
+      "timestamp": "2020-05-26T21:30:00",
+      "source": "newsbtc.com",
+      "headline": "Ethereum Chart Makes It Clear : Altcoin Season Is Already Over",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/26/ethereum-btc-chart-altcoin-season-over/"
+    },
+    {
+      "timestamp": "2020-05-26T17:00:00",
+      "source": "forbes.com",
+      "headline": "You Cant Just Print More Gold",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/greatspeculations/2020/05/26/you-cant-just-print-more-gold/"
+    },
+    {
+      "timestamp": "2020-05-26T02:15:00",
+      "source": "newsbtc.com",
+      "headline": "Over 310 , 000 Bitcoin has Left Exchanges Since  Black Thursday",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/26/310000-bitcoin-has-left-exchanges/"
+    },
+    {
+      "timestamp": "2020-05-26T23:45:00",
+      "source": "forbes.com",
+      "headline": "This Crypto Could Blow Bitcoin Out Of The Water This Year After 1 , 000 % Gain Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/05/26/this-crypto-could-blow-bitcoin-out-of-the-water-this-year-after-1000-gain-heres-why/"
+    },
+    {
+      "timestamp": "2020-05-26T13:15:00",
+      "source": "aei.org",
+      "headline": "Will the global liquidity tsunami rekindle economic growth or spark inflation ? | American Enterprise Institute",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.aei.org/economics/will-the-global-liquidity-tsunami-rekindle-economic-growth-or-spark-inflation/"
+    },
+    {
+      "timestamp": "2020-05-26T07:15:00",
+      "source": "fxstreet.com",
+      "headline": "Cryptocurrency Market News : Bitcoin outflow from exchanges hits 310 , 000 BTC since March 12 crypto crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/cryptocurrency-market-news-bitcoin-outflow-from-exchanges-hits-310-000-btc-since-march-12-crypto-crash-202005260634"
+    },
+    {
+      "timestamp": "2020-05-26T21:15:00",
+      "source": "cbsnews.com",
+      "headline": "Stocks are on a roll even as the economy tanks . Here are 3 reasons why",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/stock-rise-economy-unemployment-gdp/"
+    },
+    {
+      "timestamp": "2020-05-26T09:30:00",
+      "source": "forexcrunch.com",
+      "headline": "Cryptocurrency Market News : Bitcoin outflow from exchanges hits 310 , 000 BTC since March 12 crypto crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/cryptocurrency-market-news-bitcoin-outflow-from-exchanges-hits-310000-btc-since-march-12-crypto-crash/"
+    },
+    {
+      "timestamp": "2020-05-26T16:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Around $8 , 800 as Whales Accumulate $108M Worth of BTC",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-8800-whales/"
+    },
+    {
+      "timestamp": "2020-05-26T08:30:00",
+      "source": "investing.com",
+      "headline": "3 Reasons Bitcoin Will Ultimately Break Out To The Upside",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.investing.com/analysis/3-reasons-bitcoin-will-ultimately-break-out-to-the-upside-200525588"
+    },
+    {
+      "timestamp": "2020-05-26T16:45:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Crypto exchange CoinDCX raises $2 . 5 million in fresh funding",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/crypto-exchange-coindcx-raises-2-5-million-in-fresh-funding/articleshow/76010363.cms"
+    },
+    {
+      "timestamp": "2020-05-26T16:15:00",
+      "source": "articles.economictimes.indiatimes.com",
+      "headline": "Crypto exchange CoinDCX raises $2 . 5 million in fresh funding",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://articles.economictimes.indiatimes.com/markets/stocks/news/crypto-exchange-coindcx-raises-2-5-million-in-fresh-funding/articleshow/76010363.cms"
+    },
+    {
+      "timestamp": "2020-05-26T16:30:00",
+      "source": "newsbtc.com",
+      "headline": "Japanese Crypto Exchange BitFlyer Reports $6 . 9M Loss in 2019",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/26/japanese-crypto-exchange-bitflyer-reports-6-9m-loss-in-2019/"
+    }
+  ]
+}

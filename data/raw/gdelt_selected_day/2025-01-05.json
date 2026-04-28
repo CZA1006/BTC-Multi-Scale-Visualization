@@ -1,0 +1,202 @@
+{
+  "date": "2025-01-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-05T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-05T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Kamala Harris Celebrity Campaign Surrogates : Where Are They Now ?",
+    "Kamala Harris : After her bruising election loss , what next ?",
+    "Kamala Harris to certify her 2024 election loss",
+    "Kamala Harris : After her bruising election loss , what next ?",
+    "Former German minister strongly advises ECB to use crypto in reserves"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-05T01:30:00",
+      "source": "breitbart.com",
+      "headline": "Kamala Harris Celebrity Campaign Surrogates : Where Are They Now ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.breitbart.com/entertainment/2025/01/04/kamala-harriss-celebrity-campaign-surrogates-where-are-they-now/"
+    },
+    {
+      "timestamp": "2025-01-05T06:00:00",
+      "source": "bbc.com",
+      "headline": "Kamala Harris : After her bruising election loss , what next ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bbc.com/news/articles/cgq1dwpxvnxo"
+    },
+    {
+      "timestamp": "2025-01-05T11:00:00",
+      "source": "africanews.com",
+      "headline": "Kamala Harris to certify her 2024 election loss",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.africanews.com/2025/01/05/kamala-harris-to-certify-her-2024-election-loss/"
+    },
+    {
+      "timestamp": "2025-01-05T07:00:00",
+      "source": "bbc.co.uk",
+      "headline": "Kamala Harris : After her bruising election loss , what next ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bbc.co.uk/news/articles/cgq1dwpxvnxo"
+    },
+    {
+      "timestamp": "2025-01-05T12:00:00",
+      "source": "menafn.com",
+      "headline": "Former German minister strongly advises ECB to use crypto in reserves",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://menafn.com/1109056156/Former-German-minister-strongly-advises-ECB-to-use-crypto-in-reserves"
+    },
+    {
+      "timestamp": "2025-01-05T13:30:00",
+      "source": "yahoo.com",
+      "headline": "No Jan . 6 disruptions are expected as Trump win boosts Republican faith in elections -- for now",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/no-jan-6-disruptions-expected-123854011.html"
+    },
+    {
+      "timestamp": "2025-01-05T13:30:00",
+      "source": "abcnews.go.com",
+      "headline": "No Jan . 6 disruptions are expected as Trump win boosts Republican faith in elections -- for now",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/US/wireStory/jan-6-disruptions-expected-trumps-win-boosts-republicans-117342807"
+    },
+    {
+      "timestamp": "2025-01-05T04:30:00",
+      "source": "yahoo.com",
+      "headline": "Harris called Trump a danger to democracy . Now is set to certify his election win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-called-trump-danger-democracy-040205834.html"
+    },
+    {
+      "timestamp": "2025-01-05T19:30:00",
+      "source": "washingtontimes.com",
+      "headline": "Donald Trump win boosts Republican faith in elections",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2025/jan/5/donald-trump-win-boosts-republicans-faith-election/"
+    },
+    {
+      "timestamp": "2025-01-05T14:00:00",
+      "source": "ksat.com",
+      "headline": "No Jan . 6 disruptions are expected as Trump win boosts Republican faith in elections -- for now",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ksat.com/news/politics/2025/01/05/no-jan-6-disruptions-are-expected-as-trumps-win-boosts-republicans-faith-in-elections-for-now/"
+    },
+    {
+      "timestamp": "2025-01-05T14:15:00",
+      "source": "orlandosentinel.com",
+      "headline": "No Jan . 6 disruptions are expected as Trump win boosts Republican faith in elections for now – Orlando Sentinel",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.orlandosentinel.com/2025/01/05/no-jan-6-disruptions-are-expected-as-trumps-win-boosts-republicans-faith-in-elections-for-now/"
+    },
+    {
+      "timestamp": "2025-01-05T13:15:00",
+      "source": "clickondetroit.com",
+      "headline": "No Jan . 6 disruptions are expected as Trump win boosts Republican faith in elections -- for now",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.clickondetroit.com/news/politics/2025/01/05/no-jan-6-disruptions-are-expected-as-trumps-win-boosts-republicans-faith-in-elections-for-now/"
+    },
+    {
+      "timestamp": "2025-01-05T17:45:00",
+      "source": "local10.com",
+      "headline": "No Jan . 6 disruptions are expected as Trump win boosts Republican faith in elections -- for now",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.local10.com/news/politics/2025/01/05/no-jan-6-disruptions-are-expected-as-trumps-win-boosts-republicans-faith-in-elections-for-now/"
+    },
+    {
+      "timestamp": "2025-01-05T23:30:00",
+      "source": "nbcdfw.com",
+      "headline": "No disruptions are expected this Jan . 6 – NBC 5 Dallas - Fort Worth",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcdfw.com/news/politics/jan-6-trump-win-congress-electoral-college-republicans/3733249/"
+    },
+    {
+      "timestamp": "2025-01-05T14:15:00",
+      "source": "news4jax.com",
+      "headline": "No Jan . 6 disruptions are expected as Trump win boosts Republican faith in elections -- for now",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.news4jax.com/news/politics/2025/01/05/no-jan-6-disruptions-are-expected-as-trumps-win-boosts-republicans-faith-in-elections-for-now/"
+    }
+  ]
+}

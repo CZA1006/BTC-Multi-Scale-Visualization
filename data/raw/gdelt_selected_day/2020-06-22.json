@@ -1,0 +1,182 @@
+{
+  "date": "2020-06-22",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 1,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-22T01:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-22T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-22T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-22T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-22T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-22T20:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-22T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Correlation With S & P 500 Nears All - Time High , How Could This Impact Crypto ?",
+    "Crypto Fans Angry Over Fed Decision to Buy Corporate Bonds",
+    "If Bitcoin Traders Short Here , They Have  Terrible Odds  Of Making Money : Analyst",
+    "Macro Investors Ari Paul , Spencer Bogart and David Nage",
+    "뉴스핌 - 저금리 - 약달러에 오르는 건 금과 비트코인"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-22T20:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Correlation With S & P 500 Nears All - Time High , How Could This Impact Crypto ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/22/bitcoin-correlation-sp-500/"
+    },
+    {
+      "timestamp": "2020-06-22T17:45:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Crypto Fans Angry Over Fed Decision to Buy Corporate Bonds",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/crypto-fans-angry-over-fed-decision-to-buy-corporate-bonds/"
+    },
+    {
+      "timestamp": "2020-06-22T01:45:00",
+      "source": "newsbtc.com",
+      "headline": "If Bitcoin Traders Short Here , They Have  Terrible Odds  Of Making Money : Analyst",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/21/bitcoin-short-odds-making-money/"
+    },
+    {
+      "timestamp": "2020-06-22T21:00:00",
+      "source": "coindesk.com",
+      "headline": "Macro Investors Ari Paul , Spencer Bogart and David Nage",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/macro-investors-sound-off-featuring-ari-paul-spencer-bogart-and-david-nage"
+    },
+    {
+      "timestamp": "2020-06-22T01:45:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - 저금리 - 약달러에 오르는 건 금과 비트코인",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200622000059"
+    },
+    {
+      "timestamp": "2020-06-22T15:30:00",
+      "source": "businessinsider.com",
+      "headline": "Opening Bell , June 22 , 2020 - Business Insider",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.businessinsider.com/opening-bell-june-22-2020-6"
+    },
+    {
+      "timestamp": "2020-06-22T20:30:00",
+      "source": "newsbtc.com",
+      "headline": "Millions Liquidated as Bitcoin Clears $9 , 600 on Back of S & P 500 and DeFi",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/22/bitcoin-clears-9600-sp500-defi/"
+    },
+    {
+      "timestamp": "2020-06-22T16:30:00",
+      "source": "msn.com",
+      "headline": "Crypto Market Stuck in Negative Trend With Bitcoin Below $10 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/finance/markets/crypto-market-stuck-in-negative-trend-with-bitcoin-below-2410000/ar-BB15PPhz"
+    },
+    {
+      "timestamp": "2020-06-22T15:45:00",
+      "source": "prnewswire.com",
+      "headline": "Crypto Experts Reveal Thoughts : How Will Bitcoin Perform After the COVID - 19 Crisis Has Passed ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.prnewswire.com:443/news-releases/crypto-experts-reveal-thoughts-how-will-bitcoin-perform-after-the-covid-19-crisis-has-passed-301081094.html"
+    },
+    {
+      "timestamp": "2020-06-22T01:45:00",
+      "source": "newsbtc.com",
+      "headline": "Why Analysts Expect Bitcoin to Plummet to $7 , 700 as Technical Strength Degrades",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/21/analysts-expect-bitcoin-to-plummet-to-7700/"
+    },
+    {
+      "timestamp": "2020-06-22T20:15:00",
+      "source": "thestar.com",
+      "headline": "Crypto market stuck in negative trend with bitcoin below $10 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.thestar.com/business/2020/06/22/crypto-market-stuck-in-negative-trend-with-bitcoin-below-10000.html"
+    },
+    {
+      "timestamp": "2020-06-22T20:15:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Crypto market stuck in negative trend with bitcoin below US$10 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/crypto-market-stuck-in-negative-trend-with-bitcoin-below-10-000-1.1454290"
+    },
+    {
+      "timestamp": "2020-06-22T18:15:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Crypto market stuck in negative trend with bitcoin below US$10 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/crypto-market-stuck-in-negative-trend-with-bitcoin-below-us-10-000-1.1454290"
+    },
+    {
+      "timestamp": "2020-06-22T16:30:00",
+      "source": "infowars.com",
+      "headline": "Ron Paul : The Federal Reserve is Getting Desperate",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.infowars.com/ron-paul-the-federal-reserve-is-getting-desperate/"
+    },
+    {
+      "timestamp": "2020-06-22T21:00:00",
+      "source": "newsmax.com",
+      "headline": "Is a Desperate Fed Creating a Corporate Bond Bubble ?",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.newsmax.com/ronpaul/bernanke-powell-green-secondary/2020/06/22/id/973486/"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "date": "2024-12-13",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 1,
+  "theme_count_election": 10,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-13T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-13T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Tariffs , crypto , and interest rates set to dominate 2025 economic agenda",
+    "Crypto ads crackle in a Trump - energized landscape",
+    "Why Bitcoin surged to $100K US after Trump election and where it goes now",
+    "What a circu : eligible US voters on why they didnt vote in the 2024 presidential election",
+    "What a circu : eligible US voters on why they didnt vote in the 2024 presidential election | US elections 2024"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-13T14:00:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Tariffs , crypto , and interest rates set to dominate 2025 economic agenda",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/premium/3256430/tariffs-crypto-interest-rates-dominate-2025-economic-agenda-trump-administration-shift-biden/"
+    },
+    {
+      "timestamp": "2024-12-13T12:45:00",
+      "source": "livemint.com",
+      "headline": "Crypto ads crackle in a Trump - energized landscape",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.livemint.com/market/cryptocurrency/crypto-ads-crackle-in-a-trump-energized-landscape-11734091026386.html"
+    },
+    {
+      "timestamp": "2024-12-13T09:45:00",
+      "source": "cbc.ca",
+      "headline": "Why Bitcoin surged to $100K US after Trump election and where it goes now",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbc.ca/news/business/armstrong-bitcoin-trump-1.7409068"
+    },
+    {
+      "timestamp": "2024-12-13T14:45:00",
+      "source": "aol.com",
+      "headline": "What a circu : eligible US voters on why they didnt vote in the 2024 presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/circus-eligible-us-voters-why-140048088.html"
+    },
+    {
+      "timestamp": "2024-12-13T15:45:00",
+      "source": "theguardian.com",
+      "headline": "What a circu : eligible US voters on why they didnt vote in the 2024 presidential election | US elections 2024",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theguardian.com/us-news/2024/dec/13/why-eligible-voters-did-not-vote"
+    },
+    {
+      "timestamp": "2024-12-13T08:30:00",
+      "source": "hindustantimes.com",
+      "headline": "Donald Trump reveals why he thinks Kamala Harri campaign was doomed from the start ,  You have to know what youre …",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hindustantimes.com/world-news/us-news/donald-trump-reveals-why-he-thinks-kamala-harris-campaign-was-doomed-from-the-start-101734076632499.html"
+    },
+    {
+      "timestamp": "2024-12-13T16:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin could hit $160K in 2025 , fueled by improving macro conditions",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-price-predicted-160k-2025-macroeconomic-boost"
+    },
+    {
+      "timestamp": "2024-12-13T05:15:00",
+      "source": "dawn.com",
+      "headline": "Time names Trump  person of the year  for second time - Newspaper",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dawn.com/news/1878377/time-names-trump-person-of-the-year-for-second-time"
+    },
+    {
+      "timestamp": "2024-12-13T12:45:00",
+      "source": "newdelhitimes.com",
+      "headline": "Trump named Time Person of the Year ; rings New York Stock Exchange opening bell",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newdelhitimes.com/trump-named-times-person-of-the-year-rings-new-york-stock-exchanges-opening-bell/"
+    },
+    {
+      "timestamp": "2024-12-13T10:00:00",
+      "source": "coinspeaker.com",
+      "headline": "BlackRock Ethereum ETF Surges Past $3B as Analysts Eye ETH Rally to $15 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/blackrock-ethereum-etf-surges-past-3b-analysts-eye-eth-rally-15000/"
+    },
+    {
+      "timestamp": "2024-12-14T00:00:00",
+      "source": "wallstreetpit.com",
+      "headline": "$800K Bitcoin by Next Year ? Digital Expert Bold Prediction",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://wallstreetpit.com/121367-800k-bitcoin-next-year-digital-experts-bold-prediction/"
+    },
+    {
+      "timestamp": "2024-12-13T00:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin ( BTC ) Price Grapples with $100K as Rally on Trump Crypto - Positive Comment Fizzles",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/markets/2024/12/12/bitcoin-grapples-with-100-k-as-rally-on-trumps-crypto-positive-comment-fizzles"
+    },
+    {
+      "timestamp": "2024-12-13T18:15:00",
+      "source": "nj.com",
+      "headline": "Fox News host to Taylor Swift : Call Trump with this  smart  idea",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nj.com/politics/2024/12/fox-news-host-to-taylor-swift-call-trump-with-this-smart-idea.html"
+    },
+    {
+      "timestamp": "2024-12-13T15:45:00",
+      "source": "kiplinger.com",
+      "headline": "Crypto in Your Retirement Account ? It Not a Crazy Question",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.kiplinger.com/retirement/crypto-in-your-retirement-account"
+    },
+    {
+      "timestamp": "2024-12-13T14:15:00",
+      "source": "marketscreener.com",
+      "headline": "New US House banking chair wants to strip  calcification  from regulations",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/quote/cryptocurrency/BITCOIN-BTC-USD-45553945/news/New-US-House-banking-chair-wants-to-strip-calcification-from-regulations-48589312/"
+    }
+  ]
+}

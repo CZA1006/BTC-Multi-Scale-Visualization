@@ -1,0 +1,202 @@
+{
+  "date": "2020-05-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 9,
+  "theme_count_regulation": 0,
+  "theme_count_election": 1,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-09T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-09T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "The Greatest Shakeout : Bitcoin Reclaims Generational Log Curve With 160 % Rally",
+    "Crypto Tidbits : Bitcoin Roars Past $10k , Halving Days Away , Ethereum 2 . 0 Nears",
+    "뉴스핌 - [ 뉴욕전망 ] 재개되는 경제활동과 연동 ... 마이너스 금리  파월 입장 주목",
+    "Bitcoin Surges , Taking the Whole Market With It",
+    "Bitcoin May Have Rallied 170 % But Data Shows a  FOMO  Surge Is Possible"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-09T16:45:00",
+      "source": "newsbtc.com",
+      "headline": "The Greatest Shakeout : Bitcoin Reclaims Generational Log Curve With 160 % Rally",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/09/the-greatest-shakeout-bitcoin-reclaims-generational-log-curve-with-160-rally/"
+    },
+    {
+      "timestamp": "2020-05-09T07:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Bitcoin Roars Past $10k , Halving Days Away , Ethereum 2 . 0 Nears",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/09/crypto-tidbits-bitcoin-roars-past-10k-halving-days-away-ethereum-2-0-nears/"
+    },
+    {
+      "timestamp": "2020-05-09T03:15:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - [ 뉴욕전망 ] 재개되는 경제활동과 연동 ... 마이너스 금리  파월 입장 주목",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200509000058"
+    },
+    {
+      "timestamp": "2020-05-09T22:00:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Bitcoin Surges , Taking the Whole Market With It",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/bitcoin-surges-taking-the-whole-market-with-it/"
+    },
+    {
+      "timestamp": "2020-05-09T11:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin May Have Rallied 170 % But Data Shows a  FOMO  Surge Is Possible",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/09/bitcoin-may-have-rallied-170-but-data-shows-a-fomo-surge-is-possible/"
+    },
+    {
+      "timestamp": "2020-05-09T16:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price Rejected At Bear Market Supply Zone , Rally To Resume After Retest of Demand",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/09/bitcoin-price-rejected-at-bear-market-supply-zone-rally-to-resume-after-retest-of-demand/"
+    },
+    {
+      "timestamp": "2020-05-09T21:00:00",
+      "source": "newsbtc.com",
+      "headline": "Top Strike Rate Bitcoin Signal That Preceded a 2 , 000 % Rally Just Returned",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/09/top-strike-rate-bitcoin-signal-that-preceded-a-2000-rally-just-returned/"
+    },
+    {
+      "timestamp": "2020-05-09T01:15:00",
+      "source": "barrons.com",
+      "headline": "The Stock Market Is Rallying Now , but Dark Rumblings Signal a Downturn",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.barrons.com/articles/the-stock-market-is-rallying-now-but-dark-rumblings-signal-a-downturn-51588983694"
+    },
+    {
+      "timestamp": "2020-05-09T11:45:00",
+      "source": "newsbtc.com",
+      "headline": "The Days of Futures Halting Bitcoin From Passing $1 Trillion Are Likely Over",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/09/the-days-futures-halting-bitcoin-from-passing-1-trillion-are-over/"
+    },
+    {
+      "timestamp": "2020-05-09T00:30:00",
+      "source": "forbes.com",
+      "headline": "Donald Trump New $25 Trillion Problem Is Coming At The Worst Possible Time",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/05/08/donald-trumps-new-25-trillion-problem-is-coming-at-the-worst-possible-time/"
+    },
+    {
+      "timestamp": "2020-05-09T09:45:00",
+      "source": "thenational.ae",
+      "headline": "Bitcoin is set for a comeback as halving nears",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.thenational.ae/business/money/bitcoin-is-set-for-a-comeback-as-halving-nears-1.1016899"
+    },
+    {
+      "timestamp": "2020-05-09T05:15:00",
+      "source": "cointelegraph.com",
+      "headline": "BitMEX CEO Expects Investors to Follow Paul Tudor Jone Move to Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitmex-ceo-expects-investors-to-follow-paul-tudor-jones-move-to-bitcoin"
+    },
+    {
+      "timestamp": "2020-05-09T08:30:00",
+      "source": "fxstreet.com",
+      "headline": "BitMEX CEO Expects Investors to Follow Paul Tudor Jone Move to Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitmex-ceo-expects-investors-to-follow-paul-tudor-jones-move-to-bitcoin-202005090800"
+    },
+    {
+      "timestamp": "2020-05-09T00:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Five Things to Do Other Than Worry About Coronavirus and Bitcoin Price",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/five-things-to-do-other-than-worry-about-coronavirus-and-bitcoin-price"
+    },
+    {
+      "timestamp": "2020-05-09T01:45:00",
+      "source": "theguardian.pe.ca",
+      "headline": "Take Five : Trade War II | Reuters | Business",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theguardian.pe.ca/business/reuters/take-five-trade-war-ii-447377/"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "date": "2020-04-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 6,
+  "theme_count_regulation": 1,
+  "theme_count_election": 1,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-05T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T03:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-05T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "The U . S . Dollar is Dying , Buy Bitcoin :  Rich Dad Poor Dad  Author",
+    "Here why this grim monetary trend may be highly bullish for Bitcoin",
+    "Bitcoin Surges Amid Crisis ; Binance Surprising Addition",
+    "Bitcoin Hedging Performance in the Wake of the Coronavirus Outbreak",
+    "Are there any safe havens in this global market crash ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-05T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "The U . S . Dollar is Dying , Buy Bitcoin :  Rich Dad Poor Dad  Author",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/05/the-us-dollar-is-dying-buy-bitcoin-prominent-financial-educator/"
+    },
+    {
+      "timestamp": "2020-04-05T10:00:00",
+      "source": "cryptonewspipe.com",
+      "headline": "Here why this grim monetary trend may be highly bullish for Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cryptonewspipe.com/heres-why-this-grim-monetary-trend-may-be-highly-bullish-for-bitcoin/"
+    },
+    {
+      "timestamp": "2020-04-05T14:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Surges Amid Crisis ; Binance Surprising Addition",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2020/04/05/bitcoin-surges-amid-crisis-binances-surprising-addition/"
+    },
+    {
+      "timestamp": "2020-04-05T01:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin Hedging Performance in the Wake of the Coronavirus Outbreak",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoins-hedging-performance-in-the-wake-of-the-coronavirus-outbreak"
+    },
+    {
+      "timestamp": "2020-04-05T08:30:00",
+      "source": "thenational.ae",
+      "headline": "Are there any safe havens in this global market crash ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.thenational.ae/business/money/are-there-any-safe-havens-in-this-global-market-crash-1.1001650"
+    },
+    {
+      "timestamp": "2020-04-05T03:30:00",
+      "source": "newsbtc.com",
+      "headline": "Traders Are Loading Up On Bitcoin Longs : What Does This Mean ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/05/traders-are-loading-up-on-bitcoin-longs-what-does-this-mean/"
+    },
+    {
+      "timestamp": "2020-04-05T12:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "The Crypto Daily – Movers and Shakers - 05 / 04 / 20",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/crypto-daily-movers-shakers-05-024257196.html"
+    },
+    {
+      "timestamp": "2020-04-05T03:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Waiting for the Next Historic Number : Global Economy Week Ahead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/waiting-next-historic-number-global-020000694.html"
+    },
+    {
+      "timestamp": "2020-04-05T05:00:00",
+      "source": "townhall.com",
+      "headline": "Congress , Trump and the Fed Are Creating the Biggest Economic Bubble in World History",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://townhall.com/columnists/justinhaskins/2020/04/05/congress-trump-and-the-fed-are-creating-the-biggest-economic-bubble-in-world-history-n2566363"
+    },
+    {
+      "timestamp": "2020-04-05T03:30:00",
+      "source": "swissinfo.ch",
+      "headline": "Waiting for the Next Historic Number : Global Economy Week Ahead",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.swissinfo.ch/eng/waiting-for-the-next-historic-number--global-economy-week-ahead/45668688"
+    },
+    {
+      "timestamp": "2020-04-05T07:45:00",
+      "source": "moneyweb.co.za",
+      "headline": "Waiting for the next historic number",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.moneyweb.co.za/news/economy/waiting-for-the-next-historic-number/"
+    },
+    {
+      "timestamp": "2020-04-05T18:45:00",
+      "source": "marketwatch.com",
+      "headline": "Rich Dad , Poor Dad  Robert Kiyosaki : Dont save your money ! Spend it on the  best buy for future security",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/rich-dad-poor-dad-robert-kiyosaki-dont-save-your-money-spend-it-on-the-best-buy-for-future-security-2020-04-05"
+    },
+    {
+      "timestamp": "2020-04-05T01:45:00",
+      "source": "finanzen.ch",
+      "headline": "Börsenexperte über Corona - Hilfen von Fed und US - Regierung : Schlagkraft einer  Atombombe  | 05 . 04 . 20",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.finanzen.ch/nachrichten/aktien/boersenexperte-ueber-corona-hilfen-von-fed-und-us-regierung-schlagkraft-einer-atombombe-1029061695"
+    },
+    {
+      "timestamp": "2020-04-05T03:30:00",
+      "source": "newsbtc.com",
+      "headline": "What Next For Bitcoin After Brutal Rejection At Key $7 , 000 Price Point ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/04/whats-next-for-bitcoin-after-brutal-rejection-key-7000-price-point/"
+    },
+    {
+      "timestamp": "2020-04-05T03:30:00",
+      "source": "msn.com",
+      "headline": "Waiting for the Next Historic Number : Global Economy Week Ahead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/finance/markets/waiting-for-the-next-historic-number-global-economy-week-ahead/ar-BB12aXpw"
+    }
+  ]
+}

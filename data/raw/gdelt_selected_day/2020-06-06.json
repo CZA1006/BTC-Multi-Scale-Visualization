@@ -1,0 +1,202 @@
+{
+  "date": "2020-06-06",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 10,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-06T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T05:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-06T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-07T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Spike in bitcoin may take some time , says Investors",
+    "Bitcoin surge fails to materialise",
+    "After U . S . jobs stunner , traders leave negative rate bets in the rear view",
+    "After U . S . jobs stunner , traders leave negative rate bets in the rear view",
+    "Wall Street Week Ahead : Bond investors look for Fed to justify steepening yield curve"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-06T10:15:00",
+      "source": "tribune.com.pk",
+      "headline": "Spike in bitcoin may take some time , says Investors",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://tribune.com.pk/story/2236718/8-spike-bitcoin-may-take-time-says-investors/"
+    },
+    {
+      "timestamp": "2020-06-06T10:15:00",
+      "source": "bangkokpost.com",
+      "headline": "Bitcoin surge fails to materialise",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.bangkokpost.com/business/1930408/bitcoin-surge-fails-to-materialise"
+    },
+    {
+      "timestamp": "2020-06-06T05:00:00",
+      "source": "in.reuters.com",
+      "headline": "After U . S . jobs stunner , traders leave negative rate bets in the rear view",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/usa-fed-futures/after-u-s-jobs-stunner-traders-leave-negative-rate-bets-in-the-rear-view-idINKBN23D07S"
+    },
+    {
+      "timestamp": "2020-06-06T06:00:00",
+      "source": "in.reuters.com",
+      "headline": "After U . S . jobs stunner , traders leave negative rate bets in the rear view",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://in.reuters.com/in.reuters.com/article/usa-fed-futures/after-u-s-jobs-stunner-traders-leave-negative-rate-bets-in-the-rear-view-idINKBN23D07S"
+    },
+    {
+      "timestamp": "2020-06-06T19:15:00",
+      "source": "moneycontrol.com",
+      "headline": "Wall Street Week Ahead : Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/world/wall-street-week-ahead-bond-investors-look-for-fed-to-justify-steepening-yield-curve-5368781.html"
+    },
+    {
+      "timestamp": "2020-06-06T05:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "After U . S . jobs stunner , traders leave negative rate bets in the rear view",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/u-jobs-stunner-traders-leave-041745342.html"
+    },
+    {
+      "timestamp": "2020-06-07T00:00:00",
+      "source": "yna.co.kr",
+      "headline": "<뉴욕증시 주간전망> 경제 바닥 통과 기대 강화 … FOMC 주목",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yna.co.kr/view/AKR20200607005300009"
+    },
+    {
+      "timestamp": "2020-06-06T21:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Following Eerie Amazon Dot Com Fractal Would Lead To Retest of $20 , 000 Record",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/06/bitcoin-following-eerie-amazon-dot-com/"
+    },
+    {
+      "timestamp": "2020-06-06T07:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Wall Street : Wall Street week ahead : Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/wall-street-week-ahead-bond-investors-look-for-fed-to-justify-steepening-yield-curve/articleshow/76229444.cms"
+    },
+    {
+      "timestamp": "2020-06-06T05:00:00",
+      "source": "investing.com",
+      "headline": "Wall Street Week Ahead : Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investing.com/news/economy/wall-street-week-ahead-bond-investors-look-for-fed-to-justify-steepening-yield-curve-2193965"
+    },
+    {
+      "timestamp": "2020-06-06T11:00:00",
+      "source": "in.reuters.com",
+      "headline": "Wall Street Week Ahead : Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://in.reuters.com/in.reuters.com/article/us-usa-stocks-weekahead/wall-street-week-ahead-bond-investors-look-for-fed-to-justify-steepening-yield-curve-idINKBN23C2V1"
+    },
+    {
+      "timestamp": "2020-06-06T02:30:00",
+      "source": "metro.us",
+      "headline": "Wall Street Week Ahead : Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.metro.us/wall-street-week-ahead-10/"
+    },
+    {
+      "timestamp": "2020-06-06T04:45:00",
+      "source": "isp.netscape.com",
+      "headline": "Wall Street Week Ahead : Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://isp.netscape.com/pf/story/0002/20200606/KBN23C2V1_2"
+    },
+    {
+      "timestamp": "2020-06-06T03:00:00",
+      "source": "isp.netscape.com",
+      "headline": "Wall Street Week Ahead : Bond investors look for Fed to justify steepening yield curve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://isp.netscape.com/pf/story/0002/20200605/KBN23C2V1_1"
+    },
+    {
+      "timestamp": "2020-06-06T19:15:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Booming stock market could come back to bite the U . S . recovery",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/businessweek/booming-stock-market-could-come-back-to-bite-the-u-s-recovery-1.1446551"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "date": "2020-06-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 10,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-09T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T20:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-09T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bullish For Crypto : CME Bitcoin Futures Open Interest Growth On Pace To Rival BitMEX",
+    "Multibillionaire Hedge Fund Pits Bitcoin against Lower - Yield Bonds",
+    "Bloomberg predicts BTC to hit $20 , 000 this year",
+    "Federal Reserve May Let Down The Dow Jones Tomorrow | Investor Business Daily",
+    "Bitcoin Price Could Hit $75K within Weeks Similar to 2013 Bull Run"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-09T20:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bullish For Crypto : CME Bitcoin Futures Open Interest Growth On Pace To Rival BitMEX",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/09/cme-bitcoin-futures-interest-bitmex/"
+    },
+    {
+      "timestamp": "2020-06-09T15:30:00",
+      "source": "newsbtc.com",
+      "headline": "Multibillionaire Hedge Fund Pits Bitcoin against Lower - Yield Bonds",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/09/multibillionaire-hedge-fund-pits-bitcoin-against-lower-yield-bonds/"
+    },
+    {
+      "timestamp": "2020-06-09T01:15:00",
+      "source": "forexcrunch.com",
+      "headline": "Bloomberg predicts BTC to hit $20 , 000 this year",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/bloomberg-predicts-btc-to-hit-20000-this-year/"
+    },
+    {
+      "timestamp": "2020-06-09T20:15:00",
+      "source": "investors.com",
+      "headline": "Federal Reserve May Let Down The Dow Jones Tomorrow | Investor Business Daily",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investors.com/news/economy/federal-reserve-june-meeting-interest-rates-qe-outlook-dow-jones/"
+    },
+    {
+      "timestamp": "2020-06-09T16:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Could Hit $75K within Weeks Similar to 2013 Bull Run",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-could-hit-75k-in-weeks/"
+    },
+    {
+      "timestamp": "2020-06-09T06:30:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Run Could End Soon , But Fans Remain Bullish",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-run-could-end-soon-fans-remain-bullish-2990222"
+    },
+    {
+      "timestamp": "2020-06-09T01:00:00",
+      "source": "finance.townhall.com",
+      "headline": "Weak Dollar Signals Stimulus Overkill",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://finance.townhall.com/columnists/bryanperry/2020/06/08/weak-dollar-signals-stimulus-overkill-n2570279"
+    },
+    {
+      "timestamp": "2020-06-09T20:00:00",
+      "source": "coindesk.com",
+      "headline": "What the Stock Market  Robinhood Rally  Means for Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/what-the-stock-markets-robinhood-rally-means-for-bitcoin"
+    },
+    {
+      "timestamp": "2020-06-09T07:00:00",
+      "source": "usatoday.com",
+      "headline": "COVID - 19 : Fed likely to signal near - zero rates at least through 2022",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.usatoday.com/story/money/2020/06/09/covid-19-fed-likely-signal-near-zero-rates-least-through-2022/5322665002/"
+    },
+    {
+      "timestamp": "2020-06-09T11:00:00",
+      "source": "newsbtc.com",
+      "headline": "Last Time This Formation Was Seen , Bitcoin Peaked at $10 , 500 . It Back Again",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/09/last-time-formation-seen-bitcoin-peaked-10500-back-again/"
+    },
+    {
+      "timestamp": "2020-06-09T16:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Coca - Cola Amatil Accepts Bitcoin in Australia and New Zealand",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/coca-cola-bitcoin-australia-new-zealand/"
+    },
+    {
+      "timestamp": "2020-06-09T22:30:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - 증시 숨고르기에 美 국채 수익률 하락",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200610000020"
+    },
+    {
+      "timestamp": "2020-06-09T21:15:00",
+      "source": "investing.com",
+      "headline": "Day Ahead : Top 3 Things to Watch for June 10",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.investing.com/news/stock-market-news/day-ahead-3-things-to-watch-for-june-10-2197101"
+    },
+    {
+      "timestamp": "2020-06-09T16:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Price Volatility Hits 3 - Month Low",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoins-price-volatility-3-month-low"
+    },
+    {
+      "timestamp": "2020-06-09T21:00:00",
+      "source": "coindesk.com",
+      "headline": "Inherently Borderles : Acting OCC Chief Talks Crypto , State Licenses and DeFi",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/inherently-borderless-acting-occ-chief-talks-crypto-state-licenses-and-defi"
+    }
+  ]
+}

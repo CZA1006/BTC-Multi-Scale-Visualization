@@ -1,0 +1,187 @@
+{
+  "date": "2020-04-08",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 2,
+  "theme_count_macro": 4,
+  "theme_count_covid": 8,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-08T05:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-08T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-08T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-08T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-08T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-08T19:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-08T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-08T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Federal Reserve",
+    "This Dead Accurate Indicator Is Signaling Major Crash Across All of Crypto",
+    "Global Hedge Fund Expects Bitcoin to Hit $8K ; Here Why",
+    "Digital Currency Revolution Series : Spotlight On Bitcoin Bullish Driving Forces And Hedging Strategy",
+    "Coronaviorus Outbreak : US Fed economic rescue plan may shape global economy for decades to come"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-08T19:15:00",
+      "source": "benzinga.com",
+      "headline": "Federal Reserve",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/federal-reserve"
+    },
+    {
+      "timestamp": "2020-04-08T20:45:00",
+      "source": "newsbtc.com",
+      "headline": "This Dead Accurate Indicator Is Signaling Major Crash Across All of Crypto",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/08/this-dead-accurate-indicator-is-signaling-major-crash-across-all-of-crypto/"
+    },
+    {
+      "timestamp": "2020-04-08T16:00:00",
+      "source": "newsbtc.com",
+      "headline": "Global Hedge Fund Expects Bitcoin to Hit $8K ; Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/08/global-hedge-fund-expects-bitcoin-to-hit-8k-heres-why/"
+    },
+    {
+      "timestamp": "2020-04-08T16:30:00",
+      "source": "econotimes.com",
+      "headline": "Digital Currency Revolution Series : Spotlight On Bitcoin Bullish Driving Forces And Hedging Strategy",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Digital-Currency-Revolution-Series-Spotlight-On-Bitcoins-Bullish-Driving-Forces-And-Hedging-Strategy-1579421"
+    },
+    {
+      "timestamp": "2020-04-08T09:00:00",
+      "source": "firstpost.com",
+      "headline": "Coronaviorus Outbreak : US Fed economic rescue plan may shape global economy for decades to come",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.firstpost.com/health/coronaviorus-outbreak-us-feds-economic-rescue-plan-may-shape-global-economy-for-decades-to-come-8239571.html"
+    },
+    {
+      "timestamp": "2020-04-08T17:45:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Could Bitcoin Strike the $10 , 000 Mark Again in a Few Weeks ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/could-bitcoin-hit-the-10000-mark-again-in-a-few-weeks/"
+    },
+    {
+      "timestamp": "2020-04-08T05:45:00",
+      "source": "in.reuters.com",
+      "headline": "Readout of Fed March meetings to capture a frenzied policy response",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/us-health-coronavirus-fed-minutes/readout-of-feds-march-meetings-to-capture-a-frenzied-policy-response-idINKBN21Q0H7"
+    },
+    {
+      "timestamp": "2020-04-08T06:15:00",
+      "source": "reuters.com",
+      "headline": "Readout of Fed March meetings to capture a frenzied policy response",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-health-coronavirus-fed-minutes/readout-of-feds-march-meetings-to-capture-a-frenzied-policy-response-idUSKBN21Q0H7"
+    },
+    {
+      "timestamp": "2020-04-08T05:30:00",
+      "source": "uk.reuters.com",
+      "headline": "Readout of Fed March meetings to capture a frenzied policy response",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/article/us-health-coronavirus-fed-minutes/readout-of-feds-march-meetings-to-capture-a-frenzied-policy-response-idUKKBN21Q0H7"
+    },
+    {
+      "timestamp": "2020-04-08T19:00:00",
+      "source": "reuters.com",
+      "headline": "Fed officials agreed  forceful  response to coronavirus outbreak was needed",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-health-coronavirus-fed-minutes/fed-officials-agreed-forceful-response-to-coronavirus-outbreak-was-needed-idUSKBN21Q0H7"
+    },
+    {
+      "timestamp": "2020-04-08T19:15:00",
+      "source": "uk.reuters.com",
+      "headline": "Fed officials agreed  forceful  response to coronavirus outbreak was needed",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/article/us-health-coronavirus-fed-minutes/fed-officials-agreed-forceful-response-to-coronavirus-outbreak-was-needed-idUKKBN21Q0H7"
+    },
+    {
+      "timestamp": "2020-04-08T19:45:00",
+      "source": "in.reuters.com",
+      "headline": "Fed officials agreed  forceful  response to coronavirus outbreak was needed",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/us-health-coronavirus-fed-minutes/fed-officials-agreed-forceful-response-to-coronavirus-outbreak-was-needed-idINKBN21Q0H7"
+    },
+    {
+      "timestamp": "2020-04-08T21:00:00",
+      "source": "in.reuters.com",
+      "headline": "Fed officials agreed  forceful  response to coronavirus outbreak was needed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/us-health-coronavirus-fed-minutes/health-crisis-warranted-forceful-response-from-fed-minutes-show-idINKBN21Q0H7"
+    },
+    {
+      "timestamp": "2020-04-08T05:45:00",
+      "source": "in.reuters.com",
+      "headline": "Readout of Fed March meetings to capture a frenzied policy response",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/health-coronavirus-fed-minutes/readout-of-feds-march-meetings-to-capture-a-frenzied-policy-response-idINKBN21Q0GM"
+    },
+    {
+      "timestamp": "2020-04-08T19:15:00",
+      "source": "uk.reuters.com",
+      "headline": "Fed officials agreed  forceful  response to coronavirus outbreak was needed",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/article/uk-health-coronavirus-fed-minutes/fed-officials-agreed-forceful-response-to-coronavirus-outbreak-was-needed-idUKKCN21Q2Y6"
+    }
+  ]
+}

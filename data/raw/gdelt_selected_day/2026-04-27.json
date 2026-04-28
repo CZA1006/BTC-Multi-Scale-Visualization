@@ -1,0 +1,197 @@
+{
+  "date": "2026-04-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 12,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2026-04-27T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-27T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "US - Iran Talks Stalling : Expert Warns of Imminent Attack Risk",
+    "Bitcoin Faces Policy - Heavy Week With SEC Chair , Fed Decision in Focus",
+    "Trump Backs Down from His Boasting and Blustering about Iran Defeat",
+    "Kutluhan Akçın - Bitcoinde kritik hafta öncesinde dört haftalık primli seri",
+    "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev"
+  ],
+  "articles": [
+    {
+      "timestamp": "2026-04-27T10:00:00",
+      "source": "newkerala.com",
+      "headline": "US - Iran Talks Stalling : Expert Warns of Imminent Attack Risk",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newkerala.com/news/a/us-iran-talks-without-progress-may-indicate-possibility-another-744.htm"
+    },
+    {
+      "timestamp": "2026-04-27T11:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Faces Policy - Heavy Week With SEC Chair , Fed Decision in Focus",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-faces-policy-heavy-week-100216290.html"
+    },
+    {
+      "timestamp": "2026-04-27T05:15:00",
+      "source": "lewrockwell.com",
+      "headline": "Trump Backs Down from His Boasting and Blustering about Iran Defeat",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.lewrockwell.com/2026/04/paul-craig-roberts/trump-backs-down-from-his-boasting-and-blustering-about-irans-defeat/"
+    },
+    {
+      "timestamp": "2026-04-27T14:15:00",
+      "source": "haberler.com",
+      "headline": "Kutluhan Akçın - Bitcoinde kritik hafta öncesinde dört haftalık primli seri",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.haberler.com/yazarlar/kutluhan-akcin/bitcoin-de-kritik-hafta-oncesinde-dort-haftalik-primli-seri-6216/"
+    },
+    {
+      "timestamp": "2026-04-27T13:30:00",
+      "source": "russiaherald.com",
+      "headline": "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.russiaherald.com/news/279014467/us-iran-talks-without-progress-may-indicate-possibility-of-another-attack-says-foreign-affairs-expert-robinder-sachdev"
+    },
+    {
+      "timestamp": "2026-04-27T12:30:00",
+      "source": "iraqsun.com",
+      "headline": "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.iraqsun.com/news/279014467/us-iran-talks-without-progress-may-indicate-possibility-of-another-attack-says-foreign-affairs-expert-robinder-sachdev"
+    },
+    {
+      "timestamp": "2026-04-27T12:15:00",
+      "source": "vietnamtribune.com",
+      "headline": "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.vietnamtribune.com/news/279014467/us-iran-talks-without-progress-may-indicate-possibility-of-another-attack-says-foreign-affairs-expert-robinder-sachdev"
+    },
+    {
+      "timestamp": "2026-04-27T12:45:00",
+      "source": "kenyastar.com",
+      "headline": "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.kenyastar.com/news/279014467/us-iran-talks-without-progress-may-indicate-possibility-of-another-attack-says-foreign-affairs-expert-robinder-sachdev"
+    },
+    {
+      "timestamp": "2026-04-27T15:30:00",
+      "source": "israelherald.com",
+      "headline": "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.israelherald.com/news/279014467/us-iran-talks-without-progress-may-indicate-possibility-of-another-attack-says-foreign-affairs-expert-robinder-sachdev"
+    },
+    {
+      "timestamp": "2026-04-27T16:15:00",
+      "source": "pakistantelegraph.com",
+      "headline": "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.pakistantelegraph.com/news/279014467/us-iran-talks-without-progress-may-indicate-possibility-of-another-attack-says-foreign-affairs-expert-robinder-sachdev"
+    },
+    {
+      "timestamp": "2026-04-27T13:30:00",
+      "source": "austinglobe.com",
+      "headline": "US - Iran talks without progress may indicate possibility of another attack , says Foreign Affairs expert Robinder Sachdev",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.austinglobe.com/news/279014467/us-iran-talks-without-progress-may-indicate-possibility-of-another-attack-says-foreign-affairs-expert-robinder-sachdev"
+    },
+    {
+      "timestamp": "2026-04-27T09:15:00",
+      "source": "livemint.com",
+      "headline": "Bitcoin prices edge towards $80 , 000 amid US - Iran uncertainty . What should investors do ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.livemint.com/market/cryptocurrency/bitcoin-prices-edge-towards-80-000-amid-us-iran-uncertainty-what-should-investors-do-11777273661356.html"
+    },
+    {
+      "timestamp": "2026-04-27T15:00:00",
+      "source": "newsweek.com",
+      "headline": "Iran heads to Russia for help on US war why ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/iran-heads-to-russia-for-help-on-us-war-why-11881661"
+    },
+    {
+      "timestamp": "2026-04-27T05:30:00",
+      "source": "english.aawsat.com",
+      "headline": "Iran Foreign Minister Arrives in Russia as US Talks Remain Stalled",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.aawsat.com/world/5266849-iran-foreign-minister-arrives-russia-us-talks-remain-stalled"
+    },
+    {
+      "timestamp": "2026-04-27T03:45:00",
+      "source": "163.com",
+      "headline": "第二战场 ， 超2000人身亡|停火|伊朗|以色列|内塔尼亚胡 _ 网易订阅",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.163.com/dy/article/KRGU93KC0514BE2Q.html"
+    }
+  ]
+}

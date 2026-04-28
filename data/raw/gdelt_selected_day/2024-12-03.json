@@ -1,0 +1,207 @@
+{
+  "date": "2024-12-03",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 2,
+  "theme_count_election": 9,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-03T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T05:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-03T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "US interest rate cut in December rises to 74 . 5 % probability : Fedwatch",
+    "Why Harris lost election - Trinidad and Tobago Newsday",
+    "Republicans won big in the 2024 election , but the streak might not last long",
+    "Why MicroStrategy Stock Soared 59 % in November",
+    "Trump Says He Will Block Nippon Steel Acquisition of U . S . Steel"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-03T05:30:00",
+      "source": "cointelegraph.com",
+      "headline": "US interest rate cut in December rises to 74 . 5 % probability : Fedwatch",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/fed-december-rate-cut-probability-rises-fedwatch"
+    },
+    {
+      "timestamp": "2024-12-03T05:45:00",
+      "source": "newsday.co.tt",
+      "headline": "Why Harris lost election - Trinidad and Tobago Newsday",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newsday.co.tt/2024/12/03/why-harris-lost-election/"
+    },
+    {
+      "timestamp": "2024-12-03T02:15:00",
+      "source": "msnbc.com",
+      "headline": "Republicans won big in the 2024 election , but the streak might not last long",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.msnbc.com/opinion/msnbc-opinion/republicans-win-democrats-loss-2024-election-rcna182448"
+    },
+    {
+      "timestamp": "2024-12-03T09:30:00",
+      "source": "fool.com",
+      "headline": "Why MicroStrategy Stock Soared 59 % in November",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/12/03/why-microstrategy-stock-soared-59-in-november/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2024-12-03T04:00:00",
+      "source": "nytimes.com",
+      "headline": "Trump Says He Will Block Nippon Steel Acquisition of U . S . Steel",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nytimes.com/2024/12/02/us/politics/trump-nippon-steel-us-merger.html"
+    },
+    {
+      "timestamp": "2024-12-03T03:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin ETFs : US Bitcoin , Ether ETFs log record inflows on Trump crypto embrace",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/us-bitcoin-ether-etfs-log-record-inflows-on-trumps-crypto-embrace/articleshow/115916743.cms"
+    },
+    {
+      "timestamp": "2024-12-03T13:30:00",
+      "source": "yahoo.com",
+      "headline": "When does the Electoral College vote ? AP forecasts 312 - 226 vote for Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/does-electoral-college-vote-ap-120226659.html"
+    },
+    {
+      "timestamp": "2024-12-03T10:15:00",
+      "source": "paradurumu.com",
+      "headline": "İşlem Hacmi Son  Yılın Zirvesinde ! Kripto Para Piyasasının Değeri 3 , 4 Trilyon Dolara Yaklaştı",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.paradurumu.com/ekonomi/islem-hacmi-son-uc-yilin-zirvesinde-kripto-para-piyasasinin-degeri-34-trilyon-dolara-yaklasti-30157"
+    },
+    {
+      "timestamp": "2024-12-03T11:15:00",
+      "source": "fool.com",
+      "headline": "Bitcoin and Ethereum Relationship Is Doing Something Not Seen Since April 2021 -- It Could Trigger a Big Move for the World Second - Largest Cryptocurrency",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/12/03/bitcoin-and-ethereums-relationship-is-doing-someth/"
+    },
+    {
+      "timestamp": "2024-12-03T20:15:00",
+      "source": "newsweek.com",
+      "headline": "Donald Trump Gets Boulevard Named After Him in Miami",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/donald-trump-street-sign-miami-dade-florida-hialech-1995013"
+    },
+    {
+      "timestamp": "2024-12-03T19:15:00",
+      "source": "thehayride.com",
+      "headline": "CROUERE : Kamala Harris Wins Turkey of the Year Award",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://thehayride.com/2024/12/crouere-kamala-harris-wins-turkey-of-the-year-award/"
+    },
+    {
+      "timestamp": "2024-12-03T05:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto exchange volumes hit 3 year high in November , riding Trump win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/crypto-exchanges-bumper-trading-volumes-in-november"
+    },
+    {
+      "timestamp": "2024-12-03T22:45:00",
+      "source": "americanbanker.com",
+      "headline": "Letting crypto loose is a mistake banks will watch happen",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.americanbanker.com/opinion/letting-crypto-loose-is-a-mistake-banks-will-watch-happen"
+    },
+    {
+      "timestamp": "2024-12-03T04:00:00",
+      "source": "yahoo.com",
+      "headline": "Susan MacManus tells Tallahassee crowd Florida Democrats created own election disaster",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/susan-macmanus-tells-tallahassee-crowd-222220146.html"
+    },
+    {
+      "timestamp": "2024-12-03T12:00:00",
+      "source": "mprnews.org",
+      "headline": "Trump falls just below 50 % in popular vote , but gets more than in past elections",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mprnews.org/story/2024/12/03/npr-2024-presidential-election-popular-vote-trump-kamala-harris"
+    }
+  ]
+}

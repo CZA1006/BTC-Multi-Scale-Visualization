@@ -1,0 +1,192 @@
+{
+  "date": "2022-03-06",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-06T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T14:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-06T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russia - Ukraine war is the crypto moment",
+    "A Bigger Earthquake Than SWIFT  What The Russia PayPal , Visa And Mastercard Ban Means For Bitcoin And Crypto Amid Extreme Price Swings",
+    "Russia central bank is scrambling to prop up the country economy . Here everything it done to stave off sanctions and what it could do next .",
+    "Russia - Ukraine War : What to know as Russians advance on Kyiv",
+    "Slik vil sanksjonene ramme russere"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-06T13:45:00",
+      "source": "iol.co.za",
+      "headline": "Russia - Ukraine war is the crypto moment",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.iol.co.za/technology/russia-ukraine-war-is-the-crypto-moment-3945a62a-cded-464d-a2c5-ff28a2dcfb74"
+    },
+    {
+      "timestamp": "2022-03-06T11:15:00",
+      "source": "forbes.com",
+      "headline": "A Bigger Earthquake Than SWIFT  What The Russia PayPal , Visa And Mastercard Ban Means For Bitcoin And Crypto Amid Extreme Price Swings",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2022/03/06/a-bigger-earthquake-than-swift-what-the-russia-paypal-visa-and-mastercard-ban-means-for-bitcoin-and-crypto-amid-extreme-price-swings/"
+    },
+    {
+      "timestamp": "2022-03-06T15:15:00",
+      "source": "businessinsider.com.au",
+      "headline": "Russia central bank is scrambling to prop up the country economy . Here everything it done to stave off sanctions and what it could do next .",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.com.au/russia-ukraine-sanctions-ruble-oil-reserves-cryptocurrency-2022-3"
+    },
+    {
+      "timestamp": "2022-03-06T09:15:00",
+      "source": "phillytrib.com",
+      "headline": "Russia - Ukraine War : What to know as Russians advance on Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.phillytrib.com/russia-ukraine-war-what-to-know-as-russians-advance-on-kyiv/article_93edf0e4-9079-59ca-b344-b4282442e1c5.html"
+    },
+    {
+      "timestamp": "2022-03-06T00:45:00",
+      "source": "abcnyheter.no",
+      "headline": "Slik vil sanksjonene ramme russere",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.abcnyheter.no/nyheter/verden/2022/03/05/195829997/slik-vil-sanksjonene-ramme-russere"
+    },
+    {
+      "timestamp": "2022-03-06T04:15:00",
+      "source": "japantimes.co.jp",
+      "headline": "Putin likens Western sanctions to  declaration of war  as Russian assault traps Ukrainian civilians",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/03/06/world/ukraine-russia-declaration-war-putin/"
+    },
+    {
+      "timestamp": "2022-03-06T14:45:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Experts Predict What Russia Central Bank Could Do Next",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/russia-ukraine-sanctions-ruble-oil-reserves-cryptocurrency-2022-3"
+    },
+    {
+      "timestamp": "2022-03-06T15:45:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Experts Predict What Russia Central Bank Could Do Next",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://markets.businessinsider.com/news/currencies/russia-ukraine-sanctions-ruble-oil-reserves-cryptocurrency-2022-3"
+    },
+    {
+      "timestamp": "2022-03-06T13:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Cant Finance A War : The Crypto Industry And Being On The Right Side Of History",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/lawrencewintermeyer/2022/03/06/bitcoin-cant-finance-a-war-the-crypto-industry-and-being-on-the-right-side-of-history/"
+    },
+    {
+      "timestamp": "2022-03-06T16:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Staying Power of Crypto Rediscovered Refuge Status Faces Test",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/staying-power-of-crypto-s-rediscovered-refuge-status-faces-test-1.1733343"
+    },
+    {
+      "timestamp": "2022-03-06T14:45:00",
+      "source": "missoulian.com",
+      "headline": "Joanna Shelton : Economic sanctions hit Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://missoulian.com/opinion/columnists/joanna-shelton-economic-sanctions-hit-russia/article_2c3bed91-ac97-598b-92db-8787c99c140d.html"
+    },
+    {
+      "timestamp": "2022-03-06T14:15:00",
+      "source": "ve.lt",
+      "headline": "Putino fiasko : susitikimo vieta su „ Aeroflot  darbuotojomis tėra montažas ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://ve.lt/pasaulis/putino-fiasko-susitikimo-vieta-su-aeroflot-darbuotojomis-tera-montazas"
+    },
+    {
+      "timestamp": "2022-03-06T14:00:00",
+      "source": "rmc.bfmtv.com",
+      "headline": "La Guerre en Ukraine ou la guerre des crypto - monnaies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://rmc.bfmtv.com/emission/guerre-en-ukraine-ou-la-guerre-des-crypto-monnaies-2055344.html"
+    },
+    {
+      "timestamp": "2022-03-06T08:15:00",
+      "source": "msn.com",
+      "headline": "Ukraine Russia war LIVE Updates : Ukraine dominates social media information war with Russia ; Israel PM returns from surprise trip to Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/world/ukraine-russia-war-live-updates-ukraine-dominates-social-media-information-war-with-russia-israel-pm-returns-from-surprise-trip-to-russia/ar-AAUFKqk"
+    },
+    {
+      "timestamp": "2022-03-06T13:45:00",
+      "source": "japantimes.co.jp",
+      "headline": "How the West marshaled a stunning show of unity against Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/03/06/world/politics-diplomacy-world/west-russia-ukraine-unite/"
+    }
+  ]
+}

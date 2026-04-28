@@ -1,0 +1,197 @@
+{
+  "date": "2020-05-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 7,
+  "theme_count_regulation": 2,
+  "theme_count_election": 0,
+  "theme_count_war": 3,
+  "theme_count_macro": 1,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-05T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-05T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "How Crypto Innovator Alex Mashinsky Challenges Fed Monetary Policy",
+    "Warren Buffett Believes Everyone Should Read These Two Books",
+    "Inside Futures : Relevant trading - focused information authored by key players in the futures , options and forex industries",
+    "Bitcoin Trades Like the S & P 500 , and is Testing Resistance",
+    "Pristine  Pattern : Bitcoin Will See a Colossal Surge After BTC Halving"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-05T03:30:00",
+      "source": "forbes.com",
+      "headline": "How Crypto Innovator Alex Mashinsky Challenges Fed Monetary Policy",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/jasonbrett/2020/05/04/how-crypto-innovator-alex-mashinsky-challenges-fed-monetary-policy/"
+    },
+    {
+      "timestamp": "2020-05-05T13:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Warren Buffett Believes Everyone Should Read These Two Books",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/warren-buffett-two-books/"
+    },
+    {
+      "timestamp": "2020-05-05T13:00:00",
+      "source": "insidefutures.com",
+      "headline": "Inside Futures : Relevant trading - focused information authored by key players in the futures , options and forex industries",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.insidefutures.com/article/3130501/BitCoin%20Retests%20Resistance%20Near%209370,%20What%20Next"
+    },
+    {
+      "timestamp": "2020-05-05T08:15:00",
+      "source": "howestreet.com",
+      "headline": "Bitcoin Trades Like the S & P 500 , and is Testing Resistance",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.howestreet.com/2020/05/bitcoin-trades-like-the-sp-500-and-is-testing-resistance/"
+    },
+    {
+      "timestamp": "2020-05-05T12:30:00",
+      "source": "newsbtc.com",
+      "headline": "Pristine  Pattern : Bitcoin Will See a Colossal Surge After BTC Halving",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/05/pristine-pattern-predicts-bitcoin-colossal-surge-after-btc-halving/"
+    },
+    {
+      "timestamp": "2020-05-05T12:00:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Amid Economic Meltdown , Bitcoin Is Winning as  No Value  Buffett Eats Crow",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-amid-economic-meltdown-bitcoin-is-winning-as-no-value-buffett-eats-crow"
+    },
+    {
+      "timestamp": "2020-05-05T02:45:00",
+      "source": "newsbtc.com",
+      "headline": "4 Glaring Signs Show Bitcoin Could Rocket to New 2020 Highs In Coming Weeks",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/05/3-glaring-signs-that-show-bitcoin-rocket-past-10000-coming-week/"
+    },
+    {
+      "timestamp": "2020-05-05T20:15:00",
+      "source": "investmentwatchblog.com",
+      "headline": "The Fed Got the Market to Bottom on a Lie … So What Else is It Lying About ? – Investment Watch",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investmentwatchblog.com/the-fed-got-the-market-to-bottom-on-a-lie-so-what-else-is-it-lying-about/"
+    },
+    {
+      "timestamp": "2020-05-05T12:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Major Chinese Crypto Miners Expect Influx of New Bitcoin Buyers",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/major-chinese-crypto-miners-expect-influx-of-new-bitcoin-buyers"
+    },
+    {
+      "timestamp": "2020-05-05T18:15:00",
+      "source": "newsmax.com",
+      "headline": "Congress Can Rebuild Economy by Challenging Monetary Policy",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.newsmax.com/ronpaul/fed-reserve-powell-fiat/2020/05/05/id/966185/"
+    },
+    {
+      "timestamp": "2020-05-05T09:00:00",
+      "source": "lewrockwell.com",
+      "headline": "The Federal Reserve : More Lethal Than Coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.lewrockwell.com/2020/05/ron-paul/the-federal-reserve-more-lethal-than-coronavirus/"
+    },
+    {
+      "timestamp": "2020-05-05T22:15:00",
+      "source": "newsbtc.com",
+      "headline": "One Week Away : Comparing Past Pre - Halving Bitcoin Price Action",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/05/one-week-away-comparing-past-pre-halving-bitcoin-price-action/"
+    },
+    {
+      "timestamp": "2020-05-05T22:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Blockchain Firm BitGive Organizes Fundraising Rally for COVID - 19 Relief",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitgive-fundraising-covid-19/"
+    },
+    {
+      "timestamp": "2020-05-05T09:15:00",
+      "source": "finchannel.com",
+      "headline": "The FINANCIAL - How Coronavirus Has Changed the Attitude of People Towards Cryptocurrencies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.finchannel.com/society/health-beauty/coronavirus-update/77912-how-coronavirus-has-changed-the-attitude-of-people-towards-cryptocurrencies"
+    },
+    {
+      "timestamp": "2020-05-05T14:30:00",
+      "source": "finchannel.com",
+      "headline": "The FINANCIAL - How Coronavirus Has Changed the Attitude of People Towards Cryptocurrencies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://finchannel.com/society/health-beauty/coronavirus-update/77912-how-coronavirus-has-changed-the-attitude-of-people-towards-cryptocurrencies"
+    }
+  ]
+}

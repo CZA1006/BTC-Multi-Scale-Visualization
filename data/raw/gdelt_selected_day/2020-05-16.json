@@ -1,0 +1,202 @@
+{
+  "date": "2020-05-16",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 1,
+  "theme_count_election": 1,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-16T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-16T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Elon Musk Slams  Massive  Fed Stimulus Tells Harry Potter Author Bitcoin Looks  Solid",
+    "Mark Cuban : market is overvalued during pandemic",
+    "US Dollar Forecast : Fed Says No to NIRP , China Tension Flares",
+    "Dud stock picks , bad industry bets , vast underperformance it the end of the Warren Buffett era",
+    "Crypto Tidbits : Bitcoin Halving , Reddit Using Ethereum , JP Morgan Dabbles in Crypto"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-16T14:30:00",
+      "source": "forbes.com",
+      "headline": "Elon Musk Slams  Massive  Fed Stimulus Tells Harry Potter Author Bitcoin Looks  Solid",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/05/16/elon-musk-slams-massive-fed-stimulus-tells-harry-potter-author--bitcoin-looks-solid/"
+    },
+    {
+      "timestamp": "2020-05-16T14:45:00",
+      "source": "decrypt.co",
+      "headline": "Mark Cuban : market is overvalued during pandemic",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://decrypt.co/29063/mark-cuban-suggests-stocks-are-overvalued"
+    },
+    {
+      "timestamp": "2020-05-16T06:45:00",
+      "source": "dailyfx.com",
+      "headline": "US Dollar Forecast : Fed Says No to NIRP , China Tension Flares",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/fundamental/forecast/weekly/usd/2020/05/15/us-dollar-forecast-fed-says-no-to-nirp-china-tension-flares.html"
+    },
+    {
+      "timestamp": "2020-05-16T21:30:00",
+      "source": "marketwatch.com",
+      "headline": "Dud stock picks , bad industry bets , vast underperformance it the end of the Warren Buffett era",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/dud-stock-picks-bad-industry-bets-vast-underperformance-its-the-end-of-the-warren-buffett-era-2020-05-16"
+    },
+    {
+      "timestamp": "2020-05-16T04:30:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Bitcoin Halving , Reddit Using Ethereum , JP Morgan Dabbles in Crypto",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/16/crypto-tidbits-bitcoin-halving-reddit-using-ethereum-jp-morgan-dabbles-in-crypto/"
+    },
+    {
+      "timestamp": "2020-05-16T03:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Why A  Prolonged Recession  Might Not Be Terrible For Investors",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/why-prolonged-recession-might-not-180046346.html"
+    },
+    {
+      "timestamp": "2020-05-16T16:45:00",
+      "source": "marketwatch.com",
+      "headline": "To survive the next few months , you only need two assets , says this money manager",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/to-survive-the-next-few-months-you-only-need-two-assets-says-this-money-manager-2020-05-16"
+    },
+    {
+      "timestamp": "2020-05-16T00:00:00",
+      "source": "newsbtc.com",
+      "headline": "Chartered Market Technician Claims Crypto Poised For Strong Uptrend",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/15/chartered-market-technician-claims-crypto-poised-for-strong-uptrend/"
+    },
+    {
+      "timestamp": "2020-05-16T17:15:00",
+      "source": "article.wn.com",
+      "headline": "Elon Musk admits to still owning Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://article.wn.com/view/2020/05/16/Elon_Musk_admits_to_still_owning_Bitcoin/"
+    },
+    {
+      "timestamp": "2020-05-16T04:30:00",
+      "source": "newsbtc.com",
+      "headline": "While Elon Musk Thinks Bitcoin Looks  Solid , He Only Owns $2k Worth of BTC",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/15/while-elon-musk-thinks-bitcoin-looks-solid-he-only-owns-2k-worth-of-btc/"
+    },
+    {
+      "timestamp": "2020-05-16T21:45:00",
+      "source": "oann.com",
+      "headline": "Fed says around 600 smaller banks tapped PPP facility in its first days",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.oann.com/fed-says-around-600-smaller-banks-tapped-ppp-facility-in-its-first-days/"
+    },
+    {
+      "timestamp": "2020-05-16T10:30:00",
+      "source": "wral.com",
+      "headline": "Trump bizarre wish list : Higher oil prices and negative interest rates :: WRAL . com",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wral.com/trumps-bizarre-wish-list-higher-oil-prices-and-negative-interest-rates/19099416/"
+    },
+    {
+      "timestamp": "2020-05-16T17:00:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Is Invading Decentralized Finance On The Ethereum Network",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/leeorshimron/2020/05/16/bitcoin-is-invading-decentralized-finance/"
+    },
+    {
+      "timestamp": "2020-05-16T08:00:00",
+      "source": "firstpost.com",
+      "headline": "U . S . stock market swings higher despite rising U . S .- China tensions ; oil up",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.firstpost.com/business/u-s-stock-market-swings-higher-despite-rising-u-s-china-tensions-oil-up-8373291.html"
+    },
+    {
+      "timestamp": "2020-05-16T09:00:00",
+      "source": "nzz.ch",
+      "headline": "Coronavirus : Kämpfe niemals gegen die Fed bewahrheitet sich",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.nzz.ch/finanzen/coronavirus-kaempfe-niemals-gegen-die-fed-bewahrheitet-sich-ld.1556844"
+    }
+  ]
+}

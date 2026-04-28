@@ -1,0 +1,167 @@
+{
+  "date": "2024-09-08",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 15,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-08T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-08T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-08T19:00:00",
+      "news_count": 11,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-08T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "EUA são governados por  um regime de patifes , acusa Donald Trump",
+    "New Poll Shows Potential Momentum Change Between Harris , Trump",
+    "New Poll Shows Potential Momentum Change Between Harris , Trump | WJBO Newsradio 1150 AM & 98 . 7 FM",
+    "New Poll Shows Potential Momentum Change Between Harris , Trump",
+    "New Poll Shows Potential Momentum Change Between Harris , Trump"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-08T01:00:00",
+      "source": "otempo.com.br",
+      "headline": "EUA são governados por  um regime de patifes , acusa Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.otempo.com.br/mundo/2024/9/7/eua-sao-governados-por--um-regime-de-patifes----acusa-donald-tru"
+    },
+    {
+      "timestamp": "2024-09-08T17:15:00",
+      "source": "55krc.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://55krc.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:30:00",
+      "source": "wjbo.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump | WJBO Newsradio 1150 AM & 98 . 7 FM",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wjbo.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:30:00",
+      "source": "wjdx.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wjdx.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:30:00",
+      "source": "jetradio1400.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://jetradio1400.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/?pname=www.jetradio1400.com&sc=dnsredirect"
+    },
+    {
+      "timestamp": "2024-09-08T19:15:00",
+      "source": "hallelujah955.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://hallelujah955.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:15:00",
+      "source": "590kqnt.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://590kqnt.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:15:00",
+      "source": "newstalk1230.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newstalk1230.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:15:00",
+      "source": "925thebreeze.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://925thebreeze.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:15:00",
+      "source": "newstalk1400online.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump | Newstalk 1400 , 104 . 5 , and 105 . 9",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newstalk1400online.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:15:00",
+      "source": "newstalk1130.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newstalk1130.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:15:00",
+      "source": "khow.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://khow.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T20:00:00",
+      "source": "1061fmtalk.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://1061fmtalk.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T19:45:00",
+      "source": "whp580.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://whp580.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-08T17:45:00",
+      "source": "newsradio1470.iheart.com",
+      "headline": "New Poll Shows Potential Momentum Change Between Harris , Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newsradio1470.iheart.com/content/2024-09-08-new-poll-shows-potential-momentum-change-between-harris-trump/"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "date": "2020-03-10",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 3,
+  "theme_count_election": 1,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-10T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T16:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-10T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "美연준 , 증시 패닉에 90조원 유동성 긴급 투입",
+    "Central Banking Equals Socialism",
+    "Central Banking Is Socialism - LewRockwell",
+    "트럼프 , 연준에  굼뜨고 한심하다  또 맹비난",
+    "검은월요일  금리인하 약발 안들어 … 미국 , 양적완화 카드 꺼내나"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-10T00:30:00",
+      "source": "news.mt.co.kr",
+      "headline": "美연준 , 증시 패닉에 90조원 유동성 긴급 투입",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2020031005011598771&type=2&sec=finance&pDepth2=Ftotal&MNS_T"
+    },
+    {
+      "timestamp": "2020-03-10T20:00:00",
+      "source": "newsmax.com",
+      "headline": "Central Banking Equals Socialism",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.newsmax.com/ronpaul/fed-elites-right-left/2020/03/10/id/957706/"
+    },
+    {
+      "timestamp": "2020-03-10T05:30:00",
+      "source": "lewrockwell.com",
+      "headline": "Central Banking Is Socialism - LewRockwell",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.lewrockwell.com/2020/03/ron-paul/central-banking-is-socialism/"
+    },
+    {
+      "timestamp": "2020-03-10T16:45:00",
+      "source": "news1.kr",
+      "headline": "트럼프 , 연준에  굼뜨고 한심하다  또 맹비난",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.news1.kr/articles/?3869431"
+    },
+    {
+      "timestamp": "2020-03-10T07:45:00",
+      "source": "newstomato.com",
+      "headline": "검은월요일  금리인하 약발 안들어 … 미국 , 양적완화 카드 꺼내나",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.newstomato.com/ReadNews.aspx?no=958128"
+    },
+    {
+      "timestamp": "2020-03-10T21:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Rejected From $8 , 000 , Are Bears in Complete Control Over Crypto ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/10/bitcoin-rejected-from-8000-are-bears-in-complete-control-over-crypto/"
+    },
+    {
+      "timestamp": "2020-03-10T16:30:00",
+      "source": "newsbtc.com",
+      "headline": "How Fear and Greed in the Crypto Market Can Lead To Incredible Profit",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/10/fear-greed-crypto-market/"
+    },
+    {
+      "timestamp": "2020-03-10T16:30:00",
+      "source": "newsbtc.com",
+      "headline": "Oil Market Shows Why Bitcoin Downtrend is Far From Over",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/10/oil-market-shows-why-bitcoin-downtrend-is-far-from-over/"
+    },
+    {
+      "timestamp": "2020-03-10T10:00:00",
+      "source": "riotimesonline.com",
+      "headline": "Bitcoin Loses US$8 , 000 yet Still Accumulates 100 Percent High in one Year",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://riotimesonline.com/brazil-news/brazil/bitcoin-loses-us8000-yet-still-accumulates-100-percent-high-in-one-year/"
+    },
+    {
+      "timestamp": "2020-03-10T14:45:00",
+      "source": "fxstreet.com",
+      "headline": "Cryptocurrency market update : Bitcoin unrelenting in the journey to $100 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/cryptocurrency-market-update-bitcoin-unrelenting-in-the-journey-to-100-000-202003100825"
+    },
+    {
+      "timestamp": "2020-03-10T21:00:00",
+      "source": "koreatimes.com",
+      "headline": "코로나19 충격 완화 서두르는 트럼프 , 연준 · 민주당에 화살",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.koreatimes.com/article/20200310/1300321"
+    },
+    {
+      "timestamp": "2020-03-10T13:00:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Plunges To Lowest Since January , Safe Haven Questionable",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-plunges-lowest-january-safe-haven-questionable-2937085"
+    },
+    {
+      "timestamp": "2020-03-10T16:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Rebounds From Market Worst Day in 5 Months ; Big Relief Rally Ahead ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/10/bitcoin-rebounds-from-markets-worst-day-in-5-months/"
+    },
+    {
+      "timestamp": "2020-03-10T03:00:00",
+      "source": "newsbtc.com",
+      "headline": "Top Macro Analyst Explains Why Bitcoin Has Crashed 17 % Since $9 , 200",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/10/top-macro-analyst-explains-bitcoin-crashed-17-percent-from-9200/"
+    },
+    {
+      "timestamp": "2020-03-10T23:00:00",
+      "source": "forbes.com",
+      "headline": "Trump Administration Considers Reducing Payroll Tax To Zero",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/mikepatton/2020/03/10/trump-administration-considers-reducing-payroll-tax-to-zero/"
+    }
+  ]
+}

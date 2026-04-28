@@ -1,0 +1,207 @@
+{
+  "date": "2020-04-26",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 3,
+  "theme_count_covid": 4,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-26T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-26T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "From precious metals to loans on the brink of default : Investors are flocking to these assets after the coronavirus market meltdown",
+    "Bitcoin Bull - Case Gets Big Boost As Calls For Negative Rates Mount",
+    "Bitcoin Hits April High ; Crypto Portfolios Get Stimulus Injection",
+    "When WWI , Pandemic and Slump Ended , Americans Sprung Into the Roaring Twenties",
+    "This  Perfect  Sell Setup Marked Bitcoin $10 , 000 High . It Just Returned"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-26T15:00:00",
+      "source": "businessinsider.in",
+      "headline": "From precious metals to loans on the brink of default : Investors are flocking to these assets after the coronavirus market meltdown",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.businessinsider.in/stock-market/news/from-precious-metals-to-loans-on-the-brink-of-default-investors-are-flocking-to-these-assets-after-the-coronavirus-market-meltdown/articleshow/75391253.cms"
+    },
+    {
+      "timestamp": "2020-04-26T21:30:00",
+      "source": "zerohedge.com",
+      "headline": "Bitcoin Bull - Case Gets Big Boost As Calls For Negative Rates Mount",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/crypto/bitcoins-bull-case-gets-big-boost-calls-negative-rates-mount"
+    },
+    {
+      "timestamp": "2020-04-26T16:00:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Hits April High ; Crypto Portfolios Get Stimulus Injection",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2020/04/26/bitcoin-hits-april-high-crypto-portfolios-get-stimulus-injection/"
+    },
+    {
+      "timestamp": "2020-04-26T01:15:00",
+      "source": "history.com",
+      "headline": "When WWI , Pandemic and Slump Ended , Americans Sprung Into the Roaring Twenties",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.history.com/news/pandemic-world-war-i-roaring-twenties"
+    },
+    {
+      "timestamp": "2020-04-26T14:30:00",
+      "source": "newsbtc.com",
+      "headline": "This  Perfect  Sell Setup Marked Bitcoin $10 , 000 High . It Just Returned",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/26/this-perfect-sell-setup-marked-bitcoin-10000-high-its-back-again/"
+    },
+    {
+      "timestamp": "2020-04-26T04:45:00",
+      "source": "newsbtc.com",
+      "headline": "No , Kim Jong Un  Vegetative State  Wont Cause a Bitcoin Crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/26/no-kim-jong-uns-vegetative-state-wont-cause-a-bitcoin-crash/"
+    },
+    {
+      "timestamp": "2020-04-26T09:30:00",
+      "source": "newsbtc.com",
+      "headline": "A Top Crypto Trader is Selling His Altcoins Due to These  Red Flags",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/26/top-crypto-trader-selling-his-altcoins-due-3-red-flags/"
+    },
+    {
+      "timestamp": "2020-04-26T03:45:00",
+      "source": "dailyfx.com",
+      "headline": "Gold Price Outlook Bullish as Liquidity Gushes , Recession Looms",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/fundamental/forecast/weekly/title/2020/04/26/gold-price-outlook-bullish-as-liquidity-gushes-recession-looms.html"
+    },
+    {
+      "timestamp": "2020-04-26T09:15:00",
+      "source": "hindustantimes.com",
+      "headline": "Earnings , coronavirus trend , Fed rate decision to drive equities , say analysts",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.hindustantimes.com/business-news/earnings-coronavirus-trend-fed-rate-decision-to-drive-equities-say-analysts/story-cJWdVzpr5f7s1YAqIYYOQP.html"
+    },
+    {
+      "timestamp": "2020-04-26T06:45:00",
+      "source": "financialexpress.com",
+      "headline": "Earnings , Coronavirus trend , US Fed interest rate decision to drive equities in coming week",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.financialexpress.com/market/earnings-coronavirus-trend-us-feds-interest-rate-decision-to-drive-equities-in-coming-week/1939874/"
+    },
+    {
+      "timestamp": "2020-04-26T05:30:00",
+      "source": "business-standard.com",
+      "headline": "Earnings , virus trend , Fed rate decision to drive equities : Analysts",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.business-standard.com/article/pti-stories/earnings-virus-trend-fed-rate-decision-to-drive-equities-analysts-120042600170_1.html"
+    },
+    {
+      "timestamp": "2020-04-26T01:45:00",
+      "source": "cryptobriefing.com",
+      "headline": "Oil Dropped to Zero Before Bitcoin , but Did Regulators Notice ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cryptobriefing.com/oil-dropped-zero-before-bitcoin-did-regulators-notice/"
+    },
+    {
+      "timestamp": "2020-04-26T07:00:00",
+      "source": "investmentwatchblog.com",
+      "headline": "FT : Investors baffled by soaring stocks in  monster  depression – Investment Watch",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.investmentwatchblog.com/ft-investors-baffled-by-soaring-stocks-in-monster-depression/"
+    },
+    {
+      "timestamp": "2020-04-26T19:15:00",
+      "source": "newsbtc.com",
+      "headline": "Will Bitcoin Halving Be Bullish or Bearish ? Analysts Grow Divided",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/26/will-bitcoins-halving-be-bullish-or-bearish-analysts-grow-divided/"
+    },
+    {
+      "timestamp": "2020-04-26T19:15:00",
+      "source": "dailyforex.com",
+      "headline": "How Coronavirus has Affected the Forex Market",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.dailyforex.com/forex-articles/2020/04/how-coronavirus-has-affected-the-forex-market/137893"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "date": "2020-06-28",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-28T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-28T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Bull Run Was Here , But White Swan Pandemic Put It On Lockdown",
+    "What Recent Developments in the Fintech Space Mean for Our Future",
+    "Crypto Derivatives Might Drive a New Cycle of Mass Adoption",
+    "Deflation Archives - CoinDesk",
+    "Top Banks Say Gold May See A Record Rally By 2021 Why Bitcoin Can Too"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-28T01:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Bull Run Was Here , But White Swan Pandemic Put It On Lockdown",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/27/bitcoin-bull-white-swan-pandemic/"
+    },
+    {
+      "timestamp": "2020-06-28T18:45:00",
+      "source": "cointelegraph.com",
+      "headline": "What Recent Developments in the Fintech Space Mean for Our Future",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/what-recent-developments-in-the-fintech-space-mean-for-our-future"
+    },
+    {
+      "timestamp": "2020-06-28T20:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto Derivatives Might Drive a New Cycle of Mass Adoption",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/crypto-derivatives-might-drive-a-new-cycle-of-mass-adoption"
+    },
+    {
+      "timestamp": "2020-06-28T21:00:00",
+      "source": "coindesk.com",
+      "headline": "Deflation Archives - CoinDesk",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/tag/deflation"
+    },
+    {
+      "timestamp": "2020-06-28T22:45:00",
+      "source": "forbes.com",
+      "headline": "Top Banks Say Gold May See A Record Rally By 2021 Why Bitcoin Can Too",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/youngjoseph/2020/06/28/top-banks-say-gold-may-see-a-record-rally-by-2021-why-bitcoin-can-too/"
+    },
+    {
+      "timestamp": "2020-06-28T11:45:00",
+      "source": "forbes.com",
+      "headline": "Perfect Storm  Can Push Bitcoin Market Over $1 Trillion , Research Reveals",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/06/28/perfect-storm-can-push-bitcoin-market-over-1-trillion-research-reveals/"
+    },
+    {
+      "timestamp": "2020-06-28T04:15:00",
+      "source": "msn.com",
+      "headline": "Did market see US Fed liquidity - driven rally without any economic fundamentals post 2008 ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/other/did-market-see-us-feds-liquidity-driven-rally-without-any-economic-fundamentals-post-2008/ar-BB162XKx"
+    },
+    {
+      "timestamp": "2020-06-28T05:15:00",
+      "source": "moneycontrol.com",
+      "headline": "Did market see US Fed liquidity - driven rally without any economic fundamentals post 2008 ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/business/markets/did-markets-see-us-feds-liquidity-driven-rally-without-any-economic-fundamentals-post-2008-5468421.html"
+    },
+    {
+      "timestamp": "2020-06-28T19:30:00",
+      "source": "news.bitcoin.com",
+      "headline": "Skeptics Concerned Plustoken Scammers Plan to Dump $187M Worth of Ethereum",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://news.bitcoin.com/skeptics-concerned-plustoken-scammers-plan-to-dump-187m-worth-of-ethereum/"
+    },
+    {
+      "timestamp": "2020-06-28T16:45:00",
+      "source": "zerohedge.com",
+      "headline": "Triple Threat - 3 Major Risks The Markets Are Not Pricing In Yet",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/markets/triple-threat-3-major-risks-markets-are-not-pricing-yet"
+    },
+    {
+      "timestamp": "2020-06-28T03:30:00",
+      "source": "pagina12.com.ar",
+      "headline": "¿ Existe el riesgo de una segunda ola de crac bursát ...",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.pagina12.com.ar/274868-existe-el-riesgo-de-una-segunda-ola-de-crac-bursatil"
+    },
+    {
+      "timestamp": "2020-06-28T15:30:00",
+      "source": "wraltechwire.com",
+      "headline": "More fireworks ahead for Wall Street ? Bulls or bears ? Experts have mix of views",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.wraltechwire.com/2020/06/28/more-fireworks-ahead-for-wall-street-bulls-or-bears-experts-have-mix-of-views/"
+    },
+    {
+      "timestamp": "2020-06-28T02:00:00",
+      "source": "edaily.co.kr",
+      "headline": "이번주 ( 6월 29~7월 3일 ) 재테크 캘린더",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01357926625806312&mediaCodeNo=E"
+    },
+    {
+      "timestamp": "2020-06-28T18:30:00",
+      "source": "peakoil.com",
+      "headline": "3 Risks Threatening To Crash Stocks  | Peak Oil News and Message Boards",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://peakoil.com/business/3-risks-threatening-to-crash-stocks"
+    },
+    {
+      "timestamp": "2020-06-28T23:15:00",
+      "source": "peakoil.com",
+      "headline": "3 Risks Threatening To Crash Stocks  | Peak Oil News and Message Boards",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://peakoil.com/business/3-risks-threatening-to-crash-stocks/comment-page-1"
+    }
+  ]
+}

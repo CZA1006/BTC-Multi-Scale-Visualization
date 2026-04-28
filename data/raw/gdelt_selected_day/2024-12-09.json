@@ -1,0 +1,187 @@
+{
+  "date": "2024-12-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 15,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-09T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-09T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-09T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-09T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-09T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-09T16:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-09T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-09T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "At Gulf bitcoin gathering , Trump family and allies to bask in crypto industry euphoria",
+    "Trump family and allies to bask in crypto industry euphoria at Gulf bitcoin gathering",
+    "At Gulf bitcoin gathering , Trump family and allies to bask in crypto industry euphoria",
+    "US bitcoin ETF inflows near $10B since election",
+    "U . S . can become crypto superpower with sensible regulation : Eric Trump"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-09T03:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "At Gulf bitcoin gathering , Trump family and allies to bask in crypto industry euphoria",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/tech/technology/at-gulf-bitcoin-gathering-trump-family-and-allies-to-bask-in-crypto-industrys-euphoria/articleshow/116120941.cms"
+    },
+    {
+      "timestamp": "2024-12-09T03:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Trump family and allies to bask in crypto industry euphoria at Gulf bitcoin gathering",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/trump-family-and-allies-to-bask-in-crypto-industrys-euphoria-at-gulf-bitcoin-gathering/articleshow/116120950.cms"
+    },
+    {
+      "timestamp": "2024-12-09T01:00:00",
+      "source": "yahoo.com",
+      "headline": "At Gulf bitcoin gathering , Trump family and allies to bask in crypto industry euphoria",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/gulf-bitcoin-gathering-trump-family-230317061.html"
+    },
+    {
+      "timestamp": "2024-12-09T15:00:00",
+      "source": "investmentnews.com",
+      "headline": "US bitcoin ETF inflows near $10B since election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.investmentnews.com/industry-news/us-bitcoin-etf-inflows-near-10b-since-election/258514"
+    },
+    {
+      "timestamp": "2024-12-09T15:30:00",
+      "source": "cnbc.com",
+      "headline": "U . S . can become crypto superpower with sensible regulation : Eric Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2024/12/09/us-can-become-crypto-superpower-with-sensible-regulation-eric-trump.html"
+    },
+    {
+      "timestamp": "2024-12-09T18:15:00",
+      "source": "yahoo.com",
+      "headline": "Donald Trump says this is the reason he won last month presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/donald-trump-says-reason-won-153231497.html"
+    },
+    {
+      "timestamp": "2024-12-09T16:45:00",
+      "source": "nbcnewyork.com",
+      "headline": "U . S . can become a crypto superpower with  sensible  regulation , Eric Trump says – NBC New York",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/u-s-can-become-a-crypto-superpower-with-sensible-regulation-eric-trump-says/6053113/"
+    },
+    {
+      "timestamp": "2024-12-09T16:45:00",
+      "source": "nbcnewyork.com",
+      "headline": "Time 2024 Person of the Year short list includes Harris , Musk – NBC New York",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/national-international/time-2024-person-of-the-year-shortlist/6052888/"
+    },
+    {
+      "timestamp": "2024-12-09T06:15:00",
+      "source": "breitbart.com",
+      "headline": "Tim Walz Admits He  Was a Little Surprised  over Election Loss to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.breitbart.com/2024-election/2024/12/08/tim-walz-admits-little-surprised-election-loss-trump/"
+    },
+    {
+      "timestamp": "2024-12-09T16:45:00",
+      "source": "nbclosangeles.com",
+      "headline": "Time 2024 Person of the Year short list includes Harris , Musk – NBC Los Angeles",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbclosangeles.com/news/national-international/time-2024-person-of-the-year-shortlist/3577906/"
+    },
+    {
+      "timestamp": "2024-12-09T16:45:00",
+      "source": "nbcsandiego.com",
+      "headline": "Time 2024 Person of the Year short list includes Harris , Musk – NBC 7 San Diego",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcsandiego.com/news/national-international/time-2024-person-of-the-year-shortlist/3695640/"
+    },
+    {
+      "timestamp": "2024-12-09T18:00:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Time 2024 Person of the Year short list includes Harris , Musk – NBC Connecticut",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/national-international/time-2024-person-of-the-year-shortlist/3450229/"
+    },
+    {
+      "timestamp": "2024-12-09T02:00:00",
+      "source": "cbsnews.com",
+      "headline": "Who were the 2024 election  crypto voters ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/who-were-the-2024-elections-crypto-voters-60-minutes/"
+    },
+    {
+      "timestamp": "2024-12-09T15:00:00",
+      "source": "nbcphiladelphia.com",
+      "headline": "Time 2024 Person of the Year short list includes Harris , Musk – NBC10 Philadelphia",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcphiladelphia.com/news/national-international/time-2024-person-of-the-year-shortlist/4049063/"
+    },
+    {
+      "timestamp": "2024-12-09T17:15:00",
+      "source": "gobankingrates.com",
+      "headline": "How High Will Crypto Go With Trump as President ? Here Is What Experts Think",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.gobankingrates.com/investing/crypto/how-high-will-crypto-go-trump-president-experts/"
+    }
+  ]
+}

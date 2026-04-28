@@ -1,0 +1,197 @@
+{
+  "date": "2022-04-20",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-20T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T19:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-20T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Sanctioned Russia , Iran May Turn to Crypto Mining to Monetize Energy , IMF Says – Mining Bitcoin News",
+    "Crypto trading a risk to financial stability , opens door for countries to evade sanctions : IMF",
+    "Energy - Driven Ruble Rebound Wont Rescue Russia",
+    "U . S Treasury Sanctions Russian Bitcoin Miners",
+    "Crypto exchanges continue to do business in Russia ."
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-20T19:15:00",
+      "source": "news.bitcoin.com",
+      "headline": "Sanctioned Russia , Iran May Turn to Crypto Mining to Monetize Energy , IMF Says – Mining Bitcoin News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://news.bitcoin.com/sanctioned-russia-iran-may-turn-to-crypto-mining-to-monetize-energy-imf-says/"
+    },
+    {
+      "timestamp": "2022-04-20T07:30:00",
+      "source": "msn.com",
+      "headline": "Crypto trading a risk to financial stability , opens door for countries to evade sanctions : IMF",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/money/markets/crypto-trading-a-risk-to-financial-stability-opens-door-for-countries-to-evade-sanctions-imf/ar-AAWopMG"
+    },
+    {
+      "timestamp": "2022-04-20T14:15:00",
+      "source": "forbes.com",
+      "headline": "Energy - Driven Ruble Rebound Wont Rescue Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/arielcohen/2022/04/20/energy-driven-ruble-rebound-wont-rescue-russia/"
+    },
+    {
+      "timestamp": "2022-04-20T22:45:00",
+      "source": "bitcoinmagazine.com",
+      "headline": "U . S Treasury Sanctions Russian Bitcoin Miners",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://bitcoinmagazine.com/markets/us-treasury-sanctions-russian-bitcoin-miners"
+    },
+    {
+      "timestamp": "2022-04-20T11:15:00",
+      "source": "techstory.in",
+      "headline": "Crypto exchanges continue to do business in Russia .",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://techstory.in/crypto-exchanges-continue-to-do-business-in-russia/"
+    },
+    {
+      "timestamp": "2022-04-20T15:30:00",
+      "source": "msn.com",
+      "headline": "A growing number of Kremlin insiders are questioning Putin war in Ukraine , and believe it will set Russia back decades : report",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/a-growing-number-of-kremlin-insiders-are-questioning-putins-war-in-ukraine-and-believe-it-will-set-russia-back-decades-report/ar-AAWoUaM"
+    },
+    {
+      "timestamp": "2022-04-20T02:15:00",
+      "source": "edaily.co.kr",
+      "headline": "캐나다 , 러 중앙은행 총재 제재 … 우크라 전쟁후 최초",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=02236966632298088&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2022-04-20T20:00:00",
+      "source": "theepochtimes.com",
+      "headline": "Russia Says It Will Not Disclose Banks Linked to SWIFT Alternative : Report",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theepochtimes.com/russia-says-it-will-not-disclose-banks-linked-to-swift-alternative-report_4415534.html"
+    },
+    {
+      "timestamp": "2022-04-20T19:00:00",
+      "source": "nbcdfw.com",
+      "headline": "U . S . Treasury Sanctions Russian Bitcoin Miners , as War Enters Its Third Month",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcdfw.com/news/business/money-report/u-s-treasury-sanctions-russian-bitcoin-miners-as-war-enters-its-third-month/2945206/"
+    },
+    {
+      "timestamp": "2022-04-20T18:45:00",
+      "source": "nbcsandiego.com",
+      "headline": "U . S . Treasury Sanctions Russian Bitcoin Miners , as War Enters Its Third Month",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcsandiego.com/news/business/money-report/u-s-treasury-sanctions-russian-bitcoin-miners-as-war-enters-its-third-month/2925131/"
+    },
+    {
+      "timestamp": "2022-04-20T19:15:00",
+      "source": "nbcconnecticut.com",
+      "headline": "U . S . Treasury Sanctions Russian Bitcoin Miners , as War Enters Its Third Month",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/u-s-treasury-sanctions-russian-bitcoin-miners-as-war-enters-its-third-month/2765729/"
+    },
+    {
+      "timestamp": "2022-04-20T13:15:00",
+      "source": "dailymail.co.uk",
+      "headline": "Growing number of Kremlin insiders  feel Ukraine invasion was a  catastrophic  mistake",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-10735305/Growing-number-Kremlin-insiders-feel-Ukraine-invasion-catastrophic-mistake.html"
+    },
+    {
+      "timestamp": "2022-04-20T18:45:00",
+      "source": "nbcmiami.com",
+      "headline": "U . S . Treasury Sanctions Russian Bitcoin Miners , as War Enters Its Third Month",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcmiami.com/news/business/money-report/u-s-treasury-sanctions-russian-bitcoin-miners-as-war-enters-its-third-month/2740569/"
+    },
+    {
+      "timestamp": "2022-04-20T19:30:00",
+      "source": "msn.com",
+      "headline": "U . S . Treasury sanctions Russian bitcoin miners as war enters its third month",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/money/markets/us-treasury-sanctions-russian-bitcoin-miners-as-war-enters-its-third-month/ar-AAWpNRx"
+    },
+    {
+      "timestamp": "2022-04-20T19:45:00",
+      "source": "msn.com",
+      "headline": "U . S . Treasury sanctions Russian bitcoin miners as war enters its third month",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/money/markets/u-s-treasury-sanctions-russian-bitcoin-miners-as-war-enters-its-third-month/ar-AAWpNRx"
+    }
+  ]
+}

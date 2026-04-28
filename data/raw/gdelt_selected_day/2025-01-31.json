@@ -1,0 +1,202 @@
+{
+  "date": "2025-01-31",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-31T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T18:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-31T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Leak Reveals Trump Feared To Be Fueling A  Dangerou Bitcoin And Crypto Price Bubble",
+    "Coinbase adds Trump campaign manager , ex - senator to advisory council",
+    "Bankman - Fried Parents Meet Lawyers to Secure Trump Pardon",
+    "Blunt book excerpt lays out how Kamala Harris campaign lost the Joe Rogan interview",
+    "Top Fund Reportedly Warns of Trump - Fueled  Inevitable  Crypto Collapse"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-31T21:15:00",
+      "source": "forbes.com",
+      "headline": "Leak Reveals Trump Feared To Be Fueling A  Dangerou Bitcoin And Crypto Price Bubble",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2025/01/31/leak-reveals-trump-feared-to-be-fueling-a-dangerous-bitcoin-and-crypto-price-bubble/"
+    },
+    {
+      "timestamp": "2025-01-31T05:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Coinbase adds Trump campaign manager , ex - senator to advisory council",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/trump-campaign-manager-ex-senator-133049421.html"
+    },
+    {
+      "timestamp": "2025-01-31T14:45:00",
+      "source": "pymnts.com",
+      "headline": "Bankman - Fried Parents Meet Lawyers to Secure Trump Pardon",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.pymnts.com/cryptocurrency/2025/sam-bankman-frieds-parents-meet-lawyers-to-secure-trump-pardon-for-son/"
+    },
+    {
+      "timestamp": "2025-01-31T05:00:00",
+      "source": "nypost.com",
+      "headline": "Blunt book excerpt lays out how Kamala Harris campaign lost the Joe Rogan interview",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2025/01/30/media/blunt-book-excerpt-lays-out-how-kamala-harris-campaign-lost-the-joe-rogan-interview/"
+    },
+    {
+      "timestamp": "2025-01-31T18:00:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Top Fund Reportedly Warns of Trump - Fueled  Inevitable  Crypto Collapse",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/elliott-fund-crypto-bubble-trump-policy-bitcoin-outlook-dollar-dominance-2025-1"
+    },
+    {
+      "timestamp": "2025-01-31T01:30:00",
+      "source": "blackenterprise.com",
+      "headline": "Plies Says Kamala Lost Because She  Wasnt Hateful Enough",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.blackenterprise.com/plies-kamala-harris-2024-election-not-hateful-enough/"
+    },
+    {
+      "timestamp": "2025-01-31T00:30:00",
+      "source": "hollywoodreporter.com",
+      "headline": "Book Reveals Kamala Harris Campaign Failed Bet on Joe Rogan Podcast",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hollywoodreporter.com/tv/tv-news/kamala-harris-campaign-failed-bet-joe-rogan-beyonce-book-1236122787/"
+    },
+    {
+      "timestamp": "2025-01-31T16:30:00",
+      "source": "twitchy.com",
+      "headline": "Outgoing DNC Chair Makes an Admission That Kamala Harris Will NOT Appreciate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://twitchy.com/dougp/2025/01/31/outgoing-dnc-chair-makes-an-admission-kamala-harris-will-not-appreciate-n2407643"
+    },
+    {
+      "timestamp": "2025-01-31T23:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Price ( BTC ) Lower After Mexico , Canada , China Tariffs",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/markets/2025/01/31/trump-tariff-promise-snuffs-out-bitcoin-rally-for-second-consecutive-day"
+    },
+    {
+      "timestamp": "2025-01-31T04:30:00",
+      "source": "politicalwire.com",
+      "headline": "Paramount in Settlement Talks With Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://politicalwire.com/2025/01/30/paramount-in-settlement-talks-with-trump/"
+    },
+    {
+      "timestamp": "2025-01-31T00:30:00",
+      "source": "fnnews.com",
+      "headline": "트럼프 ,  금리 동결  연준에 날선 비판 … 자신들이 만든 인플레 대응 실패",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fnnews.com/news/202501310042312739"
+    },
+    {
+      "timestamp": "2025-01-31T18:00:00",
+      "source": "centralchronicle.com",
+      "headline": "Trump campaign accuses Harris of stoking violence after  fascist  remarks | Central India Premier English Daily",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.centralchronicle.com/trump-campaign-accuses-harris-of-stoking-violence-after-fascist-remarks/"
+    },
+    {
+      "timestamp": "2025-01-31T18:00:00",
+      "source": "cnn.com",
+      "headline": "CBS staff alarmed by reports of settlement talks with Trump over  60 Minute Harris interview",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnn.com/2025/01/31/media/cbs-trump-settlement-60-minutes/"
+    },
+    {
+      "timestamp": "2025-01-31T17:15:00",
+      "source": "us.cnn.com",
+      "headline": "CBS staff alarmed by reports of settlement talks with Trump over  60 Minute Harris interview",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://us.cnn.com/2025/01/31/media/cbs-trump-settlement-60-minutes/"
+    },
+    {
+      "timestamp": "2025-01-31T10:45:00",
+      "source": "marketscreener.com",
+      "headline": "Trump accelerates with the launch of Truth . Fi - Crypto Recap",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/news/latest/Trump-accelerates-with-the-launch-of-Truth-Fi-Crypto-Recap-48924298/"
+    }
+  ]
+}

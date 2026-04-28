@@ -1,0 +1,207 @@
+{
+  "date": "2022-02-10",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-10T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-10T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "As war games begin , Putin lauds Russian diplomacy : Live news",
+    "UK envoy joins effort to ease Ukraine crisis | World",
+    "As war games begin , Putin lauds Russian diplomacy : Live news | Ukraine - Russia crisis News",
+    "Has weeklong diplomacy made war in Ukraine any less likely ? | Europe | News and current affairs from around the continent | DW",
+    "Ukrainians not panicking as West ramps up invasion rhetoric"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-10T10:30:00",
+      "source": "msn.com",
+      "headline": "As war games begin , Putin lauds Russian diplomacy : Live news",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/as-war-games-begin-putin-lauds-russian-diplomacy-live-news/ar-AATGIU5"
+    },
+    {
+      "timestamp": "2022-02-10T06:30:00",
+      "source": "journalgazette.net",
+      "headline": "UK envoy joins effort to ease Ukraine crisis | World",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.journalgazette.net/news/world/20220210/uk-envoy-joins-effort-to-ease-ukraine-crisis"
+    },
+    {
+      "timestamp": "2022-02-10T11:15:00",
+      "source": "aljazeera.com",
+      "headline": "As war games begin , Putin lauds Russian diplomacy : Live news | Ukraine - Russia crisis News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/2/10/putin-lauds-russian-diplomacy-amid-ukraine-crisis-liveblog"
+    },
+    {
+      "timestamp": "2022-02-10T21:15:00",
+      "source": "dw.com",
+      "headline": "Has weeklong diplomacy made war in Ukraine any less likely ? | Europe | News and current affairs from around the continent | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/has-weeklong-diplomacy-made-war-in-ukraine-any-less-likely/a-60734333"
+    },
+    {
+      "timestamp": "2022-02-10T22:00:00",
+      "source": "omaha.com",
+      "headline": "Ukrainians not panicking as West ramps up invasion rhetoric",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/national/govt-and-politics/ukrainians-not-panicking-as-west-ramps-up-invasion-rhetoric/article_cc482db3-015c-5a43-858e-8355e3ca5f12.html"
+    },
+    {
+      "timestamp": "2022-02-10T00:00:00",
+      "source": "tulsaworld.com",
+      "headline": "Ukraine projects calm over Russia fears despite US rhetoric",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tulsaworld.com/business/ukraine-projects-calm-over-russia-fears-despite-us-rhetoric/article_ccff3c85-419d-5342-9426-6c02e607e841.html"
+    },
+    {
+      "timestamp": "2022-02-10T16:00:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine projects calm over Russia fears despite U . S . rhetoric",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/ukrainians-not-panicking-as-west-ramps-up-invasion-rhetoric-1.5774020"
+    },
+    {
+      "timestamp": "2022-02-10T06:30:00",
+      "source": "khaosodenglish.com",
+      "headline": "Ukrainians Not Panicking as West Ramps up Invasion Rhetoric",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.khaosodenglish.com/news/international/2022/02/10/ukrainians-not-panicking-as-west-ramps-up-invasion-rhetoric/"
+    },
+    {
+      "timestamp": "2022-02-10T14:00:00",
+      "source": "businessmirror.com.ph",
+      "headline": "Ukrainians not panicking as West ramps up Russia invasion rhetoric",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://businessmirror.com.ph/2022/02/10/ukrainians-not-panicking-as-west-ramps-up-russia-invasion-rhetoric/"
+    },
+    {
+      "timestamp": "2022-02-10T22:45:00",
+      "source": "swissinfo.ch",
+      "headline": "Crypto donations soar to groups backing Ukraine government - report",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.swissinfo.ch/eng/reuters/crypto-donations-soar-to-groups-backing-ukraine-s-government---report/47330692"
+    },
+    {
+      "timestamp": "2022-02-10T15:00:00",
+      "source": "msn.com",
+      "headline": "Putin likes to talk about Russians and Ukrainians as  one people . Here the deeper history .",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-xl/europe/top-stories/putin-likes-to-talk-about-russians-and-ukrainians-as-one-people-here-s-the-deeper-history/ar-AATHf0u"
+    },
+    {
+      "timestamp": "2022-02-10T02:15:00",
+      "source": "msn.com",
+      "headline": "Ukraine , Russia to hold key talks on crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-xl/europe/top-stories/ukraine-russia-to-hold-key-talks-on-crisis/ar-AATFLDx"
+    },
+    {
+      "timestamp": "2022-02-10T02:45:00",
+      "source": "msn.com",
+      "headline": "Ukraine , Russia to hold key talks on crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-xl/europe/europe-top-stories/ukraine-russia-to-hold-key-talks-on-crisis/ar-AATFLDx"
+    },
+    {
+      "timestamp": "2022-02-10T07:00:00",
+      "source": "dw.com",
+      "headline": "Байден обговорив з Макроном його зустрічі з Путіним та Зеленським | Новини - актуальні повідомлення про події в світі | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/uk/baiden-obhovoryv-z-makronom-yoho-zustrichi-z-putinym-ta-zelenskym/a-60722506"
+    },
+    {
+      "timestamp": "2022-02-10T05:30:00",
+      "source": "stuff.co.nz",
+      "headline": "Ukraine crisis : Brits send envoy to Moscow in effort to ease growing tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stuff.co.nz/world/europe/300514625/ukraine-crisis-brits-send-envoy-to-moscow-in-effort-to-ease-growing-tensions"
+    }
+  ]
+}

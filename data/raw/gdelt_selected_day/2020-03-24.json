@@ -1,0 +1,192 @@
+{
+  "date": "2020-03-24",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 4,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-24T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T11:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-24T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto Exchange Bybit Launches Tether ( USDT ) Perpetual Contracts to Rival BitMEX",
+    "Stocks , Bitcoin Rally on Prospects for US Senate Stimulus Bill",
+    "Bitcoin Shoots Up to $6 , 400 as S & P 500 Falls , Even on Federal Reserve  QE Infinity",
+    "Bitcoin and Stocks Rises As Washington Slips Further Into Desperation",
+    "Shock U . S . Digital Dollar Proposals Set Bitcoin And Crypto Prices Alight"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-24T21:00:00",
+      "source": "benzinga.com",
+      "headline": "Crypto Exchange Bybit Launches Tether ( USDT ) Perpetual Contracts to Rival BitMEX",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/20/03/15655090/crypto-exchange-bybit-launches-tether-usdt-perpetual-contracts-to-rival-bitmex"
+    },
+    {
+      "timestamp": "2020-03-24T21:00:00",
+      "source": "coindesk.com",
+      "headline": "Stocks , Bitcoin Rally on Prospects for US Senate Stimulus Bill",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/stocks-bitcoin-rally-on-prospects-for-us-senate-stimulus-bill"
+    },
+    {
+      "timestamp": "2020-03-24T01:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Shoots Up to $6 , 400 as S & P 500 Falls , Even on Federal Reserve  QE Infinity",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/23/bitcoin-shoots-6400-sp500-fails-bounce-even-federal-reserves-qe-infinity/"
+    },
+    {
+      "timestamp": "2020-03-24T12:30:00",
+      "source": "insidebitcoins.com",
+      "headline": "Bitcoin and Stocks Rises As Washington Slips Further Into Desperation",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/bitcoin-and-stocks-rises-as-washington-slips-further-into-desperation/254815"
+    },
+    {
+      "timestamp": "2020-03-24T11:45:00",
+      "source": "forbes.com",
+      "headline": "Shock U . S . Digital Dollar Proposals Set Bitcoin And Crypto Prices Alight",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/03/24/shock-us-digital-dollar-proposals-set-bitcoin-and-crypto-prices-alight/"
+    },
+    {
+      "timestamp": "2020-03-24T12:45:00",
+      "source": "moneycontrol.com",
+      "headline": "Bitcoin gains 14 % after the US Fed says it has  infinite cash",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/business/cryptocurrency/bitcoin-gains-14-after-the-us-fed-says-it-has-infinite-cash-5068191.html"
+    },
+    {
+      "timestamp": "2020-03-24T12:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Rises 13 % in Last 24 Hours , Crypto Market Gains $20 Billion",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-rises-crypto-market-gains/"
+    },
+    {
+      "timestamp": "2020-03-24T16:15:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Surges By Almost $1 , 000 To $6 , 700 , Analysts Still Bullish On BTC",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-surges-almost-1000-6700-analysts-still-bullish-btc-2945413"
+    },
+    {
+      "timestamp": "2020-03-24T20:00:00",
+      "source": "newsbtc.com",
+      "headline": "Stocks Limit Up , Gold Revisits High , is Bitcoin About To Pump ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/24/stocks-limit-up-gold-revisits-high-is-bitcoin-about-to-pump/"
+    },
+    {
+      "timestamp": "2020-03-24T15:00:00",
+      "source": "newsbtc.com",
+      "headline": "Goldman Sach Call to Buy Gold Cheers Bitcoin Bulls ; Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/24/goldman-sachs-call-to-buy-gold-cheers-bitcoin-bulls-heres-why/"
+    },
+    {
+      "timestamp": "2020-03-24T06:30:00",
+      "source": "fxstreet.com",
+      "headline": "Coronavirus Update : How the proposed United States  digital dollar  would impact Bitcoin ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/coronavirus-update-how-the-proposed-united-states-digital-dollar-would-impact-bitcoin-202003240512"
+    },
+    {
+      "timestamp": "2020-03-24T19:45:00",
+      "source": "onlineathens.com",
+      "headline": "Nations : The stock market crashed five times before coronavirus . Those disasters can show us how to face this one - Opinion - Athens Banner - Herald",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.onlineathens.com/opinion/20200324/nations-stock-market-crashed-five-times-before-coronavirus-those-disasters-can-show-us-how-to-face-this-one"
+    },
+    {
+      "timestamp": "2020-03-24T20:00:00",
+      "source": "newsbtc.com",
+      "headline": "Despite Cryptocurrency Market Recovery , Sentiment Is Still Extremely Fearful",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/24/despite-cryptocurrency-market-recovery-sentiment-is-still-extremely-fearful/"
+    },
+    {
+      "timestamp": "2020-03-24T11:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Marches on $7K as Traditional Markets Cheer Fed QE Bazooka",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-marches-on-7k-as-traditional-markets-cheer-feds-qe-bazooka"
+    },
+    {
+      "timestamp": "2020-03-24T11:15:00",
+      "source": "econotimes.com",
+      "headline": "Can Bitcoin Moon - shot In Tandem With Covid - 19 Speed As US Congress Mulls Over Digital Dollar Stimulus Package ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Can-Bitcoin-Moon-shot-In-Tandem-With-Covid-19-Speed-As-US-Congress-Mulls-Over-Digital-Dollar-Stimulus-Package-1578048"
+    }
+  ]
+}

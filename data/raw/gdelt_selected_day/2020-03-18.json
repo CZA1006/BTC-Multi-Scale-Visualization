@@ -1,0 +1,197 @@
+{
+  "date": "2020-03-18",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 3,
+  "theme_count_war": 0,
+  "theme_count_macro": 5,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-18T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-18T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Reacts to Fed 0 % Rate Drop , Reserve Requirements Removed , $700B in Stimulus",
+    "This news proves the crypto industry isnt dead even after Bitcoin 50 % crash last week",
+    "Bitcoin Price Down to $5 , 150 Today Despite Trump $1 Trillion Injection",
+    "Coronavirus crisis is the biggest oppotunity for Bitcoin - BitMEX research",
+    "U . S . Stocks Jump As White House Plans $1 Trillion Stimulus"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-18T08:30:00",
+      "source": "news.bitcoin.com",
+      "headline": "Bitcoin Reacts to Fed 0 % Rate Drop , Reserve Requirements Removed , $700B in Stimulus",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://news.bitcoin.com/bitcoin-reacts-to-feds-0-rate-drop/"
+    },
+    {
+      "timestamp": "2020-03-18T03:45:00",
+      "source": "cryptoslate.com",
+      "headline": "This news proves the crypto industry isnt dead even after Bitcoin 50 % crash last week",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cryptoslate.com/this-news-proves-the-crypto-industry-isnt-dead-even-after-bitcoins-50-crash-last-week/"
+    },
+    {
+      "timestamp": "2020-03-18T19:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Down to $5 , 150 Today Despite Trump $1 Trillion Injection",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-trump-injection/"
+    },
+    {
+      "timestamp": "2020-03-18T12:30:00",
+      "source": "forexcrunch.com",
+      "headline": "Coronavirus crisis is the biggest oppotunity for Bitcoin - BitMEX research",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/coronavirus-crisis-is-the-biggest-oppotunity-for-bitcoin-bitmex-research/"
+    },
+    {
+      "timestamp": "2020-03-18T01:15:00",
+      "source": "hawaiipublicradio.org",
+      "headline": "U . S . Stocks Jump As White House Plans $1 Trillion Stimulus",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hawaiipublicradio.org/post/us-stock-markets-tick-after-steepest-drop-1987"
+    },
+    {
+      "timestamp": "2020-03-18T00:15:00",
+      "source": "msn.com",
+      "headline": "QCB latest rate cut a prompt follow - up of Qatar QR75bn stimulus package : EIU",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-ae/news/other/qcb-e2-80-99s-latest-rate-cut-a-prompt-follow-up-of-qatar-e2-80-99s-qr75bn-stimulus-package-eiu/ar-BB11kv8c"
+    },
+    {
+      "timestamp": "2020-03-18T12:45:00",
+      "source": "newsbtc.com",
+      "headline": "Statistician Who Predicted Bitcoin Crash Says Its Price Will Moon",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/18/statistician-who-predicted-bitcoin-crash-says-its-price-will-moon/"
+    },
+    {
+      "timestamp": "2020-03-18T13:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Faces Another Down Day as Equities Reject Stimulus Efforts",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-faces-another-down-day-as-equities-reject-stimulus-efforts"
+    },
+    {
+      "timestamp": "2020-03-18T15:45:00",
+      "source": "zerohedge.com",
+      "headline": "Did The Fed Just Purposely Try To Crash The Stock Market ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/markets/did-fed-just-purposely-try-crash-stock-market"
+    },
+    {
+      "timestamp": "2020-03-18T19:00:00",
+      "source": "forbes.com",
+      "headline": "How The Federal Reserve Broke The Internet , And Why It Might Leave You Broke",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/tatianakoffman/2020/03/18/how-the-federal-reserve-broke-the-internet-and-why-it-might-leave-you-broke/"
+    },
+    {
+      "timestamp": "2020-03-18T04:30:00",
+      "source": "news.joins.com",
+      "headline": "미 연준 , 기업어음 매입한다 ... 비트코인의 시간이 올까 ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.joins.com/article/23732994"
+    },
+    {
+      "timestamp": "2020-03-18T15:45:00",
+      "source": "ccn.com",
+      "headline": "U . S . Futures Plunge 5 % as Global Recession Swats China Rescue Plan",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.ccn.com/u-s-futures-plunge-5-as-global-recession-swats-chinas-rescue-plan/"
+    },
+    {
+      "timestamp": "2020-03-18T14:00:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Recovers After Biggest Plunge In 7 Years Thanks To Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-recovers-after-biggest-plunge-7-years-thanks-trump-2941980"
+    },
+    {
+      "timestamp": "2020-03-18T13:15:00",
+      "source": "latinpost.com",
+      "headline": "US Government Plans to Release Special Funding Amid COVID - 19 Spread , Including Checks to Citizens",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.latinpost.com/articles/144218/20200318/us-government-plans-to-give-checks-to-us-citizens-and-issue-special-funds-amid-coronavirus-pandemic.htm"
+    },
+    {
+      "timestamp": "2020-03-18T04:15:00",
+      "source": "thenews.com.pk",
+      "headline": "US plans $850bln stimulus package to contain growing damage from coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.thenews.com.pk/print/630639-us-plans-850bln-stimulus-package-to-contain-growing-damage-from-coronavirus"
+    }
+  ]
+}

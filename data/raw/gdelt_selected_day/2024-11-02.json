@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-02T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-02T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "막말 논란  대통령과 거리 두는 해리스 , 소외 원치 않는 바이든",
+    "Why Trump is courting the crypto bros",
+    "Crypto ETFs see big inflows ahead of US election , traders brace for volatility",
+    "Crypto ETFs see big inflows ahead of US election , traders brace for volatility",
+    "All the musicians who are not backing Trump in the 2024 Election"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-02T09:45:00",
+      "source": "segye.com",
+      "headline": "막말 논란  대통령과 거리 두는 해리스 , 소외 원치 않는 바이든",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://segye.com/newsView/20241102504133"
+    },
+    {
+      "timestamp": "2024-11-02T08:15:00",
+      "source": "english.elpais.com",
+      "headline": "Why Trump is courting the crypto bros",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://english.elpais.com/usa/elections/2024-11-02/why-trump-is-courting-the-crypto-bros.html"
+    },
+    {
+      "timestamp": "2024-11-02T09:15:00",
+      "source": "moneycontrol.com",
+      "headline": "Crypto ETFs see big inflows ahead of US election , traders brace for volatility",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/world/crypto-etfs-see-big-inflows-ahead-of-us-election-traders-brace-for-volatility-12856758.html"
+    },
+    {
+      "timestamp": "2024-11-02T06:30:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Crypto ETFs see big inflows ahead of US election , traders brace for volatility",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/crypto-etfs-see-big-inflows-ahead-us-election-traders-brace-volatility"
+    },
+    {
+      "timestamp": "2024-11-02T10:15:00",
+      "source": "tribune.com.pk",
+      "headline": "All the musicians who are not backing Trump in the 2024 Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://tribune.com.pk/story/2506933/all-the-musicians-who-are-not-backing-trump-in-the-2024-election"
+    },
+    {
+      "timestamp": "2024-11-02T16:00:00",
+      "source": "bravenewcoin.com",
+      "headline": "October Weak Job Numbers Complicate Next Rate Cut",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/octobers-weak-job-numbers-complicate-next-rate-cut"
+    },
+    {
+      "timestamp": "2024-11-02T15:45:00",
+      "source": "ibtimes.com",
+      "headline": "Harris , Trump Go Toe To Toe In Frenzied Final Campaign Weekend",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/harris-trump-go-toe-toe-frenzied-final-campaign-weekend-3749227"
+    },
+    {
+      "timestamp": "2024-11-02T05:15:00",
+      "source": "tribune.com.pk",
+      "headline": "Cardi B says Kamala Harris candidacy inspired her to vote in presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://tribune.com.pk/story/2506902/cardi-b-says-kamala-harriss-candidacy-inspired-her-to-vote-in-presidential-election"
+    },
+    {
+      "timestamp": "2024-11-02T16:45:00",
+      "source": "salon.com",
+      "headline": "Crypto voters :  This election is pivotal",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.salon.com/2024/11/02/crypto-voters-this-is-pivotal/"
+    },
+    {
+      "timestamp": "2024-11-02T19:45:00",
+      "source": "yahoo.com",
+      "headline": "Harris planning to vote by mail to  model behavior",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-planning-vote-mail-model-172225668.html"
+    },
+    {
+      "timestamp": "2024-11-02T18:30:00",
+      "source": "thehill.com",
+      "headline": "Kamala Harris says she plans to vote by mail",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4967541-kamala-harris-mail-in-vote-2024-election/"
+    },
+    {
+      "timestamp": "2024-11-02T01:00:00",
+      "source": "fnnews.com",
+      "headline": "[ 美대선 D - 3 ] 선택만 남았다 … 첫 여성 대통령 ?  징검다리 집권  대통령 ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fnnews.com/news/202411020902508191"
+    },
+    {
+      "timestamp": "2024-11-02T09:45:00",
+      "source": "yahoo.com",
+      "headline": "Harris , Trump go toe to toe in frenzied final campaign weekend",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-trump-toe-toe-frenzied-091631450.html"
+    },
+    {
+      "timestamp": "2024-11-02T01:45:00",
+      "source": "world.qianlong.com",
+      "headline": "美媒 ： 特朗普与哈里斯继续决战摇摆州",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://world.qianlong.com/2024/1102/8369544.shtml"
+    },
+    {
+      "timestamp": "2024-11-02T20:30:00",
+      "source": "yahoo.com",
+      "headline": "Trump has a women problem , and he cannot rely on  bro to turn out for him either",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-women-problem-cannot-rely-200336292.html"
+    }
+  ]
+}

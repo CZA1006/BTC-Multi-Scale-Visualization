@@ -1,0 +1,212 @@
+{
+  "date": "2022-03-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-23T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-23T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "EU says Russia using crypto to circumvent sanctions",
+    "Are Russia elite really using cryptocurrency to evade sanc ...",
+    "Are Russia elite really using cryptocurrency to evade sanctions ?",
+    "Are Russia elite really using cryptocurrency to evade sanctions ?",
+    "Russian minister calls to make digital ruble a reserve currency to counter sanctions"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-23T10:15:00",
+      "source": "uk.finance.yahoo.com",
+      "headline": "EU says Russia using crypto to circumvent sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://uk.finance.yahoo.com/news/crypto-news-latest-russia-bitcoin-sanctions-christine-lagarde-ecb-095303232.html"
+    },
+    {
+      "timestamp": "2022-03-23T03:30:00",
+      "source": "menafn.com",
+      "headline": "Are Russia elite really using cryptocurrency to evade sanc ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103889051/Are-Russias-elite-really-using-cryptocurrency-to-evade-sanctions&source=138"
+    },
+    {
+      "timestamp": "2022-03-23T15:15:00",
+      "source": "econotimes.com",
+      "headline": "Are Russia elite really using cryptocurrency to evade sanctions ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Are-Russias-elite-really-using-cryptocurrency-to-evade-sanctions-1629722"
+    },
+    {
+      "timestamp": "2022-03-23T14:00:00",
+      "source": "econotimes.com",
+      "headline": "Are Russia elite really using cryptocurrency to evade sanctions ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.econotimes.com/Are-Russias-elite-really-using-cryptocurrency-to-evade-sanctions-1629722"
+    },
+    {
+      "timestamp": "2022-03-23T09:00:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Russian minister calls to make digital ruble a reserve currency to counter sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/business/cryptocurrency/blockchain/russian-minister-calls-to-make-digital-ruble-a-reserve-currency-to-counter-sanctions/articleshow/90391065.cms"
+    },
+    {
+      "timestamp": "2022-03-23T20:30:00",
+      "source": "techstory.in",
+      "headline": "Russia is reportedly exploiting cryptography to evade sanctions , says EU",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://techstory.in/russia-is-reportedly-exploiting-cryptography-to-evade-sanctions-says-eu/"
+    },
+    {
+      "timestamp": "2022-03-23T19:45:00",
+      "source": "aljazeera.com",
+      "headline": "Timeline : A month of Russia war in Ukraine | Russia - Ukraine war News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/3/23/timeline-a-month-of-war-in-ukraine"
+    },
+    {
+      "timestamp": "2022-03-23T16:00:00",
+      "source": "politico.eu",
+      "headline": "Sergey Lavrov admits Russia was surprised by scale of Western sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.politico.eu/article/lavrov-admits-no-one-could-have-predicted-scale-of-western-sanctions/"
+    },
+    {
+      "timestamp": "2022-03-23T16:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Russia Central Banker Wanted Out Over Ukraine , But Putin Said No",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/russia-central-banker-wanted-out-over-ukraine-but-putin-said-no-1.1741852"
+    },
+    {
+      "timestamp": "2022-03-23T21:15:00",
+      "source": "stripes.com",
+      "headline": "Russia central banker wanted out over Ukraine , but Putin said no",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stripes.com/theaters/europe/2022-03-23/russia-central-banker-wanted-out-5450999.html"
+    },
+    {
+      "timestamp": "2022-03-23T21:15:00",
+      "source": "aljazeera.com",
+      "headline": "Russia central banker tried to quit over Ukraine ; Putin said no",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/economy/2022/3/23/russia-central-banker-tried-to-quit-over-ukraine-putin-said-no"
+    },
+    {
+      "timestamp": "2022-03-23T08:15:00",
+      "source": "gulfnews.com",
+      "headline": "Russian crypto trading falls even as doubts persist on sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://gulfnews.com/your-money/cryptocurrency/russian-crypto-trading-falls-even-as-doubts-persist-on-sanctions-1.1648021348348"
+    },
+    {
+      "timestamp": "2022-03-23T12:45:00",
+      "source": "msn.com",
+      "headline": "Bitcoin is a lifeline for some Ukrainian refugees , like this 20 - year - old who escaped with $2 , 000 on a thumb drive",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/other/bitcoin-is-a-lifeline-for-some-ukrainian-refugees-like-this-20-year-old-who-escaped-with-242000-on-a-thumb-drive/ar-AAVpg1P"
+    },
+    {
+      "timestamp": "2022-03-23T23:15:00",
+      "source": "dailymail.co.uk",
+      "headline": "Red Army loses of 40 , 000 troops is hitting morale , Nato says",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-10645807/Red-Armys-loses-40-000-troops-hitting-morale-Nato-says.html"
+    },
+    {
+      "timestamp": "2022-03-23T18:30:00",
+      "source": "smh.com.au",
+      "headline": "Month into Ukraine invasion , Putin hits back at sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.smh.com.au/world/europe/month-into-ukraine-invasion-putin-hits-back-at-sanctions-20220324-p5a7e3.html"
+    }
+  ]
+}

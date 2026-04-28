@@ -1,0 +1,202 @@
+{
+  "date": "2025-01-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 1,
+  "theme_count_election": 5,
+  "theme_count_war": 1,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-27T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-27T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Drops Below $100K Ahead of Fed Interest Rate Decision",
+    "Why Cryptocurrencies Shiba Inu , Solana , and Cardano Are Falling Today",
+    "Trump congratulates Chiefs , team  MAGA  fans , on Super Bowl berth",
+    "Ripple Price Prediction : Will XRP 10X As PlutoChain Gains Momentum ?",
+    "Bitcoin drops after profit - taking following Trump executive order"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-27T17:30:00",
+      "source": "newsweek.com",
+      "headline": "Bitcoin Drops Below $100K Ahead of Fed Interest Rate Decision",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/bitcoin-falls-below-100k-donald-trump-inauguration-2021270"
+    },
+    {
+      "timestamp": "2025-01-27T20:00:00",
+      "source": "fool.com",
+      "headline": "Why Cryptocurrencies Shiba Inu , Solana , and Cardano Are Falling Today",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2025/01/27/why-cryptocurrencies-shiba-inu-solana-and-cardano/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2025-01-27T23:00:00",
+      "source": "silive.com",
+      "headline": "Trump congratulates Chiefs , team  MAGA  fans , on Super Bowl berth",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.silive.com/politics/2025/01/trump-congratulates-chiefs-teams-maga-fans-on-super-bowl-berth.html"
+    },
+    {
+      "timestamp": "2025-01-27T04:00:00",
+      "source": "bravenewcoin.com",
+      "headline": "Ripple Price Prediction : Will XRP 10X As PlutoChain Gains Momentum ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/sponsored/presale/ripple-price-prediction-will-xrp-10x-as-plutochain-gains-momentum"
+    },
+    {
+      "timestamp": "2025-01-27T07:00:00",
+      "source": "news.az",
+      "headline": "Bitcoin drops after profit - taking following Trump executive order",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://news.az/news/bitcoin-drops-after-profit-taking-following-trumps-executive-order"
+    },
+    {
+      "timestamp": "2025-01-27T08:45:00",
+      "source": "brecorder.com",
+      "headline": "Dollar inches higher as Trump tariff worries return - Markets",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.brecorder.com/news/40344813/dollar-inches-higher-as-trump-tariff-worries-return"
+    },
+    {
+      "timestamp": "2025-01-27T14:15:00",
+      "source": "blockonomi.com",
+      "headline": "Bitwise Files for Dogecoin ETF via Delaware Trust",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://blockonomi.com/bitwise-files-for-dogecoin-etf-via-delaware-trust/"
+    },
+    {
+      "timestamp": "2025-01-27T07:15:00",
+      "source": "townhall.com",
+      "headline": "Demoralized Democrats Are Dazed and Confused",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://townhall.com/columnists/jeffcrouere/2025/01/27/demoralized-democrats-are-dazed-and-confused-n2651170"
+    },
+    {
+      "timestamp": "2025-01-27T11:30:00",
+      "source": "webtekno.com",
+      "headline": "Bitcoin 100 Bin Doların Altına Düştü !",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.webtekno.com/bitcoin-100-bin-dolarin-altina-dustu-h154977.html"
+    },
+    {
+      "timestamp": "2025-01-27T15:15:00",
+      "source": "news.az",
+      "headline": "Bitcoin falls below $98 , 000 as cryptocurrency market hit by tech stock declines - UPDATED",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://news.az/news/bitcoin-falls-below-98-000-as-cryptocurrency-market-hit-by-tech-stock-declines-updated"
+    },
+    {
+      "timestamp": "2025-01-27T13:00:00",
+      "source": "alternet.org",
+      "headline": "We dont want to be you : Canadians furious after Trump makes wild claim",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.alternet.org/alternet-exclusives/trump-canada/"
+    },
+    {
+      "timestamp": "2025-01-27T11:15:00",
+      "source": "medyatava.com",
+      "headline": "Altın ve dolar yatırımcısı dikkat ! FED uyarısı geldi . Tahminler değişti",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.medyatava.com/ekonomi/altin-ve-dolar-yatirimcisi-dikkat-fed-uyarisi-geldi-tahminler-degisti-413799"
+    },
+    {
+      "timestamp": "2025-01-27T14:15:00",
+      "source": "nbcnewyork.com",
+      "headline": "Bitcoin drops in risk - off move as Nasdaq stocks are hit",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/bitcoin-tumbles-below-98000-in-risk-off-move-as-nasdaq-stocks-are-crushed/6122744/"
+    },
+    {
+      "timestamp": "2025-01-27T13:45:00",
+      "source": "nbcsandiego.com",
+      "headline": "Bitcoin drops in risk - off move as Nasdaq stocks are hit",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.nbcsandiego.com/news/business/money-report/bitcoin-tumbles-below-98000-in-risk-off-move-as-nasdaq-stocks-are-crushed/3735390/"
+    },
+    {
+      "timestamp": "2025-01-27T12:45:00",
+      "source": "forbes.com",
+      "headline": "Pro - Crypto Policies Surge As Banks Lag Here How They Can Catch Up",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/tonyaevans/2025/01/27/pro-crypto-policies-surge-as--banks-lag-heres-how-they-can-catch-up/"
+    }
+  ]
+}

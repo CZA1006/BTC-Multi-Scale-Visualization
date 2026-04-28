@@ -1,0 +1,207 @@
+{
+  "date": "2024-12-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 8,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-25T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-25T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Crosses $100 , 000 . But Are Other Cryptocurrencies Also on the Rise ?",
+    "Strategist Makes Prediction About Possible Kamala Harris 2028 Campaign",
+    "Bitcoin dropping at end of record year | The Arkansas Democrat - Gazette",
+    "She Was Very Disingenuou : 5 Times  The Breakfast Club  Callers Clashed With Charlamagne As He Defended Harris",
+    "Dont Expect Black Women To Show Up To Your Trump Protests"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-25T13:00:00",
+      "source": "fool.com",
+      "headline": "Bitcoin Crosses $100 , 000 . But Are Other Cryptocurrencies Also on the Rise ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/12/25/bitcoin-crosses-100000-but-are-other-cryptocurrenc/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2024-12-25T19:00:00",
+      "source": "newsweek.com",
+      "headline": "Strategist Makes Prediction About Possible Kamala Harris 2028 Campaign",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/matt-gorman-kamala-harris-2028-presidential-campaign-election-2005989"
+    },
+    {
+      "timestamp": "2024-12-25T11:45:00",
+      "source": "arkansasonline.com",
+      "headline": "Bitcoin dropping at end of record year | The Arkansas Democrat - Gazette",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2024/dec/25/bitcoin-dropping-at-end-of-record-year/"
+    },
+    {
+      "timestamp": "2024-12-25T16:45:00",
+      "source": "dailycaller.com",
+      "headline": "She Was Very Disingenuou : 5 Times  The Breakfast Club  Callers Clashed With Charlamagne As He Defended Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dailycaller.com/2024/12/25/she-was-very-disingenuous-5-times-the-breakfast-club-callers-clashed-with-charlamagne-as-he-defended-harris/"
+    },
+    {
+      "timestamp": "2024-12-25T23:45:00",
+      "source": "theroot.com",
+      "headline": "Dont Expect Black Women To Show Up To Your Trump Protests",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theroot.com/black-women-showed-up-at-the-polls-so-dont-expect-us-t-1851707999"
+    },
+    {
+      "timestamp": "2024-12-25T14:00:00",
+      "source": "dailycaller.com",
+      "headline": "JOE BIDEN WRAPPED : How Delaware Favorite Son Fared During His Final Year In Office",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://dailycaller.com/2024/12/25/joe-biden-wrapped-2024-review-legacy/"
+    },
+    {
+      "timestamp": "2024-12-25T00:00:00",
+      "source": "mediaite.com",
+      "headline": "Dem Strategist Says the Party Brand Is  In the Toilet",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mediaite.com/politics/dem-strategist-tells-nyt-the-party-is-in-the-toilet-to-end-2024-those-who-won-elections-ran-against-the-brand/"
+    },
+    {
+      "timestamp": "2024-12-25T03:00:00",
+      "source": "huewire.com",
+      "headline": "| Huewire",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://huewire.com/22370-2/"
+    },
+    {
+      "timestamp": "2024-12-25T12:15:00",
+      "source": "kiplinger.com",
+      "headline": "What to Expect From Bitcoin and Other Cryptocurrencies in 2025",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.kiplinger.com/investing/bitcoin-crypto-trends"
+    },
+    {
+      "timestamp": "2024-12-25T14:15:00",
+      "source": "politiken.dk",
+      "headline": "Formand Finn : Hvornår blev det okay at kalde Kamala Harris for crazy og mig for Putin ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://politiken.dk/debat/debatindlaeg/art10192073/Hvorn%C3%A5r-blev-det-okay-at-kalde-Kamala-Harris-for-crazy-og-mig-for-Putin"
+    },
+    {
+      "timestamp": "2024-12-25T20:00:00",
+      "source": "elbrqnews.com",
+      "headline": "2024 .. عام المستويات القياسية ترحيباً بدونالد ترامب",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.elbrqnews.com/New-News/54683.html"
+    },
+    {
+      "timestamp": "2024-12-25T04:30:00",
+      "source": "livemint.com",
+      "headline": "The big companies funding Trump inauguration despite denouncing Jan 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.livemint.com/politics/the-big-companies-funding-trump-s-inauguration-despite-denouncing-jan-6-11735098230635.html"
+    },
+    {
+      "timestamp": "2024-12-25T15:30:00",
+      "source": "politiken.dk",
+      "headline": "Trumps retorik er løgnagtig , men den virker . Også i Foreningsdanmark",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://politiken.dk/debat/debatindlaeg/art10192073/Trumps-retorik-er-l%C3%B8gnagtig-men-den-virker.-Ogs%C3%A5-i-Foreningsdanmark"
+    },
+    {
+      "timestamp": "2024-12-25T11:45:00",
+      "source": "foxnews.com",
+      "headline": "The Year of the Podcast : 5 times Trump podcast interviews sidelined liberal legacy media",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/media/year-podcast-5-times-trumps-podcast-interviews-sidelined-liberal-legacy-media"
+    },
+    {
+      "timestamp": "2024-12-25T13:30:00",
+      "source": "yahoo.com",
+      "headline": "The Year of the Podcast : 5 times Trump podcast interviews sidelined liberal legacy media",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/podcast-5-times-trumps-podcast-110054194.html"
+    }
+  ]
+}

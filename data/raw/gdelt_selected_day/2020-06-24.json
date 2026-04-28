@@ -1,0 +1,202 @@
+{
+  "date": "2020-06-24",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 2,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 3,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-24T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-24T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Analyst Who Predicted Bitcoin Would Hit $3 , 000s in 2020 Expects a 15 % Drop",
+    "Second US Stimulus Package Could Drive Bitcoin Higher , Says OKEx CEO Jay Hao",
+    "4 Lessons We Can Learn From The Stock Market Bull Charge Reaction To The COVID - 19 Pandemic",
+    "First Mover : Bitcoin Recent Stability May Come From a Fleeting Correlation With Equities",
+    "HYCM adds 50 cryptocurrency CFDs & drastically reduces spreads"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-24T01:15:00",
+      "source": "newsbtc.com",
+      "headline": "Analyst Who Predicted Bitcoin Would Hit $3 , 000s in 2020 Expects a 15 % Drop",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/24/analyst-bitcoin-3000s-expects-crash/"
+    },
+    {
+      "timestamp": "2020-06-24T15:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Second US Stimulus Package Could Drive Bitcoin Higher , Says OKEx CEO Jay Hao",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/second-us-stimulus-package-could-drive-bitcoin-higher-says-okex-ceo-jay-hao"
+    },
+    {
+      "timestamp": "2020-06-24T03:45:00",
+      "source": "dollarsandsense.sg",
+      "headline": "4 Lessons We Can Learn From The Stock Market Bull Charge Reaction To The COVID - 19 Pandemic",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://dollarsandsense.sg/4-lessons-can-learn-stock-markets-bull-charge-reaction-covid-19-pandemic/"
+    },
+    {
+      "timestamp": "2020-06-24T14:45:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Bitcoin Recent Stability May Come From a Fleeting Correlation With Equities",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-bitcoins-recent-stability-may-come-from-a-fleeting-correlation-with-equities"
+    },
+    {
+      "timestamp": "2020-06-24T13:45:00",
+      "source": "africanews.com",
+      "headline": "HYCM adds 50 cryptocurrency CFDs & drastically reduces spreads",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.africanews.com/2020/06/24/hycm-adds-50-cryptocurrency-cfds-drastically-reduces-spreads/"
+    },
+    {
+      "timestamp": "2020-06-24T21:00:00",
+      "source": "news.yahoo.com",
+      "headline": "Borrowers can expect lower rates on personal loans , thanks to the Fed",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/borrowers-expect-lower-rates-personal-203200383.html"
+    },
+    {
+      "timestamp": "2020-06-24T21:00:00",
+      "source": "investors.com",
+      "headline": "The Dow Jones Rally And Covid - 19 Wave Just Collided ; When Will The Fed Save The Day ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.investors.com/news/economy/dow-jones-covid-19-wave-collide-fed-qe/"
+    },
+    {
+      "timestamp": "2020-06-24T21:15:00",
+      "source": "etftrends.com",
+      "headline": "Could The Fed Be Readying For Additional Stimulus ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/could-the-fed-be-readying-for-additional-stimulus/"
+    },
+    {
+      "timestamp": "2020-06-24T11:15:00",
+      "source": "businessinsider.com.au",
+      "headline": "The Fed unprecedented relief measures could form the greatest financial bubble in history , Ed Yardeni says",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.businessinsider.com.au/fed-bond-stimulus-risks-historic-stock-market-bubble-yardeni-outlook-2020-6"
+    },
+    {
+      "timestamp": "2020-06-24T20:15:00",
+      "source": "infowars.com",
+      "headline": "Fed Zero Percent Interest Rates & Money Printing Not Helping Economy",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.infowars.com/feds-zero-percent-interest-rates-money-printing-not-helping-economy/"
+    },
+    {
+      "timestamp": "2020-06-24T04:45:00",
+      "source": "sputniknews.com",
+      "headline": "Crypto - Currencies : Will World Go Fully Digital , Wiping Out Gold & Ruining Dollar Dominance ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://sputniknews.com/analysis/202006241079698792-crypto-currencies-will-world-go-fully-digital-wiping-out-gold--ruining-dollar-dominance/"
+    },
+    {
+      "timestamp": "2020-06-24T19:15:00",
+      "source": "foxbusiness.com",
+      "headline": "US economic recovery from coronavirus pandemic will take  some time , Fed Evans says",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.foxbusiness.com/economy/us-economic-recovery-from-coronavirus-pandemic-will-take-some-time-feds-evans-says"
+    },
+    {
+      "timestamp": "2020-06-24T06:45:00",
+      "source": "theedgemarkets.com",
+      "headline": "Financial Hacks : Play Chair the Fed to understand monetary policy",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.theedgemarkets.com/article/financial-hacks-play-chair-fed-understand-monetary-policy"
+    },
+    {
+      "timestamp": "2020-06-24T13:00:00",
+      "source": "windermeresun.com",
+      "headline": "What Next For The U . S . Economy - Windermere Sun - For Healthier / Happier / More Sustainable Living",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.windermeresun.com/2020/06/24/whats-next-for-the-u-s-economy/"
+    },
+    {
+      "timestamp": "2020-06-24T14:15:00",
+      "source": "africa-newsroom.com",
+      "headline": "APO Group - Africa Newsroom / Press release | HYCM adds 50 cryptocurrency CFDs & drastically reduces spreads",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.africa-newsroom.com/press/hycm-adds-50-cryptocurrency-cfds-and-drastically-reduces-spreads"
+    }
+  ]
+}

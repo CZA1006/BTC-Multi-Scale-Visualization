@@ -1,0 +1,207 @@
+{
+  "date": "2024-12-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-14T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-14T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Alabama Auditor Pushes for State Bitcoin Reserve",
+    "Democrats need new playbook to confront Trump , Kamala Harris pollster tells party",
+    "Democrats need new playbook to confront Trump , Kamala Harris pollster tells party",
+    "Should You Buy Ethereum Below $4 , 500 ?",
+    "DNC fundraiser says Democrats have  stench of loser  hanging over party following defeat to Trump"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-14T12:00:00",
+      "source": "bravenewcoin.com",
+      "headline": "Alabama Auditor Pushes for State Bitcoin Reserve",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/alabama-auditor-pushes-for-state-bitcoin-reserve"
+    },
+    {
+      "timestamp": "2024-12-14T13:45:00",
+      "source": "foxnews.com",
+      "headline": "Democrats need new playbook to confront Trump , Kamala Harris pollster tells party",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/democrats-need-new-playbook-confront-trump-kamala-harris-pollster-tells-party"
+    },
+    {
+      "timestamp": "2024-12-14T15:15:00",
+      "source": "yahoo.com",
+      "headline": "Democrats need new playbook to confront Trump , Kamala Harris pollster tells party",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/democrats-playbook-confront-trump-kamala-124440450.html"
+    },
+    {
+      "timestamp": "2024-12-14T05:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Should You Buy Ethereum Below $4 , 500 ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/buy-ethereum-below-4-500-121000149.html"
+    },
+    {
+      "timestamp": "2024-12-14T20:45:00",
+      "source": "yahoo.com",
+      "headline": "DNC fundraiser says Democrats have  stench of loser  hanging over party following defeat to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/dnc-fundraiser-says-democrats-stench-180004556.html"
+    },
+    {
+      "timestamp": "2024-12-14T19:15:00",
+      "source": "foxnews.com",
+      "headline": "DNC fundraiser says Democrats have  stench of loser  hanging over party following defeat to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/media/dnc-fundraiser-says-democrats-have-stench-loser-hanging-over-party-following-defeat-trump"
+    },
+    {
+      "timestamp": "2024-12-14T09:30:00",
+      "source": "foxnews.com",
+      "headline": "RNC chair reveals what role Trump will play during the 2026 midterms :  All the way to the finish line",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/rnc-chair-reveals-what-role-trump-will-play-2026-midterms-finish-line"
+    },
+    {
+      "timestamp": "2024-12-14T05:00:00",
+      "source": "wallstreetpit.com",
+      "headline": "Digital Expert Predicts $800K Bitcoin by Next Year",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://wallstreetpit.com/121367-digital-expert-predicts-800k-bitcoin-by-next-year/"
+    },
+    {
+      "timestamp": "2024-12-14T00:00:00",
+      "source": "wallstreetpit.com",
+      "headline": "$800K Bitcoin by Next Year ? Digital Expert Bold Prediction",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://wallstreetpit.com/121367-800k-bitcoin-next-year-digital-experts-bold-prediction/"
+    },
+    {
+      "timestamp": "2024-12-14T16:15:00",
+      "source": "wfin.com",
+      "headline": "Democrats need new playbook to confront Trump , Kamala Harris pollster tells party",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wfin.com/fox-political-news/democrats-need-new-playbook-to-confront-trump-kamala-harris-pollster-tells-party/"
+    },
+    {
+      "timestamp": "2024-12-14T11:45:00",
+      "source": "yahoo.com",
+      "headline": "RNC chair reveals what role Trump will play during the 2026 midterms :  All the way to the finish line",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/rnc-chair-reveals-role-trump-090006661.html"
+    },
+    {
+      "timestamp": "2024-12-14T18:45:00",
+      "source": "benzinga.com",
+      "headline": "Analyst : Bitcoin Potential Surge To $800 , 000 In 2025 Tied To Trump Policies , Says This Analyst",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/12/42496937/analyst-bitcoins-potential-surge-to-800000-in-2025-tied-to-trumps-policies-says-this-analyst"
+    },
+    {
+      "timestamp": "2024-12-14T21:00:00",
+      "source": "benzinga.com",
+      "headline": "Analyst : Bitcoin Potential Surge To $800 , 000 In 2025 Tied To Trump Policies , Says This Analyst",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/12/42496937/analyst-bitcoins-potential-surge-to-800000-in-2025-tied-to-trumps-policies-says-this-analy"
+    },
+    {
+      "timestamp": "2024-12-14T11:00:00",
+      "source": "yahoo.com",
+      "headline": "Big donors secure big roles in the incoming Trump administration",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/big-donors-secure-big-roles-100042273.html"
+    },
+    {
+      "timestamp": "2024-12-14T20:00:00",
+      "source": "us.cnn.com",
+      "headline": "Big donors secure big roles in the incoming Trump administration",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://us.cnn.com/2024/12/14/politics/trump-administration-big-donors/"
+    }
+  ]
+}

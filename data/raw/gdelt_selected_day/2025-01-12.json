@@ -1,0 +1,202 @@
+{
+  "date": "2025-01-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 10,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-12T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-12T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Stealth Fed Dollar Crisis Predicted To Spark A Bitcoin Price Boom To Rival Gold",
+    "Kamala Harris delila fotografijo Carterjevega pogreba , s katere je  odrezala  Trumpa",
+    "US Adds 256 , 000 Jobs In December - Implications For Bitcoin ?",
+    "Crypto to  Banana Singularity , Bybit halts India services , and more : Hodler Digest , Jan . 5 – 11 – Cointelegraph Magazine",
+    "Trump prosecutor Jack Smith resigns from US Justice Department"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-12T14:30:00",
+      "source": "forbes.com",
+      "headline": "Stealth Fed Dollar Crisis Predicted To Spark A Bitcoin Price Boom To Rival Gold",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2025/01/12/stealth-fed-dollar-crisis-predicted-to-spark-a-bitcoin-price-boom-to-rival-gold/"
+    },
+    {
+      "timestamp": "2025-01-12T11:15:00",
+      "source": "rtvslo.si",
+      "headline": "Kamala Harris delila fotografijo Carterjevega pogreba , s katere je  odrezala  Trumpa",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.rtvslo.si/zabava-in-slog/kamala-harris-delila-fotografijo-carterjevega-pogreba-s-katere-odrezala-trumpa/733093"
+    },
+    {
+      "timestamp": "2025-01-12T05:45:00",
+      "source": "newsbtc.com",
+      "headline": "US Adds 256 , 000 Jobs In December - Implications For Bitcoin ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/us-adds-256000-jobs-in-december-implications-for-bitcoin/"
+    },
+    {
+      "timestamp": "2025-01-12T01:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto to  Banana Singularity , Bybit halts India services , and more : Hodler Digest , Jan . 5 – 11 – Cointelegraph Magazine",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/magazine/crypto-banana-singularity-bybit-suspends-india-services-meta-hodlers-digest/"
+    },
+    {
+      "timestamp": "2025-01-12T04:00:00",
+      "source": "voanews.com",
+      "headline": "Trump prosecutor Jack Smith resigns from US Justice Department",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/trump-prosecutor-jack-smith-resigns-from-us-justice-department-/7933741.html"
+    },
+    {
+      "timestamp": "2025-01-12T10:00:00",
+      "source": "indiapost.com",
+      "headline": "EAM Jaishankar to represent India at swearing - in ceremony of Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://indiapost.com/eam-jaishankar-to-represent-india-at-swearing-in-ceremony-of-donald-trump/"
+    },
+    {
+      "timestamp": "2025-01-12T23:00:00",
+      "source": "columbian.com",
+      "headline": "Poll : 40 % of Democrats dont think they will see woman president",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.columbian.com/news/2025/jan/12/poll-40-of-democrats-dont-think-they-will-see-woman-president/"
+    },
+    {
+      "timestamp": "2025-01-12T13:15:00",
+      "source": "fool.com",
+      "headline": "1 Top Cryptocurrency to Buy in 2025 With 163 % Upside , According to Fundstrat Tom Lee",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2025/01/12/1-top-cryptocurrency-to-buy-in-2025-has-163-upside/"
+    },
+    {
+      "timestamp": "2025-01-12T00:00:00",
+      "source": "aol.com",
+      "headline": "Trump prosecutor Jack Smith resigns from Justice Department",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/news/trump-prosecutor-jack-smith-resigns-211608602.html"
+    },
+    {
+      "timestamp": "2025-01-12T00:00:00",
+      "source": "investing.com",
+      "headline": "Trump prosecutor Jack Smith resigns from Justice Department By Reuters",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.investing.com/news/world-news/trump-prosecutor-jack-smith-resigns-from-justice-department-politico-reports-3808058"
+    },
+    {
+      "timestamp": "2025-01-12T02:00:00",
+      "source": "abc.net.au",
+      "headline": "Trump prosecutor Jack Smith resigns after submitting DOJ report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.abc.net.au/news/2025-01-12/trump-prosecutor-jack-smith-resigns-doj-election/104808496"
+    },
+    {
+      "timestamp": "2025-01-12T05:30:00",
+      "source": "hindustantimes.com",
+      "headline": "EAM Jaishankar to represent India at Donald Trump swearing - in on January 20",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hindustantimes.com/india-news/eam-jaishankar-to-represent-india-at-donald-trumps-swearing-in-on-january-20-101736657366595.html"
+    },
+    {
+      "timestamp": "2025-01-12T02:30:00",
+      "source": "mediaite.com",
+      "headline": "Jack Smith Resigns From DOJ Before Trump Takes Office",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mediaite.com/politics/special-counsel-jack-smith-officially-resigns-after-final-report-just-days-before-trump-takes-office/"
+    },
+    {
+      "timestamp": "2025-01-12T03:45:00",
+      "source": "dailymail.co.uk",
+      "headline": "Mike Pence fuels speculation that his wife snubbed Melania",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-14274777/Mike-Pence-speculation-wife-snubbed-Melania-Trump.html"
+    },
+    {
+      "timestamp": "2025-01-12T03:45:00",
+      "source": "home.nzcity.co.nz",
+      "headline": "Trump prosecutor Jack Smith resigns after submitting DOJ report - 12 - Jan - 2025",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=414365"
+    }
+  ]
+}

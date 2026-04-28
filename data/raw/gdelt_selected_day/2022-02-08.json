@@ -1,0 +1,177 @@
+{
+  "date": "2022-02-08",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-08T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-08T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-08T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-08T18:00:00",
+      "news_count": 7,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-08T19:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-08T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Donations Are Pouring Into Ukraine as Russia Masses Troops on the Border",
+    "Ukraine - Russia crisis : What to know about rising fear of war",
+    "Macron says Putin told him Russia wont escalate Ukraine crisis | Ukraine - Russia crisis News",
+    "Macron on Ukraine crisis : Putin told him Russia wont escalate",
+    "Ukraine crisis : Macron says Putin told him Russia will not escalate"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-08T13:45:00",
+      "source": "nbcphiladelphia.com",
+      "headline": "Bitcoin Donations Are Pouring Into Ukraine as Russia Masses Troops on the Border",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcphiladelphia.com/news/business/money-report/bitcoin-donations-are-pouring-into-ukraine-as-russia-masses-troops-on-the-border/3138201/"
+    },
+    {
+      "timestamp": "2022-02-08T18:30:00",
+      "source": "tulsaworld.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tulsaworld.com/news/article_2ebc6841-e9f4-568d-94ca-14e4d238717f.html"
+    },
+    {
+      "timestamp": "2022-02-08T19:45:00",
+      "source": "aljazeera.com",
+      "headline": "Macron says Putin told him Russia wont escalate Ukraine crisis | Ukraine - Russia crisis News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/2/8/macron-says-putin-told-him-russia-wont-escalate-ukraine-crisis"
+    },
+    {
+      "timestamp": "2022-02-08T19:45:00",
+      "source": "chicagotribune.com",
+      "headline": "Macron on Ukraine crisis : Putin told him Russia wont escalate",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.chicagotribune.com/nation-world/ct-aud-nw-ukraine-russia-macron-20220208-mseeeupu3bhujmkbwin5bc3pse-story.html"
+    },
+    {
+      "timestamp": "2022-02-08T19:15:00",
+      "source": "9news.com.au",
+      "headline": "Ukraine crisis : Macron says Putin told him Russia will not escalate",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.9news.com.au/world/ukraine-crisis-macron-says-putin-told-him-russia-will-not-escalate/cc9ebd3a-f8fc-438c-81ff-2caa9f0d13ee"
+    },
+    {
+      "timestamp": "2022-02-08T17:15:00",
+      "source": "sun-sentinel.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis - South Florida Sun - Sentinel",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.sun-sentinel.com/news/nationworld/ct-aud-nw-ukraine-russia-macron-20220208-mseeeupu3bhujmkbwin5bc3pse-story.html"
+    },
+    {
+      "timestamp": "2022-02-08T18:00:00",
+      "source": "orlandosentinel.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.orlandosentinel.com/news/nationworld/ct-aud-nw-ukraine-russia-macron-20220208-mseeeupu3bhujmkbwin5bc3pse-story.html"
+    },
+    {
+      "timestamp": "2022-02-08T18:15:00",
+      "source": "courant.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.courant.com/nation-world/ct-aud-nw-ukraine-russia-macron-20220208-mseeeupu3bhujmkbwin5bc3pse-story.html"
+    },
+    {
+      "timestamp": "2022-02-08T18:15:00",
+      "source": "arkansasonline.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2022/feb/08/macron-putin-told-him-russia-wont-escalate-ukraine/"
+    },
+    {
+      "timestamp": "2022-02-08T23:30:00",
+      "source": "pressherald.com",
+      "headline": "French president said Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.pressherald.com/2022/02/08/french-president-said-putin-told-him-russia-wont-escalate-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-08T18:30:00",
+      "source": "news-gazette.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.news-gazette.com/news/nation-world/macron-putin-told-him-russia-wont-escalate-ukraine-crisis/article_6edad961-12b5-53f4-bb0f-2f548805a52e.html"
+    },
+    {
+      "timestamp": "2022-02-08T18:30:00",
+      "source": "wdrb.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wdrb.com/news/national/macron-putin-told-him-russia-wont-escalate-ukraine-crisis/article_86faf5c0-c7f5-59d6-9fab-143cb60aa882.html"
+    },
+    {
+      "timestamp": "2022-02-08T06:00:00",
+      "source": "newdelhitimes.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions - New Delhi Times - India Only International Newspaper",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newdelhitimes.com/russian-bombers-fly-over-belarus-amid-ukraine-tensions/"
+    },
+    {
+      "timestamp": "2022-02-08T19:15:00",
+      "source": "stripes.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stripes.com/theaters/europe/2022-02-08/macron-putin-told-him-russia-wont-escalate-ukraine-crisis-4841052.html"
+    },
+    {
+      "timestamp": "2022-02-08T18:00:00",
+      "source": "smdailyjournal.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.smdailyjournal.com/news/world/macron-putin-told-him-russia-wont-escalate-ukraine-crisis/article_2495d518-84f2-549c-9e68-040e4d801f12.html"
+    }
+  ]
+}

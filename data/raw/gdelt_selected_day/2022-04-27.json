@@ -1,0 +1,197 @@
+{
+  "date": "2022-04-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 2,
+  "theme_count_election": 0,
+  "theme_count_war": 12,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-27T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-27T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin ban : These are the countries where crypto is restricted or illegal",
+    "Russia accused of  blackmail  after suspending gas supply to Bulgaria and Poland over Ukraine support",
+    "Are Crypto Sanctions Working in Europe ?",
+    "Wolf of All Streets  Says His Russian Bitcoin Mining Rigs Sanctioned",
+    "UK NFT Art : How the Ukrainian War Pushed Up The Price of Cryptocurrencies by Doctor Troller aka Andrew Brown"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-27T16:15:00",
+      "source": "euronews.com",
+      "headline": "Bitcoin ban : These are the countries where crypto is restricted or illegal",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "http://www.euronews.com/next/2022/04/27/bitcoin-ban-these-are-the-countries-where-crypto-is-restricted-or-illegal2"
+    },
+    {
+      "timestamp": "2022-04-27T22:45:00",
+      "source": "sbs.com.au",
+      "headline": "Russia accused of  blackmail  after suspending gas supply to Bulgaria and Poland over Ukraine support",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sbs.com.au/news/article/russia-accused-of-blackmail-after-suspending-gas-supply-to-bulgaria-and-poland-over-ukraine-support/n79koxszk"
+    },
+    {
+      "timestamp": "2022-04-27T17:00:00",
+      "source": "blockworks.co",
+      "headline": "Are Crypto Sanctions Working in Europe ?",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://blockworks.co/are-crypto-sanctions-working-in-europe/"
+    },
+    {
+      "timestamp": "2022-04-27T15:00:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Wolf of All Streets  Says His Russian Bitcoin Mining Rigs Sanctioned",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/wolf-of-all-streets-says-his-russian-bitcoin-mining-rigs-sanctioned-2022-4"
+    },
+    {
+      "timestamp": "2022-04-27T07:30:00",
+      "source": "finanznachrichten.de",
+      "headline": "UK NFT Art : How the Ukrainian War Pushed Up The Price of Cryptocurrencies by Doctor Troller aka Andrew Brown",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2022-04/55879878-uk-nft-art-how-the-ukrainian-war-pushed-up-the-price-of-cryptocurrencies-by-doctor-troller-aka-andrew-brown-008.htm"
+    },
+    {
+      "timestamp": "2022-04-27T20:30:00",
+      "source": "english.aawsat.com",
+      "headline": "EU Defies Gas  Blackmail  as Russia Pushes Deeper into Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.aawsat.com/home/article/3614921/eu-defies-gas-%E2%80%98blackmail%E2%80%99-russia-pushes-deeper-ukraine"
+    },
+    {
+      "timestamp": "2022-04-27T15:15:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Will US emerge  winner  in Russia - Ukraine war ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/europe/is-us-seeing-itself-as-winner-in-ukraine-russia-war/articleshow/91125465.cms"
+    },
+    {
+      "timestamp": "2022-04-27T16:45:00",
+      "source": "eurozpravy.cz",
+      "headline": "Putin tvrdí , že Rusko ustálo sankce Západu",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://eurozpravy.cz/zahranicni/evropa/putin-tvrdi-ze-rusko-ustalo-sankce-zapadu.d62cd926/"
+    },
+    {
+      "timestamp": "2022-04-27T22:15:00",
+      "source": "japantoday.com",
+      "headline": "EU defies gas  blackmail  as Russia pushes deeper into Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://japantoday.com/category/world/EU-defies-gas-"
+    },
+    {
+      "timestamp": "2022-04-27T15:30:00",
+      "source": "ceskenoviny.cz",
+      "headline": "Rusko podle prezidenta Putina ustálo sankce Západu",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ceskenoviny.cz/zpravy/rusko-podle-prezidenta-putina-ustalo-sankce-zapadu/2198239"
+    },
+    {
+      "timestamp": "2022-04-27T16:00:00",
+      "source": "iol.co.za",
+      "headline": "Ukraine and Russia : What you need to know right now",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.iol.co.za/news/world/ukraine-and-russia-what-you-need-to-know-right-now-b5ee7761-539f-5f45-960f-c83979646a37"
+    },
+    {
+      "timestamp": "2022-04-27T08:00:00",
+      "source": "arabic.euronews.com",
+      "headline": "هل الدفع بالروبل مقابل الغاز الروسي يمثل  خرقا  لمنظومة عقوبات الاتحاد الأوروبي على موسكو ؟",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://arabic.euronews.com/my-europe/2022/04/15/could-the-ruble-gas-payments-be-considered-as-a-violation-of-the-european-union-s-sancti"
+    },
+    {
+      "timestamp": "2022-04-27T03:30:00",
+      "source": "deccanherald.com",
+      "headline": "Russia warns of World War III after top US officials visit Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.deccanherald.com/international/world-news-politics/russia-warns-of-world-war-iii-after-top-us-officials-visit-kyiv-1103947.html"
+    },
+    {
+      "timestamp": "2022-04-27T18:30:00",
+      "source": "ceskenoviny.cz",
+      "headline": "Reakce na vměšování do situace na Ukrajině bude podle Putina blesková",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ceskenoviny.cz/zpravy/reakce-na-vmesovani-do-situace-na-ukrajine-bude-podle-putina-bleskova/2198239"
+    },
+    {
+      "timestamp": "2022-04-27T06:15:00",
+      "source": "businessinsider.in",
+      "headline": "Binance is launching a crypto payments card for Ukrainians fleeing their country during Russia invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.in/cryptocurrency/news/binance-is-launching-a-crypto-payments-card-for-ukrainians-fleeing-their-country-during-russias-invasion/articleshow/91108038.cms"
+    }
+  ]
+}

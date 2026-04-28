@@ -1,0 +1,207 @@
+{
+  "date": "2024-09-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 10,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-25T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T11:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-25T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Polymarket Bets On Likely Presidential Winner Pass $1B – $300M Collectively On Trump , Harris",
+    "Polymarket Bets On Likely Presidential Winner Pass $1B – $300M Collectively On Trump , Harris",
+    "За месяц до выборов Трамп уступает Харрис пять процентов / В мире / Независимая газета",
+    "Donald Trump opens up big lead in our election model",
+    "Crypto advocacy group rates Kamala Harris  N / A"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-25T11:00:00",
+      "source": "ibtimes.com",
+      "headline": "Polymarket Bets On Likely Presidential Winner Pass $1B – $300M Collectively On Trump , Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/polymarket-bets-likely-presidential-winner-pass-1b-300m-collectively-trump-harris-3744470"
+    },
+    {
+      "timestamp": "2024-09-25T13:15:00",
+      "source": "ibtimes.com.au",
+      "headline": "Polymarket Bets On Likely Presidential Winner Pass $1B – $300M Collectively On Trump , Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com.au/polymarket-bets-likely-presidential-winner-pass-1b-300m-collectively-trump-harris-1851904"
+    },
+    {
+      "timestamp": "2024-09-25T20:00:00",
+      "source": "ng.ru",
+      "headline": "За месяц до выборов Трамп уступает Харрис пять процентов / В мире / Независимая газета",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.ng.ru/world/2024-09-25/6_9101_usa.html"
+    },
+    {
+      "timestamp": "2024-09-25T18:30:00",
+      "source": "dailymail.co.uk",
+      "headline": "Donald Trump opens up big lead in our election model",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-13890931/Donald-Trump-opens-big-lead-election-model-Kamala-Harris-best-weeks-27-000-voters-decide-wins.html"
+    },
+    {
+      "timestamp": "2024-09-25T13:00:00",
+      "source": "readwrite.com",
+      "headline": "Crypto advocacy group rates Kamala Harris  N / A",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://readwrite.com/crypto-group-changes-kamala-harris-rating-from-b-to-n-a/"
+    },
+    {
+      "timestamp": "2024-09-25T00:00:00",
+      "source": "yahoo.com",
+      "headline": "Will the US presidential election define the future of crypto ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/us-presidential-election-define-future-231142658.html"
+    },
+    {
+      "timestamp": "2024-09-25T11:15:00",
+      "source": "mprnews.org",
+      "headline": "Harris heads to Pittsburgh ( again ) to make a manufacturing pitch to voters",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mprnews.org/story/2024/09/24/npr-harris-heads-to-pittsburgh-again-to-make-a-manufacturing-pitch-to-voters"
+    },
+    {
+      "timestamp": "2024-09-25T04:45:00",
+      "source": "biz.heraldcorp.com",
+      "headline": "패배하면 농촌 살아남기 힘들 것 … 공포심리  이용하는 트럼프 - 헤럴드경제",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://biz.heraldcorp.com/view.php?ud=20240925050417"
+    },
+    {
+      "timestamp": "2024-09-25T11:30:00",
+      "source": "dailymail.co.uk",
+      "headline": "Jennifer Lawrence reveals who she voting for as she slams critics",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-13889945/Jennifer-Lawrence-reveals-shes-voting-slams-critics-calling-uneducated.html"
+    },
+    {
+      "timestamp": "2024-09-25T08:45:00",
+      "source": "5-tv.ru",
+      "headline": "Зачем Зеленский ездил на завод в Пенсильванию",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.5-tv.ru/news/5000740/kakogo-certa-vssa-nazvali-osibkoj-poezdku-zelenskogo-nazavod-vpensilvanii/"
+    },
+    {
+      "timestamp": "2024-09-25T17:00:00",
+      "source": "foxnews.com",
+      "headline": "Harris - Trump showdown : New poll indicates who has edge in most important battleground",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/harris-trump-showdown-new-poll-indicates-who-has-edge-most-important-battleground"
+    },
+    {
+      "timestamp": "2024-09-25T01:15:00",
+      "source": "thewrap.com",
+      "headline": "Kamala Harris , Donald Trump Set Competing Televised Town Halls",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thewrap.com/kamala-harris-donald-trump-town-halls-televisa-univision/"
+    },
+    {
+      "timestamp": "2024-09-25T22:30:00",
+      "source": "townhall.com",
+      "headline": "House Oversight Committee Chairman Comer Investigates Zelensky Visit",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://townhall.com/tipsheet/rebeccadowns/2024/09/25/comer-asking-for-investigation-into-zelensky-n2645252"
+    },
+    {
+      "timestamp": "2024-09-25T16:30:00",
+      "source": "veropatriot.iheart.com",
+      "headline": "The Anatomy of a Swing State – Harris vs . Trump – September 25th | Vero Patriot",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://veropatriot.iheart.com/featured/brian-mudd/content/2024-09-25-the-anatomy-of-a-swing-state-harris-vs-trump-september-25th/"
+    },
+    {
+      "timestamp": "2024-09-25T15:15:00",
+      "source": "wjno.iheart.com",
+      "headline": "The Anatomy of a Swing State – Harris vs . Trump – September 25th | 1290 WJNO",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wjno.iheart.com/featured/brian-mudd/content/2024-09-25-the-anatomy-of-a-swing-state-harris-vs-trump-september-25th/"
+    }
+  ]
+}

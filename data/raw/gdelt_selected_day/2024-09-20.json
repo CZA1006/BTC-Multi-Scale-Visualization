@@ -1,0 +1,192 @@
+{
+  "date": "2024-09-20",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-20T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T05:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T19:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-20T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Stand With Crypto reports 121K have used voter registration since 2023",
+    "Bitcoin to hit $200K by end of 2025 regardless of election Bank exec",
+    "Anthony Scaramucci says he is  working alongside  Kamala Harris on her campaign crypto policies – NBC 7 San Diego",
+    "Anthony Scaramucci says he is  working alongside  Kamala Harris on her campaign crypto policies – NBC 6 South Florida",
+    "Anthony Scaramucci says he is  working alongside  Kamala Harris on her campaign crypto policies"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-20T00:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Stand With Crypto reports 121K have used voter registration since 2023",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/stand-with-crypto-reports-voter-registration-national-tour"
+    },
+    {
+      "timestamp": "2024-09-20T19:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin to hit $200K by end of 2025 regardless of election Bank exec",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-will-likely-reach-200-000-end-2025-regardless-of-election-standard-chartered-exec"
+    },
+    {
+      "timestamp": "2024-09-20T05:00:00",
+      "source": "nbcsandiego.com",
+      "headline": "Anthony Scaramucci says he is  working alongside  Kamala Harris on her campaign crypto policies – NBC 7 San Diego",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcsandiego.com/news/business/money-report/anthony-scaramucci-says-he-is-working-alongside-kamala-harris-on-her-campaigns-crypto-policies/3627941/"
+    },
+    {
+      "timestamp": "2024-09-20T05:45:00",
+      "source": "nbcmiami.com",
+      "headline": "Anthony Scaramucci says he is  working alongside  Kamala Harris on her campaign crypto policies – NBC 6 South Florida",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcmiami.com/news/business/money-report/anthony-scaramucci-says-he-is-working-alongside-kamala-harris-on-her-campaigns-crypto-policies/3422525/"
+    },
+    {
+      "timestamp": "2024-09-20T05:00:00",
+      "source": "cnbc.com",
+      "headline": "Anthony Scaramucci says he is  working alongside  Kamala Harris on her campaign crypto policies",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2024/09/20/anthony-scaramucci-kamala-harris-campaigns-digital-asset-policies-.html"
+    },
+    {
+      "timestamp": "2024-09-20T10:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Kamala Harris and Anthony Scaramucci Working Together on Crypto Policies",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/harris-scaramucci-crypto-policies/"
+    },
+    {
+      "timestamp": "2024-09-20T00:30:00",
+      "source": "newsweek.com",
+      "headline": "Donald Trump Tough Week Gets Worse",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/donald-trumps-tough-week-gets-worse-1956618"
+    },
+    {
+      "timestamp": "2024-09-20T16:15:00",
+      "source": "yahoo.com",
+      "headline": "Infamous MAGA Flop Anthony Scaramucci Is  Working Alongside  Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/infamous-maga-flop-anthony-scaramucci-154729799.html"
+    },
+    {
+      "timestamp": "2024-09-20T18:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Scaramucci Says Bitcoin About To Shatter Records As Fed Rate Cuts Kick In And New U . S . Rules Could Change Everything For Crypto",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/scaramucci-says-bitcoins-shatter-records-134517192.html"
+    },
+    {
+      "timestamp": "2024-09-20T19:00:00",
+      "source": "benzinga.com",
+      "headline": "Anthony Scaramucci Backs Kamala Harris On Crypto Policy , Says  It Going In The Right Direction",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/09/40963926/anthony-scaramucci-backs-kamala-harris-on-crypto-policy-says-its-going-in-the-right-direct"
+    },
+    {
+      "timestamp": "2024-09-20T19:30:00",
+      "source": "thedailybeast.com",
+      "headline": "Infamous MAGA Flop Anthony Scaramucci Is  Working Alongside  Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thedailybeast.com/infamous-maga-flop-anthony-scaramucci-is-working-alongside-kamala-harris"
+    },
+    {
+      "timestamp": "2024-09-20T17:30:00",
+      "source": "foxnews.com",
+      "headline": "Harris - Trump Showdown : Presidential nominees hit key battleground states as election approaches",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/harris-trump-showdown-presidential-nominees-key-battleground-states-election-approaches"
+    },
+    {
+      "timestamp": "2024-09-20T05:00:00",
+      "source": "theepochtimes.com",
+      "headline": "Harris Appears With Oprah in Key Battleground State Michigan",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theepochtimes.com/us/harris-joins-oprah-for-event-in-key-battleground-michigan-5727205"
+    },
+    {
+      "timestamp": "2024-09-20T21:30:00",
+      "source": "techtimes.com",
+      "headline": "Crypto Bulls Believe Bitcoin Will Rally After November US Elections , $75k by Year End ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.techtimes.com/articles/307590/20240920/crypto-bulls-believe-bitcoin-will-rally-after-november-us-elections-75k-years-end.htm"
+    },
+    {
+      "timestamp": "2024-09-20T09:30:00",
+      "source": "newsweek.com",
+      "headline": "Kamala Harris has a Muslim Voter Problem in Wisconsin",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/wisconsin-election-2024-kamala-harris-donald-trump-muslim-jewish-voters-swing-states-stein-1955897"
+    }
+  ]
+}

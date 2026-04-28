@@ -1,0 +1,192 @@
+{
+  "date": "2024-11-21",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 1,
+  "theme_count_election": 6,
+  "theme_count_war": 4,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-21T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-21T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Leak Reveals Trump Crypto Bombshell As Bitcoin Suddenly Surges Toward $100 , 000 Price",
+    "Bitcoin wild ride toward $100 , 000",
+    "Bitcoin wild ride toward $100 , 000",
+    "Bitcoin wild ride toward $100 , 000",
+    "Trump former CFTC chair eyed for  crypto czar  role"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-21T05:45:00",
+      "source": "forbes.com",
+      "headline": "Leak Reveals Trump Crypto Bombshell As Bitcoin Suddenly Surges Toward $100 , 000 Price",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/11/21/leak-reveals-trump-crypto-bombshell-as-bitcoin-suddenly-surges-toward-100000-price/"
+    },
+    {
+      "timestamp": "2024-11-21T23:00:00",
+      "source": "channelnewsasia.com",
+      "headline": "Bitcoin wild ride toward $100 , 000",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.channelnewsasia.com/business/bitcoins-wild-ride-toward-100000-4763536"
+    },
+    {
+      "timestamp": "2024-11-21T22:00:00",
+      "source": "marketscreener.com",
+      "headline": "Bitcoin wild ride toward $100 , 000",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/quote/cryptocurrency/BITCOIN-BTC-USD-45553945/news/Bitcoin-s-wild-ride-toward-100-000-48432109/"
+    },
+    {
+      "timestamp": "2024-11-21T22:45:00",
+      "source": "gazette.com",
+      "headline": "Bitcoin wild ride toward $100 , 000",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://gazette.com/news/us-world/bitcoins-wild-ride-toward-100-000/article_7f498117-9f48-595c-a50d-746181506ac7.html"
+    },
+    {
+      "timestamp": "2024-11-21T21:15:00",
+      "source": "foxbusiness.com",
+      "headline": "Trump former CFTC chair eyed for  crypto czar  role",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxbusiness.com/politics/trumps-former-cftc-chair-eyed-crypto-czar-role"
+    },
+    {
+      "timestamp": "2024-11-21T04:00:00",
+      "source": "tribune.com.pk",
+      "headline": "Bitcoin bursts past $94 , 000 for first time",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://tribune.com.pk/story/2510938/bitcoin-bursts-past-94000-for-first-time"
+    },
+    {
+      "timestamp": "2024-11-21T01:30:00",
+      "source": "dealstreetasia.com",
+      "headline": "Trump team vets candidates for White House crypto policy post : report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dealstreetasia.com/stories/trump-white-house-crypto-role-420487"
+    },
+    {
+      "timestamp": "2024-11-21T13:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitwise Registers Trust for Proposed Spot Solana ETF , Signaling Major Crypto Expansion",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitwise-registers-trust-proposed-spot-solana-etf-signaling-major-crypto-expansion/"
+    },
+    {
+      "timestamp": "2024-11-21T07:00:00",
+      "source": "livemint.com",
+      "headline": "Bitcoin prices surpass $97 , 000 for the first time on optimism over Donald Trump crypto plans",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.livemint.com/market/cryptocurrency/bitcoin-prices-surpass-97-000-for-the-first-time-on-optimism-over-donald-trumps-crypto-plans-11732165790274.html"
+    },
+    {
+      "timestamp": "2024-11-21T23:45:00",
+      "source": "fortune.com",
+      "headline": "Bitcoin nears $100 , 000 as SEC chair Gary Gensler announces he will step down",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://fortune.com/crypto/2024/11/21/bitcoin-nears-100000-as-sec-chair-gary-gensler-announces-he-will-step-down/"
+    },
+    {
+      "timestamp": "2024-11-21T05:30:00",
+      "source": "dunya.com",
+      "headline": "Bitcoinde rekor serisi sürüyor ( 21 Kasım 2024 Bitcoin ne kadar oldu , Bitcoin kaç lira )",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.dunya.com/kriptopara/bitcoinde-rekor-serisi-suruyor-21-kasim-2024-bitcoin-ne-kadar-oldu-bitcoin-kac-lira-haberi-754226"
+    },
+    {
+      "timestamp": "2024-11-21T23:00:00",
+      "source": "thisismoney.co.uk",
+      "headline": "Bitcoin soars closer to $100 , 000 with the cryptocurrency up 45 % since Trump election win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thisismoney.co.uk/money/markets/article-14111277/Bitcoin-soars-closer-100-000-cryptocurrency-45-Trumps-election-win.html"
+    },
+    {
+      "timestamp": "2024-11-21T01:45:00",
+      "source": "baijiahao.baidu.com",
+      "headline": "左右为难  的美国自由派 ， 在大选中输给了一个怎样的国家 ？",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://baijiahao.baidu.com/s?id=1816225840172710077"
+    },
+    {
+      "timestamp": "2024-11-21T04:15:00",
+      "source": "straitstimes.com",
+      "headline": "Trump team mulls creating first - ever White House crypto role",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.straitstimes.com/world/united-states/trump-team-mulls-creating-first-ever-white-house-crypto-role"
+    },
+    {
+      "timestamp": "2024-11-21T02:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Dollar pulls ahead as markets focus on Trump policies , Fed outlook",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/forex/dollar-pulls-ahead-as-markets-focus-on-trump-policies-fed-outlook/articleshow/115508488.cms"
+    }
+  ]
+}

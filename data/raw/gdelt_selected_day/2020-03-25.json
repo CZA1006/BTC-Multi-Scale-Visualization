@@ -1,0 +1,212 @@
+{
+  "date": "2020-03-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 2,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 5,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-25T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-25T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-26T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Price Soared 80 % In 12 Days ; US Coronavirus Stimulus Bill May Push It Further",
+    "Bitcoin Paints Two Extremely Bearish Patterns : Death Cross and Double Top",
+    "Bitcoin Explodes to $6 , 800 as S & P 500 Rallies 10 % On Back of  QE Infinity  & Coronavirus Bill",
+    "슈퍼 부양책  뉴욕증시 급반등 … 비트코인도 덩달아  쑥",
+    "Bitcoin Price Can Reach $100 , 000 with $2T Market Cap , Says Binance CZ"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-25T13:45:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Soared 80 % In 12 Days ; US Coronavirus Stimulus Bill May Push It Further",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-soared-80-12-days-us-coronavirus-stimulus-bill-may-push-it-further-2946407"
+    },
+    {
+      "timestamp": "2020-03-25T15:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Paints Two Extremely Bearish Patterns : Death Cross and Double Top",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/25/bitcoin-paints-two-extremely-bearish-patterns-death-cross-and-double-top/"
+    },
+    {
+      "timestamp": "2020-03-25T00:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Explodes to $6 , 800 as S & P 500 Rallies 10 % On Back of  QE Infinity  & Coronavirus Bill",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/24/bitcoin-explodes-6800-sp500-rallies-qe-infinity-coronavirus-bill/"
+    },
+    {
+      "timestamp": "2020-03-25T02:30:00",
+      "source": "news1.kr",
+      "headline": "슈퍼 부양책  뉴욕증시 급반등 … 비트코인도 덩달아  쑥",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.news1.kr/articles/?3884761"
+    },
+    {
+      "timestamp": "2020-03-25T17:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Can Reach $100 , 000 with $2T Market Cap , Says Binance CZ",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-2-trillion-cap-binance/"
+    },
+    {
+      "timestamp": "2020-03-25T12:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Stock Futures Revamp , Senate , White House Agree on Coronavirus Stimulus Bill",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/stock-futures-coronavirus-stimulus-bill/"
+    },
+    {
+      "timestamp": "2020-03-25T04:00:00",
+      "source": "ccn.com",
+      "headline": "Dow Futures Reverse Gains Despite Trump $6 Trillion Fiscal Bomb",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ccn.com/dow-futures-reverse-gains-despite-trumps-6-trillion-fiscal-bomb/"
+    },
+    {
+      "timestamp": "2020-03-25T16:00:00",
+      "source": "heraldtribune.com",
+      "headline": "The market has crashed before , and gotten back up - Opinion - Sarasota Herald - Tribune",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.heraldtribune.com/opinion/20200325/market-has-crashed-before-and-gotten-back-up"
+    },
+    {
+      "timestamp": "2020-03-25T06:30:00",
+      "source": "news.jtbc.joins.com",
+      "headline": "뉴욕증시도 하락 … 미 연준  국채 · 주택저당증권 사들이겠다",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://news.jtbc.joins.com/html/631/NB11941631.html"
+    },
+    {
+      "timestamp": "2020-03-25T09:45:00",
+      "source": "tagesschau.de",
+      "headline": "Rekordanstieg : Dow Jones mit grtem Plus seit 87 Jahren",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.tagesschau.de/wirtschaft/boerse/dowjones-rekord-usa-101.html"
+    },
+    {
+      "timestamp": "2020-03-25T19:30:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Amidst COVID - 19 : How Is Bitcoin Coping ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/25/crypto-amidst-covid-19-how-is-bitcoin-coping/"
+    },
+    {
+      "timestamp": "2020-03-26T00:00:00",
+      "source": "thedailyworld.com",
+      "headline": "Commentary : The stock market crashed five times before coronavirus . Those disasters can show us how to face this one",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.thedailyworld.com/opinion/commentary-the-stock-market-crashed-five-times-before-coronavirus-those-disasters-can-show-us-how-to-face-this-one/"
+    },
+    {
+      "timestamp": "2020-03-25T07:15:00",
+      "source": "scotsman.com",
+      "headline": "Will Covid - 19 crisis finally drive a Bitcoin revolution ? - Jim Duffy",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.scotsman.com/business/will-covid-19-crisis-finally-drive-bitcoin-revolution-jim-duffy-2514159"
+    },
+    {
+      "timestamp": "2020-03-25T13:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Analyst reveals why Bitcoin will rise amid QE",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/analyst-reveals-why-bitcoin-rise-124149157.html"
+    },
+    {
+      "timestamp": "2020-03-25T07:15:00",
+      "source": "myrepublica.nagariknetwork.com",
+      "headline": "When  Whatever It Takes  Isnt Enough - myRepublica - The New York Times Partner , Latest news of Nepal in English , Latest News Articles",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://myrepublica.nagariknetwork.com/news/when-whatever-it-takes-isn-t-enough/"
+    }
+  ]
+}

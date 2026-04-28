@@ -1,0 +1,202 @@
+{
+  "date": "2020-02-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 5,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-02-14T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-14T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-15T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Powell mentions possibility of another round of quantitative easing , coincidence ?",
+    "Minneapolis Federal Reserve President calls crypto a  garbage dumpster",
+    "Is bitcoin 2020 rally another flash in the pan ?",
+    "Is bitcoin 2020 rally another flash in the pan ?",
+    "Is bitcoin 2020 rally another flash in the pan ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-02-14T00:45:00",
+      "source": "kitco.com",
+      "headline": "Powell mentions possibility of another round of quantitative easing , coincidence ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.kitco.com/commentaries/2020-02-13/Powell-mentions-possibility-of-another-round-of-quantitative-easing-coincidence.html"
+    },
+    {
+      "timestamp": "2020-02-14T01:30:00",
+      "source": "forexcrunch.com",
+      "headline": "Minneapolis Federal Reserve President calls crypto a  garbage dumpster",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/minneapolis-federal-reserve-president-calls-crypto-a-garbage-dumpster/"
+    },
+    {
+      "timestamp": "2020-02-14T15:15:00",
+      "source": "kitco.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.kitco.com/news/2020-02-14/Is-bitcoin-s-2020-rally-another-flash-in-the-pan.html"
+    },
+    {
+      "timestamp": "2020-02-14T13:00:00",
+      "source": "myjoyonline.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.myjoyonline.com/business/2020/February-14th/is-bitcoins-2020-rally-another-flash-in-the-pan.php"
+    },
+    {
+      "timestamp": "2020-02-14T16:45:00",
+      "source": "dealstreetasia.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.dealstreetasia.com/stories/bitcoins-2020-rally-175006/"
+    },
+    {
+      "timestamp": "2020-02-14T14:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Digital Dollar Could Become a Reality as Fed Seems to Be Bullish on It",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/digital-dollar-fed-bullish/"
+    },
+    {
+      "timestamp": "2020-02-14T21:00:00",
+      "source": "insights.tradestation.com",
+      "headline": "Monex Crypto Market Weekly : February 14 - Market Insights",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://insights.tradestation.com/2020/02/14/monex-crypto-market-weekly-february-14/"
+    },
+    {
+      "timestamp": "2020-02-14T03:00:00",
+      "source": "marketwatch.com",
+      "headline": "Fed Williams : 2019 rate cuts cleared growth path",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/feds-williams-2019-rate-cuts-cleared-growth-path-2020-02-13"
+    },
+    {
+      "timestamp": "2020-02-14T05:30:00",
+      "source": "morningstar.com",
+      "headline": "Fed Williams : 2019 Rate Cuts Positioned Economy For Growth , Strong Labor Market",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.morningstar.com/news/dow-jones/2020021318023/feds-williams-2019-rate-cuts-positioned-economy-for-growth-strong-labor-market"
+    },
+    {
+      "timestamp": "2020-02-15T00:00:00",
+      "source": "forbes.com",
+      "headline": "China - Based Investment Firm CEO Makes  Unique  Bitcoin Warning",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/02/14/china-based-investment-firm-ceo-makes-unique-bitcoin-warning/"
+    },
+    {
+      "timestamp": "2020-02-14T06:15:00",
+      "source": "marketscreener.com",
+      "headline": "News Highlights : Top Global Markets News of the Day",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/news/News-Highlights-Top-Global-Markets-News-of-the-Day--29997241/"
+    },
+    {
+      "timestamp": "2020-02-14T00:00:00",
+      "source": "dailyfx.com",
+      "headline": "BTC Price Outlook : Will Bitcoin Boom or Bust After Hitting 10K ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/market_alert/2020/02/13/btc-price-outlook-will-bitcoin-boom-or-bust-after-hitting-10K.html"
+    },
+    {
+      "timestamp": "2020-02-14T14:30:00",
+      "source": "coinspeaker.com",
+      "headline": "XRP Price Crashes on BitMEX , BitMEX CEO Calls XRP  Turd",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/xrp-price-crashes-bitmex-recovers/"
+    },
+    {
+      "timestamp": "2020-02-14T21:15:00",
+      "source": "newsbtc.com",
+      "headline": "Coronavirus Proved Bitcoin is  Flight Asset of Choice , Says CEO",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/14/coronavirus-proved-bitcoin-is-flight-asset-of-choice-says-ceo/"
+    },
+    {
+      "timestamp": "2020-02-14T14:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "A tale of two markets : Why are stocks and bonds diverging as coronavirus spreads ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/tale-two-markets-why-stocks-050110412.html"
+    }
+  ]
+}

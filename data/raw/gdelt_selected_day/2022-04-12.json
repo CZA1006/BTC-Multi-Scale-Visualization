@@ -1,0 +1,202 @@
+{
+  "date": "2022-04-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 8,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-12T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T17:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-12T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Concern over possible use of chemical weapons as battle rages in besieged Ukrainian port",
+    "EU to help ICC investigate war crimes in Ukraine as it happened | News | DW",
+    "Concern over possible use of chemical weapons as battle rages in besieged Ukrainian port",
+    "Why is Bitcoin is surging against Ruble ?",
+    "Concern over possible use of chemical weapons as battle rages in besieged Ukrainian port"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-12T15:00:00",
+      "source": "inforum.com",
+      "headline": "Concern over possible use of chemical weapons as battle rages in besieged Ukrainian port",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/concern-over-possible-use-of-chemical-weapons-as-battle-rages-in-besieged-ukrainian-port"
+    },
+    {
+      "timestamp": "2022-04-12T00:45:00",
+      "source": "dw.com",
+      "headline": "EU to help ICC investigate war crimes in Ukraine as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/eu-to-help-icc-investigate-war-crimes-in-ukraine-as-it-happened/a-61427944"
+    },
+    {
+      "timestamp": "2022-04-12T13:30:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Concern over possible use of chemical weapons as battle rages in besieged Ukrainian port",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/concern-over-possible-use-of-chemical-weapons-as-battle-rages-in-besieged-ukrainian-port"
+    },
+    {
+      "timestamp": "2022-04-12T03:15:00",
+      "source": "marketbusinessnews.com",
+      "headline": "Why is Bitcoin is surging against Ruble ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://marketbusinessnews.com/why-bitcoin-surging-against-ruble/295803/"
+    },
+    {
+      "timestamp": "2022-04-12T15:00:00",
+      "source": "postbulletin.com",
+      "headline": "Concern over possible use of chemical weapons as battle rages in besieged Ukrainian port",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/concern-over-possible-use-of-chemical-weapons-as-battle-rages-in-besieged-ukrainian-port"
+    },
+    {
+      "timestamp": "2022-04-12T16:15:00",
+      "source": "msn.com",
+      "headline": "Live Updates | German president says he not wanted in Kyiv",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/live-updates-zelenskyy-addresses-lithuanian-parliament/ar-AAW7M3i"
+    },
+    {
+      "timestamp": "2022-04-12T11:45:00",
+      "source": "markets.businessinsider.com",
+      "headline": "10 Things Before the Opening Bell : April 12",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/stocks/10-things-before-the-opening-bell-april-12-2022-4"
+    },
+    {
+      "timestamp": "2022-04-12T20:30:00",
+      "source": "jdsupra.com",
+      "headline": "Ukraine Invasion Creates ESG Shifts , Refocuses Nations on Economic Sovereignty , and Reemphasizes Central Bank Digital Currencie Risks and Benefits | Nelson Mullins Riley & Scarborough LLP",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jdsupra.com/legalnews/ukraine-invasion-creates-esg-shifts-9370453/"
+    },
+    {
+      "timestamp": "2022-04-12T18:30:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine news today : Ukraine says Mariupol troops low on supplies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/live-updates-ukraine-says-mariupol-troops-low-on-supplies-1.5858346"
+    },
+    {
+      "timestamp": "2022-04-12T19:00:00",
+      "source": "stltoday.com",
+      "headline": "Live Updates | Ukraine says Mariupol troops low on supplies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/lifestyles/technology/live-updates-ukraine-says-mariupol-troops-low-on-supplies/article_75b1d2f4-e07a-546f-a5b6-0fd841306694.html"
+    },
+    {
+      "timestamp": "2022-04-12T17:15:00",
+      "source": "omaha.com",
+      "headline": "Live Updates | Ukraine says Mariupol troops low on supplies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/lifestyles/technology/live-updates-ukraine-says-mariupol-troops-low-on-supplies/article_17d54d1c-cec4-5f14-9f64-11e9ab433fd9.html"
+    },
+    {
+      "timestamp": "2022-04-12T17:30:00",
+      "source": "buffalonews.com",
+      "headline": "Live Updates | Ukraine says Mariupol troops low on supplies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://buffalonews.com/lifestyles/technology/live-updates-ukraine-says-mariupol-troops-low-on-supplies/article_5ff73bbe-12f5-53cd-ab65-d30422123126.html"
+    },
+    {
+      "timestamp": "2022-04-12T17:30:00",
+      "source": "madison.com",
+      "headline": "Live Updates | Ukraine says Mariupol troops low on supplies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/lifestyles/technology/live-updates-ukraine-says-mariupol-troops-low-on-supplies/article_92005100-a340-5ff9-a8e9-5325a5d59766.html"
+    },
+    {
+      "timestamp": "2022-04-12T17:45:00",
+      "source": "journalstar.com",
+      "headline": "Live Updates | Ukraine says Mariupol troops low on supplies",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://journalstar.com/lifestyles/technology/live-updates-ukraine-says-mariupol-troops-low-on-supplies/article_73a7b350-3ad9-586b-8665-cf5be4e9713d.html"
+    },
+    {
+      "timestamp": "2022-04-12T12:00:00",
+      "source": "msn.com",
+      "headline": "10 things before the opening bell",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/money/markets/10-things-before-the-opening-bell/ar-AAW82TC"
+    }
+  ]
+}

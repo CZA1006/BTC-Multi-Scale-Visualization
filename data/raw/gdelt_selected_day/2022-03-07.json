@@ -1,0 +1,197 @@
+{
+  "date": "2022-03-07",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-07T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-07T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "FAQs : Could Russia get round sanctions with cryptocurrency ?",
+    "The reshaping of the world as Ukraine war rages on",
+    "Crypto Check : Prices Off as Russian Attack on Ukraine Continues",
+    "What Assets are Most Impacted by Russia Invasion of Ukraine ?",
+    "What Assets are Most Impacted by Russia Invasion of Ukrain ..."
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-07T16:00:00",
+      "source": "philstar.com",
+      "headline": "FAQs : Could Russia get round sanctions with cryptocurrency ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.philstar.com/business/crypto/2022/03/07/2165686/faqs-could-russia-get-round-sanctions-cryptocurrency"
+    },
+    {
+      "timestamp": "2022-03-07T11:00:00",
+      "source": "straitstimes.com",
+      "headline": "The reshaping of the world as Ukraine war rages on",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.straitstimes.com/world/the-reshaping-of-the-world-as-ukraine-war-rages-on"
+    },
+    {
+      "timestamp": "2022-03-07T15:30:00",
+      "source": "thestreet.com",
+      "headline": "Crypto Check : Prices Off as Russian Attack on Ukraine Continues",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/investing/cryptocurrency/crypto-check-prices-off-as-russian-attack-on-ukraine-continues"
+    },
+    {
+      "timestamp": "2022-03-07T21:00:00",
+      "source": "dailyfx.com",
+      "headline": "What Assets are Most Impacted by Russia Invasion of Ukraine ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/fundamental/article/weekly_spotlight/2022/03/07/what-assets-are-most-impacted-by-russias-invasion-of-ukraine.html"
+    },
+    {
+      "timestamp": "2022-03-07T21:15:00",
+      "source": "menafn.com",
+      "headline": "What Assets are Most Impacted by Russia Invasion of Ukrain ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103808603/What-Assets-are-Most-Impacted-by-Russias-Invasion-of-Ukraine&source=19"
+    },
+    {
+      "timestamp": "2022-03-07T20:45:00",
+      "source": "menafn.com",
+      "headline": "What Assets are Most Impacted by Russia Invasion of Ukrain ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103808603/What-Assets-are-Most-Impacted-by-Russias-Invasion-of-Ukraine&source=24"
+    },
+    {
+      "timestamp": "2022-03-07T20:45:00",
+      "source": "menafn.com",
+      "headline": "What Assets are Most Impacted by Russia Invasion of Ukrain ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1103808603/What-Assets-are-Most-Impacted-by-Russias-Invasion-of-Ukraine&source=26"
+    },
+    {
+      "timestamp": "2022-03-07T23:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Cryptocurrencies Appear to Remain a Small Window for Russians",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/cryptocurrencies-appear-to-remain-a-small-window-for-russians-1.1733973"
+    },
+    {
+      "timestamp": "2022-03-07T06:30:00",
+      "source": "markets.businessinsider.com",
+      "headline": "As If  Kimchi Premium  Wasnt Enough , Russia SWIFT Cancellation Leads To Eye - Popping  Vodka Premium  For Bitcoin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/stocks/as-if-kimchi-premium-wasn-t-enough-russia-s-swift-cancellation-leads-to-eye-popping-vodka-premium-for-bitcoin-1031258031"
+    },
+    {
+      "timestamp": "2022-03-07T16:15:00",
+      "source": "computerworld.com",
+      "headline": "Russia is likely using cryptocurrency to thwart sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.computerworld.com/article/3652493/russia-is-likely-using-cryptocurrency-to-thwart-sanctions.html"
+    },
+    {
+      "timestamp": "2022-03-07T12:45:00",
+      "source": "thestreet.com",
+      "headline": "Amid War , Russia Central Bank Still Calls for Banning Crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/crypto/news/amid-war-russias-central-bank-still-calls-for-banning-crypto"
+    },
+    {
+      "timestamp": "2022-03-07T16:15:00",
+      "source": "cbsnews.com",
+      "headline": "Cryptocurrency companies resist pressure to close Russian accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/coinbase-binance-freeze-accounts-russia-ukraine/"
+    },
+    {
+      "timestamp": "2022-03-07T00:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Staying Power of Crypto Revived Refuge Status Faces Test",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/staying-power-crypto-rediscovered-refuge-150000939.html"
+    },
+    {
+      "timestamp": "2022-03-07T07:15:00",
+      "source": "tech.hindustantimes.com",
+      "headline": "Bitcoin a haven ? Staying power of Cryptocurrency revived refuge status faces test",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://tech.hindustantimes.com/tech/news/bitcoin-a-haven-staying-power-of-cryptocurrency-s-revived-refuge-status-faces-test-71646630787576.html"
+    },
+    {
+      "timestamp": "2022-03-07T12:30:00",
+      "source": "startribune.com",
+      "headline": "Russia sets new cease - fire for evacuations amid heavy shelling",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/russia-sets-cease-fire-for-evacuations-but-battles-continue/600153630/"
+    }
+  ]
+}

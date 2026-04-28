@@ -1,0 +1,207 @@
+{
+  "date": "2024-11-03",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-03T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-03T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-04T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "The Herald - Breaking news .",
+    "Donald Trump Odds Of Election Victory Have Suddenly Gone Into Free Fall",
+    "US Presidential Election : Harris , Trump hit overdrive in campaign final weekend",
+    "How will the U . S . election impact crypto ?",
+    "Crypto ETFs attract strong inflows ahead of US election"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-03T22:30:00",
+      "source": "herald.co.zw",
+      "headline": "The Herald - Breaking news .",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.herald.co.zw/bitcoins-run-toward-record-high-falters/"
+    },
+    {
+      "timestamp": "2024-11-04T00:00:00",
+      "source": "forbes.com",
+      "headline": "Donald Trump Odds Of Election Victory Have Suddenly Gone Into Free Fall",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/11/03/donald-trumps-odds-of-election-victory-have-suddenly-gone-into-free-fall/"
+    },
+    {
+      "timestamp": "2024-11-03T04:00:00",
+      "source": "gulfnews.com",
+      "headline": "US Presidential Election : Harris , Trump hit overdrive in campaign final weekend",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/world/americas/us-presidential-election-harris-trump-hit-overdrive-in-campaigns-final-weekend-1.1730601518445"
+    },
+    {
+      "timestamp": "2024-11-03T16:00:00",
+      "source": "ghanaweb.com",
+      "headline": "How will the U . S . election impact crypto ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ghanaweb.com/GhanaHomePage/business/How-will-the-U-S-election-impact-crypto-1958377"
+    },
+    {
+      "timestamp": "2024-11-03T16:00:00",
+      "source": "dealstreetasia.com",
+      "headline": "Crypto ETFs attract strong inflows ahead of US election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dealstreetasia.com/stories/crypto-etfs-us-election-results-418230"
+    },
+    {
+      "timestamp": "2024-11-03T17:15:00",
+      "source": "livemint.com",
+      "headline": "Wall Street week ahead : All eyes on US presidential election , Federal Reserve rate decision",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.livemint.com/market/stock-market-news/wall-street-week-ahead-all-eyes-on-us-presidential-election-federal-reserve-rate-decision-11730644058735.html"
+    },
+    {
+      "timestamp": "2024-11-03T02:00:00",
+      "source": "foxnews.com",
+      "headline": "Shock poll has Harris leading Trump in Iowa with 3 - point shift toward vice president",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/shock-poll-harris-leading-trump-iowa-3-point-shift-toward-vice-president-red-state"
+    },
+    {
+      "timestamp": "2024-11-03T09:15:00",
+      "source": "lbc.co.uk",
+      "headline": "Key swing states to watch out for in the 2024 US Election – and why they matter",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lbc.co.uk/news/uselection-swing-states-electoral-college-explained-trump-harris/"
+    },
+    {
+      "timestamp": "2024-11-03T19:30:00",
+      "source": "cnbcafrica.com",
+      "headline": "Why This Bitcoin Bar Wants To Turn Donald Trump And Kamala Harris Into Crypto Fans",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cnbcafrica.com/2024/why-this-bitcoin-bar-wants-to-turn-donald-trump-and-kamala-harris-into-crypto-fans/"
+    },
+    {
+      "timestamp": "2024-11-03T07:00:00",
+      "source": "deccanchronicle.com",
+      "headline": "Women march protesters gather to Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.deccanchronicle.com/womens-march-protesters-gather-to-kamala-harris"
+    },
+    {
+      "timestamp": "2024-11-03T22:45:00",
+      "source": "dailypioneer.com",
+      "headline": "America decides : Will Kamala make history",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dailypioneer.com/2024/columnists/america-decides--will-kamala-make-history.html"
+    },
+    {
+      "timestamp": "2024-11-03T00:00:00",
+      "source": "channelstv.com",
+      "headline": "Harris , Trump Go Toe To Toe In Frenzied Final Campaign Weekend",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.channelstv.com/2024/11/02/harris-trump-go-toe-to-toe-in-frenzied-final-campaign-weekend-2/"
+    },
+    {
+      "timestamp": "2024-11-03T16:15:00",
+      "source": "forbes.com",
+      "headline": "Here Who Winning In Latest Trump - Harris Presidential Polls",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/saradorn/2024/11/03/trump-vs-harris-2024-polls-trump-up-in-3-new-surveys-harris-leads-in-2-others/"
+    },
+    {
+      "timestamp": "2024-11-03T06:00:00",
+      "source": "boxun.com",
+      "headline": "这7个 摇摆州可能决定美国总统大选结果",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://boxun.com/archives/419915"
+    },
+    {
+      "timestamp": "2024-11-03T11:30:00",
+      "source": "sundiatapost.com",
+      "headline": "US Election : Harris , Trump go toe to toe in frenzied final campaign weekend",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://sundiatapost.com/us-election-harris-trump-go-toe-to-toe-in-frenzied-final-campaign-weekend/"
+    }
+  ]
+}

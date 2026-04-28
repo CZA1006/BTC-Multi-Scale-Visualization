@@ -1,0 +1,187 @@
+{
+  "date": "2020-06-30",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-30T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-30T07:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-30T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-30T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-30T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-30T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-30T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-30T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Fund Manager : If Black Thursday Didnt Shake Out Bitcoin Holders , Nothing Will",
+    "First Mover : Bitwise Calls $50K Bitcoin Price When Market Calm Finally Breaks",
+    "Bitcoin Price May Hit $397 , 000 By 2030 : Here How",
+    "Bitcoin kritik sınırın üstüne tutundu | 30 Haziran 2020 kripto para piyasaları",
+    "Bitcoin 9 , 000 dolarýn üzerinde tutunuyor - Türkiyenin bir numaralý finans ve ekonomi portalý Vatan Finans ."
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-30T20:00:00",
+      "source": "newsbtc.com",
+      "headline": "Fund Manager : If Black Thursday Didnt Shake Out Bitcoin Holders , Nothing Will",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/30/fund-manager-black-thursday-bitcoin/"
+    },
+    {
+      "timestamp": "2020-06-30T15:30:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Bitwise Calls $50K Bitcoin Price When Market Calm Finally Breaks",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-bitwise-50k-bitcoin-price-market-calm"
+    },
+    {
+      "timestamp": "2020-06-30T06:00:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price May Hit $397 , 000 By 2030 : Here How",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-may-hit-397000-2030-heres-how-3002780"
+    },
+    {
+      "timestamp": "2020-06-30T07:00:00",
+      "source": "takvim.com.tr",
+      "headline": "Bitcoin kritik sınırın üstüne tutundu | 30 Haziran 2020 kripto para piyasaları",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.takvim.com.tr/ekonomi/2020/06/30/bitcoin-kritik-sinirin-ustune-tutundu-30-haziran-2020-kripto-para-piyasalari"
+    },
+    {
+      "timestamp": "2020-06-30T07:15:00",
+      "source": "finans.gazetevatan.com",
+      "headline": "Bitcoin 9 , 000 dolarýn üzerinde tutunuyor - Türkiyenin bir numaralý finans ve ekonomi portalý Vatan Finans .",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://finans.gazetevatan.com/haber-detay/son-dakika/bitcoin-9-000-dolarn-zerinde-tutunuyor/102269/"
+    },
+    {
+      "timestamp": "2020-06-30T06:15:00",
+      "source": "haberler.com",
+      "headline": "KRİPTOPARA - Bitcoin 9 , 000 doların üzerinde tutunuyor",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.haberler.com/kriptopara-bitcoin-9-000-dolarin-uzerinde-13373810-haberi/"
+    },
+    {
+      "timestamp": "2020-06-30T09:15:00",
+      "source": "bigpara.hurriyet.com.tr",
+      "headline": "Bitcoin bu seviyede tutunmaya çalışıyor | Bitcoin Haberleri",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://bigpara.hurriyet.com.tr/haberler/bitcoin-haberleri/bitcoin-bu-seviyede-tutunmaya-calisiyor_ID1462951/"
+    },
+    {
+      "timestamp": "2020-06-30T07:45:00",
+      "source": "uzmanpara.milliyet.com.tr",
+      "headline": "Bitcoin 9 , 000 doların üzerinde tutunuyor - Türkiyenin bir numaralı finans ve ekonomi portalı uzmanpara . com .",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://uzmanpara.milliyet.com.tr/haber-detay/gundem2/bitcoin-9-000-dolarin-uzerinde-tutunuyor/102000/102269/"
+    },
+    {
+      "timestamp": "2020-06-30T14:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Boring Price Could Be End Of Quarter Lull",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/benjaminpirus/2020/06/30/bitcoins-boring-price-could-be-end-of-quarter-lull/"
+    },
+    {
+      "timestamp": "2020-06-30T15:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Risks Breaking $9K as JP Morgan Warns $170B Stock Market Sell - off",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/30/bitcoin-support-portfolio-rebalancing/"
+    },
+    {
+      "timestamp": "2020-06-30T12:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Jarvis Labs Reveals Tether ( USDT ) is Pushing Prices Higher",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/jarvis-labs-reveals-tether-usdt-is-pushing-prices-higher/"
+    },
+    {
+      "timestamp": "2020-06-30T07:45:00",
+      "source": "news.mt.co.kr",
+      "headline": "한달간 코스피 2100선 횡보 … 상당기간 박스권 머물것",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2020063015542287233&MTS_P"
+    },
+    {
+      "timestamp": "2020-06-30T14:30:00",
+      "source": "news.mt.co.kr",
+      "headline": "한달간 코스피 2100선 횡보 … 상당기간 박스권 머물것",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2020063015542287233&type=2&sec=finance&pDepth2=Ftotal&MNS_T"
+    },
+    {
+      "timestamp": "2020-06-30T10:45:00",
+      "source": "fool.com",
+      "headline": "10 Reasons the Stock Market Could Crash in Q3",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2020/06/30/10-reasons-the-stock-market-could-crash-in-q3.aspx"
+    },
+    {
+      "timestamp": "2020-06-30T10:30:00",
+      "source": "fool.com",
+      "headline": "10 Reasons the Stock Market Could Crash in Q3",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2020/06/30/10-reasons-the-stock-market-could-crash-in-q3.aspx?source=iedfolrf0000001"
+    }
+  ]
+}

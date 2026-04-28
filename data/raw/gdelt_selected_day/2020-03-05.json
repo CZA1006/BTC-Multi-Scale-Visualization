@@ -1,0 +1,197 @@
+{
+  "date": "2020-03-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 4,
+  "theme_count_covid": 5,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-05T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Coinbase CEO believes that 2020 will be a special year for crypto industry",
+    "Bitcoin Explodes as Coronavirus - hit US Stocks Hint at Shaky Start",
+    "Coronavirus Could Be  Black Swan  That Kills Bitcoin , Cryptocurrency : Here Why",
+    "The Coronavirus May Be The Best Reason Yet To Own Bitcoin",
+    "Will the Worst of Times for Central Bankers Lead to the Best of Times for Precious Metals ? :: The Market Oracle ::"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-05T06:30:00",
+      "source": "forexcrunch.com",
+      "headline": "Coinbase CEO believes that 2020 will be a special year for crypto industry",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/coinbase-ceo-believes-that-2020-will-be-a-special-year-for-crypto-industry/"
+    },
+    {
+      "timestamp": "2020-03-05T16:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Explodes as Coronavirus - hit US Stocks Hint at Shaky Start",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/05/bitcoin-explodes-as-coronavirus-hit-us-stocks-hint-at-shaky-start/"
+    },
+    {
+      "timestamp": "2020-03-05T11:45:00",
+      "source": "ibtimes.com",
+      "headline": "Coronavirus Could Be  Black Swan  That Kills Bitcoin , Cryptocurrency : Here Why",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/coronavirus-could-be-black-swan-kills-bitcoin-cryptocurrency-heres-why-2934185"
+    },
+    {
+      "timestamp": "2020-03-05T21:45:00",
+      "source": "newsbtc.com",
+      "headline": "The Coronavirus May Be The Best Reason Yet To Own Bitcoin",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/05/coronavirus-buy-bitcoin-cash-dirty/"
+    },
+    {
+      "timestamp": "2020-03-05T21:30:00",
+      "source": "marketoracle.co.uk",
+      "headline": "Will the Worst of Times for Central Bankers Lead to the Best of Times for Precious Metals ? :: The Market Oracle ::",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "http://www.marketoracle.co.uk/Article66707.html"
+    },
+    {
+      "timestamp": "2020-03-05T22:30:00",
+      "source": "moneymorning.com",
+      "headline": "Why the Fed Rate Cut Cant Save Stocks Right Now",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://moneymorning.com/2020/03/05/why-the-fed-rate-cut-cant-save-stocks-right-now/"
+    },
+    {
+      "timestamp": "2020-03-05T22:15:00",
+      "source": "theconversation.com",
+      "headline": "Vital Signs : Australian and US rate cuts underline seriousness of the coronavirus crisis",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://theconversation.com/vital-signs-australian-and-us-rate-cuts-underline-seriousness-of-the-coronavirus-crisis-132970"
+    },
+    {
+      "timestamp": "2020-03-05T00:00:00",
+      "source": "business.financialpost.com",
+      "headline": "Coronavirus testing post - crisis maxim that rate cuts alone can buoy markets",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://business.financialpost.com/news/economy/coronavirus-testing-post-crisis-maxim-that-rate-cuts-alone-can-buoy-markets"
+    },
+    {
+      "timestamp": "2020-03-05T19:15:00",
+      "source": "zerohedge.com",
+      "headline": "Negative Rates In The US Are Virtually Guaranteed Now",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/markets/negative-rates-us-are-virtually-guaranteed-now"
+    },
+    {
+      "timestamp": "2020-03-05T03:45:00",
+      "source": "biz.newdaily.co.kr",
+      "headline": "美 기준금리 인하에 코스피도 회복세 …  증시 변동성 여전",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://biz.newdaily.co.kr/site/data/html/2020/03/05/2020030500032.html"
+    },
+    {
+      "timestamp": "2020-03-05T02:00:00",
+      "source": "bizn.donga.com",
+      "headline": "美 , 0 . 5 % P  빅컷 … 금리인하 도미노 시작되나 : 비즈N",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://bizn.donga.com/dongaTop/Main/3/all/20200304/100012247/2"
+    },
+    {
+      "timestamp": "2020-03-05T19:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Rises Above $9 , 100 , Halving Less Than 10 , 000 Blocks Away",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-rises-halving-10000-blocks/"
+    },
+    {
+      "timestamp": "2020-03-05T20:45:00",
+      "source": "exchangerates.org.uk",
+      "headline": "GBP / USD : The Pound - Dollar Exchange Rate Is Being Supported By Federal Reserve Interest Rate Cut Bets",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.exchangerates.org.uk/news/28814/2020-03-05-gbp-usd-the-pound-dollar-exchange-rate-is-being-supported-by-federal-reserve-interest-rate-cut-bets.html"
+    },
+    {
+      "timestamp": "2020-03-05T06:00:00",
+      "source": "cnbc.com",
+      "headline": "US markets : Dow futures indicate opening decline",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2020/03/05/us-markets-dow-futures-indicate-opening-drop.html"
+    },
+    {
+      "timestamp": "2020-03-05T03:45:00",
+      "source": "donga.com",
+      "headline": "Will Fed interest rate cut set off domino effect ? : The DONG - A ILBO",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://www.donga.com/en/home/article/all/20200305/1997081/1/Will-Fed-s-interest-rate-cut-set-off-domino-effect"
+    }
+  ]
+}

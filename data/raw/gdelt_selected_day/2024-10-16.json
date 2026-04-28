@@ -1,0 +1,187 @@
+{
+  "date": "2024-10-16",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-16T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T15:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump Sets Record High Lead Over Harris , Ties Nevada : Polymarket US Elections Forecast",
+    "Trump Sets Record High Lead Over Harris , Ties Nevada : Polymarket US Elections Forecast",
+    "Trump PAC has raised about $7 . 5 million in crypto donations since early June",
+    "Musk donates almost US$75 million to Trump presidential cause",
+    "Musk donates almost $75 million to Trump presidential cause"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-16T11:30:00",
+      "source": "ibtimes.com",
+      "headline": "Trump Sets Record High Lead Over Harris , Ties Nevada : Polymarket US Elections Forecast",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/trump-sets-record-high-lead-over-harris-ties-nevada-polymarket-us-elections-forecast-3746852"
+    },
+    {
+      "timestamp": "2024-10-16T21:15:00",
+      "source": "latintimes.com",
+      "headline": "Trump Sets Record High Lead Over Harris , Ties Nevada : Polymarket US Elections Forecast",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.latintimes.com/trump-sets-record-high-lead-over-harris-ties-nevada-polymarket-us-elections-forecast-562326"
+    },
+    {
+      "timestamp": "2024-10-16T05:30:00",
+      "source": "nbcnewyork.com",
+      "headline": "Trump PAC has raised about $7 . 5 million in crypto donations since early June",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/trump-pac-has-raised-about-7-5-million-in-crypto-donations-since-early-june/5892358/"
+    },
+    {
+      "timestamp": "2024-10-16T15:45:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Musk donates almost US$75 million to Trump presidential cause",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/2024/10/16/musk-donates-almost-us75-million-trumps-presidential-campaign/"
+    },
+    {
+      "timestamp": "2024-10-16T14:30:00",
+      "source": "thepeninsulaqatar.com",
+      "headline": "Musk donates almost $75 million to Trump presidential cause",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://thepeninsulaqatar.com/article/16/10/2024/musk-donates-almost-75-million-to-trumps-presidential-cause"
+    },
+    {
+      "timestamp": "2024-10-16T14:30:00",
+      "source": "bssnews.net",
+      "headline": "Musk donates almost $75 million to Trump presidential cause",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bssnews.net/international/216626"
+    },
+    {
+      "timestamp": "2024-10-16T19:30:00",
+      "source": "investopedia.com",
+      "headline": "Bitcoin Has Outperformed the S & P 500 Since September Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.investopedia.com/bitcoin-has-outperformed-the-sp500-since-september-heres-why-8729130"
+    },
+    {
+      "timestamp": "2024-10-16T14:15:00",
+      "source": "news24.com",
+      "headline": "SA - born Billionaire Musk donates almost $75 million to Trump presidential cause",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.news24.com/news24/world/news/sa-born-billionaire-musk-donates-almost-75-million-to-trumps-presidential-cause-20241016"
+    },
+    {
+      "timestamp": "2024-10-16T05:15:00",
+      "source": "yahoo.com",
+      "headline": "Elon Musk loaded $75 million into his pro - Trump super PAC in 3 months",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/elon-musk-loaded-75-million-023607575.html"
+    },
+    {
+      "timestamp": "2024-10-16T15:45:00",
+      "source": "investors.com",
+      "headline": "Bitcoin Price Tests $68 , 000 , Spot Bitcoin ETFs Clear Key Levels",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.investors.com/news/bitcoin-price-momentum-election-trump-harris-spot-bitcoin-etfs-key-level/"
+    },
+    {
+      "timestamp": "2024-10-16T15:00:00",
+      "source": "benzinga.com",
+      "headline": "Crypto Lobbyists Are Quietly Influencing 2024 Election : This Is Their Playbook - Grayscale Bitcoin Mini Trust ( BTC ) Common units of fractional undivided beneficial interest ( ARCA : BTC )",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/10/41357154/crypto-lobbyists-are-quietly-influencing-2024-election-this-is-their-playbook"
+    },
+    {
+      "timestamp": "2024-10-16T09:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Trump PAC Secures $7 . 5 Million in Crypto Donations Ahead of Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/trump-pac-7-5-m-crypto-donations/"
+    },
+    {
+      "timestamp": "2024-10-16T00:00:00",
+      "source": "menafn.com",
+      "headline": "Harris Mocks Trump After Rally Turns Into Bizarre Dance - A - Thon",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://menafn.com/1108782714/Harris-Mocks-Trump-After-Rally-Turns-Into-Bizarre-Dance-A-Thon"
+    },
+    {
+      "timestamp": "2024-10-16T00:15:00",
+      "source": "thepeninsulaqatar.com",
+      "headline": "Harris mocks Trump after rally turns into bizarre dance - a - thon",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://thepeninsulaqatar.com/article/15/10/2024/harris-mocks-trump-after-rally-turns-into-bizarre-dance-a-thon"
+    },
+    {
+      "timestamp": "2024-10-16T15:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Trump pump ? Bitcoin climbs to 2 . 5 - month high as Trump widens lead",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-price-2-5-month-high-schiff-trump-pump"
+    }
+  ]
+}

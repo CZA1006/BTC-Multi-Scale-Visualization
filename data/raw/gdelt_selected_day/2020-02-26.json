@@ -1,0 +1,187 @@
+{
+  "date": "2020-02-26",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 8,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-02-26T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-26T09:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-26T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-26T15:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-26T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-26T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-26T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-26T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Worst Slide in 4 Years , Coronavirus Wipes out $1 . 7T in U . S . Stock Market",
+    "Has the Coronavirus Put an End To the Bitcoin Safe Haven Narrative ?",
+    "Bitcoin Bounces Off Buy Zone , Accurate Crypto Analyst Says Its Time to Hold",
+    "The Fed Will Likely Take Action Soon",
+    "Hong Kong Latest Budget is Bullish for Crypto , Says Top Fund Manager"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-02-26T15:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Worst Slide in 4 Years , Coronavirus Wipes out $1 . 7T in U . S . Stock Market",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/worst-slide-4-years-coronavirus-stock/"
+    },
+    {
+      "timestamp": "2020-02-26T17:15:00",
+      "source": "newsbtc.com",
+      "headline": "Has the Coronavirus Put an End To the Bitcoin Safe Haven Narrative ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/26/gold-coronavirus-bitcoin-safe-haven/"
+    },
+    {
+      "timestamp": "2020-02-26T22:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Bounces Off Buy Zone , Accurate Crypto Analyst Says Its Time to Hold",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/26/bitcoin-buy-zone-crypto-analyst/"
+    },
+    {
+      "timestamp": "2020-02-26T20:00:00",
+      "source": "seekingalpha.com",
+      "headline": "The Fed Will Likely Take Action Soon",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://seekingalpha.com/article/4327398-fed-will-likely-take-action-soon"
+    },
+    {
+      "timestamp": "2020-02-26T16:00:00",
+      "source": "newsbtc.com",
+      "headline": "Hong Kong Latest Budget is Bullish for Crypto , Says Top Fund Manager",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/26/hong-kongs-latest-budget-is-bullish-for-crypto-says-top-fund-manager/"
+    },
+    {
+      "timestamp": "2020-02-26T00:45:00",
+      "source": "biz.chosun.com",
+      "headline": "연준 통화부양책 펴는 한 美 IT종목 강세 보일 것",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://biz.chosun.com/site/data/html_dir/2020/02/26/2020022600025.html"
+    },
+    {
+      "timestamp": "2020-02-26T11:45:00",
+      "source": "thehill.com",
+      "headline": "Coronavirus complicates Fed decision on rates",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://thehill.com/policy/finance/484622-coronavirus-complicates-fed-decision-on-rates"
+    },
+    {
+      "timestamp": "2020-02-26T17:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Hits Three - Week Low as Coronavirus Spreads to Europe , US",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/26/bitcoin-hits-three-week-low-as-coronavirus-spreads-to-europe-us/"
+    },
+    {
+      "timestamp": "2020-02-26T15:45:00",
+      "source": "benzinga.com",
+      "headline": "Wednesday Market Minute : Bitcoin Has A Crucial Role To Play In This Economy",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/20/02/15417153/wednesdays-market-minute-bitcoin-has-a-crucial-role-to-play-in-this-economy"
+    },
+    {
+      "timestamp": "2020-02-26T15:00:00",
+      "source": "ibtimes.com",
+      "headline": "Coronavirus Outbreak Pushes Bitcoin Price Down : Is It Really A Safe Haven ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/coronavirus-outbreak-pushes-bitcoin-price-down-it-really-safe-haven-2929351"
+    },
+    {
+      "timestamp": "2020-02-26T09:30:00",
+      "source": "edaily.co.kr",
+      "headline": "[ e슬기로운 투자생활 ] 美 신용등급 강등  급 충격인 코로나19",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=04526406625674456&mediaCodeNo=257&gtrack=sok"
+    },
+    {
+      "timestamp": "2020-02-26T09:30:00",
+      "source": "edaily.co.kr",
+      "headline": "[ e슬기로운 투자생활 ] 美 신용등급 강등  급 충격인 코로나19",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=04526406625674456&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2020-02-26T09:15:00",
+      "source": "scotsman.com",
+      "headline": "Bitcoin is not immune to coronavirus fluctuations - Jim Duffy",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.scotsman.com/business/bitcoin-is-not-immune-to-coronavirus-fluctuations-jim-duffy-1-5095759"
+    },
+    {
+      "timestamp": "2020-02-26T09:30:00",
+      "source": "nz.finance.yahoo.com",
+      "headline": "Bitcoin Coronavirus Selloff Throws Cold Water on Safe - Haven Argument",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://nz.finance.yahoo.com/news/bitcoin-coronavirus-selloff-throws-cold-213345881.html"
+    },
+    {
+      "timestamp": "2020-02-26T15:45:00",
+      "source": "marketwatch.com",
+      "headline": "Why the Fed cant do much to counteract the economic hit from coronavirus",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/why-the-fed-cant-do-much-to-counteract-the-economic-hit-from-coronavirus-2020-02-26"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "date": "2022-02-20",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 2,
+  "theme_count_election": 0,
+  "theme_count_war": 12,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-20T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-20T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bloodless heists in the time of crypto , SWIFT",
+    "Crypto scams are the bloodless heists of our times",
+    "Ukraine : Russian troops drill in Belarus , Harris warns of war",
+    "Putin Will Not Stop at Ukraine , Britain Foreign Secretary Warns",
+    "Ukraine President Proposes Meeting with Putin"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-20T04:15:00",
+      "source": "msn.com",
+      "headline": "Bloodless heists in the time of crypto , SWIFT",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/money/topstories/bloodless-heists-in-the-time-of-crypto-swift/ar-AAU3tF1"
+    },
+    {
+      "timestamp": "2022-02-20T02:45:00",
+      "source": "msn.com",
+      "headline": "Crypto scams are the bloodless heists of our times",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/money/topstories/crypto-scams-are-the-bloodless-heists-of-our-times/ar-AAU3tF1"
+    },
+    {
+      "timestamp": "2022-02-20T14:45:00",
+      "source": "usatoday.com",
+      "headline": "Ukraine : Russian troops drill in Belarus , Harris warns of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.usatoday.com/story/news/politics/2022/02/20/ukraine-russia-nato-crisis/6870850001/"
+    },
+    {
+      "timestamp": "2022-02-20T10:30:00",
+      "source": "voanews.com",
+      "headline": "Putin Will Not Stop at Ukraine , Britain Foreign Secretary Warns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/putin-will-not-stop-at-ukraine-britain-s-foreign-secretary-warns/6450993.html"
+    },
+    {
+      "timestamp": "2022-02-20T07:45:00",
+      "source": "voanews.com",
+      "headline": "Ukraine President Proposes Meeting with Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/ukraine-s-president-proposes-meeting-with-putin/6450993.html"
+    },
+    {
+      "timestamp": "2022-02-20T14:15:00",
+      "source": "freep.com",
+      "headline": "Ukraine : Russian troops drill in Belarus , Harris warns of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.freep.com/story/news/politics/2022/02/20/ukraine-russia-nato-crisis/6870850001/"
+    },
+    {
+      "timestamp": "2022-02-20T16:45:00",
+      "source": "wcvb.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wcvb.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    },
+    {
+      "timestamp": "2022-02-20T17:45:00",
+      "source": "koat.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.koat.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    },
+    {
+      "timestamp": "2022-02-20T18:00:00",
+      "source": "wxii12.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wxii12.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    },
+    {
+      "timestamp": "2022-02-20T16:45:00",
+      "source": "wmur.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wmur.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    },
+    {
+      "timestamp": "2022-02-20T19:00:00",
+      "source": "wtae.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wtae.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    },
+    {
+      "timestamp": "2022-02-20T17:45:00",
+      "source": "wesh.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wesh.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    },
+    {
+      "timestamp": "2022-02-20T16:45:00",
+      "source": "kcci.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.kcci.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    },
+    {
+      "timestamp": "2022-02-20T19:00:00",
+      "source": "foxnews.com",
+      "headline": "Blinken responds to Zelenskyy plea : No sanctions until  bombs are actually dropping",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/blinken-zelenskyys-plea-sanctions-until-bombs-dropping"
+    },
+    {
+      "timestamp": "2022-02-20T18:15:00",
+      "source": "kcra.com",
+      "headline": "Vice President Harris acknowledges  real possibility of war  in Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.kcra.com/article/vice-president-harris-acknowledges-real-possibility-of-war-europe/39150380"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "date": "2022-05-07",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-07T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T08:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-07T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-08T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "How Russia and Ukraine are finding new ways to use tech in the war | John Naughton",
+    "Ši moteris Rusijos ekonomiką ištempė iš ne vienos krizės , tačiau šįkart centrinio banko vadovę užjaučia : „ Nenorėčiau būti jos vietoje",
+    "Putin says Russia ready for talks with Ukraine",
+    "Russia - Ukraine latest news : Joe Biden announces new weapons package for Kyiv",
+    "Ukraine officials warn of offensive ; Biden announces $150m more in aid"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-07T16:00:00",
+      "source": "theguardian.com",
+      "headline": "How Russia and Ukraine are finding new ways to use tech in the war | John Naughton",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theguardian.com/commentisfree/2022/may/07/how-russia-and-ukraine-are-finding-new-ways-to-use-tech-in-the-war"
+    },
+    {
+      "timestamp": "2022-05-07T14:00:00",
+      "source": "lrytas.lt",
+      "headline": "Ši moteris Rusijos ekonomiką ištempė iš ne vienos krizės , tačiau šįkart centrinio banko vadovę užjaučia : „ Nenorėčiau būti jos vietoje",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.lrytas.lt/verslas/rinkos-pulsas/2022/05/07/news/si-moteris-rusijos-ekonomika-istempe-is-ne-vienos-krizes-taciau-sikart-centrinio-banko-vadove-uzjaucia-nenoreciau-buti-jo-23246458"
+    },
+    {
+      "timestamp": "2022-05-07T07:00:00",
+      "source": "english.alarabiya.net",
+      "headline": "Putin says Russia ready for talks with Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.alarabiya.net/News/world/2022/05/03/Putin-says-Russia-ready-for-talks-with-Ukraine"
+    },
+    {
+      "timestamp": "2022-05-07T09:15:00",
+      "source": "news.yahoo.com",
+      "headline": "Russia - Ukraine latest news : Joe Biden announces new weapons package for Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/russia-ukraine-latest-news-joe-195014242.html"
+    },
+    {
+      "timestamp": "2022-05-07T00:00:00",
+      "source": "msn.com",
+      "headline": "Ukraine officials warn of offensive ; Biden announces $150m more in aid",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/ukraine-officials-warn-of-offensive-biden-announces-150m-more-in-aid-live-ukraine-updates/ar-AAWYnJc"
+    },
+    {
+      "timestamp": "2022-05-07T13:15:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Ukrainian Forces Pursue Counteroffensive Around Kharkiv ; Russia Rehearses  Victory Day  Parade – NBC Connecticut",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/ukrainian-forces-pursue-counteroffensive-around-kharkiv-russia-rehearses-victory-day-parade-follow-our-live-updates/2779481/"
+    },
+    {
+      "timestamp": "2022-05-07T08:30:00",
+      "source": "aljazeera.com",
+      "headline": "Russia - Ukraine war : List of key events , day 73",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/5/7/russia-ukraine-war-list-of-key-events-day-73"
+    },
+    {
+      "timestamp": "2022-05-07T08:00:00",
+      "source": "albawaba.com",
+      "headline": "Zelensky Slams Russia  Inhuman  Treatment of Civilians in Mariupol",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.albawaba.com/news/zelensky-slams-russias-inhuman-treatment-civilians-mariupol-1475778"
+    },
+    {
+      "timestamp": "2022-05-07T21:30:00",
+      "source": "nbcdfw.com",
+      "headline": "CIA Chief Says Putin to Double Down on War ; Ukraine Calls for Tribunal to Prosecute Russian Leadership",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcdfw.com/news/business/money-report/ukrainian-forces-pursue-counteroffensive-around-kharkiv-russia-rehearses-victory-day-parade-follow-our-live-updates/2961825/"
+    },
+    {
+      "timestamp": "2022-05-07T22:30:00",
+      "source": "nbcmiami.com",
+      "headline": "Zelenskyy Says More Than 300 Civilians Rescued From Besieged Steel Plant , More Evacuations Planned",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcmiami.com/news/business/money-report/ukrainian-forces-pursue-counteroffensive-around-kharkiv-russia-rehearses-victory-day-parade-follow-our-live-updates/2754873/"
+    },
+    {
+      "timestamp": "2022-05-07T19:15:00",
+      "source": "nbcsandiego.com",
+      "headline": "Women and Children Evacuated From Mariupol Plant ; Ukrainian Forces Pursue Counteroffensive Around Kharkiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcsandiego.com/news/business/money-report/ukrainian-forces-pursue-counteroffensive-around-kharkiv-russia-rehearses-victory-day-parade-follow-our-live-updates/2940045/"
+    },
+    {
+      "timestamp": "2022-05-08T00:00:00",
+      "source": "msn.com",
+      "headline": "Ukraine presses forward with Azovstal evacuations live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-xl/news/other/ukraine-presses-forward-with-azovstal-evacuations-live-updates/ar-AAX1TlP"
+    },
+    {
+      "timestamp": "2022-05-07T19:45:00",
+      "source": "nbcnewyork.com",
+      "headline": "Women and Children Evacuated From Mariupol Plant ; Ukrainian Forces Pursue Counteroffensive Around Kharkiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/ukrainian-forces-pursue-counteroffensive-around-kharkiv-russia-rehearses-victory-day-parade-follow-our-live-updates/3677256/"
+    },
+    {
+      "timestamp": "2022-05-07T17:45:00",
+      "source": "msn.com",
+      "headline": "Ukraine : Joe Biden announces new security aid for Ukraine live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-za/news/other/ukraine-says-all-women-children-and-elderly-out-of-besieged-azovstal-plant-live-updates/ar-AAX0llB"
+    },
+    {
+      "timestamp": "2022-05-07T20:00:00",
+      "source": "nbcbayarea.com",
+      "headline": "Women and Children Evacuated From Mariupol Plant ; Ukrainian Forces Pursue Counteroffensive Around Kharkiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcbayarea.com/news/business/money-report/ukrainian-forces-pursue-counteroffensive-around-kharkiv-russia-rehearses-victory-day-parade-follow-our-live-updates/2884238/"
+    }
+  ]
+}

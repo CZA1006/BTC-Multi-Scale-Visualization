@@ -1,0 +1,202 @@
+{
+  "date": "2020-05-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 6,
+  "theme_count_regulation": 3,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-23T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-23T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto Tidbits : Satoshi Isnt Dumping His Bitcoin , China  Ban Cryptocurrency Mining",
+    "The FINANCIAL - Cryptocurrency Total Market Cap Jumped 80 % After COVID - 19 Crash",
+    "Fed Action Accelerates Boom - Bust Cycle ; Not A Virus Crisis :: The Market Oracle ::",
+    "Bitcoin Miners Will Use Derivatives Like Traditional Commodity Producers",
+    "Putting 2020 $10 - Trillion - Plus COVID  Stimulus  In Perspective - From Ultra - Deflation To Hyper - Inflation"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-23T08:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Satoshi Isnt Dumping His Bitcoin , China  Ban Cryptocurrency Mining",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/23/crypto-tidbits-satoshi-isnt-dumping-his-bitcoin-china-bans-cryptocurrency-mining/"
+    },
+    {
+      "timestamp": "2020-05-23T22:30:00",
+      "source": "finchannel.com",
+      "headline": "The FINANCIAL - Cryptocurrency Total Market Cap Jumped 80 % After COVID - 19 Crash",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.finchannel.com/business/financial-markets-and-stocks/77962-cryptocurrency-total-market-cap-jumped-80-after-covid-19-crash"
+    },
+    {
+      "timestamp": "2020-05-23T21:45:00",
+      "source": "marketoracle.co.uk",
+      "headline": "Fed Action Accelerates Boom - Bust Cycle ; Not A Virus Crisis :: The Market Oracle ::",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://www.marketoracle.co.uk/Article67162.html"
+    },
+    {
+      "timestamp": "2020-05-23T23:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin Miners Will Use Derivatives Like Traditional Commodity Producers",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-miners-will-use-derivatives-like-traditional-commodity-producers"
+    },
+    {
+      "timestamp": "2020-05-23T18:45:00",
+      "source": "zerohedge.com",
+      "headline": "Putting 2020 $10 - Trillion - Plus COVID  Stimulus  In Perspective - From Ultra - Deflation To Hyper - Inflation",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/markets/putting-2020s-10-trillion-plus-covid-stimulus-perspective-ultra-deflation-hyper-inflation"
+    },
+    {
+      "timestamp": "2020-05-23T00:30:00",
+      "source": "fool.ca",
+      "headline": "Market Crash Part 2 Is Coming Here How Id Prepare - The Motley Fool Canada",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.ca/2020/05/22/market-crash-part-2-is-coming-heres-how-id-prepare/"
+    },
+    {
+      "timestamp": "2020-05-23T05:30:00",
+      "source": "forbes.com",
+      "headline": "Circle , Bank Of England , IMF , Wanxiang , PBOC To Discuss :  Full Reserve Banking , Narrowbanks For Digital Currency , And The China Model",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/lukefitzpatrick/2020/05/23/circle-bank-of-england-imf-wanxiang-pboc-to-discuss-full-reserve-banking-narrowbanks-for-digital-currency-and-the-china-model/"
+    },
+    {
+      "timestamp": "2020-05-23T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "Why Bitcoin Claiming This Crucial Level Will Set the Stage for a Move to $11 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/23/why-bitcoin-claiming-level-will-set-stage-move-11000/"
+    },
+    {
+      "timestamp": "2020-05-23T17:45:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Bitcoin Decides to Take a Dive , Knocks Hundreds Off Its Price",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/bitcoin-decides-to-take-a-sudden-dive-knocks-hundreds-off-its-price/"
+    },
+    {
+      "timestamp": "2020-05-23T00:30:00",
+      "source": "edaily.co.kr",
+      "headline": "[ 副를 키우는 투자지표 ] 이래도 저래도  오르는 금 , 매력 터지나",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01210326625771872&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2020-05-23T01:30:00",
+      "source": "edaily.co.kr",
+      "headline": "[ 副를 키우는 투자지표 ] 이래도 저래도  오르는 금 , 매력 터지나",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01210326625771872&mediaCodeNo=E"
+    },
+    {
+      "timestamp": "2020-05-23T00:00:00",
+      "source": "forbes.com",
+      "headline": "As Bitcoin Flounders , This Tiny Cryptocurrency Has Soared Over 200 % Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/05/22/as-bitcoin-flounders-this-tiny-cryptocurrency-is-soaring-over-200-heres-why/"
+    },
+    {
+      "timestamp": "2020-05-23T23:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Moving Coins , Data Breaches , and Magical Authors : Bad Crypto News of the Week",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/moving-coins-data-breaches-and-magical-authors-bad-crypto-news-of-the-week"
+    },
+    {
+      "timestamp": "2020-05-23T03:00:00",
+      "source": "newsbtc.com",
+      "headline": "Prepare for Turbulence : Here Why Traders Expect Bitcoin to See Major Volatility",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/22/traders-expect-bitcoin-see-volatility/"
+    },
+    {
+      "timestamp": "2020-05-23T18:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Documentary Review - Banking on Africa : The Bitcoin Revolution",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/documentary-review-banking-on-africa-the-bitcoin-revolution"
+    }
+  ]
+}

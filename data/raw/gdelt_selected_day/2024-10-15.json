@@ -1,0 +1,197 @@
+{
+  "date": "2024-10-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 10,
+  "theme_count_war": 3,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-15T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-15T22:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-16T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Canary Capital files S - 1 for Litecoin ETF",
+    "Bitcoin Lifted by Bets on Clearer US Crypto Rules After Election",
+    "Right - wingers claim Biden is trying to undermine Harris at every turn . Maybe they should try the truth",
+    "Harris Mocks Trump After Rally Turns Into Bizarre Dance - A - Thon",
+    "Harris mocks Trump after rally turns into bizarre dance - a - thon"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-15T20:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Canary Capital files S - 1 for Litecoin ETF",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/canary-capital-files-s-1-litecoin-etf"
+    },
+    {
+      "timestamp": "2024-10-15T00:30:00",
+      "source": "yahoo.com",
+      "headline": "Bitcoin Lifted by Bets on Clearer US Crypto Rules After Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/bitcoin-lifted-bets-clearer-us-232736255.html"
+    },
+    {
+      "timestamp": "2024-10-15T22:45:00",
+      "source": "independent.co.uk",
+      "headline": "Right - wingers claim Biden is trying to undermine Harris at every turn . Maybe they should try the truth",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/biden-harris-white-house-rift-b2629785.html"
+    },
+    {
+      "timestamp": "2024-10-16T00:00:00",
+      "source": "menafn.com",
+      "headline": "Harris Mocks Trump After Rally Turns Into Bizarre Dance - A - Thon",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://menafn.com/1108782714/Harris-Mocks-Trump-After-Rally-Turns-Into-Bizarre-Dance-A-Thon"
+    },
+    {
+      "timestamp": "2024-10-15T21:45:00",
+      "source": "thepeninsulaqatar.com",
+      "headline": "Harris mocks Trump after rally turns into bizarre dance - a - thon",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thepeninsulaqatar.com/article/15/10/2024/harris-mocks-trump-after-rally-turns-into-bizarre-dance-a-thon"
+    },
+    {
+      "timestamp": "2024-10-15T18:30:00",
+      "source": "yahoo.com",
+      "headline": "Gen Z advocacy group launches TikTok campaign against voting for Jill Stein",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/gen-z-advocacy-group-launches-180040427.html"
+    },
+    {
+      "timestamp": "2024-10-15T22:15:00",
+      "source": "rte.ie",
+      "headline": "Harris mocks Trump after rally turns into dance session",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.rte.ie/news/world/2024/1015/1475668-trump-dancing-rally/"
+    },
+    {
+      "timestamp": "2024-10-15T07:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Nears Key Breakout : Last Three 200 - Day MA Crossings Triggered  Parabolic Bull Runs",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/bitcoin-nears-key-breakout-last-three-200-day-ma-crossings-triggered-parabolic-bull-runs/"
+    },
+    {
+      "timestamp": "2024-10-15T20:45:00",
+      "source": "yahoo.com",
+      "headline": "Right - wingers claim Biden is trying to undermine Harris at every turn . Maybe they should try the truth",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/wingers-claim-biden-trying-undermine-195337545.html"
+    },
+    {
+      "timestamp": "2024-10-15T22:15:00",
+      "source": "crooksandliars.com",
+      "headline": "Country Over Party : Why Many Republicans Support Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://crooksandliars.com/2024/09/growing-list-republicans-supporting-kamala"
+    },
+    {
+      "timestamp": "2024-10-15T05:15:00",
+      "source": "us.cnn.com",
+      "headline": "Analysis : Harris warns  unhinged  Trump is out for total power",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://us.cnn.com/2024/10/15/politics/harris-trump-unhinged-analysis/"
+    },
+    {
+      "timestamp": "2024-10-15T05:00:00",
+      "source": "edition.cnn.com",
+      "headline": "Analysis : Harris warns  unhinged  Trump is out for total power",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://edition.cnn.com/2024/10/15/politics/harris-trump-unhinged-analysis/"
+    },
+    {
+      "timestamp": "2024-10-15T04:30:00",
+      "source": "cnn.com",
+      "headline": "Analysis : Harris warns  unhinged  Trump is out for total power",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cnn.com/2024/10/15/politics/harris-trump-unhinged-analysis/"
+    },
+    {
+      "timestamp": "2024-10-15T01:15:00",
+      "source": "thehill.com",
+      "headline": "Donald Trump leading Kamala Harris with early voters in swing states : Survey",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4932890-donald-trump-kamala-harris-battleground-states-harvard-harris-survey/"
+    },
+    {
+      "timestamp": "2024-10-15T22:00:00",
+      "source": "yahoo.com",
+      "headline": "Trump Wont Vow Peace But His Campaign Guru Is Getting His Piece",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-wont-vow-peace-campaign-212939855.html"
+    }
+  ]
+}

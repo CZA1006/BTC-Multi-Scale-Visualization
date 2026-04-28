@@ -1,0 +1,207 @@
+{
+  "date": "2020-04-13",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 1,
+  "theme_count_election": 1,
+  "theme_count_war": 2,
+  "theme_count_macro": 1,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-13T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T20:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-13T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Donald Trump And The Fed Have  Ended The Free Market",
+    "Bitcoin Disappoints As  Safe Haven  Asset Amid Coronavirus Meltdown",
+    "What Was the Great Depression ?",
+    "Digital Bank Revolut Is Allowing Premium and Standard Account Holders to Trade Bitcoin , Ether , Litecoin , Recommends Diversifying Investments Following COVID - 19 Outbreak",
+    "Fed Loyalists Are Drifting Toward Zealotry Just As Their Hot - Hand Cools"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-13T23:30:00",
+      "source": "forbes.com",
+      "headline": "Donald Trump And The Fed Have  Ended The Free Market",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/04/13/donald-trump-and-the-fed-have-ended-the-free-market/"
+    },
+    {
+      "timestamp": "2020-04-13T17:15:00",
+      "source": "safehaven.com",
+      "headline": "Bitcoin Disappoints As  Safe Haven  Asset Amid Coronavirus Meltdown",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://safehaven.com/cryptocurrencies/bitcoin/Bitcoin-Disappoints-As-Safe-Haven-Asset-Amid-Coronavirus-Meltdown.html"
+    },
+    {
+      "timestamp": "2020-04-13T20:30:00",
+      "source": "investopedia.com",
+      "headline": "What Was the Great Depression ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.investopedia.com/terms/g/great_depression.asp"
+    },
+    {
+      "timestamp": "2020-04-13T07:15:00",
+      "source": "crowdfundinsider.com",
+      "headline": "Digital Bank Revolut Is Allowing Premium and Standard Account Holders to Trade Bitcoin , Ether , Litecoin , Recommends Diversifying Investments Following COVID - 19 Outbreak",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.crowdfundinsider.com/2020/04/160033-digital-bank-revolut-is-allowing-premium-and-standard-account-holders-to-trade-bitcoin-ether-litecoin-recommends-diversifying-investments-following-covid-19-outbreak/"
+    },
+    {
+      "timestamp": "2020-04-13T20:15:00",
+      "source": "forbes.com",
+      "headline": "Fed Loyalists Are Drifting Toward Zealotry Just As Their Hot - Hand Cools",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/oliverrenick/2020/04/13/fed-loyalists-are-drifting-toward-zealotry-just-as-their-hot-hand-cools/"
+    },
+    {
+      "timestamp": "2020-04-13T01:15:00",
+      "source": "newsbtc.com",
+      "headline": "$30 Million Liquidated as Bitcoin Price Plunges to $6 , 600",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/13/30-million-liquidated-as-bitcoin-price-just-plunged-to-6600/"
+    },
+    {
+      "timestamp": "2020-04-13T11:30:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Bitcoin Market Cap Eclipses Citigroup as Yellen Calls for Big - Bank Dividend Cuts",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-bitcoins-market-cap-eclipses-citigroups-as-yellen-calls-for-big-bank-dividend-cuts"
+    },
+    {
+      "timestamp": "2020-04-13T16:15:00",
+      "source": "ibtimes.com",
+      "headline": "Ethereum Price Up 2 %, Could Break Bearish Trendline Soon",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/ethereum-price-2-could-break-bearish-trendline-soon-2957566"
+    },
+    {
+      "timestamp": "2020-04-13T12:45:00",
+      "source": "seekingalpha.com",
+      "headline": "Inflation Expectations Have Collapsed , A Bearish Indicator , Fed Should Do Much More",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://seekingalpha.com/article/4337217-inflation-expectations-collapsed-bearish-indicator-fed-should-much"
+    },
+    {
+      "timestamp": "2020-04-13T10:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Dominance Continues to Plunge , Sparking New Hope For  Altseason",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/13/bitcoin-dominance-continues-to-plunge-sparking-new-hope-for-altseason/"
+    },
+    {
+      "timestamp": "2020-04-13T09:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Halving Event Less Than a Month Away , Will It Be Affected by Current Situation ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-halving-less-month-away/"
+    },
+    {
+      "timestamp": "2020-04-13T02:45:00",
+      "source": "finance.eastmoney.com",
+      "headline": "余永定 ： 美国股灾与美联储救市的原因及含义 _ 东方财富网",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://finance.eastmoney.com/a/202004131451855425.html"
+    },
+    {
+      "timestamp": "2020-04-13T15:00:00",
+      "source": "newsbtc.com",
+      "headline": "Could Goldman Sach Cheery S & P 500 Projections Boost Bitcoin Higher ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/13/could-goldman-sachs-cheery-sp-500-projections-boost-bitcoin-higher/"
+    },
+    {
+      "timestamp": "2020-04-13T07:30:00",
+      "source": "forexcrunch.com",
+      "headline": "Crypto Today : Bears strike back , as weekend attempt to take BTC above $7 , 000 fails",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/crypto-today-bears-strike-back-as-weekend-attempt-to-take-btc-above-7000-fails/"
+    },
+    {
+      "timestamp": "2020-04-13T20:00:00",
+      "source": "marketpulse.com",
+      "headline": "US Open – Market nervousness before an earnings storm , OPEC spin , Gold rally on pause - MarketPulse",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.marketpulse.com/20200413/us-open-market-nervousness-earnings-storm-opec-spin-gold-rally-pause/"
+    }
+  ]
+}

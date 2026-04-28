@@ -1,0 +1,192 @@
+{
+  "date": "2025-01-06",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-06T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T17:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-06T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Kamala Harris certifies her loss to Donald Trump",
+    "With an intent stare , a wide smile and a simple declaration , Harris certifies her loss to Trump",
+    "Harris readies to certify Trump election win – and her decisive defeat",
+    "Harris to oversee certification of her defeat to Trump in presidential election :  Sacred obligation",
+    "Kamala Harris releases defiant message before certifying her own election defeat in final humiliation"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-06T21:30:00",
+      "source": "nbcnews.com",
+      "headline": "Kamala Harris certifies her loss to Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/politics/kamala-harris/kamala-harris-certifies-loss-donald-trump-rcna186013"
+    },
+    {
+      "timestamp": "2025-01-06T21:30:00",
+      "source": "yahoo.com",
+      "headline": "With an intent stare , a wide smile and a simple declaration , Harris certifies her loss to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/intent-stare-wide-smile-simple-210420073.html"
+    },
+    {
+      "timestamp": "2025-01-06T12:45:00",
+      "source": "yahoo.com",
+      "headline": "Harris readies to certify Trump election win – and her decisive defeat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-readies-certify-trump-election-110000093.html"
+    },
+    {
+      "timestamp": "2025-01-06T17:15:00",
+      "source": "yahoo.com",
+      "headline": "Harris to oversee certification of her defeat to Trump in presidential election :  Sacred obligation",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-oversee-certification-her-defeat-145407735.html"
+    },
+    {
+      "timestamp": "2025-01-06T18:00:00",
+      "source": "dailymail.co.uk",
+      "headline": "Kamala Harris releases defiant message before certifying her own election defeat in final humiliation",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-14255893/kamala-harris-defiant-message-january-6th-certification-defeat.html"
+    },
+    {
+      "timestamp": "2025-01-06T19:45:00",
+      "source": "nypost.com",
+      "headline": "Kamala Harris certifies her own resounding loss to Donald Trump in front of cheering Congress",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2025/01/06/us-news/kamala-harris-certifies-her-own-resounding-loss-to-donald-trump-in-front-of-cheering-congress/"
+    },
+    {
+      "timestamp": "2025-01-06T18:15:00",
+      "source": "forbes.com",
+      "headline": "Huge Bet On A 2025 U . S . Bitcoin Reserve Helps Send Bitcoin Over $100 , 000 Price",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2025/01/06/huge-bet-on-a-2025-us-bitcoin-reserve-helps-send-bitcoin-over-100000-price/"
+    },
+    {
+      "timestamp": "2025-01-06T22:15:00",
+      "source": "fnnews.com",
+      "headline": "美의회 , 트럼프 당선 공식 확인 발표 … 대선패배  해리스가 인증 ( 종합 )",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fnnews.com/news/202501070646497215"
+    },
+    {
+      "timestamp": "2025-01-06T23:45:00",
+      "source": "koreatimes.com",
+      "headline": "의회 , 트럼프 당선 공식 확인 발표 …  대선패배  해리스가 인증",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.koreatimes.com/article/20250106/1546432"
+    },
+    {
+      "timestamp": "2025-01-06T17:15:00",
+      "source": "mercurynews.com",
+      "headline": "Harris will oversee certification of her defeat to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mercurynews.com/2025/01/06/harris-will-oversee-certification-of-her-defeat-to-trump/"
+    },
+    {
+      "timestamp": "2025-01-06T17:00:00",
+      "source": "baltimoresun.com",
+      "headline": "Harris will oversee certification of her defeat to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.baltimoresun.com/2025/01/06/harris-will-oversee-certification-of-her-defeat-to-trump/"
+    },
+    {
+      "timestamp": "2025-01-06T22:00:00",
+      "source": "saharareporters.com",
+      "headline": "US Congress Led By Kamala Harris Certifies Donald Trump Election Victory Ahead Of Inauguration",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://saharareporters.com/2025/01/06/us-congress-led-kamala-harris-certifies-donald-trumps-election-victory-ahead"
+    },
+    {
+      "timestamp": "2025-01-06T08:15:00",
+      "source": "hurriyetdailynews.com",
+      "headline": "Trump to set the course for cryptocurrency market this year with his cabinet",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hurriyetdailynews.com/trump-to-set-the-course-for-cryptocurrency-market-this-year-with-his-cabinet-204385"
+    },
+    {
+      "timestamp": "2025-01-06T19:00:00",
+      "source": "thetimes-tribune.com",
+      "headline": "Harris will oversee certification of her defeat to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thetimes-tribune.com/2025/01/06/harris-will-oversee-certification-of-her-defeat-to-trump/"
+    },
+    {
+      "timestamp": "2025-01-06T16:15:00",
+      "source": "capitalgazette.com",
+      "headline": "Harris will oversee certification of her defeat to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.capitalgazette.com/2025/01/06/harris-will-oversee-certification-of-her-defeat-to-trump/"
+    }
+  ]
+}

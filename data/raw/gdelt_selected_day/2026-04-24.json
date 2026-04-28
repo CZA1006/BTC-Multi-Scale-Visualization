@@ -1,0 +1,202 @@
+{
+  "date": "2026-04-24",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 10,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2026-04-24T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-24T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Scott Bessent Says  We Will Follow The Money  As US Sanctions $344M From Iran - Linked Crypto Wallets",
+    "Scott Bessent Says  We Will Follow The Money  As US Sanctions $344M From Iran - Linked Crypto Wallets",
+    "4月24日财经早餐 ： 伊朗谈判代表辞职 ， 特朗普保留对伊军事选项 ， 金价或测试4650关口 ， 油价涨超4 %_ 汇市观察 _ 外汇 _ 中金在线",
+    "Reality check : Israeli ambitions confront US dictates in Iran and Lebanon",
+    "Bitcoin price news : BTC on track for best month in a year amid $5 billion USDT growth"
+  ],
+  "articles": [
+    {
+      "timestamp": "2026-04-24T20:30:00",
+      "source": "benzinga.com",
+      "headline": "Scott Bessent Says  We Will Follow The Money  As US Sanctions $344M From Iran - Linked Crypto Wallets",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52044956/scott-bessent-says-we-will-follow-the-money-as-us-sanctions-344m-from-iran-linked-cryp"
+    },
+    {
+      "timestamp": "2026-04-24T20:15:00",
+      "source": "benzinga.com",
+      "headline": "Scott Bessent Says  We Will Follow The Money  As US Sanctions $344M From Iran - Linked Crypto Wallets",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52044956/scott-bessent-says-we-will-follow-the-money-as-us-sanctions-344m-from-iran-linked-crypto-wallets"
+    },
+    {
+      "timestamp": "2026-04-24T02:00:00",
+      "source": "forex.cnfol.com",
+      "headline": "4月24日财经早餐 ： 伊朗谈判代表辞职 ， 特朗普保留对伊军事选项 ， 金价或测试4650关口 ， 油价涨超4 %_ 汇市观察 _ 外汇 _ 中金在线",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://forex.cnfol.com/jingjiyaowen/20260424/32170443.shtml"
+    },
+    {
+      "timestamp": "2026-04-24T19:00:00",
+      "source": "aljazeera.com",
+      "headline": "Reality check : Israeli ambitions confront US dictates in Iran and Lebanon",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2026/4/24/reality-check-israeli-ambitions-confront-us-dictates-in-iran-and-lebanon"
+    },
+    {
+      "timestamp": "2026-04-24T23:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin price news : BTC on track for best month in a year amid $5 billion USDT growth",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound"
+    },
+    {
+      "timestamp": "2026-04-24T19:30:00",
+      "source": "bssnews.net",
+      "headline": "Lebanon truce extended as Pakistan bids to revive US - Iran talks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bssnews.net/international/381131"
+    },
+    {
+      "timestamp": "2026-04-24T08:00:00",
+      "source": "arabic.euronews.com",
+      "headline": "مباشر - إيران تشدّد على  وحدة الصف .. وترامب يعلن تمديد الهدنة بين لبنان وإسرائيل",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://arabic.euronews.com/2026/04/24/iran-emphasizes-unity-and-trump-announces-extension-of-the-truce-between-lebanon-and"
+    },
+    {
+      "timestamp": "2026-04-24T02:00:00",
+      "source": "futures.cnfol.com",
+      "headline": "中东局势濒临失控 ： 伊朗谈判核心人物离场 ， 以色列发出威胁 _ 期市动态 _ 期货 _ 中金在线",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://futures.cnfol.com/qishidongtai/20260424/32169895.shtml"
+    },
+    {
+      "timestamp": "2026-04-24T17:15:00",
+      "source": "manilatimes.net",
+      "headline": "Lebanon truce extended as Pakistan bids to revive US - Iran talks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.manilatimes.net/2026/04/25/world/lebanon-truce-extended-as-pakistan-bids-to-revive-us-iran-talks/2328313"
+    },
+    {
+      "timestamp": "2026-04-24T04:00:00",
+      "source": "manilatimes.net",
+      "headline": "Trump says US in no rush but  clock is ticking  for Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.manilatimes.net/2026/04/24/world/americas-emea/trump-says-us-in-no-rush-but-clock-is-ticking-for-iran/2327737"
+    },
+    {
+      "timestamp": "2026-04-24T00:15:00",
+      "source": "insidenova.com",
+      "headline": "War in the Middle East : latest developments",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.insidenova.com/news/national/war-in-the-middle-east-latest-developments/article_d1b99078-2567-5b88-a5fc-04e76b1ecde9.html"
+    },
+    {
+      "timestamp": "2026-04-24T10:30:00",
+      "source": "benzinga.com",
+      "headline": "Stock Market Today : Dow Jones , S & P 500 Futures Edge Lower Amid Extension Of Israel - Lebanon Ceasefire Inte",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/equities/26/04/52023332/stock-market-today-dow-jones-sp-500-futures-edge-lower-amid-extension-of-israel-lebanon-ceasefire-intel-sap-lunai-bioworks-in-focus"
+    },
+    {
+      "timestamp": "2026-04-24T17:00:00",
+      "source": "iranpressnews.com",
+      "headline": "IranPressNews : ايران پرس نيوز اخبار ايران و جهان",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://iranpressnews.com/source/245680.htm"
+    },
+    {
+      "timestamp": "2026-04-24T01:30:00",
+      "source": "finance.eastmoney.com",
+      "headline": "美股全线下跌 ！ 特朗普重磅发声 ！ 德黑兰上空突传爆炸声 _ 东方财富网",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://finance.eastmoney.com/a/202604243716858525.html"
+    },
+    {
+      "timestamp": "2026-04-24T16:30:00",
+      "source": "en.apa.az",
+      "headline": "Netanyahu finally comments on Lebanon ceasefire extension , accuses Hezbollah of trying to sabotage truce",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://en.apa.az/asia/netanyahu-finally-comments-on-lebanon-ceasefire-extension-accuses-hezbollah-of-trying-to-sabotage-truce-503122"
+    }
+  ]
+}

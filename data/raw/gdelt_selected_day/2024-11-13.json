@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-13",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-13T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-13T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "美国总统选举结果为何如此  一边倒 _ 凤凰网",
+    "Karine Jean - Pierre is asked if Biden and Harris were  awkward  at first lunch since the election - and the reaction says it all",
+    "Nostradamu of US election blames Elon Musk and for wrong prediction | US News",
+    "My No . 1 Cryptocurrency to Buy Now That Donald Trump Won the Election ( Hint : Not Bitcoin )",
+    "Jean - Pierre irritated by question on possible  weirdnes between Harris and Biden :  I dont even understand"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-13T11:00:00",
+      "source": "news.ifeng.com",
+      "headline": "美国总统选举结果为何如此  一边倒 _ 凤凰网",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.ifeng.com/c/8eTurTYqMnb"
+    },
+    {
+      "timestamp": "2024-11-13T01:45:00",
+      "source": "dailymail.co.uk",
+      "headline": "Karine Jean - Pierre is asked if Biden and Harris were  awkward  at first lunch since the election - and the reaction says it all",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-14075073/karine-jean-pierre-awkward-lunch-joe-biden-kamala-harris.html"
+    },
+    {
+      "timestamp": "2024-11-13T00:45:00",
+      "source": "metro.co.uk",
+      "headline": "Nostradamu of US election blames Elon Musk and for wrong prediction | US News",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://metro.co.uk/2024/11/12/nostradamus-us-election-blame-elon-musk-wrong-prediction-trump-21981377/"
+    },
+    {
+      "timestamp": "2024-11-13T07:45:00",
+      "source": "fool.com",
+      "headline": "My No . 1 Cryptocurrency to Buy Now That Donald Trump Won the Election ( Hint : Not Bitcoin )",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2024/11/12/my-no-1-cryptocurrency-to-buy-now-that-donald-trum/"
+    },
+    {
+      "timestamp": "2024-11-13T00:45:00",
+      "source": "foxnews.com",
+      "headline": "Jean - Pierre irritated by question on possible  weirdnes between Harris and Biden :  I dont even understand",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/media/jean-pierre-irritated-question-possible-weirdness-between-harris-biden-i-dont-even-understand"
+    },
+    {
+      "timestamp": "2024-11-13T21:45:00",
+      "source": "dunyanews.tv",
+      "headline": "Welcome back : Biden greets Trump at the White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dunyanews.tv/en/World/850340-welcome-back-biden-greets-trump-at-the-white-house"
+    },
+    {
+      "timestamp": "2024-11-13T16:15:00",
+      "source": "eadt.co.uk",
+      "headline": "Trump returns to Washington in triumph to meet Biden at White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.eadt.co.uk/news/national/24721899.trump-returns-washington-triumph-meet-biden-white-house/"
+    },
+    {
+      "timestamp": "2024-11-13T03:00:00",
+      "source": "yahoo.com",
+      "headline": "Jean - Pierre irritated by question on possible  weirdnes between Harris and Biden :  I dont even understand",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/jean-pierre-irritated-possible-weirdness-001337122.html"
+    },
+    {
+      "timestamp": "2024-11-13T05:15:00",
+      "source": "pakobserver.net",
+      "headline": "Trump in White House again - Pakistan Observer",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://pakobserver.net/trump-in-white-house-again/"
+    },
+    {
+      "timestamp": "2024-11-13T21:00:00",
+      "source": "qz.com",
+      "headline": "Bitcoin hits another record and $100 , 000 is closer than ever",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://qz.com/bitcoin-all-time-high-91-000-trump-1851697356"
+    },
+    {
+      "timestamp": "2024-11-13T18:30:00",
+      "source": "theguardian.com",
+      "headline": "Bitcoin clears $93 , 000 and Dogecoin soars amid Trump - fueled crypto rally",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theguardian.com/technology/2024/nov/13/bitcoin-share-price-btc"
+    },
+    {
+      "timestamp": "2024-11-13T16:15:00",
+      "source": "wvnews.com",
+      "headline": "The Latest : Trump returns to Washington to meet with Biden and GOP lawmakers",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wvnews.com/mineralnews/newsfeed/us/the-latest-trump-returns-to-washington-to-meet-with-biden-and-gop-lawmakers/article_bcb6fceb-3d37-5e2a-9dbd-fba849f68a73.html"
+    },
+    {
+      "timestamp": "2024-11-13T21:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Silk Road founder trusts Trump to  honor his pledge  for commutation",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/silk-road-ross-ubricht-donald-trump-commute-sentence"
+    },
+    {
+      "timestamp": "2024-11-13T15:00:00",
+      "source": "fox5dc.com",
+      "headline": "Trump , Biden to meet at White House Wednesday",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fox5dc.com/news/trump-biden-white-house-meeting-republicans-congress"
+    },
+    {
+      "timestamp": "2024-11-13T12:45:00",
+      "source": "theguardian.com",
+      "headline": "Cryptocurrency traders : share what got you into crypto , and how you feel about recent developments",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.theguardian.com/technology/2024/nov/13/cryptocurrency-traders-share-what-got-you-into-crypto-and-how-you-feel-about-recent-developments"
+    }
+  ]
+}

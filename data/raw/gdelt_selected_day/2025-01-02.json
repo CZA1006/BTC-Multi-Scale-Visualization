@@ -1,0 +1,207 @@
+{
+  "date": "2025-01-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 0,
+  "theme_count_election": 5,
+  "theme_count_war": 3,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-02T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-02T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "拜登不退选能赢你吗 ？ 特朗普 ： 没戏 辩论表现成关键 _ 新闻频道 _ 中华网",
+    "Cryptocurrencies jump to start 2025 , bitcoin rises back above $96 , 000",
+    "Cryptocurrencies jump to start 2025 , bitcoin rises back above $96 , 000",
+    "The best and worst of 2024",
+    "Cryptocurrencies jump to start 2025 , bitcoin rises back above $96 , 000"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-02T04:45:00",
+      "source": "news.china.com",
+      "headline": "拜登不退选能赢你吗 ？ 特朗普 ： 没戏 辩论表现成关键 _ 新闻频道 _ 中华网",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.china.com/socialgd/10000169/20250102/47820407.html"
+    },
+    {
+      "timestamp": "2025-01-02T14:30:00",
+      "source": "cnbc.com",
+      "headline": "Cryptocurrencies jump to start 2025 , bitcoin rises back above $96 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2025/01/02/crypto-market-today.html"
+    },
+    {
+      "timestamp": "2025-01-02T15:15:00",
+      "source": "nbcchicago.com",
+      "headline": "Cryptocurrencies jump to start 2025 , bitcoin rises back above $96 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.nbcchicago.com/news/business/money-report/cryptocurrencies-jump-to-start-2025-bitcoin-rises-back-above-96000/3636248/"
+    },
+    {
+      "timestamp": "2025-01-02T22:00:00",
+      "source": "washingtontimes.com",
+      "headline": "The best and worst of 2024",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2025/jan/2/best-worst-2024/"
+    },
+    {
+      "timestamp": "2025-01-02T16:45:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Cryptocurrencies jump to start 2025 , bitcoin rises back above $96 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/cryptocurrencies-jump-to-start-2025-bitcoin-rises-back-above-96000/3465099/"
+    },
+    {
+      "timestamp": "2025-01-02T02:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin more than doubles in 2024 on spot ETF approval , Trump euphoria",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-more-doubles-2024-spot-182013545.html"
+    },
+    {
+      "timestamp": "2025-01-02T12:00:00",
+      "source": "scmp.com",
+      "headline": "Biden gives second highest civilian award to leaders of January 6 congressional panel",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.scmp.com/news/us/article/3293194/biden-gives-second-highest-civilian-award-leaders-january-6-congressional-panel"
+    },
+    {
+      "timestamp": "2025-01-02T03:45:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Bitcoin more than doubles in 2024 on spot ETF approval , Trump euphoria",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/wealth/crypto-alternative-assets/bitcoin-more-doubles-2024-spot-etf-approval-trump-euphoria"
+    },
+    {
+      "timestamp": "2025-01-02T21:30:00",
+      "source": "themarysue.com",
+      "headline": "That didnt work out too well for him : Trump still tears into Biden despite winning 2024 election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.themarysue.com/that-didnt-work-out-too-well-for-him-trump-still-tears-into-biden-despite-winning-2024-election/"
+    },
+    {
+      "timestamp": "2025-01-02T08:45:00",
+      "source": "euronews.com",
+      "headline": "The rise of cryptocurrency : How high could Bitcoin go in 2025 ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.euronews.com/business/2025/01/02/the-rise-of-cryptocurrency-how-high-could-bitcoin-go-in-2025"
+    },
+    {
+      "timestamp": "2025-01-02T20:45:00",
+      "source": "truthout.org",
+      "headline": "Biden Awards Cheney With Presidential Citizens Medal Despite Human Rights Record",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://truthout.org/articles/biden-awards-cheney-with-presidential-citizens-medal-despite-human-rights-record/"
+    },
+    {
+      "timestamp": "2025-01-02T22:30:00",
+      "source": "washingtontimes.com",
+      "headline": "Cover - up of Biden cognitive decline will be his legacy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2025/jan/2/cover-biden-cognitive-decline-legacy/"
+    },
+    {
+      "timestamp": "2025-01-02T03:45:00",
+      "source": "independent.ie",
+      "headline": "Bitcoin falls in December as investors cash in on record rally",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.independent.ie/business/bitcoin-falls-in-december-as-investors-cash-in-on-record-rally/a1513931750.html"
+    },
+    {
+      "timestamp": "2025-01-02T17:45:00",
+      "source": "pjmedia.com",
+      "headline": "All Is Not Well in the Biden White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://pjmedia.com/matt-margolis/2025/01/02/all-is-not-well-in-the-biden-white-house-n4935596"
+    },
+    {
+      "timestamp": "2025-01-02T15:30:00",
+      "source": "washingtontimes.com",
+      "headline": "Biden to award Liz Cheney , Bennie Thompson and others Presidential Citizens Medal",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2025/jan/2/biden-award-liz-cheney-bennie-thompson-others-pres/"
+    }
+  ]
+}

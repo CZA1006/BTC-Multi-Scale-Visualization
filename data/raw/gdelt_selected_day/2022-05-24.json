@@ -1,0 +1,177 @@
+{
+  "date": "2022-05-24",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 7,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-24T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-24T01:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-24T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-24T03:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-24T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-24T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Explained in 10 points : How Russia - Ukraine conflict unfolded in last 3 months",
+    "Russia Ukraine update :  Staggering losse for Russia after three months of Ukraine war",
+    "Live updates | Police continue daily evacuations due to war",
+    "Live updates | Police continue daily evacuations due to war",
+    "Live updates | Zelenskyy : Recent attack on Desna killed 87"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-24T17:00:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Explained in 10 points : How Russia - Ukraine conflict unfolded in last 3 months",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/europe/explained-in-10-points-how-russia-ukraine-conflict-unfolded-in-3-months/articleshow/91771944.cms"
+    },
+    {
+      "timestamp": "2022-05-24T04:00:00",
+      "source": "9news.com.au",
+      "headline": "Russia Ukraine update :  Staggering losse for Russia after three months of Ukraine war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.9news.com.au/world/russia-ukraine-update-where-war-stands-after-three-months/7951312c-b4f3-4201-a132-a45d61ea623f"
+    },
+    {
+      "timestamp": "2022-05-24T00:30:00",
+      "source": "startribune.com",
+      "headline": "Live updates | Police continue daily evacuations due to war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/live-updates-police-continue-daily-evacuations-due-to-war/600175663/"
+    },
+    {
+      "timestamp": "2022-05-24T01:00:00",
+      "source": "news-gazette.com",
+      "headline": "Live updates | Police continue daily evacuations due to war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.news-gazette.com/news/nation-world/live-updates-police-continue-daily-evacuations-due-to-war/article_458fcc71-c12d-501c-ab74-fb8a085c7e06.html"
+    },
+    {
+      "timestamp": "2022-05-24T00:15:00",
+      "source": "kob.com",
+      "headline": "Live updates | Zelenskyy : Recent attack on Desna killed 87",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.kob.com/news/business-money/live-updates-zelenskyy-recent-attack-on-desna-killed-87/"
+    },
+    {
+      "timestamp": "2022-05-24T01:30:00",
+      "source": "eagletribune.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.eagletribune.com/region/live-updates-zelenskyy-attack-on-desna-leaves-87-dead/article_06592d57-ecd8-540c-88f7-575ea46d7209.html"
+    },
+    {
+      "timestamp": "2022-05-24T00:30:00",
+      "source": "wandtv.com",
+      "headline": "Live updates | Police continue daily evacuations due to war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wandtv.com/news/national/live-updates-police-continue-daily-evacuations-due-to-war/article_dddf31c1-cc8b-5fc5-9e19-699ac2d59c99.html"
+    },
+    {
+      "timestamp": "2022-05-24T01:00:00",
+      "source": "kob.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.kob.com/news/business-money/live-updates-zelenskyy-attack-on-desna-leaves-87-dead/"
+    },
+    {
+      "timestamp": "2022-05-24T01:15:00",
+      "source": "gazette.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://gazette.com/ap/politics/live-updates-police-continue-daily-evacuations-due-to-war/article_b82562b9-f041-53f4-91c5-d962f1a99e2c.html"
+    },
+    {
+      "timestamp": "2022-05-24T01:30:00",
+      "source": "gazette.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://gazette.com/ap/politics/live-updates-zelenskyy-attack-on-desna-leaves-87-dead/article_b82562b9-f041-53f4-91c5-d962f1a99e2c.html"
+    },
+    {
+      "timestamp": "2022-05-24T02:30:00",
+      "source": "kstp.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://kstp.com/kstp-news/business-news/live-updates-zelenskyy-attack-on-desna-leaves-87-dead/"
+    },
+    {
+      "timestamp": "2022-05-24T01:15:00",
+      "source": "lancasteronline.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://lancasteronline.com/business/stock_market/live-updates-zelenskyy-attack-on-desna-leaves-87-dead/article_dd5587d7-069b-57bb-ae7a-851261fa01c1.html"
+    },
+    {
+      "timestamp": "2022-05-24T03:15:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine : Civilians being killed in Desna",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/ukraine-updates-zelenskyy-says-attack-on-desna-leaves-87-dead-1.5914968"
+    },
+    {
+      "timestamp": "2022-05-24T03:30:00",
+      "source": "news-gazette.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.news-gazette.com/news/nation-world/live-updates-zelenskyy-attack-on-desna-leaves-87-dead/article_458fcc71-c12d-501c-ab74-fb8a085c7e06.html"
+    },
+    {
+      "timestamp": "2022-05-24T03:15:00",
+      "source": "bakersfield.com",
+      "headline": "Live updates | Zelenskyy : Attack on Desna leaves 87 dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.bakersfield.com/ap/news/live-updates-zelenskyy-attack-on-desna-leaves-87-dead/article_6b183a4c-565c-5b40-ba52-add16bd9aa1b.html"
+    }
+  ]
+}

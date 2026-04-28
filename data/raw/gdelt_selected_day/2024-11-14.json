@@ -1,0 +1,207 @@
+{
+  "date": "2024-11-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-14T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-14T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "The Herald - Breaking news .",
+    "Bitcoin Briefly Tops $93 , 000 on Trump Agenda , Fed Policy Outlook",
+    "Bitcoin briefly crosses $93 , 000 on Trump pro - crypto stance , Fed Policy outlook",
+    "Donald Trump New Government Agency Only Wants  Super High - IQ  Applicants",
+    "Federal Reserve cuts its key interest rate by a quarter - point"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-14T22:45:00",
+      "source": "herald.co.zw",
+      "headline": "The Herald - Breaking news .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.herald.co.zw/bitcoin-briefly-tops-us93-000-on-trump-agenda-fed-policy-outlook/"
+    },
+    {
+      "timestamp": "2024-11-14T06:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Briefly Tops $93 , 000 on Trump Agenda , Fed Policy Outlook",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-briefly-tops-93-000-222725470.html"
+    },
+    {
+      "timestamp": "2024-11-14T05:30:00",
+      "source": "thehindubusinessline.com",
+      "headline": "Bitcoin briefly crosses $93 , 000 on Trump pro - crypto stance , Fed Policy outlook",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thehindubusinessline.com/money-and-banking/cryptocurrency/bitcoin-briefly-crosses-93000-on-trump-stance-fed-policy-outlook/article68866508.ece"
+    },
+    {
+      "timestamp": "2024-11-14T20:15:00",
+      "source": "newsweek.com",
+      "headline": "Donald Trump New Government Agency Only Wants  Super High - IQ  Applicants",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/donald-trump-new-government-agency-doge-1985962"
+    },
+    {
+      "timestamp": "2024-11-14T04:15:00",
+      "source": "wobm.com",
+      "headline": "Federal Reserve cuts its key interest rate by a quarter - point",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wobm.com/ixp/385/p/fed-cuts-its-key-interest-rate-by-a-quarter-point-amid-postelection-uncertainty/"
+    },
+    {
+      "timestamp": "2024-11-14T14:00:00",
+      "source": "financialexpress.com",
+      "headline": "Does Trump win and Bitcoin surge mean the US now calls the shots on crypto ? - Digital Transformation News",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.financialexpress.com/business/digital-transformation-does-trumps-win-and-bitcoin-surge-mean-the-us-now-calls-the-shots-on-crypto-3665534/"
+    },
+    {
+      "timestamp": "2024-11-14T06:45:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Hits $93K – Expert Says $200K Before Year - End Possible Under One Scenario",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-hits-93k-expert-says-200k-before-year-end-possible-under-one-scenario-3750988"
+    },
+    {
+      "timestamp": "2024-11-14T13:45:00",
+      "source": "theglobeandmail.com",
+      "headline": "Crypto industry pushes for policy sea change after Trump election victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theglobeandmail.com/business/international-business/article-crypto-industry-pushes-for-policy-sea-change-after-trumps-election/"
+    },
+    {
+      "timestamp": "2024-11-14T10:15:00",
+      "source": "foxnews.com",
+      "headline": "Ex - DNC volunteer turned Trump voter mocks claims Harris ran a flawless campaign :  This was anything but",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/media/ex-dnc-volunteer-turned-trump-voter-mocks-claims-harris-ran-flawless-campaign-this-anything-but"
+    },
+    {
+      "timestamp": "2024-11-14T11:30:00",
+      "source": "yahoo.com",
+      "headline": "Ex - DNC volunteer turned Trump voter mocks claims Harris ran flawless campaign :  This was anything but",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/ex-dnc-volunteer-turned-trump-090046044.html"
+    },
+    {
+      "timestamp": "2024-11-14T02:45:00",
+      "source": "digitaljournal.com",
+      "headline": "Trump victory signals golden era for crypto industry",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.digitaljournal.com/business/trump-victory-signals-golden-era-for-crypto-industry/article"
+    },
+    {
+      "timestamp": "2024-11-14T03:15:00",
+      "source": "herald-zeitung.com",
+      "headline": "OUTSIDE VIEW : In protecting Joe Biden , Dems only hurt themselves",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://herald-zeitung.com/opinion/outside-view-in-protecting-joe-biden-dems-only-hurt-themselves/article_c863a9b6-a1db-11ef-a239-57691a3a7843.html"
+    },
+    {
+      "timestamp": "2024-11-14T02:45:00",
+      "source": "dailycal.org",
+      "headline": "Third - party voters arent the problem : How Biden ,  Brat  and Gaza derailed Harri campaign | Op - Eds",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailycal.org/opinion/op-eds/third-party-voters-aren-t-the-problem-how-biden-brat-and-gaza-derailed-harris-campaign/article_a9f8f3f8-a21e-11ef-a4df-9f82c9e5abda.html"
+    },
+    {
+      "timestamp": "2024-11-14T09:30:00",
+      "source": "wvgazettemail.com",
+      "headline": "Guest editorial : Dems hurt themselves by protecting Biden too much",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wvgazettemail.com/opinion/editorial/guest-editorial-dems-hurt-themselves-by-protecting-biden-too-much/article_25fc7b2c-a1e4-11ef-a859-afaaf760fde6.html"
+    },
+    {
+      "timestamp": "2024-11-14T13:00:00",
+      "source": "cnbc.com",
+      "headline": "FBI raids Polymarket CEO home , seizing phone , electronics",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2024/11/14/fbi-raids-polymarket-ceos-home-seizing-phone-electronics-.html"
+    }
+  ]
+}

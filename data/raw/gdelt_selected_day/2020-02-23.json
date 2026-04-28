@@ -1,0 +1,202 @@
+{
+  "date": "2020-02-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 11,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-02-23T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-23T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Will Bitcoin Ever Be a Serious Alternative to Gold and Stocks ?",
+    "Are Overstimulated Stocks Ignoring Coronavirus Risks ?",
+    "Will Bitcoin Lose Momentum as Authorities Start to Gain Control of COVID - 19 ?",
+    "This Single Bitcoin Chart Suggests the Roaring Bull Case is Still Alive",
+    "Layer1 Technologies , a BTC Mining Company , Officially Opens for Business"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-02-23T10:30:00",
+      "source": "fool.com",
+      "headline": "Will Bitcoin Ever Be a Serious Alternative to Gold and Stocks ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2020/02/22/will-bitcoin-ever-be-a-serious-alternative-to-gold.aspx"
+    },
+    {
+      "timestamp": "2020-02-23T13:00:00",
+      "source": "ccn.com",
+      "headline": "Are Overstimulated Stocks Ignoring Coronavirus Risks ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.ccn.com/are-overstimulated-stocks-ignoring-coronavirus-risks/"
+    },
+    {
+      "timestamp": "2020-02-23T17:00:00",
+      "source": "newsbtc.com",
+      "headline": "Will Bitcoin Lose Momentum as Authorities Start to Gain Control of COVID - 19 ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/23/will-bitcoin-lose-momentum-as-authorities-start-to-gain-control-of-covid-19/"
+    },
+    {
+      "timestamp": "2020-02-23T04:00:00",
+      "source": "newsbtc.com",
+      "headline": "This Single Bitcoin Chart Suggests the Roaring Bull Case is Still Alive",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/23/this-single-bitcoin-chart-suggests-bull-case-still-alive/"
+    },
+    {
+      "timestamp": "2020-02-23T20:45:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Layer1 Technologies , a BTC Mining Company , Officially Opens for Business",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/layer1-technologies-a-btc-mining-company-officially-opens-for-business/"
+    },
+    {
+      "timestamp": "2020-02-23T01:00:00",
+      "source": "news1.kr",
+      "headline": "[ 금통위폴 ] ①전문가 60 %  2월 금리인하 … 코로나19 선제 대응",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://news1.kr/articles/?3849736"
+    },
+    {
+      "timestamp": "2020-02-23T01:15:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - [ 증시전망 ]  박스권 증시 ... 코로나19 ‧ 美경기 회복 혼재",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200221001224"
+    },
+    {
+      "timestamp": "2020-02-23T09:00:00",
+      "source": "newsbtc.com",
+      "headline": "The Simpsons Just Ran a Bitcoin Segment , and Crypto Twitter Is Raving About It",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/23/the-simpsons-just-ran-bitcoin-segment-crypto-twitter-raving/"
+    },
+    {
+      "timestamp": "2020-02-23T23:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Gearing Up for Another Parabolic Leg After Flying Past Key Resistance",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/23/bitcoin-gearing-up-for-another-parabolic-leg-after-flying-past-key-resistance/"
+    },
+    {
+      "timestamp": "2020-02-23T15:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Guardian Angel ; The 50 Biggest Companies In Blockchain",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2020/02/23/bitcoins-guardian-angel-the-50-biggest-companies-in-blockchain/"
+    },
+    {
+      "timestamp": "2020-02-23T22:15:00",
+      "source": "newsbtc.com",
+      "headline": "Ethereum is  Beyond Bullish  if it Closes Above This Single Level",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/23/ethereum-is-beyond-bullish-if-it-closes-above-this-single-level/"
+    },
+    {
+      "timestamp": "2020-02-23T18:30:00",
+      "source": "robbreport.com",
+      "headline": "Why Now Is the Best Time to Invest in Cryptocurrencies – Robb Report",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://robbreport.com/lifestyle/news/why-now-is-the-best-time-to-invest-in-cryptocurrencies-2898743/"
+    },
+    {
+      "timestamp": "2020-02-23T13:30:00",
+      "source": "u.today",
+      "headline": "Crypto and Blockchain Explained in  The Simpson Episode : WATCH",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://u.today/crypto-and-blockchain-explained-in-the-simpsons-episode-watch"
+    },
+    {
+      "timestamp": "2020-02-23T23:00:00",
+      "source": "cointelegraph.com",
+      "headline": "How Traders Can Use Twitter to Anticipate Bitcoin Price Moves , Volume",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/how-traders-can-use-twitter-to-anticipate-bitcoin-price-moves-volume"
+    },
+    {
+      "timestamp": "2020-02-23T13:30:00",
+      "source": "forbes.com",
+      "headline": "Binance CEO Makes Rare Price Prediction Says This Is When To Buy Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/02/23/binance-ceo-gives-rare-price-prediction-says-this-is-when-to-buy-bitcoin/"
+    }
+  ]
+}

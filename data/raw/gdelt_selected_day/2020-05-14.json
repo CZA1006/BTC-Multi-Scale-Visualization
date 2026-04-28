@@ -1,0 +1,197 @@
+{
+  "date": "2020-05-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 3,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-14T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T11:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-14T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Downplays S & P 500 Correlation , Hits $9 . 7K as Gold Rise",
+    "Bitcoin May Get Massive Boost as Democrats Propose $3 Trillion in Extra Stimulus",
+    "Bitcoin Halving Was Not the Apocalyptic Event Some in Crypto Feared",
+    "US Dollar , VIX Index Pop as S & P 500 Price Plummets Post - Powell",
+    "3 Easiest Ways To Buy Bitcoin Without A Crypto Exchange Account"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-14T11:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Downplays S & P 500 Correlation , Hits $9 . 7K as Gold Rise",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/14/bitcoin-downplays-sp-500-correlation-hits-9-7k-as-gold-rise/"
+    },
+    {
+      "timestamp": "2020-05-14T06:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin May Get Massive Boost as Democrats Propose $3 Trillion in Extra Stimulus",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/14/bitcoin-gets-massive-boost-democrats-propose-3-trillion-extra-stimulus/"
+    },
+    {
+      "timestamp": "2020-05-14T18:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin Halving Was Not the Apocalyptic Event Some in Crypto Feared",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-halving-was-not-the-apocalyptic-event-some-in-crypto-feared"
+    },
+    {
+      "timestamp": "2020-05-14T02:15:00",
+      "source": "dailyfx.com",
+      "headline": "US Dollar , VIX Index Pop as S & P 500 Price Plummets Post - Powell",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/market_alert/2020/05/13/us-dollar-vix-index-pop-sp500-price-plummets-fed-powell-negative-interest-rates.html"
+    },
+    {
+      "timestamp": "2020-05-14T21:30:00",
+      "source": "benzinga.com",
+      "headline": "3 Easiest Ways To Buy Bitcoin Without A Crypto Exchange Account",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/20/05/16037998/3-easiest-ways-to-buy-bitcoin-without-a-crypto-exchange-account"
+    },
+    {
+      "timestamp": "2020-05-14T18:00:00",
+      "source": "kitco.com",
+      "headline": "Fed officials says no negative rates ; gold prices would benefit if they change their minds",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.kitco.com/news/2020-05-14/Fed-officials-says-no-negative-rates-gold-prices-would-benefit-if-they-change-their-minds.html"
+    },
+    {
+      "timestamp": "2020-05-14T10:15:00",
+      "source": "hankookilbo.com",
+      "headline": "세계대전 수준 경기침체  파월 경고에 세계 증시 줄하락",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.hankookilbo.com/News/Read/202005141777089483?did=PA&dtype=3&dtypecode=5256"
+    },
+    {
+      "timestamp": "2020-05-14T13:15:00",
+      "source": "fool.com",
+      "headline": "Opinion : Stock Market Crash Round 2 Is Coming",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2020/05/14/opinion-stock-market-crash-round-2-is-coming.aspx"
+    },
+    {
+      "timestamp": "2020-05-14T11:15:00",
+      "source": "fool.com",
+      "headline": "Opinion : Stock Market Crash Round 2 Is Coming",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2020/05/14/opinion-stock-market-crash-round-2-is-coming.aspx?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2020-05-14T12:45:00",
+      "source": "stltoday.com",
+      "headline": "Opinion : Stock Market Crash Round 2 Is Coming",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/business/investment/personal-finance/opinion-stock-market-crash-round-2-is-coming/article_2a0b55cc-4978-5ca2-acc8-71c6b25dfad3.html"
+    },
+    {
+      "timestamp": "2020-05-14T11:45:00",
+      "source": "journalnow.com",
+      "headline": "Opinion : Stock Market Crash Round 2 Is Coming",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.journalnow.com/business/investment/personal-finance/opinion-stock-market-crash-round-2-is-coming/article_7685e8f6-e106-5b26-8f9b-8c5250cb0cb4.html"
+    },
+    {
+      "timestamp": "2020-05-14T13:00:00",
+      "source": "magicvalley.com",
+      "headline": "Opinion : Stock Market Crash Round 2 Is Coming",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://magicvalley.com/business/investment/personal-finance/opinion-stock-market-crash-round-2-is-coming/article_58350936-e97c-5cfe-abdd-5b929dd8e90d.html"
+    },
+    {
+      "timestamp": "2020-05-14T20:15:00",
+      "source": "newsbtc.com",
+      "headline": "Gold Bug Peter Hug Warns Inflation Will Be Slow , Will This Delay Bitcoin Bull Run ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/14/gold-bug-peter-hug-warns-inflation-will-be-slow-will-this-delay-bitcoins-bull-run/"
+    },
+    {
+      "timestamp": "2020-05-14T06:30:00",
+      "source": "seoul.co.kr",
+      "headline": "[ 서울신문 ]  NO 마이너스금리  금융지원군 파월의 미묘한 변화",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://seoul.co.kr/news/newsView.php?id=20200514500120&wlog_sub=svt_023"
+    },
+    {
+      "timestamp": "2020-05-14T16:30:00",
+      "source": "newsnow.co.uk",
+      "headline": "NewsNow : Recession news | Breaking News & Search 24 / 7",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.newsnow.co.uk/h/Hot+Topics/Recession"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "date": "2022-03-28",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-28T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T10:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-28T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Japan Updating Forex Law to Block Russia From Circumventing Sanctions Through Cryptos",
+    "Crypto amidst Russia - Ukraine War",
+    "Russia - Ukraine war live updates : Few mayors kidnapped by Russia have died , says Zelenskyy ; joint EU team to probe war crimes",
+    "Russia - Ukraine war live updates : Few mayors kidnapped by Russia have died , says Zelenskyy ;  India may not buy Russian oil in rupee",
+    "Russia - Ukraine War LIVE : Russia shifts focus to try to grind Ukraine army in east"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-28T20:45:00",
+      "source": "theepochtimes.com",
+      "headline": "Japan Updating Forex Law to Block Russia From Circumventing Sanctions Through Cryptos",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theepochtimes.com/japan-updating-forex-law-to-block-russia-from-circumventing-sanctions-through-cryptos_4367111.html"
+    },
+    {
+      "timestamp": "2022-03-28T08:00:00",
+      "source": "trend-online.com",
+      "headline": "Crypto amidst Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.trend-online.com/cryptocurrency/crypto-amidst-russia-ukraine-war/"
+    },
+    {
+      "timestamp": "2022-03-28T13:00:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine war live updates : Few mayors kidnapped by Russia have died , says Zelenskyy ; joint EU team to probe war crimes",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/other/russia-ukraine-war-live-updates-few-mayors-kidnapped-by-russia-have-died-says-zelenskyy-joint-eu-team-to-probe-war-crimes/ar-AAVyQhb"
+    },
+    {
+      "timestamp": "2022-03-28T16:30:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine war live updates : Few mayors kidnapped by Russia have died , says Zelenskyy ;  India may not buy Russian oil in rupee",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/other/russia-ukraine-war-live-updates-few-mayors-kidnapped-by-russia-have-died-says-zelenskyy-india-may-not-buy-russian-oil-in-rupee/ar-AAVyQhb"
+    },
+    {
+      "timestamp": "2022-03-28T10:00:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine War LIVE : Russia shifts focus to try to grind Ukraine army in east",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/world/russia-ukraine-war-live-russia-shifts-focus-to-try-to-grind-ukraines-army-in-east/ar-AAVyQhb"
+    },
+    {
+      "timestamp": "2022-03-28T18:45:00",
+      "source": "clubic.com",
+      "headline": "La Russie pourrait accepter le paiement de son gaz en Bitcoin ( non , ce nest pas une blague )",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.clubic.com/bitcoin/actualite-415509-la-russie-pourrait-accepter-le-paiement-de-son-gaz-en-bitcoin-non-ce-n-est-pas-une-blague.html"
+    },
+    {
+      "timestamp": "2022-03-28T23:45:00",
+      "source": "cp24.com",
+      "headline": "Zelenskyy briefs Trudeau as ceasefire talks with Russia to resume in Turkey",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cp24.com/news/zelenskyy-briefs-trudeau-as-ceasefire-talks-with-russia-to-resume-in-turkey-1.5838004"
+    },
+    {
+      "timestamp": "2022-03-28T21:00:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Zelenskyy briefs Trudeau as ceasefire talks with Russia to resume in Turkey",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/zelenskyy-briefs-trudeau-as-ceasefire-talks-with-russia-to-resume-in-turkey-1.1744252"
+    },
+    {
+      "timestamp": "2022-03-28T12:15:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine war LIVE updates : Joint EU team to probe Ukraine war crimes ; SriLankan Airlines suspends flights to Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/world/russia-ukraine-war-live-updates-joint-eu-team-to-probe-ukraine-war-crimes-srilankan-airlines-suspends-flights-to-russia/ar-AAVyQhb"
+    },
+    {
+      "timestamp": "2022-03-28T22:45:00",
+      "source": "washingtontimes.com",
+      "headline": "Russian , Ukrainian delegations to talk Tuesday as more U . S . troops head to Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2022/mar/28/russian-ukrainian-delegations-talk-tuesday-more-us/"
+    },
+    {
+      "timestamp": "2022-03-28T10:15:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine War LIVE : No major breakthrough so far in Russia - Ukraine talks , says Kremlin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/other/russia-ukraine-war-live-no-major-breakthrough-so-far-in-russia-ukraine-talks-says-kremlin/ar-AAVyQhb"
+    },
+    {
+      "timestamp": "2022-03-29T00:00:00",
+      "source": "castanet.net",
+      "headline": "Zelenskyy briefs Trudeau as ceasefire talks with Russia to resume in Turkey - Canada News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.castanet.net/news/Canada/364226/Zelenskyy-briefs-Trudeau-as-ceasefire-talks-with-Russia-to-resume-in-Turkey"
+    },
+    {
+      "timestamp": "2022-03-28T10:45:00",
+      "source": "aol.com",
+      "headline": "Zelenskyy sets ground rules for peace agreement , Russia censors him",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aol.com/news/zelenskyy-sets-ground-rules-peace-041757681.html"
+    },
+    {
+      "timestamp": "2022-03-28T06:45:00",
+      "source": "thejournal.ie",
+      "headline": "Russia and Ukraine set for face - to - face peace talks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thejournal.ie/russia-ukraine-peace-talks-2-5722764-Mar2022/"
+    },
+    {
+      "timestamp": "2022-03-28T19:15:00",
+      "source": "etftrends.com",
+      "headline": "In an Effort to Reduce Emissions , Exxon Is Looking at Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/crypto-channel/in-an-effort-to-reduce-emissions-exxon-is-looking-at-bitcoin/"
+    }
+  ]
+}

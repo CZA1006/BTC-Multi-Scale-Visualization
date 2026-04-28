@@ -1,0 +1,192 @@
+{
+  "date": "2026-03-01",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 10,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2026-03-01T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T02:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-01T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "트럼프 · 네타냐후 , 하메네이 사망 확신 … 이란 지도부 대부분 제거",
+    "Bitcoin Sudden Braced For A Massive Price Shock",
+    "US , Israel attacks Iran : The timeline of events leading up to the US - Israeli strikes on Iran and the death of the supreme leader",
+    "Iran supreme leader Khamenei dead after U . S ., Israel attacks",
+    "Why the US and Israel struck Iran when they did : A chance to kill its leaders"
+  ],
+  "articles": [
+    {
+      "timestamp": "2026-03-01T02:00:00",
+      "source": "etoday.co.kr",
+      "headline": "트럼프 · 네타냐후 , 하메네이 사망 확신 … 이란 지도부 대부분 제거",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.etoday.co.kr/news/view/2560778"
+    },
+    {
+      "timestamp": "2026-03-01T13:45:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Sudden Braced For A Massive Price Shock",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/03/01/bitcoin-suddenly-plunges-as-markets-brace-for-iran-war-price-crash/"
+    },
+    {
+      "timestamp": "2026-03-01T09:00:00",
+      "source": "9news.com.au",
+      "headline": "US , Israel attacks Iran : The timeline of events leading up to the US - Israeli strikes on Iran and the death of the supreme leader",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.9news.com.au/world/us-israel-attacks-iran-timline-events/ff4273f6-5e5f-40cf-949d-28907f8dfc21"
+    },
+    {
+      "timestamp": "2026-03-01T10:30:00",
+      "source": "english.kyodonews.net",
+      "headline": "Iran supreme leader Khamenei dead after U . S ., Israel attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.kyodonews.net:443/articles/-/71373"
+    },
+    {
+      "timestamp": "2026-03-01T07:45:00",
+      "source": "livemint.com",
+      "headline": "Why the US and Israel struck Iran when they did : A chance to kill its leaders",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.livemint.com/global/why-the-us-and-israel-struck-iran-when-they-did-a-chance-to-kill-its-leaders-11772339748976.html"
+    },
+    {
+      "timestamp": "2026-03-01T09:15:00",
+      "source": "haberler.com",
+      "headline": "Kripto para piyasasında yüzler 5 aydır gülmüyor",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.haberler.com/ekonomi/kripto-para-piyasasinda-yuzler-5-aydir-gulmuyor-19613107-haberi/"
+    },
+    {
+      "timestamp": "2026-03-01T13:30:00",
+      "source": "radikal.com.tr",
+      "headline": "Kripto piyasasında büyük kayıp ! 5 ayda 2 trilyon dolar eridi",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.radikal.com.tr/ekonomi/kripto-piyasasinda-buyuk-kayip-5-ayda-2-trilyon-dolar-eridi-27259/"
+    },
+    {
+      "timestamp": "2026-03-01T09:45:00",
+      "source": "channelstv.com",
+      "headline": "Iran Strikes Israel , US Bases After Khamenei Death",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.channelstv.com/2026/03/01/iran-strikes-us-bases-in-iraq-gulf-after-khameneis-death/"
+    },
+    {
+      "timestamp": "2026-03-01T13:45:00",
+      "source": "namibian.com.na",
+      "headline": "What we know about the US - Israeli attack on Iran and Tehran retaliation - News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.namibian.com.na/what-we-know-about-the-us-israeli-attack-on-iran-and-tehrans-retaliation/"
+    },
+    {
+      "timestamp": "2026-03-01T21:30:00",
+      "source": "theconversation.com",
+      "headline": "Failure of US - Iran talks was all - too predictable – but Trump could still have stuck with diplomacy over strikes",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://theconversation.com/failure-of-us-iran-talks-was-all-too-predictable-but-trump-could-still-have-stuck-with-diplomacy-over-strikes-277209"
+    },
+    {
+      "timestamp": "2026-03-01T00:30:00",
+      "source": "163.com",
+      "headline": "特朗普 ： 对伊朗的不间断打击将持续一周甚至更长时间",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.163.com/dy/article/KMTPSS2B0514R9OJ.html"
+    },
+    {
+      "timestamp": "2026-03-01T11:30:00",
+      "source": "sozcu.com.tr",
+      "headline": "Kripto para piyasasında yüzler 5 aydır gülmüyor",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.sozcu.com.tr/kripto-para-piyasasinda-yuzler-5-aydir-gulmuyor-p297792"
+    },
+    {
+      "timestamp": "2026-03-01T02:00:00",
+      "source": "qa.philstar.com",
+      "headline": "Iran leader Khamenei killed in massive US and Israeli attack , Trump says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://qa.philstar.com/world/2026/03/01/2511280/iran-leader-khamenei-killed-massive-us-and-israeli-attack-trump-says"
+    },
+    {
+      "timestamp": "2026-03-01T02:00:00",
+      "source": "philstar.com",
+      "headline": "Iran leader Khamenei killed in massive US and Israeli attack , Trump says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.philstar.com/world/2026/03/01/2511280/iran-leader-khamenei-killed-massive-us-and-israeli-attack-trump-says"
+    },
+    {
+      "timestamp": "2026-03-01T22:30:00",
+      "source": "nzherald.co.nz",
+      "headline": "This war is likely to have strategic consequences comparable to the collapse of the Soviet Union",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nzherald.co.nz/world/this-war-is-likely-to-have-strategic-consequences-comparable-to-the-collapse-of-the-soviet-union/premium/SH4HUNBYMFGTLI2U7DM7G474QM/"
+    }
+  ]
+}

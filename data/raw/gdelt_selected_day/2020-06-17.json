@@ -1,0 +1,197 @@
+{
+  "date": "2020-06-17",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 4,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-17T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-17T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin didnt perform as expected amid the COVID19 pandemic",
+    "Bitcoin didnt perform as expected amid the COVID19 pandemic - Bloomberg report",
+    "Blockchain Resilience : Unearthing the Potential Bitcoin Offers in 2020",
+    "Current S & P Correlation Implies Bitcoin at $18K , Says Stock - to - Flow Creator",
+    "Stock Index ETFs Are Mixed To Higher After Powell Testimony"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-17T23:00:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin didnt perform as expected amid the COVID19 pandemic",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-didnt-perform-as-expected-amid-the-covid19-pandemic-bloomberg-report-202006172147"
+    },
+    {
+      "timestamp": "2020-06-17T23:45:00",
+      "source": "forexcrunch.com",
+      "headline": "Bitcoin didnt perform as expected amid the COVID19 pandemic - Bloomberg report",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/bitcoin-didnt-perform-as-expected-amid-the-covid19-pandemic-bloomberg-report/"
+    },
+    {
+      "timestamp": "2020-06-17T23:30:00",
+      "source": "techtimes.com",
+      "headline": "Blockchain Resilience : Unearthing the Potential Bitcoin Offers in 2020",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.techtimes.com/articles/250398/20200617/blockchain-resilience-unearthing-the-potential-bitcoin-offers-in-2020.htm"
+    },
+    {
+      "timestamp": "2020-06-17T17:30:00",
+      "source": "newsbtc.com",
+      "headline": "Current S & P Correlation Implies Bitcoin at $18K , Says Stock - to - Flow Creator",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/17/current-sp-correlation-implies-bitcoin-at-18k-says-stock-to-flow-creator/"
+    },
+    {
+      "timestamp": "2020-06-17T20:00:00",
+      "source": "etftrends.com",
+      "headline": "Stock Index ETFs Are Mixed To Higher After Powell Testimony",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/stock-index-etfs-are-mixed-to-higher-after-powell-testimony/"
+    },
+    {
+      "timestamp": "2020-06-17T05:45:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Headed For $10 , 500 Then $12 , 000 , Analyst Predicts",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-headed-10500-then-12000-analyst-predicts-2995417"
+    },
+    {
+      "timestamp": "2020-06-17T15:45:00",
+      "source": "bitcoinmagazine.com",
+      "headline": "River Financial Raises $5 . 7 Million – Bitcoin Magazine",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://bitcoinmagazine.com/articles/with-rising-interest-in-plan-b-services-river-financial-raises-5-7-million"
+    },
+    {
+      "timestamp": "2020-06-17T12:30:00",
+      "source": "newsbtc.com",
+      "headline": "How Top Strategist 4 % Inflation Forecast May Propel Bitcoin to New Highs",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/17/bitcoin-all-time-high-inflation-in-2021/"
+    },
+    {
+      "timestamp": "2020-06-17T01:00:00",
+      "source": "infowars.com",
+      "headline": "Fed Ups Stimulus Ante , Now Buying Individual Corporate Bonds",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.infowars.com/fed-ups-stimulus-ante-now-buying-individual-corporate-bonds/"
+    },
+    {
+      "timestamp": "2020-06-17T10:30:00",
+      "source": "in.reuters.com",
+      "headline": "US STOCKS - Wall Street jumps on Fed corporate bond purchase announcement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/usa-stocks-idINL1N2DS1I4"
+    },
+    {
+      "timestamp": "2020-06-17T06:00:00",
+      "source": "etftrends.com",
+      "headline": "Contrarian Analyst Gets Bullish On Stocks As Index ETFs Rally",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/contrarian-analyst-gets-bullish-on-stocks-as-index-etfs-rally/"
+    },
+    {
+      "timestamp": "2020-06-17T21:15:00",
+      "source": "thestar.com",
+      "headline": "Bitcoin boomer fuel volume growth at startup River Financial",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.thestar.com/business/2020/06/17/bitcoin-boomers-fuel-volume-growth-at-startup-river-financial.html"
+    },
+    {
+      "timestamp": "2020-06-17T15:00:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Bitcoin boomer fuel volume growth at startup River Financial",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/bitcoin-boomers-fuel-volume-growth-at-startup-river-financial-1.1451862"
+    },
+    {
+      "timestamp": "2020-06-17T21:15:00",
+      "source": "coindesk.com",
+      "headline": "Market Wrap : Bitcoin Flat at $9 . 4K but Investors Are Holding On",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/market-wrap-bitcoin-flat-at-9-4k-but-investors-are-holding-on"
+    },
+    {
+      "timestamp": "2020-06-17T01:30:00",
+      "source": "thestar.com.my",
+      "headline": "Wall Street closes higher as Fed soothes recovery worries",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.thestar.com.my/business/business-news/2020/06/16/wall-street-closes-higher-as-fed-soothes-recovery-worries"
+    }
+  ]
+}

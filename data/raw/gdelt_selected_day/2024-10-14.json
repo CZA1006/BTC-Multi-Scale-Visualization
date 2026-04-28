@@ -1,0 +1,172 @@
+{
+  "date": "2024-10-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-14T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-14T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-14T19:00:00",
+      "news_count": 8,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-14T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-14T21:00:00",
+      "news_count": 4,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Desperation : Kamala Harris Schedules Wednesday Fox News Interview",
+    "Survey says : The presidential race is a dead heat",
+    "Survey says : The presidential race is a dead heat",
+    "Survey says : The presidential race is a dead heat",
+    "Survey says : The presidential race is a dead heat"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-14T19:30:00",
+      "source": "breitbart.com",
+      "headline": "Desperation : Kamala Harris Schedules Wednesday Fox News Interview",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.breitbart.com/2024-election/2024/10/14/desperation-kamala-harris-schedules-wednesday-fox-news-interview/"
+    },
+    {
+      "timestamp": "2024-10-14T19:15:00",
+      "source": "komonews.com",
+      "headline": "Survey says : The presidential race is a dead heat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://komonews.com/news/nation-world/survey-says-the-presidential-race-is-a-dead-heat-vice-president-kamala-harris-former-president-donald-trump-2024-election-politics-campaigns-swing-states-electoral-college"
+    },
+    {
+      "timestamp": "2024-10-14T19:00:00",
+      "source": "wset.com",
+      "headline": "Survey says : The presidential race is a dead heat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wset.com/news/nation-world/survey-says-the-presidential-race-is-a-dead-heat-vice-president-kamala-harris-former-president-donald-trump-2024-election-politics-campaigns-swing-states-electoral-college"
+    },
+    {
+      "timestamp": "2024-10-14T19:00:00",
+      "source": "wjla.com",
+      "headline": "Survey says : The presidential race is a dead heat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wjla.com/news/beyond-the-podium/survey-says-the-presidential-race-is-a-dead-heat-vice-president-kamala-harris-former-president-donald-trump-2024-election-politics-campaigns-swing-states-electoral-college"
+    },
+    {
+      "timestamp": "2024-10-14T20:00:00",
+      "source": "wcyb.com",
+      "headline": "Survey says : The presidential race is a dead heat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wcyb.com/news/beyond-the-podium/survey-says-the-presidential-race-is-a-dead-heat-vice-president-kamala-harris-former-president-donald-trump-2024-election-politics-campaigns-swing-states-electoral-college"
+    },
+    {
+      "timestamp": "2024-10-14T19:00:00",
+      "source": "cbs12.com",
+      "headline": "Survey says : The presidential race is a dead heat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cbs12.com/news/beyond-the-podium/survey-says-the-presidential-race-is-a-dead-heat-vice-president-kamala-harris-former-president-donald-trump-2024-election-politics-campaigns-swing-states-electoral-college"
+    },
+    {
+      "timestamp": "2024-10-14T21:00:00",
+      "source": "valuewalk.com",
+      "headline": "Kamala Harris Hints at  Regulatory Framework  for Cryptocurrency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.valuewalk.com/kamala-harris-hints-at-regulatory-framework-for-cryptocurrency/"
+    },
+    {
+      "timestamp": "2024-10-14T19:30:00",
+      "source": "newschannel20.com",
+      "headline": "Survey says : The presidential race is a dead heat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newschannel20.com/news/nation-world/survey-says-the-presidential-race-is-a-dead-heat-vice-president-kamala-harris-former-president-donald-trump-2024-election-politics-campaigns-swing-states-electoral-college"
+    },
+    {
+      "timestamp": "2024-10-14T19:30:00",
+      "source": "nbcmontana.com",
+      "headline": "Survey says : The presidential race is a dead heat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcmontana.com/news/beyond-the-podium/survey-says-the-presidential-race-is-a-dead-heat-vice-president-kamala-harris-former-president-donald-trump-2024-election-politics-campaigns-swing-states-electoral-college"
+    },
+    {
+      "timestamp": "2024-10-14T19:00:00",
+      "source": "invezz.com",
+      "headline": "Bitcoin  Uptober  rally kicks off , driven by market optimism and election bets",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://invezz.com/news/2024/10/14/bitcoins-uptober-rally-kicks-off-driven-by-market-optimism-and-election-bets/"
+    },
+    {
+      "timestamp": "2024-10-14T21:15:00",
+      "source": "thehill.com",
+      "headline": "Kamala Harris blitzing  blue wall  states in final election sprint",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/newsletters/evening-report/4932801-kamala-harris-blitz-blue-wall-states/"
+    },
+    {
+      "timestamp": "2024-10-14T21:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Harris beats Biden , lags Trump on crypto policy : Galaxy Research",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/harris-beats-biden-lags-trump-crypto-policy-galaxy-research"
+    },
+    {
+      "timestamp": "2024-10-14T11:00:00",
+      "source": "newsweek.com",
+      "headline": "Election 2024 : Donald Trump and Kamala Harris Campaign Tracker",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/live-campaign-tracker-donald-trump-kamala-harris-2024-1968395"
+    },
+    {
+      "timestamp": "2024-10-14T21:30:00",
+      "source": "investopedia.com",
+      "headline": "Bitcoin Trades Near $66 , 000 as Crypto Stocks Rise",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investopedia.com/bitcoin-trades-near-usd66000-crypto-stocks-rise-coinbase-microstrategy-8727848"
+    },
+    {
+      "timestamp": "2024-10-14T02:00:00",
+      "source": "thehill.com",
+      "headline": "Harris criticizes Trump lack of transparency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4931397-harris-nc-rally-trump-medical-records-debate/"
+    }
+  ]
+}

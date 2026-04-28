@@ -1,0 +1,197 @@
+{
+  "date": "2020-02-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 1,
+  "theme_count_war": 0,
+  "theme_count_macro": 6,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-02-12T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T11:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-12T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Fed - Induced  Deflation Crisi Will Cause Bitcoin to Soar : Hedge Fund Manager",
+    "Bitcoin Price Hits $10 , 400 After Fed Chair Confirms Central Bank Working On Cryptocurrency",
+    "Guess Who Trump Blamed for Today Sharp Stock Market Reversal",
+    "Bitcoin Price Hits $10 , 320 , Fed Confirms Crypto Is Threat to U . S . Dollar",
+    "Bitcoin rockets past $10 , 000 after the Fed says it  taking a deep look  at a government cryptocurrency"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-02-12T21:45:00",
+      "source": "ccn.com",
+      "headline": "Fed - Induced  Deflation Crisi Will Cause Bitcoin to Soar : Hedge Fund Manager",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.ccn.com/fed-induced-deflation-crisis-will-cause-bitcoin-to-soar-analyst/"
+    },
+    {
+      "timestamp": "2020-02-12T14:30:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Hits $10 , 400 After Fed Chair Confirms Central Bank Working On Cryptocurrency",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-hits-10400-after-fed-chair-confirms-central-bank-working-cryptocurrency-2920742"
+    },
+    {
+      "timestamp": "2020-02-12T04:15:00",
+      "source": "ccn.com",
+      "headline": "Guess Who Trump Blamed for Today Sharp Stock Market Reversal",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ccn.com/guess-who-trump-blamed-for-todays-sharp-stock-market-reversal/"
+    },
+    {
+      "timestamp": "2020-02-12T10:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Hits $10 , 320 , Fed Confirms Crypto Is Threat to U . S . Dollar",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-hits-10320-fed-crypto-dollar/"
+    },
+    {
+      "timestamp": "2020-02-12T11:45:00",
+      "source": "news.yahoo.com",
+      "headline": "Bitcoin rockets past $10 , 000 after the Fed says it  taking a deep look  at a government cryptocurrency",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/bitcoin-rockets-past-10-000-104546379.html"
+    },
+    {
+      "timestamp": "2020-02-12T11:30:00",
+      "source": "businessinsider.in",
+      "headline": "Bitcoin rockets past $10 , 000 after the Fed says it  taking a deep look  at a government cryptocurrency",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.businessinsider.in/stock-market/news/bitcoin-rockets-past-10000-after-the-fed-says-its-taking-a-deep-look-at-a-government-cryptocurrency/articleshow/74099995.cms"
+    },
+    {
+      "timestamp": "2020-02-12T13:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Hits $10 , 000 Once Again But Its Rally is Slowing Down",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/12/bitcoin-hits-10000-once-again-but-its-rally-is-slowing-down/"
+    },
+    {
+      "timestamp": "2020-02-12T23:00:00",
+      "source": "morningstar.com",
+      "headline": "Fed Officials Weigh Risks of Covid - 19 2nd Update",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.morningstar.com/news/dow-jones/2020021213123/fed-officials-weigh-risks-of-covid-19-update"
+    },
+    {
+      "timestamp": "2020-02-12T23:30:00",
+      "source": "morningstar.com",
+      "headline": "Fed Officials Weigh Risks of Covid - 19 2nd Update",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.morningstar.com/news/dow-jones/2020021213123/fed-officials-weigh-risks-of-covid-19-2nd-update"
+    },
+    {
+      "timestamp": "2020-02-12T23:15:00",
+      "source": "blacklistednews.com",
+      "headline": "NOT GOOD : Fed Chairman Powell Confirms Federal Reserve Exploring Government Cryptocurrency",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.blacklistednews.com/article/76234/not-good-fed-chairman-powell-confirms-federal-reserve-exploring-government.html"
+    },
+    {
+      "timestamp": "2020-02-12T04:45:00",
+      "source": "dailyfx.com",
+      "headline": "Gold Price to Take Cues from Coronavirus News Following Fed Testimony",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/fundamental/us_dollar_index/daily_dollar/2020/02/12/Gold-Price-to-Take-Cues-from-Coronavirus-News-Following-Fed-Testimony.html"
+    },
+    {
+      "timestamp": "2020-02-12T11:15:00",
+      "source": "exchangerates.org.uk",
+      "headline": "Exchange Rates Daily Today 12 . 02 . 2020 : Pound Sterling Higher On GDP Beat , Euro Dollar Unmoved On Powell Lagarde Statements",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.exchangerates.org.uk/news/28579/exchange-rates-daily-today-12-02-2020-pound-sterling-higher-on-gdp-beat-euro-dollar-unmoved-on-powell-lagarde-statements.html"
+    },
+    {
+      "timestamp": "2020-02-12T09:45:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin Price Analysis : BTC / USD spikes 14 % from February swing low as $11 , 000 beckons",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-analysis-btc-usd-spikes-14-from-february-swing-low-as-11-000-beckons-202002120711"
+    },
+    {
+      "timestamp": "2020-02-12T01:15:00",
+      "source": "news.sbs.co.kr",
+      "headline": "뉴욕증시 , 신종 코로나 완화 기대 속 혼조 … 다우 , 약보합 마감",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1005644759"
+    },
+    {
+      "timestamp": "2020-02-12T00:30:00",
+      "source": "koreatimes.com",
+      "headline": "뉴욕증시 , 신종 코로나 완화 기대 속 혼조 … 다우 , 약보합 마감",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.koreatimes.com/article/20200211/1295360"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "date": "2024-10-01",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-01T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T02:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-01T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Kamala Harris knows crypto voters are up for grabs : New polls confirm",
+    "Crypto companies are spending big on the election",
+    "Harris to Visit Georgia , North Carolina to Survey Helene Damage",
+    "Vance And Walz Will Face Off In VP Debate Likely The Last Major National Campaign Event Before Election",
+    "Vance And Walz Will Face Off In VP Debate Likely The Last Major National Campaign Event Before Election"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-01T19:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Kamala Harris knows crypto voters are up for grabs : New polls confirm",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/harris-improves-electoral-chances-by-backing-crypto"
+    },
+    {
+      "timestamp": "2024-10-01T02:30:00",
+      "source": "npr.org",
+      "headline": "Crypto companies are spending big on the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.npr.org/2024/09/30/nx-s1-5130919/crypto-companies-are-spending-big-on-the-election"
+    },
+    {
+      "timestamp": "2024-10-01T18:45:00",
+      "source": "yahoo.com",
+      "headline": "Harris to Visit Georgia , North Carolina to Survey Helene Damage",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-visit-georgia-north-carolina-174359265.html"
+    },
+    {
+      "timestamp": "2024-10-01T23:15:00",
+      "source": "talkingpointsmemo.com",
+      "headline": "Vance And Walz Will Face Off In VP Debate Likely The Last Major National Campaign Event Before Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://talkingpointsmemo.com/live-blog/vance-and-walz-will-face-off-in-vp-debate-likely-the-last-major-national-campaign-event-before-election?entry=1502428"
+    },
+    {
+      "timestamp": "2024-10-01T23:15:00",
+      "source": "talkingpointsmemo.com",
+      "headline": "Vance And Walz Will Face Off In VP Debate Likely The Last Major National Campaign Event Before Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://talkingpointsmemo.com/live-blog/vance-and-walz-will-face-off-in-vp-debate-likely-the-last-major-national-campaign-event-before-election"
+    },
+    {
+      "timestamp": "2024-10-01T23:15:00",
+      "source": "talkingpointsmemo.com",
+      "headline": "Vance And Walz Will Face Off In VP Debate Likely The Last Major National Campaign Event Before Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://talkingpointsmemo.com/live-blog/vance-and-walz-will-face-off-in-vp-debate-likely-the-last-major-national-campaign-event-before-election?entry=1502420"
+    },
+    {
+      "timestamp": "2024-10-01T00:45:00",
+      "source": "techreport.com",
+      "headline": "Bitcoin and Ether Weaken Ahead of Fed Chair Powell Speech and Key Payroll Data",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://techreport.com/crypto-news/bitcoin-and-ether-weaken-ahead-of-fed-chair-powells-speech-and-key-payroll-data/"
+    },
+    {
+      "timestamp": "2024-10-01T05:45:00",
+      "source": "lewrockwell.com",
+      "headline": "Fed Rate Cut Helps Candidate Harris But Will Hurt President Harris ( or Trump )",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lewrockwell.com/2024/10/ron-paul/feds-rate-cut-helps-candidate-harris-but-will-hurt-president-harris-or-trump/"
+    },
+    {
+      "timestamp": "2024-10-01T09:15:00",
+      "source": "cbc.ca",
+      "headline": "What time is the U . S . vice - presidential debate ? How to watch J . D . Vance and Tim Walz face off",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbc.ca/news/world/vance-walz-vice-presidential-debate-1.7338208"
+    },
+    {
+      "timestamp": "2024-10-01T02:45:00",
+      "source": "wcbe.org",
+      "headline": "Crypto companies are spending big on the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wcbe.org/2024-09-30/crypto-companies-are-spending-big-on-the-election"
+    },
+    {
+      "timestamp": "2024-10-01T02:00:00",
+      "source": "wnmufm.org",
+      "headline": "Crypto companies are spending big on the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wnmufm.org/2024-09-30/crypto-companies-are-spending-big-on-the-election"
+    },
+    {
+      "timestamp": "2024-10-01T02:00:00",
+      "source": "wwno.org",
+      "headline": "Crypto companies are spending big on the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wwno.org/2024-09-30/crypto-companies-are-spending-big-on-the-election"
+    },
+    {
+      "timestamp": "2024-10-01T11:45:00",
+      "source": "dailymail.co.uk",
+      "headline": "Revealed : A THIRD of young Britons would vote for Donald Trump over Kamala Harris in the US election - with the former president commanding his highest level of support in one surprising location",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-13910821/young-Britons-vote-Donald-Trump-Kamala-Harris-election.html"
+    },
+    {
+      "timestamp": "2024-10-01T16:30:00",
+      "source": "kfiz.com",
+      "headline": "VP Harris Coming to Fox Valley - KFIZ News - Talk 1450 AM",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://kfiz.com/vp-harris-coming-to-fox-valley/"
+    },
+    {
+      "timestamp": "2024-10-01T11:45:00",
+      "source": "khaleejtimes.com",
+      "headline": "Harris , Trump 2024 campaigns interrupted by Hurricane Helene",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.khaleejtimes.com/world/americas/harris-trump-2024-campaigns-interrupted-by-hurricane-helene"
+    }
+  ]
+}

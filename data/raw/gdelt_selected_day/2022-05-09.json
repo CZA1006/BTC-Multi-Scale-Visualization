@@ -1,0 +1,202 @@
+{
+  "date": "2022-05-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 12,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-09T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T08:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-09T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine : Zelenskyy vows ′ two Victory Days ′ live updates | News | DW",
+    "Ukraine : Zelenskyy vows  two Victory Day live updates",
+    "Ukrainians report fierce fighting as Russia marks Soviet WW2 victory",
+    "Ukrainians report fierce fighting as Russia marks Soviet WW2 victory",
+    "Ukrainians report fierce fighting as Russia marks Soviet WW2 victory"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-09T08:15:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Zelenskyy vows ′ two Victory Days ′ live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-zelenskyy-vows-two-victory-days-live-updates/a-61727432"
+    },
+    {
+      "timestamp": "2022-05-09T11:00:00",
+      "source": "msn.com",
+      "headline": "Ukraine : Zelenskyy vows  two Victory Day live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-xl/news/other/ukraine-zelenskyy-vows-two-victory-days-%e2%80%94-live-updates/ar-AAX35ik"
+    },
+    {
+      "timestamp": "2022-05-09T13:45:00",
+      "source": "inforum.com",
+      "headline": "Ukrainians report fierce fighting as Russia marks Soviet WW2 victory",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/ukrainians-report-fierce-fighting-as-russia-marks-soviet-ww2-victory"
+    },
+    {
+      "timestamp": "2022-05-09T14:00:00",
+      "source": "grandforksherald.com",
+      "headline": "Ukrainians report fierce fighting as Russia marks Soviet WW2 victory",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/ukrainians-report-fierce-fighting-as-russia-marks-soviet-ww2-victory"
+    },
+    {
+      "timestamp": "2022-05-09T15:00:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Ukrainians report fierce fighting as Russia marks Soviet WW2 victory",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/ukrainians-report-fierce-fighting-as-russia-marks-soviet-ww2-victory"
+    },
+    {
+      "timestamp": "2022-05-09T15:15:00",
+      "source": "postbulletin.com",
+      "headline": "Ukrainians report fierce fighting as Russia marks Soviet WW2 victory",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/ukrainians-report-fierce-fighting-as-russia-marks-soviet-ww2-victory"
+    },
+    {
+      "timestamp": "2022-05-09T20:00:00",
+      "source": "aljazeera.com",
+      "headline": "Putin Victory Day speech far from triumphant : Analysts | Russia - Ukraine war News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/5/9/putins-victory-day-speech-far-from-triumphant-analysts"
+    },
+    {
+      "timestamp": "2022-05-09T08:30:00",
+      "source": "bdnews24.com",
+      "headline": "The woman steering Russia war economy",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://bdnews24.com/world/europe/2022/05/09/the-woman-steering-russias-war-economy"
+    },
+    {
+      "timestamp": "2022-05-09T05:15:00",
+      "source": "channel3000.com",
+      "headline": "Putin to mark Victory Day as Russia presses Ukraine assault",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.channel3000.com/i/putin-to-mark-victory-day-as-russia-presses-ukraine-assault/"
+    },
+    {
+      "timestamp": "2022-05-09T11:15:00",
+      "source": "arkansasonline.com",
+      "headline": "School bombed ; 60 feared dead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2022/may/09/school-bombed-60-feared-dead/"
+    },
+    {
+      "timestamp": "2022-05-09T05:15:00",
+      "source": "isp.netscape.com",
+      "headline": "Putin to mark Victory Day as Russia presses Ukraine assault",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://isp.netscape.com/news/world/story/0001/20220509/f3e25a88fb947ada8f2710f664fd3604"
+    },
+    {
+      "timestamp": "2022-05-09T00:00:00",
+      "source": "tucson.com",
+      "headline": "Live updates | UN says more than 170 evacuated from Mariupol",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://tucson.com/news/national/live-updates-un-says-more-than-170-evacuated-from-mariupol/article_352bdb89-fed0-58c8-9866-725e585a0bda.html"
+    },
+    {
+      "timestamp": "2022-05-09T07:30:00",
+      "source": "thejournal.ie",
+      "headline": "Putin to mark Victory Day as Russia presses Ukraine assault",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thejournal.ie/putin-victory-day-russia-ukraine-assault-5758336-May2022/"
+    },
+    {
+      "timestamp": "2022-05-09T01:00:00",
+      "source": "lancasteronline.com",
+      "headline": "Live updates | UN says more than 170 evacuated from Mariupol",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://lancasteronline.com/news/world/live-updates-un-says-more-than-170-evacuated-from-mariupol/article_943a9699-d0e5-5662-98ff-31713e29bff0.html"
+    },
+    {
+      "timestamp": "2022-05-09T02:30:00",
+      "source": "thetelegraph.com",
+      "headline": "Live updates | UN chief  appalled  at reported school attack",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thetelegraph.com/business/article/Live-updates-Canada-s-Trudeau-in-Ukraine-to-17157560.php"
+    }
+  ]
+}

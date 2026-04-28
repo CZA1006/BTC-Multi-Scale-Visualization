@@ -1,0 +1,192 @@
+{
+  "date": "2024-10-18",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-18T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T03:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T05:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-18T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "From bitcoin to Mexican peso ,  Trump trade are appearing again",
+    "Crunch time : Harris to team up with Barack and Michelle Obama next week in key battlegrounds",
+    "Harris turns 60 in US election dominated by age",
+    "Kamala Harris turns 60 in US election dominated by age",
+    "Harris turns 60 in US election dominated by age"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-18T05:30:00",
+      "source": "marketscreener.com",
+      "headline": "From bitcoin to Mexican peso ,  Trump trade are appearing again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/quote/cryptocurrency/BITCOIN-BTC-USD-45553945/news/From-bitcoin-to-Mexican-peso-Trump-trades-are-appearing-again-48104583/"
+    },
+    {
+      "timestamp": "2024-10-18T09:30:00",
+      "source": "foxnews.com",
+      "headline": "Crunch time : Harris to team up with Barack and Michelle Obama next week in key battlegrounds",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/crunch-time-harris-team-up-barack-michelle-obama-next-week-key-battlegrounds"
+    },
+    {
+      "timestamp": "2024-10-18T03:30:00",
+      "source": "yahoo.com",
+      "headline": "Harris turns 60 in US election dominated by age",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-turns-60-us-election-023932901.html"
+    },
+    {
+      "timestamp": "2024-10-18T03:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Kamala Harris turns 60 in US election dominated by age",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/kamala-harris-turns-60-in-us-election-dominated-by-age/articleshow/114333096.cms"
+    },
+    {
+      "timestamp": "2024-10-18T06:15:00",
+      "source": "punchng.com",
+      "headline": "Harris turns 60 in US election dominated by age",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://punchng.com/harris-turns-60-in-us-election-dominated-by-age/"
+    },
+    {
+      "timestamp": "2024-10-18T14:30:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Kamala Harris turns 60 in US election dominated by age",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/2024/10/18/kamala-harris-turns-60-us-election-dominated-age/"
+    },
+    {
+      "timestamp": "2024-10-18T05:15:00",
+      "source": "thedailybeast.com",
+      "headline": "Jim Gaffigan Brutally Roasts Trump And Asks : Where Kamala ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thedailybeast.com/jim-gaffigan-brutally-roasts-trumpand-asks-wheres-kamala/"
+    },
+    {
+      "timestamp": "2024-10-18T04:15:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Elon Musk warns of  Mad Max  or  Zombie Apocalypse  fate under Kamala Harris",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/us/elon-musk-warns-of-mad-max-or-zombie-apocalypse-fate-under-kamala-harris/articleshow/114334896.cms"
+    },
+    {
+      "timestamp": "2024-10-18T23:15:00",
+      "source": "riotimesonline.com",
+      "headline": "Bitcoin Surges as Trump Election Odds Improve",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.riotimesonline.com/bitcoin-surges-as-trumps-election-odds-improve/"
+    },
+    {
+      "timestamp": "2024-10-18T04:15:00",
+      "source": "ktbs.com",
+      "headline": "Harris turns 60 in US election dominated by age",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ktbs.com/news/national/harris-turns-60-in-us-election-dominated-by-age/article_92b53b63-faef-5138-801a-928f21dda494.html"
+    },
+    {
+      "timestamp": "2024-10-18T01:15:00",
+      "source": "japantoday.com",
+      "headline": "Musk warns  fate of Western civilization  depends on Trump returning to office",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://japantoday.com/category/world/musk-stumps-for-trump-in-key-us-swing-state"
+    },
+    {
+      "timestamp": "2024-10-18T15:15:00",
+      "source": "businesstimes.com.sg",
+      "headline": "From Bitcoin to Mexican peso ,  Trump trade are appearing again",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/international/global/bitcoin-mexican-peso-trump-trades-are-appearing-again"
+    },
+    {
+      "timestamp": "2024-10-18T03:30:00",
+      "source": "takungpao.com",
+      "headline": "﻿公评世界 | 哈里斯能否逆风翻盘 考验其冲刺能力 _ 大公网",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.takungpao.com/opinion/233123/2024/1018/1022214.html"
+    },
+    {
+      "timestamp": "2024-10-18T01:00:00",
+      "source": "6abc.com",
+      "headline": "Election 2024 : Kamala Harris , Donald Trump campaigns seek to court Black male voters",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://6abc.com/post/election-2024-kamala-harris-donald-trump-campaigns-seek-court-black-male-voters/15438943/"
+    },
+    {
+      "timestamp": "2024-10-18T05:30:00",
+      "source": "moneycontrol.com",
+      "headline": "Retail FOMO goes missing as bitcoin pushes closer to its record",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/business/cryptocurrency/retail-fomo-goes-missing-as-bitcoin-pushes-closer-to-its-record-12844622.html"
+    }
+  ]
+}

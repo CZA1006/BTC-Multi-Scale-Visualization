@@ -1,0 +1,187 @@
+{
+  "date": "2020-03-29",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 3,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-29T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-29T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-29T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-29T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-29T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-29T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-29T22:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-29T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Here why the Fed boasting about having  unlimited ammo  is an endorsement of crypto",
+    "Congress Flirts With Digital Dollar ; Crypto Hiring Boom",
+    "Despite 10 % Crash , Bitcoin Price Still Has This Key Silver Lining",
+    "Stock market massive rebound may not last amid dire economic slowdown , analysts warn",
+    "These 3 Factors Show Bitcoin Has Further to Fall After Hitting $6 , 000"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-29T21:45:00",
+      "source": "cryptoslate.com",
+      "headline": "Here why the Fed boasting about having  unlimited ammo  is an endorsement of crypto",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://cryptoslate.com/heres-why-the-fed-boasting-about-having-unlimited-ammo-is-an-endorsement-of-crypto/"
+    },
+    {
+      "timestamp": "2020-03-29T14:00:00",
+      "source": "forbes.com",
+      "headline": "Congress Flirts With Digital Dollar ; Crypto Hiring Boom",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2020/03/29/congress-flirts-with-digital-dollar-cryptos-hiring-boom/"
+    },
+    {
+      "timestamp": "2020-03-29T00:30:00",
+      "source": "newsbtc.com",
+      "headline": "Despite 10 % Crash , Bitcoin Price Still Has This Key Silver Lining",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/28/despite-10-crash-bitcoin-price-still-has-this-key-silver-lining/"
+    },
+    {
+      "timestamp": "2020-03-29T22:30:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Stock market massive rebound may not last amid dire economic slowdown , analysts warn",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/stocks/stock-markets-massive-rebound-may-not-last-amid-dire-economic-slowdown-analysts-warn"
+    },
+    {
+      "timestamp": "2020-03-29T04:45:00",
+      "source": "newsbtc.com",
+      "headline": "These 3 Factors Show Bitcoin Has Further to Fall After Hitting $6 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/29/these-3-factors-show-bitcoin-has-further-fall-after-hitting-6000/"
+    },
+    {
+      "timestamp": "2020-03-29T23:45:00",
+      "source": "newsbtc.com",
+      "headline": "Why Bitcoin Tumble Under $6 , 000 Could Be the Start of Something Worse",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/29/why-bitcoins-tumble-under-6000-could-be-the-start-of-something-worse/"
+    },
+    {
+      "timestamp": "2020-03-29T22:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Reaches a  Bounce or Die  Level as Bulls Lose Their Footing",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/29/bitcoin-reaches-a-bounce-or-die-level-as-bulls-lose-their-footing/"
+    },
+    {
+      "timestamp": "2020-03-29T01:30:00",
+      "source": "dailycall.com",
+      "headline": "Commentary : Lessons of previous stock market crashes",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dailycall.com/opinion/76629/commentary-lessons-of-previous-stock-market-crashes"
+    },
+    {
+      "timestamp": "2020-03-29T05:15:00",
+      "source": "tdn-net.com",
+      "headline": "Commentary : Lessons of previous stock market crashes",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.tdn-net.com/opinion/81684/commentary-lessons-of-previous-stock-market-crashes"
+    },
+    {
+      "timestamp": "2020-03-29T23:00:00",
+      "source": "smh.com.au",
+      "headline": "8 @ eight : ASX bracing for another volatile week",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.smh.com.au/business/markets/8-eight-asx-bracing-for-another-volatile-week-20200330-p54f48.html"
+    },
+    {
+      "timestamp": "2020-03-29T21:15:00",
+      "source": "theage.com.au",
+      "headline": "8 @ eight : ASX bracing for another volatile week",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.theage.com.au/business/markets/8-eight-asx-bracing-for-another-volatile-week-20200330-p54f48.html"
+    },
+    {
+      "timestamp": "2020-03-29T22:45:00",
+      "source": "watoday.com.au",
+      "headline": "8 @ eight : ASX bracing for another volatile week",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.watoday.com.au/business/markets/8-eight-asx-bracing-for-another-volatile-week-20200330-p54f48.html"
+    },
+    {
+      "timestamp": "2020-03-29T22:15:00",
+      "source": "brisbanetimes.com.au",
+      "headline": "8 @ eight : ASX bracing for another volatile week",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.brisbanetimes.com.au/business/markets/8-eight-asx-bracing-for-another-volatile-week-20200330-p54f48.html"
+    },
+    {
+      "timestamp": "2020-03-29T21:00:00",
+      "source": "marketoracle.co.uk",
+      "headline": "Fed President Declare :  No End in Our Ability to Print Money … and Congress Has Told Us To . :: The Market Oracle ::",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://www.marketoracle.co.uk/Article66859.html"
+    },
+    {
+      "timestamp": "2020-03-29T23:00:00",
+      "source": "marketoracle.co.uk",
+      "headline": "Fed President Declare :  No End in Our Ability to Print Money … and Congress Has Told Us To . :: The Market Oracle ::",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://marketoracle.co.uk/Article66859.html"
+    }
+  ]
+}

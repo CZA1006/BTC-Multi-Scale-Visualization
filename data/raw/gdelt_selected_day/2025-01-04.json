@@ -1,0 +1,192 @@
+{
+  "date": "2025-01-04",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-04T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T15:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-04T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "3 crypto billionaires were the biggest net worth gainers during the market stellar rally in 2024",
+    "A user manual to certifying the presidential election",
+    "How Congress will certify Trump Electoral College victory on Jan . 6",
+    "Fox News Top 13  Moment For 2024",
+    "How podcasts changed the world in 2024 - Washington Examiner"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-04T03:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "3 crypto billionaires were the biggest net worth gainers during the market stellar rally in 2024",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/3-crypto-billionaires-were-biggest-212312547.html"
+    },
+    {
+      "timestamp": "2025-01-04T13:00:00",
+      "source": "aol.com",
+      "headline": "A user manual to certifying the presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/user-manual-certifying-presidential-election-050234598.html"
+    },
+    {
+      "timestamp": "2025-01-04T14:15:00",
+      "source": "durangoherald.com",
+      "headline": "How Congress will certify Trump Electoral College victory on Jan . 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.durangoherald.com/articles/how-congress-will-certify-trumps-electoral-college-victory-on-jan-6/"
+    },
+    {
+      "timestamp": "2025-01-04T04:30:00",
+      "source": "crooksandliars.com",
+      "headline": "Fox News Top 13  Moment For 2024",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://crooksandliars.com/2025/01/fox-news-top-13-moments-2024"
+    },
+    {
+      "timestamp": "2025-01-04T16:00:00",
+      "source": "washingtonexaminer.com",
+      "headline": "How podcasts changed the world in 2024 - Washington Examiner",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/news/3255010/how-podcasts-changed-the-world-2024/"
+    },
+    {
+      "timestamp": "2025-01-04T02:00:00",
+      "source": "unionleader.com",
+      "headline": "Stocks surged in 2024 even as Americans fretted over the economy",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.unionleader.com/news/business/stocks-surged-in-2024-even-as-americans-fretted-over-the-economy/article_f18c2e20-c8ab-11ef-a5e3-9fb0c219d13b.html"
+    },
+    {
+      "timestamp": "2025-01-04T20:30:00",
+      "source": "aol.com",
+      "headline": "Carville reflects on failed prediction that Harris would defeat Trump :  Very depressing",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/carville-reflects-failed-prediction-harris-183935942.html"
+    },
+    {
+      "timestamp": "2025-01-04T15:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "How Congress will certify Donald Trump Electoral College victory on January 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/how-congress-will-certify-donald-trumps-electoral-college-victory-on-january-6/articleshow/116945990.cms"
+    },
+    {
+      "timestamp": "2025-01-04T15:15:00",
+      "source": "aol.com",
+      "headline": "How Congress will certify Trump Electoral College victory on Jan . 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/congress-certify-trumps-electoral-college-134631908.html"
+    },
+    {
+      "timestamp": "2025-01-04T15:30:00",
+      "source": "apnews.com",
+      "headline": "How Congress will certify Trump Electoral College victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://apnews.com/article/congress-joint-session-trump-harris-certification-36d63d51027cce9c0a73a42c408ca6f3"
+    },
+    {
+      "timestamp": "2025-01-04T22:30:00",
+      "source": "wmur.com",
+      "headline": "Congressional Joint Session for Electoral Votes",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wmur.com/article/congressional-joint-session-electoral-votes-2024/63336699"
+    },
+    {
+      "timestamp": "2025-01-04T15:30:00",
+      "source": "theweek.in",
+      "headline": "How Congress will certify Trump Electoral College victory on January 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theweek.in/wire-updates/international/2025/01/04/fgn27-us-congress-explainer.html"
+    },
+    {
+      "timestamp": "2025-01-04T15:00:00",
+      "source": "clickorlando.com",
+      "headline": "How Congress will certify Trump Electoral College victory on Jan . 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.clickorlando.com/news/politics/2025/01/04/how-congress-will-certify-trumps-electoral-college-victory-on-jan-6/"
+    },
+    {
+      "timestamp": "2025-01-04T15:45:00",
+      "source": "news-gazette.com",
+      "headline": "How Congress will certify Trump Electoral College victory on Jan . 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.news-gazette.com/news/nation-world/how-congress-will-certify-trumps-electoral-college-victory-on-jan-6/article_74aa6625-b474-525b-bf71-6f51ade18d83.html"
+    },
+    {
+      "timestamp": "2025-01-04T14:15:00",
+      "source": "wsls.com",
+      "headline": "How Congress will certify Trump Electoral College victory on Jan . 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wsls.com/news/politics/2025/01/04/how-congress-will-certify-trumps-electoral-college-victory-on-jan-6/"
+    }
+  ]
+}

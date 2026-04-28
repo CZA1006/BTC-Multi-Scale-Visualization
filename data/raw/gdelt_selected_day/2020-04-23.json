@@ -1,0 +1,197 @@
+{
+  "date": "2020-04-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 4,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-23T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-23T20:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "$70 Million in BitMEX Shorts Burned as Bitcoin Erupts 10 % to $7 , 700",
+    "Bitcoin Halving Is Time for BTC to  Shine , Mike Novogratz Says",
+    "Bloomberg Predicts Bitcoin to Coast Off the Coronavirus in the Long Run",
+    "Bitcoin Holders Are Accumulating at a Rapid Pace , and That Huge for Prices",
+    "Ethereum Prepares to Take $200 as Bulls Send Crypto Flying"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-23T15:15:00",
+      "source": "newsbtc.com",
+      "headline": "$70 Million in BitMEX Shorts Burned as Bitcoin Erupts 10 % to $7 , 700",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/23/70-million-in-bitmex-shorts-burned-as-bitcoin-erupts-10-to-7700/"
+    },
+    {
+      "timestamp": "2020-04-23T17:00:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Halving Is Time for BTC to  Shine , Mike Novogratz Says",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-halving-shine-mike-novogratz/"
+    },
+    {
+      "timestamp": "2020-04-23T14:45:00",
+      "source": "insidebitcoins.com",
+      "headline": "Bloomberg Predicts Bitcoin to Coast Off the Coronavirus in the Long Run",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/bloomberg-predicts-bitcoin-to-coast-off-the-coronavirus-in-the-long-run/258279"
+    },
+    {
+      "timestamp": "2020-04-23T15:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Holders Are Accumulating at a Rapid Pace , and That Huge for Prices",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/23/bitcoin-holders-are-accumulating-rapid-pace-and-thats-huge-for-prices/"
+    },
+    {
+      "timestamp": "2020-04-23T20:15:00",
+      "source": "newsbtc.com",
+      "headline": "Ethereum Prepares to Take $200 as Bulls Send Crypto Flying",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/23/ethereum-looks-to-recapture-200-as-bulls-send-crypto-flying/"
+    },
+    {
+      "timestamp": "2020-04-23T20:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Weekly Candle Wicks Are Telling of Explosive Impulse Upward",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/23/bitcoin-weekly-candle-wicks-are-telling-of-explosive-impulse-upward/"
+    },
+    {
+      "timestamp": "2020-04-23T13:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "First Mover : Bitcoin Catches Almighty Dollar Even During 2020 Dash for Cash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/first-mover-bitcoin-catches-almighty-115556942.html"
+    },
+    {
+      "timestamp": "2020-04-23T15:30:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Bitcoin Catches Almighty Dollar Even During 2020 Dash for Cash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-bitcoin-catches-almighty-dollar-even-during-2020s-dash-for-cash"
+    },
+    {
+      "timestamp": "2020-04-23T06:00:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin Price Analysis : BTC / USD bearish scenario , the free - fall to $6 , 000 before halving",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-analysis-btc-usd-bearish-scenario-the-free-fall-to-6-000-before-halving-202004230405"
+    },
+    {
+      "timestamp": "2020-04-23T18:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Jumps to Highest Level Since March Coronavirus Crash",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-jumps-highest-level-since-171123223.html"
+    },
+    {
+      "timestamp": "2020-04-23T12:00:00",
+      "source": "augustafreepress.com",
+      "headline": "Bitcoin and COVID - 19 : Augusta Free Press",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://augustafreepress.com/bitcoin-and-covid-19/"
+    },
+    {
+      "timestamp": "2020-04-23T17:00:00",
+      "source": "coinspeaker.com",
+      "headline": "PayPal , Square Stocks Up 7 % and 6 %, Massive Stimulus Bill Headed to Congress",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/paypal-square-stocks-stimulus-bill/"
+    },
+    {
+      "timestamp": "2020-04-23T10:15:00",
+      "source": "thenextweb.com",
+      "headline": "Satoshi Nakaboto :  $1 , 200 Bitcoin purchases hit crypto exchanges , equivalent of stimulus",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://thenextweb.com/hardfork/2020/04/23/satoshi-nakaboto-1200-bitcoin-purchases-hit-crypto-exchanges-equivalent-of-stimulus/"
+    },
+    {
+      "timestamp": "2020-04-23T19:00:00",
+      "source": "fxstreet.com",
+      "headline": "Crypto Today : Bitcoin bulls making critical break above $7500 barrier",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-bulls-making-critical-break-above-7500-barrier-202004231820"
+    },
+    {
+      "timestamp": "2020-04-23T20:15:00",
+      "source": "in.reuters.com",
+      "headline": "Fed to disclose borrower names , loan amounts for some crisis facilities",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/us-health-coronavirus-fed-disclosure/fed-to-disclose-borrowers-names-loan-amounts-for-some-crisis-facilities-idINKCN2253BS"
+    }
+  ]
+}

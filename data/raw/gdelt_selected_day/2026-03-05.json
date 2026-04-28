@@ -1,0 +1,192 @@
+{
+  "date": "2026-03-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 1,
+  "theme_count_election": 1,
+  "theme_count_war": 11,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2026-03-05T01:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T02:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-05T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump Strikes Iran Amid Nuclear Talks | Arms Control Association",
+    "How close is Iran to a nuclear bomb ? Satellite images reveal scale of damage from US - Israeli strikes",
+    "Pi Network , Dogecoin , and Bitcoin Prices are Rising : Is this the Start of a Crypto Bull Run ?",
+    "Crypto Stocks Soar as US Regulators Push Ahead",
+    "We attacked because Iran nuclear programme would have been  immune within month : Netanyahu"
+  ],
+  "articles": [
+    {
+      "timestamp": "2026-03-05T02:00:00",
+      "source": "armscontrol.org",
+      "headline": "Trump Strikes Iran Amid Nuclear Talks | Arms Control Association",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.armscontrol.org/act/2026-03/news/trump-strikes-iran-amid-nuclear-talks"
+    },
+    {
+      "timestamp": "2026-03-05T17:30:00",
+      "source": "aol.co.uk",
+      "headline": "How close is Iran to a nuclear bomb ? Satellite images reveal scale of damage from US - Israeli strikes",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aol.co.uk/articles/close-iran-nuclear-bomb-satellite-165739595.html"
+    },
+    {
+      "timestamp": "2026-03-05T07:45:00",
+      "source": "banklesstimes.com",
+      "headline": "Pi Network , Dogecoin , and Bitcoin Prices are Rising : Is this the Start of a Crypto Bull Run ?",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.banklesstimes.com/articles/2026/03/05/pi-network-dogecoin-and-bitcoin-prices-are-rising-is-this-the-start-of-a-crypto-bull-run/"
+    },
+    {
+      "timestamp": "2026-03-05T07:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto Stocks Soar as US Regulators Push Ahead",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/crypto-stocks-rally-trump-regulation-bitcoin-surge"
+    },
+    {
+      "timestamp": "2026-03-05T01:30:00",
+      "source": "dailyexcelsior.com",
+      "headline": "We attacked because Iran nuclear programme would have been  immune within month : Netanyahu",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailyexcelsior.com/we-attacked-because-irans-nuclear-programme-would-have-been-immune-within-months-netanyahu-2/"
+    },
+    {
+      "timestamp": "2026-03-05T23:45:00",
+      "source": "newsbtc.com",
+      "headline": "XRP To Pass Bitcoin , US Veteran Claims Amid War Forecast",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/xrp-to-pass-bitcoin-us-veteran-claims-amid-war-forecast/"
+    },
+    {
+      "timestamp": "2026-03-05T02:45:00",
+      "source": "insidenova.com",
+      "headline": "War in the Middle East : latest developments",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.insidenova.com/news/national/war-in-the-middle-east-latest-developments/article_6c84bee3-dba4-5771-8321-8586edd19cd5.html"
+    },
+    {
+      "timestamp": "2026-03-05T05:00:00",
+      "source": "thedailystar.net",
+      "headline": "War in the Middle East : latest developments",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thedailystar.net/news/world/middle-east/news/war-the-middle-east-latest-developments-4121276"
+    },
+    {
+      "timestamp": "2026-03-05T05:45:00",
+      "source": "punchng.com",
+      "headline": "Latest Middle East War Developments : US , Israel & Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://punchng.com/us-israel-iran-war-latest-developments-in-the-middle-east/"
+    },
+    {
+      "timestamp": "2026-03-05T02:30:00",
+      "source": "rferl.org",
+      "headline": "Attacks On Iran To Continue As US Senate Blocks Bid To Limit Trump War Authority",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.rferl.org/a/iran-war-senate-war-powers-trump-israel/33695704.html"
+    },
+    {
+      "timestamp": "2026-03-05T21:00:00",
+      "source": "time.com",
+      "headline": "Trump War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://time.com/7382697/trump-iran-war/"
+    },
+    {
+      "timestamp": "2026-03-05T01:30:00",
+      "source": "pjmedia.com",
+      "headline": "The Call That Altered the History of the Middle East",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://pjmedia.com/rick-moran/2026/03/04/the-call-that-altered-the-history-of-the-middle-east-n4950237"
+    },
+    {
+      "timestamp": "2026-03-05T06:00:00",
+      "source": "trend.az",
+      "headline": "Iran National Medical Emergency Organization announces victim numbers",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.trend.az/iran/4160992.html"
+    },
+    {
+      "timestamp": "2026-03-05T09:30:00",
+      "source": "firstpost.com",
+      "headline": "Bitcoin surges : Up 5 % in 24 hours , holds firm above $72 , 000 as ETF inflows boost sentiment – Firstpost",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.firstpost.com/business/bitcoin-surges-5-in-24-hours-holds-firm-above-72000-as-etf-inflows-boost-sentiment-13986436.html"
+    },
+    {
+      "timestamp": "2026-03-05T01:00:00",
+      "source": "arabic.euronews.com",
+      "headline": "شكوك إسرائيلية بشأن اتصالات محتملة بين واشنطن وطهران .. وكاتس : ضربة إيران قُدمت عن موعدها",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://arabic.euronews.com/2026/03/04/israeli-suspicions-over-possible-contacts-between-washington-and-tehran-katz-strike-on"
+    }
+  ]
+}

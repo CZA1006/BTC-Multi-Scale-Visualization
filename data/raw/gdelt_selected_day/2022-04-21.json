@@ -1,0 +1,197 @@
+{
+  "date": "2022-04-21",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-21T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T08:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-21T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "US sanctions crypto miner BitRiver for Russian operations",
+    "Interview with Ivan Miklos , Former Slovak Finance Minister and Economic Adviser to Ukraine - KyivPost",
+    "War & Cryptocurrency - Russia Options to Use It in Ukraine Appear Limited",
+    "Cryptocurrency miner Transkapitalbank in latest Russian sanctions targets",
+    "The US has sanctioned crypto - mining firm Bitriver to prevent Russia from bypassing energy export bans"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-21T09:00:00",
+      "source": "siliconrepublic.com",
+      "headline": "US sanctions crypto miner BitRiver for Russian operations",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.siliconrepublic.com/business/us-sanctions-bitriver-crypto-mining-russia-ukraine"
+    },
+    {
+      "timestamp": "2022-04-21T15:30:00",
+      "source": "kyivpost.com",
+      "headline": "Interview with Ivan Miklos , Former Slovak Finance Minister and Economic Adviser to Ukraine - KyivPost",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.kyivpost.com/ukraine-politics/interview-with-ivan-miklos-former-slovak-finance-minister-and-economic-adviser-to-ukraine.html"
+    },
+    {
+      "timestamp": "2022-04-21T13:00:00",
+      "source": "forbes.com",
+      "headline": "War & Cryptocurrency - Russia Options to Use It in Ukraine Appear Limited",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/erictegler/2022/04/21/war--cryptocurrencyrussias-options-to-use-it-in-ukraine-appear-limited/"
+    },
+    {
+      "timestamp": "2022-04-21T05:45:00",
+      "source": "9news.com.au",
+      "headline": "Cryptocurrency miner Transkapitalbank in latest Russian sanctions targets",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.9news.com.au/world/cryptocurrency-miner-in-latest-russian-sanctions-targets/671bde0f-0596-45c0-855f-bfbb19ef578d"
+    },
+    {
+      "timestamp": "2022-04-21T07:00:00",
+      "source": "msn.com",
+      "headline": "The US has sanctioned crypto - mining firm Bitriver to prevent Russia from bypassing energy export bans",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/money/markets/the-us-has-sanctioned-crypto-mining-firm-bitriver-to-prevent-russia-from-bypassing-energy-export-bans/ar-AAWr4iJ"
+    },
+    {
+      "timestamp": "2022-04-21T19:00:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Russia Central Bank Denies Default Risk and Promotes Digital Ruble",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/bonds/russia-debt-default-central-bank-digital-ruble-international-payments-2022-4"
+    },
+    {
+      "timestamp": "2022-04-21T08:00:00",
+      "source": "markets.businessinsider.com",
+      "headline": "US Sanctions Russian Bitcoin Miner to Farther Punish Putin for Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/stocks/us-sanctions-russian-bitcoin-miner-farther-punish-putin-ukraine-war-2022-4"
+    },
+    {
+      "timestamp": "2022-04-21T06:30:00",
+      "source": "moneyweb.co.za",
+      "headline": "G - 7 to squeeze Russia , Kremlin eyes cyberattacks : latest",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.moneyweb.co.za/news/international/g-7-to-squeeze-russia-kremlin-eyes-cyberattacks-latest/"
+    },
+    {
+      "timestamp": "2022-04-21T12:15:00",
+      "source": "marketwatch.com",
+      "headline": "Crypto Exchange Binance Bows to European Sanctions and Limits Russian Services",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/articles/crypto-exchange-binance-sanctions-russia-51650541486"
+    },
+    {
+      "timestamp": "2022-04-21T04:00:00",
+      "source": "mysanantonio.com",
+      "headline": "Live Updates | Russians fight in streets of Ukrainian town",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.mysanantonio.com/news/article/Live-Updates-Lviv-mayor-says-5-missiles-struck-17087324.php"
+    },
+    {
+      "timestamp": "2022-04-21T08:45:00",
+      "source": "seattlepi.com",
+      "headline": "Live updates | German exports to Russia plunge over invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.seattlepi.com/news/article/Live-updates-Ukraine-Russia-vying-for-control-17115800.php"
+    },
+    {
+      "timestamp": "2022-04-21T08:45:00",
+      "source": "startribune.com",
+      "headline": "Live updates | German exports to Russia plunge over invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/live-updates-german-exports-to-russia-plunge-over-invasion/600166630/"
+    },
+    {
+      "timestamp": "2022-04-21T08:45:00",
+      "source": "timesunion.com",
+      "headline": "Live updates | German exports to Russia plunge over invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.timesunion.com/news/article/Live-updates-Ukraine-Russia-vying-for-control-17115800.php"
+    },
+    {
+      "timestamp": "2022-04-21T09:15:00",
+      "source": "omaha.com",
+      "headline": "Live updates | German exports to Russia plunge over invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/national/live-updates-german-exports-to-russia-plunge-over-invasion/article_ed1f8714-c61f-5e76-965d-6000ccd8783e.html"
+    },
+    {
+      "timestamp": "2022-04-21T09:30:00",
+      "source": "houstonchronicle.com",
+      "headline": "Live updates | Ukraine demands corridor for Mariupol holdout",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.houstonchronicle.com/news/article/Live-updates-Ukraine-Russia-vying-for-control-17115800.php"
+    }
+  ]
+}

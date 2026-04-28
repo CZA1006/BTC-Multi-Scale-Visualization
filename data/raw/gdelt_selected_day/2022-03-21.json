@@ -1,0 +1,192 @@
+{
+  "date": "2022-03-21",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-21T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T16:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-21T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russian sanctions : Some questions and answers | VOX , CEPR Policy Portal",
+    "Is China Helping Russia Hide Money ?",
+    "Russian sanctions over Ukraine grow , Biden to talk to Xi",
+    "Russian troops stalled outside Kyiv , British intelligence says",
+    "National Strategic Military Implication MIT Researcher Issues Surprise U . S . Bitcoin Warning Amid Crypto Price Crash"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-21T13:30:00",
+      "source": "voxeu.org",
+      "headline": "Russian sanctions : Some questions and answers | VOX , CEPR Policy Portal",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://voxeu.org/article/russian-sanctions-some-questions-and-answers"
+    },
+    {
+      "timestamp": "2022-03-21T04:45:00",
+      "source": "foreignaffairs.com",
+      "headline": "Is China Helping Russia Hide Money ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.foreignaffairs.com/articles/ukraine/2022-03-21/china-helping-russia-hide-money"
+    },
+    {
+      "timestamp": "2022-03-21T12:15:00",
+      "source": "euractiv.com",
+      "headline": "Russian sanctions over Ukraine grow , Biden to talk to Xi",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.euractiv.com/section/global-europe/news/russian-sanctions-over-ukraine-grow-biden-to-talk-to-xi/"
+    },
+    {
+      "timestamp": "2022-03-21T09:15:00",
+      "source": "japantimes.co.jp",
+      "headline": "Russian troops stalled outside Kyiv , British intelligence says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/03/21/world/ukraine-mariupol-humanitarian/"
+    },
+    {
+      "timestamp": "2022-03-21T23:45:00",
+      "source": "forbes.com",
+      "headline": "National Strategic Military Implication MIT Researcher Issues Surprise U . S . Bitcoin Warning Amid Crypto Price Crash",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2022/03/21/national-strategic-military-implications-mit-researcher-issues-surprise-us-bitcoin-warning-amid-crypto-price-crash/"
+    },
+    {
+      "timestamp": "2022-03-21T16:45:00",
+      "source": "stltoday.com",
+      "headline": "Live updates : Chess champion banned for supporting Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/news/national/live-updates-chess-champion-banned-for-supporting-putin/article_2fcde020-6607-5195-b359-ad3368209e0f.html"
+    },
+    {
+      "timestamp": "2022-03-21T17:45:00",
+      "source": "greensboro.com",
+      "headline": "Live updates : Chess champion banned for supporting Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://greensboro.com/news/national/live-updates-chess-champion-banned-for-supporting-putin/article_bb947fe2-6e6b-58d8-b2fa-ddbb914252e7.html"
+    },
+    {
+      "timestamp": "2022-03-21T18:00:00",
+      "source": "omaha.com",
+      "headline": "Live updates : Chess champion banned for supporting Putin | National News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/national/live-updates-chess-champion-banned-for-supporting-putin/article_eaef4638-9576-5f91-b22c-67996819b8b9.amp.html"
+    },
+    {
+      "timestamp": "2022-03-21T17:00:00",
+      "source": "omaha.com",
+      "headline": "Live updates : Chess champion banned for supporting Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/national/live-updates-chess-champion-banned-for-supporting-putin/article_eaef4638-9576-5f91-b22c-67996819b8b9.html"
+    },
+    {
+      "timestamp": "2022-03-21T18:15:00",
+      "source": "madison.com",
+      "headline": "Live updates : Chess champion banned for supporting Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/news/national/live-updates-chess-champion-banned-for-supporting-putin/article_2e335dc7-48a7-508f-a5ac-26c1f37c271e.html"
+    },
+    {
+      "timestamp": "2022-03-21T16:45:00",
+      "source": "tulsaworld.com",
+      "headline": "Live updates : Chess champion banned for supporting Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tulsaworld.com/news/national/live-updates-chess-champion-banned-for-supporting-putin/article_61e242a6-df57-5464-95ec-43f7ca7f5d7d.html"
+    },
+    {
+      "timestamp": "2022-03-21T16:45:00",
+      "source": "siouxcityjournal.com",
+      "headline": "Live updates : Chess champion banned for supporting Putin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://siouxcityjournal.com/news/national/live-updates-chess-champion-banned-for-supporting-putin/article_f9199cf4-495c-5ae0-8fb0-864d44527a67.html"
+    },
+    {
+      "timestamp": "2022-03-21T16:30:00",
+      "source": "mysanantonio.com",
+      "headline": "Live updates : Russia aims new missile at important targets",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.mysanantonio.com/business/article/Live-updates-At-least-4-killed-overnight-in-Kyiv-17017007.php"
+    },
+    {
+      "timestamp": "2022-03-21T19:15:00",
+      "source": "thestreet.com",
+      "headline": "Crypto Price Check : War , Volatility and the Fed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/investing/cryptocurrency/crypto-price-check-war-volatility-and-the-fed"
+    },
+    {
+      "timestamp": "2022-03-21T23:30:00",
+      "source": "startribune.com",
+      "headline": "Live updates : Zelenskyy hails protesters confronting troops",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.startribune.com/live-updates-zelenskyy-hails-protesters-confronting-troops/600157925/"
+    }
+  ]
+}

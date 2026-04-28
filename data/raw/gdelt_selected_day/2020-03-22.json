@@ -1,0 +1,212 @@
+{
+  "date": "2020-03-22",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 3,
+  "theme_count_macro": 1,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-22T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-22T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto Tidbits : Bitcoin Surges to $7 , 000 , COVID - 19 Outbreak Brings Economy to Standstill , Ethereum DeFi Recovers",
+    "Bitcoin Identity Crisis ; Dark Web Déjà Vu",
+    "Bitcoin Bulls Roar as U . S . Politician Proposes  Two $1 Trillion Coin Idea",
+    "What Sent Crypto Plunging 50 % Lower ? Top CEO Weighs In",
+    "Bank of China Continues Anti - Crypto Narrative on WeChat"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-22T02:30:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Bitcoin Surges to $7 , 000 , COVID - 19 Outbreak Brings Economy to Standstill , Ethereum DeFi Recovers",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/22/crypto-tidbits-bitcoin-surges-to-7000-covid-19-outbreak-brings-economy-to-standstill-ethereum-defi-recovers/"
+    },
+    {
+      "timestamp": "2020-03-22T13:45:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Identity Crisis ; Dark Web Déjà Vu",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2020/03/22/bitcoins-identity-crisis-dark-web-dj-vu/"
+    },
+    {
+      "timestamp": "2020-03-22T11:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Bulls Roar as U . S . Politician Proposes  Two $1 Trillion Coin Idea",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/22/bitcoin-bulls-roar-us-politician-propose-trillion-dollar-coin-idea/"
+    },
+    {
+      "timestamp": "2020-03-22T02:30:00",
+      "source": "newsbtc.com",
+      "headline": "What Sent Crypto Plunging 50 % Lower ? Top CEO Weighs In",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/21/what-sent-crypto-plunging-50-lower-top-ceo-weighs-in/"
+    },
+    {
+      "timestamp": "2020-03-22T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bank of China Continues Anti - Crypto Narrative on WeChat",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bank-of-china-continues-anti-crypto-narrative-on-wechat"
+    },
+    {
+      "timestamp": "2020-03-22T20:15:00",
+      "source": "marketwatch.com",
+      "headline": "Coronavirus crash puts portfolios to the test plus other top investing tips",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/guid/4fdd1697-56c7-46a4-9481-c2344565e2b7"
+    },
+    {
+      "timestamp": "2020-03-22T10:30:00",
+      "source": "hani.co.kr",
+      "headline": "금리 내리고 재정 풀어도 대폭락 … 베어마겟돈  시작됐나 : 금융 · 증권 : 경제 : 뉴스 : 한겨레",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.hani.co.kr/arti/economy/finance/933656.html"
+    },
+    {
+      "timestamp": "2020-03-22T01:45:00",
+      "source": "zerohedge.com",
+      "headline": "The Fed Is A One - Trick Pony",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/economics/fed-one-trick-pony"
+    },
+    {
+      "timestamp": "2020-03-22T12:00:00",
+      "source": "businessinsider.com",
+      "headline": "Stock market crash : Why coronavirus could sink S & P 500 to its 2009 low",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.com/stock-market-crash-coronavirus-risks-financial-crisis-low-albert-edwards-2020-3"
+    },
+    {
+      "timestamp": "2020-03-22T03:15:00",
+      "source": "finance.sina.com.cn",
+      "headline": "美股史上第六次熔断会再现吗 ？",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://finance.sina.com.cn/stock/relnews/us/2020-03-22/doc-iimxxsth0925325.shtml"
+    },
+    {
+      "timestamp": "2020-03-22T17:45:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Russia Seeks to Halt Crypto Sales By This Coming Spring",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/russia-looks-to-ban-crypto-this-coming-spring/"
+    },
+    {
+      "timestamp": "2020-03-22T01:15:00",
+      "source": "news.mingpao.com",
+      "headline": "大量發債推高利率 恐抵消減稅刺激作用 - 20200322 - 經濟",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.mingpao.com/pns/%E7%B6%93%E6%BF%9F/article/20200322/s00004/1584815405965/%E5%A4%A7%E9%87%8F%E7%99%BC%E5%82%B5%E6%8E%A8%E9%AB%98%E5%88%A9%E7%8E%87-%E6%81%90%E6%8A%B5%E6%B6%88%E6%B8%9B%E7%A8%85%E5%88%BA%E6%BF%80%E4%BD%9C%E7%94%A8"
+    },
+    {
+      "timestamp": "2020-03-22T22:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Down 12 % Since New Year , While S & P 500 Down 28 . 5 %",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-down-sp-500/"
+    },
+    {
+      "timestamp": "2020-03-22T08:15:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Beware the Ides of March",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.jamaicaobserver.com/article/20200322/ARTICLE/200329908/1442"
+    },
+    {
+      "timestamp": "2020-03-22T09:00:00",
+      "source": "news.sina.com.tw",
+      "headline": "美國經濟面臨黑暗時刻 ： 股市跌跌不休 失業人數激增",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.sina.com.tw/article/20200322/34612954.html"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "date": "2022-05-01",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 11,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-01T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T03:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-01T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine Latest : Pelosi in Kyiv ; Moscow Tightens Grip on Kherson",
+    "US speaker Nancy Pelosi visits Ukraine , meets President Zelenskyy",
+    "US speaker Nancy Pelosi visits Ukraine , meets President Zelenskyy",
+    "Ukraine Latest : Pelosi in Kyiv ; Moscow Tightens Grip on Kherson",
+    "خبيرة اقتصادية روسية من الطراز الأول تهزم فكرة العقوبات الاقتصادية على بلادها .. بقلم : عبد الاله حسن محمد"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-01T08:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Ukraine Latest : Pelosi in Kyiv ; Moscow Tightens Grip on Kherson",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/ukraine-latest-pelosi-in-kyiv-moscow-tightens-grip-on-kherson-1.1759729"
+    },
+    {
+      "timestamp": "2022-05-01T12:00:00",
+      "source": "aljazeera.com",
+      "headline": "US speaker Nancy Pelosi visits Ukraine , meets President Zelenskyy",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/5/1/pelosi-visits-kyiv-meets-with-ukraine-president"
+    },
+    {
+      "timestamp": "2022-05-01T12:00:00",
+      "source": "msn.com",
+      "headline": "US speaker Nancy Pelosi visits Ukraine , meets President Zelenskyy",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/us-speaker-nancy-pelosi-visits-ukraine-meets-president-zelenskyy/ar-AAWNNJz"
+    },
+    {
+      "timestamp": "2022-05-01T10:45:00",
+      "source": "bloombergquint.com",
+      "headline": "Ukraine Latest : Pelosi in Kyiv ; Moscow Tightens Grip on Kherson",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bloombergquint.com/business/ukraine-latest-u-s-speaker-pelosi-meets-with-zelenskiy-in-kyiv"
+    },
+    {
+      "timestamp": "2022-05-01T09:45:00",
+      "source": "sudanile.com",
+      "headline": "خبيرة اقتصادية روسية من الطراز الأول تهزم فكرة العقوبات الاقتصادية على بلادها .. بقلم : عبد الاله حسن محمد",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://sudanile.com/%D8%AE%D8%A8%D9%8A%D8%B1%D8%A9-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9-%D8%B1%D9%88%D8%B3%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%B7%D8%B1%D8%A7%D8%B2-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D8%AA/"
+    },
+    {
+      "timestamp": "2022-05-01T05:15:00",
+      "source": "koreatimes.co.kr",
+      "headline": "Russia strikes Ukraine east , south ; civilians evacuated from Mariupol plant",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.koreatimes.co.kr/www/world/2022/05/501_328299.html"
+    },
+    {
+      "timestamp": "2022-05-01T16:00:00",
+      "source": "businessinsider.co.za",
+      "headline": "China is working to protect its overseas assets amid fears US could impose Russia - style sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businessinsider.co.za/china-protection-overseas-assets-us-sanctions-russia-2022-5"
+    },
+    {
+      "timestamp": "2022-05-01T06:30:00",
+      "source": "durangoherald.com",
+      "headline": "Live updates l Blinken says US diplomats to visit Kyiv again",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.durangoherald.com/articles/live-updates-l-blinken-says-us-diplomats-to-visit-kyiv-again/"
+    },
+    {
+      "timestamp": "2022-05-01T03:30:00",
+      "source": "menafn.com",
+      "headline": "Russia Hits West - Supplied Arms In Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1104139754/Russia-Hits-West-Supplied-Arms-In-Ukraine&source=25"
+    },
+    {
+      "timestamp": "2022-05-01T03:45:00",
+      "source": "menafn.com",
+      "headline": "Russia Hits West - Supplied Arms In Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1104139754/Russia-Hits-West-Supplied-Arms-In-Ukraine"
+    },
+    {
+      "timestamp": "2022-05-01T03:30:00",
+      "source": "menafn.com",
+      "headline": "Russia Hits West - Supplied Arms In Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1104139754/Russia-Hits-West-Supplied-Arms-In-Ukraine&source=24"
+    },
+    {
+      "timestamp": "2022-05-01T03:30:00",
+      "source": "menafn.com",
+      "headline": "Russia Hits West - Supplied Arms In Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://menafn.com/1104139754/Russia-Hits-West-Supplied-Arms-In-Ukraine&source=22"
+    },
+    {
+      "timestamp": "2022-05-01T01:45:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Kyiv police find bound men in Bucha as Russia continues eastern assault as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-kyiv-police-find-bound-men-in-bucha-as-russia-continues-eastern-assault-as-it-happened/a-61643081"
+    },
+    {
+      "timestamp": "2022-05-01T23:00:00",
+      "source": "stltoday.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_933ce764-ce30-5073-a494-fd8070a29fd9.html"
+    },
+    {
+      "timestamp": "2022-05-01T23:45:00",
+      "source": "greensboro.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://greensboro.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_aeb1c6bd-2a3f-536c-ab2d-7fb794ebbe3a.html"
+    }
+  ]
+}

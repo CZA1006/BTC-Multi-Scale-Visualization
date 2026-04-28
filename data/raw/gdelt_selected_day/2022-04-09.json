@@ -1,0 +1,177 @@
+{
+  "date": "2022-04-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-09T01:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-09T02:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-09T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-09T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-09T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-09T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Binance ready to follow sanctions on Russian officials : Ukraine",
+    "4 Cryptocurrency update march 2022",
+    "Ive never paid with crypto before : How digital assets make a difference amid a war",
+    "Live Updates | Zelenskyy : Train station strike was war crime",
+    "Live Updates | Zelenskyy : Train station strike was war crime"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-09T21:00:00",
+      "source": "techstory.in",
+      "headline": "Binance ready to follow sanctions on Russian officials : Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://techstory.in/binance-ready-to-follow-sanctions-on-russian-officials-ukraine/"
+    },
+    {
+      "timestamp": "2022-04-09T09:15:00",
+      "source": "trend-online.com",
+      "headline": "4 Cryptocurrency update march 2022",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.trend-online.com/cryptocurrency/4-cryptocurrency-updates-2022/"
+    },
+    {
+      "timestamp": "2022-04-09T09:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Ive never paid with crypto before : How digital assets make a difference amid a war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/i-ve-never-paid-with-crypto-before-how-digital-assets-make-a-difference-amid-a-war"
+    },
+    {
+      "timestamp": "2022-04-09T01:00:00",
+      "source": "startribune.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/live-updates-zelenskyy-train-station-strike-was-war-crime/600163229/"
+    },
+    {
+      "timestamp": "2022-04-09T02:45:00",
+      "source": "lancasteronline.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://lancasteronline.com/business/nation/live-updates-zelenskyy-train-station-strike-was-war-crime/article_9e03b3c5-1a0f-5b36-bf0e-a3b10706576c.html"
+    },
+    {
+      "timestamp": "2022-04-09T02:00:00",
+      "source": "siouxcityjournal.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://siouxcityjournal.com/news/national/live-updates-zelenskyy-train-station-strike-was-war-crime/article_f84193c3-5119-524c-85a9-b409c4745122.html"
+    },
+    {
+      "timestamp": "2022-04-09T02:30:00",
+      "source": "missoulian.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://missoulian.com/news/national/live-updates-zelenskyy-train-station-strike-was-war-crime/article_4cf448b9-4225-5f4c-b2a6-9c2bfdfad6c1.html"
+    },
+    {
+      "timestamp": "2022-04-09T02:45:00",
+      "source": "bakersfield.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bakersfield.com/ap/news/live-updates-zelenskyy-train-station-strike-was-war-crime/article_2454e63e-ba6a-5094-8cd1-5fb91a6d92e0.html"
+    },
+    {
+      "timestamp": "2022-04-09T02:45:00",
+      "source": "wandtv.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wandtv.com/news/national/live-updates-zelenskyy-train-station-strike-was-war-crime/article_a26d72e9-32a9-5911-a092-6799b4919070.html"
+    },
+    {
+      "timestamp": "2022-04-09T01:30:00",
+      "source": "idahopress.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.idahopress.com/news/national/live-updates-zelenskyy-train-station-strike-was-war-crime/article_2a3e51fc-dfe1-54a9-b76d-5b080f639303.html"
+    },
+    {
+      "timestamp": "2022-04-09T21:45:00",
+      "source": "leadertelegram.com",
+      "headline": "Russia war in Ukraine : Key events and how it unfolding | World",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.leadertelegram.com/news/world/russia-s-war-in-ukraine-key-events-and-how-it-s-unfolding/article_249ebcbc-c8f6-5725-b13c-77d1d4956182.html"
+    },
+    {
+      "timestamp": "2022-04-09T20:00:00",
+      "source": "mdjonline.com",
+      "headline": "Russia war in Ukraine : Key events and how it unfolding | Tribune",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.mdjonline.com/tribune/politics_and_government/russia-s-war-in-ukraine-key-events-and-how-it-s-unfolding/article_a5954244-5e88-51b4-b1b1-f9929eb268b8.html"
+    },
+    {
+      "timestamp": "2022-04-09T02:15:00",
+      "source": "wfmj.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wfmj.com/story/46249867/live-updates-zelenskyy-train-station-strike-was-war-crime"
+    },
+    {
+      "timestamp": "2022-04-09T08:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Russia  War in Ukraine : Key Events and How It Unfolding",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/russia-s-war-in-ukraine-key-events-and-how-it-s-unfolding-1.1749990"
+    },
+    {
+      "timestamp": "2022-04-09T01:30:00",
+      "source": "hjnews.com",
+      "headline": "Live Updates | Zelenskyy : Train station strike was war crime",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.hjnews.com/world/live-updates-zelenskyy-train-station-strike-was-war-crime/article_eaf77fc2-94c9-5042-aa6f-2b8577ca482a.html"
+    }
+  ]
+}

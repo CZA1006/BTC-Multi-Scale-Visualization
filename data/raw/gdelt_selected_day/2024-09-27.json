@@ -1,0 +1,202 @@
+{
+  "date": "2024-09-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 1,
+  "theme_count_election": 12,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-27T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T04:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Second Gentleman Doug Emhoff Milwaukee visit Tuesday ; talk economy",
+    "Harris Holds Lead Over Trump In Election Betting Markets As Polls Show Tight Race In Swing States",
+    "Harris vs Trump : Who leading in the presidential polls",
+    "Trump Vs . Harris : As Vice President Builds Lead In Michigan And Inches Ahead In Pennsylvania , Pollster Says  Get - Out - The - Vote Strategie Crucial In Highly Competitive Race",
+    "Progressives Sound Alarm as Harris Courts Crypto Industry"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-27T11:45:00",
+      "source": "fox6now.com",
+      "headline": "Second Gentleman Doug Emhoff Milwaukee visit Tuesday ; talk economy",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.fox6now.com/news/second-gentleman-doug-emhoff-milwaukee-visit-tuesday-talk-economy"
+    },
+    {
+      "timestamp": "2024-09-27T12:45:00",
+      "source": "forbes.com",
+      "headline": "Harris Holds Lead Over Trump In Election Betting Markets As Polls Show Tight Race In Swing States",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/siladityaray/2024/09/27/harris-holds-lead-over-trump-in-election-betting-markets-as-polls-show-tight-race-in-swing-states/"
+    },
+    {
+      "timestamp": "2024-09-27T17:30:00",
+      "source": "independent.co.uk",
+      "headline": "Harris vs Trump : Who leading in the presidential polls",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/harris-trump-polls-tracker-latest-election-state-b2620143.html"
+    },
+    {
+      "timestamp": "2024-09-27T09:15:00",
+      "source": "benzinga.com",
+      "headline": "Trump Vs . Harris : As Vice President Builds Lead In Michigan And Inches Ahead In Pennsylvania , Pollster Says  Get - Out - The - Vote Strategie Crucial In Highly Competitive Race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/news/24/09/41062035/trump-vs-harris-as-vice-president-builds-lead-in-michigan-and-inches-ahead-in-pennsylvania-pollster"
+    },
+    {
+      "timestamp": "2024-09-27T11:15:00",
+      "source": "nakedcapitalism.com",
+      "headline": "Progressives Sound Alarm as Harris Courts Crypto Industry",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nakedcapitalism.com/2024/09/progressives-sound-alarm-as-harris-courts-crypto-industry.html"
+    },
+    {
+      "timestamp": "2024-09-27T15:00:00",
+      "source": "investmentnews.com",
+      "headline": "Bitcoin headed for one of its best Septembers ever",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.investmentnews.com/industry-news/bitcoin-headed-for-one-of-its-best-septembers-ever/257424"
+    },
+    {
+      "timestamp": "2024-09-27T08:30:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Hits $65K – Why Is $BTC Up Today ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-hits-65k-why-btc-today-3744622"
+    },
+    {
+      "timestamp": "2024-09-27T03:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "US Election : Kamala Harris leads Donald Trump in several battleground states , various polls say",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/us-election-kamala-harris-leads-donald-trump-in-several-battleground-states-various-polls-say/articleshow/113720801.cms"
+    },
+    {
+      "timestamp": "2024-09-27T00:00:00",
+      "source": "townhall.com",
+      "headline": "This Is How Much More Likely Trump Is Expected to Win In November Over Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://townhall.com/tipsheet/saraharnold/2024/09/26/new-poll-finds-trump-has-a-10-point-lead-n2645332"
+    },
+    {
+      "timestamp": "2024-09-27T04:15:00",
+      "source": "business-standard.com",
+      "headline": "US elections : Harris leads Trump in several battleground states , say polls",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.business-standard.com/world-news/us-elections-harris-leads-trump-in-several-battleground-states-say-polls-124092700092_1.html"
+    },
+    {
+      "timestamp": "2024-09-27T04:00:00",
+      "source": "tribuneindia.com",
+      "headline": "Kamala Harris leads Trump in several battleground states , say polls",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.tribuneindia.com/news/top-headlines/kamala-harris-leads-trump-in-several-battleground-states-say-polls/"
+    },
+    {
+      "timestamp": "2024-09-27T04:00:00",
+      "source": "breitbart.com",
+      "headline": "J . L . Partners Election Model :  Donald Trump Soars to 10 - Point Lead",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.breitbart.com/politics/2024/09/26/j-l-partners-election-model-donald-trump-soars-to-10-point-lead/"
+    },
+    {
+      "timestamp": "2024-09-27T23:30:00",
+      "source": "houstonpublicmedia.org",
+      "headline": "Harris visits the border in Arizona and says she will toughen up asylum rules",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.houstonpublicmedia.org/npr/2024/09/27/nx-s1-5127374/harris-visits-the-border-in-arizona-and-says-she-will-toughen-up-asylum-rules/"
+    },
+    {
+      "timestamp": "2024-09-27T04:00:00",
+      "source": "ndtv.com",
+      "headline": "Harris Leads Trump In Several Key Battleground States , Polls Say",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ndtv.com/world-news/us-elections-2024-kamala-harris-leads-donald-trump-in-several-key-battleground-states-polls-say-6659650"
+    },
+    {
+      "timestamp": "2024-09-27T06:15:00",
+      "source": "bangordailynews.com",
+      "headline": "Harris missing opportunities to be magnanimous and presidential",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bangordailynews.com/2024/09/27/opinion/opinion-contributor/kamala-harris-missing-opportunities-be-magnanimous-presidential-joam40zk0w/"
+    }
+  ]
+}

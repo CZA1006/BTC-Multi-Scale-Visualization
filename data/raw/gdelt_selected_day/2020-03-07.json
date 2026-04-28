@@ -1,0 +1,202 @@
+{
+  "date": "2020-03-07",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 7,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-07T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-07T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin : An Option Call Against the  Wrecking Ball  that is the Dollar",
+    "Bitcoin Eyes Close above $14 , 000 , According to Textbook Technical Indicator",
+    "Fed Chair Powell pledges to use tools to support economy",
+    "Fed Chair Powell pledges to use tools to support economy",
+    "Kripto Para Borsaları ve Cüzdanlar Nasıl Kullanılır ? Bitcoin & Altcoin Alım Satımı"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-07T02:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin : An Option Call Against the  Wrecking Ball  that is the Dollar",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/06/bitcoin-an-option-call-against-the-wrecking-ball-that-is-the-dollar/"
+    },
+    {
+      "timestamp": "2020-03-07T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Eyes Close above $14 , 000 , According to Textbook Technical Indicator",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/07/bitcoin-eyes-close-above-14000-according-to-textbook-technical-indicator/"
+    },
+    {
+      "timestamp": "2020-03-07T09:00:00",
+      "source": "gazette.com",
+      "headline": "Fed Chair Powell pledges to use tools to support economy",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://gazette.com/ap/business/fed-chair-powell-pledges-to-use-tools-to-support-economy/article_da53120f-b895-5f19-9fd2-744fbbcb11a5.html"
+    },
+    {
+      "timestamp": "2020-03-07T16:30:00",
+      "source": "wdrb.com",
+      "headline": "Fed Chair Powell pledges to use tools to support economy",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.wdrb.com/news/national/fed-chair-powell-pledges-to-use-tools-to-support-economy/article_e2efad11-f750-5adb-b015-5cf1b3cb5c50.html"
+    },
+    {
+      "timestamp": "2020-03-07T22:00:00",
+      "source": "haberekspres.com.tr",
+      "headline": "Kripto Para Borsaları ve Cüzdanlar Nasıl Kullanılır ? Bitcoin & Altcoin Alım Satımı",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.haberekspres.com.tr/ekonomi/kripto-para-borsalari-ve-cuzdanlar-nasil-kullanilir-bitcoin-h132898.html"
+    },
+    {
+      "timestamp": "2020-03-07T11:30:00",
+      "source": "businessinsider.com",
+      "headline": "Next stock market crash : How coronavirus could jumpstart the process",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.businessinsider.com/next-stock-market-crash-how-coronavirus-starts-process-john-hussman-2020-3"
+    },
+    {
+      "timestamp": "2020-03-07T15:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Coronavirus fears batter bank stocks by creating cheap credit",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/coronavirus-fears-batter-bank-stocks-145936795.html"
+    },
+    {
+      "timestamp": "2020-03-07T13:00:00",
+      "source": "news.yahoo.com",
+      "headline": "How the coronavirus epidemic threatens global growth",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/coronavirus-epidemic-threatens-global-growth-105502896.html"
+    },
+    {
+      "timestamp": "2020-03-07T13:45:00",
+      "source": "thestar.com.my",
+      "headline": "Carrie Lam inspects park services amid epidemic in Hong Kong",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.thestar.com.my/news/regional/2020/03/07/carrie-lam-inspects-park-services-amid-epidemic-in-hong-kong"
+    },
+    {
+      "timestamp": "2020-03-07T15:30:00",
+      "source": "foxbusiness.com",
+      "headline": "Coronavirus fears batter bank stocks by creating cheap credit",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.foxbusiness.com/markets/coronavirus-bank-stocks-battered"
+    },
+    {
+      "timestamp": "2020-03-07T15:45:00",
+      "source": "news.bitcoin.com",
+      "headline": "German Crypto Regulator BaFin Shuts Down Unauthorized Bitcoin ATMs",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://news.bitcoin.com/german-bitcoin-atms/"
+    },
+    {
+      "timestamp": "2020-03-07T00:30:00",
+      "source": "ctpost.com",
+      "headline": "Washington recession - fighting toolbox is nearly empty as US economy braces for possible coronavirus outbreak",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.ctpost.com/news/article/Washington-s-recession-fighting-toolbox-is-nearly-15110957.php"
+    },
+    {
+      "timestamp": "2020-03-07T04:30:00",
+      "source": "expressnews.com",
+      "headline": "Washington recession - fighting toolbox is nearly empty as US economy braces for possible coronavirus outbreak",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.expressnews.com/news/article/Washington-s-recession-fighting-toolbox-is-nearly-15110957.php"
+    },
+    {
+      "timestamp": "2020-03-07T17:15:00",
+      "source": "mrtopstep.com",
+      "headline": "A notorious market bear says investors are making a classic error at the worst possible time and warns coronavirus  chao could kickstart a 67 % market crash",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://mrtopstep.com/a-notorious-market-bear-says-investors-are-making-a-classic-error-at-the-worst-possible-time-and-warns-coronavirus-chaos-could-kickstart-a-67-market-crash/"
+    },
+    {
+      "timestamp": "2020-03-07T02:15:00",
+      "source": "nbcnews.com",
+      "headline": "Federal Reserve cuts interest rate by half a point to address coronavirus slowdown",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/business/economy/federal-reserve-implements-surprise-rate-cut-address-coronavirus-impact-n1147851?cid=public-rss_20200307"
+    }
+  ]
+}

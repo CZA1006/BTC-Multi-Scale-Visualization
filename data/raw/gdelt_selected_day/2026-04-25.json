@@ -1,0 +1,202 @@
+{
+  "date": "2026-04-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 1,
+  "theme_count_war": 12,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2026-04-25T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-04-25T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Netanyahu Says He Held  Very Good  Call with Trump on Iran Pressure",
+    "Can Trump secure a deal  far better  than the 2015 Iran nuclear deal ?",
+    "伊朗战争会成为美以的麦城 ？ - 朱头山发表于 时事述评 - 论坛",
+    "State Department Openly Admits Israel Pushed Us Into Iran War",
+    "Trump Sued Over Alarming Memo Allowing Officials to Delete Records"
+  ],
+  "articles": [
+    {
+      "timestamp": "2026-04-25T06:30:00",
+      "source": "khaama.com",
+      "headline": "Netanyahu Says He Held  Very Good  Call with Trump on Iran Pressure",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.khaama.com/netanyahu-says-he-held-very-good-call-with-trump-on-iran-pressure/"
+    },
+    {
+      "timestamp": "2026-04-25T13:15:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Can Trump secure a deal  far better  than the 2015 Iran nuclear deal ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/policy/defense/4540946/trump-secure-2015-iran-nuclear-deal/"
+    },
+    {
+      "timestamp": "2026-04-25T18:15:00",
+      "source": "bbs.wenxuecity.com",
+      "headline": "伊朗战争会成为美以的麦城 ？ - 朱头山发表于 时事述评 - 论坛",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://bbs.wenxuecity.com/bbs/currentevent/3979427.html"
+    },
+    {
+      "timestamp": "2026-04-25T00:45:00",
+      "source": "newrepublic.com",
+      "headline": "State Department Openly Admits Israel Pushed Us Into Iran War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://newrepublic.com/post/209518/state-department-admits-israel-iran-war"
+    },
+    {
+      "timestamp": "2026-04-25T00:45:00",
+      "source": "newrepublic.com",
+      "headline": "Trump Sued Over Alarming Memo Allowing Officials to Delete Records",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newrepublic.com/post/209510/trump-sued-white-house-memo-delete-records"
+    },
+    {
+      "timestamp": "2026-04-25T19:30:00",
+      "source": "lbc.co.uk",
+      "headline": "Netanyahu orders IDF to strike Lebanon  forcefully  over  ceasefire violation despite Trump protest",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.lbc.co.uk/article/netanyahu-orders-idf-strike-lebanon-forcefully-ceasefire-violations-5HjdYH6_2/"
+    },
+    {
+      "timestamp": "2026-04-25T05:45:00",
+      "source": "midilibre.fr",
+      "headline": "Cessez - le - feu au Liban et en Iran  : le grand flou , entre négociations et bombardements",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.midilibre.fr/2026/04/25/cessez-le-feu-au-liban-et-en-iran-le-grand-flou-entre-negociations-et-bombardements-13342414.php"
+    },
+    {
+      "timestamp": "2026-04-25T11:30:00",
+      "source": "newsday.com",
+      "headline": "Trump claims progress in Mideast wars , but grievances could reignite them",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsday.com/news/nation/iran-us-israel-war-ceasefire-lebanon-gaza-j11771"
+    },
+    {
+      "timestamp": "2026-04-25T08:30:00",
+      "source": "semissourian.com",
+      "headline": "Trump has paused 3 Mideast wars , but the grievances remain and could r ...",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.semissourian.com/world/trump-has-paused-3-mideast-wars-but-the-grievances-remain-and-could-reignite-them-acfccd1a"
+    },
+    {
+      "timestamp": "2026-04-25T10:45:00",
+      "source": "jpost.com",
+      "headline": "After US - Israeli strikes , it time for regime change in Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.jpost.com/opinion/article-893987"
+    },
+    {
+      "timestamp": "2026-04-25T09:30:00",
+      "source": "jpost.com",
+      "headline": "After US - Israeli strikes , it time for regime change in Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jpost.com/opinion/article-893987"
+    },
+    {
+      "timestamp": "2026-04-25T06:15:00",
+      "source": "theweek.in",
+      "headline": "A fragile opening for peace in Middle East ? Iran explores mediated talks through Pakistan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theweek.in/news/middle-east/2026/04/25/a-fragile-opening-for-peace-in-middle-east-iran-explores-mediated-talks-through-pakistan.html"
+    },
+    {
+      "timestamp": "2026-04-25T03:00:00",
+      "source": "news.china.com",
+      "headline": "金价跌破新低 地缘局势引发震荡 _ 新闻频道 _ 中华网",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.china.com/socialgd/10000169/20260425/49449309.html"
+    },
+    {
+      "timestamp": "2026-04-25T09:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Trump has paused 3 Mideast wars , but grievances remain and could reignite them",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/defence/trump-has-paused-3-mideast-wars-but-grievances-remain-and-could-reignite-them/articleshow/130511459.cms"
+    },
+    {
+      "timestamp": "2026-04-25T10:15:00",
+      "source": "mynorthwest.com",
+      "headline": "Trump has paused 3 Mideast wars , but the grievances remain and could reignite them",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://mynorthwest.com/national/trump-has-paused-3-mideast-wars-but-the-grievances-remain-and-could-reignite-them/4231921"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "date": "2025-01-13",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 0,
+  "theme_count_election": 8,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-13T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-13T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-13T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-13T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-13T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-13T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-13T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-13T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Briefly Slides Below $90K , MicroStrategy Buys More",
+    "Why is BTC crashing ?",
+    "Sudden Bitcoin Price Plunge Sparks $3 . 2 Trillion Crypto Crash Fear",
+    "President Trump to Issue Executive Orders on Crypto on Day One",
+    "What if all states split their Electoral College votes for president ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-13T22:45:00",
+      "source": "investopedia.com",
+      "headline": "Bitcoin Briefly Slides Below $90K , MicroStrategy Buys More",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investopedia.com/bitcoin-briefly-slides-below-usd90k-microstrategy-buys-more-8773326"
+    },
+    {
+      "timestamp": "2025-01-13T12:45:00",
+      "source": "fxstreet.com",
+      "headline": "Why is BTC crashing ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-forecast-forecast-btc-falls-below-92-000-as-exchanges-show-overheating-conditions-202501131133"
+    },
+    {
+      "timestamp": "2025-01-13T12:45:00",
+      "source": "forbes.com",
+      "headline": "Sudden Bitcoin Price Plunge Sparks $3 . 2 Trillion Crypto Crash Fear",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2025/01/13/sudden-bitcoin-price-plunge-sparks-32-trillion-crypto-crash-fear/"
+    },
+    {
+      "timestamp": "2025-01-13T22:30:00",
+      "source": "bravenewcoin.com",
+      "headline": "President Trump to Issue Executive Orders on Crypto on Day One",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/president-trump-to-issue-executive-orders-on-crypto-on-day-one"
+    },
+    {
+      "timestamp": "2025-01-13T23:00:00",
+      "source": "yahoo.com",
+      "headline": "What if all states split their Electoral College votes for president ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/states-split-electoral-college-votes-213616136.html"
+    },
+    {
+      "timestamp": "2025-01-13T19:00:00",
+      "source": "newsweek.com",
+      "headline": "Bitcoin Price Today : Why Has the Cryptocurrency Fallen ? What We Know So Far",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/bitcoin-price-january-2025-2014067"
+    },
+    {
+      "timestamp": "2025-01-13T19:45:00",
+      "source": "newspim.com",
+      "headline": "트럼프 취임행사 18일 골프 클럽서 시작 ... 취임날 백악관에서 서명식",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.newspim.com/news/view/20250114000003"
+    },
+    {
+      "timestamp": "2025-01-13T23:15:00",
+      "source": "eastbaytimes.com",
+      "headline": "Bidens to host Trumps for tea after Trumps snubbed them in 2021",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.eastbaytimes.com/2025/01/13/the-bidens-will-host-the-trumps-for-tea-after-the-trumps-snubbed-them-in-2021/"
+    },
+    {
+      "timestamp": "2025-01-13T05:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Trump inauguration nears , but crypto promises could  take some time  NYDIG",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/donald-trump-crypto-promises-take-time-inauguration-nydig"
+    },
+    {
+      "timestamp": "2025-01-13T23:15:00",
+      "source": "marinij.com",
+      "headline": "Bidens to host Trumps for tea after Trumps snubbed them in 2021",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.marinij.com/2025/01/13/the-bidens-will-host-the-trumps-for-tea-after-the-trumps-snubbed-them-in-2021/"
+    },
+    {
+      "timestamp": "2025-01-13T16:15:00",
+      "source": "haberler.com",
+      "headline": "ABD ve Avrupada Tahvil Getirileri Yükseliyor , Kripto Paralarda Düşüş Yaşanıyor",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.haberler.com/ekonomi/abd-ve-avrupa-da-tahvil-getirileri-yukseliyor-kripto-paralarda-dusus-yasaniyor-18257717-haberi/"
+    },
+    {
+      "timestamp": "2025-01-13T08:15:00",
+      "source": "tribune.com.pk",
+      "headline": "Jack Smith resigns after leading Trump prosecutions",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://tribune.com.pk/story/2521794/jack-smith-resigns-after-leading-trump-prosecutions"
+    },
+    {
+      "timestamp": "2025-01-13T05:30:00",
+      "source": "timesofoman.com",
+      "headline": "External Affairs Minister Jaishankar to represent India at swearing - in ceremony of Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://timesofoman.com/article/153980-external-affairs-minister-jaishankar-to-represent-india-at-swearing-in-ceremony-of-donald-trump"
+    },
+    {
+      "timestamp": "2025-01-13T16:30:00",
+      "source": "21stcenturywire.com",
+      "headline": "Kamala Still Charging Donor Credit Cards , Amid Campaign Debt Rumors",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://21stcenturywire.com/2025/01/13/kamala-still-charging-donors-credit-cards-amid-campaign-debt-rumors/"
+    },
+    {
+      "timestamp": "2025-01-13T09:00:00",
+      "source": "bravenewcoin.com",
+      "headline": "Top Crypto Price Predictions 2025 : Bitcoin , XRP , Dogecoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/sponsored/presale/top-crypto-price-predictions-2025-bitcoin-xrp-dogecoin"
+    }
+  ]
+}

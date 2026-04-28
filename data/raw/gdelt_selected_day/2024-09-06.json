@@ -1,0 +1,192 @@
+{
+  "date": "2024-09-06",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-06T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T10:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-06T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "XRP dips to one - month low close to $0 . 53 , Ripple co - founder backs Kamala Harris for US presidential election",
+    "Trump says he would make America  world capital for crypto and Bitcoin , price fails to react",
+    "Shapiro previews debate between  skilled  Trump ,  tough  Harris",
+    "Evening Report Trump courtroom - campaign split - screen",
+    "2024 Cash Dash : Harris nearly triples Trump fundraising last month"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-06T16:15:00",
+      "source": "fxstreet.com",
+      "headline": "XRP dips to one - month low close to $0 . 53 , Ripple co - founder backs Kamala Harris for US presidential election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/ripple-co-founder-chris-larsen-supports-kamala-harris-in-us-presidential-election-xrp-slips-to-one-month-low-202409061415"
+    },
+    {
+      "timestamp": "2024-09-06T02:45:00",
+      "source": "fxstreet.com",
+      "headline": "Trump says he would make America  world capital for crypto and Bitcoin , price fails to react",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/trump-says-he-would-make-america-world-capital-for-crypto-and-bitcoin-price-fails-to-react-202409052359"
+    },
+    {
+      "timestamp": "2024-09-06T21:45:00",
+      "source": "thehill.com",
+      "headline": "Shapiro previews debate between  skilled  Trump ,  tough  Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4866427-shapiro-harris-trump-debate/"
+    },
+    {
+      "timestamp": "2024-09-06T01:30:00",
+      "source": "thehill.com",
+      "headline": "Evening Report Trump courtroom - campaign split - screen",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/newsletters/evening-report/4864615-evening-report-trumps-courtroom-campaign-split-screen/"
+    },
+    {
+      "timestamp": "2024-09-06T12:00:00",
+      "source": "yahoo.com",
+      "headline": "2024 Cash Dash : Harris nearly triples Trump fundraising last month",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/2024-cash-dash-harris-nearly-090208016.html"
+    },
+    {
+      "timestamp": "2024-09-06T21:45:00",
+      "source": "thehill.com",
+      "headline": "Evening Report Trump faces post - election sentencing",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/newsletters/evening-report/4866556-evening-report-trump-faces-post-election-sentencing/"
+    },
+    {
+      "timestamp": "2024-09-06T22:30:00",
+      "source": "nypost.com",
+      "headline": "Former GOP Vice President Dick Cheney will vote for Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2024/09/06/us-news/former-gop-vice-president-dick-cheney-will-vote-for-kamala-harris/"
+    },
+    {
+      "timestamp": "2024-09-06T10:30:00",
+      "source": "firstpost.com",
+      "headline": "US set to enter election mode today as ballots start going out to voters",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.firstpost.com/world/us-2024-presidential-election-us-set-to-enter-election-mode-today-as-ballots-start-going-out-to-voters-13812476.html"
+    },
+    {
+      "timestamp": "2024-09-06T00:45:00",
+      "source": "news.mt.co.kr",
+      "headline": "당신 , 트럼프 지지해 ? 뽑을 거면서  아닌 척 … 이번에도 복병 될까",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2024090518325772164&MTR_CA"
+    },
+    {
+      "timestamp": "2024-09-06T10:30:00",
+      "source": "bostonglobe.com",
+      "headline": "Election voting season starts Friday",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bostonglobe.com/2024/09/06/nation/election-season-early-voting-mail-ballots/"
+    },
+    {
+      "timestamp": "2024-09-06T12:00:00",
+      "source": "yahoo.com",
+      "headline": "Debate prep : Harris hunkers in Pittsburgh with eye on crucial Pennsylvania",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/debate-prep-harris-hunkers-pittsburgh-093000167.html"
+    },
+    {
+      "timestamp": "2024-09-06T10:15:00",
+      "source": "thehill.com",
+      "headline": "Debate prep : Kamala Harris hunkers down in Pittsburgh",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4864542-kamala-harris-pittsburgh-debate-prep/"
+    },
+    {
+      "timestamp": "2024-09-06T18:45:00",
+      "source": "aljazeera.net",
+      "headline": "بدء تصويت البريد بولاية أميركية قبيل مناظرة مرتقبة بين ترامب وهاريس",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.aljazeera.net/news/2024/9/6/%D8%A8%D8%AF%D8%A1-%D8%A7%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%AA-%D8%A8%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF-%D9%81%D9%8A-%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A%D8%A9"
+    },
+    {
+      "timestamp": "2024-09-06T12:15:00",
+      "source": "kwongwah.com.my",
+      "headline": "传奇大选预言家发布预测 ： 哈里斯将击败特朗普光华日报 | 1910年创刊 创新每一天生活",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.kwongwah.com.my/20240906/%E4%BC%A0%E5%A5%87%E5%A4%A7%E9%80%89%E9%A2%84%E8%A8%80%E5%AE%B6%E5%8F%91%E5%B8%83%E9%A2%84%E6%B5%8B%EF%BC%9A-%E5%93%88%E9%87%8C%E6%96%AF%E5%B0%86%E5%87%BB%E8%B4%A5%E7%89%B9%E6%9C%97%E6%99%AE/"
+    },
+    {
+      "timestamp": "2024-09-06T01:45:00",
+      "source": "cfi.net.cn",
+      "headline": "传奇大选预言家发布预测 ： 哈里斯将击败特朗普 - CFi . CN 中财网",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.cfi.net.cn/p20240906000235.html"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "date": "2024-10-11",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 15,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-11T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-11T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Obama urges vote for Harris in  tight  presidential race",
+    "Obama urges vote for Harris in  tight  presidential race",
+    "Democrats to swing states : A vote for Jill Stein is a vote for Trump",
+    "Bitcoin $100K Surge Unstoppable Despite US Election Turmoil , Predicts Crypto Expert Tapiero",
+    "Obama hits campaign trail for Harris"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-11T03:30:00",
+      "source": "yahoo.com",
+      "headline": "Obama urges vote for Harris in  tight  presidential race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/obama-urges-vote-harris-tight-030236904.html"
+    },
+    {
+      "timestamp": "2024-10-11T04:00:00",
+      "source": "myjoyonline.com",
+      "headline": "Obama urges vote for Harris in  tight  presidential race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.myjoyonline.com/obama-urges-vote-for-harris-in-tight-presidential-race/"
+    },
+    {
+      "timestamp": "2024-10-11T17:00:00",
+      "source": "yahoo.com",
+      "headline": "Democrats to swing states : A vote for Jill Stein is a vote for Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/democrats-swing-states-vote-jill-144923863.html"
+    },
+    {
+      "timestamp": "2024-10-11T16:30:00",
+      "source": "econotimes.com",
+      "headline": "Bitcoin $100K Surge Unstoppable Despite US Election Turmoil , Predicts Crypto Expert Tapiero",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Bitcoins-100K-Surge-Unstoppable-Despite-US-Election-Turmoil-Predicts-Crypto-Expert-Tapiero-1690289"
+    },
+    {
+      "timestamp": "2024-10-11T05:30:00",
+      "source": "terradaily.com",
+      "headline": "Obama hits campaign trail for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.terradaily.com/reports/Obama_hits_campaign_trail_for_Harris_999.html"
+    },
+    {
+      "timestamp": "2024-10-11T01:15:00",
+      "source": "staradvertiser.com",
+      "headline": "Obama rallies young voters for Harris in Pennsylvania | Honolulu Star - Advertiser",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.staradvertiser.com/2024/10/10/breaking-news/obamas-first-harris-rally-aims-at-young-pennsylvania-voters/"
+    },
+    {
+      "timestamp": "2024-10-11T01:45:00",
+      "source": "fbherald.com",
+      "headline": "Obama stumps for Harris , Trump talks US protectionism",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fbherald.com/news/national/obama-stumps-for-harris-trump-talks-us-protectionism/article_eb0759cd-2d07-590f-af4b-33d444596fd7.html"
+    },
+    {
+      "timestamp": "2024-10-11T05:30:00",
+      "source": "borneobulletin.com.bn",
+      "headline": "Obama blasts  crazy  Trump in first rally for Harris | Borneo Bulletin Online",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://borneobulletin.com.bn/obama-blasts-crazy-trump-in-first-rally-for-harris/"
+    },
+    {
+      "timestamp": "2024-10-11T21:30:00",
+      "source": "thefrontierpost.com",
+      "headline": "Obama targets young voters",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thefrontierpost.com/obama-targets-young-voters/"
+    },
+    {
+      "timestamp": "2024-10-11T02:45:00",
+      "source": "idahostatejournal.com",
+      "headline": "The Latest : Harris says it not time to  play politic over hurricane recovery",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.idahostatejournal.com/news/national/the-latest-harris-says-its-not-time-to-play-politics-over-hurricane-recovery/article_67fd9909-f9a5-517e-8aa1-62dbd462f727.html"
+    },
+    {
+      "timestamp": "2024-10-11T10:15:00",
+      "source": "channelstv.com",
+      "headline": "Obama Blasts  Crazy  Trump In First Rally For Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.channelstv.com/2024/10/11/obama-blasts-crazy-trump-in-first-rally-for-harris/"
+    },
+    {
+      "timestamp": "2024-10-12T00:00:00",
+      "source": "yahoo.com",
+      "headline": "Why Trump voters are poised to swing the Senate majority : From the Politics Desk",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/why-trump-voters-poised-swing-233528003.html"
+    },
+    {
+      "timestamp": "2024-10-11T03:15:00",
+      "source": "aljazeera.com",
+      "headline": "Obama hits campaign trail for Harris in key swing state of Pennsylvania",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2024/10/11/obama-hits-campaign-trail-for-harris-in-key-swing-state-of-pennsylvania"
+    },
+    {
+      "timestamp": "2024-10-11T22:00:00",
+      "source": "nbcnews.com",
+      "headline": "Why Trump voters are poised to swing the Senate majority : From the Politics Desk",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/politics/trump-voters-swing-senate-majority-politics-desk-rcna175113"
+    },
+    {
+      "timestamp": "2024-10-11T02:30:00",
+      "source": "yakimaherald.com",
+      "headline": "The Latest : Harris says it not time to  play politic over hurricane recovery",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yakimaherald.com/news/nation_and_world/nation/the-latest-harris-says-its-not-time-to-play-politics-over-hurricane-recovery/article_b6644d0a-aacf-5617-9fc1-1837c0e3e799.html"
+    }
+  ]
+}

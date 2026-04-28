@@ -1,0 +1,197 @@
+{
+  "date": "2020-05-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 3,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-02T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T12:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-02T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto Tidbits : Bitcoin Hits $9ks , a16z Raises $500M Crypto Fund , Ethereum 2 . 0 Nears",
+    "Bullish for Crypto : A G7 Central Bank Confirmed It Floating Negative Rates",
+    "Coronavirus & U . S . Economy : Financial Markets Cant Stay on Life Support Indefinitely",
+    "Fiercest Economic Collapse in History is Best Month for Stock Market – Investment Watch",
+    "Bitcoin Community Led to Believe Tesla CEO Wants to Buy BTC , Here Why"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-02T07:30:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Bitcoin Hits $9ks , a16z Raises $500M Crypto Fund , Ethereum 2 . 0 Nears",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/02/crypto-tidbits-bitcoin-hits-9ks-a16z-raises-500m-crypto-fund-ethereum-2-0-nears/"
+    },
+    {
+      "timestamp": "2020-05-02T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bullish for Crypto : A G7 Central Bank Confirmed It Floating Negative Rates",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/02/bullish-crypto-g7-central-bank-confirmed-floating-negative-rates/"
+    },
+    {
+      "timestamp": "2020-05-02T01:30:00",
+      "source": "nationalreview.com",
+      "headline": "Coronavirus & U . S . Economy : Financial Markets Cant Stay on Life Support Indefinitely",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.nationalreview.com/2020/05/coronavirus-us-economy-financial-markets-cant-remain-on-life-support-indefinitely/"
+    },
+    {
+      "timestamp": "2020-05-02T18:30:00",
+      "source": "investmentwatchblog.com",
+      "headline": "Fiercest Economic Collapse in History is Best Month for Stock Market – Investment Watch",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.investmentwatchblog.com/fiercest-economic-collapse-in-history-is-best-month-for-stock-market/"
+    },
+    {
+      "timestamp": "2020-05-02T12:45:00",
+      "source": "u.today",
+      "headline": "Bitcoin Community Led to Believe Tesla CEO Wants to Buy BTC , Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://u.today/bitcoin-community-led-to-believe-tesla-ceo-wants-to-buy-btc-heres-why"
+    },
+    {
+      "timestamp": "2020-05-02T11:30:00",
+      "source": "hotcountrybull.com",
+      "headline": "Federal Reserve Set To Maintain 0 % Interest Rates Until Stability Is Reached",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.hotcountrybull.com/2020/04/30/federal-reserve-set-to-maintain-0-interest-rates-until-stability-is-reached/"
+    },
+    {
+      "timestamp": "2020-05-02T22:00:00",
+      "source": "foxradiook.com",
+      "headline": "Federal Reserve Set To Maintain 0 % Interest Rates Until Stability Is Reached",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.foxradiook.com/2020/04/30/federal-reserve-set-to-maintain-0-interest-rates-until-stability-is-reached/"
+    },
+    {
+      "timestamp": "2020-05-02T21:15:00",
+      "source": "big104fm.com",
+      "headline": "Federal Reserve Set To Maintain 0 % Interest Rates Until Stability Is Reached",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.big104fm.com/2020/04/30/federal-reserve-set-to-maintain-0-interest-rates-until-stability-is-reached/"
+    },
+    {
+      "timestamp": "2020-05-02T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "There a $8 Million Bitcoin Sell Wall That Will Haunt Any Near - Term Uptrend",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/02/theres-a-8-million-bitcoin-sell-wall-that-will-haunt-any-near-term-uptrend/"
+    },
+    {
+      "timestamp": "2020-05-02T03:00:00",
+      "source": "newsbtc.com",
+      "headline": "Here Why Amazon 7 % Plunge Today Could be a Warning Sign for Bitcoin",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/01/heres-why-amazons-7-plunge-today-could-be-a-warning-sign-for-bitcoin/"
+    },
+    {
+      "timestamp": "2020-05-02T21:00:00",
+      "source": "forbes.com",
+      "headline": "Congress Urges Treasury Secretary Mnuchin To Use Blockchain For COVID - 19 Stimulus Payments",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/jasonbrett/2020/05/02/congress-urges-treasury-secretary-mnuchin-to-use-blockchain-for-covid-19-stimulus-payments/"
+    },
+    {
+      "timestamp": "2020-05-02T04:00:00",
+      "source": "fool.com.au",
+      "headline": "Forget gold and Bitcoin . Id buy crashing stocks today and hold them forever // Motley Fool Australia",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fool.com.au/2020/05/02/forget-gold-and-bitcoin-id-buy-crashing-stocks-today-and-hold-them-forever/"
+    },
+    {
+      "timestamp": "2020-05-02T07:45:00",
+      "source": "sltrib.com",
+      "headline": "Paul Krugman : Crashing economy , rising stocks . What going on ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.sltrib.com/opinion/commentary/2020/05/01/paul-krugman-crashing/"
+    },
+    {
+      "timestamp": "2020-05-02T09:45:00",
+      "source": "edaily.co.kr",
+      "headline": "[ 富를 키우는 투자지표 ] 코로나19로 0 % 대 중앙은행 금리 … 그 이후는",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01226726625764984&mediaCodeNo=E"
+    },
+    {
+      "timestamp": "2020-05-02T09:45:00",
+      "source": "edaily.co.kr",
+      "headline": "[ 富를 키우는 투자지표 ] 코로나19로 0 % 대 중앙은행 금리 … 그 이후는",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01226726625764984&mediaCodeNo=257"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-30",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-30T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-30T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Who is Karoline Leavitt ?: A look at the youngest woman ever named to serve as White House press secretary",
+    "Nation youngest upcoming press sec juggled unprecedented campaign cycle ahead of Trump massive victory",
+    "Kamala Coda : What Next For Defeated US VP Harris ?",
+    "What Bitcoin $100K journey means for the global crypto market",
+    "​​  Where Maggie Haberman sits next to Joe Rogan : Welcome to Trump new media world"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-30T11:45:00",
+      "source": "yahoo.com",
+      "headline": "Who is Karoline Leavitt ?: A look at the youngest woman ever named to serve as White House press secretary",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/karoline-leavitt-look-youngest-woman-090028202.html"
+    },
+    {
+      "timestamp": "2024-11-30T09:30:00",
+      "source": "foxnews.com",
+      "headline": "Nation youngest upcoming press sec juggled unprecedented campaign cycle ahead of Trump massive victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/who-karoline-leavitt-look-youngest-woman-ever-named-serve-white-house-press-secretary"
+    },
+    {
+      "timestamp": "2024-11-30T02:00:00",
+      "source": "ibtimes.com",
+      "headline": "Kamala Coda : What Next For Defeated US VP Harris ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/kamalas-coda-whats-next-defeated-us-vp-harris-3753348"
+    },
+    {
+      "timestamp": "2024-11-30T06:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "What Bitcoin $100K journey means for the global crypto market",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/what-bitcoins-100k-journey-means-for-the-global-crypto-market/articleshow/115832036.cms"
+    },
+    {
+      "timestamp": "2024-11-30T15:30:00",
+      "source": "yahoo.com",
+      "headline": "​​  Where Maggie Haberman sits next to Joe Rogan : Welcome to Trump new media world",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/where-maggie-haberman-sits-next-150000731.html"
+    },
+    {
+      "timestamp": "2024-11-30T23:45:00",
+      "source": "yahoo.com",
+      "headline": "After two flops , pollsters think they finally figured out Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/two-flops-pollsters-think-finally-230000859.html"
+    },
+    {
+      "timestamp": "2024-11-30T19:00:00",
+      "source": "redstate.com",
+      "headline": "The Democrat Identity Politics Is Dead . Victor Davis Hanson Explains How Donald Trump Killed It .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://redstate.com/mike_miller/2024/11/30/the-democrats-identity-politics-is-dead-victor-davis-hanson-explains-how-donald-trump-killed-it-n2182636"
+    },
+    {
+      "timestamp": "2024-11-30T13:15:00",
+      "source": "forbes.com",
+      "headline": "Leak Reveals December Crypto Bombshell As Bitcoin And Ripple XRP Price Suddenly Soar",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/11/30/bitcoin-and-ripples-xrp-suddenly-soar-on-massive-trump-100000-price-green-light/"
+    },
+    {
+      "timestamp": "2024-11-30T07:15:00",
+      "source": "hngn.com",
+      "headline": "Kamala Coda : What Next For Defeated US VP Harris ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.hngn.com/articles/263856/20241129/kamalas-coda-whats-next-defeated-us-vp-harris.htm"
+    },
+    {
+      "timestamp": "2024-11-30T07:15:00",
+      "source": "mdjonline.com",
+      "headline": "Kamala coda : What next for defeated US VP Harris ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mdjonline.com/neighbor_newspapers/news/national/kamalas-coda-whats-next-for-defeated-us-vp-harris/article_8e854e0b-83f5-5547-a622-9e8a0bf9dd94.html"
+    },
+    {
+      "timestamp": "2024-11-30T12:30:00",
+      "source": "yahoo.com",
+      "headline": "How economic concerns and low voter turnout in Democratic strongholds helped Trump win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/economic-concerns-low-voter-turnout-111802136.html"
+    },
+    {
+      "timestamp": "2024-11-30T00:15:00",
+      "source": "yahoo.com",
+      "headline": "Former Biden aide slams Harris campaign for blaming media after loss",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/former-biden-aide-slams-harris-212158876.html"
+    },
+    {
+      "timestamp": "2024-11-30T11:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin dominance hints at  altseason , analysts eye XRP price rally into 2025",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-dominance-altseason-xrp-rally-2025"
+    },
+    {
+      "timestamp": "2024-11-30T06:15:00",
+      "source": "purdueexponent.org",
+      "headline": "Kamala coda : What next for defeated US VP Harris ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.purdueexponent.org/news/national/kamalas-coda-whats-next-for-defeated-us-vp-harris/article_35643059-3b81-527d-a039-d7ca79863157.html"
+    },
+    {
+      "timestamp": "2024-11-30T13:15:00",
+      "source": "newyorker.com",
+      "headline": "A Kamala Harris Canvasser Education",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newyorker.com/news/the-weekend-essay/a-kamala-harris-canvassers-education"
+    }
+  ]
+}

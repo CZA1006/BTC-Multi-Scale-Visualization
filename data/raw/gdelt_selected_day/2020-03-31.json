@@ -1,0 +1,187 @@
+{
+  "date": "2020-03-31",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 0,
+  "theme_count_election": 1,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 6,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-31T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-31T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-31T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-31T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-31T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-31T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-31T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-31T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin All - Time High in 2020 ? Chances Are Only 4 %, Options Market Signals",
+    "美연준 , 외국 중앙은행에  달러  수혈 … 뉴욕증시  상승세",
+    "Halving Battles Coronavirus as Bitcoin Enters Its Provably Bullish Quarter",
+    "Germany Continues Bitcoin Adoption Despite Rocky Market",
+    "Will Coronavirus End the Fed ? | Newsmax . com"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-31T21:30:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin All - Time High in 2020 ? Chances Are Only 4 %, Options Market Signals",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-all-time-high-in-2020-chances-are-only-4-options-market-signals"
+    },
+    {
+      "timestamp": "2020-03-31T16:00:00",
+      "source": "edaily.co.kr",
+      "headline": "美연준 , 외국 중앙은행에  달러  수혈 … 뉴욕증시  상승세",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01170966625731856&mediaCodeNo=257&gtrack=sok"
+    },
+    {
+      "timestamp": "2020-03-31T19:15:00",
+      "source": "newsbtc.com",
+      "headline": "Halving Battles Coronavirus as Bitcoin Enters Its Provably Bullish Quarter",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/31/halving-battles-coronavirus-as-bitcoin-enters-its-provably-bullish-quarter/"
+    },
+    {
+      "timestamp": "2020-03-31T14:45:00",
+      "source": "cryptobriefing.com",
+      "headline": "Germany Continues Bitcoin Adoption Despite Rocky Market",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cryptobriefing.com/germany-continues-bitcoin-adoption-despite-rocky-market/"
+    },
+    {
+      "timestamp": "2020-03-31T14:15:00",
+      "source": "newsmax.com",
+      "headline": "Will Coronavirus End the Fed ? | Newsmax . com",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsmax.com/ronpaul/repurchasing-repo-market/2020/03/30/id/960606/"
+    },
+    {
+      "timestamp": "2020-03-31T06:00:00",
+      "source": "lewrockwell.com",
+      "headline": "Will Coronavirus End the Fed ? - LewRockwell",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.lewrockwell.com/2020/03/ron-paul/will-coronavirus-end-the-fed/"
+    },
+    {
+      "timestamp": "2020-03-31T14:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Recent Recovery Wont Salvage a Terrible Month for Prices",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoins-recent-recovery-wont-salvage-a-terrible-month-for-prices"
+    },
+    {
+      "timestamp": "2020-03-31T21:30:00",
+      "source": "stltoday.com",
+      "headline": "Nicklaus : With interest rates back at zero , the Fed has quickly used up its dry powder",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/business/columns/david-nicklaus/nicklaus-with-interest-rates-back-at-zero-the-fed-has-quickly-used-up-its-dry/article_5736ebd3-e6ab-5642-94ac-2a1cdadf7577.html"
+    },
+    {
+      "timestamp": "2020-03-31T13:30:00",
+      "source": "prisonplanet.com",
+      "headline": "Prison Planet . com » Will COVID - 19 End The Fed ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.prisonplanet.com/will-covid-19-end-the-fed.html"
+    },
+    {
+      "timestamp": "2020-03-31T19:15:00",
+      "source": "alainet.org",
+      "headline": "The fall in world trade volume and commodity prices",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.alainet.org/en/articulo/205591"
+    },
+    {
+      "timestamp": "2020-03-31T15:00:00",
+      "source": "insidebitcoins.com",
+      "headline": "Coinbase Speaks of Interesting User Behavior During Market Crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/coinbase-speaks-of-interesting-user-behavior-during-market-crash/255847"
+    },
+    {
+      "timestamp": "2020-03-31T18:45:00",
+      "source": "dailyfx.com",
+      "headline": "Stock Market Forecast : Recession Likely Unavoidable Amid Virus Fallout",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/fundamental/article/special_report/2020/03/31/dow-jones-stock-market-forecast-recession-likely-unavoidabe-amid-coronavirus-fallout.html"
+    },
+    {
+      "timestamp": "2020-03-31T21:45:00",
+      "source": "govexec.com",
+      "headline": "Ill Be the Oversight , Trump Says as His Political Appointees Protect Wall Street , Real Estate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.govexec.com/oversight/2020/03/ill-be-oversight-trump-says-his-political-appointees-protect-wall-street-real-estate/164230/"
+    },
+    {
+      "timestamp": "2020-03-31T18:15:00",
+      "source": "fxstreet.com",
+      "headline": "Crypto Today : Bitcoin vulnerabilities to the downside remain high underneath $7000 and breached bearish flag",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-vulnerabilities-to-the-downside-remain-high-underneath-7000-and-breached-bearish-flag-202003311800"
+    },
+    {
+      "timestamp": "2020-03-31T15:30:00",
+      "source": "ibtimes.com",
+      "headline": "Coronavirus Economy : As Recession Looms , Polls Show Americans Cut Spending Amid Rising Credit Card Debt",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/coronavirus-economy-recession-looms-polls-show-americans-cut-spending-amid-rising-2949573"
+    }
+  ]
+}

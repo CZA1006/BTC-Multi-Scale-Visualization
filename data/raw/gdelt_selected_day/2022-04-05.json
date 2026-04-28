@@ -1,0 +1,182 @@
+{
+  "date": "2022-04-05",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 11,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-05T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-05T14:00:00",
+      "news_count": 7,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-05T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-05T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-05T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-05T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-05T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Should you buy Bitcoin since it has surged against the Ruble ?",
+    "Should you buy Bitcoin since it has surged against the Ruble ?",
+    "Should you buy Bitcoin since it has surged against the Ruble ?",
+    "Potentially Dramatic  Bitcoin Could Hit $1 . 3 Million In This Radical Crypto Price Prediction Scenario",
+    "Treasury bars Russia payments in dollars from US accounts"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-05T17:15:00",
+      "source": "neworleanssun.com",
+      "headline": "Should you buy Bitcoin since it has surged against the Ruble ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.neworleanssun.com/news/272454203/should-you-buy-bitcoin-since-it-has-surged-against-the-ruble"
+    },
+    {
+      "timestamp": "2022-04-05T18:30:00",
+      "source": "texasguardian.com",
+      "headline": "Should you buy Bitcoin since it has surged against the Ruble ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.texasguardian.com/news/272454203/should-you-buy-bitcoin-since-it-has-surged-against-the-ruble"
+    },
+    {
+      "timestamp": "2022-04-05T18:00:00",
+      "source": "austinglobe.com",
+      "headline": "Should you buy Bitcoin since it has surged against the Ruble ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.austinglobe.com/news/272454203/should-you-buy-bitcoin-since-it-has-surged-against-the-ruble"
+    },
+    {
+      "timestamp": "2022-04-05T06:30:00",
+      "source": "forbes.com",
+      "headline": "Potentially Dramatic  Bitcoin Could Hit $1 . 3 Million In This Radical Crypto Price Prediction Scenario",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2022/04/04/potentially-dramatic-bitcoin-could-hit-13-million-in-this-radical-crypto-price-prediction-scenario/"
+    },
+    {
+      "timestamp": "2022-04-05T14:00:00",
+      "source": "chron.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.chron.com/news/article/Treasury-bars-Russia-payments-in-dollars-from-US-17058242.php"
+    },
+    {
+      "timestamp": "2022-04-05T14:00:00",
+      "source": "sfgate.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sfgate.com/news/article/Treasury-bars-Russia-payments-in-dollars-from-US-17058242.php"
+    },
+    {
+      "timestamp": "2022-04-05T14:30:00",
+      "source": "seattlepi.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.seattlepi.com/news/article/Treasury-bars-Russia-payments-in-dollars-from-US-17058242.php"
+    },
+    {
+      "timestamp": "2022-04-05T15:45:00",
+      "source": "ctpost.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctpost.com/news/article/Treasury-bars-Russia-payments-in-dollars-from-US-17058242.php"
+    },
+    {
+      "timestamp": "2022-04-05T14:15:00",
+      "source": "nhregister.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nhregister.com/news/article/Treasury-bars-Russia-payments-in-dollars-from-US-17058242.php"
+    },
+    {
+      "timestamp": "2022-04-05T14:30:00",
+      "source": "abcnews.go.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/Politics/wireStory/treasury-bars-russia-payments-dollars-us-accounts-83884026"
+    },
+    {
+      "timestamp": "2022-04-05T23:30:00",
+      "source": "timesunion.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.timesunion.com/news/article/Treasury-bars-Russia-payments-in-dollars-from-US-17058242.php"
+    },
+    {
+      "timestamp": "2022-04-05T14:15:00",
+      "source": "sandiegouniontribune.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sandiegouniontribune.com/business/nation/story/2022-04-05/treasury-bars-russia-payments-in-dollars-from-us-accounts"
+    },
+    {
+      "timestamp": "2022-04-05T17:30:00",
+      "source": "stripes.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stripes.com/theaters/us/2022-04-05/treasury-bars-russia-payments-dollars-us-accounts-5588051.html"
+    },
+    {
+      "timestamp": "2022-04-05T16:15:00",
+      "source": "marketwatch.com",
+      "headline": "U . S . Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/u-s-treasury-bars-russia-payments-in-dollars-from-us-accounts-01649174351"
+    },
+    {
+      "timestamp": "2022-04-05T14:15:00",
+      "source": "apnews.com",
+      "headline": "Treasury bars Russia payments in dollars from US accounts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/article/russia-ukraine-putin-business-europe-government-debt-f8b8eab59cf80b61e26e38577c8c0343"
+    }
+  ]
+}

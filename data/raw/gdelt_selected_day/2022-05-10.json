@@ -1,0 +1,182 @@
+{
+  "date": "2022-05-10",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-10T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-10T01:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-10T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-10T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-10T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-10T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-10T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russia - Ukraine conflict : Volodymyr Zelenskyy says Kyiv will overcome Russia invasion in World War II anniversary address",
+    "Biden Signs Law to Speed Up Ukraine Aid",
+    "Putin crackdown pushes independent Russian media into crypto",
+    "Ukraine : Zelenskyy vows ′ two Victory Days ′ as it happened | News | DW",
+    "Information Defence : Military - Political Situation in Ukraine as of May 9th"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-10T13:45:00",
+      "source": "econotimes.com",
+      "headline": "Russia - Ukraine conflict : Volodymyr Zelenskyy says Kyiv will overcome Russia invasion in World War II anniversary address",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Russia-Ukraine-conflict-Volodymyr-Zelenskyy-says-Kyiv-will-overcome-Russias-invasion-in-World-War-II-anniversary-address-1633049"
+    },
+    {
+      "timestamp": "2022-05-10T00:15:00",
+      "source": "voanews.com",
+      "headline": "Biden Signs Law to Speed Up Ukraine Aid",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/6564315.html"
+    },
+    {
+      "timestamp": "2022-05-10T09:15:00",
+      "source": "straitstimes.com",
+      "headline": "Putin crackdown pushes independent Russian media into crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.straitstimes.com/world/europe/putins-crackdown-pushes-independent-russian-media-into-crypto"
+    },
+    {
+      "timestamp": "2022-05-10T01:45:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Zelenskyy vows ′ two Victory Days ′ as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-zelenskyy-vows-two-victory-days-as-it-happened/a-61727432"
+    },
+    {
+      "timestamp": "2022-05-10T11:15:00",
+      "source": "en.interfax.com.ua",
+      "headline": "Information Defence : Military - Political Situation in Ukraine as of May 9th",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://en.interfax.com.ua/news/press-release/830993.html"
+    },
+    {
+      "timestamp": "2022-05-10T00:45:00",
+      "source": "bundle.app",
+      "headline": "Ukraine : Zelenskyy vows  two Victory Day live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bundle.app/en/breakingNews/ukraine--zelenskyy-vows-two-victory-days-%E2%80%94-live-updates-D0F5393A-B5F5-4629-B8D3-85EE69C7FE1E"
+    },
+    {
+      "timestamp": "2022-05-10T01:00:00",
+      "source": "winnipegfreepress.com",
+      "headline": "Canadian flag flies again in Kyiv",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.winnipegfreepress.com/opinion/editorials/canadian-flag-flies-again-in-kyiv-576483022.html"
+    },
+    {
+      "timestamp": "2022-05-10T01:15:00",
+      "source": "palmbeachpost.com",
+      "headline": "Mariupol evacuated ; Russia may try abductions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.palmbeachpost.com/story/news/politics/2022/05/02/ukraine-russia-invasion-live-updates/9611697002/"
+    },
+    {
+      "timestamp": "2022-05-10T01:30:00",
+      "source": "calgaryherald.com",
+      "headline": "Putin invokes World War II fight against Nazis to justify Ukraine invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://calgaryherald.com:443/news/world/putin-invokes-world-war-ii-nazi-fight-to-justify-invasion/wcm/52c81646-668f-4da6-bbd5-47bfcc6ce227"
+    },
+    {
+      "timestamp": "2022-05-10T08:00:00",
+      "source": "voanews.com",
+      "headline": "US Consider Billions More in Ukraine Aid",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.voanews.com/a/us-consider-billions-more-in-ukraine-aid-/6564939.html"
+    },
+    {
+      "timestamp": "2022-05-10T01:00:00",
+      "source": "timesunion.com",
+      "headline": "Live updates | Russia - Ukraine War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.timesunion.com/business/article/Live-updates-Japan-joins-G-7-effort-to-quit-17158447.php"
+    },
+    {
+      "timestamp": "2022-05-10T00:15:00",
+      "source": "news.yahoo.com",
+      "headline": "Zelenskyy former press secretary said the comedian - turned - president has  matured  during his term winning over many Ukrainians in the process",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/zelenskyys-former-press-secretary-said-231743491.html"
+    },
+    {
+      "timestamp": "2022-05-10T07:00:00",
+      "source": "news.yahoo.com",
+      "headline": "Putin Crackdown Pushes Independent Russian Media Into Crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://news.yahoo.com/putin-crackdown-pushes-independent-russian-060000539.html"
+    },
+    {
+      "timestamp": "2022-05-10T11:00:00",
+      "source": "dw.com",
+      "headline": "Ukraine death toll may be ′ thousands ′ higher , UN says live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-death-toll-may-be-thousands-higher-un-says-live-updates/a-61741763"
+    },
+    {
+      "timestamp": "2022-05-10T07:00:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Putin Crackdown Pushes Independent Russian Media Into Crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/putin-s-crackdown-pushes-independent-russian-media-into-crypto-1.1763546"
+    }
+  ]
+}

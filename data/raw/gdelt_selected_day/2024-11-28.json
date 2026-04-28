@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-28",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 9,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-28T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T19:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-28T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Election Day was nearly one month ago . Harris is still asking for cash",
+    "Bitcoin Price Has Surged Since Trump Election Here Why",
+    "Trump Crypto Plans Raise Alarms Over Conflicts of Interest",
+    "Is Harris campaign in denial ?",
+    "Kamala internal polling told her she likely was going to lose * WorldNetDaily * by Bob Unruh"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-28T15:00:00",
+      "source": "gazette.com",
+      "headline": "Election Day was nearly one month ago . Harris is still asking for cash",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gazette.com/news/wex/election-day-was-nearly-one-month-ago-harris-is-still-asking-for-cash/article_6ac9e4f2-9268-5d4d-8bd2-ccc93741d19b.html"
+    },
+    {
+      "timestamp": "2024-11-28T09:45:00",
+      "source": "menafn.com",
+      "headline": "Bitcoin Price Has Surged Since Trump Election Here Why",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://menafn.com/1108933709/Bitcoins-Price-Has-Surged-Since-Trumps-Election-Heres-Why"
+    },
+    {
+      "timestamp": "2024-11-28T19:30:00",
+      "source": "bankinfosecurity.com",
+      "headline": "Trump Crypto Plans Raise Alarms Over Conflicts of Interest",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bankinfosecurity.com/trumps-crypto-plans-raise-alarms-over-conflicts-interest-a-26931"
+    },
+    {
+      "timestamp": "2024-11-28T06:15:00",
+      "source": "yahoo.com",
+      "headline": "Is Harris campaign in denial ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-campaign-denial-023727043.html"
+    },
+    {
+      "timestamp": "2024-11-28T19:30:00",
+      "source": "wnd.com",
+      "headline": "Kamala internal polling told her she likely was going to lose * WorldNetDaily * by Bob Unruh",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.wnd.com/2024/11/kamalas-internal-polling-told-her-she-likely-was-going-to-lose/"
+    },
+    {
+      "timestamp": "2024-11-28T10:45:00",
+      "source": "moneycontrol.com",
+      "headline": "Bitcoin gets boost as crypto supporters vie to head US regulators",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/business/markets/bitcoin-gets-boost-as-crypto-supporters-vie-to-head-us-regulators-12878849.html"
+    },
+    {
+      "timestamp": "2024-11-28T08:15:00",
+      "source": "rg.ru",
+      "headline": "Опросы накануне президентских выборов в США не отражали реальность",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://rg.ru/2024/11/28/oprosy-nakanune-prezidentskih-vyborov-v-ssha-ne-otrazhali-realnost.html"
+    },
+    {
+      "timestamp": "2024-11-28T23:15:00",
+      "source": "herald.co.zw",
+      "headline": "The Herald - Breaking news .",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.herald.co.zw/bitcoin-gets-boost-amid-crypto-frindly-candidates/"
+    },
+    {
+      "timestamp": "2024-11-28T02:30:00",
+      "source": "theyeshivaworld.com",
+      "headline": "ONE BIG LIE : Top Aide Reveals Harris Campaign Never Led Trump In Polls Despite Public Claims Otherwise",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theyeshivaworld.com/news/general/2336223/one-big-lie-top-aide-reveals-harris-campaign-never-led-trump-in-polls-despite-public-claims-otherwise.html"
+    },
+    {
+      "timestamp": "2024-11-28T00:15:00",
+      "source": "ktxs.com",
+      "headline": "Would contrasting from Biden have made a difference in Harris campaign ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ktxs.com/news/nation-world/would-contrasting-from-biden-have-made-a-difference-in-harris-campaign"
+    },
+    {
+      "timestamp": "2024-11-28T19:00:00",
+      "source": "yahoo.com",
+      "headline": "Pollster Nate Silver dismisses Harris campaign attempt to explain away loss :  Not some conspiracy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/pollster-nate-silver-dismisses-harris-163026011.html"
+    },
+    {
+      "timestamp": "2024-11-28T11:45:00",
+      "source": "yahoo.com",
+      "headline": "Top 5 biggest political turkeys ripped by conservatives in 2024",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/top-5-biggest-political-turkeys-090042928.html"
+    },
+    {
+      "timestamp": "2024-11-28T21:00:00",
+      "source": "wsyr.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wsyr.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-28T21:00:00",
+      "source": "929tomfm.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://929tomfm.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-28T21:00:00",
+      "source": "wmeq.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed | NewsTalk WMEQ",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wmeq.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    }
+  ]
+}

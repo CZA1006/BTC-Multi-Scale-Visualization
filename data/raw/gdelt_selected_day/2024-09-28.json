@@ -1,0 +1,202 @@
+{
+  "date": "2024-09-28",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-28T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-28T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Magic Johnson , Billie Jean King and Steve Kerr Co - Chair Athletes for Harris",
+    "Harris Taps California Donors to Pad Her Money Advantage Over Trump",
+    "How Will the Election Impact the Stock Market ?",
+    "Rise of the  crypto voter : The surprising group that could swing the election",
+    "Rise of the  crypto voter : The surprising group that could swing the election"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-28T19:45:00",
+      "source": "thewrap.com",
+      "headline": "Magic Johnson , Billie Jean King and Steve Kerr Co - Chair Athletes for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thewrap.com/magic-johnson-billie-jean-king-endorse-kamala-harris/"
+    },
+    {
+      "timestamp": "2024-09-28T13:30:00",
+      "source": "yahoo.com",
+      "headline": "Harris Taps California Donors to Pad Her Money Advantage Over Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-taps-california-donors-pad-120000454.html"
+    },
+    {
+      "timestamp": "2024-09-28T15:15:00",
+      "source": "kiplinger.com",
+      "headline": "How Will the Election Impact the Stock Market ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kiplinger.com/investing/stocks/how-will-the-election-impact-the-stock-market"
+    },
+    {
+      "timestamp": "2024-09-28T10:00:00",
+      "source": "salon.com",
+      "headline": "Rise of the  crypto voter : The surprising group that could swing the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.salon.com/2024/09/28/rise-of-the-crypto-voter-the-surprising-group-that-could-swing-the/"
+    },
+    {
+      "timestamp": "2024-09-28T11:00:00",
+      "source": "yahoo.com",
+      "headline": "Rise of the  crypto voter : The surprising group that could swing the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/rise-crypto-voter-surprising-group-093006671.html"
+    },
+    {
+      "timestamp": "2024-09-28T15:00:00",
+      "source": "dailycaller.com",
+      "headline": "Battleground State With Few Electors May Punch Above Its Weight , Deliver  Big Blow  To Harris Come November",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dailycaller.com/2024/09/28/nevada-big-blow-to-harris-trump-2024-election/"
+    },
+    {
+      "timestamp": "2024-09-28T21:30:00",
+      "source": "yahoo.com",
+      "headline": "Watch live : Trump campaigns in Wisconsin amid close race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/watch-live-trump-campaigns-wisconsin-190000996.html"
+    },
+    {
+      "timestamp": "2024-09-28T08:45:00",
+      "source": "foxnews.com",
+      "headline": "Harris - Trump cash dash : Former president looks to flip script with fundraising swing in oil country",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/harris-trump-cash-dash-former-president-flip-script-fundraising-swing-oil-country"
+    },
+    {
+      "timestamp": "2024-09-28T22:00:00",
+      "source": "independent.co.uk",
+      "headline": "Harris to troll Trump over second debate during Alabama - Georgia football game",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/harris-trump-georgia-alabama-debate-b2620643.html"
+    },
+    {
+      "timestamp": "2024-09-28T02:30:00",
+      "source": "breitbart.com",
+      "headline": "Poll : Trump Edges Out Harris Among Independents",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.breitbart.com/politics/2024/09/27/poll-trump-edges-out-harris-among-independents/"
+    },
+    {
+      "timestamp": "2024-09-28T11:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Bucks Seasonal Jinx With One of Best September Gains",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/global-rate-cuts-fuel-one-044501416.html"
+    },
+    {
+      "timestamp": "2024-09-28T10:15:00",
+      "source": "newsweek.com",
+      "headline": "Kamala Harri Chances Surge in Major Election Forecast",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/kamala-harris-polling-surge-forecast-1960686"
+    },
+    {
+      "timestamp": "2024-09-28T15:15:00",
+      "source": "yahoo.com",
+      "headline": "Trump , Harris lean on outside factors to sway stubbornly competitive race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-harris-lean-outside-factors-121500181.html"
+    },
+    {
+      "timestamp": "2024-09-28T01:15:00",
+      "source": "theshillongtimes.com",
+      "headline": "Harris leads Trump in several battleground states : Polls",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://theshillongtimes.com/2024/09/28/harris-leads-trump-in-several-battleground-states-polls/"
+    },
+    {
+      "timestamp": "2024-09-28T16:00:00",
+      "source": "yahoo.com",
+      "headline": "Vance to campaign in Marne on Wednesday",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/vance-campaign-marne-wednesday-133619092.html"
+    }
+  ]
+}

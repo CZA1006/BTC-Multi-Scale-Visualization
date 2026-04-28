@@ -1,0 +1,187 @@
+{
+  "date": "2020-02-13",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 10,
+  "theme_count_regulation": 0,
+  "theme_count_election": 1,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-02-13T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-13T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-13T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-13T14:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-13T16:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-13T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-13T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-02-13T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Cryptocurrency Derivatives Series : Key Driving Forces of Bitcoin And Hedging Strategy",
+    "Pro - Crypto Federal Reserve Nominee Grilled Ahead of Senate Vote",
+    "Forget Gold , Bitcoin is Tailing Global Equity Sentiment",
+    "Fed Chair Admits Central Bank Engaged in  Extraordinary Monetary Policy",
+    "China Under Reporting Coronavirus COVID - 19 Infections , Africa and South America Hidden Outbreaks :: The Market Oracle ::"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-02-13T12:15:00",
+      "source": "econotimes.com",
+      "headline": "Cryptocurrency Derivatives Series : Key Driving Forces of Bitcoin And Hedging Strategy",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Cryptocurrency-Derivatives-Series-Key-Driving-Forces-of-Bitcoin-And-Hedging-Strategy-1574868"
+    },
+    {
+      "timestamp": "2020-02-13T22:15:00",
+      "source": "newsbtc.com",
+      "headline": "Pro - Crypto Federal Reserve Nominee Grilled Ahead of Senate Vote",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/13/crypto-fed-board-nominee/"
+    },
+    {
+      "timestamp": "2020-02-13T17:15:00",
+      "source": "newsbtc.com",
+      "headline": "Forget Gold , Bitcoin is Tailing Global Equity Sentiment",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/02/13/forget-gold-bitcoin-is-tailing-global-equity-sentiment/"
+    },
+    {
+      "timestamp": "2020-02-13T18:30:00",
+      "source": "infowars.com",
+      "headline": "Fed Chair Admits Central Bank Engaged in  Extraordinary Monetary Policy",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.infowars.com/fed-chair-admits-central-bank-engaged-in-extraordinary-monetary-policy/"
+    },
+    {
+      "timestamp": "2020-02-13T07:15:00",
+      "source": "marketoracle.co.uk",
+      "headline": "China Under Reporting Coronavirus COVID - 19 Infections , Africa and South America Hidden Outbreaks :: The Market Oracle ::",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.marketoracle.co.uk/Article66585.html"
+    },
+    {
+      "timestamp": "2020-02-13T00:30:00",
+      "source": "decrypt.co",
+      "headline": "Fed president calls crypto a  giant garbage dumpster",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://decrypt.co/19131/fed-president-calls-crypto-giant-garbage-dumpster"
+    },
+    {
+      "timestamp": "2020-02-13T14:15:00",
+      "source": "kitco.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.kitco.com/news/2020-02-13/Is-bitcoin-s-2020-rally-another-flash-in-the-pan.html"
+    },
+    {
+      "timestamp": "2020-02-13T16:45:00",
+      "source": "channelnewsasia.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.channelnewsasia.com/news/business/is-bitcoin-s-2020-rally-another-flash-in-the-pan--12433100"
+    },
+    {
+      "timestamp": "2020-02-13T16:30:00",
+      "source": "articles.economictimes.indiatimes.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://articles.economictimes.indiatimes.com/markets/stocks/news/is-bitcoins-2020-rally-another-flash-in-the-pan/articleshow/74122152.cms"
+    },
+    {
+      "timestamp": "2020-02-13T16:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "bitcoin : Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/is-bitcoins-2020-rally-another-flash-in-the-pan/articleshow/74122152.cms"
+    },
+    {
+      "timestamp": "2020-02-13T00:30:00",
+      "source": "governing.com",
+      "headline": "It looks like the U . S . authorities are finally taking bitcoin and its peers seriously .",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.governing.com/government-quotes/looks-like-US-authorities-are-finally-taking-bitcoin-and-peers-seriously.html"
+    },
+    {
+      "timestamp": "2020-02-13T14:00:00",
+      "source": "reuters.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-crypto-currencies-analysis/is-bitcoins-2020-rally-another-flash-in-the-pan-idUSKBN2071RU"
+    },
+    {
+      "timestamp": "2020-02-13T14:00:00",
+      "source": "reuters.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-crypto-currencies-analysis-idUSKBN2071RU"
+    },
+    {
+      "timestamp": "2020-02-13T17:15:00",
+      "source": "in.reuters.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://in.reuters.com/in.reuters.com/article/crypto-currencies/is-bitcoins-2020-rally-another-flash-in-the-pan-idINKBN20722P"
+    },
+    {
+      "timestamp": "2020-02-13T14:30:00",
+      "source": "reuters.com",
+      "headline": "Is bitcoin 2020 rally another flash in the pan ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.reuters.com/www.reuters.com/article/us-crypto-currencies-analysis/is-bitcoins-2020-rally-another-flash-in-the-pan-idUSKBN2071RU"
+    }
+  ]
+}

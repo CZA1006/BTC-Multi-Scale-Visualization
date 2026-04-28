@@ -1,0 +1,182 @@
+{
+  "date": "2022-03-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-15T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-15T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-15T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-15T06:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-15T07:00:00",
+      "news_count": 7,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-15T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-15T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine government partners with FTX , Kuna and Everstake for crypto donations",
+    "Russia - Ukraine war LIVE UPDATES : Zelensky calls on Russian troops to surrender",
+    "Hungary wont allow weapons for Ukraine to cross its territory",
+    "Russia - Ukraine crisis live updates | Pregnant woman , baby die after Russian bombing in Mariupol",
+    "Russia invasion of Ukraine takes heavy toll"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-15T10:00:00",
+      "source": "invezz.com",
+      "headline": "Ukraine government partners with FTX , Kuna and Everstake for crypto donations",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://invezz.com/news/2022/03/15/ukraine-government-partners-with-ftx-kuna-and-everstake-for-crypto-donations/"
+    },
+    {
+      "timestamp": "2022-03-15T04:15:00",
+      "source": "afr.com",
+      "headline": "Russia - Ukraine war LIVE UPDATES : Zelensky calls on Russian troops to surrender",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.afr.com/world/europe/zelensky-calls-on-russian-troops-to-surrender-20220315-p5a4n4"
+    },
+    {
+      "timestamp": "2022-03-15T05:30:00",
+      "source": "nbcnews.com",
+      "headline": "Hungary wont allow weapons for Ukraine to cross its territory",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/news/world/live-blog/russia-ukraine-news-live-updates-n1290145/ncrd1290270"
+    },
+    {
+      "timestamp": "2022-03-15T07:00:00",
+      "source": "thehindu.com",
+      "headline": "Russia - Ukraine crisis live updates | Pregnant woman , baby die after Russian bombing in Mariupol",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thehindu.com/news/international/russia-ukraine-crisis-live-updates-march-15-2022/article65226760.ece"
+    },
+    {
+      "timestamp": "2022-03-15T00:30:00",
+      "source": "punchng.com",
+      "headline": "Russia invasion of Ukraine takes heavy toll",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://punchng.com/russias-invasion-of-ukraine-takes-heavy-toll/"
+    },
+    {
+      "timestamp": "2022-03-15T06:30:00",
+      "source": "chron.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.chron.com/news/article/Live-updates-Russian-strikes-hit-apartment-17002531.php"
+    },
+    {
+      "timestamp": "2022-03-15T07:00:00",
+      "source": "sfgate.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sfgate.com/news/article/Live-updates-Russian-strikes-hit-apartment-17002531.php"
+    },
+    {
+      "timestamp": "2022-03-15T07:15:00",
+      "source": "seattlepi.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.seattlepi.com/news/article/Live-updates-Russian-strikes-hit-apartment-17002531.php"
+    },
+    {
+      "timestamp": "2022-03-15T06:30:00",
+      "source": "apnews.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/article/russia-ukraine-kyiv-business-global-trade-europe-d3fc8e510956c63a8d7b53efb8700c9e"
+    },
+    {
+      "timestamp": "2022-03-15T07:30:00",
+      "source": "apnews.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/d3fc8e510956c63a8d7b53efb8700c9e"
+    },
+    {
+      "timestamp": "2022-03-15T07:45:00",
+      "source": "sandiegouniontribune.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sandiegouniontribune.com/business/nation/story/2022-03-14/live-updates-russian-strikes-hit-apartment-building-in-kyiv"
+    },
+    {
+      "timestamp": "2022-03-15T07:00:00",
+      "source": "eagletribune.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.eagletribune.com/region/live-updates-russian-strikes-hit-apartment-building-in-kyiv/article_460ac612-60be-58bb-be16-a62ea691e181.html"
+    },
+    {
+      "timestamp": "2022-03-15T08:00:00",
+      "source": "mynorthwest.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://mynorthwest.com/3394488/live-updates-russian-strikes-hit-apartment-building-in-kyiv/"
+    },
+    {
+      "timestamp": "2022-03-15T06:30:00",
+      "source": "wfmz.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wfmz.com/news/ap/ap-business/live-updates-russian-strikes-hit-apartment-building-in-kyiv/article_ba326797-653a-5543-a423-de3d4d4b14ca.html"
+    },
+    {
+      "timestamp": "2022-03-15T07:00:00",
+      "source": "ctpost.com",
+      "headline": "Live updates : Russian strikes hit apartment building in Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctpost.com/news/article/Live-updates-Russian-strikes-hit-apartment-17002531.php"
+    }
+  ]
+}

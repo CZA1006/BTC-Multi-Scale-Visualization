@@ -1,0 +1,192 @@
+{
+  "date": "2024-09-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 4,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-15T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T02:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Former President Trump  safe  following gunshots nearby campaign",
+    "Trump in Las Vegas :  Our country is under invasion",
+    "Volunteers and Staff from Team Harris - Waltz in Augusta for the start of their campaign , New Way Forward battleground tour",
+    "Expected Winner ? Donald Trump Dominates Electoral College Projections With Nearly 50 - Point Lead Over Kamala Harris",
+    "Liz Cheney 7 - Word Response to Trump  I Hate Taylor Swift  Post"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-15T21:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Former President Trump  safe  following gunshots nearby campaign",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/former-president-trump-safe-following-gunshots-in-close-proximity"
+    },
+    {
+      "timestamp": "2024-09-15T00:00:00",
+      "source": "katu.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://katu.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-15T07:45:00",
+      "source": "yahoo.com",
+      "headline": "Volunteers and Staff from Team Harris - Waltz in Augusta for the start of their campaign , New Way Forward battleground tour",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/volunteers-staff-team-harris-waltz-045017004.html"
+    },
+    {
+      "timestamp": "2024-09-15T02:45:00",
+      "source": "econotimes.com",
+      "headline": "Expected Winner ? Donald Trump Dominates Electoral College Projections With Nearly 50 - Point Lead Over Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Expected-Winner-Donald-Trump-Dominates-Electoral-College-Projections-With-Nearly-50-Point-Lead-Over-Kamala-Harris-1687223"
+    },
+    {
+      "timestamp": "2024-09-15T20:15:00",
+      "source": "newsweek.com",
+      "headline": "Liz Cheney 7 - Word Response to Trump  I Hate Taylor Swift  Post",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/liz-cheney-donald-trump-i-hate-taylor-swift-1954119"
+    },
+    {
+      "timestamp": "2024-09-15T00:00:00",
+      "source": "abc7amarillo.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://abc7amarillo.com/newsletter-daily/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-15T00:30:00",
+      "source": "local21news.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://local21news.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-15T17:15:00",
+      "source": "mirror.co.uk",
+      "headline": "Donald Trump tears into Taylor Swift as he launches unhinged rant about Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mirror.co.uk/news/us-news/donald-trump-goes-unhinged-rant-33673689"
+    },
+    {
+      "timestamp": "2024-09-15T21:45:00",
+      "source": "canberratimes.com.au",
+      "headline": "Trump says  I hate Taylor Swift ! in Truth Social post",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.canberratimes.com.au/story/8764220/trump-says-i-hate-taylor-swift-in-truth-social-post/?cs=14264"
+    },
+    {
+      "timestamp": "2024-09-15T23:30:00",
+      "source": "aol.com",
+      "headline": "New poll shows Harris surging in state thought to be safe for Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/news/poll-shows-harris-surging-state-185326430.html"
+    },
+    {
+      "timestamp": "2024-09-15T20:00:00",
+      "source": "foxnews.com",
+      "headline": "Shock poll : Harris surges to put surprising state in play",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/new-poll-shows-harris-surging-state-thought-safe-trump"
+    },
+    {
+      "timestamp": "2024-09-15T02:45:00",
+      "source": "thehill.com",
+      "headline": "Tillis , Graham , Greene unite against Loomer comments",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/4880390-tillis-graham-greene-unite-against-loomers-comments/"
+    },
+    {
+      "timestamp": "2024-09-15T02:45:00",
+      "source": "telegraph.co.uk",
+      "headline": "Taylor Swift endorsement blows up in Kamala Harris face",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.telegraph.co.uk/us/politics/2024/09/15/taylor-swifts-endorsement-kamala-harris-backfires/"
+    },
+    {
+      "timestamp": "2024-09-15T22:45:00",
+      "source": "dailynews.com",
+      "headline": "Kamala Harris won the debate , but the presidential race is far from over",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailynews.com/2024/09/15/kamala-harris-won-the-debate-but-the-presidential-race-is-far-from-over/"
+    },
+    {
+      "timestamp": "2024-09-15T12:15:00",
+      "source": "khaleejtimes.com",
+      "headline": "Will Taylor Swift Harris endorsement influence the US election ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.khaleejtimes.com/world/will-taylor-swifts-harris-endorsement-influence-the-us-election"
+    }
+  ]
+}

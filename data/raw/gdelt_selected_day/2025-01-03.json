@@ -1,0 +1,202 @@
+{
+  "date": "2025-01-03",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 1,
+  "theme_count_election": 8,
+  "theme_count_war": 2,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-03T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-03T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto - Focused ETFs  The Hot Thing  in 2025",
+    "How investments may fare during Trump 2 . 0 and Fed easing | Hellenic Shipping News Worldwide",
+    "Harris ribs Sanders during official Senate swearing - in",
+    "Harris ribs Sanders during official Senate swearing in",
+    "Cryptocurrency : Crypto deceivers , demagogues , dictators , and dodgers"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-03T23:15:00",
+      "source": "pymnts.com",
+      "headline": "Crypto - Focused ETFs  The Hot Thing  in 2025",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.pymnts.com/cryptocurrency/2025/crypto-focused-exchange-traded-funds-hot-thing/"
+    },
+    {
+      "timestamp": "2025-01-03T16:00:00",
+      "source": "hellenicshippingnews.com",
+      "headline": "How investments may fare during Trump 2 . 0 and Fed easing | Hellenic Shipping News Worldwide",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hellenicshippingnews.com/how-investments-may-fare-during-trump-2-0-and-fed-easing/"
+    },
+    {
+      "timestamp": "2025-01-03T23:00:00",
+      "source": "yahoo.com",
+      "headline": "Harris ribs Sanders during official Senate swearing - in",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-ribs-sanders-during-official-203213092.html"
+    },
+    {
+      "timestamp": "2025-01-03T21:00:00",
+      "source": "thehill.com",
+      "headline": "Harris ribs Sanders during official Senate swearing in",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/5066219-harris-ribs-sanders-during-official-senate-swearing-in/"
+    },
+    {
+      "timestamp": "2025-01-03T08:30:00",
+      "source": "afr.com",
+      "headline": "Cryptocurrency : Crypto deceivers , demagogues , dictators , and dodgers",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.afr.com/companies/financial-services/crypto-s-deceivers-demagogues-dictators-and-dodgers-20250103-p5l1tz"
+    },
+    {
+      "timestamp": "2025-01-03T14:45:00",
+      "source": "bostonglobe.com",
+      "headline": "Kamala Harris will certify her loss to Donald Trump on Jan 6",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bostonglobe.com/2025/01/03/nation/kamala-harris-january-6-trump-certification/"
+    },
+    {
+      "timestamp": "2025-01-03T23:15:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Crypto unholy choir",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/opinion-features/cryptos-unholy-choir"
+    },
+    {
+      "timestamp": "2025-01-03T07:45:00",
+      "source": "yahoo.com",
+      "headline": "Biden awards presidential medal to Republican Trump critic Liz Cheney",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/biden-awards-presidential-medal-republican-064719897.html"
+    },
+    {
+      "timestamp": "2025-01-03T07:45:00",
+      "source": "yahoo.com",
+      "headline": "Biden awards presidential medal to Republican Trump critic Liz Cheney",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/biden-awards-presidential-medal-republican-064719464.html"
+    },
+    {
+      "timestamp": "2025-01-03T19:30:00",
+      "source": "nypost.com",
+      "headline": "Ukrainian Ambassador Oksana Markarova gave Jill Biden $14K brooch as US gave billions to Kyiv government",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2025/01/03/us-news/ukrainian-ambassador-oksana-markarova-gave-jill-biden-14k-brooch-as-us-gave-billions-to-kyivs-government/"
+    },
+    {
+      "timestamp": "2025-01-03T02:45:00",
+      "source": "lifenews.com",
+      "headline": "Kamala Harri Only Prayer for Political Comeback is a Weak Democratic Bench",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lifenews.com/2025/01/02/kamala-harris-only-prayer-for-political-comeback-is-a-weak-democratic-bench/"
+    },
+    {
+      "timestamp": "2025-01-03T04:00:00",
+      "source": "ledevoir.com",
+      "headline": "Joe Biden a décoré jeudi lex - élue républicaine Liz Cheney",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ledevoir.com/monde/etats-unis/829024/biden-decore-liz-cheney-feroce-critique-trump"
+    },
+    {
+      "timestamp": "2025-01-03T18:00:00",
+      "source": "banklesstimes.com",
+      "headline": "Here Why Bitcoin Price Could Skyrocket to $100K This Week",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.banklesstimes.com/articles/2025/01/03/heres-why-bitcoin-price-could-skyrocket-to-100k-this-week/"
+    },
+    {
+      "timestamp": "2025-01-03T02:15:00",
+      "source": "lematin.ch",
+      "headline": "Biden décore Liz Cheney , féroce critique de Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lematin.ch/story/etats-unis-biden-decore-liz-cheney-feroce-critique-de-trump-103250911"
+    },
+    {
+      "timestamp": "2025-01-03T17:15:00",
+      "source": "benzinga.com",
+      "headline": "Happy Birthday Bitcoin : 16 Fun Facts About Leading Cryptocurrency",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/general/education/25/01/42789566/happy-birthday-bitcoin-16-fun-facts-about-leading-cryptocurrency"
+    }
+  ]
+}

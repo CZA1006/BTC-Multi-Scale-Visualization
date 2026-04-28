@@ -1,0 +1,207 @@
+{
+  "date": "2025-01-16",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 3,
+  "theme_count_election": 6,
+  "theme_count_war": 4,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-16T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T08:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-16T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "One - Sided Loyalty : Harri Relationship With Biden Reportedly In Shambles As They Leave Power",
+    "I would have beaten Trump : Biden remarks leave Kamala Harris  disappointed",
+    "Bangkok Post - Bitcoin flirts with $100 , 000 level as US Fed worries ease",
+    "Report : Harris Disappointed with Biden Claim He Could Have Beat Trump",
+    "Bitcoin flirts with US$100 , 000 again"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-16T20:30:00",
+      "source": "dailycaller.com",
+      "headline": "One - Sided Loyalty : Harri Relationship With Biden Reportedly In Shambles As They Leave Power",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dailycaller.com/2025/01/16/kamala-harris-relationship-joe-biden-strained/"
+    },
+    {
+      "timestamp": "2025-01-16T08:00:00",
+      "source": "moneycontrol.com",
+      "headline": "I would have beaten Trump : Biden remarks leave Kamala Harris  disappointed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/world/i-would-have-beaten-trump-biden-s-remarks-leave-kamala-harris-disappointed-12912042.html"
+    },
+    {
+      "timestamp": "2025-01-16T07:45:00",
+      "source": "bangkokpost.com",
+      "headline": "Bangkok Post - Bitcoin flirts with $100 , 000 level as US Fed worries ease",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.bangkokpost.com/business/investment/2941112/bitcoin-flirts-with-100-000-level-as-us-fed-worries-ease"
+    },
+    {
+      "timestamp": "2025-01-16T16:15:00",
+      "source": "breitbart.com",
+      "headline": "Report : Harris Disappointed with Biden Claim He Could Have Beat Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.breitbart.com/politics/2025/01/16/report-harris-disappointed-with-bidens-claim-he-could-have-beat-trump/"
+    },
+    {
+      "timestamp": "2025-01-16T10:00:00",
+      "source": "thestandard.com.hk",
+      "headline": "Bitcoin flirts with US$100 , 000 again",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.thestandard.com.hk/breaking-news/section/2/225177/Bitcoin-flirts-with-US$100,000-again"
+    },
+    {
+      "timestamp": "2025-01-16T08:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Canary amended S - 1 has analysts more confident a Litecoin ETF is next",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/canary-amended-s-1-has-analysts-more-confident-litecoin-etf-is-next"
+    },
+    {
+      "timestamp": "2025-01-16T17:15:00",
+      "source": "aol.com",
+      "headline": "Kamala Harris to  pen tell - all book about losing to Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/kamala-harris-pen-tell-book-152332703.html"
+    },
+    {
+      "timestamp": "2025-01-16T12:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin ( BTC ) Poised for Record Price Over $108K as Trump Inauguration Nears , Major Coins Due for 10 % Swings : Traders",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/markets/2025/01/16/bitcoin-poised-to-top-record-as-trump-inauguration-nears-major-coins-due-for-10-swings-traders"
+    },
+    {
+      "timestamp": "2025-01-16T19:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "XRP Hits 7 - Year High Above $3 as Large Holders Accumulate $3 . 8B of Tokens",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/xrp-hits-7-high-above-213606567.html"
+    },
+    {
+      "timestamp": "2025-01-16T06:15:00",
+      "source": "lasvegassun.com",
+      "headline": "Five things to know about Biden farewell address that also served as a warning to the country - Las Vegas Sun News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://lasvegassun.com/news/2025/jan/15/five-things-to-know-about-bidens-farewell-address-/"
+    },
+    {
+      "timestamp": "2025-01-16T08:15:00",
+      "source": "thetimes-tribune.com",
+      "headline": "Five things to know about Biden farewell address that also served as a warning to the country – Scranton Times - Tribune",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thetimes-tribune.com/2025/01/15/five-things-to-know-about-bidens-farewell-address-that-also-served-as-a-warning-to-the-country/"
+    },
+    {
+      "timestamp": "2025-01-16T14:15:00",
+      "source": "siouxcityjournal.com",
+      "headline": "Biden issues warnings , calls for changes in farewell address",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://siouxcityjournal.com/news/nation-world/government-politics/biden-farewell-address-moments-donald-trump/article_a736210c-3219-5043-a91e-bfde41c89dca.html"
+    },
+    {
+      "timestamp": "2025-01-16T05:00:00",
+      "source": "stcatharinesstandard.ca",
+      "headline": "Five things to know about Biden farewell address that also served as a warning to the country",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stcatharinesstandard.ca/news/world/united-states/five-things-to-know-about-bidens-farewell-address-that-also-served-as-a-warning-to/article_7e9410de-e2d6-5222-8672-9461647d93a5.html"
+    },
+    {
+      "timestamp": "2025-01-16T16:45:00",
+      "source": "nypost.com",
+      "headline": "Kamala Harris  holding a grudge  after Biden insists he could have won election against Trump : report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2025/01/16/us-news/kamala-harris-holding-a-grudge-after-biden-insists-he-could-have-won-election-against-trump-report/"
+    },
+    {
+      "timestamp": "2025-01-16T22:45:00",
+      "source": "coindesk.com",
+      "headline": "Crypto U . S . Senate Ally Lummis Pushes Federal Agencies on Digital Assets Issues",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/policy/2025/01/16/crypto-s-senate-ally-lummis-pushes-federal-agencies-on-digital-assets-issues"
+    }
+  ]
+}

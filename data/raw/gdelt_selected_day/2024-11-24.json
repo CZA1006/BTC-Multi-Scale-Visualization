@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-24",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 5,
+  "theme_count_regulation": 1,
+  "theme_count_election": 7,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-24T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-24T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bangkok Post - Traders expect Bitcoin bull run in 2025",
+    "State Based Bitcoin Reserves Could Help Drive Pro - Crypto Policies Forward",
+    "Bill Clinton says  I cant say I was surprised  by 2024 results",
+    "The Herald - Breaking news .",
+    "Bitcoin values hit record highs . Should you invest in cryptocurrency ? Here how it works"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-24T23:45:00",
+      "source": "bangkokpost.com",
+      "headline": "Bangkok Post - Traders expect Bitcoin bull run in 2025",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.bangkokpost.com/business/investment/2908165/traders-expect-bitcoin-bull-run-in-2025"
+    },
+    {
+      "timestamp": "2024-11-24T21:15:00",
+      "source": "forbes.com",
+      "headline": "State Based Bitcoin Reserves Could Help Drive Pro - Crypto Policies Forward",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/11/24/state-based-bitcoin-reserves-could-help-drive-pro-crypto-policies/"
+    },
+    {
+      "timestamp": "2024-11-24T16:45:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Bill Clinton says  I cant say I was surprised  by 2024 results",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/news/campaigns/presidential/3240385/bill-clinton-unsurprised-2024-election-results/"
+    },
+    {
+      "timestamp": "2024-11-24T22:45:00",
+      "source": "herald.co.zw",
+      "headline": "The Herald - Breaking news .",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.herald.co.zw/bitcoin-flirts-with-us100-000-on-optimism-over-us-crypto-outlook/"
+    },
+    {
+      "timestamp": "2024-11-24T17:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin values hit record highs . Should you invest in cryptocurrency ? Here how it works",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-values-hit-record-highs-214751021.html"
+    },
+    {
+      "timestamp": "2024-11-24T17:45:00",
+      "source": "247wallst.com",
+      "headline": "Prediction : This Is Where Bitcoin Could Go Under a Trump Presidency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://247wallst.com/investing/2024/11/24/prediction-this-is-where-bitcoin-could-go-under-a-trump-presidency/"
+    },
+    {
+      "timestamp": "2024-11-24T02:30:00",
+      "source": "thehill.com",
+      "headline": "White House mostly mum after Trump defeat",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/administration/5005304-white-house-trump-defeat/"
+    },
+    {
+      "timestamp": "2024-11-24T14:00:00",
+      "source": "financialexpress.com",
+      "headline": "Bitcoin at USD 1 to USD 98K in 14 years : Your Rs 100 investment is now Rs 1 . 65 crore ! - Money News",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.financialexpress.com/money/bitcoin-from-usd-1-to-near-usd-1-lakh-in-14-years-your-rs-100-investment-is-now-rs-1-65-crore-3676036/"
+    },
+    {
+      "timestamp": "2024-11-24T02:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Spot Solana ETF Filings Surge With Gensler Set to Exit",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/spot-solana-etf-filings-surge-004100730.html"
+    },
+    {
+      "timestamp": "2024-11-24T23:15:00",
+      "source": "theblaze.com",
+      "headline": "How Christians propelled Trump to victory and why Democrats will continue to lose",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theblaze.com/abide/donald-trump-won-christian-voters-election-2024"
+    },
+    {
+      "timestamp": "2024-11-24T07:15:00",
+      "source": "investopedia.com",
+      "headline": "The Current  Trump Trade  Is Less Euphoric And More Strategic",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.investopedia.com/the-current-trump-trade-less-euphoric-more-strategic-8750449"
+    },
+    {
+      "timestamp": "2024-11-24T18:15:00",
+      "source": "latimes.com",
+      "headline": "With bitcoin surging , here a refresher on cryptocurrency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.latimes.com/business/story/2024-11-24/bitcoin-ticks-closer-to-100000-in-extended-surge-following-us-elections"
+    },
+    {
+      "timestamp": "2024-11-24T11:45:00",
+      "source": "thehill.com",
+      "headline": "What next for Kamala Harris ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/campaign/5005513-whats-next-for-kamala-harris/"
+    },
+    {
+      "timestamp": "2024-11-24T15:00:00",
+      "source": "t24.com.tr",
+      "headline": "100 bin dolar eşiğine ulaştı : Bitcoin rallisi devam edecek mi ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://t24.com.tr/haber/100-bin-dolar-esigine-ulasti-bitcoin-rallisi-devam-edecek-mi,1198683"
+    },
+    {
+      "timestamp": "2024-11-24T23:00:00",
+      "source": "amny.com",
+      "headline": "Is Ritchie running ? Bronx Congress member Torres slams Hochul online , calling for Democratic challenger to governor in 2026",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.amny.com/news/ritchie-torres-slams-hochul-governor-2026/"
+    }
+  ]
+}

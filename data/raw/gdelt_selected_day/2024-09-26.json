@@ -1,0 +1,207 @@
+{
+  "date": "2024-09-26",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-26T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T03:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-26T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-27T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Kamala Harris is suddenly talking about crypto . Here why",
+    "A  Rapid Pace  $100 , 000 Bitcoin Price Earthquake Is Suddenly Predicted To Shock Crypto",
+    "Kamala Harris , Donald Trump lay out dueling visions for US economy",
+    "POLL POSITION : Donald Trump Holds 2 - Point Lead Over Kamala Harris in White House Race [ RASMUSSEN ]",
+    "3 reasons why Bitcoin ( BTC ) struggles to hold $64 . 5K"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-26T20:45:00",
+      "source": "qz.com",
+      "headline": "Kamala Harris is suddenly talking about crypto . Here why",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://qz.com/kamala-harris-is-suddenly-talking-about-crypto-1851658902"
+    },
+    {
+      "timestamp": "2024-09-26T17:00:00",
+      "source": "forbes.com",
+      "headline": "A  Rapid Pace  $100 , 000 Bitcoin Price Earthquake Is Suddenly Predicted To Shock Crypto",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/09/26/a-rapid-pace-100000-bitcoin-price-earthquake-is-suddenly-predicted-to-shock-crypto/"
+    },
+    {
+      "timestamp": "2024-09-26T05:00:00",
+      "source": "gulfnews.com",
+      "headline": "Kamala Harris , Donald Trump lay out dueling visions for US economy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/world/americas/kamala-harris-donald-trump-lay-out-dueling-visions-for-us-economy-1.1727320710538"
+    },
+    {
+      "timestamp": "2024-09-26T21:15:00",
+      "source": "hannity.com",
+      "headline": "POLL POSITION : Donald Trump Holds 2 - Point Lead Over Kamala Harris in White House Race [ RASMUSSEN ]",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://hannity.com/media-room/poll-position-donald-trump-holds-2-point-lead-over-kamala-harris-in-white-house-race-rasmussen/"
+    },
+    {
+      "timestamp": "2024-09-26T03:30:00",
+      "source": "cointelegraph.com",
+      "headline": "3 reasons why Bitcoin ( BTC ) struggles to hold $64 . 5K",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/3-reasons-why-bitcoin-btc-struggles-to-hold-64-5-k"
+    },
+    {
+      "timestamp": "2024-09-26T02:30:00",
+      "source": "koreaherald.com",
+      "headline": "About 2 in 3 Asian American voters support Harris in tight US presidential race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.koreaherald.com/view.php?ud=20240926050100"
+    },
+    {
+      "timestamp": "2024-09-26T13:45:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin still consolidates despite positive spot ETFs demand",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-bulls-eye-for-70-000-if-it-breaks-above-the-consolidation-zone-202409261130"
+    },
+    {
+      "timestamp": "2024-09-26T22:30:00",
+      "source": "washingtontimes.com",
+      "headline": "Donald Trump may grab Electoral College while Kamala Harris takes popular vote , model shows",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2024/sep/26/donald-trump-may-grab-electoral-college-while-kama/"
+    },
+    {
+      "timestamp": "2024-09-26T03:45:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Harris attacks  biggest loser  Trump on US economy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/harris-attacks-biggest-loser-trump-on-us-economy/articleshow/113683846.cms"
+    },
+    {
+      "timestamp": "2024-09-26T03:15:00",
+      "source": "bssnews.net",
+      "headline": "Harris attacks  biggest loser  Trump on US economy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bssnews.net/news/211964"
+    },
+    {
+      "timestamp": "2024-09-27T00:00:00",
+      "source": "townhall.com",
+      "headline": "This Is How Much More Likely Trump Is Expected to Win In November Over Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://townhall.com/tipsheet/saraharnold/2024/09/26/new-poll-finds-trump-has-a-10-point-lead-n2645332"
+    },
+    {
+      "timestamp": "2024-09-26T03:30:00",
+      "source": "philstar.com",
+      "headline": "Harris attacks  biggest loser  Trump on US economy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.philstar.com/world/2024/09/26/2388131/harris-attacks-biggest-loser-trump-us-economy"
+    },
+    {
+      "timestamp": "2024-09-26T04:30:00",
+      "source": "rte.ie",
+      "headline": "Harris attacks  biggest loser  Trump on US economy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.rte.ie/news/us/2024/0926/1472029-harris-trump/"
+    },
+    {
+      "timestamp": "2024-09-26T12:45:00",
+      "source": "zaobao.com.sg",
+      "headline": "哈里斯vs特朗普 谁将改写美国历史 | 世界大解说",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.zaobao.com.sg/news/world/story20240926-4862428"
+    },
+    {
+      "timestamp": "2024-09-26T23:15:00",
+      "source": "yahoo.com",
+      "headline": "Harris crypto pitch keeps divided Democrats at bay",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-crypto-pitch-keeps-divided-224700298.html"
+    }
+  ]
+}

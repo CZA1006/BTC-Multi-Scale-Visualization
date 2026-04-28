@@ -1,0 +1,197 @@
+{
+  "date": "2024-10-29",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-29T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T03:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-29T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin tops US$70 , 000 for first time since June as election nears",
+    "Harris - Trump showdown : Margin - of - error presidential race with one week until Election Day",
+    "Bitcoin prices surge past $71 , 000 amid speculation around US election",
+    "Is Bitcoin Ready To Break Through $70 , 000 ? Analyzing The Next Steps For The Crypto Leader",
+    "Michelle Obama , Tim Walz to rally Georgia voters 1 week ahead of Election Day"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-29T03:45:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Bitcoin tops US$70 , 000 for first time since June as election nears",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/bitcoin-tops-us70000-first-time-june-election-nears"
+    },
+    {
+      "timestamp": "2024-10-29T09:15:00",
+      "source": "foxnews.com",
+      "headline": "Harris - Trump showdown : Margin - of - error presidential race with one week until Election Day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/politics/harris-trump-showdown-margin-of-error-presidential-race-one-week-until-election-day"
+    },
+    {
+      "timestamp": "2024-10-29T04:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin prices surge past $71 , 000 amid speculation around US election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-prices-surge-past-71000-amid-speculation-around-us-election/articleshow/114715494.cms"
+    },
+    {
+      "timestamp": "2024-10-29T03:15:00",
+      "source": "newsbtc.com",
+      "headline": "Is Bitcoin Ready To Break Through $70 , 000 ? Analyzing The Next Steps For The Crypto Leader",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/is-bitcoin-ready-to-break-through-70000-analyzing-the-next-steps-for-the-crypto-leader/"
+    },
+    {
+      "timestamp": "2024-10-29T13:45:00",
+      "source": "fox5atlanta.com",
+      "headline": "Michelle Obama , Tim Walz to rally Georgia voters 1 week ahead of Election Day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fox5atlanta.com/news/michelle-obama-tim-walz-georgia-atlanta-rally-election-day"
+    },
+    {
+      "timestamp": "2024-10-29T21:15:00",
+      "source": "investopedia.com",
+      "headline": "Bitcoin Price Tops $73 , 000 Ahead of Election Day as Investors Flock to ETFs",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.investopedia.com/bitcoin-price-tops-usd73000-ahead-of-election-day-investors-flock-etfs-8735918"
+    },
+    {
+      "timestamp": "2024-10-29T07:45:00",
+      "source": "aljazeera.com",
+      "headline": "US election : 7 days left – What polls say , what Harris and Trump are up to",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2024/10/29/us-election-7-days-left-what-polls-say-what-harris-and-trump-are-up"
+    },
+    {
+      "timestamp": "2024-10-29T00:30:00",
+      "source": "econotimes.com",
+      "headline": "Bitcoin Bullish Drive Skyrockets as Election Sparks Anticipation , Market Eyes Record - Setting Highs",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Bitcoins-Bullish-Drive-Skyrockets-as-Election-Sparks-Anticipation-Market-Eyes-Record-Setting-Highs-1692080"
+    },
+    {
+      "timestamp": "2024-10-29T10:30:00",
+      "source": "yahoo.com",
+      "headline": "Is Trump leading in Pennsylvania ? See what the polls say about the election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/trump-leading-pennsylvania-see-polls-085326298.html"
+    },
+    {
+      "timestamp": "2024-10-29T13:00:00",
+      "source": "biztechafrica.com",
+      "headline": "Bitcoin Crosses $70 , 000 As US Election Tips In Favor of Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.biztechafrica.com/article/bitcoin-crosses-70k/80002/"
+    },
+    {
+      "timestamp": "2024-10-29T00:45:00",
+      "source": "ksl.com",
+      "headline": "Harris campaigns in Michigan , Trump in Georgia in final stretch of White House race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ksl.com:443/article/51164373/harris-campaigns-in-michigan-trump-in-georgia-in-final-stretch-of-white-house-race"
+    },
+    {
+      "timestamp": "2024-10-29T03:00:00",
+      "source": "moneycontrol.com",
+      "headline": "Asian shares fluctuate with focus on US election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/us-presidential-elections/asian-shares-fluctuate-with-focus-on-us-election-12853244.html"
+    },
+    {
+      "timestamp": "2024-10-29T01:30:00",
+      "source": "nbcnewyork.com",
+      "headline": "Bitcoin briefly tops $70 , 000 for the first time since June as investors await earnings , Election Day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcnewyork.com/news/business/money-report/bitcoin-briefly-tops-70000-for-the-first-time-since-june-as-investors-await-earnings-election-day/5931568/"
+    },
+    {
+      "timestamp": "2024-10-29T18:15:00",
+      "source": "ideastream.org",
+      "headline": "Harris returns to the site of Trump Jan . 6 rally to make her closing argument",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ideastream.org/npr-news/2024-10-29/harris-returns-to-the-site-of-trumps-jan-6-rally-to-make-her-closing-argument"
+    },
+    {
+      "timestamp": "2024-10-29T00:45:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Bitcoin briefly tops $70 , 000 for the first time since June as investors await earnings , Election Day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/bitcoin-briefly-tops-70000-for-the-first-time-since-june-as-investors-await-earnings-election-day/3420271/"
+    }
+  ]
+}

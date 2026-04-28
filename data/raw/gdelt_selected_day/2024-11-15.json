@@ -1,0 +1,202 @@
+{
+  "date": "2024-11-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 10,
+  "theme_count_war": 0,
+  "theme_count_macro": 3,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-15T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T10:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-15T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin briefly tops $93 , 000 on Trump agenda , fed policy outlook",
+    "Cryptos Slip As Markets Fear Slower Rate Cuts",
+    "Bitcoin post - trump rally pauses : what next for crypto ?",
+    "Federal Reserve cuts its key interest rate by a quarter - point",
+    "6 Charts That Show How Trump Realigned the Political Landscape"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-15T10:45:00",
+      "source": "thehindubusinessline.com",
+      "headline": "Bitcoin briefly tops $93 , 000 on Trump agenda , fed policy outlook",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thehindubusinessline.com/money-and-banking/bitcoin-briefly-tops-93000-on-trump-agenda-fed-policy-outlook/article68871678.ece"
+    },
+    {
+      "timestamp": "2024-11-15T16:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Cryptos Slip As Markets Fear Slower Rate Cuts",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2024-11/63832653-cryptos-slip-as-markets-fear-slower-rate-cuts-020.htm"
+    },
+    {
+      "timestamp": "2024-11-15T11:45:00",
+      "source": "invezz.com",
+      "headline": "Bitcoin post - trump rally pauses : what next for crypto ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://invezz.com/news/2024/11/15/the-trump-effect-bitcoins-wild-ride-takes-a-breather/"
+    },
+    {
+      "timestamp": "2024-11-15T01:45:00",
+      "source": "943thepoint.com",
+      "headline": "Federal Reserve cuts its key interest rate by a quarter - point",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://943thepoint.com/ixp/385/p/fed-cuts-its-key-interest-rate-by-a-quarter-point-amid-postelection-uncertainty/"
+    },
+    {
+      "timestamp": "2024-11-15T03:00:00",
+      "source": "theepochtimes.com",
+      "headline": "6 Charts That Show How Trump Realigned the Political Landscape",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theepochtimes.com/article/6-charts-that-show-how-trump-realigned-the-political-landscape-5757759"
+    },
+    {
+      "timestamp": "2024-11-15T00:15:00",
+      "source": "yellowhammernews.com",
+      "headline": "Katie Britt calls out Biden administration after Bitcoin surge , urges new SEC Chair",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://yellowhammernews.com/katie-britt-calls-out-biden-administration-after-bitcoin-surge-urges-new-sec-chair/"
+    },
+    {
+      "timestamp": "2024-11-15T00:15:00",
+      "source": "dailymail.co.uk",
+      "headline": "Cardi B reveals how much Kamala Harris paid her to campaign",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-14084947/cardi-b-kamala-harris-paid-campaign.html"
+    },
+    {
+      "timestamp": "2024-11-15T08:15:00",
+      "source": "counterpunch.org",
+      "headline": "Voters in Arab American Strongholds Likely Tipped Michigan in Trump  favor",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.counterpunch.org/2024/11/15/voters-in-arab-american-strongholds-likely-tipped-michigan-in-trumps-favor/"
+    },
+    {
+      "timestamp": "2024-11-15T22:30:00",
+      "source": "thehill.com",
+      "headline": "Trump is  drunk on power , former White House aide says",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thehill.com/homenews/administration/4993466-former-white-house-aide-says-trump-drunk-on-power/"
+    },
+    {
+      "timestamp": "2024-11-15T04:00:00",
+      "source": "hindustantimes.com",
+      "headline": "Cardi B reveals how much Kamala Harris paid her , swearing on her three kids :  You know damn well …",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hindustantimes.com/entertainment/music/cardi-b-reveals-how-much-kamala-harris-paid-her-swearing-on-her-three-kids-you-know-damn-well-101731637626480.html"
+    },
+    {
+      "timestamp": "2024-11-15T23:30:00",
+      "source": "pymnts.com",
+      "headline": "Prosecutor : US Attorney Office Will Pursue Fewer Crypto Cases",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.pymnts.com/cryptocurrency/2024/prosecutor-says-united-states-attorneys-office-will-pursue-fewer-crypto-cases/"
+    },
+    {
+      "timestamp": "2024-11-15T03:45:00",
+      "source": "skynews.com.au",
+      "headline": "Desperate Housewives star Eva Longoria uproots family from United States following Donald Trump election win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.skynews.com.au/lifestyle/celebrity-life/desperate-housewives-star-eva-longoria-uproots-family-from-united-states-following-donald-trumps-election-win/news-story/684c8c247eaaee7f019089e7d528059e?nk=c6aaaa0596a42303d06cc225244a8356-1731641506"
+    },
+    {
+      "timestamp": "2024-11-15T15:00:00",
+      "source": "investing.com",
+      "headline": "Bitcoin : Is the Powell - Fueled Pullback a Dip - Buying Opportunity ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investing.com/analysis/bitcoin-is-the-powellfueled-pullback-a-dipbuying-opportunity-200654196"
+    },
+    {
+      "timestamp": "2024-11-15T10:30:00",
+      "source": "arkansasonline.com",
+      "headline": "Wholesale prices increase in US | The Arkansas Democrat - Gazette - Arkansa Best News Source",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2024/nov/15/wholesale-prices-increase-in-us/"
+    },
+    {
+      "timestamp": "2024-11-15T10:30:00",
+      "source": "marketscreener.com",
+      "headline": "European Midday Briefing : Powell Rate - Cut Caution Drags on Stocks",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/quote/currency/EURO-US-DOLLAR-EUR-USD-4591/news/European-Midday-Briefing-Powell-Rate-Cut-Caution-Drags-on-Stocks-48377103/"
+    }
+  ]
+}

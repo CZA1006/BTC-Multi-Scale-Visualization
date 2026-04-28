@@ -1,0 +1,192 @@
+{
+  "date": "2022-04-18",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-18T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T10:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-18T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin : Ideal for undermining sanctions",
+    "Ukraine Update : Mariupol Defenders Hold Out ; Missiles Hit Lviv -- this one",
+    "Live Updates | Putin : West sanctions  blitz  has failed",
+    "Live Updates | Putin : West sanctions  blitz  has failed",
+    "Ukraine news : Shelling halts civilian evacuations"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-18T10:45:00",
+      "source": "techstory.in",
+      "headline": "Bitcoin : Ideal for undermining sanctions",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://techstory.in/bitcoin-ideal-for-undermining-sanctions/"
+    },
+    {
+      "timestamp": "2022-04-18T18:30:00",
+      "source": "bloombergquint.com",
+      "headline": "Ukraine Update : Mariupol Defenders Hold Out ; Missiles Hit Lviv -- this one",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bloombergquint.com/politics/ukraine-update-mariupol-defenders-hold-out-against-onslaught"
+    },
+    {
+      "timestamp": "2022-04-18T15:15:00",
+      "source": "startribune.com",
+      "headline": "Live Updates | Putin : West sanctions  blitz  has failed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/live-updates-putin-wests-sanctions-blitz-has-failed/600165765/"
+    },
+    {
+      "timestamp": "2022-04-18T15:00:00",
+      "source": "kstp.com",
+      "headline": "Live Updates | Putin : West sanctions  blitz  has failed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://kstp.com/kstp-news/top-news/live-updates-putin-wests-sanctions-blitz-has-failed/"
+    },
+    {
+      "timestamp": "2022-04-18T10:45:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine news : Shelling halts civilian evacuations",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/live-updates-shelling-halts-civilian-evacuations-ukraine-says-1.5865222"
+    },
+    {
+      "timestamp": "2022-04-18T06:45:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine news : Explosions rock city of Lviv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/live-updates-explosions-rock-city-of-lviv-1.5865222"
+    },
+    {
+      "timestamp": "2022-04-18T03:30:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine news today : Troops inflict  deliberate terror",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/live-updates-troops-inflict-deliberate-terror-zelenskyy-says-1.5864583"
+    },
+    {
+      "timestamp": "2022-04-18T14:30:00",
+      "source": "ctpost.com",
+      "headline": "Live Updates | Putin : West sanctions  blitz  has failed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctpost.com/news/article/Live-Updates-Lviv-mayor-says-5-missiles-struck-17087324.php"
+    },
+    {
+      "timestamp": "2022-04-18T15:15:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine news : Shelling halts civilian evacuations",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/live-updates-pro-putin-politician-says-he-should-be-freed-in-exchange-for-mariupol-civilians-1.5865222"
+    },
+    {
+      "timestamp": "2022-04-18T12:00:00",
+      "source": "gazette.com",
+      "headline": "Live Updates | Pro - Putin pol : free me for Mariupol civilians",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://gazette.com/ap/politics/live-updates-pro-putin-pol-free-me-for-mariupol-civilians/article_841aac16-1f04-5c3b-8953-eb192ca7e20f.html"
+    },
+    {
+      "timestamp": "2022-04-18T11:30:00",
+      "source": "kstp.com",
+      "headline": "Live Updates | Pro - Putin pol : free me for Mariupol civilians",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://kstp.com/kstp-news/top-news/live-updates-pro-putin-pol-free-me-for-mariupol-civilians/"
+    },
+    {
+      "timestamp": "2022-04-18T16:30:00",
+      "source": "ctvnews.ca",
+      "headline": "Ukraine news : Syrians offered US$600 to join Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ctvnews.ca/world/live-updates-syrians-offered-us-600-to-join-russia-report-says-1.5865222"
+    },
+    {
+      "timestamp": "2022-04-18T11:15:00",
+      "source": "kstp.com",
+      "headline": "Live Updates | Ukraine : shelling halts civilian evacuation",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://kstp.com/kstp-news/top-news/live-updates-ukraine-shelling-halts-civilian-evacuation/"
+    },
+    {
+      "timestamp": "2022-04-18T10:30:00",
+      "source": "wfaa.com",
+      "headline": "Ukraine : civilians cant escape because of Russian bombs",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wfaa.com/article/news/nation-world/ukraine/ukraine-shellings-escalated-over-easter-weekend/507-a0063a75-3251-498f-9d2a-854e6e6d0485"
+    },
+    {
+      "timestamp": "2022-04-18T10:15:00",
+      "source": "khou.com",
+      "headline": "Ukraine : civilians cant escape because of Russian bombs",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.khou.com/article/news/nation-world/ukraine/ukraine-shellings-escalated-over-easter-weekend/507-a0063a75-3251-498f-9d2a-854e6e6d0485"
+    }
+  ]
+}

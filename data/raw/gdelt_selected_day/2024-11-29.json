@@ -1,0 +1,172 @@
+{
+  "date": "2024-11-29",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-29T00:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-29T01:00:00",
+      "news_count": 7,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-29T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-29T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-29T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "How Kamala Harris Thumbed Her Nose at Arab American and Muslim Voters",
+    "Ether ETFs are beating their Bitcoin counterparts amid recent ETH rally",
+    "How Trump victory has divided the crypto community",
+    "Kamala should go away and never come back : Democratic megadonor John Morgan after $2 Billion campaign loss",
+    "Bitcoin price : Bitcoin up as Cryptophiles vie to head regulators"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-29T07:30:00",
+      "source": "counterpunch.org",
+      "headline": "How Kamala Harris Thumbed Her Nose at Arab American and Muslim Voters",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.counterpunch.org/2024/11/29/how-kamala-harris-thumbed-her-nose-at-arab-american-and-muslim-voters/"
+    },
+    {
+      "timestamp": "2024-11-29T07:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Ether ETFs are beating their Bitcoin counterparts amid recent ETH rally",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/ether-etfs-inflows-beat-bitcoin-etfs-over-last-four-days"
+    },
+    {
+      "timestamp": "2024-11-29T16:45:00",
+      "source": "cointelegraph.com",
+      "headline": "How Trump victory has divided the crypto community",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/trump-victory-divide-crypto-community"
+    },
+    {
+      "timestamp": "2024-11-29T01:30:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Kamala should go away and never come back : Democratic megadonor John Morgan after $2 Billion campaign loss",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/us/kamala-should-go-away-and-never-come-back-democratic-megadonor-john-morgan-after-2-billion-campaign-loss/articleshow/115786157.cms"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin price : Bitcoin up as Cryptophiles vie to head regulators",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-up-as-cryptophiles-vie-to-head-regulators/articleshow/115787225.cms"
+    },
+    {
+      "timestamp": "2024-11-29T22:15:00",
+      "source": "politicalwire.com",
+      "headline": "Project 2025 Is Alive and Well",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://politicalwire.com/2024/11/29/project-2025-is-alive-and-well/"
+    },
+    {
+      "timestamp": "2024-11-29T01:30:00",
+      "source": "whyn.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://whyn.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:00",
+      "source": "wilm.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wilm.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:00",
+      "source": "790waeb.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://790waeb.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:00",
+      "source": "kfyi.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://kfyi.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T01:15:00",
+      "source": "ktok.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://ktok.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T00:30:00",
+      "source": "wonw1280.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wonw1280.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T00:30:00",
+      "source": "wsfcam.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wsfcam.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T00:30:00",
+      "source": "wham1180.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wham1180.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    },
+    {
+      "timestamp": "2024-11-29T00:30:00",
+      "source": "newsradiowkcy.iheart.com",
+      "headline": "Surprising Detail About Kamala Harri Polling Numbers Revealed | NewsRadio WKCY",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://newsradiowkcy.iheart.com/content/2024-11-28-surprising-detail-about-kamala-harris-polling-numbers-revealed/"
+    }
+  ]
+}

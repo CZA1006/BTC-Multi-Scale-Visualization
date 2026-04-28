@@ -1,0 +1,197 @@
+{
+  "date": "2020-03-21",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 4,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-21T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T02:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T09:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-21T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin ( BTC ) Bulls Say It Time for  Plan B  as Fed Ramps Up Repo Operations",
+    "As this Crisis Worsens , Bitcoin Will Become a Safe Haven Again",
+    "Is The Crypto Market Bottom In ? This News Headline Suggests It Near",
+    "Market Leader : News :: Fed Cuts Interest Rates . What Does It Mean For Bitcoin ?",
+    "4th Largest 1 - Month Dow Sell Candle in History Leaves Bitcoin Vulnerable"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-21T00:30:00",
+      "source": "u.today",
+      "headline": "Bitcoin ( BTC ) Bulls Say It Time for  Plan B  as Fed Ramps Up Repo Operations",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://u.today/bitcoin-btc-bulls-say-its-time-for-plan-b-as-fed-ramps-up-repo-operations"
+    },
+    {
+      "timestamp": "2020-03-21T22:30:00",
+      "source": "coindesk.com",
+      "headline": "As this Crisis Worsens , Bitcoin Will Become a Safe Haven Again",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/as-this-crisis-worsens-bitcoin-will-become-a-safe-haven-again"
+    },
+    {
+      "timestamp": "2020-03-21T02:45:00",
+      "source": "newsbtc.com",
+      "headline": "Is The Crypto Market Bottom In ? This News Headline Suggests It Near",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/21/is-the-crypto-market-bottom-in-this-news-headline-suggests-its-near/"
+    },
+    {
+      "timestamp": "2020-03-21T09:00:00",
+      "source": "profi-forex.us",
+      "headline": "Market Leader : News :: Fed Cuts Interest Rates . What Does It Mean For Bitcoin ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://www.profi-forex.us/news/entry4000008753.html"
+    },
+    {
+      "timestamp": "2020-03-21T02:45:00",
+      "source": "newsbtc.com",
+      "headline": "4th Largest 1 - Month Dow Sell Candle in History Leaves Bitcoin Vulnerable",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/21/4th-largest-1-month-dow-sell-candle-in-history-leaves-bitcoin-vulnerable/"
+    },
+    {
+      "timestamp": "2020-03-21T07:30:00",
+      "source": "newsbtc.com",
+      "headline": "This One Trend Could Be a Precursor to An Even Bigger Bitcoin Rally",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/21/this-one-trend-could-be-a-precursor-to-an-even-bigger-bitcoin-rally/"
+    },
+    {
+      "timestamp": "2020-03-21T18:15:00",
+      "source": "watchingamerica.com",
+      "headline": "Can Interest Rate Cuts Prevent Risk of US Recession ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "http://watchingamerica.com/WA/2020/03/21/can-interest-rate-cuts-prevent-risk-of-us-recession/"
+    },
+    {
+      "timestamp": "2020-03-21T18:30:00",
+      "source": "nytimes.com",
+      "headline": "Opinion | Stephanie Kelton : Congress Can Do for People What the Fed Did for Banks",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.nytimes.com/2020/03/21/opinion/-coronavirus-stimulus-trillion.html"
+    },
+    {
+      "timestamp": "2020-03-21T09:45:00",
+      "source": "cfdtrading.com",
+      "headline": "Bitcoin ( BTC ) Up $31 . 34 in Last 4 Hours , Started Today Up 0 . 35 %; But Still in a Downtrend Over Past 30 Days",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.cfdtrading.com/bitcoin-btc-up-31-34-in-last-4-hours-started-today-up-0-35-but-still-in-a-downtrend-over-past-30-days/16645/"
+    },
+    {
+      "timestamp": "2020-03-21T01:15:00",
+      "source": "forexcrunch.com",
+      "headline": "Italian bank to start a Bitcoin trading service amid COVID - 19 outbreak",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/italian-bank-to-start-a-bitcoin-trading-service-amid-covid-19-outbreak/"
+    },
+    {
+      "timestamp": "2020-03-21T00:00:00",
+      "source": "thenews.com.pk",
+      "headline": "European stocks rise , but Wall Street slumps",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.thenews.com.pk/latest/632013-european-stocks-rise-but-wall-street-slumps"
+    },
+    {
+      "timestamp": "2020-03-21T17:45:00",
+      "source": "crowdfundinsider.com",
+      "headline": "Digital Asset Hedge Fund Adaptive Capital to Close Down Operations , Following Crypto Market Crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.crowdfundinsider.com/2020/03/159110-digital-asset-hedge-fund-adaptive-capital-to-close-down-operations-following-crypto-market-crash/"
+    },
+    {
+      "timestamp": "2020-03-21T08:00:00",
+      "source": "poststar.com",
+      "headline": "Fed takes extra steps to sooth virus - rattled bond market",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://poststar.com/news/national/govt-and-politics/fed-takes-extra-steps-to-sooth-virus-rattled-bond-market/article_fce5e182-8830-5ba5-b5f3-7aa98d87d625.html"
+    },
+    {
+      "timestamp": "2020-03-21T23:45:00",
+      "source": "aktifmedya.com",
+      "headline": "Binance CEOsundan Bitcoin Değerlendirmesi - Aktif Medya",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://www.aktifmedya.com/2020/03/ekonomi/binance-ceo-sundan-bitcoin-degerlendirmesi-5.html"
+    },
+    {
+      "timestamp": "2020-03-21T02:45:00",
+      "source": "newsbtc.com",
+      "headline": "Analyst Who Predicted Bitcoin Crash to $3 , 000 Says This Comes Next",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/20/analyst-who-predicted-bitcoin-crash-3000-says-this-comes-next/"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "date": "2022-02-09",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-09T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T07:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T08:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-09T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine volunteer groups turn to bitcoin crowdfunding for the country military and logistics as Russian invasion looms",
+    "French president said Putin told him Russia wont escalate Ukraine crisis",
+    "Macron : Putin told him Russia wont escalate Ukraine crisis",
+    "Europe takes lead on diplomacy in Ukraine , Russia : What we know",
+    "Macron : Putin told him Russia wont escalate Ukraine crisis"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-09T05:00:00",
+      "source": "msn.com",
+      "headline": "Ukraine volunteer groups turn to bitcoin crowdfunding for the country military and logistics as Russian invasion looms",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/money/topstories/ukraine-volunteer-groups-turn-to-bitcoin-crowdfunding-for-the-country-s-military-and-logistics-as-russian-invasion-looms/ar-AATDnqV"
+    },
+    {
+      "timestamp": "2022-02-09T00:15:00",
+      "source": "centralmaine.com",
+      "headline": "French president said Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.centralmaine.com/2022/02/08/french-president-said-putin-told-him-russia-wont-escalate-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-02-09T01:15:00",
+      "source": "fredericknewspost.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fredericknewspost.com/public/ap/macron-putin-told-him-russia-wont-escalate-ukraine-crisis/article_1ee440c2-aa54-5489-975d-9b78bafa6b62.html"
+    },
+    {
+      "timestamp": "2022-02-09T18:30:00",
+      "source": "azcentral.com",
+      "headline": "Europe takes lead on diplomacy in Ukraine , Russia : What we know",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.azcentral.com/story/news/politics/2022/02/08/europe-diplomacy-ukraine-russia-what-we-know/6701961001/"
+    },
+    {
+      "timestamp": "2022-02-09T08:00:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/international/macron-putin-told-him-russia-won-t-escalate-ukraine-crisis_243480?profile=1457&template=MobileArticle"
+    },
+    {
+      "timestamp": "2022-02-09T07:15:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/international/macron-putin-told-him-russia-won-t-escalate-ukraine-crisis_243480?profile=1471&template=MobileArticle"
+    },
+    {
+      "timestamp": "2022-02-09T11:45:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/international/macron-putin-told-him-russia-won-t-escalate-ukraine-crisis_243480?profile=1470"
+    },
+    {
+      "timestamp": "2022-02-09T08:45:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/international/macron-putin-told-him-russia-won-t-escalate-ukraine-crisis_243480?profile=1032"
+    },
+    {
+      "timestamp": "2022-02-09T09:45:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/international/macron-putin-told-him-russia-won-t-escalate-ukraine-crisis_243480?profile=1033"
+    },
+    {
+      "timestamp": "2022-02-09T07:00:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/international/macron-putin-told-him-russia-won-t-escalate-ukraine-crisis_243480?profile=6782"
+    },
+    {
+      "timestamp": "2022-02-09T07:00:00",
+      "source": "jamaicaobserver.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamaicaobserver.com/international/macron-putin-told-him-russia-won-t-escalate-ukraine-crisis_243480?profile=7204"
+    },
+    {
+      "timestamp": "2022-02-09T00:15:00",
+      "source": "carolinacoastonline.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.carolinacoastonline.com/national/article_31237abc-891b-11ec-b940-cb5dc4a1f656.html"
+    },
+    {
+      "timestamp": "2022-02-09T05:15:00",
+      "source": "isp.netscape.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://isp.netscape.com/news/world/story/0001/20220209/9dd7eb560d26a81306604dcb1c81bddb"
+    },
+    {
+      "timestamp": "2022-02-09T18:30:00",
+      "source": "msn.com",
+      "headline": "Harris will head to Germany next week for talks on Ukraine crisis : What we know",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/harris-will-head-to-germany-next-week-for-talks-on-ukraine-crisis-what-we-know/ar-AATF3Qb"
+    },
+    {
+      "timestamp": "2022-02-09T02:00:00",
+      "source": "smdailyjournal.com",
+      "headline": "Macron : Putin told him Russia wont escalate Ukraine crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.smdailyjournal.com/news/world/macron-putin-told-him-russia-wont-escalate-ukraine-crisis/article_d86b436c-892b-11ec-956f-2fa86ad593d1.html"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "date": "2022-02-07",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-07T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T11:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-07T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russian Bombers Fly Over Belarus Amid Ukraine Tensions",
+    "Guest column : Ukraine matters for American families",
+    "Biden says U . S ., Germany  in lockstep  on Ukraine amid tensions over Russian sanctions",
+    "Biden says U . S ., Germany  in lockstep  on Ukraine amid tensions over Russian sanctions",
+    "Jonah Goldberg : Ukraine president may be our only hope to avoid war"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-07T08:15:00",
+      "source": "theepochtimes.com",
+      "headline": "Russian Bombers Fly Over Belarus Amid Ukraine Tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theepochtimes.com/russian-bombers-fly-over-belarus-amid-ukraine-tensions_4258963.html"
+    },
+    {
+      "timestamp": "2022-02-07T11:30:00",
+      "source": "postandcourier.com",
+      "headline": "Guest column : Ukraine matters for American families",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postandcourier.com/aikenstandard/opinion/columns/guest-column-ukraine-matters-for-american-families/article_cf823420-8568-11ec-860f-f747c289978c.html"
+    },
+    {
+      "timestamp": "2022-02-07T22:30:00",
+      "source": "washingtontimes.com",
+      "headline": "Biden says U . S ., Germany  in lockstep  on Ukraine amid tensions over Russian sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2022/feb/7/biden-says-us-germany-lockstep-ukraine-amid-tensio/"
+    },
+    {
+      "timestamp": "2022-02-07T20:30:00",
+      "source": "washingtontimes.com",
+      "headline": "Biden says U . S ., Germany  in lockstep  on Ukraine amid tensions over Russian sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com:443/news/2022/feb/7/biden-says-us-germany-lockstep-ukraine-amid-tensio/"
+    },
+    {
+      "timestamp": "2022-02-07T15:45:00",
+      "source": "postbulletin.com",
+      "headline": "Jonah Goldberg : Ukraine president may be our only hope to avoid war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/opinion/columns/jonah-goldberg-ukraines-president-may-be-our-only-hope-to-avoid-war"
+    },
+    {
+      "timestamp": "2022-02-07T10:30:00",
+      "source": "rferl.org",
+      "headline": "Iran Says Removal Of U . S . Sanctions A  Red Line  For Revival Of Nuclear Deal",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.rferl.org/a/iran-red-line-nuclear-deal-sanctions/31690899.html"
+    },
+    {
+      "timestamp": "2022-02-07T11:15:00",
+      "source": "marketwatch.com",
+      "headline": "Putin Ukraine Threat : How Badly Would Sanctions Hurt Russia Economy ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/articles/russias-dark-money-ties-to-the-west-pose-a-major-risk-51644012416"
+    },
+    {
+      "timestamp": "2022-02-07T16:15:00",
+      "source": "shekulli.com.al",
+      "headline": "Nëse Vladimir Putin vendos për luftën në Ukrainë , pak rusë do ta përkrahnin atë",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://shekulli.com.al/nese-vladimir-putin-vendos-per-luften-ne-ukraine-pak-ruse-do-ta-perkrahnin-ate/"
+    },
+    {
+      "timestamp": "2022-02-07T11:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Russian Billionaire Potanin Says Tokens Can Displace Crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/russian-billionaire-potanin-says-tokens-can-displace-crypto-1.1719378"
+    },
+    {
+      "timestamp": "2022-02-07T14:00:00",
+      "source": "dailymail.co.uk",
+      "headline": "Senior Tory Robert Jenrick warn Liz Truss over  unwise  planned trip to Moscow over Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailymail.co.uk/news/article-10485281/Senior-Tory-Robert-Jenrick-warn-Liz-Truss-unwise-planned-trip-Moscow-Ukraine.html"
+    },
+    {
+      "timestamp": "2022-02-07T20:00:00",
+      "source": "msn.com",
+      "headline": "Russia has enough troops to  seize any city  in Ukraine , but not enough for a full occupation , former defense minister says",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/russia-has-enough-troops-to-seize-any-city-in-ukraine-but-not-enough-for-a-full-occupation-former-defense-minister-says/ar-AATymyo"
+    },
+    {
+      "timestamp": "2022-02-07T13:45:00",
+      "source": "cnsnews.com",
+      "headline": "McCaul , Barrasso Warn : If Putin Takes Ukraine ,  Certainly Xi Will Take Taiwan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cnsnews.com/article/washington/susan-jones/mccaul-barrasso-warn-if-putin-takes-ukraine-certainly-xi-will-take"
+    },
+    {
+      "timestamp": "2022-02-07T12:30:00",
+      "source": "cnsnews.com",
+      "headline": "McCaul , Barrasso Warn : If Putin Takes Ukraine ,  Certainly Xi Will Take Taiwan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cnsnews.com/index.php/article/washington/susan-jones/mccaul-barrasso-warn-if-putin-takes-ukraine-certainly-xi-will-take"
+    },
+    {
+      "timestamp": "2022-02-07T11:30:00",
+      "source": "cnsnews.com",
+      "headline": "McCaul , Barrasso Warn : If Putin Takes Ukraine ,  Certainly Xi Will Take Taiwan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://cnsnews.com/article/washington/susan-jones/mccaul-barrasso-warn-if-putin-takes-ukraine-certainly-xi-will-take"
+    },
+    {
+      "timestamp": "2022-02-07T13:00:00",
+      "source": "cnsnews.com",
+      "headline": "McCaul , Barrasso Warn : If Putin Takes Ukraine ,  Certainly Xi Will Take Taiwan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://cnsnews.com/index.php/article/washington/susan-jones/mccaul-barrasso-warn-if-putin-takes-ukraine-certainly-xi-will-take"
+    }
+  ]
+}

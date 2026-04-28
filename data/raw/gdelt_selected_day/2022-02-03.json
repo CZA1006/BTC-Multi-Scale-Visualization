@@ -1,0 +1,197 @@
+{
+  "date": "2022-02-03",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-03T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T18:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-03T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine - Russia crisis : What to know about rising fear of war",
+    "Ukraine : Russian attack would bring  significant  casualties , Milley says",
+    "Erdogan offers Ukraine - Russia peace summit to defuse crisis",
+    "Erdogan offers Ukraine - Russia peace summit to defuse crisis",
+    "Ukraine - Russia crisis : What to know about rising fear of war"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-03T00:45:00",
+      "source": "cecildaily.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cecildaily.com/news/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/article_197df471-3e23-597a-8f04-57864bb84f3a.html"
+    },
+    {
+      "timestamp": "2022-02-03T03:30:00",
+      "source": "dispatch.com",
+      "headline": "Ukraine : Russian attack would bring  significant  casualties , Milley says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dispatch.com/story/news/politics/2022/01/28/ukraine-russia-says-wont-start-war-tensions-neighbor-soar/9251890002/"
+    },
+    {
+      "timestamp": "2022-02-03T21:30:00",
+      "source": "msn.com",
+      "headline": "Erdogan offers Ukraine - Russia peace summit to defuse crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/erdogan-offers-ukraine-russia-peace-summit-to-defuse-crisis/ar-AATrN76"
+    },
+    {
+      "timestamp": "2022-02-03T21:45:00",
+      "source": "aljazeera.com",
+      "headline": "Erdogan offers Ukraine - Russia peace summit to defuse crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/2/3/erdogan-offers-ukraine-russia-peace-summit-to-defuse-crisis"
+    },
+    {
+      "timestamp": "2022-02-03T18:00:00",
+      "source": "eagletribune.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.eagletribune.com/region/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/article_96e50164-1ce6-53b3-bb0d-777b01fb8dbb.html"
+    },
+    {
+      "timestamp": "2022-02-03T18:00:00",
+      "source": "news-gazette.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.news-gazette.com/news/nation-world/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/article_ea51f5dd-52d9-5d95-85bd-c6b6b715f381.html"
+    },
+    {
+      "timestamp": "2022-02-03T15:15:00",
+      "source": "abcnews.go.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/International/wireStory/ukraine-russia-crisis-rising-fear-war-82644861"
+    },
+    {
+      "timestamp": "2022-02-03T15:30:00",
+      "source": "abcnews.go.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/Business/wireStory/ukraine-russia-crisis-rising-fear-war-82644862"
+    },
+    {
+      "timestamp": "2022-02-03T20:00:00",
+      "source": "postandcourier.com",
+      "headline": "Goldberg : Ukraine president may be our only hope",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postandcourier.com/opinion/commentary/goldberg-ukraines-president-may-be-our-only-hope/article_059c1a52-8457-11ec-91bf-37fc2c7ad61a.html"
+    },
+    {
+      "timestamp": "2022-02-03T14:45:00",
+      "source": "fredericksburg.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://fredericksburg.com/news/national/govt-and-politics/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/article_ba5f7164-0cf7-5b7f-9f1a-edc60cbc639a.html"
+    },
+    {
+      "timestamp": "2022-02-03T17:45:00",
+      "source": "berkshireeagle.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.berkshireeagle.com/ap/politics/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/article_4ecc2a71-ddbe-5f8c-a284-203be136ea89.html"
+    },
+    {
+      "timestamp": "2022-02-03T18:00:00",
+      "source": "yakimaherald.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.yakimaherald.com/news/nation_and_world/world/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war/article_d1d912fa-78bb-5e43-877e-194a0690902a.html"
+    },
+    {
+      "timestamp": "2022-02-03T05:45:00",
+      "source": "newsadvance.com",
+      "headline": "Jonah Goldberg : Ukraine president may be our only hope | Jonah Goldberg",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://newsadvance.com/opinion/columnists/goldberg_jonah/jonah-goldberg-ukraine-s-president-may-be-our-only-hope/article_39127242-842e-11ec-9d42-1f36347d9934.html"
+    },
+    {
+      "timestamp": "2022-02-03T17:00:00",
+      "source": "columbian.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.columbian.com/news/2022/feb/03/ukraine-russia-crisis-what-to-know-about-rising-fear-of-war-2/"
+    },
+    {
+      "timestamp": "2022-02-03T07:45:00",
+      "source": "fredericknewspost.com",
+      "headline": "Ukraine president may be our only hope",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fredericknewspost.com/opinion/columns/ukraines-president-may-be-our-only-hope/article_fe93866b-de99-5ee4-aa22-9312e92d5cff.html"
+    }
+  ]
+}

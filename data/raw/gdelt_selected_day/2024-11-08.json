@@ -1,0 +1,207 @@
+{
+  "date": "2024-11-08",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 0,
+  "theme_count_election": 4,
+  "theme_count_war": 0,
+  "theme_count_macro": 7,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-08T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-08T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin , crypto market remain in uptrend following 25 bps Fed rate cut",
+    "BlackRock IBIT Bitcoin ETF Posts Record $1 . 1 Billion Inflow As Bitcoin Hits New ATH Following Fed Rate Cut",
+    "Asian markets struggle to maintain momentum after Fed cut",
+    "Bitcoin ( BTC ) Price Spikes to New ATH at Around $76 . 9K Following BlackRock IBIT Highest Cash Inflow since Inception",
+    "Asia - Pacific markets climb after Fed rate cut boosts Wall Street rally ; China NPC in focus"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-08T02:00:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin , crypto market remain in uptrend following 25 bps Fed rate cut",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-crypto-market-remain-in-uptrend-following-25-bps-fed-rate-cut-202411080122"
+    },
+    {
+      "timestamp": "2024-11-08T08:45:00",
+      "source": "insidebitcoins.com",
+      "headline": "BlackRock IBIT Bitcoin ETF Posts Record $1 . 1 Billion Inflow As Bitcoin Hits New ATH Following Fed Rate Cut",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/blackrocks-ibit-bitcoin-etf-posts-record-1-1-billion-inflow-as-bitcoin-hits-new-ath-following-fed-rate-cut"
+    },
+    {
+      "timestamp": "2024-11-08T10:30:00",
+      "source": "channelnewsasia.com",
+      "headline": "Asian markets struggle to maintain momentum after Fed cut",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.channelnewsasia.com/business/asian-markets-struggle-maintain-momentum-us-federal-reserve-interest-rate-cut-4735111"
+    },
+    {
+      "timestamp": "2024-11-08T11:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin ( BTC ) Price Spikes to New ATH at Around $76 . 9K Following BlackRock IBIT Highest Cash Inflow since Inception",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-btc-price-spikes-ath-76-9k-blackrock-ibit-highest-cash-inflow-inception/"
+    },
+    {
+      "timestamp": "2024-11-08T01:15:00",
+      "source": "nbcconnecticut.com",
+      "headline": "Asia - Pacific markets climb after Fed rate cut boosts Wall Street rally ; China NPC in focus",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.nbcconnecticut.com/news/business/money-report/asia-pacific-markets-poised-to-climb-after-fed-rate-cut-chinas-npc-in-focus/3428863/"
+    },
+    {
+      "timestamp": "2024-11-08T12:45:00",
+      "source": "fortune.com",
+      "headline": "Paxos CEO : Trump presidency could bring  crypto golden age",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://fortune.com/asia/2024/11/08/trump-could-herald-crypto-golden-age-singapore-fintech-festival-paxos-ceo/"
+    },
+    {
+      "timestamp": "2024-11-08T16:00:00",
+      "source": "voakorea.com",
+      "headline": "[ 지구촌 오늘 ] 트럼프 , 백악관 비서실장  와일스  지명 ... 미 연준 금리 0 . 25 % P 인하",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.voakorea.com/a/7856930.html"
+    },
+    {
+      "timestamp": "2024-11-08T19:15:00",
+      "source": "nypost.com",
+      "headline": "Dem Rep who won Trump district shares eye - opening Harris anecdote :  I didnt feel like she understood what I was trying to say",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2024/11/08/us-news/dem-rep-who-won-trump-district-shares-eye-opening-harris-anecdote-i-didnt-feel-like-she-understood-what-i-was-trying-to-say/"
+    },
+    {
+      "timestamp": "2024-11-08T06:45:00",
+      "source": "haberekspres.com.tr",
+      "headline": "Fed faiz kararı sonrası altın ve Bitcoinde hareketlilik : Yükseliş ve dalgalanmalar",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.haberekspres.com.tr/fed-faiz-karari-sonrasi-altin-ve-bitcoinde-hareketlilik-yukselis-ve-dalgalanmalar"
+    },
+    {
+      "timestamp": "2024-11-08T04:00:00",
+      "source": "independent.ie",
+      "headline": "Bitcoin surges as backers bet Donald Trump election will bring crypto into the mainstream",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.ie/business/technology/bitcoin-surges-as-backers-bet-donald-trumps-election-will-bring-crypto-into-the-mainstream/a733479715.html"
+    },
+    {
+      "timestamp": "2024-11-08T11:30:00",
+      "source": "investing.com",
+      "headline": "Fed decision , TSMC sales , bitcoin - what moving markets By Investing . com",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.investing.com/news/economy/feds-decision-tsmc-sales-bitcoin--whats-moving-markets-3710787"
+    },
+    {
+      "timestamp": "2024-11-08T00:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin all - time high at $76 . 8K is just the beginning , according to data",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-all-time-high-at-76-8-k-is-just-the-beginning-according-to-data"
+    },
+    {
+      "timestamp": "2024-11-08T16:00:00",
+      "source": "cnbc.com",
+      "headline": "Tom Lee says bitcoin could hit six figures before year - end",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.cnbc.com/2024/11/08/tom-lee-says-bitcoin-could-hit-six-figures-before-year-end.html"
+    },
+    {
+      "timestamp": "2024-11-08T12:45:00",
+      "source": "ibtimes.com",
+      "headline": "Ripple Remains Hopeful : Can $XRP Reclaim Its Top 2 Crypto Status Under Trump ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/ripple-remains-hopeful-can-xrp-reclaim-its-top-2-crypto-status-under-trump-3750158"
+    },
+    {
+      "timestamp": "2024-11-08T07:30:00",
+      "source": "ekonomi.haber7.com",
+      "headline": "Piyasalarda Fed dalgası ! İkinci rekor geldi",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://ekonomi.haber7.com/ekonomi/haber/3476503-piyasalarda-fed-dalgasi-ikinci-rekor-geldi"
+    }
+  ]
+}

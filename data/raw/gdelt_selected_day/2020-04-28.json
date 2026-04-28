@@ -1,0 +1,207 @@
+{
+  "date": "2020-04-28",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 7,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-28T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-28T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Sell Bitcoin in May and Go Away ? June Event Could Cause Crypto Crash",
+    "Stellar Cryptocurrency 190 Percent Rally Could Fizzle ; Here Why",
+    "Last Time Bitcoin Looked Like This Was Before a Crash . It Back Again",
+    "뉴스핌 - 세계증시 , 호재 · 악재 혼재 속 상승 ... WTI 20 % 폭락",
+    "Do we have too much faith in the Federal Reserve ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-28T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "Sell Bitcoin in May and Go Away ? June Event Could Cause Crypto Crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/28/sell-bitcoin-in-may-and-go-away-ominous-june-event-could-cause-crash/"
+    },
+    {
+      "timestamp": "2020-04-28T17:30:00",
+      "source": "newsbtc.com",
+      "headline": "Stellar Cryptocurrency 190 Percent Rally Could Fizzle ; Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/28/stellar-cryptocurrencys-190-percent-rally-could-fizzle-heres-why/"
+    },
+    {
+      "timestamp": "2020-04-28T13:15:00",
+      "source": "newsbtc.com",
+      "headline": "Last Time Bitcoin Looked Like This Was Before a Crash . It Back Again",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/28/last-time-bitcoin-saw-this-formation-was-before-a-20-crash-its-back-making-6ks-likely/"
+    },
+    {
+      "timestamp": "2020-04-28T10:30:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - 세계증시 , 호재 · 악재 혼재 속 상승 ... WTI 20 % 폭락",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200428001123"
+    },
+    {
+      "timestamp": "2020-04-28T17:15:00",
+      "source": "cobizmag.com",
+      "headline": "Do we have too much faith in the Federal Reserve ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.cobizmag.com/Business-Insights/Do-we-have-too-much-faith-in-the-Federal-Reserve/"
+    },
+    {
+      "timestamp": "2020-04-28T23:45:00",
+      "source": "forbes.com",
+      "headline": "This Bitcoin Rival Is Suddenly Rocketing Up 75 % So Far This Year",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/04/28/this-bitcoin-rival-is-suddenly-rocketing-up-75-so-far-this-year/"
+    },
+    {
+      "timestamp": "2020-04-28T15:45:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Two Weeks From Halving , Bitcoin Rally Brings $10K Into View",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-two-weeks-from-halving-bitcoin-rally-brings-10k-into-view"
+    },
+    {
+      "timestamp": "2020-04-28T21:45:00",
+      "source": "dailyfx.com",
+      "headline": "Russell 2000 & Mid - Cap Stocks Surge on Fed Policy Tweak , VIX Falls",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.dailyfx.com/forex/market_alert/2020/04/28/russell-2000-index-mid-cap-stocks-surge-on-fed-policy-tweak-vix-falls.html"
+    },
+    {
+      "timestamp": "2020-04-28T22:45:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - FOMC 관망 · 월말 리밸런싱에 달러 소폭 하락",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200429000035"
+    },
+    {
+      "timestamp": "2020-04-28T18:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin  Most Volatile Day  Prompts Exchanges to Make Changes",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-most-volatile-day-prompts-171602598.html"
+    },
+    {
+      "timestamp": "2020-04-28T13:00:00",
+      "source": "article.wn.com",
+      "headline": "Bitcoin mining may become more profitable due to Oil price crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://article.wn.com/view/2020/04/28/Bitcoin_mining_may_become_more_profitable_due_to_Oil_price_c/"
+    },
+    {
+      "timestamp": "2020-04-28T05:00:00",
+      "source": "marketscreener.com",
+      "headline": "News Highlights : Top Global Markets News of the Day",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.marketscreener.com/S-AMP-P-500-4985/news/News-Highlights-Top-Global-Markets-News-of-the-Day-30484021/"
+    },
+    {
+      "timestamp": "2020-04-28T08:30:00",
+      "source": "etoday.co.kr",
+      "headline": "코로나에 선 넘는 연준 ... 파월 , 중앙은행 정의 다시 내린다",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.etoday.co.kr/news/view/1889190"
+    },
+    {
+      "timestamp": "2020-04-28T00:15:00",
+      "source": "uk.finance.yahoo.com",
+      "headline": "Stock Markets That Never Fall Are Up to No Good",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://uk.finance.yahoo.com/news/stock-markets-never-fall-no-103003314.html"
+    },
+    {
+      "timestamp": "2020-04-28T14:30:00",
+      "source": "exchangerates.org.uk",
+      "headline": "GBP / USD : Fed Meeting And Improved Risk Sentiment Buoys Pound Against Dollar",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.exchangerates.org.uk/news/29347/2020-04-28-gbp-usd-fed-meeting-and-improved-risk-sentiment-buoys-pound-against-dollar.html"
+    }
+  ]
+}

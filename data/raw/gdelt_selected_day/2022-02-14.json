@@ -1,0 +1,187 @@
+{
+  "date": "2022-02-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 13,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-14T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-14T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-14T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-14T13:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-14T14:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-14T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-14T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-14T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine hints at concessions to Russia as Scholz heads to region",
+    "5 Things you need to know today",
+    "Russia keeps door open for diplomacy as Ukraine hints at concessions",
+    "Pressure mounts on Putin as Ukraine crisis reaches a fever pitch",
+    "Шольц зустрічається з Зеленським . Наступний - Путін"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-14T13:30:00",
+      "source": "oann.com",
+      "headline": "Ukraine hints at concessions to Russia as Scholz heads to region",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.oann.com/ukraine-hints-at-concessions-to-russia-as-scholz-heads-to-region/"
+    },
+    {
+      "timestamp": "2022-02-14T00:00:00",
+      "source": "switzer.com.au",
+      "headline": "5 Things you need to know today",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://switzer.com.au/the-experts/switzer-daily/5-things-you-need-to-know-today-549/"
+    },
+    {
+      "timestamp": "2022-02-14T18:45:00",
+      "source": "geo.tv",
+      "headline": "Russia keeps door open for diplomacy as Ukraine hints at concessions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.geo.tv/latest/399223-russia-keeps-door-open-for-diplomacy-as-ukraine-hints-at-concessions"
+    },
+    {
+      "timestamp": "2022-02-14T14:30:00",
+      "source": "cbsnews.com",
+      "headline": "Pressure mounts on Putin as Ukraine crisis reaches a fever pitch",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/russia-ukraine-news-us-nato-mount-pressure-on-putin-amid-invasion-fear/"
+    },
+    {
+      "timestamp": "2022-02-14T14:00:00",
+      "source": "gazeta.ua",
+      "headline": "Шольц зустрічається з Зеленським . Наступний - Путін",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://gazeta.ua/articles/world-life/_putin-vimagaye-garantij-bezpeki-yaki-pidirvut-suverenitet-derzhav-shidnoyi-i-centralnoyi-evropi-scho-pishe-svitova-presa/1070767"
+    },
+    {
+      "timestamp": "2022-02-14T12:45:00",
+      "source": "iol.co.za",
+      "headline": "Threat of Ukraine war weighs on global markets",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.iol.co.za/personal-finance/investments/threat-of-ukraine-war-weighs-on-global-markets-1503115f-faab-44ec-b766-11264d0735e3"
+    },
+    {
+      "timestamp": "2022-02-14T15:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Government , Bank of Russia Clash Over Crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/government-bank-of-russia-clash-over-crypto-1.1723071"
+    },
+    {
+      "timestamp": "2022-02-14T15:30:00",
+      "source": "dw.com",
+      "headline": "Germany ′ s Scholz holds crisis talks with Ukraine ′ s Zelenskyy in Kyiv | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/germanys-scholz-holds-crisis-talks-with-ukraines-zelenskyy-in-kyiv/a-60771248"
+    },
+    {
+      "timestamp": "2022-02-14T09:15:00",
+      "source": "news.com.au",
+      "headline": "Russia threat  could spark crypto slump , push oil prices even higher  | news . com . au Australia leading news site",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.news.com.au/finance/markets/world-markets/threat-of-russia-invading-ukraine-could-push-oil-above-us100-a-barrel-put-crypto-under-pressure/news-story/c0fe1dc939385270eafbae342596475e"
+    },
+    {
+      "timestamp": "2022-02-14T13:45:00",
+      "source": "cbsnews.com",
+      "headline": "Russia could launch Ukraine invasion  essentially at any time , Sullivan says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/news/russia-ukraine-invasion-any-time-jake-sullivan-face-the-nation/"
+    },
+    {
+      "timestamp": "2022-02-14T13:15:00",
+      "source": "ukrainian.voanews.com",
+      "headline": "Напад на Україну - це напад на демократію  - Спікерка Палати представників Конгресу США",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://ukrainian.voanews.com/a/6440679.html"
+    },
+    {
+      "timestamp": "2022-02-14T13:15:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine crisis : A country sovereign right to join Nato cant be traded away , says Boris Johnson",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-gb/news/world/russia-ukraine-crisis-a-countrys-sovereign-right-to-join-nato-cant-be-traded-away-says-boris-johnson/ar-AATOIP3"
+    },
+    {
+      "timestamp": "2022-02-14T14:45:00",
+      "source": "dw.com",
+      "headline": "Germany ′ s Scholz meets Ukraine ′ s Zelenskyy in Kyiv | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/germanys-scholz-meets-ukraines-zelenskyy-in-kyiv/a-60771248"
+    },
+    {
+      "timestamp": "2022-02-14T12:15:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine crisis : Kremlin says Kyiv renouncing Nato membership would  addres security concerns",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-gb/news/world/russia-ukraine-crisis-kremlin-says-kyiv-renouncing-nato-membership-would-address-security-concerns/ar-AATOIP3"
+    },
+    {
+      "timestamp": "2022-02-14T22:00:00",
+      "source": "msn.com",
+      "headline": "Zelenskyy calls for unity on day Russia may invade ; Lavrov urges Putin to pursue talks : What we know",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/zelenskyy-calls-for-unity-on-day-russia-may-invade-lavrov-urges-putin-to-pursue-talks-what-we-know/ar-AATQCOX"
+    }
+  ]
+}

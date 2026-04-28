@@ -1,0 +1,182 @@
+{
+  "date": "2022-02-06",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-06T00:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-06T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-06T03:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-06T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-06T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-06T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-06T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Ukraine - Russia crisis : What to know about rising fear of war",
+    "Ukraine - Russia crisis : What to know about rising fear of war",
+    "The Day - Putin may have Russia ready for any Ukraine - related sanctions - News from southeastern Connecticut",
+    "Russian bombers fly over Belarus amid Ukraine tensions",
+    "Russian bombers fly over Belarus amid Ukraine tensions"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-06T18:15:00",
+      "source": "madison.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/news/article_3ed9dc3b-ebe6-5b48-a25b-10e050c86c70.html"
+    },
+    {
+      "timestamp": "2022-02-06T18:00:00",
+      "source": "madison.com",
+      "headline": "Ukraine - Russia crisis : What to know about rising fear of war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://madison.com/article_3ed9dc3b-ebe6-5b48-a25b-10e050c86c70.html"
+    },
+    {
+      "timestamp": "2022-02-06T07:45:00",
+      "source": "theday.com",
+      "headline": "The Day - Putin may have Russia ready for any Ukraine - related sanctions - News from southeastern Connecticut",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theday.com/nationworld-news/20220206/putin-may-have-russia-ready-for-any-ukraine-related-sanctions"
+    },
+    {
+      "timestamp": "2022-02-06T08:00:00",
+      "source": "apnews.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/614ecda6a45f8e60bb4322c3ac9c2877"
+    },
+    {
+      "timestamp": "2022-02-06T09:15:00",
+      "source": "eagletribune.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.eagletribune.com/news/national/russian-bombers-fly-over-belarus-amid-ukraine-tensions/article_f55e25bd-5334-5cb4-b262-af6e4346c364.html"
+    },
+    {
+      "timestamp": "2022-02-06T00:45:00",
+      "source": "wyff4.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wyff4.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T01:00:00",
+      "source": "wxii12.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wxii12.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T03:30:00",
+      "source": "wmur.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wmur.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T00:30:00",
+      "source": "wtae.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wtae.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T03:15:00",
+      "source": "wbaltv.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wbaltv.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T00:30:00",
+      "source": "wesh.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wesh.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T00:30:00",
+      "source": "kcci.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.kcci.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T00:30:00",
+      "source": "kcra.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.kcra.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T01:45:00",
+      "source": "wlwt.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wlwt.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    },
+    {
+      "timestamp": "2022-02-06T03:30:00",
+      "source": "kmbc.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.kmbc.com/article/russian-bombers-fly-over-belarus-amid-spiraling-tensions-over-ukraine/38990124"
+    }
+  ]
+}

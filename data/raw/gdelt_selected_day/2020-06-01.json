@@ -1,0 +1,192 @@
+{
+  "date": "2020-06-01",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 10,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-01T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T18:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-01T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Why Bitcoin OTC Trading is Poised to Surge in Growth in 2020",
+    "Bitcoin Is Overpriced According Energy Value For First Time Since September 2019",
+    "Goldman Eerie Yuan Crash Prediction Bolsters Bitcoin Bullish Outlook in June",
+    "Bitcoin Is a Big Opportunity for Investors in the Debt - Fueled Roaring Twenties",
+    "The Really Big Stock Bull case says Fed stimulus doesnt go away"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-01T14:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Why Bitcoin OTC Trading is Poised to Surge in Growth in 2020",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-otc-trading-growth-2020/"
+    },
+    {
+      "timestamp": "2020-06-01T22:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Is Overpriced According Energy Value For First Time Since September 2019",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/01/bitcoin-energy-value-overpriced-crypto/"
+    },
+    {
+      "timestamp": "2020-06-01T13:30:00",
+      "source": "newsbtc.com",
+      "headline": "Goldman Eerie Yuan Crash Prediction Bolsters Bitcoin Bullish Outlook in June",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/01/goldman-yuan-crash-prediction-bitcoin/"
+    },
+    {
+      "timestamp": "2020-06-01T15:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Is a Big Opportunity for Investors in the Debt - Fueled Roaring Twenties",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-is-a-big-opportunity-for-investors-in-the-debt-fueled-roaring-twenties"
+    },
+    {
+      "timestamp": "2020-06-01T05:45:00",
+      "source": "financialexpress.com",
+      "headline": "The Really Big Stock Bull case says Fed stimulus doesnt go away",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.financialexpress.com/investing-abroad/featured-stories/the-really-big-stock-bull-case-says-fed-stimulus-doesnt-go-away/1977298/"
+    },
+    {
+      "timestamp": "2020-06-01T21:15:00",
+      "source": "fool.com",
+      "headline": "Apple Borrows Billions to Fund Share Buybacks",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2020/06/01/apple-borrows-billions-to-fund-share-buybacks.aspx"
+    },
+    {
+      "timestamp": "2020-06-01T17:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Crypto markets facing make - or - break moment after recent surge",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/crypto-markets-facing-make-or-break-moment-after-recent-surge-1.1443997"
+    },
+    {
+      "timestamp": "2020-06-01T15:00:00",
+      "source": "iol.co.za",
+      "headline": "Stimulus packages to steadily boost the price of Bitcoin",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.iol.co.za/personal-finance/my-money/stimulus-packages-to-steadily-boost-the-price-of-bitcoin-48797258"
+    },
+    {
+      "timestamp": "2020-06-01T18:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Confusion : Long - Legged Doji Across Altcoin Market Hints At Trend Change",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/01/long-legged-doji-altcoin-market-crypto/"
+    },
+    {
+      "timestamp": "2020-06-01T18:00:00",
+      "source": "newsbtc.com",
+      "headline": "Top Cryptocurrency Assets Trigger TD9 Sell On Weekly Price Charts",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/01/top-cryptocurrency-price-td9-weekly/"
+    },
+    {
+      "timestamp": "2020-06-01T17:15:00",
+      "source": "ca.finance.yahoo.com",
+      "headline": "Crypto Markets Facing Make - or - Break Moment After Recent Surge",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://ca.finance.yahoo.com/news/crypto-markets-facing-break-moment-154240769.html"
+    },
+    {
+      "timestamp": "2020-06-01T16:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Crypto Markets Facing Make - or - Break Moment After Recent Surge",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/crypto-markets-facing-break-moment-154240769.html"
+    },
+    {
+      "timestamp": "2020-06-01T18:45:00",
+      "source": "fool.com",
+      "headline": "Apple Borrows Billions to Fund Share Buybacks",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.com/investing/2020/06/01/apple-borrows-billions-to-fund-share-buybacks.aspx?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2020-06-01T13:30:00",
+      "source": "newsbtc.com",
+      "headline": "Restored Falling Wedge Pattern Sees Bitcoin Rising above $11 , 500",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/01/restored-falling-wedge-sees-bitcoin-11500/"
+    },
+    {
+      "timestamp": "2020-06-01T13:30:00",
+      "source": "newsbtc.com",
+      "headline": "Moving Forward Through Tough Times , an Interview with OKEx  Jay Hao",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/01/moving-forward-through-tough-times-an-interview-with-okex-jay-hao/"
+    }
+  ]
+}

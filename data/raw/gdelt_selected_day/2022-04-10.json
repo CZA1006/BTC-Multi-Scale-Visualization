@@ -1,0 +1,197 @@
+{
+  "date": "2022-04-10",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-10T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T15:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-10T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Russia  planned  attacks on Ukrainian civilians : National security adviser Sullivan",
+    "Ukraine : Scholz and Zelenskyy vow justice for ′ war crimes ′ in phone call as it happened | News | DW",
+    "Ukraine digs in to fight Russia looming eastern offensive",
+    "Russia  planned  attacks on Ukrainian civilians : National security adviser Sullivan",
+    "Ukraine digs in to fight Russia looming eastern offensive"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-10T15:45:00",
+      "source": "abcnews.go.com",
+      "headline": "Russia  planned  attacks on Ukrainian civilians : National security adviser Sullivan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/Politics/russia-planned-attacks-ukrainian-civilians-national-security-adviser/story?id=83983530"
+    },
+    {
+      "timestamp": "2022-04-10T23:00:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Scholz and Zelenskyy vow justice for ′ war crimes ′ in phone call as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-scholz-and-zelenskyy-vow-justice-for-war-crimes-in-phone-call-as-it-happened/a-61421498"
+    },
+    {
+      "timestamp": "2022-04-10T22:30:00",
+      "source": "ksl.com",
+      "headline": "Ukraine digs in to fight Russia looming eastern offensive",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ksl.com/article/50384825/ukraine-digs-in-to-fight-russias-looming-eastern-offensive"
+    },
+    {
+      "timestamp": "2022-04-10T18:30:00",
+      "source": "wbal.com",
+      "headline": "Russia  planned  attacks on Ukrainian civilians : National security adviser Sullivan",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wbal.com/article/561605"
+    },
+    {
+      "timestamp": "2022-04-10T16:45:00",
+      "source": "arkansasonline.com",
+      "headline": "Ukraine digs in to fight Russia looming eastern offensive",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.arkansasonline.com/news/2022/apr/10/ukraine-digs-in-to-fight-russias-looming-eastern-offensive/"
+    },
+    {
+      "timestamp": "2022-04-10T12:15:00",
+      "source": "msn.com",
+      "headline": "Ukraine : Scholz and Zelenskyy vow justice for  war crime in phone call live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-xl/news/other/ukraine-scholz-and-zelenskyy-vow-justice-for-war-crimes-in-phone-call-live-updates/ar-AAW2WEr"
+    },
+    {
+      "timestamp": "2022-04-10T12:15:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Scholz and Zelenskyy vow justice for ′ war crimes ′ in phone call live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-scholz-and-zelenskyy-vow-justice-for-war-crimes-in-phone-call-live-updates/a-61421498"
+    },
+    {
+      "timestamp": "2022-04-10T20:30:00",
+      "source": "chicagotribune.com",
+      "headline": "Ukraine expecting Russian offensive from the east",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.chicagotribune.com/nation-world/ct-aud-nw-russia-ukraine-war-20220410-zrghhmfwerdy5jprzcrbxhmooa-story.html"
+    },
+    {
+      "timestamp": "2022-04-10T18:00:00",
+      "source": "sun-sentinel.com",
+      "headline": "Ukrainian forces anticipating Russian offensive from the east to start within days",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.sun-sentinel.com/news/nationworld/ct-aud-nw-russia-ukraine-war-20220410-zrghhmfwerdy5jprzcrbxhmooa-story.html"
+    },
+    {
+      "timestamp": "2022-04-10T04:30:00",
+      "source": "koreatimes.co.kr",
+      "headline": "Civilians flee east Ukraine as Kyiv readies for  big battles",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.koreatimes.co.kr/www/world/2022/04/501_327051.html"
+    },
+    {
+      "timestamp": "2022-04-10T15:15:00",
+      "source": "fox5atlanta.com",
+      "headline": "Ukraine says Russia beefing up its forces",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox5atlanta.com/news/ukraine-says-russia-beefing-up-its-forces"
+    },
+    {
+      "timestamp": "2022-04-10T14:15:00",
+      "source": "fox10phoenix.com",
+      "headline": "Ukraine says Russia beefing up its forces",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox10phoenix.com/news/ukraine-says-russia-beefing-up-its-forces"
+    },
+    {
+      "timestamp": "2022-04-10T17:00:00",
+      "source": "startribune.com",
+      "headline": "Live Updates | Austria chancellor to meet Putin in Moscow",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.startribune.com/live-updates-austrias-chancellor-to-meet-putin-in-moscow/600163745/"
+    },
+    {
+      "timestamp": "2022-04-10T15:15:00",
+      "source": "fox2detroit.com",
+      "headline": "Ukraine says Russia beefing up its forces",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox2detroit.com/news/ukraine-says-russia-beefing-up-its-forces"
+    },
+    {
+      "timestamp": "2022-04-10T15:30:00",
+      "source": "fox5ny.com",
+      "headline": "Ukraine says Russia beefing up its forces",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox5ny.com/news/ukraine-says-russia-beefing-up-its-forces"
+    }
+  ]
+}

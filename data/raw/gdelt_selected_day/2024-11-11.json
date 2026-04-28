@@ -1,0 +1,212 @@
+{
+  "date": "2024-11-11",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 0,
+  "theme_count_election": 10,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-11-11T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-11-11T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Price Forecast : Short - term correction looks likely after hitting new all - time high above $82 , 000",
+    "Bitcoin Surges To $82K , Crypto Analysts Now Forecast $100K+ BTC Price By Year - End",
+    "Over $2 . 8 billion bet on bitcoin topping $90 , 000 as it hits all - time high",
+    "Bitcoin price tops $81 , 000 for first time amid  Trump pump  | Bitcoin",
+    "Over $2 . 8 billion bet on bitcoin topping $90 , 000 as it hits all - time high"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-11-11T16:45:00",
+      "source": "fxstreet.com",
+      "headline": "Bitcoin Price Forecast : Short - term correction looks likely after hitting new all - time high above $82 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-pops-above-82-000-setting-new-all-time-high-202411111315"
+    },
+    {
+      "timestamp": "2024-11-11T13:30:00",
+      "source": "crowdfundinsider.com",
+      "headline": "Bitcoin Surges To $82K , Crypto Analysts Now Forecast $100K+ BTC Price By Year - End",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.crowdfundinsider.com/2024/11/232451-bitcoin-surges-to-82k-crypto-analysts-now-forecast-100k-btc-price-by-year-end/"
+    },
+    {
+      "timestamp": "2024-11-11T03:15:00",
+      "source": "nbcphiladelphia.com",
+      "headline": "Over $2 . 8 billion bet on bitcoin topping $90 , 000 as it hits all - time high",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.nbcphiladelphia.com/news/business/money-report/over-2-8-billion-bet-on-bitcoin-topping-90000-as-it-hits-all-time-high/4024405/"
+    },
+    {
+      "timestamp": "2024-11-11T10:45:00",
+      "source": "theguardian.com",
+      "headline": "Bitcoin price tops $81 , 000 for first time amid  Trump pump  | Bitcoin",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theguardian.com/technology/2024/nov/11/bitcoin-price-tops-81000-trump-cryptocurrencies"
+    },
+    {
+      "timestamp": "2024-11-11T08:00:00",
+      "source": "cnbcafrica.com",
+      "headline": "Over $2 . 8 billion bet on bitcoin topping $90 , 000 as it hits all - time high",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.cnbcafrica.com/2024/over-2-8-billion-bet-on-bitcoin-topping-90000-as-it-hits-all-time-high/"
+    },
+    {
+      "timestamp": "2024-11-11T18:30:00",
+      "source": "forbes.com",
+      "headline": "Trump Triumph Sends Bitcoin Soaring , Crypto Lobbyists Wins Big",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/cryptoconfidential/2024/11/11/trump-triumph-sends-bitcoin-soaring-crypto-lobbyists-wins-big/"
+    },
+    {
+      "timestamp": "2024-11-11T20:00:00",
+      "source": "theage.com.au",
+      "headline": "The crypto bro who has made $5 billion since Trump win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.theage.com.au/business/markets/the-crypto-bros-already-making-billions-from-trump-win-20241112-p5kpsu.html"
+    },
+    {
+      "timestamp": "2024-11-11T19:00:00",
+      "source": "cryptobriefing.com",
+      "headline": "MicroStrategy stock jumps to record high following $2 billion Bitcoin purchase",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://cryptobriefing.com/bitcoin-investment-surge-microstrategy/"
+    },
+    {
+      "timestamp": "2024-11-11T19:00:00",
+      "source": "gulfnews.com",
+      "headline": "Bitcoin rises above $84 , 000 as token becomes totem for Trump era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/business/markets/bitcoin-rises-above-84000-as-token-becomes-totem-for-trump-era-1.1731292579770"
+    },
+    {
+      "timestamp": "2024-11-11T04:15:00",
+      "source": "gulfnews.com",
+      "headline": "Bitcoin rises above $81 , 000 as token becomes totem for Trump era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/business/markets/bitcoin-rises-above-81000-as-token-becomes-totem-for-trump-era-1.1731292579770"
+    },
+    {
+      "timestamp": "2024-11-11T15:15:00",
+      "source": "gulfnews.com",
+      "headline": "Bitcoin rises above $82 , 000 as token becomes totem for Trump era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/business/markets/bitcoin-rises-above-82000-as-token-becomes-totem-for-trump-era-1.1731292579770"
+    },
+    {
+      "timestamp": "2024-11-11T21:45:00",
+      "source": "yahoo.com",
+      "headline": "Brazilian Hedge Fund Verde Says It Made Bitcoin Bet Before Trump Win",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/brazilian-hedge-fund-verde-says-204619666.html"
+    },
+    {
+      "timestamp": "2024-11-11T14:30:00",
+      "source": "hurriyetdailynews.com",
+      "headline": "Bitcoin hits record driven by Trump return to White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hurriyetdailynews.com/bitcoin-hits-record-driven-by-trumps-return-to-white-house-202490"
+    },
+    {
+      "timestamp": "2024-11-11T13:00:00",
+      "source": "insidermedia.com",
+      "headline": "Bitcoin reaches record high post US election - how did Trump boost cryptocurrency ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.insidermedia.com/news/national/post-us-election-2024-tesla-cryptocurrency-and-trump-stocks-why-do-stocks-jump-after-a-win"
+    },
+    {
+      "timestamp": "2024-11-11T23:15:00",
+      "source": "gazette.com",
+      "headline": "States with highest and lowest voter turnout in 2024",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gazette.com/news/wex/states-with-highest-and-lowest-voter-turnout-in-2024/article_d988e5c0-5030-553d-8ecf-da2917a0ed6a.html"
+    }
+  ]
+}

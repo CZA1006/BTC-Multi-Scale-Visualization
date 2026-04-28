@@ -1,0 +1,212 @@
+{
+  "date": "2020-05-20",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 5,
+  "theme_count_covid": 5,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-20T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-20T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "New COVID - 19 Lockdown Proposal Poses Unique Threat to Bitcoin Ongoing Momentum",
+    "Bitcoin Below $10K , 0 . 7 % of Stimulus Money Needed to Buy New BTC",
+    "Fed Action Accelerates Boom - Bust Cycle ; Not A Virus Crisis",
+    "Cryptocurrency Total Market Cap Jumped 80 % After COVID - 19 Crash",
+    "Business Scoop » Cryptocurrency Total Market Cap Jumped 80 % After COVID - 19 Crash"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-20T21:30:00",
+      "source": "newsbtc.com",
+      "headline": "New COVID - 19 Lockdown Proposal Poses Unique Threat to Bitcoin Ongoing Momentum",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/20/lockdown-proposal-bitcoin-momentum/"
+    },
+    {
+      "timestamp": "2020-05-20T14:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Below $10K , 0 . 7 % of Stimulus Money Needed to Buy New BTC",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-10k-check-money/"
+    },
+    {
+      "timestamp": "2020-05-20T08:15:00",
+      "source": "fxempire.com",
+      "headline": "Fed Action Accelerates Boom - Bust Cycle ; Not A Virus Crisis",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.fxempire.com/forecasts/article/fed-action-accelerates-boom-bust-cycle-not-a-virus-crisis-650294"
+    },
+    {
+      "timestamp": "2020-05-20T15:30:00",
+      "source": "insidebitcoins.com",
+      "headline": "Cryptocurrency Total Market Cap Jumped 80 % After COVID - 19 Crash",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://insidebitcoins.com/news/cryptocurrency-total-market-cap-jumped-80-after-covid-19-crash"
+    },
+    {
+      "timestamp": "2020-05-20T20:15:00",
+      "source": "business.scoop.co.nz",
+      "headline": "Business Scoop » Cryptocurrency Total Market Cap Jumped 80 % After COVID - 19 Crash",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://business.scoop.co.nz/2020/05/21/cryptocurrency-total-market-cap-jumped-80-after-covid-19-crash/"
+    },
+    {
+      "timestamp": "2020-05-20T19:45:00",
+      "source": "scoop.co.nz",
+      "headline": "Cryptocurrency Total Market Cap Jumped 80 % After COVID - 19 Crash",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.scoop.co.nz/stories/BU2005/S00482/cryptocurrency-total-market-cap-jumped-80-after-covid-19-crash.htm"
+    },
+    {
+      "timestamp": "2020-05-20T16:45:00",
+      "source": "shiftdelete.net",
+      "headline": "Bitcoin almak için güvenli bir yol : Icrypex inceleme",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://shiftdelete.net/bitcoin-almak-icin-guvenli-bir-yol-icrypex-inceleme"
+    },
+    {
+      "timestamp": "2020-05-20T17:30:00",
+      "source": "businessinsider.in",
+      "headline": "Another stimulus bill is likely needed to revive the economy , Dallas Fed president says",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.businessinsider.in/stock-market/news/another-stimulus-bill-is-likely-needed-to-revive-the-economy-dallas-fed-president-says/articleshow/75853580.cms"
+    },
+    {
+      "timestamp": "2020-05-20T23:45:00",
+      "source": "koreatimes.com",
+      "headline": "연준 , 코로나19 2차 발병 우려 …  엄청난 경제적 불확실성",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.koreatimes.com/article/20200520/1311728"
+    },
+    {
+      "timestamp": "2020-05-20T17:00:00",
+      "source": "newsbtc.com",
+      "headline": "US Treasury Issues Stimulus Debit Cards Because They Failed to Launch a Cryptocurrency",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/20/us-stimulus-debit-cards-cryptocurrency/"
+    },
+    {
+      "timestamp": "2020-05-20T10:00:00",
+      "source": "moneymorning.com",
+      "headline": "It Smart to Enjoy the Bull Parade Even with Economic Rain Clouds Ahead",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://moneymorning.com/2020/05/20/its-smart-to-enjoy-the-bull-parade-even-with-economic-rain-clouds-ahead/"
+    },
+    {
+      "timestamp": "2020-05-20T22:00:00",
+      "source": "msn.com",
+      "headline": "The Day Coronavirus Nearly Broke the Financial Markets",
+      "category": "covid",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/money/markets/the-day-coronavirus-nearly-broke-the-financial-markets/ar-BB14mNvn"
+    },
+    {
+      "timestamp": "2020-05-20T00:00:00",
+      "source": "edaily.co.kr",
+      "headline": "[ 뉴스새벽배송 ] 코로나19 백신 못 믿는 시장 … 美 · 中 다툼은 가열",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=01515366625770888&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2020-05-20T22:00:00",
+      "source": "benzinga.com",
+      "headline": "How To Earn 8 % Yields In A Zero - Interest Rate World With Crypto",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/20/05/16080901/how-to-earn-8-yields-in-a-zero-interest-rate-world-with-crypto"
+    },
+    {
+      "timestamp": "2020-05-20T12:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crucial On - Chain Metrics : Bitcoin on the Verge of Its Fourth Macro Bull Market",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/20/crucial-on-chain-signal-bitcoin-verge-third-macro-bull-run/"
+    }
+  ]
+}

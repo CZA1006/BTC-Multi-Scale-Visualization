@@ -1,0 +1,187 @@
+{
+  "date": "2022-02-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-15T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-15T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-15T03:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-15T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-15T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-15T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-15T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-16T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Some Russian troops moved to firing positions near Ukraine , Putin said be ready by Feb . 16 : Sources",
+    "Tone of Ukraine crisis shifts as Russia signals openness to talk more",
+    "How a war in Ukraine could send the Bitcoin price skyrocketing",
+    "Russian bombers fly over Belarus amid Ukraine tensions",
+    "Germany ′ s Scholz stresses Ukraine support but no weapons during Kyiv visit | News | DW"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-16T00:00:00",
+      "source": "abcnews.go.com",
+      "headline": "Some Russian troops moved to firing positions near Ukraine , Putin said be ready by Feb . 16 : Sources",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://abcnews.go.com/Politics/russian-troops-moved-firing-positions-ukraine-putin-ready/story?id=82909721"
+    },
+    {
+      "timestamp": "2022-02-15T05:00:00",
+      "source": "deccanherald.com",
+      "headline": "Tone of Ukraine crisis shifts as Russia signals openness to talk more",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.deccanherald.com/international/world-news-politics/tone-of-ukraine-crisis-shifts-as-russia-signals-openness-to-talk-more-1081514.html"
+    },
+    {
+      "timestamp": "2022-02-15T03:15:00",
+      "source": "fool.com.au",
+      "headline": "How a war in Ukraine could send the Bitcoin price skyrocketing",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fool.com.au/2022/02/15/how-a-war-in-ukraine-could-send-the-bitcoin-price-skyrocketing/"
+    },
+    {
+      "timestamp": "2022-02-15T02:45:00",
+      "source": "apnews.com",
+      "headline": "Russian bombers fly over Belarus amid Ukraine tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/article/russia-ukraine-russia-moscow-europe-belarus-614ecda6a45f8e60bb4322c3ac9c2877"
+    },
+    {
+      "timestamp": "2022-02-15T03:00:00",
+      "source": "dw.com",
+      "headline": "Germany ′ s Scholz stresses Ukraine support but no weapons during Kyiv visit | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/germanys-scholz-stresses-ukraine-support-but-no-weapons-during-kyiv-visit/a-60771248"
+    },
+    {
+      "timestamp": "2022-02-15T03:00:00",
+      "source": "dw.com",
+      "headline": "Germany ′ s Scholz pledges financial support but no weapons during Kyiv visit | News | DW",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/germanys-scholz-pledges-financial-support-but-no-weapons-during-kyiv-visit/a-60771248"
+    },
+    {
+      "timestamp": "2022-02-15T19:45:00",
+      "source": "nbclosangeles.com",
+      "headline": "Biden to Address the Nation on the Evolving Ukraine - Russia Crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbclosangeles.com/news/business/money-report/biden-to-address-the-nation-on-the-evolving-ukraine-russia-crisis/2827089/"
+    },
+    {
+      "timestamp": "2022-02-15T07:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Tone of Ukraine crisis shifts as Russia signals openness to talk more",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/tone-of-ukraine-crisis-shifts-as-russia-signals-openness-to-talk-more/articleshow/89586155.cms"
+    },
+    {
+      "timestamp": "2022-02-15T19:30:00",
+      "source": "nbcphiladelphia.com",
+      "headline": "Biden to Address the Nation on the Evolving Ukraine - Russia Crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcphiladelphia.com/news/business/money-report/biden-to-address-the-nation-on-the-evolving-ukraine-russia-crisis/3147644/"
+    },
+    {
+      "timestamp": "2022-02-15T03:15:00",
+      "source": "bdnews24.com",
+      "headline": "Tone of Ukraine crisis shifts as Russia signals openness to talk more",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://bdnews24.com/world/europe/2022/02/15/tone-of-ukraine-crisis-shifts-as-russia-signals-openness-to-talk-more"
+    },
+    {
+      "timestamp": "2022-02-15T03:30:00",
+      "source": "msn.com",
+      "headline": "Germany Scholz stresses Ukraine support but no weapons during Kyiv visit",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/germany-s-scholz-stresses-ukraine-support-but-no-weapons-during-kyiv-visit/ar-AATRizP"
+    },
+    {
+      "timestamp": "2022-02-15T03:15:00",
+      "source": "msn.com",
+      "headline": "Germany Scholz stresses Ukraine support but no weapons during Kyiv visit",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/germanys-scholz-stresses-ukraine-support-but-no-weapons-during-kyiv-visit/ar-AATRizP"
+    },
+    {
+      "timestamp": "2022-02-15T13:15:00",
+      "source": "dw.com",
+      "headline": "Ukraine crisis : German Chancellor Olaf Scholz meets Putin in Moscow | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-crisis-german-chancellor-olaf-scholz-meets-putin-in-moscow/a-60785295"
+    },
+    {
+      "timestamp": "2022-02-15T02:15:00",
+      "source": "npr.org",
+      "headline": "German chancellor warns of far - reaching sanctions if Russia moves on Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.npr.org/2022/02/14/1080559075/german-chancellor-warns-of-far-reaching-sanctions-if-russia-moves-on-ukraine"
+    },
+    {
+      "timestamp": "2022-02-15T00:00:00",
+      "source": "cnsnews.com",
+      "headline": "Sen . Lindsey Graham : Im Not Convinced That Putin Will Invade Ukraine , But  We Could Do More in Congress and Should",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://cnsnews.com/article/washington/melanie-arter/sen-lindsey-graham-im-not-convinced-putin-will-invade-ukraine-we"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "date": "2022-03-29",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-29T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T07:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T17:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-29T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Rickards : Ive Never Heard So Many Lies - The Daily Reckoning",
+    "Top US Official Warns Crypto Exchanges Helping Russians Evade Sanctions",
+    "Russian troops take Ukrainian city home to hydroelectric power plant , mayor says",
+    "Ruble Surges Near Pre - Invasion Levels As Russia - Ukraine Talks Progress",
+    "Russia , Ukraine negotiators sit down for peace talks in Turkey live updates | News | DW"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-29T21:00:00",
+      "source": "dailyreckoning.com",
+      "headline": "Rickards : Ive Never Heard So Many Lies - The Daily Reckoning",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://dailyreckoning.com/rickards-ive-never-heard-so-many-lies/"
+    },
+    {
+      "timestamp": "2022-03-29T17:45:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Top US Official Warns Crypto Exchanges Helping Russians Evade Sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/bitcoin-crypto-blockchain-donations-sanctions-russia-ukraine-war-treasury-warning-2022-3"
+    },
+    {
+      "timestamp": "2022-03-29T02:45:00",
+      "source": "nbcnews.com",
+      "headline": "Russian troops take Ukrainian city home to hydroelectric power plant , mayor says",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nbcnews.com/news/world/blog/russia-ukraine-live-updates-n1290057/ncrd1290083"
+    },
+    {
+      "timestamp": "2022-03-29T16:30:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Ruble Surges Near Pre - Invasion Levels As Russia - Ukraine Talks Progress",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/ruble-price-dollar-surges-russia-ukraine-ceasefire-peace-talks-2022-3"
+    },
+    {
+      "timestamp": "2022-03-29T07:45:00",
+      "source": "dw.com",
+      "headline": "Russia , Ukraine negotiators sit down for peace talks in Turkey live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/russia-ukraine-negotiators-sit-down-for-peace-talks-in-turkey-live-updates/a-61286047"
+    },
+    {
+      "timestamp": "2022-03-29T07:45:00",
+      "source": "dw.com",
+      "headline": "JUST IN Russian and Ukrainian negotiators are sitting down in Istanbul for talks on ending the war in Ukraine . Follow DW for live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/just-in-russian-and-ukrainian-negotiators-are-sitting-down-in-istanbul-for-talks-on-ending-the-war-in-ukraine-follow-dw-for-live-updates/a-61286047"
+    },
+    {
+      "timestamp": "2022-03-29T17:30:00",
+      "source": "thejournal.ie",
+      "headline": "Tom Clonan : A turning point has been reached in the invasion of Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thejournal.ie/readme/tom-clonan-ukraine-phase-2-5724288-Mar2022/"
+    },
+    {
+      "timestamp": "2022-03-29T06:30:00",
+      "source": "telegraphindia.com",
+      "headline": "Russia - Russia - Ukraine crisis : - Telegraph India",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.telegraphindia.com/world/russia-ukraine-crisis/cid/1858093"
+    },
+    {
+      "timestamp": "2022-03-29T10:00:00",
+      "source": "msn.com",
+      "headline": "Status of Ukraine war : 33 days on , battlefield  largely static , no Russian moves in many areas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/world/status-of-ukraine-war-33-days-on-battlefield-largely-static-no-russian-moves-in-many-areas/ar-AAVCjN0"
+    },
+    {
+      "timestamp": "2022-03-29T00:45:00",
+      "source": "washingtontimes.com",
+      "headline": "Russian , Ukrainian delegations to talk Tuesday as more U . S . troops head to Europe",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com:443/news/2022/mar/28/russian-ukrainian-delegations-talk-tuesday-more-us/"
+    },
+    {
+      "timestamp": "2022-03-29T00:00:00",
+      "source": "castanet.net",
+      "headline": "Zelenskyy briefs Trudeau as ceasefire talks with Russia to resume in Turkey - Canada News",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.castanet.net/news/Canada/364226/Zelenskyy-briefs-Trudeau-as-ceasefire-talks-with-Russia-to-resume-in-Turkey"
+    },
+    {
+      "timestamp": "2022-03-29T12:30:00",
+      "source": "dw.com",
+      "headline": "Russia , Ukraine wrap up peace talks in Turkey live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/russia-ukraine-wrap-up-peace-talks-in-turkey-live-updates/a-61286047"
+    },
+    {
+      "timestamp": "2022-03-29T17:15:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Ruble Edges Closer to Clawing Back All Its Post - Invasion Decline",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/ruble-edges-closer-to-clawing-back-all-its-post-invasion-decline-1.1744688"
+    },
+    {
+      "timestamp": "2022-03-29T13:00:00",
+      "source": "dw.com",
+      "headline": "Russia pledges to scale down military activity near Kyiv , Chernihiv live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/russia-pledges-to-scale-down-military-activity-near-kyiv-chernihiv-live-updates/a-61286047"
+    },
+    {
+      "timestamp": "2022-03-29T13:00:00",
+      "source": "dailystar.co.uk",
+      "headline": "Russia to  radically reduce  assault on Kyiv",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dailystar.co.uk/news/world-news/russia-radically-reduce-assault-kyiv-26583324"
+    }
+  ]
+}

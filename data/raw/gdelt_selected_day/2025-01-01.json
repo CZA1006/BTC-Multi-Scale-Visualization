@@ -1,0 +1,197 @@
+{
+  "date": "2025-01-01",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 9,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2025-01-01T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T15:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2025-01-01T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump fires back at Biden claim that he couldve won 2024 election",
+    "Trump fires back at Biden claim that he couldve won 2024 presidential election if he hadnt dropped out",
+    "The top 5 political stories of 2024",
+    "Jill Biden and Kamala Harri  frosty  feud reportedly escalating day by day",
+    "She In Danger : 5 Mark Halperin Takes That Foreshadowed Harri Loss To Trump"
+  ],
+  "articles": [
+    {
+      "timestamp": "2025-01-01T14:15:00",
+      "source": "nypost.com",
+      "headline": "Trump fires back at Biden claim that he couldve won 2024 election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://nypost.com/2025/01/01/us-news/trump-fires-back-at-bidens-claim-that-he-wouldve-won-2024-election/"
+    },
+    {
+      "timestamp": "2025-01-01T15:45:00",
+      "source": "aol.com",
+      "headline": "Trump fires back at Biden claim that he couldve won 2024 presidential election if he hadnt dropped out",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.com/trump-fires-back-biden-claim-122703941.html"
+    },
+    {
+      "timestamp": "2025-01-01T12:00:00",
+      "source": "yahoo.com",
+      "headline": "The top 5 political stories of 2024",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/top-5-political-stories-2024-090015403.html"
+    },
+    {
+      "timestamp": "2025-01-01T07:00:00",
+      "source": "hindustantimes.com",
+      "headline": "Jill Biden and Kamala Harri  frosty  feud reportedly escalating day by day",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hindustantimes.com/world-news/us-news/jill-biden-and-kamala-harris-frosty-feud-reportedly-escalating-day-by-day-101735697656360.html"
+    },
+    {
+      "timestamp": "2025-01-01T17:30:00",
+      "source": "dailycaller.com",
+      "headline": "She In Danger : 5 Mark Halperin Takes That Foreshadowed Harri Loss To Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://dailycaller.com/2025/01/01/mark-halperin-foreshadowed-harris-loss-trump/"
+    },
+    {
+      "timestamp": "2025-01-01T16:00:00",
+      "source": "dostor.org",
+      "headline": "مخاوف من نفوذ ماسك  غير المريح  بالبيت الأبيض في 2025 .. مؤرخ يوضح",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dostor.org/4911087"
+    },
+    {
+      "timestamp": "2025-01-01T16:00:00",
+      "source": "independentsentinel.com",
+      "headline": "Jill Biden Bitter Feud with Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independentsentinel.com/jill-bidens-bitter-feud-with-kamala-harris/"
+    },
+    {
+      "timestamp": "2025-01-01T12:00:00",
+      "source": "yahoo.com",
+      "headline": "6 top winners and losers who emerged in politics in 2024",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/6-top-winners-losers-emerged-090032263.html"
+    },
+    {
+      "timestamp": "2025-01-01T02:30:00",
+      "source": "townhall.com",
+      "headline": "The Hollywood Reporter Tears George Clooney Apart for Role in Forcing Biden Out of the Race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://townhall.com/tipsheet/rebeccadowns/2024/12/31/the-hollywood-reporter-tears-george-clooney-apart-for-part-in-forcing-biden-out-of-the-race-n2649826"
+    },
+    {
+      "timestamp": "2025-01-01T13:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "2028 us presidential race contenders : Young blood for 2028 U . S elections ? Republicans and Democrats are already looking at prospective candidates ; here who is in the running",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/us/young-blood-for-2028-u-s-elections-republicans-and-democrats-are-already-looking-at-prospective-candidates-heres-who-is-in-the-running/articleshow/116857092.cms"
+    },
+    {
+      "timestamp": "2025-01-01T23:30:00",
+      "source": "nzherald.co.nz",
+      "headline": "Stocks surged in 2024 even as Americans fretted over US economy",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.nzherald.co.nz/business/markets/shares/stocks-surged-in-2024-even-as-americans-fretted-over-us-economy/V4FA3PXPXRD6DPZ5TKOO3HTY3A/"
+    },
+    {
+      "timestamp": "2025-01-01T02:30:00",
+      "source": "dealstreetasia.com",
+      "headline": "Analysts expect further rally in Bitcoin prices following a breakout 2024",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.dealstreetasia.com/stories/bitcoin-doubles-in-2024-424892"
+    },
+    {
+      "timestamp": "2025-01-01T15:30:00",
+      "source": "omanobserver.om",
+      "headline": "Bitcoin more than doubles in 2024",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.omanobserver.om/article/1164263/business/economy/bitcoin-more-than-doubles-in-2024"
+    },
+    {
+      "timestamp": "2025-01-01T11:00:00",
+      "source": "geo.tv",
+      "headline": "Spot ETF approval , Trump euphoria send Bitcoin soaring in 2024",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.geo.tv/latest/582796-bitcoin-more-than-doubles-in-2024-on-spot-etf-approval-trump-euphoria"
+    },
+    {
+      "timestamp": "2025-01-01T15:45:00",
+      "source": "q95.iheart.com",
+      "headline": "Trump Trolls With Reel Of Dems Calling Biden  Sharp  Amid Controversy",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://q95.iheart.com/content/2024-12-31-trump-trolls-with-reel-of-dems-calling-biden-sharp-amid-controversy/"
+    }
+  ]
+}

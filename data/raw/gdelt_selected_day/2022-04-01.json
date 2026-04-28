@@ -1,0 +1,192 @@
+{
+  "date": "2022-04-01",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-01T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T01:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T05:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-01T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+    "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+    "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+    "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+    "Russia ruble rebound raises questions of sanction impact"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-01T01:00:00",
+      "source": "inforum.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T05:30:00",
+      "source": "grandforksherald.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T05:15:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T05:00:00",
+      "source": "postbulletin.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T01:00:00",
+      "source": "stripes.com",
+      "headline": "Russia ruble rebound raises questions of sanction impact",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stripes.com/theaters/europe/2022-03-31/russia-ruble-rebound-raises-questions-sanctions-impact-5542366.html"
+    },
+    {
+      "timestamp": "2022-04-01T18:00:00",
+      "source": "vox.com",
+      "headline": "Russian President Putin is not achieving his invasion goals in his war in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.vox.com/policy-and-politics/23003689/putin-ukraine-russia-donbas-energy-feint"
+    },
+    {
+      "timestamp": "2022-04-01T08:45:00",
+      "source": "counterpunch.org",
+      "headline": "When Will it End , and How ?",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.counterpunch.org/2022/04/01/when-will-it-end-and-how/"
+    },
+    {
+      "timestamp": "2022-04-01T00:30:00",
+      "source": "dw.com",
+      "headline": "Ukraine : NATO warns Russia ′ repositioning ,′ not withdrawing as it happened | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-nato-warns-russia-repositioning-not-withdrawing-as-it-happened/a-61311996"
+    },
+    {
+      "timestamp": "2022-04-01T10:30:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Russia Lavrov  Appreciate Neutral Indian Stand on Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/russia-s-lavrov-appreciates-neutral-indian-stand-on-ukraine-1.1746225"
+    },
+    {
+      "timestamp": "2022-04-01T05:00:00",
+      "source": "wctrib.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wctrib.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T04:00:00",
+      "source": "bemidjipioneer.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.bemidjipioneer.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T03:00:00",
+      "source": "jamestownsun.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.jamestownsun.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T02:30:00",
+      "source": "thedickinsonpress.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thedickinsonpress.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T01:30:00",
+      "source": "brainerddispatch.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.brainerddispatch.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    },
+    {
+      "timestamp": "2022-04-01T02:45:00",
+      "source": "mitchellrepublic.com",
+      "headline": "Europe Russian gas in jeopardy , Ukraine girds for new attacks",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.mitchellrepublic.com/news/world/europes-russian-gas-in-jeopardy-ukraine-girds-for-new-attacks"
+    }
+  ]
+}

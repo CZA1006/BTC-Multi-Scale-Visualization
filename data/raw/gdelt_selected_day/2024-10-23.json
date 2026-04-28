@@ -1,0 +1,197 @@
+{
+  "date": "2024-10-23",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 1,
+  "theme_count_regulation": 0,
+  "theme_count_election": 11,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-23T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-23T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-24T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Here Where Crypto Billionaires Stand In The Election",
+    "Ex - Trump chief of staff says crypto election impact will be  fascinating",
+    "Tokenize ! Global Summit Debuts With Thought Leaders on",
+    "When Will Crypto Get to Say  See - Ya  to Gary Gensler ?",
+    "Michelle Obama Could Be Kamala Harri Ultimate Weapon"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-23T14:30:00",
+      "source": "forbes.com",
+      "headline": "Here Where Crypto Billionaires Stand In The Election",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/tylerroush/2024/10/23/these-pro-crypto-billionaires-have-endorsed-trump-or-harris-as-election-day-nears/"
+    },
+    {
+      "timestamp": "2024-10-23T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Ex - Trump chief of staff says crypto election impact will be  fascinating",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/donald-trump-chief-staff-impact-crypto-election"
+    },
+    {
+      "timestamp": "2024-10-23T19:15:00",
+      "source": "globenewswire.com",
+      "headline": "Tokenize ! Global Summit Debuts With Thought Leaders on",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.globenewswire.com/news-release/2024/10/23/2968129/0/en/Tokenize-Global-Summit-Debuts-With-Thought-Leaders-on-Politics-Payments-AI-and-Real-World-Assets.html"
+    },
+    {
+      "timestamp": "2024-10-23T02:15:00",
+      "source": "bravenewcoin.com",
+      "headline": "When Will Crypto Get to Say  See - Ya  to Gary Gensler ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://bravenewcoin.com/insights/when-will-crypto-get-to-say-see-ya-to-gary-gensler"
+    },
+    {
+      "timestamp": "2024-10-23T09:45:00",
+      "source": "newsweek.com",
+      "headline": "Michelle Obama Could Be Kamala Harri Ultimate Weapon",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/michelle-obama-kamala-harris-weapon-1972089"
+    },
+    {
+      "timestamp": "2024-10-23T17:30:00",
+      "source": "foxbusiness.com",
+      "headline": "Bitcoin miners launch ad campaign in swing states to boost crypto - friendly candidates",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.foxbusiness.com/politics/bitcoin-miners-launch-ad-campaign-swing-states-boost-crypto-friendly-candidates"
+    },
+    {
+      "timestamp": "2024-10-23T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "US bankers support Trump but expect Harris victory American Banker",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/us-bankers-support-trump-expect-harris-victory-american-banker"
+    },
+    {
+      "timestamp": "2024-10-23T00:15:00",
+      "source": "yahoo.com",
+      "headline": "The seven reasons why Donald Trump could win the White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/seven-reasons-why-donald-trump-233716533.html"
+    },
+    {
+      "timestamp": "2024-10-23T00:15:00",
+      "source": "aol.co.uk",
+      "headline": "The seven reasons why Donald Trump could win the White House",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.aol.co.uk/news/seven-reasons-why-donald-trump-233716524.html"
+    },
+    {
+      "timestamp": "2024-10-23T14:00:00",
+      "source": "cbsnews.com",
+      "headline": "Election 2024 live updates as Trump vs . Harris polls show tight presidential race",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.cbsnews.com/live-updates/election-2024-early-voting-campaign-coverage/"
+    },
+    {
+      "timestamp": "2024-10-23T17:00:00",
+      "source": "charismanews.com",
+      "headline": "The Early Voting Numbers Contain Some Very Troubling News For One Presidential Candidate",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://charismanews.com/news/the-early-voting-numbers-contain-some-very-troubling-news-for-one-presidential-candidate/"
+    },
+    {
+      "timestamp": "2024-10-23T00:00:00",
+      "source": "theeconomiccollapseblog.com",
+      "headline": "The Early Voting Numbers Contain Some Very Troubling News For One Presidential Candidate",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://theeconomiccollapseblog.com/the-early-voting-numbers-contain-some-very-troubling-news-for-one-presidential-candidate/"
+    },
+    {
+      "timestamp": "2024-10-23T23:30:00",
+      "source": "mercurynews.com",
+      "headline": "Harris to give speech at Ellipse , where Trump helped spark Capitol riot",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mercurynews.com/2024/10/23/kamala-harris-ellipse-speech/"
+    },
+    {
+      "timestamp": "2024-10-23T15:15:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Approaches All Time High . What Happens If Trump Wins ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/davidbirnbaum/2024/10/23/bitcoin-approaches-all-time-high-what-happens-if-trump-wins/"
+    },
+    {
+      "timestamp": "2024-10-24T00:00:00",
+      "source": "sun-sentinel.com",
+      "headline": "Harris to give speech at Ellipse , where Trump helped spark Capitol riot",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.sun-sentinel.com/2024/10/23/kamala-harris-ellipse-speech/"
+    }
+  ]
+}

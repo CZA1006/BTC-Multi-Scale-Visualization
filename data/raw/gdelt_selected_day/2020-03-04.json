@@ -1,0 +1,197 @@
+{
+  "date": "2020-03-04",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 4,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 2,
+  "theme_count_macro": 2,
+  "theme_count_covid": 6,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-04T02:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T11:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-04T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-05T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto Will Thrive in 2020 as Governments Struggle to Stimulate Growth , Says CEO",
+    "FED Rate Receives 50 Basic Point Cut , Coronavirus Scares More People",
+    "S & P 500 Pumps as Bitcoin Stagnates ; Here Why That Bad for BTC",
+    "Here Why Big Rate Cuts Wont Stop the Dow From Plunging Into a Bear Market",
+    "Move Over Bitcoin : Pro - Gold Peter Schiff Blasts the Stock Market Bubble"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-04T02:30:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Will Thrive in 2020 as Governments Struggle to Stimulate Growth , Says CEO",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/03/crypto-will-thrive-in-2020-as-governments-struggle-to-stimulate-economies/"
+    },
+    {
+      "timestamp": "2020-03-04T14:00:00",
+      "source": "coinspeaker.com",
+      "headline": "FED Rate Receives 50 Basic Point Cut , Coronavirus Scares More People",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/fed-rate-cut-coronavirus/"
+    },
+    {
+      "timestamp": "2020-03-04T21:30:00",
+      "source": "newsbtc.com",
+      "headline": "S & P 500 Pumps as Bitcoin Stagnates ; Here Why That Bad for BTC",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/04/stock-market-pumps-bitcoin-stagnates-heres-why-bad-for-btc/"
+    },
+    {
+      "timestamp": "2020-03-04T18:00:00",
+      "source": "ccn.com",
+      "headline": "Here Why Big Rate Cuts Wont Stop the Dow From Plunging Into a Bear Market",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.ccn.com/heres-why-big-rate-cuts-wont-stop-dow-from-plunging-into-bear-market/"
+    },
+    {
+      "timestamp": "2020-03-04T16:45:00",
+      "source": "newsbtc.com",
+      "headline": "Move Over Bitcoin : Pro - Gold Peter Schiff Blasts the Stock Market Bubble",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/04/bitcoin-gold-stock-market-bubble-popping/"
+    },
+    {
+      "timestamp": "2020-03-04T21:30:00",
+      "source": "newsbtc.com",
+      "headline": "Is the Coronavirus The Black Swan Event That Crushes Cryptocurrency ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/04/coronavirus-bitcoin-black-swan-event-cryptocurrency/"
+    },
+    {
+      "timestamp": "2020-03-04T02:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin CME Futures Volume is Collapsing Amidst Global Market Meltdown",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/03/bitcoin-cme-futures-volume-is-collapsing-amidst-global-market-meltdown/"
+    },
+    {
+      "timestamp": "2020-03-04T17:30:00",
+      "source": "marketwatch.com",
+      "headline": "Here how billionaire investor Howard Marks is telling clients to ride out coronavirus volatility",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/heres-how-billionaire-investor-howard-marks-is-telling-clients-to-ride-out-coronavirus-volatility-2020-03-04-1210308"
+    },
+    {
+      "timestamp": "2020-03-04T22:30:00",
+      "source": "u.today",
+      "headline": "Peter Schiff Offers Grave Warning About Bitcoin ( BTC ) Price , Crypto Community Reacts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://u.today/peter-schiff-offers-grave-warning-about-bitcoin-btc-price-crypto-community-reacts"
+    },
+    {
+      "timestamp": "2020-03-04T11:00:00",
+      "source": "wraltechwire.com",
+      "headline": "Coronavirus business fallout : Fed cuts interest rate , Treasury bond yield drops – but stocks fall again",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.wraltechwire.com/2020/03/04/coronavirus-business-fallout-fed-cuts-interest-rate-treasury-bond-yield-drops-but-stocks-fall-again/"
+    },
+    {
+      "timestamp": "2020-03-04T11:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Peter Schiff : Sell Bitcoin Now After Fed Rate Cut Fails to Lift Price",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/peter-schiff-sell-bitcoin-now-after-fed-rate-cut-fails-to-lift-price"
+    },
+    {
+      "timestamp": "2020-03-04T18:00:00",
+      "source": "coindesk.com",
+      "headline": "Coronavirus Rate Cuts : Australia Central Bank Did It First",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/coronavirus-rate-cuts-australias-central-bank-did-it-first"
+    },
+    {
+      "timestamp": "2020-03-04T06:00:00",
+      "source": "edaily.co.kr",
+      "headline": "美연준 , 코로나 쇼크 긴급처방에도 주가 하락 .. 왜",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/news/read?newsId=03657206625700040&mediaCodeNo=257&gtrack=sok"
+    },
+    {
+      "timestamp": "2020-03-04T11:30:00",
+      "source": "exchangerates.org.uk",
+      "headline": "Exchange Rates Daily Today 04 . 03 . 2020 : Pound Sterling And Euro Strengthen As US Dollar Hit By Surprise Coronavirus FED Rate Cut",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.exchangerates.org.uk/news/28793/exchange-rates-daily-today-04-03-2020-pound-sterling-and-euro-strengthen-as-us-dollar-hit-by-surprise-coronavirus-fed-rate-cut.html"
+    },
+    {
+      "timestamp": "2020-03-05T00:00:00",
+      "source": "business.financialpost.com",
+      "headline": "Coronavirus testing post - crisis maxim that rate cuts alone can buoy markets",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://business.financialpost.com/news/economy/coronavirus-testing-post-crisis-maxim-that-rate-cuts-alone-can-buoy-markets"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "date": "2024-09-14",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 4,
+  "theme_count_war": 7,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-14T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T22:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-14T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-15T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Harris Walz Campaign Returns to Wisconsin",
+    "AI教母  李飞飞融资2 . 3亿美元启动初创 ； 美联储降息50个基点预期升温 ； 美或  松绑  乌武器使用限制|一周国际财经",
+    "Harris plans another Wisconsin visit in an effort to shore up support in the key state",
+    "All gas , no brake : Takeaways from Tim Walz rally in Superior , Wisconsin",
+    "Trump in Las Vegas :  Our country is under invasion"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-14T20:00:00",
+      "source": "yahoo.com",
+      "headline": "Harris Walz Campaign Returns to Wisconsin",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-walz-campaign-returns-wisconsin-191426977.html"
+    },
+    {
+      "timestamp": "2024-09-14T16:30:00",
+      "source": "nbd.com.cn",
+      "headline": "AI教母  李飞飞融资2 . 3亿美元启动初创 ； 美联储降息50个基点预期升温 ； 美或  松绑  乌武器使用限制|一周国际财经",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.nbd.com.cn/articles/2024-09-14/3558636.html"
+    },
+    {
+      "timestamp": "2024-09-14T12:15:00",
+      "source": "keyt.com",
+      "headline": "Harris plans another Wisconsin visit in an effort to shore up support in the key state",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://keyt.com/news/2024/09/14/harris-plans-another-wisconsin-visit-in-an-effort-to-shore-up-support-in-the-key-state/"
+    },
+    {
+      "timestamp": "2024-09-14T23:15:00",
+      "source": "yahoo.com",
+      "headline": "All gas , no brake : Takeaways from Tim Walz rally in Superior , Wisconsin",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/gas-no-brake-takeaways-tim-224113349.html"
+    },
+    {
+      "timestamp": "2024-09-15T00:00:00",
+      "source": "katu.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://katu.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-14T05:15:00",
+      "source": "santamariatimes.com",
+      "headline": "Trump refuses to criticize Laura Loomer amid concerns from Republican allies about her influence",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://santamariatimes.com/ap/politics/trump-refuses-to-criticize-laura-loomer-amid-concerns-from-republican-allies-about-her-influence/article_ae45b6d8-720f-11ef-bbe5-53836461b4a3.html"
+    },
+    {
+      "timestamp": "2024-09-14T13:15:00",
+      "source": "huxiu.com",
+      "headline": "24小时筹款4700万美元 ， 霉霉  公开支持 ， 哈里斯  稳赢  了 ？- 虎嗅网",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.huxiu.com/article/3469201.html"
+    },
+    {
+      "timestamp": "2024-09-14T11:15:00",
+      "source": "nbd.com.cn",
+      "headline": "哈里斯首辩后24小时  吸金  4700万美元 ， 稳赢  了吗 ？ 关键一战下周上演",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.nbd.com.cn/articles/2024-09-14/3558499.html"
+    },
+    {
+      "timestamp": "2024-09-14T21:15:00",
+      "source": "wcti12.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wcti12.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-14T22:30:00",
+      "source": "wset.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://wset.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-14T03:45:00",
+      "source": "heraldbulletin.com",
+      "headline": "Harris concentrates on Pennsylvania while Trump stumps in the West",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.heraldbulletin.com/news/nation_world/harris-concentrates-on-pennsylvania-while-trump-stumps-in-the-west/article_0bdff5bc-c6c5-53a9-90dc-3d9c9e4f72a4.html"
+    },
+    {
+      "timestamp": "2024-09-14T22:30:00",
+      "source": "wlos.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://wlos.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-14T22:15:00",
+      "source": "wwmt.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://wwmt.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-14T21:00:00",
+      "source": "abc6onyourside.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://abc6onyourside.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    },
+    {
+      "timestamp": "2024-09-14T21:15:00",
+      "source": "turnto10.com",
+      "headline": "Trump in Las Vegas :  Our country is under invasion",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://turnto10.com/news/nation-world/donald-trump-hosts-first-campaign-rally-in-las-vegas-post-debate-nevada-politics-election-presidential-race-gop-republican-jd-vance-kamala-harris-tim-walz-democrat"
+    }
+  ]
+}

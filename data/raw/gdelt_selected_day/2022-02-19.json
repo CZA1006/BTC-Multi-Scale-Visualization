@@ -1,0 +1,187 @@
+{
+  "date": "2022-02-19",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-19T00:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-19T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-19T10:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-19T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-19T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-19T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-19T22:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-19T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "G - 7 countries call on Kremlin to de - escalate , warn of costly sanctions if Russia invades Ukraine",
+    "G - 7 countries call on Kremlin to de - escalate , warn of costly sanctions if Russia invades Ukraine",
+    "Ukraine leader seeks new security guarantees amid Russian threat",
+    "Ukraine leader seeks new security guarantees amid Russian threat",
+    "Ukraine President Zelenskyy proposes to meet with Putin as tensions with Russia grow"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-19T22:00:00",
+      "source": "washingtontimes.com",
+      "headline": "G - 7 countries call on Kremlin to de - escalate , warn of costly sanctions if Russia invades Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com/news/2022/feb/19/g-7-countries-call-kremlin-de-escalate-warn-costly/"
+    },
+    {
+      "timestamp": "2022-02-19T22:00:00",
+      "source": "washingtontimes.com",
+      "headline": "G - 7 countries call on Kremlin to de - escalate , warn of costly sanctions if Russia invades Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtontimes.com:443/news/2022/feb/19/g-7-countries-call-kremlin-de-escalate-warn-costly/"
+    },
+    {
+      "timestamp": "2022-02-19T23:00:00",
+      "source": "msn.com",
+      "headline": "Ukraine leader seeks new security guarantees amid Russian threat",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/ukraine-leader-seeks-new-security-guarantees-amid-russian-threat/ar-AAU4JHa"
+    },
+    {
+      "timestamp": "2022-02-19T22:00:00",
+      "source": "aljazeera.com",
+      "headline": "Ukraine leader seeks new security guarantees amid Russian threat",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.aljazeera.com/news/2022/2/19/ukraine-crisis-zelenskyy-calls-for-dialogue-with-president-putin"
+    },
+    {
+      "timestamp": "2022-02-19T21:00:00",
+      "source": "knpr.org",
+      "headline": "Ukraine President Zelenskyy proposes to meet with Putin as tensions with Russia grow",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://knpr.org/npr/2022-02/ukraine-president-zelenskyy-proposes-meet-putin-tensions-russia-grow"
+    },
+    {
+      "timestamp": "2022-02-19T21:00:00",
+      "source": "wusfnews.wusf.usf.edu",
+      "headline": "Ukraine President Zelenskyy proposes to meet with Putin as tensions with Russia grow",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://wusfnews.wusf.usf.edu/2022-02-19/ukraine-president-zelenskyy-proposes-to-meet-with-putin-as-tensions-with-russia-grow"
+    },
+    {
+      "timestamp": "2022-02-19T22:45:00",
+      "source": "michiganradio.org",
+      "headline": "Ukraine President Zelenskyy proposes to meet with Putin as tensions with Russia grow",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.michiganradio.org/2022-02-19/ukraine-president-zelenskyy-proposes-to-meet-with-putin-as-tensions-with-russia-grow"
+    },
+    {
+      "timestamp": "2022-02-19T10:00:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "russia : Ukraine - Russia crisis : What to know as the tension grinds on",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-russia-crisis-what-to-know-as-the-tension-grinds-on/articleshow/89679512.cms"
+    },
+    {
+      "timestamp": "2022-02-19T10:00:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine live updates : Putin ally accuses Ukrainian president of provoking war",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/russia-ukraine-live-updates-putin-ally-accuses-ukrainian-president-of-provoking-war/ar-AATRYFy"
+    },
+    {
+      "timestamp": "2022-02-19T01:15:00",
+      "source": "wbur.org",
+      "headline": "Biden  convinced  Russia will invade Ukraine , but still hopes diplomacy will prevail",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wbur.org/npr/1081744761/white-house-says-kremlin-was-behind-denial-of-service-attack-in-ukraine"
+    },
+    {
+      "timestamp": "2022-02-19T18:15:00",
+      "source": "greekreporter.com",
+      "headline": "Clashes in Ukraine Provide Possible Pretext for Russia to Invade",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://greekreporter.com/2022/02/19/ukraine-clashes-pretext-russia-invasion/"
+    },
+    {
+      "timestamp": "2022-02-19T16:45:00",
+      "source": "dw.com",
+      "headline": "Ukraine latest : Military officials survive separatist attack | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-latest-military-officials-survive-separatist-attack/a-60839276"
+    },
+    {
+      "timestamp": "2022-02-19T00:45:00",
+      "source": "greensboro.com",
+      "headline": "Ukraine - Russia crisis : What to know as the tension grinds on",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://greensboro.com/news/national/ukraine-russia-crisis-what-to-know-as-the-tension-grinds-on/article_656bd568-c524-5678-bbf0-7ce64d25034c.html"
+    },
+    {
+      "timestamp": "2022-02-19T00:45:00",
+      "source": "journalnow.com",
+      "headline": "Ukraine - Russia crisis : What to know as the tension grinds on",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://journalnow.com/news/national/ukraine-russia-crisis-what-to-know-as-the-tension-grinds-on/article_495aad21-699b-5216-9fcf-c84b25d74e85.html"
+    },
+    {
+      "timestamp": "2022-02-19T00:15:00",
+      "source": "knpr.org",
+      "headline": "Watch : Biden  convinced  Russia will invade Ukraine , but still hopes diplomacy will prevail",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://knpr.org/npr/2022-02/biden-convinced-russia-will-invade-ukraine-still-hopes-diplomacy-will-prevail"
+    }
+  ]
+}

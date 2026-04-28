@@ -1,0 +1,187 @@
+{
+  "date": "2022-05-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 7,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-02T00:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-02T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-02T05:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-02T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-02T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-02T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-02T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-02T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "The Russian Invasion of Ukraine",
+    "Ukraine to evacuate more civilians from besieged Mariupol",
+    "Ukraine updates : Russian shelling of Mariupol resumes after evacuation",
+    "러시아 꼴 날라  충격받은 中 , 은행들 불러들여 긴급 대책회의",
+    "러시아 꼴 날라  충격받은 中 , 은행들 불러들여 긴급 대책회의"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-02T16:30:00",
+      "source": "hercampus.com",
+      "headline": "The Russian Invasion of Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.hercampus.com/school/texas/the-russian-invasion-of-ukraine/"
+    },
+    {
+      "timestamp": "2022-05-02T07:00:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Ukraine to evacuate more civilians from besieged Mariupol",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-to-evacuate-more-civilians-from-besieged-mariupol/articleshow/91248749.cms"
+    },
+    {
+      "timestamp": "2022-05-02T12:15:00",
+      "source": "rgj.com",
+      "headline": "Ukraine updates : Russian shelling of Mariupol resumes after evacuation",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.rgj.com/story/news/politics/2022/05/01/ukraine-pelosi-visits-kyiv-congressional-delegation/9606222002/"
+    },
+    {
+      "timestamp": "2022-05-02T05:15:00",
+      "source": "news.mt.co.kr",
+      "headline": "러시아 꼴 날라  충격받은 中 , 은행들 불러들여 긴급 대책회의",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2022050212125147251&MS2_T"
+    },
+    {
+      "timestamp": "2022-05-02T05:15:00",
+      "source": "news.mt.co.kr",
+      "headline": "러시아 꼴 날라  충격받은 中 , 은행들 불러들여 긴급 대책회의",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://news.mt.co.kr/mtview.php?no=2022050212125147251&type=2&sec=politics&pDepth2=Ptotal&MNE_T"
+    },
+    {
+      "timestamp": "2022-05-02T00:30:00",
+      "source": "journalstar.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://journalstar.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_7eba6c63-9d8b-5c46-85f7-541b7f7adf9d.html"
+    },
+    {
+      "timestamp": "2022-05-02T13:45:00",
+      "source": "sbs.com.au",
+      "headline": "Mariupol evacuations resume as western powers seek to increase the pressure on Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sbs.com.au/news/article/mariupol-evacuations-resume-as-western-powers-seek-to-increase-the-pressure-on-russia/1la3sa0aa"
+    },
+    {
+      "timestamp": "2022-05-02T00:30:00",
+      "source": "tucson.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://tucson.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_04871112-b2e9-55de-8681-66902fa37bb4.html"
+    },
+    {
+      "timestamp": "2022-05-02T00:15:00",
+      "source": "dailyprogress.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://dailyprogress.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_61579d76-2cf8-5874-8c50-4fc3f09e3f46.html"
+    },
+    {
+      "timestamp": "2022-05-02T00:15:00",
+      "source": "nonpareilonline.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://nonpareilonline.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_a831d186-8865-58b4-8092-050c2f6e8c08.html"
+    },
+    {
+      "timestamp": "2022-05-02T00:00:00",
+      "source": "idahopress.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.idahopress.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_8980d75f-df45-5088-8f2f-91d18d7d5186.html"
+    },
+    {
+      "timestamp": "2022-05-02T10:00:00",
+      "source": "asia.nikkei.com",
+      "headline": "Ukraine latest : Ukraine says its drone destroyed two Russian patrol boats - Nikkei Asia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://asia.nikkei.com/Politics/Ukraine-war/Ukraine-war-Free-to-read/Ukraine-latest-Ukraine-says-its-drone-destroyed-two-Russian-patrol-boats"
+    },
+    {
+      "timestamp": "2022-05-02T00:15:00",
+      "source": "napavalleyregister.com",
+      "headline": "Live updates l Governor : 4 civilians dead in Donetsk region",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://napavalleyregister.com/news/national/live-updates-l-governor-4-civilians-dead-in-donetsk-region/article_4f788282-272f-57b3-ab4e-717a5d378283.html"
+    },
+    {
+      "timestamp": "2022-05-02T05:30:00",
+      "source": "france24.com",
+      "headline": "Ukraine to evacuate more civilians from besieged Mariupol",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.france24.com/en/live-news/20220502-ukraine-to-evacuate-more-civilians-from-besieged-mariupol"
+    },
+    {
+      "timestamp": "2022-05-02T03:45:00",
+      "source": "msn.com",
+      "headline": "Ukraine says it disrupted Russian spy ring plot live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/ukraine-says-it-disrupted-russian-spy-ring-plot-%e2%80%94-live-updates/ar-AAWOY7R"
+    }
+  ]
+}

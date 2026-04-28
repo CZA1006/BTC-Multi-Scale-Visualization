@@ -1,0 +1,187 @@
+{
+  "date": "2020-04-02",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 9,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 3,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-02T00:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-02T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-02T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-02T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-02T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-02T19:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-02T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-02T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Surges to $6 , 600 : What Do Analysts Think Is Next ?",
+    "Bitcoin Enters Historically Strong Quarter With 3 % Price Gain",
+    "Should I Buy Bitcoin During the Coronavirus Crisis ?",
+    "뉴스핌 - [ 뉴욕증시 ] 4 % 급락 마감 … 경제 셧다운 장기화  말말말",
+    "COVID - 19 : How has the Coronavirus Pandemic Affected Bitcoin Future ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-02T00:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Surges to $6 , 600 : What Do Analysts Think Is Next ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/01/bitcoin-surges-to-6600-what-do-analysts-think-is-next/"
+    },
+    {
+      "timestamp": "2020-04-02T14:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Enters Historically Strong Quarter With 3 % Price Gain",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-enters-historically-strong-quarter-with-3-price-gain"
+    },
+    {
+      "timestamp": "2020-04-02T19:30:00",
+      "source": "moneymorning.com",
+      "headline": "Should I Buy Bitcoin During the Coronavirus Crisis ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://moneymorning.com/2020/04/02/should-i-buy-bitcoin-during-the-coronavirus-crisis/"
+    },
+    {
+      "timestamp": "2020-04-02T00:30:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - [ 뉴욕증시 ] 4 % 급락 마감 … 경제 셧다운 장기화  말말말",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200402000056"
+    },
+    {
+      "timestamp": "2020-04-02T14:30:00",
+      "source": "whatech.com",
+      "headline": "COVID - 19 : How has the Coronavirus Pandemic Affected Bitcoin Future ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.whatech.com/cryptocurrency/blog/644381-covid-19-how-has-the-coronavirus-pandemic-affected-bitcoin-s-future"
+    },
+    {
+      "timestamp": "2020-04-02T19:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Surges to $6 , 900 : What Do Analysts Think Comes Next ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/02/bitcoin-surges-to-6900-what-do-analysts-think-comes-next/"
+    },
+    {
+      "timestamp": "2020-04-02T04:15:00",
+      "source": "crowdfundinsider.com",
+      "headline": "Coinbase Claims Retail Investors Purchased Large Amounts of Bitcoin ( BTC ) During Last Month Crypto Market Crash",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.crowdfundinsider.com/2020/04/159605-coinbase-claims-retail-investors-purchased-large-amounts-of-bitcoin-btc-during-last-months-crypto-market-crash/"
+    },
+    {
+      "timestamp": "2020-04-02T23:45:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Titanic : Are Altcoin Investors Ready To Sink With The Ship ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/02/crypto-titanic-altcoin-investors-must-prepare-to-sink-with-the-ship/"
+    },
+    {
+      "timestamp": "2020-04-02T04:30:00",
+      "source": "article.wn.com",
+      "headline": "Crypto to the Rescue After Khan Academy COVID - 19 Traffic Surge",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://article.wn.com/view/2020/04/02/Crypto_to_the_Rescue_After_Khan_Academy_s_COVID19_Traffic_Su/"
+    },
+    {
+      "timestamp": "2020-04-02T00:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Italian Bank Adds Bitcoin Support as the Nation Emerges into a Brave New World",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/italian-bank-adds-bitcoin-support-153007322.html"
+    },
+    {
+      "timestamp": "2020-04-02T21:45:00",
+      "source": "cointelegraph.com",
+      "headline": "U . S . Crypto ATM Network Helps to Promote Social Distancing",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/us-crypto-atm-network-helps-to-promote-social-distancing"
+    },
+    {
+      "timestamp": "2020-04-02T19:30:00",
+      "source": "fxstreet.com",
+      "headline": "Crypto Today : Bitcoin bulls return with brief jump above $7000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/crypto-today-bitcoin-bulls-return-with-brief-jump-above-7000-202004021845"
+    },
+    {
+      "timestamp": "2020-04-02T17:00:00",
+      "source": "benzinga.com",
+      "headline": "Which Cryptos To Buy And When : The Straight Answers With No Ax To Grind",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/20/04/15729915/which-cryptos-to-buy-and-when-the-straight-answers-with-no-ax-to-grind"
+    },
+    {
+      "timestamp": "2020-04-02T00:30:00",
+      "source": "newsbtc.com",
+      "headline": "Two Crypto Tokens Beat Bitcoin in Q1 after Jointly Surging 450 %",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/01/two-crypto-tokens-beat-bitcoin-in-q1-after-jointly-surging-450/"
+    },
+    {
+      "timestamp": "2020-04-02T03:45:00",
+      "source": "thestreet.com",
+      "headline": "While coronavirus rages , bitcoin has made a leap towards the mainstream",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.thestreet.com/phildavis/news/bitcoin-has-made-a-leap-towards-the-mainstream"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "date": "2024-09-07",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 13,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-09-07T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-07T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-07T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-07T20:00:00",
+      "news_count": 8,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-07T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-09-07T23:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Dick Cheney says he will vote for Harris",
+    "Dick Cheney says he will vote for Harris",
+    "Dick Cheney says he will vote for Harris",
+    "Who is Dick Cheney and why is he supporting Kamala Harris ?",
+    "Trump new cryptocurrency biz could create conflicts"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-09-07T23:30:00",
+      "source": "kalw.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kalw.org/npr-news/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T23:30:00",
+      "source": "kpbs.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kpbs.org/news/politics/2024/09/07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T23:15:00",
+      "source": "houstonpublicmedia.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.houstonpublicmedia.org/npr/2024/09/07/nx-s1-5104718/dick-cheney-says-he-will-vote-for-harris/"
+    },
+    {
+      "timestamp": "2024-09-07T14:15:00",
+      "source": "inews.co.uk",
+      "headline": "Who is Dick Cheney and why is he supporting Kamala Harris ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://inews.co.uk/news/world/who-dick-cheney-why-supporting-kamala-harris-3266016"
+    },
+    {
+      "timestamp": "2024-09-07T15:30:00",
+      "source": "omaha.com",
+      "headline": "Trump new cryptocurrency biz could create conflicts",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/nation-world/government-politics/donald-trump-republicans-cryptocurrency-business-conflicts-of-interest-election-2024/article_a568d824-acf8-5052-a0db-40a23202abd4.html"
+    },
+    {
+      "timestamp": "2024-09-07T22:30:00",
+      "source": "guampdn.com",
+      "headline": "Trump sounds dark tone at rally , Harris  ready  for debate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.guampdn.com/news/national/trump-sounds-dark-tone-at-rally-harris-ready-for-debate/article_4ef390d2-57d5-5eca-b7dd-cd4fc39504ca.html"
+    },
+    {
+      "timestamp": "2024-09-07T19:15:00",
+      "source": "albayan.ae",
+      "headline": "ترامب يزور ولاية ويسكونسن المتأرجحة وهاريس تواصل الاستعداد للمناظرة المرتقبة",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.albayan.ae/world/global/2024-09-07-1.4930585"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "wmra.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wmra.org/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "ksmu.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ksmu.org/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "northernpublicradio.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.northernpublicradio.org/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "wysu.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wysu.org/npr-national-news/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "wbfo.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.wbfo.org/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "news.wfsu.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://news.wfsu.org/all-npr-news/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "hppr.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.hppr.org/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    },
+    {
+      "timestamp": "2024-09-07T20:30:00",
+      "source": "kmxt.org",
+      "headline": "Dick Cheney says he will vote for Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.kmxt.org/2024-09-07/dick-cheney-says-he-will-vote-for-harris"
+    }
+  ]
+}

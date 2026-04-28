@@ -1,0 +1,207 @@
+{
+  "date": "2024-12-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 15,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-15T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-15T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Column : Kamala Harris should run for governor -- if she wants to solve California problems",
+    "EXCLUSIVE : Eric Trump Declares Bitcoin The Future , Details Tax - Free Crypto Goals For Trump Presidency",
+    "Fed widely expected to cut rates in last meeting of Biden era",
+    "U . S . Fed expected to cut rates in last meeting of Biden era",
+    "US Fed Expected To Cut Rates In Last Meeting Of Biden Era"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-15T11:30:00",
+      "source": "latimes.com",
+      "headline": "Column : Kamala Harris should run for governor -- if she wants to solve California problems",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.latimes.com/california/story/2024-12-15/kamala-harris-should-run-for-governor-but-only-if-she-really-wants-to-lead-california"
+    },
+    {
+      "timestamp": "2024-12-15T18:00:00",
+      "source": "benzinga.com",
+      "headline": "EXCLUSIVE : Eric Trump Declares Bitcoin The Future , Details Tax - Free Crypto Goals For Trump Presidency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/12/42499633/exclusive-eric-trump-declares-bitcoin-the-future-details-tax-free-crypto-goals-for-trump-p"
+    },
+    {
+      "timestamp": "2024-12-15T12:15:00",
+      "source": "dailysabah.com",
+      "headline": "Fed widely expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dailysabah.com/business/economy/fed-widely-expected-to-cut-rates-in-last-meeting-of-biden-era"
+    },
+    {
+      "timestamp": "2024-12-15T23:30:00",
+      "source": "japantoday.com",
+      "headline": "U . S . Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://japantoday.com/category/business/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era"
+    },
+    {
+      "timestamp": "2024-12-15T02:00:00",
+      "source": "ibtimes.com",
+      "headline": "US Fed Expected To Cut Rates In Last Meeting Of Biden Era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/us-fed-expected-cut-rates-last-meeting-biden-era-3755514"
+    },
+    {
+      "timestamp": "2024-12-15T11:45:00",
+      "source": "yahoo.com",
+      "headline": "Column : Kamala Harris should run for governor -- but only if she wants to solve California problems",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/column-kamala-harris-run-governor-110034131.html"
+    },
+    {
+      "timestamp": "2024-12-15T16:00:00",
+      "source": "khaleejtimes.com",
+      "headline": "US Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.khaleejtimes.com/business/economy/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era"
+    },
+    {
+      "timestamp": "2024-12-15T15:15:00",
+      "source": "thefrontierpost.com",
+      "headline": "Fed widely expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thefrontierpost.com/fed-widely-expected-to-cut-rates-in-last-meeting-of-biden-era/"
+    },
+    {
+      "timestamp": "2024-12-15T12:15:00",
+      "source": "thefrontierpost.com",
+      "headline": "US Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thefrontierpost.com/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era/"
+    },
+    {
+      "timestamp": "2024-12-15T22:30:00",
+      "source": "hngn.com",
+      "headline": "US Fed Expected To Cut Rates In Last Meeting Of Biden Era",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://www.hngn.com/articles/264038/20241215/us-fed-expected-cut-rates-last-meeting-biden-era.htm"
+    },
+    {
+      "timestamp": "2024-12-15T06:45:00",
+      "source": "mdjonline.com",
+      "headline": "US Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mdjonline.com/neighbor_newspapers/news/national/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era/article_194d174f-37c2-5ec0-8c04-baf89ad1299e.html"
+    },
+    {
+      "timestamp": "2024-12-15T15:45:00",
+      "source": "citynewsokc.com",
+      "headline": "US Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.citynewsokc.com/news/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era/article_b152ccec-70c3-56ab-ad8f-cdebdbcfd0ab.html"
+    },
+    {
+      "timestamp": "2024-12-15T03:30:00",
+      "source": "lebanondemocrat.com",
+      "headline": "US Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lebanondemocrat.com/maconcounty/news/national/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era/article_719d1a0f-c254-5ee2-aa96-4548a62354e0.html"
+    },
+    {
+      "timestamp": "2024-12-15T04:00:00",
+      "source": "bryantimes.com",
+      "headline": "US Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bryantimes.com/news/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era/article_1dcd42bd-98bf-57a8-b896-12fbbe5c0a60.html"
+    },
+    {
+      "timestamp": "2024-12-15T05:45:00",
+      "source": "lebanondemocrat.com",
+      "headline": "US Fed expected to cut rates in last meeting of Biden era",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.lebanondemocrat.com/news/national/us-fed-expected-to-cut-rates-in-last-meeting-of-biden-era/article_719d1a0f-c254-5ee2-aa96-4548a62354e0.html"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "date": "2022-04-29",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 11,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-04-29T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-29T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-29T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-29T19:00:00",
+      "news_count": 7,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-04-29T20:00:00",
+      "news_count": 4,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+    "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+    "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+    "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+    "Live updates | Ukraine goes after suspected collaborators"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-04-29T02:00:00",
+      "source": "inforum.com",
+      "headline": "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/blasts-rock-kyiv-during-u-n-chiefs-visit-u-s-pledges-new-aid"
+    },
+    {
+      "timestamp": "2022-04-29T00:30:00",
+      "source": "grandforksherald.com",
+      "headline": "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/blasts-rock-kyiv-during-u-n-chiefs-visit-u-s-pledges-new-aid"
+    },
+    {
+      "timestamp": "2022-04-29T00:30:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/blasts-rock-kyiv-during-u-n-chiefs-visit-u-s-pledges-new-aid"
+    },
+    {
+      "timestamp": "2022-04-29T03:45:00",
+      "source": "postbulletin.com",
+      "headline": "Blasts rock Kyiv during U . N . chief visit , U . S . pledges new aid",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/blasts-rock-kyiv-during-u-n-chiefs-visit-u-s-pledges-new-aid"
+    },
+    {
+      "timestamp": "2022-04-29T19:45:00",
+      "source": "apnews.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://apnews.com/1c7569f0dedf489c918abb12df597864"
+    },
+    {
+      "timestamp": "2022-04-29T19:45:00",
+      "source": "stltoday.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/news/national/live-updates-ukraine-goes-after-suspected-collaborators/article_34645f60-f97e-53d5-87a2-d9ab5db826c3.html"
+    },
+    {
+      "timestamp": "2022-04-29T19:45:00",
+      "source": "omaha.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/news/national/live-updates-ukraine-goes-after-suspected-collaborators/article_b4f2ef09-d189-5bb6-a237-26479856c15c.html"
+    },
+    {
+      "timestamp": "2022-04-29T19:30:00",
+      "source": "omaha.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://omaha.com/business/live-updates-ukraine-goes-after-suspected-collaborators/article_b4f2ef09-d189-5bb6-a237-26479856c15c.html"
+    },
+    {
+      "timestamp": "2022-04-29T20:30:00",
+      "source": "buffalonews.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://buffalonews.com/news/national/live-updates-ukraine-goes-after-suspected-collaborators/article_b2135a1b-c6f7-593b-a1c3-287ab922094c.html"
+    },
+    {
+      "timestamp": "2022-04-29T19:45:00",
+      "source": "tulsaworld.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tulsaworld.com/news/national/live-updates-ukraine-goes-after-suspected-collaborators/article_fc9d36b2-6880-5c02-acee-6ad2bb3a51dc.html"
+    },
+    {
+      "timestamp": "2022-04-29T19:30:00",
+      "source": "tulsaworld.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tulsaworld.com/business/live-updates-ukraine-goes-after-suspected-collaborators/article_fc9d36b2-6880-5c02-acee-6ad2bb3a51dc.html"
+    },
+    {
+      "timestamp": "2022-04-29T20:30:00",
+      "source": "wfmz.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.wfmz.com/news/ap/ap-business/live-updates-ukraine-goes-after-suspected-collaborators/article_cc312023-f6a0-563a-b5c2-7202e66f856f.html"
+    },
+    {
+      "timestamp": "2022-04-29T20:15:00",
+      "source": "tucson.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://tucson.com/business/live-updates-ukraine-goes-after-suspected-collaborators/article_4364bd3a-68d2-5577-bfb2-cbdd5736faf2.html"
+    },
+    {
+      "timestamp": "2022-04-29T20:15:00",
+      "source": "gazette.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://gazette.com/ap/politics/live-updates-ukraine-goes-after-suspected-collaborators/article_1debe26d-67b8-54d5-8267-49e3b6c9b2f3.html"
+    },
+    {
+      "timestamp": "2022-04-29T19:45:00",
+      "source": "kstp.com",
+      "headline": "Live updates | Ukraine goes after suspected collaborators",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://kstp.com/kstp-news/business-news/live-updates-ukraine-goes-after-suspected-collaborators/"
+    }
+  ]
+}

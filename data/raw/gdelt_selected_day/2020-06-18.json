@@ -1,0 +1,207 @@
+{
+  "date": "2020-06-18",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 7,
+  "theme_count_regulation": 1,
+  "theme_count_election": 2,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-18T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T18:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-18T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Coronavirus Has Revealed  Holes Within Traditional Financial System And Demand For Alternatives Is Suddenly  Surging",
+    "First Mover : As US Stocks Defy Economic Gravity , Bitcoiners Shudder at March Memory",
+    "BTC Investors Bullish Even as Bitcoin Price Is Below $10K On - Chain Data",
+    "( GBTC ) - Bolton Says Trump Wanted Mnuchin To  Go After Bitcoin  For Fraud : Report",
+    "Floodgates Open For Big Institutional Investors To Pour Into Bitcoin"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-18T01:45:00",
+      "source": "forbes.com",
+      "headline": "Coronavirus Has Revealed  Holes Within Traditional Financial System And Demand For Alternatives Is Suddenly  Surging",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/billybambrough/2020/06/17/coronavirus-has-revealed-holes-within-traditional-financial-systems-and-demand-for-alternatives-is-suddenly-surging/"
+    },
+    {
+      "timestamp": "2020-06-18T12:45:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : As US Stocks Defy Economic Gravity , Bitcoiners Shudder at March Memory",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-as-us-stocks-defy-economic-gravity-bitcoiners-shudder-at-march-memory"
+    },
+    {
+      "timestamp": "2020-06-18T02:30:00",
+      "source": "cointelegraph.com",
+      "headline": "BTC Investors Bullish Even as Bitcoin Price Is Below $10K On - Chain Data",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/btc-investors-bullish-even-as-bitcoin-price-is-below-10k-on-chain-data"
+    },
+    {
+      "timestamp": "2020-06-18T17:45:00",
+      "source": "benzinga.com",
+      "headline": "( GBTC ) - Bolton Says Trump Wanted Mnuchin To  Go After Bitcoin  For Fraud : Report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/cryptocurrency/20/06/16302244/bolton-says-trump-wanted-mnuchin-to-go-after-bitcoin-for-fraud-report"
+    },
+    {
+      "timestamp": "2020-06-18T14:30:00",
+      "source": "benzinga.com",
+      "headline": "Floodgates Open For Big Institutional Investors To Pour Into Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/20/06/16300418/floodgates-open-for-big-institutional-investors-to-pour-into-bitcoin"
+    },
+    {
+      "timestamp": "2020-06-18T15:15:00",
+      "source": "benzinga.com",
+      "headline": "Joe Brusuelas",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/topic/joe-brusuelas"
+    },
+    {
+      "timestamp": "2020-06-18T19:30:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Correlates with S & P 500 , Analyst Believes : BTC Value Is $18 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-correlates-sp-500/"
+    },
+    {
+      "timestamp": "2020-06-18T18:00:00",
+      "source": "coindesk.com",
+      "headline": "Blockchain Bites : Trump on Bitcoin , Powell on Digital Dollars and the Truth About Terrorist Financing",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/blockchain-bites-trump-on-bitcoin-powell-on-digital-dollars-and-the-truth-about-terrorist-financing"
+    },
+    {
+      "timestamp": "2020-06-18T21:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Leads Poll With Public Predicting  Best Performing Asset in 2020",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/18/bitcoin-poll-best-performing-asset-2020/"
+    },
+    {
+      "timestamp": "2020-06-18T18:00:00",
+      "source": "coindesk.com",
+      "headline": "Novogratz : Galaxy Digital Will  Suck  if Bitcoin Fails to Become an Institutional Asset",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/novogratz-bitcoin-institutional-asset-galaxy-digital"
+    },
+    {
+      "timestamp": "2020-06-18T08:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Fund Manager Files for ETF Spanning Energy , Agriculture and Bitcoin Futures",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/fund-manager-files-for-etf-spanning-energy-agriculture-and-bitcoin-futures"
+    },
+    {
+      "timestamp": "2020-06-18T20:15:00",
+      "source": "coindesk.com",
+      "headline": "Delta Exchange Launches Crypto Interest Rate Swaps",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/delta-exchange-launches-crypto-interest-rate-swaps"
+    },
+    {
+      "timestamp": "2020-06-18T03:45:00",
+      "source": "bgr.com",
+      "headline": "The Federal Reserve basically just said coronavirus has screwed the economy for years",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://bgr.com/2020/06/17/coronavirus-stimulus-plan-federal-reserve-june-meeting-interest-rates/"
+    },
+    {
+      "timestamp": "2020-06-18T19:45:00",
+      "source": "seekingalpha.com",
+      "headline": "Markets At An Inflection Point",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://seekingalpha.com/article/4354553-markets-inflection-point"
+    },
+    {
+      "timestamp": "2020-06-18T18:15:00",
+      "source": "financial-planning.com",
+      "headline": "WisdomTree files with SEC for bitcoin ETF",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.financial-planning.com/articles/wisdomtree-files-with-sec-for-bitcoin-etf"
+    }
+  ]
+}

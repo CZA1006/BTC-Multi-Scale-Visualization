@@ -1,0 +1,197 @@
+{
+  "date": "2020-03-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 2,
+  "theme_count_covid": 4,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-15T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-15T23:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-16T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto & Covid - 19 - Bulls Vs Bears",
+    "The Fed Is Close To A Liquidity Trap . What Does That Mean For Cryptocurrencies ?",
+    "백약이 무효한데 ... 연준 , 제로금리 회귀할까",
+    "Bitnuk the Swiss Crypto Platform Break Exchange Record While All Markets Sink",
+    "US - Notenbank senkt Leitzins wegen Coronavirus auf fast null Prozent"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-15T20:00:00",
+      "source": "zerohedge.com",
+      "headline": "Crypto & Covid - 19 - Bulls Vs Bears",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/crypto/crypto-covid-19-bulls-vs-bears"
+    },
+    {
+      "timestamp": "2020-03-15T17:45:00",
+      "source": "forbes.com",
+      "headline": "The Fed Is Close To A Liquidity Trap . What Does That Mean For Cryptocurrencies ?",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/rogerhuang/2020/03/15/the-fed-is-close-to-a-liquidity-trap-what-does-that-mean-for-cryptocurrencies/"
+    },
+    {
+      "timestamp": "2020-03-15T07:15:00",
+      "source": "etoday.co.kr",
+      "headline": "백약이 무효한데 ... 연준 , 제로금리 회귀할까",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.etoday.co.kr/news/view/1870072"
+    },
+    {
+      "timestamp": "2020-03-15T00:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitnuk the Swiss Crypto Platform Break Exchange Record While All Markets Sink",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bitnuk-swiss-crypto-platform-break-193000124.html"
+    },
+    {
+      "timestamp": "2020-03-15T23:00:00",
+      "source": "focus.de",
+      "headline": "US - Notenbank senkt Leitzins wegen Coronavirus auf fast null Prozent",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.focus.de/finanzen/boerse/wirtschaftsticker/us-notenbank-senkt-leitzins-wegen-coronavirus-auf-fast-null-prozent_id_11774128.html"
+    },
+    {
+      "timestamp": "2020-03-15T22:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin is  Waiting for the Stock Market to Open  as Analysts Eye Another $2 , 000+ Move",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/15/bitcoin-is-waiting-for-the-stock-market-to-open-as-analysts-eye-another-2000-move/"
+    },
+    {
+      "timestamp": "2020-03-15T23:00:00",
+      "source": "npr.org",
+      "headline": "Fed Cuts Interest Rates To Near Zero , Citing Coronavirus Economic Impact : NPR",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.npr.org/2020/03/15/816175414/fed-cuts-interest-rates-to-near-zero"
+    },
+    {
+      "timestamp": "2020-03-15T15:00:00",
+      "source": "blog.wenxuecity.com",
+      "headline": "stevenct _ 文学城博客",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://blog.wenxuecity.com/myblog/76567/202003/20134.html"
+    },
+    {
+      "timestamp": "2020-03-15T23:15:00",
+      "source": "dw.com",
+      "headline": "USA drücken Leitzins auf fast null Prozent | Wirtschaft | DW",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dw.com/de/usa-dr%C3%BCcken-leitzins-auf-fast-null-prozent/a-52788140"
+    },
+    {
+      "timestamp": "2020-03-15T23:45:00",
+      "source": "rheinpfalz.de",
+      "headline": "US - Notenbank senkt Leitzins auf fast null Prozent",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.rheinpfalz.de/wirtschaft/artikel/us-notenbank-senkt-leitzins-auf-fast-null-prozent/"
+    },
+    {
+      "timestamp": "2020-03-16T00:00:00",
+      "source": "n-tv.de",
+      "headline": "Überraschende Beruhigungspille : Fed senkt Leitzinsen auf fast null",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.n-tv.de/wirtschaft/Fed-senkt-Leitzinsen-auf-fast-null-article21643201.html"
+    },
+    {
+      "timestamp": "2020-03-15T22:00:00",
+      "source": "hankookilbo.com",
+      "headline": "[ 속보 ] 미 연준 , 제로 수준 금리에 7000억달러 규모 양적 완화 시작",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.hankookilbo.com/News/Read/202003160636367203"
+    },
+    {
+      "timestamp": "2020-03-16T00:00:00",
+      "source": "erienewsnow.com",
+      "headline": "Federal Reserve cuts rates to zero to support the economy during the coronavirus pandemic",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.erienewsnow.com/story/41897340/federal-reserve-cuts-rates-to-zero-to-support-the-economy-during-the-coronavirus-pandemic"
+    },
+    {
+      "timestamp": "2020-03-15T18:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Just Faced a Dire Rejection at a Key Technical Level ; Here What This Means",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/15/bitcoin-just-faced-a-dire-rejection-at-a-key-technical-level-heres-what-this-means/"
+    },
+    {
+      "timestamp": "2020-03-15T21:45:00",
+      "source": "fool.ca",
+      "headline": "The TSX Stock Market Is Closer to the Bottom Than You Think",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.ca/2020/03/15/the-tsx-stock-market-is-closer-to-the-bottom-than-you-think/"
+    }
+  ]
+}

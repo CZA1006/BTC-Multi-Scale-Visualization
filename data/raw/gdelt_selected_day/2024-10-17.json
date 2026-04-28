@@ -1,0 +1,207 @@
+{
+  "date": "2024-10-17",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 12,
+  "theme_count_war": 3,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-17T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-17T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bangkok Post - Bitcoin pulls ahead in markets in sign of bets on Trump victory",
+    "Global broker Octa explains the reasons for lower US dollar after the U . S . presidential debate",
+    "Bitcoin Pulls Ahead in Markets in Sign of Bets on Trump Victory",
+    "Elon Musk Donates Nearly $75 million For Donald Trump Presidential Cause",
+    "Bill Clinton coming to Arizona to campaign for Kamala Harris"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-17T08:00:00",
+      "source": "bangkokpost.com",
+      "headline": "Bangkok Post - Bitcoin pulls ahead in markets in sign of bets on Trump victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bangkokpost.com/business/investment/2885417/bitcoin-pulls-ahead-in-markets-in-sign-of-bets-on-trump-victory"
+    },
+    {
+      "timestamp": "2024-10-17T22:30:00",
+      "source": "manilatimes.net",
+      "headline": "Global broker Octa explains the reasons for lower US dollar after the U . S . presidential debate",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.manilatimes.net/2024/10/18/tmt-newswire/media-outreach-newswire/global-broker-octa-explains-the-reasons-for-lower-us-dollar-after-the-us-presidential-debate/1986955"
+    },
+    {
+      "timestamp": "2024-10-17T06:45:00",
+      "source": "bnnbloomberg.ca",
+      "headline": "Bitcoin Pulls Ahead in Markets in Sign of Bets on Trump Victory",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bnnbloomberg.ca/investing/2024/10/17/bitcoin-pulls-ahead-in-markets-in-sign-of-bets-on-trump-victory/"
+    },
+    {
+      "timestamp": "2024-10-17T07:30:00",
+      "source": "ndtv.com",
+      "headline": "Elon Musk Donates Nearly $75 million For Donald Trump Presidential Cause",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ndtv.com/world-news/us-elections-2024-elon-musk-donates-nearly-75-million-for-donald-trumps-presidential-cause-6807420"
+    },
+    {
+      "timestamp": "2024-10-17T01:15:00",
+      "source": "ktar.com",
+      "headline": "Bill Clinton coming to Arizona to campaign for Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://ktar.com/story/5615844/bill-clinton-arizona-campaign-kamala-harris/"
+    },
+    {
+      "timestamp": "2024-10-17T06:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "The Trump trade is back on as betting markets swing in favor of a win for the former president",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/trump-trade-back-betting-markets-020336708.html"
+    },
+    {
+      "timestamp": "2024-10-17T12:15:00",
+      "source": "invezz.com",
+      "headline": "Could Trump presidential win trigger a bitcoin bull run ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://invezz.com/news/2024/10/17/could-trumps-presidential-win-trigger-a-bitcoin-bull-run/"
+    },
+    {
+      "timestamp": "2024-10-17T04:00:00",
+      "source": "thesun.my",
+      "headline": "Musk donates almost $75 million to Trump presidential cause",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://thesun.my/world-news/musk-donates-almost-75-million-to-trump-s-presidential-cause-AH13147575"
+    },
+    {
+      "timestamp": "2024-10-17T03:30:00",
+      "source": "gulfnews.com",
+      "headline": "Fiery Harris vows break from Biden in testy Fox interview",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gulfnews.com/world/americas/fiery-harris-vows-break-from-biden-in-testy-fox-interview-1.1729133371567"
+    },
+    {
+      "timestamp": "2024-10-17T10:45:00",
+      "source": "huffingtonpost.co.uk",
+      "headline": "Harris Warns Of  Fascist  Threat If Trump Is Returned To The White House",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.huffingtonpost.co.uk/entry/harris-warns-of-fascist-threat-if-trump-is-returned-to-the-white-house_uk_6710ad85e4b0cbb639674fde"
+    },
+    {
+      "timestamp": "2024-10-17T05:00:00",
+      "source": "fox29.com",
+      "headline": "2024 Election : VP Harris campaigns in must - win Bucks County",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fox29.com/news/2024-election-vp-harris-campaigns-must-win-bucks-county"
+    },
+    {
+      "timestamp": "2024-10-17T02:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Kamala Harris grilled on Fox News on immigration , Joe Biden fitness for office",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/world-news/kamala-harris-grilled-on-fox-news-on-immigration-joe-bidens-fitness-for-office/articleshow/114298117.cms"
+    },
+    {
+      "timestamp": "2024-10-17T00:00:00",
+      "source": "yahoo.com",
+      "headline": "Harris Warns Of  Fascist  Threat If Trump Is Returned To The White House",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/harris-warns-fascist-threat-trump-233005522.html"
+    },
+    {
+      "timestamp": "2024-10-17T03:15:00",
+      "source": "timesleader.com",
+      "headline": "Award - winning actress Christine Baranski campaigns with Rep . Pashinski in Wilkes - Barre",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.timesleader.com/news/1670354/award-winning-actress-christine-baranski-campaigns-with-rep-pashinski-in-wilkes-barre"
+    },
+    {
+      "timestamp": "2024-10-17T00:30:00",
+      "source": "ndtv.com",
+      "headline": "Kamala Harris Says Her Presidency Would  Not Be A Continuation  Of Biden",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ndtv.com/world-news/kamala-harris-says-her-presidency-would-not-be-a-continuation-of-joe-biden-6806793"
+    }
+  ]
+}

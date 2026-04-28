@@ -1,0 +1,182 @@
+{
+  "date": "2020-03-17",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 3,
+  "theme_count_war": 0,
+  "theme_count_macro": 11,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-17T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-17T16:00:00",
+      "news_count": 7,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-17T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-17T19:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-17T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-17T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-17T22:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Experts Say the Fed QE Program Will Strengthen Bitcoin – One Way or Another",
+    "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+    "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+    "Experts Say the Fed QE Program Will Strengthen Bitcoin – One Way or Another",
+    "U . S . stock market jumps as Fed offers emergency lending program"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-17T19:00:00",
+      "source": "coindesk.com",
+      "headline": "Experts Say the Fed QE Program Will Strengthen Bitcoin – One Way or Another",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/experts-say-the-feds-qe-program-will-strengthen-bitcoin-one-way-or-another"
+    },
+    {
+      "timestamp": "2020-03-17T16:00:00",
+      "source": "wbur.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.wbur.org/npr/817073479/u-s-stock-markets-tick-up-after-steepest-drop-since-1987"
+    },
+    {
+      "timestamp": "2020-03-17T18:15:00",
+      "source": "scpr.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.scpr.org/news/2020/03/17/91191/u-s-stock-market-ticks-up-as-fed-offers-emergency/"
+    },
+    {
+      "timestamp": "2020-03-17T20:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Experts Say the Fed QE Program Will Strengthen Bitcoin – One Way or Another",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/experts-fed-qe-program-strengthen-183057825.html"
+    },
+    {
+      "timestamp": "2020-03-17T19:15:00",
+      "source": "mprnews.org",
+      "headline": "U . S . stock market jumps as Fed offers emergency lending program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.mprnews.org/story/2020/03/17/npr-u-s-stock-markets-tick-up-after-steepest-drop-since-1987"
+    },
+    {
+      "timestamp": "2020-03-17T19:30:00",
+      "source": "ccn.com",
+      "headline": "Trump Stimulus Wont Save the Dow Jones From Crashing Below 20 , 000",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ccn.com/trump-stimulus-wont-save-the-dow-jones-from-crashing-below-20000/"
+    },
+    {
+      "timestamp": "2020-03-17T21:00:00",
+      "source": "mprnews.org",
+      "headline": "U . S . stocks jump as White House plans $1 trillion stimulus",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.mprnews.org:443/story/2020/03/17/npr-u-s-stock-markets-tick-up-after-steepest-drop-since-1987"
+    },
+    {
+      "timestamp": "2020-03-17T22:00:00",
+      "source": "nhpr.org",
+      "headline": "U . S . Stocks Jump As White House Plans $1 Trillion Stimulus",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.nhpr.org/post/us-stock-market-jumps-fed-offers-emergency-lending-program"
+    },
+    {
+      "timestamp": "2020-03-17T00:45:00",
+      "source": "daily.hankooki.com",
+      "headline": "데일리한국 : 시장은 연준과 반대로  美 증시 폭락 ... 다우 , 12 . 93 % ↓",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://daily.hankooki.com/lpage/economy/202003/dh20200317072222138110.htm"
+    },
+    {
+      "timestamp": "2020-03-17T16:45:00",
+      "source": "news.wfsu.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://news.wfsu.org/post/us-stock-markets-tick-after-steepest-drop-1987"
+    },
+    {
+      "timestamp": "2020-03-17T16:30:00",
+      "source": "peoriapublicradio.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.peoriapublicradio.org/post/us-stock-market-ticks-after-steepest-drop-1987"
+    },
+    {
+      "timestamp": "2020-03-17T16:30:00",
+      "source": "wxxinews.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.wxxinews.org/post/us-stock-markets-tick-after-steepest-drop-1987"
+    },
+    {
+      "timestamp": "2020-03-17T16:30:00",
+      "source": "redriverradio.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.redriverradio.org/post/us-stock-markets-tick-after-steepest-drop-1987"
+    },
+    {
+      "timestamp": "2020-03-17T16:00:00",
+      "source": "iowapublicradio.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.iowapublicradio.org/post/us-stock-markets-tick-after-steepest-drop-1987"
+    },
+    {
+      "timestamp": "2020-03-17T16:15:00",
+      "source": "weaa.org",
+      "headline": "U . S . Stock Market Ticks Up As Fed Offers Emergency Lending Program",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.weaa.org/post/us-stock-market-ticks-after-steepest-drop-1987"
+    }
+  ]
+}

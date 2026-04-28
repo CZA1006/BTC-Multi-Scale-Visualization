@@ -1,0 +1,187 @@
+{
+  "date": "2020-06-15",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 3,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 9,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-15T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-15T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-15T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-15T19:00:00",
+      "news_count": 4,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-15T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-15T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-15T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-15T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "What Driving The Demand Behind Stablecoin $10B Crypto Market Cap Milestone ?",
+    "뉴스핌 - 뉴욕 증시 상승 반전에 美 국채 수익률 상승",
+    "Gold treads water as second wave fears cut risk appetite",
+    "Cryptocurrency Market Update : Bitcoin plunges in tandem with S & P 500 futures",
+    "US STOCKS - Wall Street closes higher as Fed soothes recovery worries"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-15T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "What Driving The Demand Behind Stablecoin $10B Crypto Market Cap Milestone ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/15/stablecoins-10b-crypto-market-cap/"
+    },
+    {
+      "timestamp": "2020-06-15T22:45:00",
+      "source": "newspim.com",
+      "headline": "뉴스핌 - 뉴욕 증시 상승 반전에 美 국채 수익률 상승",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://newspim.com/news/view/20200616000027"
+    },
+    {
+      "timestamp": "2020-06-15T07:00:00",
+      "source": "dispatchlive.co.za",
+      "headline": "Gold treads water as second wave fears cut risk appetite",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.dispatchlive.co.za/news/business/2020-06-15-gold-treads-water-as-second-wave-fears-cut-risk-appetite/"
+    },
+    {
+      "timestamp": "2020-06-15T11:00:00",
+      "source": "fxstreet.com",
+      "headline": "Cryptocurrency Market Update : Bitcoin plunges in tandem with S & P 500 futures",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/cryptocurrency-market-update-bitcoin-plunges-in-tandem-with-sp-500-futures-202006150942"
+    },
+    {
+      "timestamp": "2020-06-15T23:30:00",
+      "source": "uk.reuters.com",
+      "headline": "US STOCKS - Wall Street closes higher as Fed soothes recovery worries",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/article/usa-stocks/us-stocks-wall-street-closes-higher-as-fed-soothes-recovery-worries-idUKL1N2DS1P3?rpc=401"
+    },
+    {
+      "timestamp": "2020-06-15T10:15:00",
+      "source": "forexcrunch.com",
+      "headline": "Cryptocurrency Market Update : Bitcoin plunges in tandem with S & P 500 futures",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/cryptocurrency-market-update-bitcoin-plunges-in-tandem-with-sp-500-futures/"
+    },
+    {
+      "timestamp": "2020-06-15T19:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "US STOCKS - Wall Street jumps on Fed corporate bond purchase announcement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/us-stocks-wall-street-jumps-183602468.html"
+    },
+    {
+      "timestamp": "2020-06-15T21:45:00",
+      "source": "reuters.com",
+      "headline": "US STOCKS - Wall Street jumps on Fed corporate bond purchase announcement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/usa-stocks-idUSL1N2DS1I4"
+    },
+    {
+      "timestamp": "2020-06-15T19:45:00",
+      "source": "benzinga.com",
+      "headline": "SPDR S & P 500 ETF ( ETF : SPY ), ( DJIA ) - Market Jumps After Federal Reserve Begins Buying Corporate Bonds For The First Time",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/news/20/06/16256549/market-jumps-after-federal-reserve-begins-buying-corporate-bonds-for-the-first-time"
+    },
+    {
+      "timestamp": "2020-06-15T20:30:00",
+      "source": "reuters.com",
+      "headline": "Wall Street closes higher as Fed soothes recovery worries",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-usa-stocks/wall-street-closes-higher-as-fed-soothes-recovery-worries-idUSKBN23M1A8"
+    },
+    {
+      "timestamp": "2020-06-15T21:30:00",
+      "source": "biz.heraldcorp.com",
+      "headline": "美증시 , 연준 경기부양 지속에 반등 … 다우 , 0 . 62 % ↑ - 헤럴드경제",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://biz.heraldcorp.com/view.php?ud=20200616000004"
+    },
+    {
+      "timestamp": "2020-06-15T19:00:00",
+      "source": "reuters.com",
+      "headline": "Wall Street jumps on Fed corporate bond purchase announcement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.reuters.com/article/us-usa-stocks/wall-street-jumps-on-feds-corporate-bond-purchase-announcement-idUSKBN23M1A8"
+    },
+    {
+      "timestamp": "2020-06-15T19:15:00",
+      "source": "uk.reuters.com",
+      "headline": "Wall Street jumps on Fed corporate bond purchase announcement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://uk.reuters.com/article/us-usa-stocks/wall-street-jumps-on-feds-corporate-bond-purchase-announcement-idUKKBN23M1A8"
+    },
+    {
+      "timestamp": "2020-06-15T20:00:00",
+      "source": "in.reuters.com",
+      "headline": "Wall Street jumps on Fed corporate bond purchase announcement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://in.reuters.com/article/us-usa-stocks/wall-street-jumps-on-feds-corporate-bond-purchase-announcement-idINKBN23M1A8"
+    },
+    {
+      "timestamp": "2020-06-15T21:00:00",
+      "source": "kitco.com",
+      "headline": "Wall Street jumps on Fed corporate bond purchase announcement",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.kitco.com/news/2020-06-15/Wall-Street-jumps-on-Fed-s-corporate-bond-purchase-announcement.html"
+    }
+  ]
+}

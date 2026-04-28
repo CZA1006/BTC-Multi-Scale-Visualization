@@ -1,0 +1,192 @@
+{
+  "date": "2020-06-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 8,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 1,
+  "theme_count_covid": 5,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-12T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T18:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T19:00:00",
+      "news_count": 6,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-12T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "3 Reasons Why Bitcoin Price Could Crash If US Stock Market Collapses",
+    "70 % Chance Bitcoin Reclaims $11 . 8K by July 2020 ; Here Why",
+    "Crypto Exchange Owner Admits Laundering $1 . 8M in Online Auctions Fraud",
+    "First Mover : Bitcoin Recouples With Wall Street as Stocks Tumble , Fear Trade Returns",
+    "Bruno Michieli Explores the Impact and Implications of Global Pandemic for Cryptocurrency Market"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-12T19:00:00",
+      "source": "cointelegraph.com",
+      "headline": "3 Reasons Why Bitcoin Price Could Crash If US Stock Market Collapses",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/3-reasons-why-bitcoin-price-could-crash-if-us-stock-market-collapses"
+    },
+    {
+      "timestamp": "2020-06-12T12:30:00",
+      "source": "newsbtc.com",
+      "headline": "70 % Chance Bitcoin Reclaims $11 . 8K by July 2020 ; Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/12/70-chance-bitcoin-reclaims-11k-by-july-2020-heres-why/"
+    },
+    {
+      "timestamp": "2020-06-12T13:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Crypto Exchange Owner Admits Laundering $1 . 8M in Online Auctions Fraud",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/crypto-exchange-owner-admits-laundering-125329251.html"
+    },
+    {
+      "timestamp": "2020-06-12T14:30:00",
+      "source": "coindesk.com",
+      "headline": "First Mover : Bitcoin Recouples With Wall Street as Stocks Tumble , Fear Trade Returns",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/first-mover-bitcoin-recouples-with-wall-street-as-stocks-tumble-fear-trade-returns"
+    },
+    {
+      "timestamp": "2020-06-12T18:15:00",
+      "source": "finanznachrichten.de",
+      "headline": "Bruno Michieli Explores the Impact and Implications of Global Pandemic for Cryptocurrency Market",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2020-06/49911003-bruno-michieli-explores-the-impact-and-implications-of-global-pandemic-for-cryptocurrency-market-200.htm"
+    },
+    {
+      "timestamp": "2020-06-12T06:30:00",
+      "source": "ibtimes.com",
+      "headline": "Bitcoin Price Plunges 11 % To $9 , 000 In One Day : Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/bitcoin-price-plunges-11-9000-one-day-heres-why-2992488"
+    },
+    {
+      "timestamp": "2020-06-12T19:00:00",
+      "source": "coindesk.com",
+      "headline": "The Fed , Hertz , a Bonkers Stock Market , and why ICOs Still Matter",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/money-reimagined-fed-hertz-bonkers-stock-market-icos-still-matter"
+    },
+    {
+      "timestamp": "2020-06-12T18:30:00",
+      "source": "coindesk.com",
+      "headline": "Blockchain Bites : Designing Digital Dollars and Following the Quadriga Trail",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/blockchain-bites-designing-digital-dollars-and-following-the-quadriga-trail"
+    },
+    {
+      "timestamp": "2020-06-12T10:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Bitcoin Price Crashed Below $9100 Yesterday Along with Dow Jones Fall",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/bitcoin-price-crashed-dow/"
+    },
+    {
+      "timestamp": "2020-06-12T17:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Resets $10K Price Target as U . S . Bonds Lose Spotlight",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/12/bitcoin-resets-10k-price-target-as-u-s-bonds-lose-spotlight/"
+    },
+    {
+      "timestamp": "2020-06-12T21:30:00",
+      "source": "softwaredev.itbusinessnet.com",
+      "headline": "Bruno Michieli Explores the Impact and Implications of Global Pandemic for Cryptocurrency Market |",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://softwaredev.itbusinessnet.com/2020/06/bruno-michieli-explores-the-impact-and-implications-of-global-pandemic-for-cryptocurrency-market/"
+    },
+    {
+      "timestamp": "2020-06-12T19:15:00",
+      "source": "stlouisstar.com",
+      "headline": "Bruno Michieli Explores the Impact and Implications of Global Pandemic for Cryptocurrency Market",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.stlouisstar.com/news/265430819/bruno-michieli-explores-the-impact-and-implications-of-global-pandemic-for-cryptocurrency-market"
+    },
+    {
+      "timestamp": "2020-06-12T19:30:00",
+      "source": "clevelandstar.com",
+      "headline": "Bruno Michieli Explores the Impact and Implications of Global Pandemic for Cryptocurrency Market",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.clevelandstar.com/news/265430819/bruno-michieli-explores-the-impact-and-implications-of-global-pandemic-for-cryptocurrency-market"
+    },
+    {
+      "timestamp": "2020-06-12T19:30:00",
+      "source": "hawaiitelegraph.com",
+      "headline": "Bruno Michieli Explores the Impact and Implications of Global Pandemic for Cryptocurrency Market",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.hawaiitelegraph.com/news/265430819/bruno-michieli-explores-the-impact-and-implications-of-global-pandemic-for-cryptocurrency-market"
+    },
+    {
+      "timestamp": "2020-06-12T19:30:00",
+      "source": "memphissun.com",
+      "headline": "Bruno Michieli Explores the Impact and Implications of Global Pandemic for Cryptocurrency Market",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.memphissun.com/news/265430819/bruno-michieli-explores-the-impact-and-implications-of-global-pandemic-for-cryptocurrency-market"
+    }
+  ]
+}

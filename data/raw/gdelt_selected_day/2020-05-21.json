@@ -1,0 +1,197 @@
+{
+  "date": "2020-05-21",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 9,
+  "theme_count_regulation": 0,
+  "theme_count_election": 1,
+  "theme_count_war": 1,
+  "theme_count_macro": 2,
+  "theme_count_covid": 2,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-05-21T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-05-21T22:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Dismal U . S . Stocks Warning Puts Bitcoin Hedge Funds in Spotlight",
+    "Bitcoin Price Briefly Dips Below $9 , 000 As Crypto Market Risks Test of Lows",
+    "Did the coronavirus keep the stock market from taking an even bigger hit ?",
+    "3 Key Reasons Why Bitcoin Has Further to Fall After Plunging Under $9 , 000",
+    "Controversial Bitcoin Contract Leads To Heated Debate : Could It Kill The Cryptocurrency ?"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-05-21T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "Dismal U . S . Stocks Warning Puts Bitcoin Hedge Funds in Spotlight",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/21/dismal-stocks-bitcoin-hedge-funds/"
+    },
+    {
+      "timestamp": "2020-05-21T17:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price Briefly Dips Below $9 , 000 As Crypto Market Risks Test of Lows",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/21/bitcoin-price-falls-below-9000/"
+    },
+    {
+      "timestamp": "2020-05-21T20:45:00",
+      "source": "marketwatch.com",
+      "headline": "Did the coronavirus keep the stock market from taking an even bigger hit ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/did-the-coronavirus-keep-the-stock-market-from-taking-an-even-bigger-hit-2020-05-21"
+    },
+    {
+      "timestamp": "2020-05-21T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "3 Key Reasons Why Bitcoin Has Further to Fall After Plunging Under $9 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/21/3-reasons-bitcoin-further-fall-plunging-9000/"
+    },
+    {
+      "timestamp": "2020-05-21T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "Controversial Bitcoin Contract Leads To Heated Debate : Could It Kill The Cryptocurrency ?",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/21/bitcoin-contract-kill-cryptocurrency/"
+    },
+    {
+      "timestamp": "2020-05-21T07:45:00",
+      "source": "webrazzi.com",
+      "headline": "Bitcoin Alım Satımında Devrim ; Icrypex !",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://webrazzi.com/2020/05/21/bitcoin-alim-satiminda-devrim-icrypex/"
+    },
+    {
+      "timestamp": "2020-05-21T22:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Rally Driven By Eager Chinese Buyers , Key Data Shows",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/21/chinese-buyers-driving-bitcoin-rally/"
+    },
+    {
+      "timestamp": "2020-05-21T18:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Blockchain . com Set to Roll Out Interest - bearing Accounts",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/blockchain-interest-bearing-accounts/"
+    },
+    {
+      "timestamp": "2020-05-21T01:45:00",
+      "source": "winnipegfreepress.com",
+      "headline": "Fed officials worried in April about toll of deep recession",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.winnipegfreepress.com/business/fed-officials-worried-in-april-about-toll-of-deep-recession-570640582.html"
+    },
+    {
+      "timestamp": "2020-05-21T10:15:00",
+      "source": "forexcrunch.com",
+      "headline": "Cryptocurrency Market Update : Massive Bitcoin boost if gold ownership is illegalized",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forexcrunch.com/cryptocurrency-market-update-massive-bitcoin-boost-if-gold-ownership-is-illegalized/"
+    },
+    {
+      "timestamp": "2020-05-21T19:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Cryptocurrency and COVID - 19 : Bitcoin Path to a Safe Haven",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/cryptocurrency-and-covid-19-bitcoins-path-to-a-safe-haven"
+    },
+    {
+      "timestamp": "2020-05-21T00:30:00",
+      "source": "infotel.ca",
+      "headline": "Fed officials worried in April about toll of deep recession",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://infotel.ca/newsitem/us-federal-reserve-minutes/cp462196478"
+    },
+    {
+      "timestamp": "2020-05-21T17:00:00",
+      "source": "newsbtc.com",
+      "headline": "Doji Forming On Ethereum Monthly Hints At Investor Indecision",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/21/doji-forming-on-ethereum-monthly-hints-at-investor-indecision/"
+    },
+    {
+      "timestamp": "2020-05-21T12:15:00",
+      "source": "newsbtc.com",
+      "headline": "These 3 Trends Show There Downside Ahead for Bitcoin , Even After 5 % Drop",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/05/21/these-3-market-trends-show-theres-more-downside-ahead-for-bitcoin/"
+    },
+    {
+      "timestamp": "2020-05-21T01:45:00",
+      "source": "news.joins.com",
+      "headline": "[ 시황 ] 초창기 지갑서 50BTC 이동 ... 10 % 급락 후 회복",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://news.joins.com/article/23782112"
+    }
+  ]
+}

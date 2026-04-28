@@ -1,0 +1,192 @@
+{
+  "date": "2024-12-29",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 9,
+  "theme_count_war": 1,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-29T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-29T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Wait , Joe Biden Thought He Couldve Beaten Trump",
+    "2024 Winners and Losers : Year in Review",
+    "Biden still regrets dropping out of 2024 race and believes he could have beaten Trump",
+    "Biden still regrets dropping out of 2024 race and believes he could have beaten Trump",
+    "Crypto markets gear up for another breakout year in 2025"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-29T12:00:00",
+      "source": "townhall.com",
+      "headline": "Wait , Joe Biden Thought He Couldve Beaten Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://townhall.com/tipsheet/mattvespa/2024/12/29/wait-thats-what-joe-biden-regrets-about-the-2024-election-n2649711"
+    },
+    {
+      "timestamp": "2024-12-29T09:15:00",
+      "source": "dailysignal.com",
+      "headline": "2024 Winners and Losers : Year in Review",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.dailysignal.com/2024/12/29/winners-and-losers-2024/"
+    },
+    {
+      "timestamp": "2024-12-29T14:30:00",
+      "source": "independent.co.uk",
+      "headline": "Biden still regrets dropping out of 2024 race and believes he could have beaten Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/biden-trump-us-elections-2024-merrick-garland-b2671126.html"
+    },
+    {
+      "timestamp": "2024-12-29T06:30:00",
+      "source": "independent.co.uk",
+      "headline": "Biden still regrets dropping out of 2024 race and believes he could have beaten Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.independent.co.uk/news/world/americas/us-politics/biden-regrets-dropping-out-2024-b2671055.html"
+    },
+    {
+      "timestamp": "2024-12-29T22:00:00",
+      "source": "financialexpress.com",
+      "headline": "Crypto markets gear up for another breakout year in 2025",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.financialexpress.com/business/digital-transformation-crypto-markets-gear-up-for-another-breakout-year-in-2025-3702861/"
+    },
+    {
+      "timestamp": "2024-12-29T04:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin may reach $150K or $400K in 2025 , based on SBR and Fed rates Blockware",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/bitcoin-price-targets-donald-trump-btc-reserve-fed-rates-blockware"
+    },
+    {
+      "timestamp": "2024-12-29T03:45:00",
+      "source": "firstpost.com",
+      "headline": "Joe Biden regrets stepping out of the 2024 presidential race , thinks hed have beat Trump : Report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.firstpost.com/world/united-states/joe-biden-regrets-stepping-out-of-the-2024-presidential-race-thinks-hed-have-beat-trump-report-13848289.html"
+    },
+    {
+      "timestamp": "2024-12-29T13:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "How Much Bitcoin Should You Have in Your Portfolio in 2025 ? According to BlackRock , It Still Just 2 %.",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/much-bitcoin-portfolio-2025-according-113900651.html"
+    },
+    {
+      "timestamp": "2024-12-29T22:45:00",
+      "source": "yourdemocracy.net",
+      "headline": "je regrette everything including being deluded , old and senile .....",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://yourdemocracy.net/drupal/node/53701"
+    },
+    {
+      "timestamp": "2024-12-29T13:15:00",
+      "source": "nwitimes.com",
+      "headline": "BRIAN HOWEY : The sensational political year of 2024",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.nwitimes.com/news/brian-howey/article_3ee47622-c48e-11ef-aebf-4f680adbe406.html"
+    },
+    {
+      "timestamp": "2024-12-29T17:15:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Eleven times Democrats bucked their party on Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/news/campaigns/3267364/11-times-democrats-bucked-party-on-trump-2024/"
+    },
+    {
+      "timestamp": "2024-12-29T12:00:00",
+      "source": "chicagotribune.com",
+      "headline": "2024 in review : A look back at the election via Tribune op - eds",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.chicagotribune.com/2024/12/29/opinion-2024-election-review-donald-trump-kamala-harris/"
+    },
+    {
+      "timestamp": "2024-12-29T04:00:00",
+      "source": "article.wn.com",
+      "headline": "Biden regrets leaving presidential race , thinks he couldve beaten Trump : report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://article.wn.com/view/2024/12/29/biden_regrets_leaving_presidential_race_thinks_he_could_8217/"
+    },
+    {
+      "timestamp": "2024-12-29T03:45:00",
+      "source": "wfin.com",
+      "headline": "Biden still regrets dropping out of 2024 presidential race , believes he could have beaten Trump : report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://wfin.com/fox-political-news/biden-still-regrets-dropping-out-of-2024-presidential-race-believes-he-could-have-beaten-trump-report/"
+    },
+    {
+      "timestamp": "2024-12-29T14:30:00",
+      "source": "gazette.com",
+      "headline": "Eleven times Democrats bucked their party on Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://gazette.com/news/wex/eleven-times-democrats-bucked-their-party-on-trump/article_4f9967da-fd23-520a-b854-82c3e732ad56.html"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "date": "2022-05-31",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-31T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-31T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "European leaders agree to partial embargo on Russian oil imports in latest round of sanctions",
+    "Ukraine court sentences Russian soldiers to 11 . 5 year jail in second war crimes verdict",
+    "EU agrees to ban imports of Russian oil coming by sea , but exempts pipeline crude",
+    "EU agrees to ban most Russian oil as battle rages for Ukrainian region of Donbas",
+    "European leaders agree to partial embargo on Russian oil imports in latest round of sanctions"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-31T01:30:00",
+      "source": "msn.com",
+      "headline": "European leaders agree to partial embargo on Russian oil imports in latest round of sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/european-leaders-agree-to-partial-embargo-on-russian-oil-imports-in-latest-round-of-sanctions/ar-AAXTJVA"
+    },
+    {
+      "timestamp": "2022-05-31T15:45:00",
+      "source": "sbs.com.au",
+      "headline": "Ukraine court sentences Russian soldiers to 11 . 5 year jail in second war crimes verdict",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sbs.com.au/news/article/ukraine-court-sentences-russian-soldiers-to-11-5-years-jail-in-second-war-crimes-verdict/tnywh6f28"
+    },
+    {
+      "timestamp": "2022-05-31T05:00:00",
+      "source": "calgaryherald.com",
+      "headline": "EU agrees to ban imports of Russian oil coming by sea , but exempts pipeline crude",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://calgaryherald.com:443/news/world/eu-agrees-to-ban-imports-of-russian-oil-by-sea-but-exempts-pipeline-crude/wcm/a9558e08-c572-4b7e-92c9-584b7a7aedf0"
+    },
+    {
+      "timestamp": "2022-05-31T01:15:00",
+      "source": "sbs.com.au",
+      "headline": "EU agrees to ban most Russian oil as battle rages for Ukrainian region of Donbas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sbs.com.au/news/article/eu-agrees-to-ban-most-russian-oil-as-battle-rages-for-ukrainian-region-of-donbas/tnywh6f28"
+    },
+    {
+      "timestamp": "2022-05-31T00:45:00",
+      "source": "foxnews.com",
+      "headline": "European leaders agree to partial embargo on Russian oil imports in latest round of sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.foxnews.com/world/european-leaders-agree-partial-embargo-russian-oil-imports"
+    },
+    {
+      "timestamp": "2022-05-31T03:45:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine War : EU Bans Most Russian Oil , Moscow Ups Attack on Donbas ; US Wont Sell Rockets To Ukraine That Can Reach Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/world/russia-ukraine-war-eu-bans-most-russian-oil-moscow-ups-attack-on-donbas-us-won-t-sell-rockets-to-ukraine-that-can-reach-russia-top-points/ar-AAXTWfY"
+    },
+    {
+      "timestamp": "2022-05-31T03:30:00",
+      "source": "msn.com",
+      "headline": "Russia - Ukraine War : EU Bans Most Russian Oil , Moscow Ups Attack on Donbas ; US Wont Sell Rockets To Ukraine That Can Reach Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/world/russia-ukraine-war-eu-bans-most-russian-oil-moscow-ups-attack-on-donbas-us-wont-sell-rockets-to-ukraine-that-can-reach-russia-top-points/ar-AAXTWfY"
+    },
+    {
+      "timestamp": "2022-05-31T19:30:00",
+      "source": "indystar.com",
+      "headline": "Ukraine updates : Officials warn of offensive , Biden to meet G7",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.indystar.com/story/news/politics/2022/05/06/ukraine-russia-invasion-live-updates/9666514002/"
+    },
+    {
+      "timestamp": "2022-05-31T10:30:00",
+      "source": "english.ahram.org.eg",
+      "headline": "War in Ukraine : Latest developments - Military - War in Ukraine",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.ahram.org.eg/News/467075.aspx"
+    },
+    {
+      "timestamp": "2022-05-31T20:30:00",
+      "source": "markets.businessinsider.com",
+      "headline": "Russia May Be Open to Using Crypto for International Payments",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://markets.businessinsider.com/news/currencies/russia-cryptocurrency-international-payments-western-sanctions-war-ukraine-ban-markets-2022-5"
+    },
+    {
+      "timestamp": "2022-05-31T15:30:00",
+      "source": "inforum.com",
+      "headline": "Ukraine troops hold out as Russia assaults Sievierodonetsk wasteland",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/ukraine-troops-hold-out-as-russia-assaults-sievierodonetsk-wasteland"
+    },
+    {
+      "timestamp": "2022-05-31T14:30:00",
+      "source": "grandforksherald.com",
+      "headline": "Ukraine troops hold out as Russia assaults Sievierodonetsk wasteland",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/ukraine-troops-hold-out-as-russia-assaults-sievierodonetsk-wasteland"
+    },
+    {
+      "timestamp": "2022-05-31T13:45:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Ukraine troops hold out as Russia assaults Sievierodonetsk wasteland",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/ukraine-troops-hold-out-as-russia-assaults-sievierodonetsk-wasteland"
+    },
+    {
+      "timestamp": "2022-05-31T09:15:00",
+      "source": "econotimes.com",
+      "headline": "Russia - Ukraine conflict : EU agrees to ban most Russian oil imports by the end of 2022",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.econotimes.com/Russia-Ukraine-conflict-EU-agrees-to-ban-most-Russian-oil-imports-by-the-end-of-2022-1634545"
+    },
+    {
+      "timestamp": "2022-05-31T12:15:00",
+      "source": "econotimes.com",
+      "headline": "Russia - Ukraine conflict : EU agrees to ban most Russian oil imports by the end of 2022",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.econotimes.com/Russia-Ukraine-conflict-EU-agrees-to-ban-most-Russian-oil-imports-by-the-end-of-2022-1634545"
+    }
+  ]
+}

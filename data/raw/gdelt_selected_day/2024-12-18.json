@@ -1,0 +1,202 @@
+{
+  "date": "2024-12-18",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 8,
+  "theme_count_war": 0,
+  "theme_count_macro": 4,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-12-18T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T06:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T09:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-18T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-12-19T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump , Capitol allies likely looking at quick cryptocurrency legislation",
+    "Democrats dont blame Harris . In fact , many want her back in 2028 .",
+    "Powell says Fed cannot hold bitcoin , not seeking to change that",
+    "Trump , Liz Cheney rischia un sacco di guai",
+    "The Fed  Biggest Nightmare  Is Suddenly Coming True As Bitcoin Price Surges"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-12-18T14:45:00",
+      "source": "insurancenewsnet.com",
+      "headline": "Trump , Capitol allies likely looking at quick cryptocurrency legislation",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://insurancenewsnet.com/innarticle/trump-capitol-allies-likely-looking-at-quick-cryptocurrency-legislation"
+    },
+    {
+      "timestamp": "2024-12-18T18:15:00",
+      "source": "yahoo.com",
+      "headline": "Democrats dont blame Harris . In fact , many want her back in 2028 .",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/democrats-dont-blame-harris-fact-172358930.html"
+    },
+    {
+      "timestamp": "2024-12-19T00:00:00",
+      "source": "unionleader.com",
+      "headline": "Powell says Fed cannot hold bitcoin , not seeking to change that",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.unionleader.com/news/business/powell-says-fed-cannot-hold-bitcoin-not-seeking-to-change-that/article_e6680545-df2a-5bf6-91df-9b626d06d449.html"
+    },
+    {
+      "timestamp": "2024-12-18T15:45:00",
+      "source": "giornaledibrescia.it",
+      "headline": "Trump , Liz Cheney rischia un sacco di guai",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.giornaledibrescia.it/italia-e-estero/trump-liz-cheney-rischia-un-sacco-di-guai-djrgh2s4"
+    },
+    {
+      "timestamp": "2024-12-18T14:45:00",
+      "source": "forbes.com",
+      "headline": "The Fed  Biggest Nightmare  Is Suddenly Coming True As Bitcoin Price Surges",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2024/12/18/the-feds-biggest-nightmare-is-suddenly-coming-true-as-bitcoin-price-surges/"
+    },
+    {
+      "timestamp": "2024-12-18T08:00:00",
+      "source": "huffingtonpost.co.uk",
+      "headline": "Trump Sues Iowa Newspaper , Veteran Pollster Over  Deceptive  Poll",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.huffingtonpost.co.uk/entry/trump-sues-iowa-newspaper-veteran-pollster-over-deceptive-poll_uk_676277cae4b06e6642d7b366"
+    },
+    {
+      "timestamp": "2024-12-18T15:15:00",
+      "source": "finanznachrichten.de",
+      "headline": "Cryptos Decline Ahead Of Fed But After Bitcoin Breaches $108k",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2024-12/64116445-cryptos-decline-ahead-of-fed-but-after-bitcoin-breaches-dollar-108k-020.htm"
+    },
+    {
+      "timestamp": "2024-12-18T19:45:00",
+      "source": "redstate.com",
+      "headline": "What DNC Officials Are Saying About Kamala Harris and 2028 Is Absolutely Mind - Blowing",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://redstate.com/bonchie/2024/12/18/dnc-officials-want-to-run-it-back-with-kamala-harris-in-2028-n2183372"
+    },
+    {
+      "timestamp": "2024-12-18T06:30:00",
+      "source": "fxstreet.com",
+      "headline": "Alleged anti - crypto Caroline Crenshaw denied renomination vote to serve as SEC Commissioner",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/alleged-anti-crypto-caroline-crenshaw-denied-renomination-vote-to-serve-as-sec-commissioner-202412180300"
+    },
+    {
+      "timestamp": "2024-12-18T11:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin pulls back after hitting record $108 , 000 ahead of Fed meeting",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/bitcoin-pulls-back-after-hitting-record-108000-ahead-of-fed-meeting/articleshow/116435797.cms"
+    },
+    {
+      "timestamp": "2024-12-18T09:00:00",
+      "source": "edaily.co.kr",
+      "headline": "美선거인단 투표 ,  트럼프 승리  확정 … 이탈표 나올수 있나",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.edaily.co.kr/News/Read?newsId=03978646639119832&mediaCodeNo=257"
+    },
+    {
+      "timestamp": "2024-12-18T04:15:00",
+      "source": "dnaindia.com",
+      "headline": "Bitcoin hits all - time high of USD 107000 amid Trump pro - crypto stance , know what experts say about the surge",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.dnaindia.com/business/report-bitcoin-hits-all-time-high-of-usd-107000-amid-us-president-elect-trump-s-pro-crypto-stance-know-what-experts-say-about-the-surge-3122960"
+    },
+    {
+      "timestamp": "2024-12-18T21:45:00",
+      "source": "naturalnews.com",
+      "headline": "Stan Johnson on the Health Ranger Report : Henry Gruver 2016 vision of second Trump term becomes reality in 2024 – NaturalNews . com",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.naturalnews.com/2024-12-18-stan-johnson-gruver-vision-trump-2024-realiy.html"
+    },
+    {
+      "timestamp": "2024-12-18T06:30:00",
+      "source": "rg.ru",
+      "headline": "Коллегия выборщиков утвердила победу Трампа на президентских выборах в США",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://rg.ru/2024/12/18/kollegiia-vyborshchikov-utverdila-pobedu-trampu-na-prezidentskih-vyborah-v-ssha.html"
+    },
+    {
+      "timestamp": "2024-12-18T19:00:00",
+      "source": "ng.ru",
+      "headline": "Харрис пообещала бороться с Трампом / В мире / Независимая газета",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.ng.ru/world/2024-12-18/6_9159_president.html"
+    }
+  ]
+}

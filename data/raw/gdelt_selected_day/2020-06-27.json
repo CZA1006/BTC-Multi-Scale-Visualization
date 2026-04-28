@@ -1,0 +1,182 @@
+{
+  "date": "2020-06-27",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 6,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-06-27T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-27T01:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-27T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-27T10:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-27T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-27T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-06-27T19:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin is At Mercy of S & P 500 , as  Fragile  Stock Market is at Risk",
+    "Ben Levisohn | Barron",
+    "Investors Fear Ethereum Price Sell - Off After PlusToken Transfers 789K ETH",
+    "Crypto Tidbits : Bitcoin At $9k , Grayscale Ethereum Trust , Cryptocurrency & PayPal",
+    "Crypto Tidbits : Bitcoin At $9k , Grayscale Ethereum Trust , Cryptocurrency & PayPal"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-06-27T10:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin is At Mercy of S & P 500 , as  Fragile  Stock Market is at Risk",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/27/bitcoin-is-at-mercy-of-sp-500/"
+    },
+    {
+      "timestamp": "2020-06-27T00:15:00",
+      "source": "barrons.com",
+      "headline": "Ben Levisohn | Barron",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.barrons.com/authors/8022"
+    },
+    {
+      "timestamp": "2020-06-27T00:00:00",
+      "source": "cointelegraph.com",
+      "headline": "Investors Fear Ethereum Price Sell - Off After PlusToken Transfers 789K ETH",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/investors-fear-ethereum-price-sell-off-after-plustoken-transfers-789k-eth"
+    },
+    {
+      "timestamp": "2020-06-27T05:15:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Bitcoin At $9k , Grayscale Ethereum Trust , Cryptocurrency & PayPal",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/27/crypto-tidbits/"
+    },
+    {
+      "timestamp": "2020-06-27T10:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Bitcoin At $9k , Grayscale Ethereum Trust , Cryptocurrency & PayPal",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/27/crypto-tidbits-bitcoin-9k-grayscale-ethereum-paypal/"
+    },
+    {
+      "timestamp": "2020-06-27T05:45:00",
+      "source": "journalnow.com",
+      "headline": "Tightened stress test results could lead to dividend cut for Wells Fargo",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.journalnow.com/business/tightened-stress-test-results-could-lead-to-dividend-cut-for-wells-fargo/article_0c413695-c4b9-53a0-8cb7-2baecdafe928.html"
+    },
+    {
+      "timestamp": "2020-06-27T13:45:00",
+      "source": "fool.co.uk",
+      "headline": "Forget Bitcoin and the Cash ISA ! Id buy cheap FTSE 100 shares now to get rich and retire early",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.fool.co.uk/investing/2020/06/27/forget-bitcoin-and-the-cash-isa-id-buy-cheap-ftse-100-shares-now-to-get-rich-and-retire-early/"
+    },
+    {
+      "timestamp": "2020-06-27T01:30:00",
+      "source": "erienewsnow.com",
+      "headline": "Dow slides more than 700 points as the economic outlook gets drearier",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.erienewsnow.com/story/42296209/dow-slides-more-than-700-points-as-the-economic-outlook-gets-drearier"
+    },
+    {
+      "timestamp": "2020-06-27T10:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Last Flashed This Signal After the Crash to $3 , 700 . It Almost Back",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/06/27/bitcoin-last-flashed-signal-3700/"
+    },
+    {
+      "timestamp": "2020-06-27T01:00:00",
+      "source": "crowdfundinsider.com",
+      "headline": "BlockFi Launches Mobile App , Currently Users May Earn 8 . 6 % Interest APY via the App",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.crowdfundinsider.com/2020/06/163226-blockfi-launches-mobile-app-allowing-consumers-to-earn-8-6-interest-apy/"
+    },
+    {
+      "timestamp": "2020-06-27T19:00:00",
+      "source": "ca.finance.yahoo.com",
+      "headline": "Here When the Stock Market Crash Will Happen",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://ca.finance.yahoo.com/news/stock-market-crash-happen-183320061.html"
+    },
+    {
+      "timestamp": "2020-06-27T01:00:00",
+      "source": "barrons.com",
+      "headline": "As Covid - 19 Surges , Economic and Political Uncertainties Return",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.barrons.com/articles/as-covid-19-surges-economic-and-political-uncertainties-return-51593218309"
+    },
+    {
+      "timestamp": "2020-06-27T19:45:00",
+      "source": "fool.ca",
+      "headline": "Here When the Stock Market Crash Will Happen - The Motley Fool Canada",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fool.ca/2020/06/27/heres-when-the-stock-market-crash-will-happen/"
+    },
+    {
+      "timestamp": "2020-06-27T14:45:00",
+      "source": "forbes.com",
+      "headline": "Crypto Industry Now In Post - Dotcom Bubble Territory , Trading Expert Says",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/benjaminpirus/2020/06/27/crypto-industry-now-in-post-dotcom-bubble-territory-trading-expert-says/"
+    },
+    {
+      "timestamp": "2020-06-27T19:15:00",
+      "source": "msn.com",
+      "headline": "Here When the Stock Market Crash Will Happen",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/finance/savingandinvesting/here-e2-80-99s-when-the-stock-market-crash-will-happen/ar-BB162QTa"
+    }
+  ]
+}

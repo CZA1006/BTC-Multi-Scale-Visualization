@@ -1,0 +1,192 @@
+{
+  "date": "2022-05-03",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-05-03T05:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T13:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T17:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-05-03T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Live : EU prepares for showdown with Russia over oil and gas",
+    "Live : EU prepares for showdown with Russia over oil and gas",
+    "Iran sanctions raise doubts about the success of economic pressure on Russia",
+    "Ukraine - Russia tension - War updates : US says Russia plans to annex 3 Ukrainian regions",
+    "Russia unleashes rockets in Mariupol , EU readies oil sanctions"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-05-03T05:15:00",
+      "source": "france24.com",
+      "headline": "Live : EU prepares for showdown with Russia over oil and gas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.france24.com/en/europe/20220503-live-eu-prepares-for-showdown-with-russia-over-oil-and-gas"
+    },
+    {
+      "timestamp": "2022-05-03T05:30:00",
+      "source": "msn.com",
+      "headline": "Live : EU prepares for showdown with Russia over oil and gas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-gb/news/world/live-eu-prepares-for-showdown-with-russia-over-oil-and-gas/ar-AAWRhG9"
+    },
+    {
+      "timestamp": "2022-05-03T23:45:00",
+      "source": "atlanticcouncil.org",
+      "headline": "Iran sanctions raise doubts about the success of economic pressure on Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.atlanticcouncil.org/blogs/iransource/iran-sanctions-raise-doubts-about-the-success-of-economic-pressure-on-russia/"
+    },
+    {
+      "timestamp": "2022-05-03T12:30:00",
+      "source": "telegraphindia.com",
+      "headline": "Ukraine - Russia tension - War updates : US says Russia plans to annex 3 Ukrainian regions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.telegraphindia.com/world/war-updates-us-says-russia-plans-to-annex-3-ukrainian-regions/cid/1863354"
+    },
+    {
+      "timestamp": "2022-05-03T14:45:00",
+      "source": "inforum.com",
+      "headline": "Russia unleashes rockets in Mariupol , EU readies oil sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inforum.com/news/world/russia-unleashes-rockets-in-mariupol-eu-readies-oil-sanctions"
+    },
+    {
+      "timestamp": "2022-05-03T16:45:00",
+      "source": "grandforksherald.com",
+      "headline": "Russia unleashes rockets in Mariupol , EU readies oil sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.grandforksherald.com/news/world/russia-unleashes-rockets-in-mariupol-eu-readies-oil-sanctions"
+    },
+    {
+      "timestamp": "2022-05-03T17:30:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Russia unleashes rockets in Mariupol , EU readies oil sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.duluthnewstribune.com/news/world/russia-unleashes-rockets-in-mariupol-eu-readies-oil-sanctions"
+    },
+    {
+      "timestamp": "2022-05-03T17:00:00",
+      "source": "postbulletin.com",
+      "headline": "Russia unleashes rockets in Mariupol , EU readies oil sanctions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.postbulletin.com/news/world/russia-unleashes-rockets-in-mariupol-eu-readies-oil-sanctions"
+    },
+    {
+      "timestamp": "2022-05-03T13:45:00",
+      "source": "msn.com",
+      "headline": "Ukraine : Russia steps up attacks on Mariupol steel plant live updates",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/ukraine-russia-steps-up-attacks-on-mariupol-steel-plant-live-updates/ar-AAWRXMI"
+    },
+    {
+      "timestamp": "2022-05-03T13:00:00",
+      "source": "dw.com",
+      "headline": "Ukraine : Russia steps up attacks on Mariupol steel plant live updates | News | DW",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dw.com/en/ukraine-russia-steps-up-attacks-on-mariupol-steel-plant-live-updates/a-61666573"
+    },
+    {
+      "timestamp": "2022-05-03T10:30:00",
+      "source": "parisguardian.com",
+      "headline": "Live : EU prepares for showdown with Russia over oil and gas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.parisguardian.com/news/272537661/live-eu-prepares-for-showdown-with-russia-over-oil-and-gas"
+    },
+    {
+      "timestamp": "2022-05-03T09:30:00",
+      "source": "europesun.com",
+      "headline": "Live : EU prepares for showdown with Russia over oil and gas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.europesun.com/news/272537661/live-eu-prepares-for-showdown-with-russia-over-oil-and-gas"
+    },
+    {
+      "timestamp": "2022-05-03T09:30:00",
+      "source": "theuknews.com",
+      "headline": "Live : EU prepares for showdown with Russia over oil and gas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.theuknews.com/news/272537661/live-eu-prepares-for-showdown-with-russia-over-oil-and-gas"
+    },
+    {
+      "timestamp": "2022-05-03T13:45:00",
+      "source": "russiaherald.com",
+      "headline": "Live : EU prepares for showdown with Russia over oil and gas",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.russiaherald.com/news/272537661/live-eu-prepares-for-showdown-with-russia-over-oil-and-gas"
+    },
+    {
+      "timestamp": "2022-05-03T09:30:00",
+      "source": "home.nzcity.co.nz",
+      "headline": "Russian offensive devastates towns in eastern Ukraine , EU prepares oil sanctions - 03 - May - 2022",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=353833&fm=psp,tst"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "date": "2024-10-12",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 15,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-12T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T11:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T14:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-12T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Trump Crypto Alliance 6 Ways the Former President Embraces Digital Currency",
+    "Ripple Co - Founder Chris Larsen Sends $1 Million XRP Donation To Kamala Harris",
+    "Donald Trump Refuses for Second Presidential Debate with Kamala Harris",
+    "Why Trump voters are poised to swing the Senate majority : From the Politics Desk",
+    "With medical report , Harris seeks to play health card against Trump"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-12T11:30:00",
+      "source": "gobankingrates.com",
+      "headline": "Trump Crypto Alliance 6 Ways the Former President Embraces Digital Currency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.gobankingrates.com/investing/crypto/trumps-crypto-alliance-ways-former-president-embraces-digital-currency/"
+    },
+    {
+      "timestamp": "2024-10-12T08:00:00",
+      "source": "newsbtc.com",
+      "headline": "Ripple Co - Founder Chris Larsen Sends $1 Million XRP Donation To Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/ripple-2/ripple-co-founder-chris-larsen-sends-1-million-xrp-donation-to-kamala-harris/"
+    },
+    {
+      "timestamp": "2024-10-12T07:45:00",
+      "source": "viva.co.id",
+      "headline": "Donald Trump Refuses for Second Presidential Debate with Kamala Harris",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.viva.co.id/english/1760949-donald-trump-refuses-for-second-presidential-debate-with-kamala-harris"
+    },
+    {
+      "timestamp": "2024-10-12T00:00:00",
+      "source": "yahoo.com",
+      "headline": "Why Trump voters are poised to swing the Senate majority : From the Politics Desk",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/why-trump-voters-poised-swing-233528003.html"
+    },
+    {
+      "timestamp": "2024-10-13T00:00:00",
+      "source": "thenews.com.pk",
+      "headline": "With medical report , Harris seeks to play health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thenews.com.pk/print/1239622-with-medical-report-harris-seeks-to-play-health-card-against-trump"
+    },
+    {
+      "timestamp": "2024-10-12T11:00:00",
+      "source": "standardmedia.co.ke",
+      "headline": "Harris to release medical report confirming fitness for presidency",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.standardmedia.co.ke/america/article/2001504458/harris-to-release-medical-report-confirming-fitness-for-presidency"
+    },
+    {
+      "timestamp": "2024-10-12T10:15:00",
+      "source": "thehindu.com",
+      "headline": "Kamala Harris to release medical report confirming fitness for presidency : campaign",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thehindu.com/news/international/kamala-harris-to-release-medical-report-confirming-fitness-for-presidency-campaign/article68745699.ece"
+    },
+    {
+      "timestamp": "2024-10-12T16:30:00",
+      "source": "channelstv.com",
+      "headline": "With Medical Report Harris Seeks To Play Health Card Against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.channelstv.com/2024/10/12/with-medical-report-harris-seeks-to-play-health-card-against-trump/"
+    },
+    {
+      "timestamp": "2024-10-12T17:15:00",
+      "source": "yahoo.com",
+      "headline": "With medical report Harris seeks to play health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/medical-report-harris-seeks-play-164155946.html"
+    },
+    {
+      "timestamp": "2024-10-12T20:00:00",
+      "source": "insidenova.com",
+      "headline": "With medical report Harris seeks to play health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.insidenova.com/news/national/with-medical-report-harris-seeks-to-play-health-card-against-trump/article_ef6d0c72-bba3-52c5-a0fe-6819ed8d03ed.html"
+    },
+    {
+      "timestamp": "2024-10-12T19:30:00",
+      "source": "ktbs.com",
+      "headline": "With medical report Harris seeks to play health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ktbs.com/news/national/with-medical-report-harris-seeks-to-play-health-card-against-trump/article_9fa63eec-c458-55ad-9d61-f84376e83135.html"
+    },
+    {
+      "timestamp": "2024-10-12T16:15:00",
+      "source": "english.aawsat.com",
+      "headline": "With Medical Report Harris Seeks to Play Health Card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://english.aawsat.com/world/5070366-medical-report-harris-seeks-play-health-card-against-trump"
+    },
+    {
+      "timestamp": "2024-10-12T14:30:00",
+      "source": "thepeninsulaqatar.com",
+      "headline": "With medical report Harris seeks to play health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "http://thepeninsulaqatar.com/article/12/10/2024/with-medical-report-harris-seeks-to-play-health-card-against-trump"
+    },
+    {
+      "timestamp": "2024-10-12T15:00:00",
+      "source": "ktbs.com",
+      "headline": "With medical report Harris seeks to play health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.ktbs.com/news/national/with-medical-report-harris-seeks-to-play-health-card-against-trump/article_2306094d-7c51-531c-ae69-b32875cfaba5.html"
+    },
+    {
+      "timestamp": "2024-10-12T15:00:00",
+      "source": "thehindu.com",
+      "headline": "Kamala Harris is in excellent health , says medical report as her team seeks to play health card against Donald Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thehindu.com/news/international/kamala-harris-medical-report-fitness-presidency-campaign/article68745699.ece"
+    }
+  ]
+}

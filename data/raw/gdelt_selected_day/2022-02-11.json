@@ -1,0 +1,187 @@
+{
+  "date": "2022-02-11",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 15,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-02-11T02:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-11T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-11T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-11T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-11T21:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-11T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-11T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-02-12T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "White House : We are not saying Putin has made a final decision",
+    "US says Russian invasion of Ukraine could begin during Olympics",
+    "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+    "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+    "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-02-11T19:45:00",
+      "source": "forexlive.com",
+      "headline": "White House : We are not saying Putin has made a final decision",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forexlive.com/news/white-house-us-ready-to-respond-to-invasion-with-sanctions-and-nato-posture-changes-20220211/"
+    },
+    {
+      "timestamp": "2022-02-11T19:45:00",
+      "source": "msn.com",
+      "headline": "US says Russian invasion of Ukraine could begin during Olympics",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/us-says-russian-invasion-of-ukraine-could-begin-during-olympics/ar-AATKfFO"
+    },
+    {
+      "timestamp": "2022-02-12T00:00:00",
+      "source": "fox5atlanta.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox5atlanta.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T20:45:00",
+      "source": "fox10phoenix.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox10phoenix.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T21:30:00",
+      "source": "q13fox.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.q13fox.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T21:15:00",
+      "source": "fox29.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox29.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-12T00:00:00",
+      "source": "fox2detroit.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox2detroit.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T23:00:00",
+      "source": "ktvu.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.ktvu.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T04:45:00",
+      "source": "japantimes.co.jp",
+      "headline": "Armed nationalists in Ukraine pose a threat not just to Russia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.japantimes.co.jp/news/2022/02/11/world/armed-nationalists-ukraine-threat/"
+    },
+    {
+      "timestamp": "2022-02-11T23:30:00",
+      "source": "foxla.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.foxla.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T22:30:00",
+      "source": "fox26houston.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox26houston.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T20:45:00",
+      "source": "fox32chicago.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox32chicago.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T02:00:00",
+      "source": "english.ahram.org.eg",
+      "headline": "Ukraine - Russia crisis : What to know about the fears of war - Region - World",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://english.ahram.org.eg/News/460814.aspx"
+    },
+    {
+      "timestamp": "2022-02-11T21:45:00",
+      "source": "fox7austin.com",
+      "headline": "White House urges Americans to leave Ukraine in next  24 to 48  hours ; Russian invasion could be days away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.fox7austin.com/news/white-house-urges-americans-to-leave-ukraine-in-next-24-to-48-hours-russian-invasion-could-be-days-away"
+    },
+    {
+      "timestamp": "2022-02-11T22:00:00",
+      "source": "msn.com",
+      "headline": "Biden , Putin to speak as US says Russia could invade Ukraine during Olympics",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://www.msn.com/en-us/news/world/biden-putin-to-speak-as-us-says-russia-could-invade-ukraine-during-olympics/ar-AATKfFO"
+    }
+  ]
+}

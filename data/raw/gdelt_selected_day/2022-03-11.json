@@ -1,0 +1,182 @@
+{
+  "date": "2022-03-11",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "war_regime",
+  "bucket_label": "Russia-Ukraine War Onset (2022)",
+  "query": "(ukraine OR russia OR putin OR zelenskyy OR invasion OR war OR kyiv OR kharkiv OR sanctions OR swift OR \"central bank\" OR \"oil price\" OR bitcoin OR crypto OR ruble)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 14,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2022-03-11T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-11T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-11T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-11T17:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-11T18:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-11T19:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2022-03-11T22:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Crypto war test leaves future of money debate wide open",
+    "Buying Bitcoin Comes Under Fire In Russia - Ukraine Crisis",
+    "Putin has a pot of gold . Republicans and Democrats want to take it away",
+    "How Wartime Tests Crypto Strengths and Vulnerabilities",
+    "Putin has a pot of gold . Republicans and Democrats want to take it away"
+  ],
+  "articles": [
+    {
+      "timestamp": "2022-03-11T15:30:00",
+      "source": "afr.com",
+      "headline": "Crypto war test leaves future of money debate wide open",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.afr.com/markets/currencies/crypto-s-war-test-leaves-future-of-money-debate-wide-open-20220311-p5a3uy"
+    },
+    {
+      "timestamp": "2022-03-11T17:30:00",
+      "source": "investors.com",
+      "headline": "Buying Bitcoin Comes Under Fire In Russia - Ukraine Crisis",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.investors.com/news/buying-bitcoin-comes-under-fire-russia-ukraine-crisis/"
+    },
+    {
+      "timestamp": "2022-03-11T18:15:00",
+      "source": "msn.com",
+      "headline": "Putin has a pot of gold . Republicans and Democrats want to take it away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-us/news/world/putin-has-a-pot-of-gold-republicans-and-democrats-want-to-take-it-away/ar-AAUWMbp"
+    },
+    {
+      "timestamp": "2022-03-11T19:00:00",
+      "source": "washingtonpost.com",
+      "headline": "How Wartime Tests Crypto Strengths and Vulnerabilities",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.washingtonpost.com/business/how-wartime-tests-cryptos-strengths-and-vulnerabilities/2022/03/11/48499248-a159-11ec-9438-255709b6cddc_story.html"
+    },
+    {
+      "timestamp": "2022-03-11T17:45:00",
+      "source": "erienewsnow.com",
+      "headline": "Putin has a pot of gold . Republicans and Democrats want to take it away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.erienewsnow.com/story/46052098/putin-has-a-pot-of-gold-republicans-and-democrats-want-to-take-it-away"
+    },
+    {
+      "timestamp": "2022-03-11T17:30:00",
+      "source": "msn.com",
+      "headline": "US bans seafood , alcohol , diamonds from Russia over invasion of Ukraine ; trade status slashed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.msn.com/en-in/news/other/us-bans-seafood-alcohol-diamonds-from-russia-over-invasion-of-ukraine-trade-status-slashed/ar-AAUWGH4"
+    },
+    {
+      "timestamp": "2022-03-11T18:15:00",
+      "source": "indiatoday.in",
+      "headline": "US bans seafood , alcohol , diamonds from Russia over invasion of Ukraine ; trade status slashed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.indiatoday.in/world/russia-ukraine-war/story/us-russian-invasion-ukraine-ban-seafood-alcohol-diamonds-1924408-2022-03-11"
+    },
+    {
+      "timestamp": "2022-03-11T18:00:00",
+      "source": "cnn.com",
+      "headline": "Putin has a pot of gold . Republicans and Democrats want to take it away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cnn.com/2022/03/11/business/russia-economy-sanctions-gold/"
+    },
+    {
+      "timestamp": "2022-03-11T22:30:00",
+      "source": "localnews8.com",
+      "headline": "Putin has a pot of gold . Republicans and Democrats want to take it away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://localnews8.com/money/cnn-business-consumer/2022/03/11/putin-has-a-pot-of-gold-republicans-and-democrats-want-to-take-it-away/"
+    },
+    {
+      "timestamp": "2022-03-11T22:30:00",
+      "source": "localnews8.com",
+      "headline": "Putin has a pot of gold . Republicans and Democrats want to take it away",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://localnews8.com/money/cnn-business-consumer/2022/03/11/putin-has-a-pot-of-gold-republicans-and-democrats-want-to-take-it-away-2/"
+    },
+    {
+      "timestamp": "2022-03-11T19:45:00",
+      "source": "channelstv.com",
+      "headline": "Russia Invades Ukraine – Channels Television",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.channelstv.com/tag/russia-invades-ukraine/"
+    },
+    {
+      "timestamp": "2022-03-11T18:00:00",
+      "source": "nytimes.com",
+      "headline": "Bitcoin Value Drops Amid Russia - Ukraine War and Inflation",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.nytimes.com/2022/03/11/technology/bitcoin-ukraine-russia-roose.html"
+    },
+    {
+      "timestamp": "2022-03-11T01:30:00",
+      "source": "apnews.com",
+      "headline": "China eases control to let ruble fall faster against yuan",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://apnews.com/9fd75c74e0b3728b692da6bd2b7c692e"
+    },
+    {
+      "timestamp": "2022-03-11T18:00:00",
+      "source": "cfr.org",
+      "headline": "Besides China , Putin Has Another Potential De - dollarization Partner in Asia",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.cfr.org/blog/besides-china-putin-has-another-potential-de-dollarization-partner-asia"
+    },
+    {
+      "timestamp": "2022-03-11T07:15:00",
+      "source": "dnaindia.com",
+      "headline": "Vladimir Putin warns world of any attack on Russia , 10 updates from Ukraine war",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.dnaindia.com/world/report-vladimir-putin-warn-world-of-any-attack-on-russia-10-updates-from-ukraine-war-volodymyr-zelenskyy-kharkiv-kyiv-2939187"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "date": "2026-03-03",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 2,
+  "theme_count_regulation": 0,
+  "theme_count_election": 1,
+  "theme_count_war": 12,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2026-03-03T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-03T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-03T08:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-03T12:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-03T14:00:00",
+      "news_count": 5,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-03T16:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-03T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-03T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "The Big One Is Coming Soon  Serious Trump Warning Fuels A Massive Bitcoin Price Prediction",
+    "Arthur Hayes : Bitcoin To $250 , 000 In 2026 And $750 , 000 In 2027 Because Trump Will  Print Money",
+    "Opinion : Donald Trump pitiful case for going to war with Iran",
+    "US - Israel attack on Iran : Former Iran supreme leader Ayatollah Khamenei to be buried in his hometown , Mashhad",
+    "Trump Says Iran  Would Have Had Nuke Without JCPOA Exit"
+  ],
+  "articles": [
+    {
+      "timestamp": "2026-03-03T14:00:00",
+      "source": "forbes.com",
+      "headline": "The Big One Is Coming Soon  Serious Trump Warning Fuels A Massive Bitcoin Price Prediction",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/03/03/the-big-one-is-coming-soon-serious-trump-warning-fuels-a-massive-bitcoin-price-prediction/"
+    },
+    {
+      "timestamp": "2026-03-03T14:00:00",
+      "source": "benzinga.com",
+      "headline": "Arthur Hayes : Bitcoin To $250 , 000 In 2026 And $750 , 000 In 2027 Because Trump Will  Print Money",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/50996188/arthur-hayes-bitcoin-to-250000-in-2026-and-750000-in-2027-because-trump-will-print-money"
+    },
+    {
+      "timestamp": "2026-03-03T14:30:00",
+      "source": "chicagotribune.com",
+      "headline": "Opinion : Donald Trump pitiful case for going to war with Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.chicagotribune.com/2026/03/03/column-iran-war-donald-trump-depetris/"
+    },
+    {
+      "timestamp": "2026-03-03T21:00:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "US - Israel attack on Iran : Former Iran supreme leader Ayatollah Khamenei to be buried in his hometown , Mashhad",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/middle-east/us-israel-attack-on-iran-former-iran-supreme-leader-ayatollah-khamenei-to-be-buried-in-his-hometown-mashhad/articleshow/128989507.cms"
+    },
+    {
+      "timestamp": "2026-03-03T04:45:00",
+      "source": "indianexpress.com",
+      "headline": "Trump Says Iran  Would Have Had Nuke Without JCPOA Exit",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://indianexpress.com/article/world/trump-iran-nuclear-deal-obama-biden-strikes-10562146/"
+    },
+    {
+      "timestamp": "2026-03-03T18:15:00",
+      "source": "standardspeaker.com",
+      "headline": "Letter : Trump administration sends  mixed signal on Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.standardspeaker.com/2026/03/03/letter-trump-administration-sends-mixed-signals-on-iran/"
+    },
+    {
+      "timestamp": "2026-03-03T16:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Iran crypto outflows after US Israel airstrikes : Why did Iran largest crypto exchange see a 700 % withdrawal spike minutes after US - Israel airstrikes hit Tehran ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/news/international/us/why-did-irans-largest-crypto-exchange-see-a-700-withdrawal-spike-minutes-after-us-israel-airstrikes-hit-tehran/articleshow/128977821.cms"
+    },
+    {
+      "timestamp": "2026-03-03T08:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin jumps above $68 , 000 after five straight monthly losses ; $1 billion inflows reflect strong investor faith",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-jumps-above-68000-after-five-straight-monthly-losses-1-billion-inflows-reflect-strong-investor-faith/articleshow/128960883.cms"
+    },
+    {
+      "timestamp": "2026-03-03T14:30:00",
+      "source": "unionleader.com",
+      "headline": "White House offers shifting rationales for war with Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.unionleader.com/news/politics/national/white-house-offers-shifting-rationales-for-war-with-iran/article_ffb91f14-70fa-4c8e-a55e-a5dd11334ade.html"
+    },
+    {
+      "timestamp": "2026-03-03T12:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Four Headwinds Stalling Bitcoin $70K Breakout",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/four-headwinds-stalling-bitcoins-70k-114825780.html"
+    },
+    {
+      "timestamp": "2026-03-03T16:30:00",
+      "source": "sandiegouniontribune.com",
+      "headline": "Netanyahu takes gamble on US support for Israel with war against Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.sandiegouniontribune.com/2026/03/03/netanyahu-israel-iran/"
+    },
+    {
+      "timestamp": "2026-03-03T14:00:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Bitcoin plunges as risk of prolonged Iran war weighs on crypto",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/bitcoin-plunges-risk-prolonged-iran-war-weighs-crypto"
+    },
+    {
+      "timestamp": "2026-03-03T12:15:00",
+      "source": "newsday.com",
+      "headline": "Netanyahu takes a gamble on American support for Israel with the war against Iran",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsday.com/news/nation/iran-war-netanyahu-trump-support-k64388"
+    },
+    {
+      "timestamp": "2026-03-03T03:45:00",
+      "source": "benzinga.com",
+      "headline": "Iran Facing Attack From A Third Country ? Crypto Prediction Market Sees High Possibility Amid Rising Middle East Tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/03/50990435/iran-facing-attack-from-a-third-country-crypto-prediction-market-sees-high-possibility"
+    },
+    {
+      "timestamp": "2026-03-03T04:15:00",
+      "source": "benzinga.com",
+      "headline": "Iran Facing Attack From A Third Country ? Crypto Prediction Market Sees High Possibility Amid Rising Middle East Tensions",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/03/50990435/iran-facing-attack-from-a-third-country-crypto-prediction-market-sees-high-possibility-amid-rising-middle-east-tensions"
+    }
+  ]
+}

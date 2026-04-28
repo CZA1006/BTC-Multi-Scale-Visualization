@@ -1,0 +1,197 @@
+{
+  "date": "2020-03-30",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 7,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 1,
+  "theme_count_macro": 3,
+  "theme_count_covid": 4,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-03-30T03:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T14:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T19:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T20:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-03-30T23:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "How Bitcoin was Able to Beat Gold Recovery as Coronavirus Crisis Mounts",
+    "US Digital Dollar Will Boost Bitcoin Price And Adoption : Will It Happen Soon ?",
+    "Digital Dollars , Bakkt CEO Scandal & a Continuing Pandemic : Bad Crypto News of the Week",
+    "Crypto Market Reaches Longest Stretch of Extreme Fear In Over A Year",
+    "Bitcoin enthusiasts , liberal lawmakers cheer a Fed - backed digital dollar"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-03-30T14:30:00",
+      "source": "newsbtc.com",
+      "headline": "How Bitcoin was Able to Beat Gold Recovery as Coronavirus Crisis Mounts",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/30/how-bitcoin-was-able-to-beat-golds-recovery-as-coronavirus-crisis-mounts/"
+    },
+    {
+      "timestamp": "2020-03-30T14:15:00",
+      "source": "ibtimes.com",
+      "headline": "US Digital Dollar Will Boost Bitcoin Price And Adoption : Will It Happen Soon ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.ibtimes.com/us-digital-dollar-will-boost-bitcoin-price-adoption-will-it-happen-soon-2949362"
+    },
+    {
+      "timestamp": "2020-03-30T03:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Digital Dollars , Bakkt CEO Scandal & a Continuing Pandemic : Bad Crypto News of the Week",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/digital-dollars-bakkt-ceo-scandal-a-continuing-pandemic-bad-crypto-news-of-the-week"
+    },
+    {
+      "timestamp": "2020-03-30T19:00:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Market Reaches Longest Stretch of Extreme Fear In Over A Year",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/30/crypto-market-reaches-longest-stretch-of-extreme-fear-in-over-a-year/"
+    },
+    {
+      "timestamp": "2020-03-30T19:15:00",
+      "source": "marketwatch.com",
+      "headline": "Bitcoin enthusiasts , liberal lawmakers cheer a Fed - backed digital dollar",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/bitcoin-enthusiasts-liberal-lawmakers-cheer-a-fed-backed-digital-dollar-2020-03-30"
+    },
+    {
+      "timestamp": "2020-03-30T18:45:00",
+      "source": "marketwatch.com",
+      "headline": "Bitcoin enthusiasts , liberal lawmakers cheer a Fed - backed digital dollar",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.marketwatch.com/story/guid/847caabe-7291-11ea-a51e-d3f790d4c0cd"
+    },
+    {
+      "timestamp": "2020-03-30T13:00:00",
+      "source": "etftrends.com",
+      "headline": "Crypto Traders Expect Bitcoin to Break New Highs Before 2021",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.etftrends.com/disruptive-technology-channel/crypto-traders-expect-bitcoin-to-break-new-highs-before-2021/"
+    },
+    {
+      "timestamp": "2020-03-30T23:45:00",
+      "source": "newsbtc.com",
+      "headline": "How the Dow Fractal of Doom Could Take Bitcoin to $1 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/03/30/how-the-dows-fractal-of-doom-could-take-bitcoin-to-1000/"
+    },
+    {
+      "timestamp": "2020-03-30T10:45:00",
+      "source": "moneycontrol.com",
+      "headline": "Coronavirus pandemic : What will be its impact on cryptocurrencies ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/news/trends/expert-columns-2/coronavirus-pandemic-what-will-be-its-impact-on-cryptocurrencies-5087231.html"
+    },
+    {
+      "timestamp": "2020-03-30T04:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bear Market Over ? Charts on Bitcoin and ASX 200 Suggest Otherwise",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://finance.yahoo.com/news/bear-market-over-charts-bitcoin-030000985.html"
+    },
+    {
+      "timestamp": "2020-03-30T13:30:00",
+      "source": "coindesk.com",
+      "headline": "USD Stablecoins Are Booming But Have Business Headache",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/usd-stablecoins-are-surging-but-zero-interest-rates-complicate-business-model"
+    },
+    {
+      "timestamp": "2020-03-30T20:30:00",
+      "source": "profi-forex.us",
+      "headline": "Market Leader : News :: BoJ To StaBilize Markets . Any Consequences For BTC ?",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://www.profi-forex.us/news/entry4000008760.html"
+    },
+    {
+      "timestamp": "2020-03-30T03:30:00",
+      "source": "coindesk.com",
+      "headline": "Bear Market Over ? Charts on Bitcoin and ASX 200 Suggest Otherwise",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bear-market-over-charts-on-bitcoin-and-asx-200-suggest-otherwise"
+    },
+    {
+      "timestamp": "2020-03-30T21:30:00",
+      "source": "zerohedge.com",
+      "headline": "Will COVID - 19 End The Fed ?",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.zerohedge.com/economics/will-covid-19-end-fed"
+    },
+    {
+      "timestamp": "2020-03-30T19:45:00",
+      "source": "infowars.com",
+      "headline": "Ron Paul : Will Coronavirus End the Federal Reserve ?",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.infowars.com/ron-paul-will-coronavirus-end-the-federal-reserve/"
+    }
+  ]
+}

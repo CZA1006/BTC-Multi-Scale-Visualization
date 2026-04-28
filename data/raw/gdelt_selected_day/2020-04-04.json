@@ -1,0 +1,192 @@
+{
+  "date": "2020-04-04",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 9,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 1,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-04T00:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T04:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T09:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T13:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T16:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-04T23:00:00",
+      "news_count": 2,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Top Investors Think Bitcoin Can Breach $20 , 000 In Coming 12 Months : Here Why",
+    "Investing In Bitcoin During Coronavirus : Good idea or not",
+    "These 2 Top Analysts Expect Ripple XRP To Embark On Strong Rally",
+    "Analyst Who Called Bitcoin $3 , 000 2018 Bottom Thinks This Is Next",
+    "Last Time This Signal Flashed , Crypto Rallied By 50 %. It Back Again"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-04T04:00:00",
+      "source": "newsbtc.com",
+      "headline": "Top Investors Think Bitcoin Can Breach $20 , 000 In Coming 12 Months : Here Why",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/04/top-investors-think-bitcoin-can-breach-20000-coming-12-months-heres-why/"
+    },
+    {
+      "timestamp": "2020-04-04T06:30:00",
+      "source": "mensxp.com",
+      "headline": "Investing In Bitcoin During Coronavirus : Good idea or not",
+      "category": "covid",
+      "sentiment": null,
+      "url": "https://www.mensxp.com/special-features/features/74644-investing-in-bitcoin-during-coronavirus-good-idea-or-not.html"
+    },
+    {
+      "timestamp": "2020-04-04T09:00:00",
+      "source": "newsbtc.com",
+      "headline": "These 2 Top Analysts Expect Ripple XRP To Embark On Strong Rally",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/04/these-2-top-analysts-expect-ripples-xrp-to-embark-on-strong-rally/"
+    },
+    {
+      "timestamp": "2020-04-04T04:00:00",
+      "source": "newsbtc.com",
+      "headline": "Analyst Who Called Bitcoin $3 , 000 2018 Bottom Thinks This Is Next",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/04/analyst-who-called-bitcoin-3000-2018-bottom-thinks-this-next/"
+    },
+    {
+      "timestamp": "2020-04-04T09:00:00",
+      "source": "newsbtc.com",
+      "headline": "Last Time This Signal Flashed , Crypto Rallied By 50 %. It Back Again",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/04/last-time-this-signal-flashed-crypto-rallied-by-50-its-back-again/"
+    },
+    {
+      "timestamp": "2020-04-04T13:15:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Holds Gains but Technical Patterns Hint It Will Fall to $5K",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/04/bitcoin-holds-gains-but-technical-pattern-hints-it-will-fall-to-5k/"
+    },
+    {
+      "timestamp": "2020-04-04T15:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Revolut Opens Cryptocurrency Services to All Standard Users",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.coinspeaker.com/revolut-crypto-services-standard-users/"
+    },
+    {
+      "timestamp": "2020-04-04T23:30:00",
+      "source": "profi-forex.us",
+      "headline": "Market Leader : News :: Dollar Regains Strength , NordFX Reports",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.profi-forex.us/news/entry4000008764.html"
+    },
+    {
+      "timestamp": "2020-04-04T16:30:00",
+      "source": "forbes.com",
+      "headline": "ERP ,  ZIRP  And When To Get Back Into The Market",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/kerrypechter/2020/04/04/erp-zirp-and-when-to-get-back-into-the-market/"
+    },
+    {
+      "timestamp": "2020-04-04T09:00:00",
+      "source": "mrtopstep.com",
+      "headline": "Bitcoin Rejected By High Timeframe Resistance , Here What To Possibly Expect",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://mrtopstep.com/bitcoin-rejected-by-high-timeframe-resistance-heres-what-to-possibly-expect/"
+    },
+    {
+      "timestamp": "2020-04-04T00:15:00",
+      "source": "stltoday.com",
+      "headline": "Michael Hiltzik : Could unemployment reach Great Depression levels ? Yes , but …",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.stltoday.com/business/michael-hiltzik-could-unemployment-reach-great-depression-levels-yes-but/article_a34dc216-2686-5b10-a05f-0a37f28a7516.html"
+    },
+    {
+      "timestamp": "2020-04-04T13:00:00",
+      "source": "sg.news.yahoo.com",
+      "headline": "Graphic : Cash handouts and bond buying : $10 trillion - plus deployed against virus",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://sg.news.yahoo.com/graphic-cash-handouts-bond-buying-015553552.html"
+    },
+    {
+      "timestamp": "2020-04-04T00:15:00",
+      "source": "yna.co.kr",
+      "headline": "급등락 일단 진정 … 미 코로나19 확산  뉴욕증시 1 % 대 하락 ( 종합 )",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.yna.co.kr/view/AKR20200404009551072"
+    },
+    {
+      "timestamp": "2020-04-04T23:15:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Monero Is Easily Today Biggest Price Gainer",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/monero-stands-as-todays-biggest-price-gainer/"
+    },
+    {
+      "timestamp": "2020-04-04T18:15:00",
+      "source": "es.cointelegraph.com",
+      "headline": "2 razones por las que una corrección más profunda en las acciones podría acabar con el repunte del precio de Bitcoin a 8 , 000 dólares",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://es.cointelegraph.com/news/2-reasons-a-deeper-correction-in-stocks-may-end-bitcoins-rally-to-8k"
+    }
+  ]
+}

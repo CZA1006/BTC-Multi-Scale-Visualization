@@ -1,0 +1,192 @@
+{
+  "date": "2020-04-25",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "covid_shock",
+  "bucket_label": "COVID Shock (2020)",
+  "query": "(covid OR coronavirus OR pandemic OR \"black thursday\" OR fed OR \"federal reserve\" OR \"interest rate\" OR stimulus OR \"stock market\" OR crash OR bitcoin OR crypto)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 10,
+  "theme_count_regulation": 1,
+  "theme_count_election": 0,
+  "theme_count_war": 0,
+  "theme_count_macro": 1,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2020-04-25T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T05:00:00",
+      "news_count": 3,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T15:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T19:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T20:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T21:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2020-04-25T22:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Bitcoin Readies to Surge as Sellers Get Hit with Technical Triple Whammy",
+    "The Perfect Storm is Brewing for Bitcoin Because of These Two Trends",
+    "Crypto Tidbits : Bitcoin Surges to $7 , 800 , More U . S . Stimulus , Tether Erupts",
+    "The Cards Are Stacked in Bitcoin Favor : How Investors Can Benefit",
+    "Bitcoin Miner Maker Ebang Files for a $100M US IPO"
+  ],
+  "articles": [
+    {
+      "timestamp": "2020-04-25T15:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Readies to Surge as Sellers Get Hit with Technical Triple Whammy",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/25/bitcoin-readies-surge-sellers-get-hit-technical-triple-whammy/"
+    },
+    {
+      "timestamp": "2020-04-25T05:15:00",
+      "source": "newsbtc.com",
+      "headline": "The Perfect Storm is Brewing for Bitcoin Because of These Two Trends",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/25/the-perfect-storm-is-brewing-for-bitcoin-because-of-these-two-trends/"
+    },
+    {
+      "timestamp": "2020-04-25T05:15:00",
+      "source": "newsbtc.com",
+      "headline": "Crypto Tidbits : Bitcoin Surges to $7 , 800 , More U . S . Stimulus , Tether Erupts",
+      "category": "macro",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/25/crypto-tidbits-bitcoin-surges-to-7800-more-u-s-stimulus-tether-erupts/"
+    },
+    {
+      "timestamp": "2020-04-25T05:15:00",
+      "source": "newsbtc.com",
+      "headline": "The Cards Are Stacked in Bitcoin Favor : How Investors Can Benefit",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/25/the-cards-are-stacked-in-bitcoins-favor-how-investors-can-benefit/"
+    },
+    {
+      "timestamp": "2020-04-25T20:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin Miner Maker Ebang Files for a $100M US IPO",
+      "category": "regulation",
+      "sentiment": null,
+      "url": "https://www.coindesk.com/bitcoin-miner-maker-ebang-files-for-a-100m-us-ipo"
+    },
+    {
+      "timestamp": "2020-04-25T00:45:00",
+      "source": "newsbtc.com",
+      "headline": "Bad for Bitcoin : Dow Jones Flashes Ultra - Bearish Sign as Investors Brace for Blood",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.newsbtc.com/2020/04/24/bad-for-bitcoin-dow-jones-flashes-ultra-bearish-sign-as-investors-brace-for-blood/"
+    },
+    {
+      "timestamp": "2020-04-25T19:30:00",
+      "source": "crowdfundinsider.com",
+      "headline": "Cryptocurrency Adoption : Number of Bitcoin Addresses Holding At Least 0 . 1 BTC Crosses 3 Million Mark",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.crowdfundinsider.com/2020/04/160616-cryptocurrency-adoption-number-of-bitcoin-addresses-holding-at-least-0-1-btc-crosses-3-million-mark/"
+    },
+    {
+      "timestamp": "2020-04-25T22:00:00",
+      "source": "profi-forex.us",
+      "headline": "Market Leader : News :: Only 4 Of All Existing Billionaires Made Their Fortunes With Cryptocurrencies",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "http://www.profi-forex.us/news/entry4000008768.html"
+    },
+    {
+      "timestamp": "2020-04-25T22:00:00",
+      "source": "forbes.com",
+      "headline": "On - Chain Metrics Paint Bullish Bitcoin Price Picture",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/ktorpey/2020/04/25/on-chain-metrics-paint-bullish-bitcoin-price-picture/"
+    },
+    {
+      "timestamp": "2020-04-25T21:45:00",
+      "source": "livebitcoinnews.com",
+      "headline": "Bitcoin Spikes as People Protest Stay - At - Home Orders",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.livebitcoinnews.com/bitcoin-spikes-as-people-protest-stay-at-home-orders/"
+    },
+    {
+      "timestamp": "2020-04-25T21:45:00",
+      "source": "nzherald.co.nz",
+      "headline": "Investors baffled by soaring stocks in  monster  depression",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=12327603"
+    },
+    {
+      "timestamp": "2020-04-25T10:30:00",
+      "source": "bursadabugun.com",
+      "headline": "Bursa iş dünyası bilgiye ulaşmak için sınır tanımıyor",
+      "category": "general",
+      "sentiment": null,
+      "url": "http://www.bursadabugun.com/haber/bursa-is-dunyasi-bilgiye-ulasmak-icin-sinir-tanimiyor-1282320.html"
+    },
+    {
+      "timestamp": "2020-04-25T22:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Oil Crashes , Satoshi Speculations , and Earth Angel Scams : Bad Crypto News of the Week",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://cointelegraph.com/news/oil-crashes-satoshi-speculations-and-earth-angel-scams-bad-crypto-news-of-the-week"
+    },
+    {
+      "timestamp": "2020-04-25T07:00:00",
+      "source": "hurriyet.com.tr",
+      "headline": "Küresel kripto para tecrübesini katılımcılarla paylaşacak",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.hurriyet.com.tr/teknoloji/kuresel-kripto-para-tecrubesini-katilimcilarla-paylasacak-41502847"
+    },
+    {
+      "timestamp": "2020-04-25T20:30:00",
+      "source": "forbes.com",
+      "headline": "Top Fixed Income ETFs See Over $16 Billion In Flows",
+      "category": "crypto",
+      "sentiment": null,
+      "url": "https://www.forbes.com/sites/qai/2020/04/25/top-fixed-income-etfs-see-over-16-billion-in-flows/"
+    }
+  ]
+}

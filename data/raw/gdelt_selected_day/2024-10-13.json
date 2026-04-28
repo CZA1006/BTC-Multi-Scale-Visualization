@@ -1,0 +1,212 @@
+{
+  "date": "2024-10-13",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "election_cycle",
+  "bucket_label": "US Election Cycle (2024)",
+  "query": "(trump OR harris OR \"vice president\" OR election OR vote OR campaign OR debate OR \"white house\" OR \"swing state\" OR bitcoin OR \"spot etf\" OR crypto OR fed OR \"interest rate\")",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 14,
+  "theme_count_war": 0,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2024-10-13T00:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T01:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T03:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T04:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T05:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T06:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T07:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T11:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T13:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T15:00:00",
+      "news_count": 2,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T17:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T18:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2024-10-13T21:00:00",
+      "news_count": 1,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "From Washington : Analyzing the Campaign Media Blitz",
+    "Few Americans believe Donald Trump will concede election : Poll",
+    "With medical report , Harris seeks to play health card against Trump",
+    "3 أسابيع على انطلاق الانتخابات الرئاسية الأمريكية ، هاريس تلجأ لسلاح جديد ، وترامب يعد بإنهاء الصراعات والحروب ، استطلاعات الرأي تميل لصالح أحد المرشحين",
+    "Harris turns to Big Labor to pierce Trump working - class appeal"
+  ],
+  "articles": [
+    {
+      "timestamp": "2024-10-13T15:45:00",
+      "source": "radio.foxnews.com",
+      "headline": "From Washington : Analyzing the Campaign Media Blitz",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://radio.foxnews.com/2024/10/13/from-washington-analyzing-the-campaign-media-blitz/"
+    },
+    {
+      "timestamp": "2024-10-13T17:45:00",
+      "source": "yahoo.com",
+      "headline": "Few Americans believe Donald Trump will concede election : Poll",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.yahoo.com/news/few-americans-believe-donald-trump-141330368.html"
+    },
+    {
+      "timestamp": "2024-10-13T00:00:00",
+      "source": "thenews.com.pk",
+      "headline": "With medical report , Harris seeks to play health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thenews.com.pk/print/1239622-with-medical-report-harris-seeks-to-play-health-card-against-trump"
+    },
+    {
+      "timestamp": "2024-10-13T21:30:00",
+      "source": "vetogate.com",
+      "headline": "3 أسابيع على انطلاق الانتخابات الرئاسية الأمريكية ، هاريس تلجأ لسلاح جديد ، وترامب يعد بإنهاء الصراعات والحروب ، استطلاعات الرأي تميل لصالح أحد المرشحين",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.vetogate.com/5259273"
+    },
+    {
+      "timestamp": "2024-10-13T13:30:00",
+      "source": "washingtonexaminer.com",
+      "headline": "Harris turns to Big Labor to pierce Trump working - class appeal",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.washingtonexaminer.com/news/campaigns/presidential/3185599/harris-big-labor-trump-working-class/"
+    },
+    {
+      "timestamp": "2024-10-13T18:00:00",
+      "source": "taipeitimes.com",
+      "headline": "Kamala Harris plays health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.taipeitimes.com/News/world/archives/2024/10/14/2003825274"
+    },
+    {
+      "timestamp": "2024-10-13T05:00:00",
+      "source": "koreatimes.co.kr",
+      "headline": "With medical report , Harris plays health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.koreatimes.co.kr:443/www/world/2024/10/501_384106.html"
+    },
+    {
+      "timestamp": "2024-10-13T15:45:00",
+      "source": "thesouthafrican.com",
+      "headline": "Kamala Harris plays health card Donald Trump medical report",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thesouthafrican.com/news/politics/kamala-harris-plays-health-card-against-donald-trump-with-medical-report-us-election-white-house/"
+    },
+    {
+      "timestamp": "2024-10-13T11:30:00",
+      "source": "geo.tv",
+      "headline": "Kamala Harris , in  excellent health , dares Donald Trump to publish his own records",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.geo.tv/latest/568749-kamala-harris-in-excellent-health-dares-donald-trump-to-publish-his-own-records"
+    },
+    {
+      "timestamp": "2024-10-13T01:00:00",
+      "source": "insidenova.com",
+      "headline": "With medical report , Harris plays health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.insidenova.com/news/national/with-medical-report-harris-plays-health-card-against-trump/article_ef6d0c72-bba3-52c5-a0fe-6819ed8d03ed.html"
+    },
+    {
+      "timestamp": "2024-10-13T03:30:00",
+      "source": "philstar.com",
+      "headline": "With medical report , Harris plays health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.philstar.com/world/2024/10/13/2392213/medical-report-harris-plays-health-card-against-trump"
+    },
+    {
+      "timestamp": "2024-10-13T04:15:00",
+      "source": "timesofindia.indiatimes.com",
+      "headline": "Kamala Harris goes public with medical records , accuses Trump of withholding his",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://timesofindia.indiatimes.com/world/us/kamala-harris-goes-public-with-medical-records-accuses-trump-of-withholding-his/articleshow/114180798.cms"
+    },
+    {
+      "timestamp": "2024-10-13T06:30:00",
+      "source": "bssnews.net",
+      "headline": "With medical report , Harris plays health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.bssnews.net/news-flash/215885"
+    },
+    {
+      "timestamp": "2024-10-13T01:00:00",
+      "source": "channelnewsasia.com",
+      "headline": "With medical report , Harris plays health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.channelnewsasia.com/world/medical-report-harris-plays-health-card-against-trump-4675241"
+    },
+    {
+      "timestamp": "2024-10-13T07:30:00",
+      "source": "thestandard.com.hk",
+      "headline": "With medical report , Harris plays health card against Trump",
+      "category": "election",
+      "sentiment": null,
+      "url": "https://www.thestandard.com.hk/breaking-news/section/6/221443/With-medical-report,-Harris-plays-health-card-against-Trump"
+    }
+  ]
+}

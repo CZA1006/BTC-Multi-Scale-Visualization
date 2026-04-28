@@ -1,0 +1,172 @@
+{
+  "date": "2026-03-19",
+  "status": "live",
+  "message": "Loaded selected-day headlines from GDELT DOC API.",
+  "bucket": "iran_tension",
+  "bucket_label": "Iran Tension (2026)",
+  "query": "(iran OR israel OR \"middle east\" OR strike OR \"nuclear deal\" OR uranium OR tehran OR netanyahu OR trump OR \"oil price\" OR bitcoin OR crypto OR fed)",
+  "news_count": 15,
+  "avg_tone": null,
+  "theme_count_crypto": 0,
+  "theme_count_regulation": 0,
+  "theme_count_election": 0,
+  "theme_count_war": 12,
+  "theme_count_macro": 0,
+  "theme_count_covid": 0,
+  "hourly_tones": [
+    {
+      "timestamp": "2026-03-19T01:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-19T10:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-19T12:00:00",
+      "news_count": 1,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-19T20:00:00",
+      "news_count": 9,
+      "average_tone": null
+    },
+    {
+      "timestamp": "2026-03-19T22:00:00",
+      "news_count": 3,
+      "average_tone": null
+    }
+  ],
+  "top_headlines": [
+    "Netanyahu Says Iran Can No Longer Enrich Uranium in Nuclear Update",
+    "Israel Netanyahu says  we are winning and Iran is being decimated",
+    "Iran Confirms Death of Top Security Official in Airstrike – NaturalNews . com",
+    "نتنياهو : غيرنا وجه الشرق الأوسط وإسرائيل باتت قوة إقليمية عظمى – تلفزيون الفجر",
+    "إسرائيل باتت قوة إقليمية عظمى .. تنياهو : الحرب ستنتهي في وقت أسرع مما يعتقده الناس"
+  ],
+  "articles": [
+    {
+      "timestamp": "2026-03-19T20:00:00",
+      "source": "newsweek.com",
+      "headline": "Netanyahu Says Iran Can No Longer Enrich Uranium in Nuclear Update",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.newsweek.com/netanyahu-iran-can-no-longer-enrich-uranium-in-nuclear-update-11706415"
+    },
+    {
+      "timestamp": "2026-03-19T22:00:00",
+      "source": "freemalaysiatoday.com",
+      "headline": "Israel Netanyahu says  we are winning and Iran is being decimated",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.freemalaysiatoday.com/category/highlight/2026/03/20/israels-netanyahu-says-we-are-winning-and-iran-is-being-decimated"
+    },
+    {
+      "timestamp": "2026-03-19T12:15:00",
+      "source": "naturalnews.com",
+      "headline": "Iran Confirms Death of Top Security Official in Airstrike – NaturalNews . com",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.naturalnews.com/2026-03-19-iran-confirms-death-top-security-official-airstrike.html"
+    },
+    {
+      "timestamp": "2026-03-19T20:30:00",
+      "source": "alfajertv.com",
+      "headline": "نتنياهو : غيرنا وجه الشرق الأوسط وإسرائيل باتت قوة إقليمية عظمى – تلفزيون الفجر",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://alfajertv.com/news/worldnews/723339.html"
+    },
+    {
+      "timestamp": "2026-03-19T22:30:00",
+      "source": "arabic.euronews.com",
+      "headline": "إسرائيل باتت قوة إقليمية عظمى .. تنياهو : الحرب ستنتهي في وقت أسرع مما يعتقده الناس",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://arabic.euronews.com/2026/03/19/israel-has-become-a-regional-superpower-netanyahu-the-war-will-end-sooner-than-people"
+    },
+    {
+      "timestamp": "2026-03-19T20:45:00",
+      "source": "life.ru",
+      "headline": "Нетаньяху : Иран больше не может производить ракеты и обогащать уран",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://life.ru/p/1853980"
+    },
+    {
+      "timestamp": "2026-03-19T20:00:00",
+      "source": "pravda.ru",
+      "headline": "Трамп дергает поводок : Нетаньяху запрещают жечь иранские вышки из - за взлета цен на бензин",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.pravda.ru/world/2339412-trump-stops-israel-iran-gas-attack/"
+    },
+    {
+      "timestamp": "2026-03-19T20:45:00",
+      "source": "mignews.com",
+      "headline": "Нетаниягу : Иран больше не может обогащать уран или производить баллистику | MigNews - Новости Израиля и Мира на русском языке",
+      "category": "war",
+      "sentiment": null,
+      "url": "http://mignews.com/news/politic/netaniyagu-iran-bolshe-ne-mozhet-obogashat-uran-ili-proizvodit-ballistiku.html"
+    },
+    {
+      "timestamp": "2026-03-19T20:00:00",
+      "source": "mignews.com",
+      "headline": "Нетаниягу : Иран больше не может обогащать уран или производить баллистику | MigNews - Новости Израиля и Мира на русском языке",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://mignews.com/news/politic/netaniyagu-iran-bolshe-ne-mozhet-obogashat-uran-ili-proizvodit-ballistiku.html"
+    },
+    {
+      "timestamp": "2026-03-19T01:15:00",
+      "source": "haaretz.com",
+      "headline": "Trump Administration Considers Deploying Thousands More U . S . Troops to Middle East",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.haaretz.com/israel-news/israel-security/2026-03-19/ty-article/trump-administration-considers-deploying-thousands-more-u-s-troops-to-mideast/0000019d-035b-d46f-affd-93dfa3ed0000"
+    },
+    {
+      "timestamp": "2026-03-19T20:00:00",
+      "source": "fontanka.ru",
+      "headline": "Что известно о результатах войны Израиля и США против Ирана - 19 марта 2026",
+      "category": "general",
+      "sentiment": null,
+      "url": "https://www.fontanka.ru/2026/03/19/76320751/"
+    },
+    {
+      "timestamp": "2026-03-19T22:15:00",
+      "source": "mediaite.com",
+      "headline": "Benjamin Netanyahu : Israel Didnt  Drag  Trump Into War",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.mediaite.com/media/news/come-on-netanyahu-shuts-down-claims-he-somehow-dragged-trump-into-war-with-iran/"
+    },
+    {
+      "timestamp": "2026-03-19T20:00:00",
+      "source": "inewsgr.com",
+      "headline": "IDF : « Δεν είμαστε ούτε στα μισά του πολέμου » - Νετανιάχου : « Το Ιράν δεν έχει τη δυνατότητα εμπλουτισμού ουρανίου », live οι εξελίξεις",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.inewsgr.com/184/IDF-den-eimaste-oute-sta-misa-tou-polemou--netaniachou-to-iran-den-echei-ti-dynatotita-ebloutismou-ouraniou-live-oi-exelixeis.htm"
+    },
+    {
+      "timestamp": "2026-03-19T10:45:00",
+      "source": "moneycontrol.com",
+      "headline": "$200 billion just tip of the iceberg : Iran mocks US over war bill , warns of  Israel First Tax",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://www.moneycontrol.com/world/200-billion-just-tip-of-the-iceberg-iran-mocks-us-over-war-bill-warns-of-israel-first-tax-article-13865103.html"
+    },
+    {
+      "timestamp": "2026-03-19T20:45:00",
+      "source": "athens-times.com",
+      "headline": "Netanyahu : Israel Winning , Iran Being Destroyed",
+      "category": "war",
+      "sentiment": null,
+      "url": "https://athens-times.com/netanyahu-israel-is-winning-iran-is-being-destroyed-trump-not-involved-in-ras-laffan-strike/"
+    }
+  ]
+}

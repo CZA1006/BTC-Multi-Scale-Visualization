@@ -97,8 +97,7 @@ export function CorrelationMatrix({
   return (
     <div className="corr-matrix-shell" style={{ width: '100%', boxSizing: 'border-box' }}>
       <div className="corr-matrix-header">
-        <span className="corr-matrix-eyebrow">Cross-asset</span>
-        <h4 className="corr-matrix-title">Correlation · daily returns</h4>
+        <h4 className="corr-matrix-title">Cross-Asset Daily Return Correlation Matrix</h4>
       </div>
 
       {isLoading ? (
@@ -180,6 +179,7 @@ export function CorrelationMatrix({
             width: '82%',
             maxWidth: 360,
             margin: '0 auto',
+            textAlign: 'center',
           }}
         >
           <div style={{ marginBottom: 8 }}>{scopeLabel}</div>

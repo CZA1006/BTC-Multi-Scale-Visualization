@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MacroView } from './views/MacroView.jsx';
 import { MesoView } from './views/MesoView.jsx';
 import { MicroView } from './views/MicroView.jsx';
@@ -28,11 +28,18 @@ const CASE_STUDIES = [
   },
 ];
 
+const QUICK_NAV_ITEMS = [
+  { id: 'view1', label: 'Macro' },
+  { id: 'view2', label: 'Meso' },
+  { id: 'view3', label: 'Micro' },
+];
+
 export default function App() {
   const selectedTimeRange = useAppStore((state) => state.selectedTimeRange);
   const setSelectedTimeRange = useAppStore((state) => state.setSelectedTimeRange);
   const setSelectedDate = useAppStore((state) => state.setSelectedDate);
   const setSelectedCluster = useAppStore((state) => state.setSelectedCluster);
+  const [activeViewId, setActiveViewId] = useState('view1');
 
   function applyCaseStudy(study) {
     setSelectedTimeRange(study.range);
@@ -45,6 +52,36 @@ export default function App() {
     if (!target) return;
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+
+  useEffect(() => {
+    const targets = QUICK_NAV_ITEMS.map((item) => document.getElementById(item.id)).filter(Boolean);
+    if (targets.length === 0) return undefined;
+
+    function updateActiveViewByViewport() {
+      const viewportAnchor = window.innerHeight * 0.45;
+      const closest = targets.reduce(
+        (best, element) => {
+          const rect = element.getBoundingClientRect();
+          const sectionAnchor = rect.top + rect.height / 2;
+          const distance = Math.abs(sectionAnchor - viewportAnchor);
+          if (distance < best.distance) {
+            return { id: element.id, distance };
+          }
+          return best;
+        },
+        { id: targets[0].id, distance: Number.POSITIVE_INFINITY },
+      );
+      setActiveViewId(closest.id);
+    }
+
+    updateActiveViewByViewport();
+    window.addEventListener('scroll', updateActiveViewByViewport, { passive: true });
+    window.addEventListener('resize', updateActiveViewByViewport);
+    return () => {
+      window.removeEventListener('scroll', updateActiveViewByViewport);
+      window.removeEventListener('resize', updateActiveViewByViewport);
+    };
+  }, []);
 
   return (
     <main className="app-shell">
@@ -109,27 +146,26 @@ export default function App() {
       </section>
 
       <aside className="quick-nav" aria-label="Quick view navigation">
-        <button
-          type="button"
-          className="quick-nav-button"
-          onClick={() => scrollToView('view1')}
-        >
-          Macro
-        </button>
-        <button
-          type="button"
-          className="quick-nav-button"
-          onClick={() => scrollToView('view2')}
-        >
-          Meso
-        </button>
-        <button
-          type="button"
-          className="quick-nav-button"
-          onClick={() => scrollToView('view3')}
-        >
-          Micro
-        </button>
+        <span className="quick-nav-title" aria-hidden="true">
+          Navigate
+        </span>
+        {QUICK_NAV_ITEMS.map((item, index) => {
+          const isActive = activeViewId === item.id;
+          return (
+            <button
+              key={item.id}
+              type="button"
+              className={isActive ? 'quick-nav-button quick-nav-button-active' : 'quick-nav-button'}
+              onClick={() => scrollToView(item.id)}
+              aria-label={`Jump to ${item.label} view`}
+            >
+              <span className="quick-nav-dot" aria-hidden="true">
+                {index + 1}
+              </span>
+              <span className="quick-nav-label">{item.label}</span>
+            </button>
+          );
+        })}
       </aside>
     </main>
   );

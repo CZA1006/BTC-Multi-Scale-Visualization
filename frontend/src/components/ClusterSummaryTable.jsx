@@ -97,6 +97,12 @@ export function ClusterSummaryTable({
         const vol = values.rolling_volatility_30d ?? null;
         const dd = values.drawdown_from_30d_high ?? null;
         const color = clusterColorScale(String(clusterId));
+        const sparkColor =
+          ret == null
+            ? 'var(--text-1)'
+            : ret >= 0
+              ? 'var(--pos-soft)'
+              : 'var(--neg-soft)';
         return (
           <button
             key={clusterId}
@@ -132,7 +138,7 @@ export function ClusterSummaryTable({
               {fmtPct(dd, 1)}
             </span>
             <span className="cluster-summary-spark-cell">
-              <MiniSpark values={equity} color={color} />
+              <MiniSpark values={equity} color={sparkColor} />
             </span>
           </button>
         );

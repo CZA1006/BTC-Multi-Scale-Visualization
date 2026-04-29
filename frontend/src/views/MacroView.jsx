@@ -194,7 +194,7 @@ export function MacroView() {
   const selectedDateLabel = selectedDate ?? 'No date selected yet';
 
   const chartWidth = 960;
-  const chartHeight = 280;
+  const chartHeight = 260;
   const chartMargin = { top: 18, right: 22, bottom: 36, left: 56 };
   const hasTimelineData = timelineRows.length > 1;
 
@@ -256,8 +256,12 @@ export function MacroView() {
       Number.isFinite(value) ? value * Math.sqrt(365) : value,
     );
     return {
-      return7d: timelineRows.map((row, i) => ({ parsedDate: row.parsedDate, value: ret7d[i] })),
-      vol30dAnnualized: timelineRows.map((row, i) => ({ parsedDate: row.parsedDate, value: vol30d[i] })),
+      return7d: timelineRows.map((row, i) => ({ date: row.date, parsedDate: row.parsedDate, value: ret7d[i] })),
+      vol30dAnnualized: timelineRows.map((row, i) => ({
+        date: row.date,
+        parsedDate: row.parsedDate,
+        value: vol30d[i],
+      })),
     };
   })();
 
@@ -333,10 +337,14 @@ export function MacroView() {
   );
 
   function returnBandColor(value) {
-    if (value <= -0.08) return '#d70040';
-    if (value <= -0.02) return '#f39c3d';
-    if (value < 0.02) return '#fff3a3';
-    if (value < 0.08) return '#97d35f';
+    const lowerExtreme = -returnLimit;
+    const lowerMid = -returnLimit / 2;
+    const upperMid = returnLimit / 2;
+    const upperExtreme = returnLimit;
+    if (value <= lowerExtreme) return '#d70040';
+    if (value <= lowerMid) return '#f39c3d';
+    if (value < upperMid) return '#fff3a3';
+    if (value < upperExtreme) return '#97d35f';
     return '#1fbf76';
   }
 
@@ -347,13 +355,42 @@ export function MacroView() {
     return '#1f5fb5';
   }
 
-  const returnLegendItems = [
-    { label: '<= -8%', color: '#d70040' },
-    { label: '-8% to -2%', color: '#f39c3d' },
-    { label: '-2% to +2%', color: '#fff3a3' },
-    { label: '+2% to +8%', color: '#97d35f' },
-    { label: '>= +8%', color: '#1fbf76' },
-  ];
+  const returnLegendBins = (() => {
+    const lowerExtreme = -returnLimit;
+    const lowerMid = -returnLimit / 2;
+    const upperMid = returnLimit / 2;
+    const upperExtreme = returnLimit;
+    return [
+      {
+        label: `≤ ${formatSignedPercent(lowerExtreme)}`,
+        color: '#d70040',
+        matches: (value) => value <= lowerExtreme,
+      },
+      {
+        label: `${formatSignedPercent(lowerExtreme)} to ${formatSignedPercent(lowerMid)}`,
+        color: '#f39c3d',
+        matches: (value) => value > lowerExtreme && value <= lowerMid,
+      },
+      {
+        label: `${formatSignedPercent(lowerMid)} to ${formatSignedPercent(upperMid)}`,
+        color: '#fff3a3',
+        matches: (value) => value > lowerMid && value < upperMid,
+      },
+      {
+        label: `${formatSignedPercent(upperMid)} to ${formatSignedPercent(upperExtreme)}`,
+        color: '#97d35f',
+        matches: (value) => value >= upperMid && value < upperExtreme,
+      },
+      {
+        label: `≥ ${formatSignedPercent(upperExtreme)}`,
+        color: '#1fbf76',
+        matches: (value) => value >= upperExtreme,
+      },
+    ];
+  })();
+  const returnLegendItems = returnLegendBins
+    .filter((bin) => returnRows.some((row) => Number.isFinite(row.value) && bin.matches(row.value)))
+    .map((bin) => ({ label: bin.label, color: bin.color }));
 
   const volatilityLegendItems = [
     { label: '< 40%', color: '#8eb8df' },
@@ -383,6 +420,13 @@ export function MacroView() {
   const rightLegendEdge = chartWidth - shortTermRight - 4;
   const returnLegendLayout = buildInlineLegendLayout(returnLegendItems, rightLegendEdge);
   const volatilityLegendLayout = buildInlineLegendLayout(volatilityLegendItems, rightLegendEdge);
+  const selectedShortTermRow = selectedDate
+    ? timelineRows.find((row) => row.date === selectedDate)
+    : null;
+  const selectedShortTermX =
+    selectedShortTermRow && shortTermXScale
+      ? shortTermXScale(selectedShortTermRow.parsedDate)
+      : null;
 
   function setRangeStart(nextStart) {
     const start = nextStart || FULL_RANGE.start;
@@ -511,6 +555,203 @@ export function MacroView() {
     return 'heatmap-cell-event heatmap-cell-event-medium';
   }
 
+  const shortTermSection = hasTimelineData ? (
+    <section className="placeholder-section">
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 12,
+          marginBottom: 10,
+        }}
+      >
+        <h3 className="placeholder-title" style={{ margin: 0 }}>
+          Short-Term Return &amp; Volatility
+        </h3>
+        <span className="chart-range-pill">{timeRangeLabel}</span>
+      </div>
+      <div className="chart-shell short-term-shell">
+        <p className="short-term-subtitle">
+          7D rolling return and 30D annualized volatility in the selected window
+        </p>
+        <svg
+          viewBox={`0 0 ${chartWidth} ${shortTermHeight}`}
+          className="timeline-chart"
+          role="img"
+          aria-label="Short-term return and volatility chart"
+        >
+          {returnTickValues.map((tick) => (
+            <g key={`short-return-grid-${tick}`}>
+              <line
+                x1={shortTermLeft}
+                x2={chartWidth - shortTermRight}
+                y1={returnYScale(tick)}
+                y2={returnYScale(tick)}
+                className="chart-gridline"
+              />
+              <text
+                x={shortTermLeft - 10}
+                y={returnYScale(tick)}
+                textAnchor="end"
+                dominantBaseline="middle"
+                className="chart-axis-label"
+              >
+                {tick === 0 ? '0' : formatSignedPercent(tick)}
+              </text>
+            </g>
+          ))}
+
+          <text x={shortTermLeft} y={returnPanelTop - 10} className="short-term-panel-title">
+            7D Rolling Return (%)
+          </text>
+
+          {returnLegendLayout.map((item) => (
+            <g
+              key={`short-return-legend-${item.label}`}
+              transform={`translate(${item.x}, ${returnPanelTop - 10})`}
+              className="short-term-inline-legend"
+            >
+              <rect
+                x={0}
+                y={-9}
+                width={10}
+                height={10}
+                rx={2}
+                fill={item.color}
+                stroke="rgba(255,255,255,0.25)"
+              />
+              <text x={16} y={0} className="short-term-inline-legend-label">
+                {item.label}
+              </text>
+            </g>
+          ))}
+
+          {returnRows.map((row) => {
+            const clamped = Math.max(-returnLimit, Math.min(returnLimit, row.value));
+            const zeroY = returnYScale(0);
+            const valueY = returnYScale(clamped);
+            const isSelectedDay = selectedDate && row.date === selectedDate;
+            return (
+              <rect
+                key={`return-bar-${row.parsedDate.toISOString()}`}
+                x={shortTermXScale(row.parsedDate) - returnBarWidth / 2}
+                y={Math.min(zeroY, valueY)}
+                width={returnBarWidth}
+                height={Math.max(1, Math.abs(zeroY - valueY))}
+                fill={returnBandColor(clamped)}
+                opacity={isSelectedDay ? 1 : 0.9}
+                stroke={isSelectedDay ? 'var(--accent-highlight)' : 'none'}
+                strokeWidth={isSelectedDay ? 1.2 : 0}
+              />
+            );
+          })}
+
+          <line
+            x1={shortTermLeft}
+            x2={chartWidth - shortTermRight}
+            y1={returnYScale(0)}
+            y2={returnYScale(0)}
+            className="short-term-zero-line"
+          />
+
+          {volatilityTickValues.map((tick) => (
+            <g key={`short-vol-grid-${tick}`}>
+              <line
+                x1={shortTermLeft}
+                x2={chartWidth - shortTermRight}
+                y1={volatilityYScale(tick)}
+                y2={volatilityYScale(tick)}
+                className="chart-gridline"
+              />
+              <text
+                x={shortTermLeft - 10}
+                y={volatilityYScale(tick)}
+                textAnchor="end"
+                dominantBaseline="middle"
+                className="chart-axis-label"
+              >
+                {`${Math.round(tick * 100)}%`}
+              </text>
+            </g>
+          ))}
+
+          <text
+            x={shortTermLeft}
+            y={volatilityPanelTop - 10}
+            className="short-term-panel-title"
+          >
+            30D Annualized Volatility (%)
+          </text>
+
+          {volatilityLegendLayout.map((item) => (
+            <g
+              key={`short-vol-legend-${item.label}`}
+              transform={`translate(${item.x}, ${volatilityPanelTop - 10})`}
+              className="short-term-inline-legend"
+            >
+              <rect
+                x={0}
+                y={-9}
+                width={10}
+                height={10}
+                rx={2}
+                fill={item.color}
+                stroke="rgba(255,255,255,0.25)"
+              />
+              <text x={16} y={0} className="short-term-inline-legend-label">
+                {item.label}
+              </text>
+            </g>
+          ))}
+
+          {volatilityRows.map((row) => (
+            <rect
+              key={`vol-bar-${row.parsedDate.toISOString()}`}
+              x={shortTermXScale(row.parsedDate) - volatilityBarWidth / 2}
+              y={volatilityYScale(row.value)}
+              width={volatilityBarWidth}
+              height={volatilityPanelTop + volatilityPanelHeight - volatilityYScale(row.value)}
+              fill={volatilityBandColor(row.value)}
+              opacity={selectedDate && row.date === selectedDate ? 1 : 0.82}
+              stroke={selectedDate && row.date === selectedDate ? 'var(--accent-highlight)' : 'none'}
+              strokeWidth={selectedDate && row.date === selectedDate ? 1.2 : 0}
+            />
+          ))}
+
+          {selectedShortTermX !== null ? (
+            <line
+              x1={selectedShortTermX}
+              x2={selectedShortTermX}
+              y1={returnPanelTop - 2}
+              y2={volatilityPanelTop + volatilityPanelHeight}
+              stroke="var(--accent-highlight)"
+              strokeWidth={1.2}
+              strokeDasharray="4 3"
+              opacity={0.9}
+            />
+          ) : null}
+
+          {volatilityAreaPath ? (
+            <path d={volatilityAreaPath} className="short-term-volatility-line" />
+          ) : null}
+
+          {xTicks.map((tick) => (
+            <text
+              key={`short-term-tick-${tick.toISOString()}`}
+              x={shortTermXScale(tick)}
+              y={shortTermHeight - 10}
+              textAnchor="middle"
+              className="chart-axis-label"
+            >
+              {xTickFormatter(tick)}
+            </text>
+          ))}
+        </svg>
+      </div>
+    </section>
+  ) : null;
+
   return (
     <section className="view-card">
       <header className="view-header">
@@ -552,176 +793,19 @@ export function MacroView() {
         </div>
       </header>
 
-      {hasTimelineData ? (
-        <section className="placeholder-section">
-          <h3 className="placeholder-title">Short-Term Return &amp; Volatility</h3>
-          <div className="chart-shell short-term-shell">
-            <p className="short-term-subtitle">
-              7D rolling return and 30D annualized volatility in the selected window
-            </p>
-            <svg
-              viewBox={`0 0 ${chartWidth} ${shortTermHeight}`}
-              className="timeline-chart"
-              role="img"
-              aria-label="Short-term return and volatility chart"
-            >
-              {returnTickValues.map((tick) => (
-                <g key={`short-return-grid-${tick}`}>
-                  <line
-                    x1={shortTermLeft}
-                    x2={chartWidth - shortTermRight}
-                    y1={returnYScale(tick)}
-                    y2={returnYScale(tick)}
-                    className="chart-gridline"
-                  />
-                  <text
-                    x={shortTermLeft - 10}
-                    y={returnYScale(tick)}
-                    textAnchor="end"
-                    dominantBaseline="middle"
-                    className="chart-axis-label"
-                  >
-                    {tick === 0 ? '0' : formatSignedPercent(tick)}
-                  </text>
-                </g>
-              ))}
-
-              <text x={shortTermLeft} y={returnPanelTop - 10} className="short-term-panel-title">
-                7D Rolling Return (%)
-              </text>
-
-              {returnLegendLayout.map((item) => (
-                <g
-                  key={`short-return-legend-${item.label}`}
-                  transform={`translate(${item.x}, ${returnPanelTop - 10})`}
-                  className="short-term-inline-legend"
-                >
-                  <rect
-                    x={0}
-                    y={-9}
-                    width={10}
-                    height={10}
-                    rx={2}
-                    fill={item.color}
-                    stroke="rgba(255,255,255,0.25)"
-                  />
-                  <text x={16} y={0} className="short-term-inline-legend-label">
-                    {item.label}
-                  </text>
-                </g>
-              ))}
-
-              {returnRows.map((row) => {
-                const clamped = Math.max(-returnLimit, Math.min(returnLimit, row.value));
-                const zeroY = returnYScale(0);
-                const valueY = returnYScale(clamped);
-                return (
-                  <rect
-                    key={`return-bar-${row.parsedDate.toISOString()}`}
-                    x={shortTermXScale(row.parsedDate) - returnBarWidth / 2}
-                    y={Math.min(zeroY, valueY)}
-                    width={returnBarWidth}
-                    height={Math.max(1, Math.abs(zeroY - valueY))}
-                    fill={returnBandColor(clamped)}
-                    opacity={0.95}
-                  />
-                );
-              })}
-
-              <line
-                x1={shortTermLeft}
-                x2={chartWidth - shortTermRight}
-                y1={returnYScale(0)}
-                y2={returnYScale(0)}
-                className="short-term-zero-line"
-              />
-
-              {volatilityTickValues.map((tick) => (
-                <g key={`short-vol-grid-${tick}`}>
-                  <line
-                    x1={shortTermLeft}
-                    x2={chartWidth - shortTermRight}
-                    y1={volatilityYScale(tick)}
-                    y2={volatilityYScale(tick)}
-                    className="chart-gridline"
-                  />
-                  <text
-                    x={shortTermLeft - 10}
-                    y={volatilityYScale(tick)}
-                    textAnchor="end"
-                    dominantBaseline="middle"
-                    className="chart-axis-label"
-                  >
-                    {`${Math.round(tick * 100)}%`}
-                  </text>
-                </g>
-              ))}
-
-              <text
-                x={shortTermLeft}
-                y={volatilityPanelTop - 10}
-                className="short-term-panel-title"
-              >
-                30D Annualized Volatility (%)
-              </text>
-
-              {volatilityLegendLayout.map((item) => (
-                <g
-                  key={`short-vol-legend-${item.label}`}
-                  transform={`translate(${item.x}, ${volatilityPanelTop - 10})`}
-                  className="short-term-inline-legend"
-                >
-                  <rect
-                    x={0}
-                    y={-9}
-                    width={10}
-                    height={10}
-                    rx={2}
-                    fill={item.color}
-                    stroke="rgba(255,255,255,0.25)"
-                  />
-                  <text x={16} y={0} className="short-term-inline-legend-label">
-                    {item.label}
-                  </text>
-                </g>
-              ))}
-
-              {volatilityRows.map((row) => (
-                <rect
-                  key={`vol-bar-${row.parsedDate.toISOString()}`}
-                  x={shortTermXScale(row.parsedDate) - volatilityBarWidth / 2}
-                  y={volatilityYScale(row.value)}
-                  width={volatilityBarWidth}
-                  height={volatilityPanelTop + volatilityPanelHeight - volatilityYScale(row.value)}
-                  fill={volatilityBandColor(row.value)}
-                  opacity={0.85}
-                />
-              ))}
-
-              {volatilityAreaPath ? (
-                <path d={volatilityAreaPath} className="short-term-volatility-line" />
-              ) : null}
-
-              {xTicks.map((tick) => (
-                <text
-                  key={`short-term-tick-${tick.toISOString()}`}
-                  x={shortTermXScale(tick)}
-                  y={shortTermHeight - 10}
-                  textAnchor="middle"
-                  className="chart-axis-label"
-                >
-                  {xTickFormatter(tick)}
-                </text>
-              ))}
-            </svg>
-          </div>
-        </section>
-      ) : null}
-
       <section className="placeholder-section">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
-          <h3 className="placeholder-title" style={{ margin: 0 }}>BTC Price Trend in Selected Window</h3>
-          <span className="chart-range-pill">{timeRangeLabel}</span>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: 12,
+            marginBottom: 10,
+          }}
+        >
+          <h3 className="placeholder-title" style={{ margin: 0 }}>
+            BTC Price Trend in Selected Window
+          </h3>
         </div>
         {isLoading ? (
           <div className="placeholder-box">
@@ -869,7 +953,6 @@ export function MacroView() {
             </svg>
 
               <div className="chart-caption-row">
-              <p className="chart-caption">Rendered points: {timelineRows.length}</p>
               <p className="chart-caption">Drag on the timeline to brush a narrower range</p>
             </div>
           </div>
@@ -882,8 +965,18 @@ export function MacroView() {
         )}
       </section>
 
+      {shortTermSection}
+
       <section className="placeholder-section">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: 12,
+            marginBottom: 10,
+          }}
+        >
           <h3 className="placeholder-title" style={{ margin: 0 }}>Calendar Heatmap</h3>
           <span className="chart-range-pill">{selectedDateLabel}</span>
         </div>
@@ -896,7 +989,7 @@ export function MacroView() {
             <div className="heatmap-legend">
               <span className="heatmap-legend-title">Daily return</span>
               <span className="heatmap-legend-item">
-                −5%
+                ≤ −5%
                 <span className="heatmap-legend-ramp" aria-hidden="true">
                   <span style={{ background: '#a50026' }} />
                   <span style={{ background: '#d73027' }} />
@@ -906,7 +999,7 @@ export function MacroView() {
                   <span style={{ background: '#66bd63' }} />
                   <span style={{ background: '#1a9850' }} />
                 </span>
-                +5%
+                ≥ +5%
               </span>
             </div>
             <div className="heatmap-month-grid">

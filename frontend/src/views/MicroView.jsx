@@ -734,27 +734,6 @@ export function MicroView() {
     return null;
   }
 
-  function getTopTheme() {
-    const summary = dayDetail.gdelt_selected_day ?? {};
-    const themes = [
-      ['War', summary.theme_count_war ?? 0],
-      ['Election', summary.theme_count_election ?? 0],
-      ['COVID', summary.theme_count_covid ?? 0],
-      ['Regulation', summary.theme_count_regulation ?? 0],
-      ['Macro', summary.theme_count_macro ?? 0],
-      ['Crypto', summary.theme_count_crypto ?? 0],
-    ]
-      .map(([name, count]) => [name, Number(count)])
-      .filter(([, count]) => !Number.isNaN(count) && count > 0)
-      .sort((a, b) => b[1] - a[1]);
-
-    if (themes.length > 0) {
-      return themes[0][0];
-    }
-
-    return summary.bucket_label ?? 'N/A';
-  }
-
   function parsePolymarketDate(row) {
     if (Array.isArray(row)) {
       const arrayDate = row[0] ?? row.date;
@@ -1020,14 +999,6 @@ export function MicroView() {
     .filter(([, count]) => !Number.isNaN(count) && count > 0)
     .sort((left, right) => right[1] - left[1]);
 
-  const topThemeLabel =
-    headlineThemeCounts.length > 0
-      ? headlineThemeCounts
-          .slice(0, 4)
-          .map(([name, count]) => `${name} (${count})`)
-          .join(' · ')
-      : gdeltSummary.bucket_label ?? 'N/A';
-
   const visibleHeadlines = showAllHeadlines ? eventRows : eventRows.slice(0, 3);
   const hiddenHeadlineCount = Math.max(0, eventRows.length - visibleHeadlines.length);
 
@@ -1059,13 +1030,11 @@ export function MicroView() {
   const selectedDaySummaryRows = selectedDate
     ? [
         ['Date', selectedDate],
-        ['Close', formatCurrencyWithSymbol(dayDetail.btc_detail?.close)],
+        ['Close Price', formatCurrencyWithSymbol(dayDetail.btc_detail?.close)],
         ['Daily Return', formatPercent(dayDetail.btc_detail?.daily_return)],
         ['Intraday Range', formatPercent(getIntradayRange())],
         ['7D Volatility', formatPercent(getFallbackSevenDayVolatility())],
         ['Meso Regime', inferredClusterLabel],
-        ['News Count', gdeltSummary.news_count ?? 0],
-        ['Main Theme', getTopTheme()],
       ]
     : [];
 
@@ -1075,27 +1044,116 @@ export function MicroView() {
   const btcVolumeValue = getNumberFromDetail('volume', 'trading_volume');
   const volumeZScoreValue = getNumberFromDetail('volume_zscore', 'volume_z', 'volume_z_score');
 
+  function getParticipationLevel(label, fallbackZScore) {
+    const normalized = String(label ?? '').toLowerCase();
+    if (normalized.includes('very heavy')) return { position: 0.9, color: '#60a5fa' };
+    if (normalized.includes('above-normal')) return { position: 0.72, color: '#5f9fd8' };
+    if (normalized.includes('normal')) return { position: 0.5, color: '#7dd3fc' };
+    if (normalized.includes('below-normal')) return { position: 0.28, color: '#93c5fd' };
+    if (normalized.includes('thin')) return { position: 0.12, color: '#bfdbfe' };
+    if (fallbackZScore === null || fallbackZScore === undefined) return { position: 0.5, color: '#7dd3fc' };
+    const normalizedZ = (fallbackZScore + 2) / 4;
+    return {
+      position: Math.max(0.08, Math.min(0.92, normalizedZ)),
+      color: fallbackZScore >= 0 ? '#5f9fd8' : '#93c5fd',
+    };
+  }
+
+  function getVolatilityLevel(label, volatilityValue) {
+    const normalized = String(label ?? '').toLowerCase();
+    if (normalized.includes('high-volatility')) return { position: 0.88, color: '#f39c3d' };
+    if (normalized.includes('elevated-volatility')) return { position: 0.66, color: '#fbbf24' };
+    if (normalized.includes('contained-volatility')) return { position: 0.32, color: '#34d399' };
+    if (volatilityValue === null || volatilityValue === undefined) return { position: 0.5, color: '#94a3b8' };
+    if (volatilityValue >= 0.035) return { position: 0.84, color: '#f39c3d' };
+    if (volatilityValue >= 0.02) return { position: 0.6, color: '#fbbf24' };
+    return { position: 0.32, color: '#34d399' };
+  }
+
+  const volatilityLevel = getVolatilityLevel(marketState.volatility_label, sevenDayVolatilityValue);
+  const participationLevel = getParticipationLevel(marketState.volume_label, volumeZScoreValue);
+  function getContinuousVolatilityPosition(value) {
+    if (!Number.isFinite(value)) return volatilityLevel.position;
+    // Map 0.5%~6.0% into [0.08, 0.92] to preserve edge padding.
+    const minVol = 0.005;
+    const maxVol = 0.06;
+    const normalized = (value - minVol) / (maxVol - minVol);
+    return Math.max(0.08, Math.min(0.92, normalized * 0.84 + 0.08));
+  }
+
+  function getParticipationBand(label) {
+    const normalized = String(label ?? '').toLowerCase();
+    if (normalized.includes('very heavy')) return [0.78, 0.92];
+    if (normalized.includes('above-normal')) return [0.6, 0.78];
+    if (normalized.includes('normal')) return [0.44, 0.56];
+    if (normalized.includes('below-normal')) return [0.22, 0.4];
+    if (normalized.includes('thin')) return [0.08, 0.24];
+    return [0.08, 0.92];
+  }
+
+  function getContinuousParticipationPosition(volume, fallbackPosition, label) {
+    const [bandMin, bandMax] = getParticipationBand(label);
+    const bandSpan = Math.max(0.001, bandMax - bandMin);
+
+    if (!Number.isFinite(volume) || volume <= 0) return fallbackPosition;
+
+    // Global fixed log-scale mapping to keep cross-day positions comparable.
+    // This guarantees monotonic ordering (e.g., 24B is always right of 18B).
+    const minLog = Math.log10(1_000_000_000);
+    const maxLog = Math.log10(200_000_000_000);
+    const normalized = (Math.log10(volume) - minLog) / (maxLog - minLog);
+    const projected = bandMin + normalized * bandSpan;
+    return Math.max(0.08, Math.min(0.92, projected));
+  }
+
   const contextMetricCards = [
     {
       label: 'Move state',
       value: marketState.move_label ?? 'Unavailable',
-      evidence: `Daily return ${formatSignedPercent(dailyReturnValue)} · Intraday range ${formatPercent(
-        intradayRangeValue,
-      )}`,
+      evidence: null,
+      visualType: 'arrow',
+      visualLabel: 'Daily return',
+      visualValue: formatSignedPercent(dailyReturnValue),
+      visualColor:
+        dailyReturnValue === null || dailyReturnValue === undefined
+          ? 'var(--text-muted)'
+          : dailyReturnValue >= 0
+            ? '#2ca66a'
+            : '#ff5c5c',
+      visualArrow:
+        dailyReturnValue === null || dailyReturnValue === undefined
+          ? '•'
+          : dailyReturnValue >= 0
+            ? '▲'
+            : '▼',
     },
     {
       label: 'Volatility',
       value: marketState.volatility_label ?? 'Unavailable',
-      evidence: `7D volatility ${formatPercent(sevenDayVolatilityValue)} · Intraday range ${formatPercent(
-        intradayRangeValue,
-      )}`,
+      evidence: null,
+      visualType: 'level',
+      visualLabel: '7D volatility',
+      visualValue: formatPercent(sevenDayVolatilityValue),
+      visualColor: volatilityLevel.color,
+      levelPosition: getContinuousVolatilityPosition(sevenDayVolatilityValue),
+      levelGradient:
+        'linear-gradient(90deg, rgba(52,211,153,0.55) 0%, rgba(251,191,36,0.55) 55%, rgba(243,156,61,0.55) 100%)',
     },
     {
       label: 'Participation',
       value: marketState.volume_label ?? 'Unavailable',
-      evidence: `BTC volume ${formatVolumeSupport(btcVolumeValue)}${
-        volumeZScoreValue === null ? '' : ` · Volume Z ${volumeZScoreValue.toFixed(2)}`
-      }`,
+      evidence: null,
+      visualType: 'level',
+      visualLabel: 'BTC volume',
+      visualValue: formatVolumeSupport(btcVolumeValue),
+      levelPosition: getContinuousParticipationPosition(
+        btcVolumeValue,
+        participationLevel.position,
+        marketState.volume_label,
+      ),
+      visualColor: participationLevel.color,
+      levelGradient:
+        'linear-gradient(90deg, rgba(147,197,253,0.45) 0%, rgba(96,165,250,0.55) 55%, rgba(59,130,246,0.65) 100%)',
     },
   ];
 
@@ -1118,28 +1176,30 @@ export function MicroView() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, minmax(220px, 1fr))',
-              gap: '10px 22px',
-              marginTop: 12,
+              gridTemplateColumns: 'repeat(6, minmax(0, 1fr))',
+              gap: 8,
+              marginTop: 8,
             }}
           >
             {selectedDaySummaryRows.map(([label, value]) => (
               <div
                 key={label}
                 style={{
-                  display: 'grid',
-                  gridTemplateColumns: '120px minmax(0, 1fr)',
-                  gap: 12,
-                  alignItems: 'baseline',
+                  padding: '8px 10px',
+                  border: '1px solid var(--border)',
+                  borderRadius: 10,
+                  background: 'linear-gradient(180deg, rgba(20, 29, 46, 0.96), rgba(12, 18, 30, 0.92))',
                 }}
               >
-                <span className="state-label" style={{ margin: 0 }}>
+                <span className="state-label" style={{ margin: 0, fontSize: '0.72rem' }}>
                   {label}
                 </span>
                 <strong
                   style={{
-                    color: label === 'Date' ? 'var(--accent-btc)' : 'var(--text-main)',
-                    fontSize: label === 'Date' ? '1.15rem' : '0.95rem',
+                    display: 'block',
+                    marginTop: 3,
+                    color: 'var(--text-0)',
+                    fontSize: '0.94rem',
                     fontWeight: 700,
                   }}
                 >
@@ -1233,7 +1293,7 @@ export function MicroView() {
               className="micro-dual-grid-chart"
               role="img"
               aria-label="BTC price, trading volume, and news volume chart"
-              style={{ minHeight: 540 }}
+              style={{ minHeight: 500 }}
             />
           </div>
         ) : (
@@ -1292,9 +1352,104 @@ export function MicroView() {
                 >
                   <span className="context-chip-label">{card.label}</span>
                   <strong style={{ fontSize: '1rem', lineHeight: 1.25 }}>{card.value}</strong>
-                  <span className="state-label" style={{ margin: 0, fontSize: '0.78rem' }}>
-                    {card.evidence}
-                  </span>
+                  {card.visualType === 'level' ? (
+                    <p
+                      className="state-label"
+                      style={{
+                        margin: 0,
+                        fontSize: '0.8rem',
+                        display: 'grid',
+                        gap: 6,
+                      }}
+                    >
+                      <span>
+                        {card.visualLabel}{' '}
+                        <strong
+                          style={{
+                            color: card.visualColor,
+                            fontSize: '0.9rem',
+                            fontWeight: 700,
+                            letterSpacing: '0.01em',
+                          }}
+                        >
+                          {card.visualValue}
+                        </strong>
+                      </span>
+                      <span
+                        style={{
+                          position: 'relative',
+                          height: 7,
+                          borderRadius: 999,
+                          background: card.levelGradient ?? 'rgba(148, 163, 184, 0.16)',
+                          border: '1px solid rgba(148, 163, 184, 0.32)',
+                        }}
+                      >
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            position: 'absolute',
+                            left: '33%',
+                            top: 1,
+                            width: 1,
+                            height: 5,
+                            background: 'rgba(148, 163, 184, 0.38)',
+                          }}
+                        />
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            position: 'absolute',
+                            left: '66%',
+                            top: 1,
+                            width: 1,
+                            height: 5,
+                            background: 'rgba(148, 163, 184, 0.38)',
+                          }}
+                        />
+                        <span
+                          style={{
+                            position: 'absolute',
+                            left: `${Math.round((card.levelPosition ?? 0.5) * 100)}%`,
+                            top: '50%',
+                            width: 9,
+                            height: 9,
+                            borderRadius: 999,
+                            background: card.visualColor,
+                            border: '1px solid rgba(226, 232, 240, 0.9)',
+                            transform: 'translate(-50%, -50%)',
+                            boxShadow: '0 0 0 2px rgba(15, 23, 42, 0.55)',
+                          }}
+                        />
+                      </span>
+                    </p>
+                  ) : card.visualLabel ? (
+                    <p
+                      className="state-label"
+                      style={{
+                        margin: 0,
+                        fontSize: '0.82rem',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: 6,
+                      }}
+                    >
+                      <span>{card.visualLabel}</span>
+                      <strong
+                        style={{
+                          color: card.visualColor,
+                          fontSize: '0.92rem',
+                          fontWeight: 700,
+                          letterSpacing: '0.01em',
+                        }}
+                      >
+                        {card.visualType === 'arrow' ? `${card.visualArrow} ${card.visualValue}` : card.visualValue}
+                      </strong>
+                    </p>
+                  ) : (
+                    <span className="state-label" style={{ margin: 0, fontSize: '0.78rem' }}>
+                      {card.evidence}
+                    </span>
+                  )}
                 </div>
               ))}
             </div>

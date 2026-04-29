@@ -161,7 +161,7 @@ export function MesoView() {
     : 'No time range selected';
 
   const chartWidth = 920;
-  const chartHeight = 300;
+  const chartHeight = 280;
   const chartMargin = { top: 20, right: 22, bottom: 36, left: 40 };
   const hasEmbeddingData = visibleEmbeddingRows.length > 0;
 
@@ -411,7 +411,7 @@ export function MesoView() {
             alignItems: 'flex-start',
             justifyContent: 'space-between',
             gap: 12,
-            marginBottom: 16,
+            marginBottom: 10,
           }}
         >
           <h3 className="placeholder-title" style={{ margin: 0 }}>
@@ -565,7 +565,6 @@ export function MesoView() {
             </svg>
 
             <div className="chart-caption-row">
-              <p className="chart-caption">Rendered points: {visibleEmbeddingRows.length}</p>
               <p className="chart-caption">Click a point to update cluster and selected day</p>
             </div>
           </div>
@@ -648,7 +647,7 @@ export function MesoView() {
           }}
         >
           <h3 className="placeholder-title" style={{ margin: 0 }}>
-            Meso Feature Explanation
+            Cluster Feature Explanation
           </h3>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <span className="chart-range-pill">{timeRangeLabel}</span>

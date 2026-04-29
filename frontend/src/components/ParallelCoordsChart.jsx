@@ -6,7 +6,7 @@ import * as d3 from 'd3';
 // Local interaction state only; no Zustand writes.
 
 const WIDTH = 920;
-const HEIGHT = 320;
+const HEIGHT = 300;
 const MARGIN = { top: 24, right: 54, bottom: 56, left: 54 };
 const MAX_DAILY_ROWS = 600;
 

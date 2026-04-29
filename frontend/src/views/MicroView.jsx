@@ -568,23 +568,6 @@ export function MicroView() {
     return `${percent > 0 ? '+' : ''}${percent.toFixed(2)}%`;
   }
 
-  function getNumberFromDetail(...fieldNames) {
-    for (const fieldName of fieldNames) {
-      const value = Number(dayDetail.btc_detail?.[fieldName]);
-      if (!Number.isNaN(value)) {
-        return value;
-      }
-    }
-    return null;
-  }
-
-  function formatVolumeSupport(value) {
-    if (value === null || value === undefined || Number.isNaN(Number(value))) {
-      return 'N/A';
-    }
-    return formatCompactNumber(value);
-  }
-
   function formatCurrency(value) {
     if (value === null || value === undefined || Number.isNaN(Number(value))) {
       return 'N/A';
@@ -1029,209 +1012,23 @@ export function MicroView() {
 
   const selectedDaySummaryRows = selectedDate
     ? [
-        ['Date', selectedDate],
         ['Close Price', formatCurrencyWithSymbol(dayDetail.btc_detail?.close)],
-        ['Daily Return', formatPercent(dayDetail.btc_detail?.daily_return)],
+        [
+          'Daily Return',
+          `${formatPercent(dayDetail.btc_detail?.daily_return)} · ${marketState.move_label ?? 'Unavailable'}`,
+        ],
         ['Intraday Range', formatPercent(getIntradayRange())],
-        ['7D Volatility', formatPercent(getFallbackSevenDayVolatility())],
+        [
+          '7D Volatility',
+          `${formatPercent(getFallbackSevenDayVolatility())} · ${marketState.volatility_label ?? 'Unavailable'}`,
+        ],
         ['Meso Regime', inferredClusterLabel],
+        [
+          'Participation',
+          `${formatCompactNumber(dayDetail.btc_detail?.volume)} · ${marketState.volume_label ?? 'Unavailable'}`,
+        ],
       ]
     : [];
-
-  const dailyReturnValue = getNumberFromDetail('daily_return', 'return');
-  const intradayRangeValue = getIntradayRange();
-  const sevenDayVolatilityValue = getFallbackSevenDayVolatility();
-  const btcVolumeValue = getNumberFromDetail('volume', 'trading_volume');
-  const volumeZScoreValue = getNumberFromDetail('volume_zscore', 'volume_z', 'volume_z_score');
-
-  function clampLevelPosition(value, min = 0.04, max = 0.96) {
-    return Math.max(min, Math.min(max, value));
-  }
-
-  function getVolatilityLevel(label, volatilityValue) {
-    const normalized = String(label ?? '').toLowerCase();
-
-    if (normalized.includes('high-volatility')) {
-      return { color: '#f39c3d', label: 'High' };
-    }
-    if (normalized.includes('elevated-volatility')) {
-      return { color: '#fbbf24', label: 'Elevated' };
-    }
-    if (normalized.includes('contained-volatility')) {
-      return { color: '#34d399', label: 'Contained' };
-    }
-
-    if (!Number.isFinite(volatilityValue)) {
-      return { color: '#94a3b8', label: 'N/A' };
-    }
-
-    if (volatilityValue >= 0.035) {
-      return { color: '#f39c3d', label: 'High' };
-    }
-    if (volatilityValue >= 0.02) {
-      return { color: '#fbbf24', label: 'Elevated' };
-    }
-    return { color: '#34d399', label: 'Contained' };
-  }
-
-  function getVolatilityPosition(value) {
-    if (!Number.isFinite(value)) return 0.5;
-
-    // 0% to 6% maps to the full bar.
-    // Values above 6% are capped near the right edge.
-    const minVol = 0;
-    const maxVol = 0.06;
-    return clampLevelPosition((value - minVol) / (maxVol - minVol));
-  }
-
-  function getVolumeScalePosition(volume) {
-    if (!Number.isFinite(volume) || volume <= 0) {
-      return 0.5;
-    }
-
-    // Absolute-volume fallback scale: 1B to 200B.
-    // This is used only when volume_zscore is unavailable.
-    const minLog = Math.log10(1_000_000_000);
-    const maxLog = Math.log10(200_000_000_000);
-    return clampLevelPosition((Math.log10(volume) - minLog) / (maxLog - minLog));
-  }
-
-  function getParticipationPosition(zScore, volume) {
-    // Prefer z-score because participation is a relative market activity concept.
-    // -2σ to +2σ maps to the full bar.
-    if (Number.isFinite(zScore)) {
-      return clampLevelPosition((zScore + 2) / 4);
-    }
-
-    return getVolumeScalePosition(volume);
-  }
-
-  function getParticipationLevel(label, zScore, volume) {
-    // When z-score exists, derive the displayed label from the same value that
-    // drives the marker. This prevents a "normal" label with an above-normal marker.
-    if (Number.isFinite(zScore)) {
-      if (zScore >= 1.5) return { color: '#3b82f6', label: 'very heavy participation' };
-      if (zScore >= 0.5) return { color: '#60a5fa', label: 'above-normal participation' };
-      if (zScore > -0.5) return { color: '#7dd3fc', label: 'normal participation' };
-      if (zScore > -1.5) return { color: '#93c5fd', label: 'below-normal participation' };
-      return { color: '#bfdbfe', label: 'thin participation' };
-    }
-
-    // If z-score is unavailable, keep the backend label, but parse it safely.
-    // Important: check "below-normal" before "normal" because the former contains the latter.
-    const normalized = String(label ?? '').toLowerCase();
-    if (normalized.includes('very heavy')) {
-      return { color: '#3b82f6', label: label ?? 'very heavy participation' };
-    }
-    if (normalized.includes('above-normal')) {
-      return { color: '#60a5fa', label: label ?? 'above-normal participation' };
-    }
-    if (normalized.includes('below-normal')) {
-      return { color: '#93c5fd', label: label ?? 'below-normal participation' };
-    }
-    if (normalized.includes('thin')) {
-      return { color: '#bfdbfe', label: label ?? 'thin participation' };
-    }
-    if (normalized.includes('normal')) {
-      return { color: '#7dd3fc', label: label ?? 'normal participation' };
-    }
-
-    // Last fallback: infer a coarse label from absolute BTC volume only.
-    if (Number.isFinite(volume)) {
-      if (volume >= 100_000_000_000) return { color: '#3b82f6', label: 'very heavy participation' };
-      if (volume >= 50_000_000_000) return { color: '#60a5fa', label: 'above-normal participation' };
-      if (volume >= 10_000_000_000) return { color: '#7dd3fc', label: 'normal participation' };
-      if (volume >= 3_000_000_000) return { color: '#93c5fd', label: 'below-normal participation' };
-      return { color: '#bfdbfe', label: 'thin participation' };
-    }
-
-    return { color: '#94a3b8', label: 'Unavailable' };
-  }
-
-  function getParticipationTicks(zScoreAvailable) {
-    if (zScoreAvailable) {
-      return [
-        { position: 0.125, label: '-1.5σ' },
-        { position: 0.375, label: '-0.5σ' },
-        { position: 0.625, label: '+0.5σ' },
-        { position: 0.875, label: '+1.5σ' },
-      ];
-    }
-
-    return [
-      { position: getVolumeScalePosition(1_000_000_000), label: '1B' },
-      { position: getVolumeScalePosition(10_000_000_000), label: '10B' },
-      { position: getVolumeScalePosition(50_000_000_000), label: '50B' },
-      { position: getVolumeScalePosition(100_000_000_000), label: '100B' },
-      { position: getVolumeScalePosition(200_000_000_000), label: '200B' },
-    ];
-  }
-
-  const volatilityLevel = getVolatilityLevel(marketState.volatility_label, sevenDayVolatilityValue);
-  const participationUsesZScore = Number.isFinite(volumeZScoreValue);
-  const participationLevel = getParticipationLevel(marketState.volume_label, volumeZScoreValue, btcVolumeValue);
-
-  const contextMetricCards = [
-    {
-      label: 'Move state',
-      value: marketState.move_label ?? 'Unavailable',
-      evidence: null,
-      visualType: 'arrow',
-      visualLabel: 'Daily return',
-      visualValue: formatSignedPercent(dailyReturnValue),
-      visualColor:
-        dailyReturnValue === null || dailyReturnValue === undefined
-          ? 'var(--text-muted)'
-          : dailyReturnValue >= 0
-            ? '#2ca66a'
-            : '#ff5c5c',
-      visualArrow:
-        dailyReturnValue === null || dailyReturnValue === undefined
-          ? '•'
-          : dailyReturnValue >= 0
-            ? '▲'
-            : '▼',
-    },
-    {
-      label: 'Volatility',
-      value: marketState.volatility_label ?? 'Unavailable',
-      evidence: null,
-      visualType: 'level',
-      visualLabel: '7D volatility',
-      visualValue: formatPercent(sevenDayVolatilityValue),
-      visualColor: volatilityLevel.color,
-      levelPosition: getVolatilityPosition(sevenDayVolatilityValue),
-      levelGradient:
-        'linear-gradient(90deg, rgba(52,211,153,0.55) 0%, rgba(52,211,153,0.55) 33%, rgba(251,191,36,0.58) 33%, rgba(251,191,36,0.58) 58%, rgba(243,156,61,0.62) 58%, rgba(243,156,61,0.62) 100%)',
-      ticks: [
-        { position: 0.33, label: '2%' },
-        { position: 0.58, label: '3.5%' },
-        { position: 1, label: '6%+' },
-      ],
-    },
-    {
-      label: 'Participation',
-      // Use the same logic for the displayed label and the marker position.
-      // If volume_zscore exists, the label is derived from z-score.
-      // If not, the backend label is kept and the axis changes to absolute volume.
-      value: participationLevel.label,
-      evidence: null,
-      visualType: 'level',
-      visualLabel: 'BTC volume',
-      visualValue: `${formatVolumeSupport(btcVolumeValue)}${
-        participationUsesZScore ? ` · z=${volumeZScoreValue.toFixed(2)}` : ''
-      }`,
-      visualColor: participationLevel.color,
-      levelPosition: getParticipationPosition(volumeZScoreValue, btcVolumeValue),
-      levelGradient: participationUsesZScore
-        ? 'linear-gradient(90deg, rgba(191,219,254,0.45) 0%, rgba(191,219,254,0.45) 12.5%, rgba(147,197,253,0.48) 12.5%, rgba(147,197,253,0.48) 37.5%, rgba(125,211,252,0.52) 37.5%, rgba(125,211,252,0.52) 62.5%, rgba(96,165,250,0.58) 62.5%, rgba(96,165,250,0.58) 87.5%, rgba(59,130,246,0.65) 87.5%, rgba(59,130,246,0.65) 100%)'
-        : 'linear-gradient(90deg, rgba(191,219,254,0.42) 0%, rgba(147,197,253,0.48) 42%, rgba(125,211,252,0.52) 66%, rgba(96,165,250,0.58) 82%, rgba(59,130,246,0.65) 100%)',
-      ticks: getParticipationTicks(participationUsesZScore),
-      axisNote: participationUsesZScore
-        ? 'Relative scale: volume z-score versus recent baseline'
-        : 'Absolute volume scale: z-score unavailable',
-    },
-  ];
 
   return (
     <section className="view-card">
@@ -1243,46 +1040,26 @@ export function MicroView() {
       </header>
 
       <div className="summary-box">
-        <p className="summary-title">Selected Day Summary</p>
+        <p className="summary-title">{selectedDate ? `${selectedDate} Summary` : 'Selected Day Summary'}</p>
         {!selectedDate ? (
           <p className="state-label">
             Select a date from Macro or Meso to populate the selected-day detail view.
           </p>
         ) : dayDetail.btc_detail ? (
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(6, minmax(0, 1fr))',
-              gap: 8,
-              marginTop: 8,
-            }}
-          >
-            {selectedDaySummaryRows.map(([label, value]) => (
-              <div
-                key={label}
-                style={{
-                  padding: '8px 10px',
-                  border: '1px solid var(--border)',
-                  borderRadius: 10,
-                  background: 'linear-gradient(180deg, rgba(20, 29, 46, 0.96), rgba(12, 18, 30, 0.92))',
-                }}
-              >
-                <span className="state-label" style={{ margin: 0, fontSize: '0.72rem' }}>
-                  {label}
-                </span>
-                <strong
-                  style={{
-                    display: 'block',
-                    marginTop: 3,
-                    color: 'var(--text-0)',
-                    fontSize: '0.94rem',
-                    fontWeight: 700,
-                  }}
-                >
-                  {value}
-                </strong>
-              </div>
-            ))}
+          <div className="micro-summary-grid">
+            {selectedDaySummaryRows.map(([label, value]) => {
+              const textValue = String(value ?? 'N/A');
+              const [primaryValue, secondaryValue] = textValue.includes(' · ')
+                ? textValue.split(' · ', 2)
+                : [textValue, null];
+              return (
+                <div key={label} className="micro-summary-card">
+                  <span className="micro-summary-label">{label}</span>
+                  <strong className="micro-summary-primary">{primaryValue}</strong>
+                  {secondaryValue ? <span className="micro-summary-secondary">{secondaryValue}</span> : null}
+                </div>
+              );
+            })}
           </div>
         ) : (
           <p className="state-label">Loading selected-day summary...</p>
@@ -1401,176 +1178,6 @@ export function MicroView() {
         </div>
         {selectedDate ? (
           <div className="summary-box">
-            <p className="summary-title">Selected-day context</p>
-
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-                gap: 12,
-                marginTop: 14,
-                marginBottom: 18,
-              }}
-            >
-              {contextMetricCards.map((card) => (
-                <div
-                  key={card.label}
-                  className="context-chip"
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 8,
-                    minHeight: 96,
-                    padding: '16px 18px',
-                    background:
-                      'linear-gradient(180deg, rgba(20, 29, 46, 0.98), rgba(12, 18, 30, 0.96))',
-                  }}
-                >
-                  <span className="context-chip-label">{card.label}</span>
-                  <strong style={{ fontSize: '1rem', lineHeight: 1.25 }}>{card.value}</strong>
-                  {card.visualType === 'level' ? (
-                    <p
-                      className="state-label"
-                      style={{
-                        margin: 0,
-                        fontSize: '0.8rem',
-                        display: 'grid',
-                        gap: 6,
-                      }}
-                    >
-                      <span>
-                        {card.visualLabel}{' '}
-                        <strong
-                          style={{
-                            color: card.visualColor,
-                            fontSize: '0.9rem',
-                            fontWeight: 700,
-                            letterSpacing: '0.01em',
-                          }}
-                        >
-                          {card.visualValue}
-                        </strong>
-                      </span>
-
-                      <span
-                        style={{
-                          display: 'grid',
-                          gap: 6,
-                        }}
-                      >
-                        <span
-                          style={{
-                            position: 'relative',
-                            height: 8,
-                            borderRadius: 999,
-                            background: card.levelGradient ?? 'rgba(148, 163, 184, 0.16)',
-                            border: '1px solid rgba(148, 163, 184, 0.32)',
-                            overflow: 'visible',
-                          }}
-                        >
-                          {(card.ticks ?? []).map((tick) => (
-                            <span
-                              key={`${card.label}-${tick.label}`}
-                              aria-hidden="true"
-                              style={{
-                                position: 'absolute',
-                                left: `${Math.round(tick.position * 100)}%`,
-                                top: 1,
-                                width: 1,
-                                height: 6,
-                                background: 'rgba(226, 232, 240, 0.5)',
-                                transform: 'translateX(-50%)',
-                              }}
-                            />
-                          ))}
-
-                          <span
-                            style={{
-                              position: 'absolute',
-                              left: `${Math.round((card.levelPosition ?? 0.5) * 100)}%`,
-                              top: '50%',
-                              width: 11,
-                              height: 11,
-                              borderRadius: 999,
-                              background: card.visualColor,
-                              border: '1px solid rgba(226, 232, 240, 0.95)',
-                              transform: 'translate(-50%, -50%)',
-                              boxShadow: '0 0 0 2px rgba(15, 23, 42, 0.6)',
-                            }}
-                          />
-                        </span>
-
-                        {card.ticks?.length ? (
-                          <span
-                            style={{
-                              position: 'relative',
-                              height: 14,
-                              color: 'var(--text-muted)',
-                              fontSize: '0.66rem',
-                              lineHeight: 1,
-                            }}
-                          >
-                            {card.ticks.map((tick) => (
-                              <span
-                                key={`${card.label}-${tick.label}-label`}
-                                style={{
-                                  position: 'absolute',
-                                  left: `${Math.round(tick.position * 100)}%`,
-                                  transform: 'translateX(-50%)',
-                                  whiteSpace: 'nowrap',
-                                }}
-                              >
-                                {tick.label}
-                              </span>
-                            ))}
-                          </span>
-                        ) : null}
-
-                        {card.axisNote ? (
-                          <span
-                            style={{
-                              color: 'var(--text-muted)',
-                              fontSize: '0.64rem',
-                              lineHeight: 1.2,
-                            }}
-                          >
-                            {card.axisNote}
-                          </span>
-                        ) : null}
-                      </span>
-                    </p>
-                  ) : card.visualLabel ? (
-                    <p
-                      className="state-label"
-                      style={{
-                        margin: 0,
-                        fontSize: '0.82rem',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: 6,
-                      }}
-                    >
-                      <span>{card.visualLabel}</span>
-                      <strong
-                        style={{
-                          color: card.visualColor,
-                          fontSize: '0.92rem',
-                          fontWeight: 700,
-                          letterSpacing: '0.01em',
-                        }}
-                      >
-                        {card.visualType === 'arrow' ? `${card.visualArrow} ${card.visualValue}` : card.visualValue}
-                      </strong>
-                    </p>
-                  ) : (
-                    <span className="state-label" style={{ margin: 0, fontSize: '0.78rem' }}>
-                      {card.evidence}
-                    </span>
-                  )}
-                </div>
-              ))}
-            </div>
-
             <div className="micro-context-grid">
               {narrativeBullets.length > 0 ? (
                 <div className="context-section">
@@ -1648,7 +1255,7 @@ export function MicroView() {
                 style={{
                   marginTop: 10,
                   marginBottom: 14,
-                  padding: '14px 16px',
+                  padding: '10px 12px',
                 }}
               >
                 <div
@@ -1668,32 +1275,13 @@ export function MicroView() {
                       Theme mention count in the selected context window.
                     </p>
                   </div>
-                  <span
-                    className="state-label"
-                    style={{
-                      margin: 0,
-                      fontVariantNumeric: 'tabular-nums',
-                      whiteSpace: 'nowrap',
-                    }}
-                  >
-                    {gdeltSummary.news_count ?? eventRows.length} headlines
-                  </span>
                 </div>
 
                 {headlineThemeCounts.length > 0 ? (
-                  <div
-                    style={{
-                      display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-                      gap: 10,
-                    }}
-                  >
+                  <div className="theme-compact-wrap">
                     {(() => {
                       const topThemes = headlineThemeCounts.slice(0, 4);
-                      const maxThemeCount = Math.max(
-                        ...topThemes.map(([, count]) => Number(count)),
-                        1,
-                      );
+                      const maxThemeCount = Math.max(...topThemes.map(([, count]) => Number(count)), 1);
                       const themeColors = {
                         Crypto: '#66c2a5',
                         Regulation: '#e78ac3',
@@ -1703,66 +1291,24 @@ export function MicroView() {
                         COVID: '#ffd92f',
                       };
 
-                      return topThemes.map(([name, count]) => {
+                      return topThemes.map(([name, count], index) => {
                         const numericCount = Number(count);
+                        const sizeRatio = numericCount / maxThemeCount;
+                        const size = 0.78 + sizeRatio * 0.22;
+                        const accent = themeColors[name] ?? '#94a3b8';
                         return (
-                          <div
+                          <span
                             key={name}
+                            className="theme-compact-item"
                             style={{
-                              padding: '10px 12px',
-                              border: '1px solid var(--border)',
-                              borderRadius: 12,
-                              background: 'rgba(15, 23, 42, 0.35)',
+                              fontSize: `${size}rem`,
+                              borderColor: `${accent}55`,
+                              background: `${accent}1a`,
+                              opacity: 0.95 - index * 0.07,
                             }}
                           >
-                            <div
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'space-between',
-                                gap: 10,
-                                marginBottom: 8,
-                              }}
-                            >
-                              <span
-                                style={{
-                                  color: 'var(--text-main)',
-                                  fontWeight: 700,
-                                }}
-                              >
-                                {name}
-                              </span>
-                              <span
-                                style={{
-                                  color: 'var(--text-muted)',
-                                  fontVariantNumeric: 'tabular-nums',
-                                  fontWeight: 700,
-                                }}
-                              >
-                                {numericCount}
-                              </span>
-                            </div>
-                            <div
-                              style={{
-                                height: 8,
-                                borderRadius: 999,
-                                background: 'rgba(148, 163, 184, 0.14)',
-                                overflow: 'hidden',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  width: `${Math.max(
-                                    5,
-                                    (numericCount / maxThemeCount) * 100,
-                                  )}%`,
-                                  height: '100%',
-                                  borderRadius: 999,
-                                  background: themeColors[name] ?? '#94a3b8',
-                                }}
-                              />
-                            </div>
-                          </div>
+                            <span className="theme-compact-label" style={{ color: accent }}>{name}</span>
+                          </span>
                         );
                       });
                     })()}

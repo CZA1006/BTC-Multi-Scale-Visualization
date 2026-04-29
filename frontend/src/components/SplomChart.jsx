@@ -95,7 +95,7 @@ export function SplomChart({
           x={HEADER + c * CELL_SIZE + CELL_SIZE / 2}
           y={14}
           textAnchor="middle"
-          className="chart-axis-label"
+          className="chart-axis-label splom-axis-label"
         >
           {f.replaceAll('_', ' ')}
         </text>
@@ -110,7 +110,7 @@ export function SplomChart({
           textAnchor="middle"
           dominantBaseline="middle"
           transform={`rotate(-90, 10, ${HEADER + r * CELL_SIZE + CELL_SIZE / 2})`}
-          className="chart-axis-label"
+          className="chart-axis-label splom-axis-label"
         >
           {f.replaceAll('_', ' ')}
         </text>

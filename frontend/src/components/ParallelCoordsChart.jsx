@@ -257,7 +257,7 @@ export function ParallelCoordsChart({
                 x={0}
                 y={MARGIN.top - 4}
                 textAnchor="middle"
-                className="chart-axis-label"
+                className="chart-axis-label pc-axis-label"
               >
                 {scale.domain()[1].toFixed(2)}
               </text>
@@ -265,7 +265,7 @@ export function ParallelCoordsChart({
                 x={0}
                 y={HEIGHT - MARGIN.bottom + 12}
                 textAnchor="middle"
-                className="chart-axis-label"
+                className="chart-axis-label pc-axis-label"
               >
                 {scale.domain()[0].toFixed(2)}
               </text>
@@ -286,7 +286,7 @@ export function ParallelCoordsChart({
                 <text
                   y={HEIGHT - MARGIN.bottom + 32}
                   textAnchor="middle"
-                  className="chart-axis-label"
+                  className="chart-axis-label pc-axis-label"
                 >
                   {FEATURE_LABELS[feature] ?? feature.replaceAll('_', ' ')}
                 </text>

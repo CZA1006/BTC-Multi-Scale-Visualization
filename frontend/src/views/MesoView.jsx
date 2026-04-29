@@ -269,6 +269,19 @@ export function MesoView() {
     .filter(Boolean);
 
   const hasProfileData = clusterProfiles.length > 0;
+
+  const correlationClusterDates =
+    selectedCluster === null || selectedCluster === undefined
+      ? []
+      : visibleEmbeddingRows
+          .filter((row) => Number(row.clusterValue) === Number(selectedCluster))
+          .map((row) => row.date);
+
+  const correlationClusterLabel =
+    selectedCluster === null || selectedCluster === undefined
+      ? 'All regimes'
+      : semanticLabelForCluster(selectedCluster);
+
   // Note: inline PC scales/lineBuilder removed in P4 — handled inside
   // <ParallelCoordsChart /> now. Legacy variables (profileWidth/profileHeight/
   // profileMargin/featureScale/verticalScales/profileLines) deleted with them.
@@ -487,36 +500,61 @@ export function MesoView() {
       {hasProfileData ? (
         <section className="placeholder-section">
           <h3 className="placeholder-title">Regime Summary</h3>
-          <div className="meso-summary-grid">
-            <ClusterSummaryTable
-              clusterProfiles={clusterProfiles}
-              parsedFeatureRows={parsedFeatureRows}
-              clusterColorScale={clusterColorScale}
-              semanticLabelForCluster={semanticLabelForCluster}
-              selectedCluster={selectedCluster}
-              setSelectedCluster={setSelectedCluster}
-            />
-            <CorrelationMatrix />
-          </div>
-          <div className="chart-caption-row">
-            <p style={{ margin: '0 0 4px 0', fontSize: '0.76rem', color: 'var(--text-muted)', fontWeight: 500 }}>
-              Notes:
-            </p>
-            <p className="chart-caption">
-              • Mean Ret = average daily return; positive indicates gains, negative indicates losses.
-            </p>
-            <p className="chart-caption">
-              • Mean Vol = average 30-day rolling volatility; higher values indicate larger price swings.
-            </p>
-            <p className="chart-caption">
-              • Mean DD = average drawdown from 30-day high; how far the regime typically falls from recent peaks.
-            </p>
-            <p className="chart-caption">
-              • Equity curve = cumulative (1 + daily return) restricted to days in that regime.
-            </p>
-            <p className="chart-caption">
-              • Correlation uses Pearson on daily returns over the selected window.
-            </p>
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'minmax(0, 2.35fr) minmax(320px, 0.85fr)',
+              alignItems: 'start',
+              gap: 18,
+            }}
+          >
+            <div style={{ minWidth: 0 }}>
+              <ClusterSummaryTable
+                clusterProfiles={clusterProfiles}
+                parsedFeatureRows={parsedFeatureRows}
+                clusterColorScale={clusterColorScale}
+                semanticLabelForCluster={semanticLabelForCluster}
+                selectedCluster={selectedCluster}
+                setSelectedCluster={setSelectedCluster}
+              />
+
+              <div className="chart-caption-row" style={{ marginTop: 16 }}>
+                <p
+                  style={{
+                    margin: '0 0 4px 0',
+                    fontSize: '0.76rem',
+                    color: 'var(--text-muted)',
+                    fontWeight: 500,
+                  }}
+                >
+                  Notes:
+                </p>
+                <p className="chart-caption">
+                  • Mean Ret = average daily return; positive indicates gains, negative indicates losses.
+                </p>
+                <p className="chart-caption">
+                  • Mean Vol = average 30-day rolling volatility; higher values indicate larger price swings.
+                </p>
+                <p className="chart-caption">
+                  • Mean DD = average drawdown from 30-day high; how far the regime typically falls from recent peaks.
+                </p>
+                <p className="chart-caption">
+                  • Equity curve = cumulative (1 + daily return) restricted to days in that regime.
+                </p>
+                <p className="chart-caption">
+                  • Correlation uses Pearson on daily returns over the selected window.
+                  If a regime is selected, it is recalculated using only days in that regime.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ minWidth: 0, width: '100%' }}>
+              <CorrelationMatrix
+                selectedCluster={selectedCluster}
+                clusterDates={correlationClusterDates}
+                clusterLabel={correlationClusterLabel}
+              />
+            </div>
           </div>
         </section>
       ) : null}

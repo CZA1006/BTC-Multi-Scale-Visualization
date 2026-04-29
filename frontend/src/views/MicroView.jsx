@@ -290,6 +290,12 @@ export function MicroView() {
     minPrice !== null && maxPrice !== null
       ? Math.ceil(maxPrice + pricePadding)
       : undefined;
+  const priceAxisBounds = getNiceAxisBounds(roundedMinPrice, roundedMaxPrice, 5);
+  const maxVolume = priceSeries.rows.reduce(
+    (maxValue, row) => Math.max(maxValue, Number(row.volume) || 0),
+    0,
+  );
+  const volumeAxisBounds = getNiceAxisBounds(0, maxVolume, 4);
 
   useEffect(() => {
     if (!chartRef.current || !hasDetailChart) {
@@ -311,11 +317,9 @@ export function MicroView() {
     });
     const volumeData = sharedTimeline.map((timestamp) => {
       const point = pricePointByTimestamp.get(timestamp);
-      if (!point) return { value: 0, color: '#6b7890' };
-      const isUp = point.close >= point.open;
       return {
-        value: point.volume,
-        itemStyle: { color: isUp ? '#2ca02c' : '#d62728', opacity: 0.75 },
+        value: point ? point.volume : 0,
+        itemStyle: { color: '#5f9fd8', opacity: 0.72 },
       };
     });
     const hasOhlc = priceSeries.rows.some((r) => r.hasOhlc);
@@ -332,17 +336,26 @@ export function MicroView() {
       textStyle: { color: '#aab6cc' },
       tooltip: {
         trigger: 'axis',
-        axisPointer: { type: 'cross' },
+        axisPointer: {
+          type: 'line',
+          label: { show: false },
+        },
+        backgroundColor: 'rgba(15, 23, 42, 0.92)',
+        borderColor: '#334155',
+        textStyle: { color: '#e5edf8' },
         formatter: (params) => {
           const rows = Array.isArray(params) ? params : [];
           const btc = rows.find((item) => item.seriesName === 'BTC Price');
-          const gdelt = rows.find((item) => item.seriesName === 'GDELT News Volume');
-          const timestamp = btc?.axisValueLabel ?? gdelt?.axisValueLabel ?? rows?.[0]?.axisValueLabel ?? 'N/A';
+          const volume = rows.find((item) => item.seriesName === 'Trading Volume');
+          const gdelt = rows.find((item) => item.seriesName === 'News Volume');
+          const timestamp =
+            btc?.axisValueLabel ?? volume?.axisValueLabel ?? gdelt?.axisValueLabel ?? rows?.[0]?.axisValueLabel ?? 'N/A';
           // For candlestick, btc.data = [idx, open, close, low, high] or [O,C,L,H]; for line it's the close.
           let btcPrice = btc?.data;
           if (Array.isArray(btcPrice)) {
             btcPrice = btcPrice.length === 5 ? btcPrice[2] : btcPrice[1];
           }
+          const tradingVolume = volume?.data?.value ?? 0;
           const gdeltNewsCount = gdelt?.data?.value ?? 0;
           const gdeltAvgTone = gdelt?.data?.average_tone;
           const toneLabel =
@@ -352,20 +365,20 @@ export function MicroView() {
           const timestampText = String(timestamp);
           return [
             `${timestampText.slice(0, 10)} ${formatHourLabel(timestampText)}`,
-            `BTC Price: ${formatCurrency(btcPrice)}`,
-            `GDELT News: ${gdeltNewsCount} articles | Avg Tone: ${toneLabel}`,
+            `BTC hourly close: ${formatCurrencyWithSymbol(btcPrice)}`,
+            `Trading Volume: ${formatCompactNumber(tradingVolume)}`,
+            `News Volume: ${gdeltNewsCount} articles | Avg Tone: ${toneLabel}`,
           ].join('<br/>');
         },
       },
-      axisPointer: { link: [{ xAxisIndex: 'all' }] },
-      dataZoom: [
-        { type: 'inside', xAxisIndex: [0, 1, 2] },
-        { type: 'slider', xAxisIndex: [0, 1, 2], bottom: '2%', height: 16 },
-      ],
+      axisPointer: {
+        link: [{ xAxisIndex: 'all' }],
+        label: { show: false },
+      },
       grid: [
-        { top: '6%', height: '50%', left: '8%', right: '5%' },
-        { top: '60%', height: '14%', left: '8%', right: '5%' },
-        { top: '78%', height: '14%', left: '8%', right: '5%' },
+        { top: '7%', height: '46%', left: '9%', right: '5%' },
+        { top: '60%', height: '11%', left: '9%', right: '5%' },
+        { top: '81%', height: '12%', left: '9%', right: '5%' },
       ],
       xAxis: [
         {
@@ -374,6 +387,7 @@ export function MicroView() {
           data: sharedTimeline,
           axisLabel: { show: false },
           axisTick: { show: false },
+          axisPointer: { label: { show: false } },
         },
         {
           type: 'category',
@@ -381,6 +395,7 @@ export function MicroView() {
           data: sharedTimeline,
           axisLabel: { show: false },
           axisTick: { show: false },
+          axisPointer: { label: { show: false } },
         },
         {
           type: 'category',
@@ -390,42 +405,61 @@ export function MicroView() {
             color: '#aab6cc',
             interval: 1,
             formatter: (value, index) => (index % 2 === 0 ? formatHourLabel(value) : ''),
+            margin: 10,
           },
+          axisPointer: { label: { show: false } },
         },
       ],
       yAxis: [
         {
           type: 'value',
           gridIndex: 0,
-          name: 'BTC Price',
+          name: 'Price (USD)',
           nameTextStyle: { color: '#aab6cc' },
+          nameLocation: 'middle',
+          nameRotate: 90,
+          nameGap: 62,
           scale: true,
-          axisLabel: { color: '#aab6cc' },
+          axisLabel: {
+            color: '#aab6cc',
+            formatter: (value) => formatCompactNumber(value),
+          },
           splitLine: { lineStyle: { color: '#263247' } },
-          min: roundedMinPrice,
-          max: roundedMaxPrice,
+          min: priceAxisBounds.min,
+          max: priceAxisBounds.max,
+          interval: priceAxisBounds.interval,
         },
         {
           type: 'value',
           gridIndex: 1,
-          name: 'Volume',
+          name: 'Trading Volume',
           nameTextStyle: { color: '#aab6cc' },
           nameLocation: 'middle',
           nameRotate: 90,
-          nameGap: 50,
-          axisLabel: { color: '#aab6cc' },
+          nameGap: 44,
+          axisLabel: {
+            color: '#aab6cc',
+            formatter: (value) => formatCompactNumber(value),
+            margin: 8,
+          },
           splitLine: { lineStyle: { color: '#1f2a40' } },
-          minInterval: 1,
+          min: 0,
+          max: volumeAxisBounds.max,
+          interval: volumeAxisBounds.interval,
         },
         {
           type: 'value',
           gridIndex: 2,
-          name: 'GDELT News',
+          name: 'News Count',
           nameTextStyle: { color: '#aab6cc' },
           nameLocation: 'middle',
           nameRotate: 90,
-          nameGap: 50,
-          axisLabel: { color: '#aab6cc' },
+          nameGap: 44,
+          axisLabel: {
+            color: '#aab6cc',
+            formatter: (value) => Math.round(value),
+            margin: 8,
+          },
           splitLine: { lineStyle: { color: '#1f2a40' } },
           minInterval: 1,
         },
@@ -459,7 +493,7 @@ export function MicroView() {
             },
         {
           type: 'bar',
-          name: 'Volume',
+          name: 'Trading Volume',
           xAxisIndex: 1,
           yAxisIndex: 1,
           barMaxWidth: 14,
@@ -467,29 +501,14 @@ export function MicroView() {
         },
         {
           type: 'bar',
-          name: 'GDELT News Volume',
+          name: 'News Volume',
           xAxisIndex: 2,
           yAxisIndex: 2,
           barMaxWidth: 14,
           data: gdeltSeriesData,
           itemStyle: {
-            color: (params) => {
-              const averageTone = params?.data?.average_tone;
-              if (averageTone > -0.8) {
-                return '#2ca02c';
-              }
-              if (averageTone < -1.1) {
-                return '#d62728';
-              }
-              return '#6b7890';
-            },
-            opacity: (params) => {
-              const averageTone = params?.data?.average_tone;
-              if (averageTone > -0.8 || averageTone < -1.1) {
-                return 0.9;
-              }
-              return 0.5;
-            },
+            color: '#9b7ef3',
+            opacity: 0.78,
           },
         },
       ],
@@ -518,9 +537,14 @@ export function MicroView() {
   }, [
     gdeltPointByTimestamp,
     hasDetailChart,
+    priceAxisBounds.interval,
+    priceAxisBounds.max,
+    priceAxisBounds.min,
     pricePointByTimestamp,
     priceSeries.rows,
     sharedTimeline,
+    volumeAxisBounds.interval,
+    volumeAxisBounds.max,
   ]);
 
   function formatPercent(value) {
@@ -538,6 +562,166 @@ export function MicroView() {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     });
+  }
+
+  function formatCurrencyWithSymbol(value) {
+    const formatted = formatCurrency(value);
+    return formatted === 'N/A' ? formatted : `$${formatted}`;
+  }
+
+  function formatCompactNumber(value) {
+    if (value === null || value === undefined || Number.isNaN(Number(value))) {
+      return 'N/A';
+    }
+
+    const absValue = Math.abs(Number(value));
+    const sign = Number(value) < 0 ? '-' : '';
+
+    if (absValue >= 1_000_000_000) {
+      return `${sign}${(absValue / 1_000_000_000).toFixed(absValue >= 10_000_000_000 ? 0 : 1)}B`;
+    }
+    if (absValue >= 1_000_000) {
+      return `${sign}${(absValue / 1_000_000).toFixed(absValue >= 10_000_000 ? 0 : 1)}M`;
+    }
+    if (absValue >= 1_000) {
+      return `${sign}${(absValue / 1_000).toFixed(absValue >= 10_000 ? 0 : 1)}K`;
+    }
+
+    return `${Number(value).toFixed(absValue < 10 ? 1 : 0)}`;
+  }
+
+  function getNiceStep(rawStep) {
+    if (!Number.isFinite(rawStep) || rawStep <= 0) {
+      return 1;
+    }
+    const exponent = Math.floor(Math.log10(rawStep));
+    const base = rawStep / 10 ** exponent;
+    const niceBase = base <= 1 ? 1 : base <= 2 ? 2 : base <= 5 ? 5 : 10;
+    return niceBase * 10 ** exponent;
+  }
+
+  function getNiceAxisBounds(minValue, maxValue, tickCount = 5) {
+    if (
+      minValue === null ||
+      maxValue === null ||
+      !Number.isFinite(minValue) ||
+      !Number.isFinite(maxValue)
+    ) {
+      return { min: undefined, max: undefined, interval: undefined };
+    }
+
+    if (minValue === maxValue) {
+      const fallbackStep = Math.max(Math.abs(minValue) * 0.01, 1);
+      return {
+        min: Math.floor((minValue - fallbackStep) / fallbackStep) * fallbackStep,
+        max: Math.ceil((maxValue + fallbackStep) / fallbackStep) * fallbackStep,
+        interval: fallbackStep,
+      };
+    }
+
+    const span = maxValue - minValue;
+    const step = getNiceStep(span / tickCount);
+    return {
+      min: Math.floor(minValue / step) * step,
+      max: Math.ceil(maxValue / step) * step,
+      interval: step,
+    };
+  }
+
+  function getFallbackSevenDayVolatility() {
+    const directCandidates = [
+      dayDetail.btc_detail?.rolling_volatility_7d,
+      dayDetail.btc_detail?.volatility_7d,
+      dayDetail.btc_detail?.vol_7d,
+    ];
+
+    for (const candidate of directCandidates) {
+      const parsed = Number(candidate);
+      if (!Number.isNaN(parsed)) {
+        return parsed;
+      }
+    }
+
+    const windowRows = [...(dayDetail.btc_window ?? [])]
+      .filter((row) => row?.date || row?.timestamp)
+      .sort((left, right) =>
+        String(left.date ?? left.timestamp).localeCompare(String(right.date ?? right.timestamp)),
+      );
+
+    let returns = windowRows
+      .map((row) => Number(row.daily_return))
+      .filter((value) => Number.isFinite(value));
+
+    if (returns.length < 2) {
+      const closes = windowRows
+        .map((row) => Number(row.close))
+        .filter((value) => Number.isFinite(value));
+
+      returns = [];
+      for (let index = 1; index < closes.length; index += 1) {
+        const previous = closes[index - 1];
+        const current = closes[index];
+        if (previous !== 0) {
+          returns.push(current / previous - 1);
+        }
+      }
+    }
+
+    const recentReturns = returns.slice(-7);
+    if (recentReturns.length < 2) {
+      return null;
+    }
+
+    const mean =
+      recentReturns.reduce((sum, value) => sum + value, 0) / recentReturns.length;
+    const variance =
+      recentReturns.reduce((sum, value) => sum + (value - mean) ** 2, 0) /
+      (recentReturns.length - 1);
+
+    // Daily 7D volatility, not annualized. This keeps the summary interpretable
+    // next to the selected day's daily return.
+    return Math.sqrt(variance);
+  }
+
+  function getIntradayRange() {
+    if (!dayDetail.btc_detail) {
+      return null;
+    }
+
+    const highLowRange = Number(dayDetail.btc_detail.high_low_range);
+    if (!Number.isNaN(highLowRange)) {
+      return highLowRange;
+    }
+
+    const high = Number(dayDetail.btc_detail.high);
+    const low = Number(dayDetail.btc_detail.low);
+    const open = Number(dayDetail.btc_detail.open);
+    if (!Number.isNaN(high) && !Number.isNaN(low) && !Number.isNaN(open) && open !== 0) {
+      return (high - low) / open;
+    }
+
+    return null;
+  }
+
+  function getTopTheme() {
+    const summary = dayDetail.gdelt_selected_day ?? {};
+    const themes = [
+      ['War', summary.theme_count_war ?? 0],
+      ['Election', summary.theme_count_election ?? 0],
+      ['COVID', summary.theme_count_covid ?? 0],
+      ['Regulation', summary.theme_count_regulation ?? 0],
+      ['Macro', summary.theme_count_macro ?? 0],
+      ['Crypto', summary.theme_count_crypto ?? 0],
+    ]
+      .map(([name, count]) => [name, Number(count)])
+      .filter(([, count]) => !Number.isNaN(count) && count > 0)
+      .sort((a, b) => b[1] - a[1]);
+
+    if (themes.length > 0) {
+      return themes[0][0];
+    }
+
+    return summary.bucket_label ?? 'N/A';
   }
 
   const context = dayDetail.context ?? {};
@@ -562,33 +746,71 @@ export function MicroView() {
     ? polymarketSummary.markets
     : [];
 
+  const selectedDaySummaryRows = selectedDate
+    ? [
+        ['Date', selectedDate],
+        ['Close', formatCurrencyWithSymbol(dayDetail.btc_detail?.close)],
+        ['Daily Return', formatPercent(dayDetail.btc_detail?.daily_return)],
+        ['Intraday Range', formatPercent(getIntradayRange())],
+        ['7D Volatility', formatPercent(getFallbackSevenDayVolatility())],
+        ['Meso Regime', inferredClusterLabel],
+        ['News Count', gdeltSummary.news_count ?? 0],
+        ['Main Theme', getTopTheme()],
+      ]
+    : [];
+
   return (
     <section className="view-card">
       <header className="view-header">
         <div>
           <p className="view-kicker">View 3</p>
-          <h2 className="view-title">Micro Detail View</h2>
+          <h2 className="view-title">Micro Detail View: Explain a Selected Day</h2>
         </div>
       </header>
 
       <div className="summary-box">
-        <p className="summary-title">Selected day</p>
-        <p className="selected-date-label">{selectedDateLabel}</p>
+        <p className="summary-title">Selected Day Summary</p>
         {!selectedDate ? (
           <p className="state-label">
             Select a date from Macro or Meso to populate the selected-day detail view.
           </p>
         ) : dayDetail.btc_detail ? (
-          <>
-            <p className="state-label">
-              Close: {formatCurrency(dayDetail.btc_detail.close)} | Daily return:{' '}
-              {formatPercent(dayDetail.btc_detail.daily_return)}
-            </p>
-            <p className="state-label">
-              Open-close change: {formatPercent(dayDetail.btc_detail.open_close_change)}
-            </p>
-          </>
-        ) : null}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, minmax(220px, 1fr))',
+              gap: '10px 22px',
+              marginTop: 12,
+            }}
+          >
+            {selectedDaySummaryRows.map(([label, value]) => (
+              <div
+                key={label}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '120px minmax(0, 1fr)',
+                  gap: 12,
+                  alignItems: 'baseline',
+                }}
+              >
+                <span className="state-label" style={{ margin: 0 }}>
+                  {label}
+                </span>
+                <strong
+                  style={{
+                    color: label === 'Date' ? 'var(--accent-btc)' : 'var(--text-main)',
+                    fontSize: label === 'Date' ? '1.15rem' : '0.95rem',
+                    fontWeight: 700,
+                  }}
+                >
+                  {value}
+                </strong>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="state-label">Loading selected-day summary...</p>
+        )}
       </div>
 
       <section className="placeholder-section">
@@ -606,21 +828,73 @@ export function MicroView() {
         ) : hasDetailChart ? (
           <div className="chart-shell">
             <div
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                alignItems: 'center',
+                gap: 16,
+                marginBottom: 8,
+                color: 'var(--text-muted)',
+                fontSize: '0.76rem',
+                flexWrap: 'wrap',
+              }}
+            >
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 14,
+                    height: 10,
+                    borderRadius: 2,
+                    backgroundColor: '#2ca02c',
+                  }}
+                />
+                BTC up candle
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 14,
+                    height: 10,
+                    borderRadius: 2,
+                    backgroundColor: '#d62728',
+                  }}
+                />
+                BTC down candle
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 14,
+                    height: 10,
+                    borderRadius: 2,
+                    backgroundColor: '#5f9fd8',
+                  }}
+                />
+                Trading Volume
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 14,
+                    height: 10,
+                    borderRadius: 2,
+                    backgroundColor: '#9b7ef3',
+                  }}
+                />
+                News volume
+              </span>
+            </div>
+            <div
               ref={chartRef}
               className="micro-dual-grid-chart"
               role="img"
-              aria-label="Dual-grid synchronized chart"
+              aria-label="BTC price, trading volume, and news volume chart"
+              style={{ minHeight: 540 }}
             />
-            <div className="chart-caption-row">
-              <p className="chart-caption">
-                {priceSeries.mode === 'intraday'
-                  ? `Intraday points: ${priceSeries.rows.length}`
-                  : `Context window: ${dayDetail.context?.window_start} to ${dayDetail.context?.window_end}`}
-              </p>
-              <p className="chart-caption">
-                Candles: green = bullish, red = bearish · Volume colored by direction · GDELT tone: &gt;−0.8 green, &lt;−1.1 red
-              </p>
-            </div>
           </div>
         ) : (
           <div className="placeholder-box">
@@ -639,10 +913,6 @@ export function MicroView() {
             </p>
 
             <div className="context-chip-row">
-              <div className="context-chip">
-                <span className="context-chip-label">Meso cluster</span>
-                <strong>{inferredClusterLabel}</strong>
-              </div>
               <div className="context-chip">
                 <span className="context-chip-label">Move state</span>
                 <strong>{marketState.move_label ?? 'Unavailable'}</strong>
@@ -681,18 +951,6 @@ export function MicroView() {
                     </p>
                   </div>
                   <div className="asset-context-card">
-                    <p className="asset-context-ticker">Meso anchor</p>
-                    <p className="asset-context-value">
-                      {mesoBacktracking.cluster_id === null || mesoBacktracking.cluster_id === undefined
-                        ? selectedClusterLabel
-                        : getClusterSemanticLabel(mesoBacktracking.cluster_id)}
-                    </p>
-                    <p className="state-label">
-                      Embedding: {mesoBacktracking.embedding_x?.toFixed?.(2) ?? 'N/A'},{' '}
-                      {mesoBacktracking.embedding_y?.toFixed?.(2) ?? 'N/A'}
-                    </p>
-                  </div>
-                  <div className="asset-context-card">
                     <p className="asset-context-ticker">External breadth</p>
                     <p className="asset-context-value">
                       {externalSignalSummary.breadth_label ?? 'Unavailable'}
@@ -722,19 +980,6 @@ export function MicroView() {
                   </div>
                 </div>
               ) : null}
-            </div>
-
-            <div className="asset-context-grid">
-              <div className="asset-context-card">
-                <p className="asset-context-ticker">Context source</p>
-                <p className="asset-context-value">
-                  {context.event_context_status ?? 'placeholder'}
-                </p>
-                <p className="state-label">
-                  {context.event_context_message ??
-                    'This round uses local heuristic context from BTC, features, clusters, and aligned external assets.'}
-                </p>
-              </div>
             </div>
 
             <div className="context-section">

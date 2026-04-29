@@ -282,6 +282,19 @@ export function MesoView() {
       ? 'All regimes'
       : semanticLabelForCluster(selectedCluster);
 
+  const selectedRegimeColor =
+    selectedCluster === null || selectedCluster === undefined
+      ? 'var(--text-muted)'
+      : clusterColorScale(String(selectedCluster));
+
+  function handleManualClusterChange(nextCluster) {
+    // Manual cluster switching should clear the selected day.
+    // Otherwise the parallel coordinates view keeps showing a stale selected-day line.
+    setSelectedDate(null);
+    lastSyncedDateRef.current = null;
+    setSelectedCluster(nextCluster);
+  }
+
   // Note: inline PC scales/lineBuilder removed in P4 — handled inside
   // <ParallelCoordsChart /> now. Legacy variables (profileWidth/profileHeight/
   // profileMargin/featureScale/verticalScales/profileLines) deleted with them.
@@ -305,7 +318,7 @@ export function MesoView() {
                 ? 'range-button range-button-active'
                 : 'range-button'
             }
-            onClick={() => setSelectedCluster(null)}
+            onClick={() => handleManualClusterChange(null)}
           >
             All Regimes
           </button>
@@ -318,7 +331,7 @@ export function MesoView() {
                   ? 'range-button range-button-active'
                   : 'range-button'
               }
-              onClick={() => setSelectedCluster(clusterId)}
+              onClick={() => handleManualClusterChange(clusterId)}
             >
               <span
                 className="cluster-swatch"
@@ -515,7 +528,7 @@ export function MesoView() {
                 clusterColorScale={clusterColorScale}
                 semanticLabelForCluster={semanticLabelForCluster}
                 selectedCluster={selectedCluster}
-                setSelectedCluster={setSelectedCluster}
+                setSelectedCluster={handleManualClusterChange}
               />
 
               <div className="chart-caption-row" style={{ marginTop: 16 }}>
@@ -580,6 +593,43 @@ export function MesoView() {
           </div>
         ) : hasProfileData ? (
           <div className="chart-shell">
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                alignItems: 'center',
+                gap: 14,
+                marginBottom: 8,
+                color: 'var(--text-muted)',
+                fontSize: '0.75rem',
+              }}
+            >
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 30,
+                    height: 4,
+                    borderRadius: 999,
+                    backgroundColor: selectedRegimeColor,
+                  }}
+                />
+                Regime mean profile
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 30,
+                    height: 2,
+                    borderRadius: 999,
+                    backgroundColor: selectedRegimeColor,
+                    opacity: 0.55,
+                  }}
+                />
+                Selected day profile
+              </span>
+            </div>
             <ParallelCoordsChart
               features={FEATURE_COLUMNS}
               dailyRows={parsedFeatureRows}

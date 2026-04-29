@@ -345,9 +345,27 @@ export function MesoView() {
       </div>
 
       <section className="placeholder-section">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
-          <h3 className="placeholder-title" style={{ margin: 0 }}>Embedding Scatterplot: Daily Market States</h3>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            justifyContent: 'space-between',
+            gap: 12,
+            marginBottom: 16,
+          }}
+        >
+          <h3 className="placeholder-title" style={{ margin: 0 }}>
+            Embedding Scatterplot: Daily Market States
+          </h3>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 8,
+              flexWrap: 'wrap',
+              justifyContent: 'flex-end',
+            }}
+          >
             <span className="chart-range-pill">{timeRangeLabel}</span>
             {selectedDate ? (
               <span className="chart-range-pill" title={`Selected date: ${selectedDate}`}>
@@ -584,7 +602,14 @@ export function MesoView() {
           <h3 className="placeholder-title" style={{ margin: 0 }}>
             Meso Feature Explanation
           </h3>
-          <span className="chart-range-pill">Parallel Coordinates</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span className="chart-range-pill">{timeRangeLabel}</span>
+            {selectedDate ? (
+              <span className="chart-range-pill" title={`Selected date: ${selectedDate}`}>
+                {selectedDate}
+              </span>
+            ) : null}
+          </div>
         </div>
 
         {isLoading ? (
@@ -602,6 +627,7 @@ export function MesoView() {
                 marginBottom: 8,
                 color: 'var(--text-muted)',
                 fontSize: '0.75rem',
+                flexWrap: 'wrap',
               }}
             >
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
@@ -614,7 +640,7 @@ export function MesoView() {
                     backgroundColor: selectedRegimeColor,
                   }}
                 />
-                Regime mean profile
+                Selected regime mean
               </span>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
                 <span
@@ -623,8 +649,21 @@ export function MesoView() {
                     width: 30,
                     height: 2,
                     borderRadius: 999,
-                    backgroundColor: selectedRegimeColor,
-                    opacity: 0.55,
+                    backgroundColor: 'var(--text-muted)',
+                    opacity: 0.35,
+                  }}
+                />
+                Other regime means
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 30,
+                    height: 2,
+                    borderRadius: 999,
+                    backgroundColor: '#94a3b8',
+                    opacity: 0.7,
                   }}
                 />
                 Selected day profile

@@ -1,14 +1,12 @@
 import React from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { HeadlineWordCloud } from '../components/HeadlineWordCloud.jsx';
-import { ThemeRiverMini } from '../components/ThemeRiverMini.jsx';
-import { PolymarketSparkline } from '../components/PolymarketSparkline.jsx';
 import { fetchDayDetail } from '../api/dayDetail.js';
 import { useAppStore } from '../store/useAppStore.js';
 import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
 
 export function MicroView() {
   const selectedDate = useAppStore((state) => state.selectedDate);
+  const selectedTimeRange = useAppStore((state) => state.selectedTimeRange);
   const selectedCluster = useAppStore((state) => state.selectedCluster);
 
   const [dayDetail, setDayDetail] = useState({
@@ -20,9 +18,14 @@ export function MicroView() {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [showAllHeadlines, setShowAllHeadlines] = useState(false);
+  const [showAllPolymarket, setShowAllPolymarket] = useState(false);
   const chartRef = useRef(null);
 
   useEffect(() => {
+    setShowAllHeadlines(false);
+    setShowAllPolymarket(false);
+
     if (!selectedDate) {
       setDayDetail({
         btc_detail: null,
@@ -67,6 +70,9 @@ export function MicroView() {
   }, [selectedDate]);
 
   const selectedDateLabel = selectedDate ?? 'No date selected yet';
+  const timeRangeLabel = selectedTimeRange
+    ? `${selectedTimeRange.start ?? 'unknown'} to ${selectedTimeRange.end ?? 'unknown'}`
+    : 'No time range selected';
   const selectedClusterLabel =
     selectedCluster === null || selectedCluster === undefined
       ? 'No cluster selected'
@@ -554,6 +560,31 @@ export function MicroView() {
     return `${(Number(value) * 100).toFixed(2)}%`;
   }
 
+  function formatSignedPercent(value) {
+    if (value === null || value === undefined || Number.isNaN(Number(value))) {
+      return 'N/A';
+    }
+    const percent = Number(value) * 100;
+    return `${percent > 0 ? '+' : ''}${percent.toFixed(2)}%`;
+  }
+
+  function getNumberFromDetail(...fieldNames) {
+    for (const fieldName of fieldNames) {
+      const value = Number(dayDetail.btc_detail?.[fieldName]);
+      if (!Number.isNaN(value)) {
+        return value;
+      }
+    }
+    return null;
+  }
+
+  function formatVolumeSupport(value) {
+    if (value === null || value === undefined || Number.isNaN(Number(value))) {
+      return 'N/A';
+    }
+    return formatCompactNumber(value);
+  }
+
   function formatCurrency(value) {
     if (value === null || value === undefined || Number.isNaN(Number(value))) {
       return 'N/A';
@@ -724,15 +755,251 @@ export function MicroView() {
     return summary.bucket_label ?? 'N/A';
   }
 
+  function parsePolymarketDate(row) {
+    if (Array.isArray(row)) {
+      const arrayDate = row[0] ?? row.date;
+      const parsedArrayDate = new Date(arrayDate);
+      return Number.isNaN(parsedArrayDate.getTime()) ? null : parsedArrayDate;
+    }
+
+    const rawDate =
+      row?.date ??
+      row?.timestamp ??
+      row?.time ??
+      row?.day ??
+      row?.as_of_date ??
+      row?.created_at ??
+      row?.updated_at ??
+      row?.t;
+
+    if (!rawDate) {
+      return null;
+    }
+
+    const date = new Date(rawDate);
+    return Number.isNaN(date.getTime()) ? null : date;
+  }
+
+  function parsePolymarketYesPrice(row) {
+    if (Array.isArray(row)) {
+      const arrayCandidates = [row[1], row[2], row[3]];
+      for (const candidate of arrayCandidates) {
+        const parsed = Number(candidate);
+        if (!Number.isNaN(parsed)) {
+          return parsed > 1 ? parsed / 100 : parsed;
+        }
+      }
+    }
+
+    const candidates = [
+      row?.yes_price,
+      row?.yesPrice,
+      row?.yes_price_at_date,
+      row?.price,
+      row?.probability,
+      row?.value,
+      row?.p,
+      row?.close,
+      row?.y,
+    ];
+
+    for (const candidate of candidates) {
+      const parsed = Number(candidate);
+      if (!Number.isNaN(parsed)) {
+        return parsed > 1 ? parsed / 100 : parsed;
+      }
+    }
+
+    return null;
+  }
+
+  function getPolymarketHistoryPoints(market) {
+    const history = Array.isArray(market?.history) ? market.history : [];
+
+    return history
+      .map((row) => ({
+        date: parsePolymarketDate(row),
+        price: parsePolymarketYesPrice(row),
+      }))
+      .filter((point) => point.date && point.price !== null)
+      .sort((left, right) => left.date - right.date);
+  }
+
+  function getPolymarketChange(market) {
+    const selectedDateText = polymarketSummary.as_of_date;
+    const selectedStart = selectedDateText ? new Date(`${selectedDateText}T00:00:00`) : null;
+    const selectedEnd = selectedDateText ? new Date(`${selectedDateText}T23:59:59`) : null;
+
+    const historyPoints = getPolymarketHistoryPoints(market);
+
+    const currentFromMarket = parsePolymarketYesPrice({
+      yes_price_at_date: market?.yes_price_at_date,
+    });
+
+    const pointsUpToSelected = selectedEnd
+      ? historyPoints.filter((point) => point.date <= selectedEnd)
+      : historyPoints;
+
+    const currentPoint =
+      pointsUpToSelected.length > 0 ? pointsUpToSelected[pointsUpToSelected.length - 1] : null;
+
+    const current = currentFromMarket ?? currentPoint?.price ?? null;
+
+    const previousPoints = selectedStart
+      ? historyPoints.filter((point) => point.date < selectedStart)
+      : historyPoints.slice(0, -1);
+
+    let previous =
+      previousPoints.length > 0 ? previousPoints[previousPoints.length - 1].price : null;
+
+    // Fallback: if the history does not have calendar dates before the selected day,
+    // use the point immediately before the selected/current point in the provided series.
+    if (previous === null && currentPoint) {
+      const currentIndex = historyPoints.findIndex(
+        (point) => point.date.getTime() === currentPoint.date.getTime(),
+      );
+      if (currentIndex > 0) {
+        previous = historyPoints[currentIndex - 1].price;
+      }
+    }
+
+    // Last fallback: for compact mock/cache histories, use the last two points.
+    if (previous === null && historyPoints.length >= 2) {
+      previous = historyPoints[historyPoints.length - 2].price;
+    }
+
+    return {
+      current,
+      previous,
+      change: current === null || previous === null ? null : current - previous,
+      historyPoints,
+    };
+  }
+
+  function formatPointChange(value) {
+    if (value === null || value === undefined || Number.isNaN(Number(value))) {
+      return '1D change N/A';
+    }
+
+    const percentagePoints = Number(value) * 100;
+    const sign = percentagePoints > 0 ? '+' : '';
+    return `1D change ${sign}${percentagePoints.toFixed(1)} pp`;
+  }
+
+  function renderPolymarketSparkline(market, probabilityChange) {
+    const points = probabilityChange.historyPoints ?? getPolymarketHistoryPoints(market);
+    if (points.length < 2) {
+      return (
+        <div className="state-label" style={{ margin: 0 }}>
+          No history
+        </div>
+      );
+    }
+
+    const selectedDateText = polymarketSummary.as_of_date;
+    const selectedEnd = selectedDateText ? new Date(`${selectedDateText}T23:59:59`) : null;
+    const visiblePoints = selectedEnd ? points.filter((point) => point.date <= selectedEnd) : points;
+    const series = visiblePoints.length >= 2 ? visiblePoints : points;
+
+    const width = 150;
+    const height = 42;
+    const paddingX = 5;
+    const paddingY = 6;
+
+    const currentPrice =
+      probabilityChange.current ?? series[series.length - 1]?.price ?? null;
+    const previousPrice = probabilityChange.previous;
+
+    const priceValues = [
+      ...series.map((point) => point.price),
+      previousPrice,
+      currentPrice,
+    ].filter((value) => value !== null && value !== undefined && !Number.isNaN(Number(value)));
+
+    const minPrice = Math.min(...priceValues);
+    const maxPrice = Math.max(...priceValues);
+    const spread = Math.max(maxPrice - minPrice, 0.01);
+
+    const toX = (index) =>
+      paddingX + (index / Math.max(1, series.length - 1)) * (width - paddingX * 2);
+    const toY = (price) =>
+      height - paddingY - ((price - minPrice) / spread) * (height - paddingY * 2);
+
+    const fullPath = series
+      .map((point, index) => `${index === 0 ? 'M' : 'L'} ${toX(index)} ${toY(point.price)}`)
+      .join(' ');
+
+    const change = probabilityChange.change;
+    const changeColor =
+      change === null || Number.isNaN(Number(change))
+        ? '#94a3b8'
+        : change >= 0
+          ? '#2ca66a'
+          : '#ff5c5c';
+
+    const currentPoint = series[series.length - 1];
+    const previousIndex = Math.max(0, series.length - 2);
+    const previousPoint = series[previousIndex];
+
+    const previousY = toY(previousPrice ?? previousPoint.price);
+    const currentY = toY(currentPrice ?? currentPoint.price);
+
+    // The grey line shows the broader probability history.
+    // The colored segment isolates the one-step change used in "1D change".
+    const changeSegment =
+      previousPrice === null || currentPrice === null
+        ? null
+        : `M ${toX(previousIndex)} ${previousY} L ${toX(series.length - 1)} ${currentY}`;
+
+    return (
+      <svg
+        width={width}
+        height={height}
+        viewBox={`0 0 ${width} ${height}`}
+        role="img"
+        aria-label="Polymarket probability sparkline with highlighted latest change"
+      >
+        <line
+          x1={paddingX}
+          x2={width - paddingX}
+          y1={previousY}
+          y2={previousY}
+          stroke="rgba(148, 163, 184, 0.28)"
+          strokeDasharray="3 4"
+        />
+        <path
+          d={fullPath}
+          fill="none"
+          stroke="rgba(148, 163, 184, 0.42)"
+          strokeWidth="1.6"
+        />
+        {changeSegment ? (
+          <path d={changeSegment} fill="none" stroke={changeColor} strokeWidth="3" />
+        ) : null}
+        <circle
+          cx={toX(previousIndex)}
+          cy={previousY}
+          r="3"
+          fill="var(--bg-2)"
+          stroke="rgba(226, 232, 240, 0.75)"
+          strokeWidth="1.2"
+        />
+        <circle
+          cx={toX(series.length - 1)}
+          cy={currentY}
+          r="3.8"
+          fill={changeColor}
+        />
+      </svg>
+    );
+  }
+
   const context = dayDetail.context ?? {};
   const narrativeBullets = Array.isArray(context.narrative_bullets)
     ? context.narrative_bullets
     : [];
   const marketState = context.market_state ?? {};
   const externalSignalSummary = context.external_signal_summary ?? {};
-  const backtracking = context.backtracking ?? {};
-  const macroBacktracking = backtracking.macro ?? {};
-  const mesoBacktracking = backtracking.meso ?? {};
   const inferredClusterLabel =
     marketState.cluster_id === null || marketState.cluster_id === undefined
       ? selectedClusterLabel
@@ -741,10 +1008,53 @@ export function MicroView() {
   const eventRows = Array.isArray(dayDetail.events_selected_day)
     ? dayDetail.events_selected_day
     : [];
+  const headlineThemeCounts = [
+    ['War', gdeltSummary.theme_count_war ?? 0],
+    ['Election', gdeltSummary.theme_count_election ?? 0],
+    ['COVID', gdeltSummary.theme_count_covid ?? 0],
+    ['Regulation', gdeltSummary.theme_count_regulation ?? 0],
+    ['Macro', gdeltSummary.theme_count_macro ?? 0],
+    ['Crypto', gdeltSummary.theme_count_crypto ?? 0],
+  ]
+    .map(([name, count]) => [name, Number(count)])
+    .filter(([, count]) => !Number.isNaN(count) && count > 0)
+    .sort((left, right) => right[1] - left[1]);
+
+  const topThemeLabel =
+    headlineThemeCounts.length > 0
+      ? headlineThemeCounts
+          .slice(0, 4)
+          .map(([name, count]) => `${name} (${count})`)
+          .join(' · ')
+      : gdeltSummary.bucket_label ?? 'N/A';
+
+  const visibleHeadlines = showAllHeadlines ? eventRows : eventRows.slice(0, 3);
+  const hiddenHeadlineCount = Math.max(0, eventRows.length - visibleHeadlines.length);
+
   const polymarketSummary = dayDetail.polymarket_selected_day ?? {};
   const polymarketMarkets = Array.isArray(polymarketSummary.markets)
     ? polymarketSummary.markets
     : [];
+  const polymarketMarketsWithChange = polymarketMarkets
+    .map((market) => ({
+      ...market,
+      probabilityChange: getPolymarketChange(market),
+    }))
+    .sort((left, right) => {
+      const leftAbs = Math.abs(left.probabilityChange.change ?? 0);
+      const rightAbs = Math.abs(right.probabilityChange.change ?? 0);
+      if (rightAbs !== leftAbs) {
+        return rightAbs - leftAbs;
+      }
+      return Number(right.volume ?? 0) - Number(left.volume ?? 0);
+    });
+  const visiblePolymarketMarkets = showAllPolymarket
+    ? polymarketMarketsWithChange
+    : polymarketMarketsWithChange.slice(0, 3);
+  const hiddenPolymarketCount = Math.max(
+    0,
+    polymarketMarketsWithChange.length - visiblePolymarketMarkets.length,
+  );
 
   const selectedDaySummaryRows = selectedDate
     ? [
@@ -758,6 +1068,36 @@ export function MicroView() {
         ['Main Theme', getTopTheme()],
       ]
     : [];
+
+  const dailyReturnValue = getNumberFromDetail('daily_return', 'return');
+  const intradayRangeValue = getIntradayRange();
+  const sevenDayVolatilityValue = getFallbackSevenDayVolatility();
+  const btcVolumeValue = getNumberFromDetail('volume', 'trading_volume');
+  const volumeZScoreValue = getNumberFromDetail('volume_zscore', 'volume_z', 'volume_z_score');
+
+  const contextMetricCards = [
+    {
+      label: 'Move state',
+      value: marketState.move_label ?? 'Unavailable',
+      evidence: `Daily return ${formatSignedPercent(dailyReturnValue)} · Intraday range ${formatPercent(
+        intradayRangeValue,
+      )}`,
+    },
+    {
+      label: 'Volatility',
+      value: marketState.volatility_label ?? 'Unavailable',
+      evidence: `7D volatility ${formatPercent(sevenDayVolatilityValue)} · Intraday range ${formatPercent(
+        intradayRangeValue,
+      )}`,
+    },
+    {
+      label: 'Participation',
+      value: marketState.volume_label ?? 'Unavailable',
+      evidence: `BTC volume ${formatVolumeSupport(btcVolumeValue)}${
+        volumeZScoreValue === null ? '' : ` · Volume Z ${volumeZScoreValue.toFixed(2)}`
+      }`,
+    },
+  ];
 
   return (
     <section className="view-card">
@@ -873,7 +1213,7 @@ export function MicroView() {
                     backgroundColor: '#5f9fd8',
                   }}
                 />
-                Trading Volume
+                Volume
               </span>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
                 <span
@@ -904,27 +1244,59 @@ export function MicroView() {
       </section>
 
       <section className="placeholder-section">
-        <h3 className="placeholder-title">Event Context &amp; Backtracking</h3>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: 12,
+            marginBottom: 10,
+          }}
+        >
+          <h3 className="placeholder-title" style={{ margin: 0 }}>
+            Event Context &amp; Backtracking
+          </h3>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+            <span className="chart-range-pill">{timeRangeLabel}</span>
+            {selectedDate ? (
+              <span className="chart-range-pill">{selectedDate}</span>
+            ) : null}
+          </div>
+        </div>
         {selectedDate ? (
           <div className="summary-box">
             <p className="summary-title">Selected-day context</p>
-            <p className="context-summary">
-              {context.narrative_summary ?? 'Selected-day context is loading.'}
-            </p>
 
-            <div className="context-chip-row">
-              <div className="context-chip">
-                <span className="context-chip-label">Move state</span>
-                <strong>{marketState.move_label ?? 'Unavailable'}</strong>
-              </div>
-              <div className="context-chip">
-                <span className="context-chip-label">Volatility</span>
-                <strong>{marketState.volatility_label ?? 'Unavailable'}</strong>
-              </div>
-              <div className="context-chip">
-                <span className="context-chip-label">Volume</span>
-                <strong>{marketState.volume_label ?? 'Unavailable'}</strong>
-              </div>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+                gap: 12,
+                marginTop: 14,
+                marginBottom: 18,
+              }}
+            >
+              {contextMetricCards.map((card) => (
+                <div
+                  key={card.label}
+                  className="context-chip"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 8,
+                    minHeight: 96,
+                    padding: '16px 18px',
+                    background:
+                      'linear-gradient(180deg, rgba(20, 29, 46, 0.98), rgba(12, 18, 30, 0.96))',
+                  }}
+                >
+                  <span className="context-chip-label">{card.label}</span>
+                  <strong style={{ fontSize: '1rem', lineHeight: 1.25 }}>{card.value}</strong>
+                  <span className="state-label" style={{ margin: 0, fontSize: '0.78rem' }}>
+                    {card.evidence}
+                  </span>
+                </div>
+              ))}
             </div>
 
             <div className="micro-context-grid">
@@ -939,44 +1311,53 @@ export function MicroView() {
                 </div>
               ) : null}
 
-              <div className="context-section">
-                <p className="summary-title">Backtracking anchors</p>
-                <div className="context-backtracking-grid">
-                  <div className="asset-context-card">
-                    <p className="asset-context-ticker">Macro anchor</p>
-                    <p className="asset-context-value">{macroBacktracking.month_bucket ?? 'N/A'}</p>
-                    <p className="state-label">
-                      Window: {macroBacktracking.window_start ?? 'N/A'} to{' '}
-                      {macroBacktracking.window_end ?? 'N/A'}
-                    </p>
-                  </div>
-                  <div className="asset-context-card">
-                    <p className="asset-context-ticker">External breadth</p>
-                    <p className="asset-context-value">
-                      {externalSignalSummary.breadth_label ?? 'Unavailable'}
-                    </p>
-                    <p className="state-label">
-                      Up {externalSignalSummary.positive_count ?? 0} | Down{' '}
-                      {externalSignalSummary.negative_count ?? 0} | Flat{' '}
-                      {externalSignalSummary.flat_count ?? 0}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               {dayDetail.external_assets.length > 0 ? (
                 <div className="context-section">
                   <p className="summary-title">External asset context</p>
+                  <p className="state-label" style={{ marginTop: -4, marginBottom: 12 }}>
+                    {externalSignalSummary.breadth_label ?? 'External asset breadth unavailable'} ·
+                    Up {externalSignalSummary.positive_count ?? 0} | Down{' '}
+                    {externalSignalSummary.negative_count ?? 0} | Flat{' '}
+                    {externalSignalSummary.flat_count ?? 0}
+                  </p>
                   <div className="asset-context-grid">
-                    {dayDetail.external_assets.map((asset) => (
-                      <div key={asset.ticker} className="asset-context-card">
-                        <p className="asset-context-ticker">{asset.ticker}</p>
-                        <p className="asset-context-value">{formatCurrency(asset.close)}</p>
-                        <p className="state-label">
-                          Daily return: {formatPercent(asset.daily_return)}
-                        </p>
-                      </div>
-                    ))}
+                    {dayDetail.external_assets.map((asset) => {
+                      const assetReturn = Number(asset.daily_return);
+                      const returnColor = Number.isNaN(assetReturn)
+                        ? 'var(--text-main)'
+                        : assetReturn >= 0
+                          ? '#2ca66a'
+                          : '#ff5c5c';
+                      return (
+                        <div
+                          key={asset.ticker}
+                          className="asset-context-card"
+                          style={{
+                            minHeight: 118,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                          }}
+                        >
+                          <div>
+                            <p className="asset-context-ticker">{asset.ticker}</p>
+                            <p
+                              className="asset-context-value"
+                              style={{
+                                color: returnColor,
+                                fontSize: '1.5rem',
+                                lineHeight: 1.1,
+                              }}
+                            >
+                              {formatSignedPercent(asset.daily_return)}
+                            </p>
+                          </div>
+                          <p className="state-label" style={{ margin: 0 }}>
+                            Close: {formatCurrencyWithSymbol(asset.close)}
+                          </p>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               ) : null}
@@ -990,72 +1371,178 @@ export function MicroView() {
                   {' '}— curated query routes the DOC API toward this window's narrative.
                 </p>
               ) : null}
-              <div className="context-chip-row">
-                <div className="context-chip">
-                  <span className="context-chip-label">GDELT status</span>
-                  <strong>{gdeltSummary.status ?? 'placeholder'}</strong>
+              <div
+                className="asset-context-card"
+                style={{
+                  marginTop: 10,
+                  marginBottom: 14,
+                  padding: '14px 16px',
+                }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    justifyContent: 'space-between',
+                    gap: 16,
+                    marginBottom: 12,
+                  }}
+                >
+                  <div>
+                    <p className="asset-context-ticker" style={{ marginBottom: 4 }}>
+                      Top themes
+                    </p>
+                    <p className="state-label" style={{ margin: 0 }}>
+                      Theme mention count in the selected context window.
+                    </p>
+                  </div>
+                  <span
+                    className="state-label"
+                    style={{
+                      margin: 0,
+                      fontVariantNumeric: 'tabular-nums',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {gdeltSummary.news_count ?? eventRows.length} headlines
+                  </span>
                 </div>
-                <div className="context-chip">
-                  <span className="context-chip-label">News count</span>
-                  <strong>{gdeltSummary.news_count ?? 0}</strong>
-                </div>
-                {(() => {
-                  // Top-2 non-zero theme counts so COVID/macro days show
-                  // their actual story instead of always crypto+regulation.
-                  const themes = [
-                    ['war', gdeltSummary.theme_count_war ?? 0],
-                    ['election', gdeltSummary.theme_count_election ?? 0],
-                    ['covid', gdeltSummary.theme_count_covid ?? 0],
-                    ['regulation', gdeltSummary.theme_count_regulation ?? 0],
-                    ['macro', gdeltSummary.theme_count_macro ?? 0],
-                    ['crypto', gdeltSummary.theme_count_crypto ?? 0],
-                  ]
-                    .filter(([, n]) => n > 0)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, 3);
-                  if (themes.length === 0) {
-                    return (
-                      <div className="context-chip">
-                        <span className="context-chip-label">Top theme</span>
-                        <strong>—</strong>
-                      </div>
-                    );
-                  }
-                  return themes.map(([name, n]) => (
-                    <div className="context-chip" key={name}>
-                      <span className="context-chip-label">{name} mentions</span>
-                      <strong>{n}</strong>
-                    </div>
-                  ));
-                })()}
+
+                {headlineThemeCounts.length > 0 ? (
+                  <div
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                      gap: 10,
+                    }}
+                  >
+                    {(() => {
+                      const topThemes = headlineThemeCounts.slice(0, 4);
+                      const maxThemeCount = Math.max(
+                        ...topThemes.map(([, count]) => Number(count)),
+                        1,
+                      );
+                      const themeColors = {
+                        Crypto: '#66c2a5',
+                        Regulation: '#e78ac3',
+                        War: '#d65a5a',
+                        Election: '#8da0cb',
+                        Macro: '#f7931a',
+                        COVID: '#ffd92f',
+                      };
+
+                      return topThemes.map(([name, count]) => {
+                        const numericCount = Number(count);
+                        return (
+                          <div
+                            key={name}
+                            style={{
+                              padding: '10px 12px',
+                              border: '1px solid var(--border)',
+                              borderRadius: 12,
+                              background: 'rgba(15, 23, 42, 0.35)',
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                gap: 10,
+                                marginBottom: 8,
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: 'var(--text-main)',
+                                  fontWeight: 700,
+                                }}
+                              >
+                                {name}
+                              </span>
+                              <span
+                                style={{
+                                  color: 'var(--text-muted)',
+                                  fontVariantNumeric: 'tabular-nums',
+                                  fontWeight: 700,
+                                }}
+                              >
+                                {numericCount}
+                              </span>
+                            </div>
+                            <div
+                              style={{
+                                height: 8,
+                                borderRadius: 999,
+                                background: 'rgba(148, 163, 184, 0.14)',
+                                overflow: 'hidden',
+                              }}
+                            >
+                              <div
+                                style={{
+                                  width: `${Math.max(
+                                    5,
+                                    (numericCount / maxThemeCount) * 100,
+                                  )}%`,
+                                  height: '100%',
+                                  borderRadius: 999,
+                                  background: themeColors[name] ?? '#94a3b8',
+                                }}
+                              />
+                            </div>
+                          </div>
+                        );
+                      });
+                    })()}
+                  </div>
+                ) : (
+                  <p className="state-label" style={{ margin: 0 }}>
+                    No theme mentions available.
+                  </p>
+                )}
               </div>
 
               {eventRows.length > 0 ? (
-                <div className="headline-list">
-                  {eventRows.map((event, index) => (
-                    <article
-                      key={`${event.url ?? event.headline}-${index}`}
-                      className="headline-card"
+                <>
+                  <div className="headline-list">
+                    {visibleHeadlines.map((event, index) => (
+                      <article
+                        key={`${event.url ?? event.headline}-${index}`}
+                        className="headline-card"
+                      >
+                        <p className="headline-meta">
+                          {event.source ?? 'Unknown source'} · {event.category ?? 'general'}
+                          {event.timestamp ? ` · ${event.timestamp}` : ''}
+                        </p>
+                        {event.url ? (
+                          <a
+                            href={event.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="headline-link"
+                          >
+                            {event.headline}
+                          </a>
+                        ) : (
+                          <p className="headline-title">{event.headline}</p>
+                        )}
+                      </article>
+                    ))}
+                  </div>
+
+                  {eventRows.length > 3 ? (
+                    <button
+                      type="button"
+                      className="range-button"
+                      style={{ marginTop: 12 }}
+                      onClick={() => setShowAllHeadlines((previous) => !previous)}
                     >
-                      <p className="headline-meta">
-                        {event.source ?? 'Unknown source'} · {event.category ?? 'general'}
-                        {event.timestamp ? ` · ${event.timestamp}` : ''}
-                      </p>
-                      {event.url ? (
-                        <a
-                          href={event.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="headline-link"
-                        >
-                          {event.headline}
-                        </a>
-                      ) : (
-                        <p className="headline-title">{event.headline}</p>
-                      )}
-                    </article>
-                  ))}
-                </div>
+                      {showAllHeadlines
+                        ? 'Show fewer'
+                        : `Show more (${hiddenHeadlineCount} more)`}
+                    </button>
+                  ) : null}
+                </>
               ) : (
                 <div className="placeholder-box placeholder-box-small">
                   <span className="placeholder-label">
@@ -1067,85 +1554,140 @@ export function MicroView() {
             </div>
 
             <div className="context-section">
-              <p className="summary-title">Headline Themes</p>
-              <div className="micro-context-grid">
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  justifyContent: 'space-between',
+                  gap: 16,
+                  marginBottom: 10,
+                }}
+              >
                 <div>
-                  <p className="chart-caption" style={{ marginTop: 0 }}>
-                    Word cloud · size = frequency · color = mean tone
-                    (green &gt; −0.8, red &lt; −1.6, grey neutral)
+                  <p className="summary-title" style={{ marginBottom: 4 }}>
+                    Polymarket expectation shifts on {polymarketSummary.as_of_date ?? 'N/A'}
                   </p>
-                  <HeadlineWordCloud events={eventRows} />
+                  <p className="state-label" style={{ margin: 0 }}>
+                    Grey line = recent probability history; colored last segment = 1D change.
+                  </p>
                 </div>
-                <div>
-                  <p className="chart-caption" style={{ marginTop: 0 }}>
-                    ThemeRiver · stacked count of themed headlines per UTC hour
-                  </p>
-                  <ThemeRiverMini events={eventRows} />
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 12,
+                    flexWrap: 'wrap',
+                    justifyContent: 'flex-end',
+                    color: 'var(--text-muted)',
+                    fontSize: '0.74rem',
+                  }}
+                >
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                    <span
+                      aria-hidden="true"
+                      style={{
+                        width: 18,
+                        height: 3,
+                        borderRadius: 999,
+                        background: '#2ca66a',
+                      }}
+                    />
+                    probability up
+                  </span>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                    <span
+                      aria-hidden="true"
+                      style={{
+                        width: 18,
+                        height: 3,
+                        borderRadius: 999,
+                        background: '#ff5c5c',
+                      }}
+                    />
+                    probability down
+                  </span>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                    <span
+                      aria-hidden="true"
+                      style={{
+                        width: 18,
+                        height: 0,
+                        borderTop: '2px dashed rgba(148, 163, 184, 0.45)',
+                      }}
+                    />
+                    previous level
+                  </span>
                 </div>
               </div>
-            </div>
 
-            <div className="context-section">
-              <p className="summary-title">
-                Polymarket — expectations on {polymarketSummary.as_of_date ?? 'N/A'}
-              </p>
-              <div className="context-chip-row">
-                <div className="context-chip">
-                  <span className="context-chip-label">Coverage</span>
-                  <strong>{polymarketSummary.status ?? 'placeholder'}</strong>
-                </div>
-                <div className="context-chip">
-                  <span className="context-chip-label">Window</span>
-                  <strong>{polymarketSummary.bucket_label ?? 'N/A'}</strong>
-                </div>
-                <div className="context-chip">
-                  <span className="context-chip-label">Markets shown</span>
-                  <strong>{polymarketMarkets.length}</strong>
-                </div>
-              </div>
+              {polymarketMarketsWithChange.length > 0 ? (
+                <>
+                  <div className="polymarket-card-grid">
+                    {visiblePolymarketMarkets.map((market) => {
+                      const yesAt = market.probabilityChange.current;
+                      const change = market.probabilityChange.change;
+                      const hasChange =
+                        change !== null && change !== undefined && !Number.isNaN(Number(change));
+                      const cardColor = !hasChange
+                        ? 'var(--text-muted)'
+                        : change >= 0
+                          ? '#2ca66a'
+                          : '#ff5c5c';
 
-              {polymarketMarkets.length > 0 ? (
-                <div className="polymarket-card-grid">
-                  {polymarketMarkets.map((market) => {
-                    const yesAt = market.yes_price_at_date;
-                    const aboveHalf = typeof yesAt === 'number' && yesAt >= 0.5;
-                    const directionClass = aboveHalf ? 'is-pos' : 'is-neg';
-                    return (
-                      <article
-                        key={market.market_slug ?? market.market_name}
-                        className="polymarket-card"
-                      >
-                        <p className="polymarket-card-meta">
-                          {market.theme ?? 'market'} ·{' '}
-                          {market.closed ? 'resolved' : 'live'} · ends{' '}
-                          {market.end_date ? market.end_date.slice(0, 10) : 'N/A'}
-                        </p>
-                        <p className="polymarket-card-title">{market.market_name}</p>
-                        <div className="polymarket-card-body">
-                          <div className={`polymarket-card-price ${directionClass}`}>
-                            <span className="polymarket-card-yes">
-                              {formatPercent(yesAt)}
-                            </span>
-                            <span className="polymarket-card-yes-label">
-                              {market.yes_label ?? 'Yes'} on{' '}
-                              {polymarketSummary.as_of_date ?? '—'}
-                            </span>
+                      return (
+                        <article
+                          key={market.market_slug ?? market.market_name}
+                          className="polymarket-card"
+                        >
+                          <p className="polymarket-card-meta">
+                            {market.theme ?? 'market'} ·{' '}
+                            {market.closed ? 'resolved' : 'live'} · ends{' '}
+                            {market.end_date ? market.end_date.slice(0, 10) : 'N/A'}
+                          </p>
+                          <p className="polymarket-card-title">{market.market_name}</p>
+                          <div className="polymarket-card-body">
+                            <div className="polymarket-card-price">
+                              <span
+                                className="polymarket-card-yes"
+                                style={{ color: cardColor }}
+                              >
+                                {formatPercent(yesAt)}
+                              </span>
+                              <span
+                                className="polymarket-card-yes-label"
+                                style={{ color: cardColor, fontWeight: 700 }}
+                              >
+                                {formatPointChange(change)}
+                              </span>
+                              <span className="polymarket-card-yes-label">
+                                {market.yes_label ?? 'Yes'} on{' '}
+                                {polymarketSummary.as_of_date ?? '—'}
+                              </span>
+                            </div>
+                            {renderPolymarketSparkline(market, market.probabilityChange)}
                           </div>
-                          <PolymarketSparkline
-                            history={market.history ?? []}
-                            selectedDate={polymarketSummary.as_of_date}
-                            width={140}
-                            height={32}
-                          />
-                        </div>
-                        <p className="polymarket-card-foot">
-                          Vol {formatCurrency(market.volume)} ·{' '}
-                          {(market.history?.length ?? 0)} daily prices
-                        </p>
-                      </article>
-                    );
-                  })}
-                </div>
+                          <p className="polymarket-card-foot">
+                            Vol {formatCurrency(market.volume)} ·{' '}
+                            {(market.history?.length ?? 0)} daily prices
+                          </p>
+                        </article>
+                      );
+                    })}
+                  </div>
+
+                  {polymarketMarketsWithChange.length > 3 ? (
+                    <button
+                      type="button"
+                      className="range-button"
+                      style={{ marginTop: 12 }}
+                      onClick={() => setShowAllPolymarket((previous) => !previous)}
+                    >
+                      {showAllPolymarket
+                        ? 'Show fewer'
+                        : `Show more (${hiddenPolymarketCount} more)`}
+                    </button>
+                  ) : null}
+                </>
               ) : (
                 <div className="placeholder-box placeholder-box-small">
                   <span className="placeholder-label">

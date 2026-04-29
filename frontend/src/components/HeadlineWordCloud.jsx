@@ -1,89 +1,277 @@
-import React, { useEffect, useRef, useState } from 'react';
-import cloud from 'd3-cloud';
-import * as d3 from 'd3';
-import { tokenizeHeadlines } from '../utils/derived.js';
+import React, { useMemo } from 'react';
 
-const WIDTH = 520;
-const HEIGHT = 220;
+const DRIVER_CONFIG = {
+  crypto_policy: {
+    label: 'Crypto policy',
+    color: '#f7931a',
+    keywords: [
+      'crypto',
+      'cryptocurrency',
+      'bitcoin',
+      'btc',
+      'legislation',
+      'regulation',
+      'regulatory',
+      'sec',
+      'etf',
+      'reserve',
+      'policy',
+    ],
+  },
+  election_policy: {
+    label: 'Election / policy',
+    color: '#8da0cb',
+    keywords: [
+      'election',
+      'trump',
+      'harris',
+      'democrat',
+      'republican',
+      'capitol',
+      'campaign',
+      'vote',
+      'administration',
+    ],
+  },
+  macro_fed: {
+    label: 'Macro / Fed',
+    color: '#66c2a5',
+    keywords: [
+      'fed',
+      'powell',
+      'rate',
+      'rates',
+      'inflation',
+      'dollar',
+      'treasury',
+      'yield',
+      'liquidity',
+      'risk',
+    ],
+  },
+  market_sentiment: {
+    label: 'Market sentiment',
+    color: '#e5c494',
+    keywords: [
+      'rally',
+      'surge',
+      'selloff',
+      'crash',
+      'drop',
+      'gain',
+      'loss',
+      'risk-on',
+      'risk-off',
+      'fear',
+      'outflow',
+      'inflow',
+    ],
+  },
+  geopolitical_risk: {
+    label: 'Geopolitical risk',
+    color: '#d65a5a',
+    keywords: ['war', 'iran', 'ukraine', 'russia', 'middle east', 'attack', 'conflict', 'tension'],
+  },
+  other: {
+    label: 'Other context',
+    color: '#94a3b8',
+    keywords: [],
+  },
+};
 
-function toneColor(meanTone) {
-  if (meanTone === null || meanTone === undefined || Number.isNaN(meanTone)) return '#ced4da';
-  if (meanTone > 0.5) return '#2f9e44';
-  if (meanTone < -0.5) return '#d9485f';
-  return '#ced4da';
+const DRIVER_ORDER = [
+  'crypto_policy',
+  'election_policy',
+  'macro_fed',
+  'market_sentiment',
+  'geopolitical_risk',
+  'other',
+];
+
+function inferDriver(event) {
+  const text = `${event?.category ?? ''} ${event?.headline ?? ''}`.toLowerCase();
+
+  for (const key of DRIVER_ORDER) {
+    if (key === 'other') continue;
+    const config = DRIVER_CONFIG[key];
+    if (config.keywords.some((keyword) => text.includes(keyword))) {
+      return key;
+    }
+  }
+
+  return 'other';
 }
 
-export function HeadlineWordCloud({ events }) {
-  const [layout, setLayout] = useState([]);
-  const cancelledRef = useRef(false);
+function truncate(text, maxLength = 92) {
+  const value = String(text ?? '').trim();
+  if (value.length <= maxLength) return value;
+  return `${value.slice(0, maxLength - 1)}…`;
+}
 
-  useEffect(() => {
-    cancelledRef.current = false;
-    const tokens = tokenizeHeadlines(events).slice(0, 40);
-    if (tokens.length === 0) {
-      setLayout([]);
-      return undefined;
+export function HeadlineWordCloud({ events = [] }) {
+  const drivers = useMemo(() => {
+    const buckets = new Map(
+      DRIVER_ORDER.map((key) => [
+        key,
+        {
+          key,
+          ...DRIVER_CONFIG[key],
+          count: 0,
+          examples: [],
+        },
+      ]),
+    );
+
+    for (const event of events) {
+      const key = inferDriver(event);
+      const bucket = buckets.get(key) ?? buckets.get('other');
+      bucket.count += 1;
+
+      if (bucket.examples.length < 2 && event?.headline) {
+        bucket.examples.push(event.headline);
+      }
     }
-    const sizeScale = d3
-      .scaleSqrt()
-      .domain([1, d3.max(tokens, (t) => t.count) ?? 1])
-      .range([12, 38]);
 
-    cloud()
-      .size([WIDTH, HEIGHT])
-      .words(
-        tokens.map((t) => ({
-          text: t.word,
-          size: sizeScale(t.count),
-          count: t.count,
-          tone: t.meanTone,
-        })),
-      )
-      .padding(2)
-      .rotate(() => (Math.random() < 0.2 ? 90 : 0))
-      .font('Inter, Segoe UI, sans-serif')
-      .fontSize((d) => d.size)
-      .on('end', (placed) => {
-        if (!cancelledRef.current) setLayout(placed);
-      })
-      .start();
-
-    return () => {
-      cancelledRef.current = true;
-    };
+    return DRIVER_ORDER.map((key) => buckets.get(key))
+      .filter((item) => item.count > 0)
+      .sort((left, right) => right.count - left.count || DRIVER_ORDER.indexOf(left.key) - DRIVER_ORDER.indexOf(right.key));
   }, [events]);
 
-  if (!events || events.length === 0 || layout.length === 0) {
+  const maxCount = Math.max(...drivers.map((item) => item.count), 1);
+  const total = events.length;
+
+  if (drivers.length === 0) {
     return (
       <div className="placeholder-box placeholder-box-small">
-        <span className="placeholder-label">No headline tokens available.</span>
+        <span className="placeholder-label">No headline driver signals available.</span>
       </div>
     );
   }
 
   return (
-    <svg
-      viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-      width="100%"
-      height={HEIGHT}
-      role="img"
-      aria-label="Headline word cloud colored by mean tone"
+    <div
+      className="asset-context-card"
+      style={{
+        padding: 18,
+        height: 380,
+        boxSizing: 'border-box',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 14,
+      }}
     >
-      <g transform={`translate(${WIDTH / 2}, ${HEIGHT / 2})`}>
-        {layout.map((w) => (
-          <text
-            key={`${w.text}-${w.x}-${w.y}`}
-            transform={`translate(${w.x}, ${w.y}) rotate(${w.rotate})`}
-            textAnchor="middle"
-            fontSize={w.size}
-            fontFamily="Inter, Segoe UI, sans-serif"
-            fontWeight={600}
-            fill={toneColor(w.tone)}
-          >
-            {w.text}
-          </text>
-        ))}
-      </g>
-    </svg>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'flex-start',
+          justifyContent: 'space-between',
+          gap: 16,
+        }}
+      >
+        <div>
+          <p className="asset-context-ticker" style={{ marginBottom: 4 }}>
+            Headline relevance drivers
+          </p>
+          <p className="state-label" style={{ margin: 0 }}>
+            Groups headlines by the market channel that could affect BTC.
+          </p>
+        </div>
+        <div
+          style={{
+            color: 'var(--text-muted)',
+            fontSize: '0.72rem',
+            whiteSpace: 'nowrap',
+            fontVariantNumeric: 'tabular-nums',
+          }}
+        >
+          {total} headlines
+        </div>
+      </div>
+
+      <div style={{ display: 'grid', gap: 12, flex: 1 }}>
+        {drivers.map((driver) => {
+          const widthPct = Math.max(8, (driver.count / maxCount) * 100);
+          return (
+            <div
+              key={driver.key}
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '132px minmax(0, 1fr) 36px',
+                gap: 10,
+                alignItems: 'start',
+              }}
+            >
+              <div>
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 7,
+                    color: 'var(--text-main)',
+                    fontWeight: 700,
+                  }}
+                >
+                  <span
+                    aria-hidden="true"
+                    style={{
+                      width: 9,
+                      height: 9,
+                      borderRadius: 2,
+                      background: driver.color,
+                      flex: '0 0 auto',
+                    }}
+                  />
+                  {driver.label}
+                </div>
+                {driver.examples[0] ? (
+                  <div
+                    className="state-label"
+                    style={{
+                      margin: '4px 0 0 16px',
+                      fontSize: '0.68rem',
+                      lineHeight: 1.25,
+                    }}
+                    title={driver.examples[0]}
+                  >
+                    {truncate(driver.examples[0])}
+                  </div>
+                ) : null}
+              </div>
+
+              <div
+                style={{
+                  height: 10,
+                  marginTop: 4,
+                  borderRadius: 999,
+                  background: 'rgba(148, 163, 184, 0.14)',
+                  overflow: 'hidden',
+                }}
+              >
+                <div
+                  style={{
+                    width: `${widthPct}%`,
+                    height: '100%',
+                    borderRadius: 999,
+                    background: driver.color,
+                    boxShadow: `0 0 18px ${driver.color}33`,
+                  }}
+                />
+              </div>
+
+              <span
+                style={{
+                  color: 'var(--text-muted)',
+                  fontVariantNumeric: 'tabular-nums',
+                  textAlign: 'right',
+                  fontWeight: 700,
+                }}
+              >
+                {driver.count}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }

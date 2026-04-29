@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import * as d3 from 'd3';
 
-// ParallelCoordsChart — supports drag-reorder of axes, per-axis range brushing,
-// and faint per-day rows behind heavy cluster-mean lines.
+// ParallelCoordsChart — supports drag-reorder of axes and
+// faint per-day rows behind heavy cluster-mean lines.
 // Local interaction state only; no Zustand writes.
 
 const WIDTH = 920;
@@ -30,9 +30,7 @@ export function ParallelCoordsChart({
   semanticLabelForCluster,
 }) {
   const [axisOrder, setAxisOrder] = useState(features);
-  const [axisBrushes, setAxisBrushes] = useState({}); // {feature: [min,max]}
   const [drag, setDrag] = useState(null); // {feature, x}
-  const [activeBrush, setActiveBrush] = useState(null); // {feature, startY, currentY}
   const svgRef = useRef(null);
 
   // Re-sync if features change externally (e.g. data reload).
@@ -41,7 +39,6 @@ export function ParallelCoordsChart({
       axisOrder.length === features.length && axisOrder.every((f) => features.includes(f));
     if (!same) {
       setAxisOrder(features);
-      setAxisBrushes({});
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [features]);
@@ -79,15 +76,6 @@ export function ParallelCoordsChart({
     const stride = Math.ceil(dailyRows.length / MAX_DAILY_ROWS);
     return dailyRows.filter((_, i) => i % stride === 0);
   }, [dailyRows]);
-
-  const passesBrushes = (row) => {
-    for (const [feature, range] of Object.entries(axisBrushes)) {
-      const v = row[feature];
-      if (v === null || v === undefined || Number.isNaN(v)) return false;
-      if (v < range[0] || v > range[1]) return false;
-    }
-    return true;
-  };
 
   const lineForRow = (row, source) => {
     const points = axisOrder
@@ -143,48 +131,10 @@ export function ParallelCoordsChart({
     setDrag(null);
   }
 
-  // ----- Brush handlers -----
-  function onBrushPointerDown(e, feature) {
-    if (e.button !== 0) return;
-    e.stopPropagation();
-    e.currentTarget.setPointerCapture?.(e.pointerId);
-    const { y } = getSvgPoint(e);
-    setActiveBrush({ feature, startY: y, currentY: y });
-  }
-  function onBrushPointerMove(e) {
-    if (!activeBrush) return;
-    const { y } = getSvgPoint(e);
-    setActiveBrush((prev) => (prev ? { ...prev, currentY: y } : null));
-  }
-  function onBrushPointerUp() {
-    if (!activeBrush) return;
-    const scale = verticalScales[activeBrush.feature];
-    const yMin = Math.min(activeBrush.startY, activeBrush.currentY);
-    const yMax = Math.max(activeBrush.startY, activeBrush.currentY);
-    if (Math.abs(yMax - yMin) < 6) {
-      setActiveBrush(null);
-      return;
-    }
-    const valueHi = scale.invert(yMin); // lower y = higher value
-    const valueLo = scale.invert(yMax);
-    setAxisBrushes((prev) => ({ ...prev, [activeBrush.feature]: [valueLo, valueHi] }));
-    setActiveBrush(null);
-  }
-  function clearBrush(feature) {
-    setAxisBrushes((prev) => {
-      const next = { ...prev };
-      delete next[feature];
-      return next;
-    });
-  }
-
-  const hasBrushes = Object.keys(axisBrushes).length > 0;
   const dateSelectedRows = selectedDate
     ? sampledRows.filter((row) => row.date === selectedDate)
     : sampledRows;
-  const passingRows = hasBrushes ? dateSelectedRows.filter(passesBrushes) : dateSelectedRows;
-  const passingCount = passingRows.length;
-  const passingRatio = dateSelectedRows.length > 0 ? passingCount / dateSelectedRows.length : 0;
+  const passingRows = dateSelectedRows;
   const selectedDateCluster = selectedDate
     ? dailyRows.find((row) => row.date === selectedDate)?.clusterValue
     : null;
@@ -202,23 +152,7 @@ export function ParallelCoordsChart({
 
   return (
     <div>
-      <div className="pc-toolbar-row">
-        <div className="control-row" style={{ marginBottom: 8 }}>
-          <button
-            type="button"
-            className="range-button"
-            onClick={() => setAxisOrder(features)}
-          >
-            Reset axes
-          </button>
-          <button
-            type="button"
-            className="range-button"
-            onClick={() => setAxisBrushes({})}
-          >
-            Clear brushes ({Object.keys(axisBrushes).length})
-          </button>
-        </div>
+      <div className="pc-toolbar-row" style={{ justifyContent: 'flex-end' }}>
         <div className="pc-legend" aria-label="Regime color legend">
           {legendItems.map((item) => (
             <span key={`pc-legend-${item.clusterId}`} className="pc-legend-item">
@@ -238,38 +172,36 @@ export function ParallelCoordsChart({
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         className="timeline-chart"
         role="img"
-        aria-label="Parallel coordinates plot with drag-reorder and brushing"
+        aria-label="Parallel coordinates feature profile plot"
         onPointerMove={(e) => {
           onAxisPointerMove(e);
-          onBrushPointerMove(e);
         }}
-        onPointerUp={(e) => {
-          onAxisPointerUp(e);
-          onBrushPointerUp(e);
+        onPointerUp={() => {
+          onAxisPointerUp();
         }}
       >
         {/* Faint daily rows */}
         <g className="pc-daily-rows" pointerEvents="none">
           {passingRows.map((row) => {
-            const passing = !hasBrushes || passesBrushes(row);
             const isSelectedCluster =
               targetClusterId !== null &&
               targetClusterId !== undefined &&
               Number(targetClusterId) === Number(row.clusterValue);
-            const opacity = passing
-              ? targetClusterId === null || targetClusterId === undefined
-                ? 0.18
+            const isSelectedDay = selectedDate === row.date;
+            const opacity = isSelectedDay
+              ? 0.52
+              : targetClusterId === null || targetClusterId === undefined
+                ? 0.16
                 : isSelectedCluster
-                  ? 0.32
-                  : 0.06
-              : 0.02;
+                  ? 0.22
+                  : 0.04;
             return (
               <path
                 key={`pcd-${row.date}`}
                 d={lineForRow(row, 'daily')}
                 fill="none"
-                stroke={clusterColorScale(String(row.clusterValue))}
-                strokeWidth={0.7}
+                stroke={isSelectedDay ? '#94a3b8' : clusterColorScale(String(row.clusterValue))}
+                strokeWidth={isSelectedDay ? 1.3 : 0.7}
                 opacity={opacity}
                 className="pc-daily-row"
               />
@@ -277,36 +209,26 @@ export function ParallelCoordsChart({
           })}
         </g>
 
-        {/* Cluster mean lines on top */}
+        {/* Cluster mean lines on top.
+            Always show all regime means for comparison.
+            The selected regime is emphasized; other regimes are muted. */}
         <g className="pc-mean-lines">
-          {clusterProfiles
-            .filter((profile) => {
-              if (targetClusterId === null || targetClusterId === undefined) {
-                return true;
-              }
-              return Number(profile.clusterId) === Number(targetClusterId);
-            })
-            .map((profile) => {
+          {clusterProfiles.map((profile) => {
             const isSelected =
               targetClusterId !== null &&
               targetClusterId !== undefined &&
               Number(targetClusterId) === Number(profile.clusterId);
+            const hasTargetCluster =
+              targetClusterId !== null && targetClusterId !== undefined;
+
             return (
               <path
                 key={`pcm-${profile.clusterId}`}
                 d={lineForRow(profile, 'profile')}
                 fill="none"
-                stroke={
-                  targetClusterId === null || targetClusterId === undefined || isSelected
-                    ? clusterColorScale(String(profile.clusterId))
-                    : '#4a5670'
-                }
-                strokeWidth={isSelected ? 3.6 : 2}
-                opacity={
-                  targetClusterId === null || targetClusterId === undefined || isSelected
-                    ? 0.95
-                    : 0.3
-                }
+                stroke={clusterColorScale(String(profile.clusterId))}
+                strokeWidth={!hasTargetCluster ? 2.6 : isSelected ? 4.2 : 1.8}
+                opacity={!hasTargetCluster ? 0.78 : isSelected ? 0.98 : 0.22}
                 className="profile-line"
               />
             );
@@ -318,7 +240,6 @@ export function ParallelCoordsChart({
           const cx = featureScale(feature);
           const isDragging = drag && drag.feature === feature;
           const renderX = isDragging ? drag.x : cx;
-          const brush = axisBrushes[feature];
           const scale = verticalScales[feature];
 
           return (
@@ -330,38 +251,6 @@ export function ParallelCoordsChart({
                 y2={HEIGHT - MARGIN.bottom}
                 className="chart-gridline chart-gridline-vertical"
               />
-
-              {/* Brush hit area + active brush rect */}
-              <rect
-                x={-12}
-                width={24}
-                y={MARGIN.top}
-                height={HEIGHT - MARGIN.top - MARGIN.bottom}
-                fill="transparent"
-                style={{ cursor: 'ns-resize' }}
-                onPointerDown={(e) => onBrushPointerDown(e, feature)}
-                onDoubleClick={() => clearBrush(feature)}
-              />
-              {brush ? (
-                <rect
-                  x={-8}
-                  width={16}
-                  y={scale(brush[1])}
-                  height={Math.max(2, scale(brush[0]) - scale(brush[1]))}
-                  className="pc-axis-brush"
-                  pointerEvents="none"
-                />
-              ) : null}
-              {activeBrush && activeBrush.feature === feature ? (
-                <rect
-                  x={-8}
-                  width={16}
-                  y={Math.min(activeBrush.startY, activeBrush.currentY)}
-                  height={Math.abs(activeBrush.currentY - activeBrush.startY)}
-                  className="pc-axis-brush pc-axis-brush-active"
-                  pointerEvents="none"
-                />
-              ) : null}
 
               {/* Axis-extreme tick labels */}
               <text
@@ -407,13 +296,7 @@ export function ParallelCoordsChart({
         })}
       </svg>
 
-      <div className="chart-caption-row">
-        <p className="chart-caption">Daily rows: {dateSelectedRows.length}</p>
-        <p className="chart-caption">
-          Brushed: {hasBrushes ? `${passingCount} (${(passingRatio * 100).toFixed(0)}%)` : 'none'}
-        </p>
-        <p className="chart-caption">Drag axis label to reorder · Drag along axis to brush · Double-click axis to clear</p>
-      </div>
+
     </div>
   );
 }

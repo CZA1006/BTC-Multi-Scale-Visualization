@@ -1044,67 +1044,132 @@ export function MicroView() {
   const btcVolumeValue = getNumberFromDetail('volume', 'trading_volume');
   const volumeZScoreValue = getNumberFromDetail('volume_zscore', 'volume_z', 'volume_z_score');
 
-  function getParticipationLevel(label, fallbackZScore) {
-    const normalized = String(label ?? '').toLowerCase();
-    if (normalized.includes('very heavy')) return { position: 0.9, color: '#60a5fa' };
-    if (normalized.includes('above-normal')) return { position: 0.72, color: '#5f9fd8' };
-    if (normalized.includes('normal')) return { position: 0.5, color: '#7dd3fc' };
-    if (normalized.includes('below-normal')) return { position: 0.28, color: '#93c5fd' };
-    if (normalized.includes('thin')) return { position: 0.12, color: '#bfdbfe' };
-    if (fallbackZScore === null || fallbackZScore === undefined) return { position: 0.5, color: '#7dd3fc' };
-    const normalizedZ = (fallbackZScore + 2) / 4;
-    return {
-      position: Math.max(0.08, Math.min(0.92, normalizedZ)),
-      color: fallbackZScore >= 0 ? '#5f9fd8' : '#93c5fd',
-    };
+  function clampLevelPosition(value, min = 0.04, max = 0.96) {
+    return Math.max(min, Math.min(max, value));
   }
 
   function getVolatilityLevel(label, volatilityValue) {
     const normalized = String(label ?? '').toLowerCase();
-    if (normalized.includes('high-volatility')) return { position: 0.88, color: '#f39c3d' };
-    if (normalized.includes('elevated-volatility')) return { position: 0.66, color: '#fbbf24' };
-    if (normalized.includes('contained-volatility')) return { position: 0.32, color: '#34d399' };
-    if (volatilityValue === null || volatilityValue === undefined) return { position: 0.5, color: '#94a3b8' };
-    if (volatilityValue >= 0.035) return { position: 0.84, color: '#f39c3d' };
-    if (volatilityValue >= 0.02) return { position: 0.6, color: '#fbbf24' };
-    return { position: 0.32, color: '#34d399' };
+
+    if (normalized.includes('high-volatility')) {
+      return { color: '#f39c3d', label: 'High' };
+    }
+    if (normalized.includes('elevated-volatility')) {
+      return { color: '#fbbf24', label: 'Elevated' };
+    }
+    if (normalized.includes('contained-volatility')) {
+      return { color: '#34d399', label: 'Contained' };
+    }
+
+    if (!Number.isFinite(volatilityValue)) {
+      return { color: '#94a3b8', label: 'N/A' };
+    }
+
+    if (volatilityValue >= 0.035) {
+      return { color: '#f39c3d', label: 'High' };
+    }
+    if (volatilityValue >= 0.02) {
+      return { color: '#fbbf24', label: 'Elevated' };
+    }
+    return { color: '#34d399', label: 'Contained' };
+  }
+
+  function getVolatilityPosition(value) {
+    if (!Number.isFinite(value)) return 0.5;
+
+    // 0% to 6% maps to the full bar.
+    // Values above 6% are capped near the right edge.
+    const minVol = 0;
+    const maxVol = 0.06;
+    return clampLevelPosition((value - minVol) / (maxVol - minVol));
+  }
+
+  function getVolumeScalePosition(volume) {
+    if (!Number.isFinite(volume) || volume <= 0) {
+      return 0.5;
+    }
+
+    // Absolute-volume fallback scale: 1B to 200B.
+    // This is used only when volume_zscore is unavailable.
+    const minLog = Math.log10(1_000_000_000);
+    const maxLog = Math.log10(200_000_000_000);
+    return clampLevelPosition((Math.log10(volume) - minLog) / (maxLog - minLog));
+  }
+
+  function getParticipationPosition(zScore, volume) {
+    // Prefer z-score because participation is a relative market activity concept.
+    // -2σ to +2σ maps to the full bar.
+    if (Number.isFinite(zScore)) {
+      return clampLevelPosition((zScore + 2) / 4);
+    }
+
+    return getVolumeScalePosition(volume);
+  }
+
+  function getParticipationLevel(label, zScore, volume) {
+    // When z-score exists, derive the displayed label from the same value that
+    // drives the marker. This prevents a "normal" label with an above-normal marker.
+    if (Number.isFinite(zScore)) {
+      if (zScore >= 1.5) return { color: '#3b82f6', label: 'very heavy participation' };
+      if (zScore >= 0.5) return { color: '#60a5fa', label: 'above-normal participation' };
+      if (zScore > -0.5) return { color: '#7dd3fc', label: 'normal participation' };
+      if (zScore > -1.5) return { color: '#93c5fd', label: 'below-normal participation' };
+      return { color: '#bfdbfe', label: 'thin participation' };
+    }
+
+    // If z-score is unavailable, keep the backend label, but parse it safely.
+    // Important: check "below-normal" before "normal" because the former contains the latter.
+    const normalized = String(label ?? '').toLowerCase();
+    if (normalized.includes('very heavy')) {
+      return { color: '#3b82f6', label: label ?? 'very heavy participation' };
+    }
+    if (normalized.includes('above-normal')) {
+      return { color: '#60a5fa', label: label ?? 'above-normal participation' };
+    }
+    if (normalized.includes('below-normal')) {
+      return { color: '#93c5fd', label: label ?? 'below-normal participation' };
+    }
+    if (normalized.includes('thin')) {
+      return { color: '#bfdbfe', label: label ?? 'thin participation' };
+    }
+    if (normalized.includes('normal')) {
+      return { color: '#7dd3fc', label: label ?? 'normal participation' };
+    }
+
+    // Last fallback: infer a coarse label from absolute BTC volume only.
+    if (Number.isFinite(volume)) {
+      if (volume >= 100_000_000_000) return { color: '#3b82f6', label: 'very heavy participation' };
+      if (volume >= 50_000_000_000) return { color: '#60a5fa', label: 'above-normal participation' };
+      if (volume >= 10_000_000_000) return { color: '#7dd3fc', label: 'normal participation' };
+      if (volume >= 3_000_000_000) return { color: '#93c5fd', label: 'below-normal participation' };
+      return { color: '#bfdbfe', label: 'thin participation' };
+    }
+
+    return { color: '#94a3b8', label: 'Unavailable' };
+  }
+
+  function getParticipationTicks(zScoreAvailable) {
+    if (zScoreAvailable) {
+      return [
+        { position: 0.125, label: '-1.5σ' },
+        { position: 0.375, label: '-0.5σ' },
+        { position: 0.625, label: '+0.5σ' },
+        { position: 0.875, label: '+1.5σ' },
+      ];
+    }
+
+    return [
+      { position: getVolumeScalePosition(1_000_000_000), label: '1B' },
+      { position: getVolumeScalePosition(10_000_000_000), label: '10B' },
+      { position: getVolumeScalePosition(50_000_000_000), label: '50B' },
+      { position: getVolumeScalePosition(100_000_000_000), label: '100B' },
+      { position: getVolumeScalePosition(200_000_000_000), label: '200B' },
+    ];
   }
 
   const volatilityLevel = getVolatilityLevel(marketState.volatility_label, sevenDayVolatilityValue);
-  const participationLevel = getParticipationLevel(marketState.volume_label, volumeZScoreValue);
-  function getContinuousVolatilityPosition(value) {
-    if (!Number.isFinite(value)) return volatilityLevel.position;
-    // Map 0.5%~6.0% into [0.08, 0.92] to preserve edge padding.
-    const minVol = 0.005;
-    const maxVol = 0.06;
-    const normalized = (value - minVol) / (maxVol - minVol);
-    return Math.max(0.08, Math.min(0.92, normalized * 0.84 + 0.08));
-  }
-
-  function getParticipationBand(label) {
-    const normalized = String(label ?? '').toLowerCase();
-    if (normalized.includes('very heavy')) return [0.78, 0.92];
-    if (normalized.includes('above-normal')) return [0.6, 0.78];
-    if (normalized.includes('normal')) return [0.44, 0.56];
-    if (normalized.includes('below-normal')) return [0.22, 0.4];
-    if (normalized.includes('thin')) return [0.08, 0.24];
-    return [0.08, 0.92];
-  }
-
-  function getContinuousParticipationPosition(volume, fallbackPosition, label) {
-    const [bandMin, bandMax] = getParticipationBand(label);
-    const bandSpan = Math.max(0.001, bandMax - bandMin);
-
-    if (!Number.isFinite(volume) || volume <= 0) return fallbackPosition;
-
-    // Global fixed log-scale mapping to keep cross-day positions comparable.
-    // This guarantees monotonic ordering (e.g., 24B is always right of 18B).
-    const minLog = Math.log10(1_000_000_000);
-    const maxLog = Math.log10(200_000_000_000);
-    const normalized = (Math.log10(volume) - minLog) / (maxLog - minLog);
-    const projected = bandMin + normalized * bandSpan;
-    return Math.max(0.08, Math.min(0.92, projected));
-  }
+  const participationUsesZScore = Number.isFinite(volumeZScoreValue);
+  const participationLevel = getParticipationLevel(marketState.volume_label, volumeZScoreValue, btcVolumeValue);
 
   const contextMetricCards = [
     {
@@ -1135,25 +1200,36 @@ export function MicroView() {
       visualLabel: '7D volatility',
       visualValue: formatPercent(sevenDayVolatilityValue),
       visualColor: volatilityLevel.color,
-      levelPosition: getContinuousVolatilityPosition(sevenDayVolatilityValue),
+      levelPosition: getVolatilityPosition(sevenDayVolatilityValue),
       levelGradient:
-        'linear-gradient(90deg, rgba(52,211,153,0.55) 0%, rgba(251,191,36,0.55) 55%, rgba(243,156,61,0.55) 100%)',
+        'linear-gradient(90deg, rgba(52,211,153,0.55) 0%, rgba(52,211,153,0.55) 33%, rgba(251,191,36,0.58) 33%, rgba(251,191,36,0.58) 58%, rgba(243,156,61,0.62) 58%, rgba(243,156,61,0.62) 100%)',
+      ticks: [
+        { position: 0.33, label: '2%' },
+        { position: 0.58, label: '3.5%' },
+        { position: 1, label: '6%+' },
+      ],
     },
     {
       label: 'Participation',
-      value: marketState.volume_label ?? 'Unavailable',
+      // Use the same logic for the displayed label and the marker position.
+      // If volume_zscore exists, the label is derived from z-score.
+      // If not, the backend label is kept and the axis changes to absolute volume.
+      value: participationLevel.label,
       evidence: null,
       visualType: 'level',
       visualLabel: 'BTC volume',
-      visualValue: formatVolumeSupport(btcVolumeValue),
-      levelPosition: getContinuousParticipationPosition(
-        btcVolumeValue,
-        participationLevel.position,
-        marketState.volume_label,
-      ),
+      visualValue: `${formatVolumeSupport(btcVolumeValue)}${
+        participationUsesZScore ? ` · z=${volumeZScoreValue.toFixed(2)}` : ''
+      }`,
       visualColor: participationLevel.color,
-      levelGradient:
-        'linear-gradient(90deg, rgba(147,197,253,0.45) 0%, rgba(96,165,250,0.55) 55%, rgba(59,130,246,0.65) 100%)',
+      levelPosition: getParticipationPosition(volumeZScoreValue, btcVolumeValue),
+      levelGradient: participationUsesZScore
+        ? 'linear-gradient(90deg, rgba(191,219,254,0.45) 0%, rgba(191,219,254,0.45) 12.5%, rgba(147,197,253,0.48) 12.5%, rgba(147,197,253,0.48) 37.5%, rgba(125,211,252,0.52) 37.5%, rgba(125,211,252,0.52) 62.5%, rgba(96,165,250,0.58) 62.5%, rgba(96,165,250,0.58) 87.5%, rgba(59,130,246,0.65) 87.5%, rgba(59,130,246,0.65) 100%)'
+        : 'linear-gradient(90deg, rgba(191,219,254,0.42) 0%, rgba(147,197,253,0.48) 42%, rgba(125,211,252,0.52) 66%, rgba(96,165,250,0.58) 82%, rgba(59,130,246,0.65) 100%)',
+      ticks: getParticipationTicks(participationUsesZScore),
+      axisNote: participationUsesZScore
+        ? 'Relative scale: volume z-score versus recent baseline'
+        : 'Absolute volume scale: z-score unavailable',
     },
   ];
 
@@ -1375,51 +1451,92 @@ export function MicroView() {
                           {card.visualValue}
                         </strong>
                       </span>
+
                       <span
                         style={{
-                          position: 'relative',
-                          height: 7,
-                          borderRadius: 999,
-                          background: card.levelGradient ?? 'rgba(148, 163, 184, 0.16)',
-                          border: '1px solid rgba(148, 163, 184, 0.32)',
+                          display: 'grid',
+                          gap: 6,
                         }}
                       >
                         <span
-                          aria-hidden="true"
                           style={{
-                            position: 'absolute',
-                            left: '33%',
-                            top: 1,
-                            width: 1,
-                            height: 5,
-                            background: 'rgba(148, 163, 184, 0.38)',
-                          }}
-                        />
-                        <span
-                          aria-hidden="true"
-                          style={{
-                            position: 'absolute',
-                            left: '66%',
-                            top: 1,
-                            width: 1,
-                            height: 5,
-                            background: 'rgba(148, 163, 184, 0.38)',
-                          }}
-                        />
-                        <span
-                          style={{
-                            position: 'absolute',
-                            left: `${Math.round((card.levelPosition ?? 0.5) * 100)}%`,
-                            top: '50%',
-                            width: 9,
-                            height: 9,
+                            position: 'relative',
+                            height: 8,
                             borderRadius: 999,
-                            background: card.visualColor,
-                            border: '1px solid rgba(226, 232, 240, 0.9)',
-                            transform: 'translate(-50%, -50%)',
-                            boxShadow: '0 0 0 2px rgba(15, 23, 42, 0.55)',
+                            background: card.levelGradient ?? 'rgba(148, 163, 184, 0.16)',
+                            border: '1px solid rgba(148, 163, 184, 0.32)',
+                            overflow: 'visible',
                           }}
-                        />
+                        >
+                          {(card.ticks ?? []).map((tick) => (
+                            <span
+                              key={`${card.label}-${tick.label}`}
+                              aria-hidden="true"
+                              style={{
+                                position: 'absolute',
+                                left: `${Math.round(tick.position * 100)}%`,
+                                top: 1,
+                                width: 1,
+                                height: 6,
+                                background: 'rgba(226, 232, 240, 0.5)',
+                                transform: 'translateX(-50%)',
+                              }}
+                            />
+                          ))}
+
+                          <span
+                            style={{
+                              position: 'absolute',
+                              left: `${Math.round((card.levelPosition ?? 0.5) * 100)}%`,
+                              top: '50%',
+                              width: 11,
+                              height: 11,
+                              borderRadius: 999,
+                              background: card.visualColor,
+                              border: '1px solid rgba(226, 232, 240, 0.95)',
+                              transform: 'translate(-50%, -50%)',
+                              boxShadow: '0 0 0 2px rgba(15, 23, 42, 0.6)',
+                            }}
+                          />
+                        </span>
+
+                        {card.ticks?.length ? (
+                          <span
+                            style={{
+                              position: 'relative',
+                              height: 14,
+                              color: 'var(--text-muted)',
+                              fontSize: '0.66rem',
+                              lineHeight: 1,
+                            }}
+                          >
+                            {card.ticks.map((tick) => (
+                              <span
+                                key={`${card.label}-${tick.label}-label`}
+                                style={{
+                                  position: 'absolute',
+                                  left: `${Math.round(tick.position * 100)}%`,
+                                  transform: 'translateX(-50%)',
+                                  whiteSpace: 'nowrap',
+                                }}
+                              >
+                                {tick.label}
+                              </span>
+                            ))}
+                          </span>
+                        ) : null}
+
+                        {card.axisNote ? (
+                          <span
+                            style={{
+                              color: 'var(--text-muted)',
+                              fontSize: '0.64rem',
+                              lineHeight: 1.2,
+                            }}
+                          >
+                            {card.axisNote}
+                          </span>
+                        ) : null}
                       </span>
                     </p>
                   ) : card.visualLabel ? (

@@ -40,6 +40,12 @@ export default function App() {
     setSelectedCluster(null);
   }
 
+  function scrollToView(viewId) {
+    const target = document.getElementById(viewId);
+    if (!target) return;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   return (
     <main className="app-shell">
       <header className="title-bar">
@@ -86,21 +92,45 @@ export default function App() {
 
       <section className="dashboard-stack">
         <SpotlightHighlight viewId="macro">
-          <div className="dashboard-section">
+          <div id="view1" className="dashboard-section">
             <MacroView />
           </div>
         </SpotlightHighlight>
         <SpotlightHighlight viewId="meso">
-          <div className="dashboard-section">
+          <div id="view2" className="dashboard-section">
             <MesoView />
           </div>
         </SpotlightHighlight>
         <SpotlightHighlight viewId="micro">
-          <div className="dashboard-section">
+          <div id="view3" className="dashboard-section">
             <MicroView />
           </div>
         </SpotlightHighlight>
       </section>
+
+      <aside className="quick-nav" aria-label="Quick view navigation">
+        <button
+          type="button"
+          className="quick-nav-button"
+          onClick={() => scrollToView('view1')}
+        >
+          Macro
+        </button>
+        <button
+          type="button"
+          className="quick-nav-button"
+          onClick={() => scrollToView('view2')}
+        >
+          Meso
+        </button>
+        <button
+          type="button"
+          className="quick-nav-button"
+          onClick={() => scrollToView('view3')}
+        >
+          Micro
+        </button>
+      </aside>
     </main>
   );
 }

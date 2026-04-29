@@ -170,7 +170,6 @@ export function MesoView() {
   let xTicks = [];
   let yTicks = [];
 
-  let densityPaths = [];
   let clusterHulls = [];
 
   if (hasEmbeddingData) {
@@ -188,19 +187,6 @@ export function MesoView() {
 
     xTicks = xScale.ticks(5);
     yTicks = yScale.ticks(4);
-
-    // Density splat — single-color underlay highlighting the overall point cloud.
-    const points = visibleEmbeddingRows.map((row) => [xScale(row.xValue), yScale(row.yValue)]);
-    if (points.length > 8) {
-      const density = d3
-        .contourDensity()
-        .x((p) => p[0])
-        .y((p) => p[1])
-        .size([chartWidth, chartHeight])
-        .bandwidth(18)
-        .thresholds(6)(points);
-      densityPaths = density.map((c) => d3.geoPath()(c));
-    }
 
     // Convex hulls per cluster.
     const byCluster = new Map();
@@ -286,6 +272,80 @@ export function MesoView() {
     selectedCluster === null || selectedCluster === undefined
       ? 'var(--text-muted)'
       : clusterColorScale(String(selectedCluster));
+  const selectedDayCluster = selectedDate
+    ? parsedFeatureRows.find((row) => row.date === selectedDate)?.clusterValue
+    : null;
+  const selectedDayColor =
+    selectedDayCluster === null || selectedDayCluster === undefined
+      ? '#94a3b8'
+      : clusterColorScale(String(selectedDayCluster));
+  const hasSelectedCluster = selectedCluster !== null && selectedCluster !== undefined;
+  const hasSelectedDay = Boolean(selectedDate);
+
+  const profileLegendItems = (() => {
+    if (!hasSelectedCluster && !hasSelectedDay) {
+      return [
+        {
+          key: 'regime-means',
+          label: 'Regime means',
+          style: {
+            width: 30,
+            height: 4,
+            borderRadius: 999,
+            backgroundColor: 'var(--text-muted)',
+            opacity: 0.78,
+          },
+        },
+        {
+          key: 'day-profiles',
+          label: 'Day profiles',
+          style: {
+            width: 30,
+            height: 2,
+            borderRadius: 999,
+            backgroundColor: '#94a3b8',
+            opacity: 0.5,
+          },
+        },
+      ];
+    }
+
+    return [
+      {
+        key: 'selected-regime-mean',
+        label: 'Selected regime mean',
+        style: {
+          width: 30,
+          height: 4,
+          borderRadius: 999,
+          backgroundColor: selectedRegimeColor,
+          opacity: 0.95,
+        },
+      },
+      {
+        key: 'other-regime-means',
+        label: 'Other regime means',
+        style: {
+          width: 30,
+          height: 4,
+          borderRadius: 999,
+          backgroundColor: 'var(--text-muted)',
+          opacity: 0.35,
+        },
+      },
+      {
+        key: hasSelectedDay ? 'selected-day-profile' : 'day-profiles',
+        label: hasSelectedDay ? 'Selected day profile' : 'Day profiles',
+        style: {
+          width: 30,
+          height: 2,
+          borderRadius: 999,
+          backgroundColor: selectedDayColor,
+          opacity: hasSelectedDay ? 0.75 : 0.55,
+        },
+      },
+    ];
+  })();
 
   function handleManualClusterChange(nextCluster) {
     // Manual cluster switching should clear the selected day.
@@ -413,18 +473,6 @@ export function MesoView() {
                   />
                 </g>
               ))}
-
-              {/* Density splat underlay (single-hue, low opacity, BTC orange tint) */}
-              <g className="density-splat" pointerEvents="none">
-                {densityPaths.map((d, i) => (
-                  <path
-                    key={`den-${i}`}
-                    d={d}
-                    fill="#f7931a"
-                    opacity={0.04 + i * 0.025}
-                  />
-                ))}
-              </g>
 
               {/* Cluster hulls (GMap-style regions) */}
               <g className="cluster-hulls">
@@ -630,44 +678,15 @@ export function MesoView() {
                 flexWrap: 'wrap',
               }}
             >
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+              {profileLegendItems.map((item) => (
                 <span
-                  aria-hidden="true"
-                  style={{
-                    width: 30,
-                    height: 4,
-                    borderRadius: 999,
-                    backgroundColor: selectedRegimeColor,
-                  }}
-                />
-                Selected regime mean
-              </span>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                <span
-                  aria-hidden="true"
-                  style={{
-                    width: 30,
-                    height: 2,
-                    borderRadius: 999,
-                    backgroundColor: 'var(--text-muted)',
-                    opacity: 0.35,
-                  }}
-                />
-                Other regime means
-              </span>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                <span
-                  aria-hidden="true"
-                  style={{
-                    width: 30,
-                    height: 2,
-                    borderRadius: 999,
-                    backgroundColor: '#94a3b8',
-                    opacity: 0.7,
-                  }}
-                />
-                Selected day profile
-              </span>
+                  key={item.key}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}
+                >
+                  <span aria-hidden="true" style={item.style} />
+                  {item.label}
+                </span>
+              ))}
             </div>
             <ParallelCoordsChart
               features={FEATURE_COLUMNS}

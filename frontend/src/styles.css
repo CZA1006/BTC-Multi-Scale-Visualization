@@ -287,6 +287,42 @@ body {
 
 .dashboard-section {
   display: block;
+  scroll-margin-top: 18px;
+}
+
+.quick-nav {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 900;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  background: rgba(18, 24, 38, 0.92);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.38);
+}
+
+.quick-nav-button {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-2);
+  color: var(--text-0);
+  padding: 8px 12px;
+  min-width: 88px;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease, color 120ms ease;
+}
+
+.quick-nav-button:hover {
+  border-color: var(--accent-btc);
+  color: var(--accent-btc);
 }
 
 .view-card {
@@ -995,6 +1031,19 @@ body {
   .story-strip-header,
   .status-strip {
     grid-template-columns: 1fr;
+  }
+
+  .quick-nav {
+    right: 12px;
+    top: auto;
+    bottom: 14px;
+    transform: none;
+    flex-direction: row;
+  }
+
+  .quick-nav-button {
+    min-width: 74px;
+    padding: 7px 10px;
   }
 }
 

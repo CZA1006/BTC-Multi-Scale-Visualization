@@ -200,7 +200,7 @@ export function ParallelCoordsChart({
                 key={`pcd-${row.date}`}
                 d={lineForRow(row, 'daily')}
                 fill="none"
-                stroke={isSelectedDay ? '#94a3b8' : clusterColorScale(String(row.clusterValue))}
+                stroke={clusterColorScale(String(row.clusterValue))}
                 strokeWidth={isSelectedDay ? 1.3 : 0.7}
                 opacity={opacity}
                 className="pc-daily-row"
@@ -227,7 +227,7 @@ export function ParallelCoordsChart({
                 d={lineForRow(profile, 'profile')}
                 fill="none"
                 stroke={clusterColorScale(String(profile.clusterId))}
-                strokeWidth={!hasTargetCluster ? 2.6 : isSelected ? 4.2 : 1.8}
+                strokeWidth={!hasTargetCluster ? 2.6 : 4.2}
                 opacity={!hasTargetCluster ? 0.78 : isSelected ? 0.98 : 0.22}
                 className="profile-line"
               />

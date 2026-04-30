@@ -2,6 +2,7 @@
   "cache_schema_version": 7,
   "date": "2026-04-03",
   "status": "live",
+  "data_quality": "full",
   "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
   "news_count": 1754,
   "avg_tone": -0.5981760072215887,
@@ -131,6 +132,8 @@
       "average_tone": -2.2727999999999997
     }
   ],
+  "timeline_status": "ok",
+  "volume_status": "ok",
   "top_headlines": [
     "How to set up a crypto wallet : A step - by - step guide",
     "Bitcoin Quantum Computing Threat : Coinbase CEO Warns 2029",
@@ -2526,8 +2529,5 @@
       "raw_v2_tone": null,
       "url": "https://tsn.ua/ukrayina/u-velykomu-oblasnomu-tsentri-dron-vluchyv-u-trts-pershi-detali-3054551.html"
     }
-  ],
-  "data_quality": "full",
-  "timeline_status": "ok",
-  "volume_status": "ok"
+  ]
 }

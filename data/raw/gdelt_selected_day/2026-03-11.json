@@ -1,14 +1,15 @@
 {
-  "cache_schema_version": 5,
+  "cache_schema_version": 7,
   "date": "2026-03-11",
   "status": "live",
+  "data_quality": "full",
   "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
   "news_count": 2800,
   "avg_tone": 0.07046341964285711,
-  "theme_count_crypto": 11,
-  "theme_count_regulation": 3,
-  "theme_count_election": 0,
-  "theme_count_war": 0,
+  "theme_count_crypto": 107,
+  "theme_count_regulation": 33,
+  "theme_count_election": 3,
+  "theme_count_war": 13,
   "hourly_tones": [
     {
       "timestamp": "2026-03-11T00:00:00.000Z",
@@ -131,6 +132,8 @@
       "average_tone": 0.49445000000000006
     }
   ],
+  "timeline_status": "ok",
+  "volume_status": "ok",
   "top_headlines": [
     "US Bitcoin ETFs See $250M Inflows ; $BTC Dips , Holds At $69K",
     "FinancialContent - Bitcoin Holds $70 , 000 Support as S & P 500 Cracks : The  Digital Gold  Thesis Faces Its Ultimate Test Amid Middle East Escalation",
@@ -273,6 +276,2258 @@
       "sentiment": null,
       "raw_v2_tone": null,
       "url": "http://baystreet.ca/cryptonews/1261/Traders-Begin-Placing-Bets-That-Bitcoin-Will-Rise-Above-80000"
+    }
+  ],
+  "all_articles": [
+    {
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "cryptonewsz.com",
+      "headline": "US Bitcoin ETFs See $250M Inflows ; $BTC Dips , Holds At $69K",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cryptonewsz.com/us-bitcoin-etfs-see-250m-inflows-btc-69k/"
+    },
+    {
+      "timestamp": "2026-03-11T19:00:00",
+      "source": "markets.financialcontent.com",
+      "headline": "FinancialContent - Bitcoin Holds $70 , 000 Support as S & P 500 Cracks : The  Digital Gold  Thesis Faces Its Ultimate Test Amid Middle East Escalation",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://markets.financialcontent.com/stocks/article/marketminute-2026-3-11-bitcoin-holds-70000-support-as-s-and-p-500-cracks-the-digital-gold-thesis-faces-its-ultimate-test-amid-middle-east-escalation"
+    },
+    {
+      "timestamp": "2026-03-11T00:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Coinbase rolls out 10x levered Bitcoin contracts for Europeans",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/coinbase-rolls-10x-levered-bitcoin-121921209.html"
+    },
+    {
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Dont Do This 1 Very Tempting Thing With Your Bitcoin , Ethereum , or XRP Right Now",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/dont-1-very-tempting-thing-102000173.html"
+    },
+    {
+      "timestamp": "2026-03-11T17:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Promising Cryptocurrency Stocks Worth Watching – March 11th",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/11/promising-cryptocurrency-stocks-worth-watching-march-11th.html"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin  Sandwiched  Between Two Key Zones As Price Tops $71K",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-sandwiched-between-two-key-zones/"
+    },
+    {
+      "timestamp": "2026-03-11T06:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Crypto Crash : 2 Top Coins Id Consider Buying Before Prices Rebound",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/crypto-crash-2-top-coins-054100023.html"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "source": "fool.com",
+      "headline": "This Fund Dumped a $23 Million Ether ETF Stake Last Quarter but Held Onto Other Crypto Positions",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/coverage/filings/2026/03/11/this-fund-dumped-a-usd23-million-ether-etf-stake-last-quarter-but-held-onto-other-crypto-positions/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "fool.com",
+      "headline": "Crypto Crash : 2 Top Coins Id Consider Buying Before Prices Rebound",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/03/11/crypto-crash-2-top-coins-id-consider-buying-before/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T01:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Pakistan Moves From Crypto Ban to Regulation as Parliament Passes Virtual Assets Act 2026",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/pakistan-moves-crypto-ban-regulation-133215277.html"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Could Zcash Flip Bitcoin Someday ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/could-zcash-flip-bitcoin-someday-095000903.html"
+    },
+    {
+      "timestamp": "2026-03-11T00:45:00",
+      "source": "ambcrypto.com",
+      "headline": "Bitcoin : Bhutan sells amid MSTR $1 . 28B BTC buy - Strategic move ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ambcrypto.com/bitcoin-bhutan-sells-amid-mstrs-1-28b-btc-buy-strategic-move/"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "coindesk.com",
+      "headline": "Mining giant Foundry to introduce institutional zcash mining pool",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/business/2026/03/10/mining-giant-foundry-to-introduce-institutional-zcash-mining-pool"
+    },
+    {
+      "timestamp": "2026-03-11T11:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Fintech Stock Block Just Proved That the Ultimate Cryptocurrency Has a Clear Use Case",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/fintech-stock-block-just-proved-104300441.html"
+    },
+    {
+      "timestamp": "2026-03-11T18:15:00",
+      "source": "baystreet.ca",
+      "headline": "Baystreet . ca - Traders Begin Placing Bets That Bitcoin Will Rise Above $80 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://baystreet.ca/cryptonews/1261/Traders-Begin-Placing-Bets-That-Bitcoin-Will-Rise-Above-80000"
+    },
+    {
+      "timestamp": "2026-03-11T12:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Jim Cramer on Coinbase Global :  What I Would Suggest You Do Is Just Buy Bitcoin , It Cleaner",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/jim-cramer-coinbase-global-suggest-112754762.html"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "fool.com",
+      "headline": "Fintech Stock Block Just Proved That the Ultimate Cryptocurrency Has a Clear Use Case",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/03/11/fintech-stock-ultimate-cryptocurrency-use-case/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T12:30:00",
+      "source": "openpr.com",
+      "headline": "Dynamic Crypto Presale 2026 : Blazpay Phase 8 Accelerates NFT",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4420564/dynamic-crypto-presale-2026-blazpay-phase-8-accelerates-nft"
+    },
+    {
+      "timestamp": "2026-03-11T10:45:00",
+      "source": "en.apa.az",
+      "headline": "Relative decline observed in crypto market",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://en.apa.az/cryptocurrency/relative-decline-observed-in-crypto-market-496056"
+    },
+    {
+      "timestamp": "2026-03-11T08:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Crosses 20 Million Coins Mined And Only 1 In 20 Remains",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/bitcoin/bitcoin-crosses-20-million-coins-mined-and-only-1-in-20-remains/"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "finanznachrichten.de",
+      "headline": "Cryptos Slip Amidst Spotlight On U . S . CPI Data",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-03/67914315-cryptos-slip-amidst-spotlight-on-u-s-cpi-data-020.htm"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin price forecast : Traders bet on bitcoin reclaiming $80 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/bitcoin-to-moon-past-usd80-000-option-degens-bet"
+    },
+    {
+      "timestamp": "2026-03-11T00:45:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin gains as Iran war driven volatility hits oil and stocks",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-gains-as-iran-war-driven-volatility-hits-oil-and-stocks/articleshow/129427625.cms"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin Sentiment Flipped to FOMO After Rebounding Above $70K",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/bitcoin-sentiment-jumps-back-into-fomo-territory-santiment"
+    },
+    {
+      "timestamp": "2026-03-11T08:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin May Sink To $50K , Standard Chartered Kendrick Warns",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/bitcoin-50k-before-rallying-standard-chartered-kendrick/"
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Vault Security Advances With Babylon - Ledger Integration",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/bitcoin-vault-security-advances/"
+    },
+    {
+      "timestamp": "2026-03-11T03:30:00",
+      "source": "fool.com",
+      "headline": "Schonfeld Strategic Advisors Trims ETHA Stake as Ethereum ETFs Expand Regulated Access to Ether",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/coverage/filings/2026/03/10/schonfeld-strategic-advisors-trims-etha-stake-as-ethereum-etfs-expand-regulated-access-to-ether/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T19:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Strategy Buys $1 . 23B Bitcoin as ETF Inflows Surge and Gold Funds See Outflows Is Capital Rotating to BTC ?",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/strategy-buys-1-23b-bitcoin-094715775.html"
+    },
+    {
+      "timestamp": "2026-03-11T16:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitcoin Sees Modest Relief as US CPI Inflation Avoids Surprises",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/markets/bitcoin-rebounds-flat-us-cpi-oil-price-cools-400m-barrel-release"
+    },
+    {
+      "timestamp": "2026-03-11T23:30:00",
+      "source": "bitcoinmagazine.com",
+      "headline": "Cosmos Health ( COSM ) Buys $600 , 000 In Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bitcoinmagazine.com/news/cosmos-health-cosm-buys-600k-in-bitcoin"
+    },
+    {
+      "timestamp": "2026-03-11T05:45:00",
+      "source": "allafrica.com",
+      "headline": "Nigeria Crypto Boom Isnt Just About Technology - Trust Plays a Role in the Local Gadget Trade With China",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://allafrica.com/stories/202603110002.html"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "fool.com",
+      "headline": "Dont Do This 1 Very Tempting Thing With Your Bitcoin , Ethereum , or XRP Right Now",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/03/11/dont-do-this-1-very-tempting-thing-with-your-bitco/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T02:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin ETF Flows Cool to $619 Million as Oil Prices Spike",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-etf-flows-cool-619-144540632.html"
+    },
+    {
+      "timestamp": "2026-03-11T16:15:00",
+      "source": "cointelegraph.com",
+      "headline": "CBI Arrests Darwin Labs CTO in GainBitcoin Cryptocurrency Case",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/india-arrests-darwin-labs-co-founder-in-gainbitcoin-scam-probe"
+    },
+    {
+      "timestamp": "2026-03-11T12:30:00",
+      "source": "rttnews.com",
+      "headline": "Cryptos Slip Amidst Spotlight On U . S . CPI Data",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.rttnews.com/3629787/cryptos-slip-amidst-spotlight-on-u-s-cpi-data.aspx"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "finanznachrichten.de",
+      "headline": "Binance Files Lawsuit , Accusing the WSJ of False and Defamatory Reporting",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-03/67916039-binance-files-lawsuit-accusing-the-wsj-of-false-and-defamatory-reporting-008.htm"
+    },
+    {
+      "timestamp": "2026-03-11T04:45:00",
+      "source": "digitaltrends.com",
+      "headline": "Identifying the Security Advantages of Leading Crypto Exchanges Such as OKX",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.digitaltrends.com/contributor-content/identifying-the-security-advantages-of-leading-crypto-exchanges-such-as-okx/"
+    },
+    {
+      "timestamp": "2026-03-11T23:30:00",
+      "source": "theartnewspaper.com",
+      "headline": "Nifty Gateway has shut down , but NFTs are not dead they are evolving",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.theartnewspaper.com/2026/03/11/nifty-gateway-shut-down-nft-marketplace-evolving"
+    },
+    {
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "econotimes.com",
+      "headline": "Bitcoin Teeters Near USD 70 , 000 as USD 245 Million Liquidation Wave Rocks Crypto Markets",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.econotimes.com/Bitcoin-Teeters-Near-USD-70000-as-USD-245-Million-Liquidation-Wave-Rocks-Crypto-Markets-1735947"
+    },
+    {
+      "timestamp": "2026-03-11T08:15:00",
+      "source": "downtoearth.org.in",
+      "headline": "Nigeria Crypto Revolution : Trust and Technology in Cross - Border Trade with China",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.downtoearth.org.in/africa/nigerias-crypto-boom-isnt-just-about-technology-trust-plays-a-role-in-the-local-gadget-trade-with-china"
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00",
+      "source": "openpr.com",
+      "headline": "From Baby Doge Community Boom to Dogwifhat Viral Rally : Why",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4421108/from-baby-doge-s-community-boom-to-dogwifhat-s-viral-rally-why"
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00",
+      "source": "openpr.com",
+      "headline": "Top 12 Coins to Watch Now : APEMARS ( $APRZ ) Presale Live",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4421116/top-12-coins-to-watch-now-apemars-aprz-presale-live"
+    },
+    {
+      "timestamp": "2026-03-11T01:45:00",
+      "source": "directionsmag.com",
+      "headline": "Best Bitcoin Credit Cards in 2026 : Top Rewards & Perks",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.directionsmag.com/crypto/best-bitcoin-credit-cards"
+    },
+    {
+      "timestamp": "2026-03-11T08:15:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin nears $70K as easing geopolitical tensions , weaker dollar lift sentiment",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-nears-70k-as-easing-geopolitical-tensions-weaker-dollar-lift-sentiment/articleshow/129443490.cms"
+    },
+    {
+      "timestamp": "2026-03-11T08:30:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Robbery : French Couple Held Hostage As Fake Cops Steal €900K in BTC",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/bitcoin-news/bitcoin-robbery-french-couple-held-hostage-as-fake-cops-steal-e900k-in-btc/"
+    },
+    {
+      "timestamp": "2026-03-11T08:00:00",
+      "source": "jerseyeveningpost.com",
+      "headline": "Final Bitcoin is expected to be mined in around 114 year time",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://jerseyeveningpost.com/business/2026/03/11/final-bitcoin-is-expected-to-be-mined-in-around-114-years-time/"
+    },
+    {
+      "timestamp": "2026-03-11T21:45:00",
+      "source": "benzinga.com",
+      "headline": "$540 Million Flowed Into Solana ETFs In Q4 So Why Is SOL Still Below $100 ? - Fidelity Wise Origin Bitcoin Fund ( BATS : FBTC )",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/etfs/specialty-etfs/26/03/51200016/540-million-flowed-into-solana-etfs-in-q4-so-why-is-sol-still-below-100"
+    },
+    {
+      "timestamp": "2026-03-11T19:45:00",
+      "source": "techstory.in",
+      "headline": "Mastercard Bridges Traditional Finance and Blockchain",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://techstory.in/mastercard-bridges-traditional-finance-and-blockchain-with-massive-new-global-alliance/"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "pymnts.com",
+      "headline": "How CFOs Are Tweaking Their Tech for Stablecoin Use",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/cryptocurrency/2026/how-cfos-are-tweaking-their-tech-for-stablecoin-use/"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "coindesk.com",
+      "headline": "Investment firm Multicoin bets  Internet Labor Market will drive crypto next wave of adoption",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/business/2026/03/10/investment-firm-multicoin-bets-internet-labor-markets-will-drive-crypto-s-next-wave-of-adoption"
+    },
+    {
+      "timestamp": "2026-03-11T16:15:00",
+      "source": "cointelegraph.com",
+      "headline": "STRC May Help Strategy Get to 1 Million Bitcoin Faster , Beating BlackRock",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/markets/strc-may-help-strategy-hit-1m-bitcoin-before-blackrock"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "benzinga.com",
+      "headline": "Arthur Hayes : Iran War Means Fed Prints  That When I Buy Bitcoin",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51186031/arthur-hayes-iran-war-means-fed-prints-thats-when-i-buy-bitcoin"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Exodus Movement Q4 Earnings Call Highlights",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/exodus-movement-q4-earnings-call-233625387.html"
+    },
+    {
+      "timestamp": "2026-03-11T05:00:00",
+      "source": "pymnts.com",
+      "headline": "Can Crypto Open Network Dreams Survive Going Corporate ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/blockchain/2026/can-cryptos-open-network-dreams-survive-going-corporate/"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "coindesk.com",
+      "headline": "Ethereum on fire with record activity , but ether price and blockchain fees lag",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/ethereum-network-activity-hits-record-highs-as-ether-price-and-fee-generation-lag"
+    },
+    {
+      "timestamp": "2026-03-11T21:45:00",
+      "source": "investorideas.com",
+      "headline": "Is HYPE An Underrated Gem Of Crypto Investments ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.investorideas.com/news/2026/cryptocurrency/02121-hyperliquid-hype-token-analysis-2026.asp"
+    },
+    {
+      "timestamp": "2026-03-11T19:30:00",
+      "source": "banklesstimes.com",
+      "headline": "MSTR Stock Prediction : Here Why MicroStrategy May Surge 40 % Soon",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.banklesstimes.com/articles/2026/03/11/mstr-stock-prediction-heres-why-microstrategy-may-surge-40-soon/"
+    },
+    {
+      "timestamp": "2026-03-11T16:15:00",
+      "source": "cointelegraph.com",
+      "headline": "Price Predictions : BTC , ETH , BNB , XRP , SOL , DOGE , ADA , BCH , HYPE , XMR",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/markets/price-predictions-3-11-btc-eth-bnb-xrp-sol-doge-ada-bch-hype-xmr"
+    },
+    {
+      "timestamp": "2026-03-11T08:15:00",
+      "source": "astanatimes.com",
+      "headline": "Kazakhstan to Channel Up to $350 Million in Gold , FX Reserves Into Crypto Reserve",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://astanatimes.com/2026/03/kazakhstan-to-channel-up-to-350-million-in-gold-fx-reserves-into-crypto-reserve/"
+    },
+    {
+      "timestamp": "2026-03-11T08:30:00",
+      "source": "newsbtc.com",
+      "headline": "Top Analyst Suggests Solana May Surpass XRP In Market Value : Here Why And When",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/solana/top-analyst-suggests-solana-may-surpass-xrp-in-market-value-heres-why-and-when/"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "coindesk.com",
+      "headline": "Binance , PayPal , and Ripple join Mastercard massive new push into blockchain payments",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/business/2026/03/11/binance-paypal-and-ripple-join-mastercard-s-massive-new-push-into-blockchain-payments"
+    },
+    {
+      "timestamp": "2026-03-11T21:45:00",
+      "source": "investorideas.com",
+      "headline": "Cryptocurrency free stock directory - list of bitcoin , crypto and blockchain stocks on NASDAQ , NYSE , TSX , TSXV , CSE and OTC",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.investorideas.com/Bitcoin-Cryptocurrency/stocks_list.asp"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "haberler.com",
+      "headline": "Kutluhan Akçın - Bitcoin 71 . 000 bariyeri geçemezse ne olur ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.haberler.com/yazarlar/kutluhan-akcin/bitcoin-71-000-bariyeri-gecemezse-ne-olur-5903/"
+    },
+    {
+      "timestamp": "2026-03-11T05:45:00",
+      "source": "bravenewcoin.com",
+      "headline": "Why Web3 Investors Are Paying More Attention to Individual Assets",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bravenewcoin.com/sponsored/article/why-web3-investors-are-paying-more-attention-to-individual-assets"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "source": "openpr.com",
+      "headline": "Best Crypto Presale Now : CZ Confirms Bitcoin $200K Is a Matter",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4421153/best-crypto-presale-now-cz-confirms-bitcoin-200k-is-a-matter"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "source": "openpr.com",
+      "headline": "Next Crypto to Explode : Metaplanet Japan Buys 319 BTC for Its",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4421146/next-crypto-to-explode-metaplanet-japan-buys-319-btc-for-its"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "source": "openpr.com",
+      "headline": "AI Crypto Coins to Buy for 2026 : Peter Brandt Delays Bitcoin $200K",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4421148/ai-crypto-coins-to-buy-for-2026-peter-brandt-delays-bitcoin-200k"
+    },
+    {
+      "timestamp": "2026-03-11T22:45:00",
+      "source": "openpr.com",
+      "headline": "Bitcoin Price News Flips Bullish as Social Sentiment Recovers",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4421084/bitcoin-price-news-flips-bullish-as-social-sentiment-recovers"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Bitwise CIO : Bitcoin Could Hit $1M if it Tracks Gold",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/1m-btc-plausible-if-it-follows-gold-trajectory-bitwise-cio"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "londonlovesbusiness.com",
+      "headline": "Bitcoin prices amid geopolitical developments - London Business News",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://londonlovesbusiness.com/bitcoin-prices-amid-geopolitical-developments/"
+    },
+    {
+      "timestamp": "2026-03-11T01:45:00",
+      "source": "directionsmag.com",
+      "headline": "KuCoin vs Binance ( 2026 ): Fees , Futures , Listings & Security",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.directionsmag.com/crypto/kucoin-vs-binance"
+    },
+    {
+      "timestamp": "2026-03-11T14:45:00",
+      "source": "marketscreener.com",
+      "headline": "The dramatic rise of tokenized assets : How RWAs are reshaping global finance",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.marketscreener.com/news/the-dramatic-rise-of-tokenized-assets-how-rwas-are-reshaping-global-finance-ce7e5fdcdf8ffe22"
+    },
+    {
+      "timestamp": "2026-03-11T23:30:00",
+      "source": "pymnts.com",
+      "headline": "Mastercard to Normalize Crypto Inside Its Payments Ecosystem",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/cryptocurrency/2026/mastercard-moves-normalize-crypto-inside-its-payments-ecosystem/"
+    },
+    {
+      "timestamp": "2026-03-11T03:15:00",
+      "source": "bgr.com",
+      "headline": "Did The Bundil App Survive After Shark Tank ? Here What Happened After Season 10",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bgr.com/2117294/what-happened-bundil-cryptocurrency-app-from-shark-tank-season-10/"
+    },
+    {
+      "timestamp": "2026-03-11T17:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Truth Social Stock Down 50 % as One Investor Sells Off Nearly 800 , 000 Shares",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/truth-social-stock-down-50-164309850.html"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "hawaiitelegraph.com",
+      "headline": "C2 Blockchain Expands Digital Asset Treasury with 841 Million DOG ( Bitcoin ) Holdings",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.hawaiitelegraph.com/news/278915486/c2-blockchain-expands-digital-asset-treasury-with-841-million-dog-bitcoin-holdings"
+    },
+    {
+      "timestamp": "2026-03-11T14:00:00",
+      "source": "tennesseedaily.com",
+      "headline": "C2 Blockchain Expands Digital Asset Treasury with 841 Million DOG ( Bitcoin ) Holdings",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.tennesseedaily.com/news/278915486/c2-blockchain-expands-digital-asset-treasury-with-841-million-dog-bitcoin-holdings"
+    },
+    {
+      "timestamp": "2026-03-11T07:30:00",
+      "source": "sabah.com.tr",
+      "headline": "Bitcoin 70 bin doların üzerinde tutunamadı",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sabah.com.tr/finans/kripto-para/bitcoin-70-bin-dolarin-uzerinde-tutunamadi-7540825"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "manilatimes.net",
+      "headline": "Virtune lists Stellar ETP on Deutsche Börse Xetra in Germany",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/11/tmt-newswire/globenewswire/virtune-lists-stellar-etp-on-deutsche-borse-xetra-in-germany/2297675"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "fool.com",
+      "headline": "Better Cryptocurrency to Buy With $500 And Hold For 3 Years : XRP vs . Dogecoin",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/03/11/better-cryptocurrency-to-buy-with-500-and-hold-for/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "proactiveinvestors.co.uk",
+      "headline": "London BTC Company launch Tethered Gold companies to seek exploration opportunities",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.proactiveinvestors.co.uk/companies/news/1088705/london-btc-company-launch-tethered-gold-companies-to-seek-exploration-opportunities-1088705.html"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "source": "americanbanker.com",
+      "headline": "Mastercard boosts agentic commerce , adds crypto network",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.americanbanker.com/payments/news/mastercard-boosts-agentic-commerce-adds-crypto-network"
+    },
+    {
+      "timestamp": "2026-03-11T16:45:00",
+      "source": "benzinga.com",
+      "headline": "ShredPay Unifies DeFi Fragmented Landscape with a Single On - Chain Platform and Risk Rating System",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/pressreleases/26/03/51190272/shredpay-unifies-defis-fragmented-landscape-with-a-single-on-chain-platform-and-risk-rating-system"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "thehindu.com",
+      "headline": "CBI arrests Darwin Labs co - founder Ayush Varshney in ₹20 , 000 crore Gain Bitcoin scam case",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thehindu.com/news/national/cbi-arrests-darwin-labs-co-founder-ayush-varshney-in-20000-crore-gain-bitcoin-scam-case/article70730194.ece"
+    },
+    {
+      "timestamp": "2026-03-11T15:45:00",
+      "source": "coinspeaker.com",
+      "headline": "Ethereum Network Activity Is Flying But Not ETH Price",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coinspeaker.com/ethereum-network-activity-record-highs-eth-price-lags/"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "thehindubusinessline.com",
+      "headline": "CBI arrests Darwin Labs co - founder in Rs 20 , 000 crore Gain Bitcoin scam",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thehindubusinessline.com/money-and-banking/cryptocurrency/cbi-arrests-darwin-labs-co-founder-in-20000-crore-gain-bitcoin-scam/article70730048.ece"
+    },
+    {
+      "timestamp": "2026-03-11T04:15:00",
+      "source": "yakimaherald.com",
+      "headline": "$1M in Bitcoin ATM scams reported in Kennewick",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yakimaherald.com/news/northwest/1m-in-bitcoin-atm-scams-reported-in-kennewick/article_a64cb289-7885-48ff-8776-ade4ca945403.html"
+    },
+    {
+      "timestamp": "2026-03-11T16:30:00",
+      "source": "5-tv.ru",
+      "headline": "Как защитить биткоины криптовалюту от мошенников",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.5-tv.ru/news/5060325/pod-vidom-obyska-suprugov-vzali-vzalozniki-izastavili-otdat-vykup-vbitkoina-aii/"
+    },
+    {
+      "timestamp": "2026-03-11T12:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "1 Thing That Could Send Strategy Stock Soaring in 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/1-thing-could-send-strategy-121200901.html"
+    },
+    {
+      "timestamp": "2026-03-11T16:30:00",
+      "source": "standard.co.uk",
+      "headline": "Stablecoin petition hits 85 , 000 signatures as peers investigate united kingdom strategy",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.standard.co.uk/business/stablecoin-petition-peers-investigate-uk-strategy-b1274419.html"
+    },
+    {
+      "timestamp": "2026-03-11T09:30:00",
+      "source": "haberler.com",
+      "headline": "Bitcoin fiyatında yönü , petrol ve Fed politikaları belirleyecek",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/kripto-para/bitcoin-fiyatinda-yonu-petrol-ve-fed-19646300-haberi/"
+    },
+    {
+      "timestamp": "2026-03-11T21:00:00",
+      "source": "durangoherald.com",
+      "headline": "Colorado is launching NFT art for its 150th birthday",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.durangoherald.com/articles/colorado-is-launching-nft-art-for-its-150th-birthday/"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "manilatimes.net",
+      "headline": "Anchorage Digital Ventures Makes Strategic Portfolio Company Purchase of $IMU to Strengthen Institutional Onchain Security",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/11/tmt-newswire/globenewswire/anchorage-digital-ventures-makes-strategic-portfolio-company-purchase-of-imu-to-strengthen-institutional-onchain-security/2298040"
+    },
+    {
+      "timestamp": "2026-03-11T17:15:00",
+      "source": "stltoday.com",
+      "headline": "Understanding the Undercurrents : Decoding Crypto Prices Today",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.stltoday.com/exclusive/article_3795385e-23c7-5c31-a52b-5247acb970c2.html"
+    },
+    {
+      "timestamp": "2026-03-11T19:45:00",
+      "source": "thecork.ie",
+      "headline": "How Cryptocurrency Is Changing Online Gaming for Players in Ireland | TheCork . ie ( News & Entertainment )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thecork.ie/2026/03/10/how-cryptocurrency-is-changing-online-gaming-for-players-in-ireland/"
+    },
+    {
+      "timestamp": "2026-03-11T08:00:00",
+      "source": "openpr.com",
+      "headline": "The Anatomy of a 10× Crypto Opportunity : Timing , Technology ,",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4420061/the-anatomy-of-a-10-crypto-opportunity-timing-technology"
+    },
+    {
+      "timestamp": "2026-03-11T06:30:00",
+      "source": "openpr.com",
+      "headline": "Blazpay Ignites Best Crypto Presale 2026 Momentum as Floki Price",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4419898/blazpay-ignites-best-crypto-presale-2026-momentum-as-floki-price"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "openpr.com",
+      "headline": "Powerhouse Presale Cryptocurrency 2026 : 5 Blockchain Leaders",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4420223/powerhouse-presale-cryptocurrency-2026-5-blockchain-leaders"
+    },
+    {
+      "timestamp": "2026-03-11T12:30:00",
+      "source": "fool.com",
+      "headline": "1 Thing That Could Send Strategy Stock Soaring in 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/03/11/1-thing-that-could-send-strategy-stock-soaring-in/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto is Just Finance on Different Infrastructure : ASIC",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/crypto-shouldnt-treated-seperate-asset-class-asic-fintech-chief"
+    },
+    {
+      "timestamp": "2026-03-11T16:30:00",
+      "source": "aarp.org",
+      "headline": "Indiana Becomes First State to Ban Crypto Kiosks",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.aarp.org/money/scams-fraud/indiana-crypto-kiosk-ban/"
+    },
+    {
+      "timestamp": "2026-03-11T16:00:00",
+      "source": "seekingalpha.com",
+      "headline": "SA analyst upgrades / downgrades : TSLA , APP , SNOW , GTBIF",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://seekingalpha.com/news/4563233-sa-analyst-upgrades-downgrades-tsla-app-snow-gtbif"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "newsway.co.kr",
+      "headline": "코인 말고 삼전 ? 4년 주기론에 속타는 코인 투자자",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://newsway.co.kr/news/view?ud=2026031111434104700"
+    },
+    {
+      "timestamp": "2026-03-11T09:30:00",
+      "source": "newsway.co.kr",
+      "headline": "코인 말고 삼전 ? 4년 주기론에 속타는 코인 투자자",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsway.co.kr/news/view?ud=2026031111434104700"
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00",
+      "source": "openpr.com",
+      "headline": "Bitcoin Price Prediction Turns Bullish as Becker and Mow Call",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4421109/bitcoin-price-prediction-turns-bullish-as-becker-and-mow-call"
+    },
+    {
+      "timestamp": "2026-03-11T23:30:00",
+      "source": "tickerreport.com",
+      "headline": "Direxion Daily Crypto Industry Bull 2X Shares ( NYSEARCA : LMBO ) Short Interest Down 87 . 1 % in February",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13375606/direxion-daily-crypto-industry-bull-2x-shares-nysearcalmbo-short-interest-down-87-1-in-february.html"
+    },
+    {
+      "timestamp": "2026-03-11T16:15:00",
+      "source": "cointelegraph.com",
+      "headline": "SlowMist Introduces Security Framework for Autonomous AI Agents in Crypto",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/slowmist-security-framework-autonomous-ai-agents-crypto"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "finanznachrichten.de",
+      "headline": "Crypto Cooling Market worth $3 . 69 billion by 2032 - Exclusive Report by MarketsandMarkets",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-03/67916837-crypto-cooling-market-worth-dollar-3-69-billion-by-2032-exclusive-report-by-marketsandmarkets-008.htm"
+    },
+    {
+      "timestamp": "2026-03-11T23:30:00",
+      "source": "pymnts.com",
+      "headline": "Crypto Charter Scorecard : Mapping Banking Infrastructure Race",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/bank-regulation/2026/the-crypto-charter-scorecard-mapping-bankings-new-infrastructure-race/"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "wkyc.com",
+      "headline": "Westlake police warn of rise in cryptocurrency scams after woman nearly loses $18K",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wkyc.com/article/news/local/cuyahoga-county/westlake-police-warn-rise-cryptocurrency-scams-woman-nearly-loses-18000/95-c6047a8d-a3d7-4fb4-913b-7c4120f5c8a7"
+    },
+    {
+      "timestamp": "2026-03-11T16:30:00",
+      "source": "biometricupdate.com",
+      "headline": "US Treasury crypto playbook puts digital identity at the center",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.biometricupdate.com/202603/us-treasurys-crypto-playbook-puts-digital-identity-at-the-center"
+    },
+    {
+      "timestamp": "2026-03-11T13:00:00",
+      "source": "manilatimes.net",
+      "headline": "Strive Announces SATA Enhancements and Purchase of Bitcoin & STRC",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/11/tmt-newswire/globenewswire/strive-announces-sata-enhancements-and-purchase-of-bitcoin-strc/2297850"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "haberler.com",
+      "headline": "Av . Ahmet Karaca - Kripto paralar miras bırakılabilir mi ? kripto para hukuku ve kripto paraların miras intikali",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.haberler.com/yazarlar/av-ahmet-karaca/kripto-paralar-miras-birakilabilir-mi-kripto-para-hukuku-ve-kripto-paralarin-miras-intikali-5901/"
+    },
+    {
+      "timestamp": "2026-03-11T20:30:00",
+      "source": "openpr.com",
+      "headline": "Best Cryptos to Buy Now : IONIX Chain ( $IONX )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4420965/best-cryptos-to-buy-now-ionix-chain-ionx"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "coindesk.com",
+      "headline": "Bitcoin , ETH , ADA , SOL price news : What next as Bitcoin steady above $70 , 000",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/bitcoin-steady-above-usd70-000-as-iea-proposes-largest-ever-oil-reserve-release"
+    },
+    {
+      "timestamp": "2026-03-11T07:15:00",
+      "source": "myjoyonline.com",
+      "headline": "CDABI flags compliance concerns as blockchain . com launches in Ghana",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.myjoyonline.com/cdabi-flags-compliance-concerns-as-blockchain-com-launches-in-ghana/"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "proactiveinvestors.co.uk",
+      "headline": "Light Science Technologies , NextEnergy Solar Fund , Supermarket Income REIT , Rainbow Rare Earths , Ariana Resources , London BTC Company - Small Cap Snapshot",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.proactiveinvestors.co.uk/companies/news/1088707/light-science-technologies-nextenergy-solar-fund-supermarket-income-reit-rainbow-rare-earths-ariana-resources-london-btc-company-small-cap-snapshot-1088707.html"
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00",
+      "source": "newsbtc.com",
+      "headline": "Institutions Are Moving Out Of XRP After One Month Of Inflows , Is It Time To Sell ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/xrp-news/institutions-moving-out-of-xrp/"
+    },
+    {
+      "timestamp": "2026-03-11T16:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Top Bitcoin Mining Pool Operator Foundry Is Getting Into Zcash",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/top-bitcoin-mining-pool-operator-155112151.html"
+    },
+    {
+      "timestamp": "2026-03-11T12:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Retreats Under $70K as IEA Weighs Historic Oil Reserve Release",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-retreats-under-70k-iea-120027716.html"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "tickerreport.com",
+      "headline": "Bitcoin Depot Inc . ( NASDAQ : BTMWW ) Sees Significant Decrease in Short Interest",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13374600/bitcoin-depot-inc-nasdaqbtmww-sees-significant-decrease-in-short-interest.html"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "coindesk.com",
+      "headline": "ORCL jumps 11 % premarket as earnings challenge  SaaS apocalypse  fears",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/oracle-jumps-11-premarket-as-ai-demand-challenges-saas-apocalypse-fears"
+    },
+    {
+      "timestamp": "2026-03-11T21:30:00",
+      "source": "manilatimes.net",
+      "headline": "New Crypto : Pepeto Announces Presale Update at $7 . 93M Raised While Ethereum Price Prediction Targets New ATH",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/12/tmt-newswire/globenewswire/new-crypto-pepeto-announces-presale-update-at-793m-raised-while-ethereum-price-prediction-targets-new-ath/2298314"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "coindesk.com",
+      "headline": "Dogecoin zooms as Elon Musk announces X Money launch date for April",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/dogecoin-zooms-as-elon-musk-announces-x-money-launch-date-for-april"
+    },
+    {
+      "timestamp": "2026-03-11T05:30:00",
+      "source": "bigpara.hurriyet.com.tr",
+      "headline": "Piyasalarda  barış  umudu - Bigpara Haberleri",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bigpara.hurriyet.com.tr/haberler/ekonomi-haberleri/piyasalarda-baris-umudu_ID1625842/"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "bitcoinmagazine.com",
+      "headline": "Danielle Moinet Confirmed As A Bitcoin 2026 Speaker",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bitcoinmagazine.com/conference/danielle-moinet-confirmed-as-a-bitcoin-2026-speaker"
+    },
+    {
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "manilatimes.net",
+      "headline": "MEXC Gold Futures Up 123 %; Geopolitical Uncertainty Fuels Crypto - Metal Derivatives Surge",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/11/tmt-newswire/globenewswire/mexc-gold-futures-up-123-geopolitical-uncertainty-fuels-crypto-metal-derivatives-surge/2297679"
+    },
+    {
+      "timestamp": "2026-03-11T18:45:00",
+      "source": "benzinga.com",
+      "headline": "Michael Saylor : STRC Stock Achieved Better Risk - Adjusted Returns Than Nvidia , Tesla - Strategy ( NASDAQ : MSTR )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/03/51195736/michael-saylor-strc-stock-achieved-better-risk-adjusted-returns-than-nvidia-tesla"
+    },
+    {
+      "timestamp": "2026-03-11T06:30:00",
+      "source": "thearabianpost.com",
+      "headline": "Ripple moves to secure Australian payments licence",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://thearabianpost.com/ripple-moves-to-secure-australian-payments-licence/"
+    },
+    {
+      "timestamp": "2026-03-11T08:15:00",
+      "source": "sofokleous10.gr",
+      "headline": "Bitcoin climbs to $71K as crude tumbles on possible global oil reserve release",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://sofokleous10.gr/2026/03/11/bitcoin-climbs-to-71k-as-crude-tumbles-on-possible-global-oil-reserve-release/"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "thehindubusinessline.com",
+      "headline": "US Federal Court Dismisses All Claims Against Binance in Anti - Terrorism Lawsuit",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thehindubusinessline.com/brandhub/pr-release/us-federal-court-dismisses-all-claims-against-binance-in-anti-terrorism-lawsuit/article70730846.ece"
+    },
+    {
+      "timestamp": "2026-03-11T08:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Aeternum Consulting Ltd : Aeternum & Da Nang Government Officials bring Unchained Summit to Da Nang",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-03/67909558-aeternum-consulting-ltd-aeternum-da-nang-government-officials-bring-unchained-summit-to-da-nang-200.htm"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "coindesk.com",
+      "headline": "Coinbase - backed AI payments protocol wants to fix micropayment but demand is just not there yet",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/coinbase-backed-ai-payments-protocol-wants-to-fix-micropayment-but-demand-is-just-not-there-yet"
+    },
+    {
+      "timestamp": "2026-03-11T07:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "GameStop ( GME ) Shares Up 20 % While Other Meme Stocks Fall in 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/gamestop-gme-shares-20-while-191757080.html"
+    },
+    {
+      "timestamp": "2026-03-11T13:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "MicroStrategy Incorporated – 10 . 00 % Series A Perpetual Strife Preferred Stock ( STRF ) to Issue Quarterly Dividend of $2 . 50 on March 31st",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/11/microstrategy-incorporated-10-00-series-a-perpetual-strife-preferred-stock-strf-to-issue-quarterly-dividend-of-2-50-on-march-31st.html"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "dailypolitical.com",
+      "headline": "Bitcoin Depot Inc . ( NASDAQ : BTM ) Short Interest Down 85 . 0 % in February",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/11/bitcoin-depot-inc-nasdaqbtm-short-interest-down-85-0-in-february.html"
+    },
+    {
+      "timestamp": "2026-03-11T08:30:00",
+      "source": "newsbtc.com",
+      "headline": "TRON Joins Agentic AI Foundation As AI Systems Move Toward Real - World Deployment",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/tron-trx/tron-joins-agentic-ai-foundation-as-ai-systems-move-toward-real-world-deployment/"
+    },
+    {
+      "timestamp": "2026-03-11T03:15:00",
+      "source": "finanzen.ch",
+      "headline": "So profitabel ist Bitcoin - Mining - das sagt ein Analyst zum Umsatzeinbruch beim Bitcoin - Schürfen",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.ch/nachrichten/devisen/so-profitabel-ist-bitcoin-mining-das-sagt-ein-analyst-zum-umsatzeinbruch-beim-bitcoin-schuerfen-1035913516"
+    },
+    {
+      "timestamp": "2026-03-11T16:30:00",
+      "source": "smartbrief.com",
+      "headline": "CoinFund Perkins Details the TradFi - Crypto  Dance Party  in Boca",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.smartbrief.com/original/coinfunds-perkins-details-the-tradfi-crypto-dance-party-in-boca"
+    },
+    {
+      "timestamp": "2026-03-11T03:30:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Hong Kong family offices plan more crypto , private markets exposure",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/hong-kong-family-offices-plan-more-crypto-private-markets-exposure"
+    },
+    {
+      "timestamp": "2026-03-11T13:45:00",
+      "source": "dailypolitical.com",
+      "headline": "MicroStrategy Incorporated – 8 . 00 % Series A Perpetual Strike Preferred Stock ( STRK ) To Go Ex - Dividend on March 13th",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/11/microstrategy-incorporated-8-00-series-a-perpetual-strike-preferred-stock-strk-to-go-ex-dividend-on-march-13th.html"
+    },
+    {
+      "timestamp": "2026-03-11T19:30:00",
+      "source": "lexology.com",
+      "headline": "IRS Releases Proposed Regulations on Crypto Information Reporting",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.lexology.com/library/detail.aspx?g=0bfdb35f-89fa-4ce5-ad84-e746ce4c8228"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "ventureburn.com",
+      "headline": "Crypto & LLM Visibility : Win AI Search 2026",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ventureburn.com/why-40-of-crypto-projects-will-lose-users-to-ai-search-in-2026-and-what-to-do-about-it/"
+    },
+    {
+      "timestamp": "2026-03-11T08:00:00",
+      "source": "manilatimes.net",
+      "headline": "Bitget and B2C2 Partner to Strengthen Institutional Market Access",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/11/tmt-newswire/globenewswire/bitget-and-b2c2-partner-to-strengthen-institutional-market-access/2297607"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "coindesk.com",
+      "headline": "DeFi lending platform Aave sees $27 million liquidations after wstETH price glitch",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/business/2026/03/10/defi-lending-platform-aave-sees-a-rare-usd27-million-liquidations-after-a-price-glitch"
+    },
+    {
+      "timestamp": "2026-03-11T04:15:00",
+      "source": "odt.co.nz",
+      "headline": "Queenstown tech entrepreneur donates at least $500k to political parties",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.odt.co.nz/business/queenstown-tech-entrepreneur-donates-least-500k-political-parties-rnz"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "assetservicingtimes.com",
+      "headline": "Ledgible and Label partner to streamline digital asset tax information",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.assetservicingtimes.com/assetservicesnews/industryarticle.php?article_id=17765"
+    },
+    {
+      "timestamp": "2026-03-11T12:15:00",
+      "source": "slobodna-bosna.ba",
+      "headline": "BOGATAŠI U PANICI : Cijene nekretnina u Dubaiju rapidno tonu",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.slobodna-bosna.ba/vijest/471709/bogatasi_u_panici_cijene_nekretnina_u_dubaiju_rapidno_tonu.html"
+    },
+    {
+      "timestamp": "2026-03-11T21:30:00",
+      "source": "zdnet.com",
+      "headline": "This security flaw could affect 1 in 4 Android phones - how to check yours",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.zdnet.com/article/security-flaw-affects-1-in-4-android-phones-how-to-check-yours/"
+    },
+    {
+      "timestamp": "2026-03-11T12:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "3 Reasons Why Im Not Buying Shiba Inu in 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/3-reasons-why-im-not-115000636.html"
+    },
+    {
+      "timestamp": "2026-03-11T01:00:00",
+      "source": "lexology.com",
+      "headline": "Turning Point for Digital Assets : 2025 Year in Review and What Comes Next",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.lexology.com/library/detail.aspx?g=7a97b2ae-076f-4ae6-89ce-0badcaf8d3ed"
+    },
+    {
+      "timestamp": "2026-03-11T07:00:00",
+      "source": "news.az",
+      "headline": "XRP price to see $42 soon : Analysts predict",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.az/news/xrp-price-to-see-42-soon-analysts-predict"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "chicago.suntimes.com",
+      "headline": "As Senate race tightens , Kelly benefits from super PAC war between Krishnamoorthi and Stratton",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://chicago.suntimes.com/elections/2026/03/10/us-senate-democratic-primary-kelly-krishnamoorthi-stratton-super-pac-war"
+    },
+    {
+      "timestamp": "2026-03-11T05:30:00",
+      "source": "home.nzcity.co.nz",
+      "headline": "Anonymous gamblers made millions betting ahead of Iran strikes on Polymarket - 11 - Mar - 2026",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=441645&fm=psp,tsf"
+    },
+    {
+      "timestamp": "2026-03-11T05:30:00",
+      "source": "home.nzcity.co.nz",
+      "headline": "Anonymous gamblers made millions betting ahead of Iran strikes on Polymarket - 11 - Mar - 2026",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=441645&fm=psp,tst"
+    },
+    {
+      "timestamp": "2026-03-11T04:00:00",
+      "source": "home.nzcity.co.nz",
+      "headline": "Anonymous gamblers made millions betting ahead of Iran strikes on Polymarket - 11 - Mar - 2026",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://home.nzcity.co.nz/news/article.aspx?id=441645"
+    },
+    {
+      "timestamp": "2026-03-11T05:00:00",
+      "source": "abc.net.au",
+      "headline": "Anonymous gamblers made millions betting ahead of Iran strikes on Polymarket",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.abc.net.au/news/2026-03-11/iran-polymarket-anonymous-gamblers-made-millions-betting/106433384"
+    },
+    {
+      "timestamp": "2026-03-11T01:15:00",
+      "source": "bravenewcoin.com",
+      "headline": "Prospera launches US$5000 crypto tax residency programme for digital nomads",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bravenewcoin.com/insights/prospera-lump-sum-crypto-tax-residency"
+    },
+    {
+      "timestamp": "2026-03-11T11:30:00",
+      "source": "newsghana.com.gh",
+      "headline": "SEC Ghana Clears 11 Crypto Firms to Begin Supervised Operations",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsghana.com.gh/sec-ghana-clears-11-crypto-firms-to-begin-supervised-operations/"
+    },
+    {
+      "timestamp": "2026-03-11T14:45:00",
+      "source": "lexology.com",
+      "headline": "Monetizing Innovation : How IP Tokenization Is Reshaping IP Rights and Value",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.lexology.com/library/detail.aspx?g=a1736b37-be07-401a-a078-4ce74ab2ac3e"
+    },
+    {
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "tickerreport.com",
+      "headline": "Legal & General Group Plc Raises Stock Holdings in Robinhood Markets , Inc . $HOOD",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tickerreport.com/banking-finance/13374711/legal-general-group-plc-raises-stock-holdings-in-robinhood-markets-inc-hood.html"
+    },
+    {
+      "timestamp": "2026-03-11T14:00:00",
+      "source": "mavikocaeli.com.tr",
+      "headline": "İslam Memiş uyardı : Piyasalarda  fırtına öncesi sessizlik  var !",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.mavikocaeli.com.tr/islam-memis-uyardi-piyasalarda-firtina-oncesi-sessizlik-var/236633/"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "coindesk.com",
+      "headline": "Senators try to unlock stalled crypto Clarity Act with compromise on stablecoin yield",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/policy/2026/03/10/senators-try-to-unlock-stalled-crypto-clarity-act-with-compromise-on-stablecoin-yield"
+    },
+    {
+      "timestamp": "2026-03-11T12:00:00",
+      "source": "finanzen.ch",
+      "headline": "Kryptowährungen : Aktueller Marktbericht zu Bitcoin & Co .",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.ch/nachrichten/devisen/kryptowahrungen-aktueller-marktbericht-zu-bitcoin-&-co--1035918511"
+    },
+    {
+      "timestamp": "2026-03-11T03:30:00",
+      "source": "morningstar.com",
+      "headline": "Dow Jones Top Markets Headlines at 9 PM ET : Deleted Tweet From Energy Secretary Sends Oil Markets on Another Wild Ride | IEA ...",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.morningstar.com/news/dow-jones/2026031012081/dow-jones-top-markets-headlines-at-9-pm-et-deleted-tweet-from-energy-secretary-sends-oil-markets-on-another-wild-ride-iea"
+    },
+    {
+      "timestamp": "2026-03-11T18:00:00",
+      "source": "poduzetnistvo.org",
+      "headline": "Izrudareno 20 milijuna bitcoina , preostao je samo još posljednji",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.poduzetnistvo.org/news/izrudareno-20-milijuna-bitcoina-preostao-je-samo-jos-posljednji"
+    },
+    {
+      "timestamp": "2026-03-11T16:00:00",
+      "source": "wjnt.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wjnt.com/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T00:45:00",
+      "source": "kkiq.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kkiq.com/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T00:45:00",
+      "source": "myuscountry.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.myuscountry.com/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T00:45:00",
+      "source": "wfls.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wfls.com/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T00:45:00",
+      "source": "star945.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.star945.com/entertainment/yara-shahidi-nyambi-nyambi-larry-wilmore-added-cast-netflixs-one-attempt-remaining/MEOOTNIY5AYPZETEZWBSE4FKEE/"
+    },
+    {
+      "timestamp": "2026-03-11T01:15:00",
+      "source": "k101fm.net",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.k101fm.net/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T01:15:00",
+      "source": "woad.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.woad.com/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T01:00:00",
+      "source": "99jamzmiami.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.99jamzmiami.com/entertainment/yara-shahidi-nyambi-nyambi-larry-wilmore-added-cast-netflixs-one-attempt-remaining/MEOOTNIY5AYPZETEZWBSE4FKEE/"
+    },
+    {
+      "timestamp": "2026-03-11T01:00:00",
+      "source": "kix953.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kix953.com/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T01:45:00",
+      "source": "mix1005.fm",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.mix1005.fm/syndicated-article/?id=1660965"
+    },
+    {
+      "timestamp": "2026-03-11T23:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Weekly Investment Analyst Ratings Changes for Core Scientific ( CORZ )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/03/11/weekly-investment-analysts-ratings-changes-for-core-scientific-corz.html"
+    },
+    {
+      "timestamp": "2026-03-11T11:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin Could Hit $1M in 10 Years If It Does This One Thing , Says Bitwise CIO Matt Hougan",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-could-hit-1m-10-103215492.html"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Arthur Hayes Wouldnt Invest $1 In Bitcoin Right Now",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/bitcoiner-arthur-hayes-hesitant-buying-btc-federal-reserve-monetary-stance"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "benzinga.com",
+      "headline": "Hyperscale Data Projects 80 – 100 % Revenue Growth in 2026 - Hyperscale Data ( AMEX : GPUS )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/markets/guidance/26/03/51186942/hyperscale-data-projects-80-100-revenue-growth-in-2026"
+    },
+    {
+      "timestamp": "2026-03-11T05:45:00",
+      "source": "finanznachrichten.de",
+      "headline": "Kaj Labs : J . King Kasr Introduces Lithic , an AI - Native Smart Contract Language for Deterministic Blockchain Infrastructure",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-03/67908348-kaj-labs-j-king-kasr-introduces-lithic-an-ai-native-smart-contract-language-for-deterministic-blockchain-infrastructure-296.htm"
+    },
+    {
+      "timestamp": "2026-03-11T04:45:00",
+      "source": "banklesstimes.com",
+      "headline": "Minnesota Moves to Ban Crypto ATMs Amid Elder Fraud Surge",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.banklesstimes.com/articles/2026/03/11/minnesota-moves-to-ban-crypto-atms-amid-elder-fraud-surge/"
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00",
+      "source": "newsbtc.com",
+      "headline": "Dogecoin Descending Channel Shows Where It Is In This Cycle",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/news/dogecoin/dogecoin-descending-channel/"
+    },
+    {
+      "timestamp": "2026-03-11T16:45:00",
+      "source": "fox10phoenix.com",
+      "headline": "Nancy Guthrie disappearance : Day 39 latest updates",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox10phoenix.com/news/nancy-guthrie-disappearance-day-39-latest-updates"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "mixx993.com",
+      "headline": "ABC News Entertainment - Mixx 99 . 3",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://mixx993.com/abc-news-entertainment/6d3c7664b065f34fc41681d8b899f95f"
+    },
+    {
+      "timestamp": "2026-03-11T00:15:00",
+      "source": "yoursourceone.com",
+      "headline": "Yara Shahidi , Nyambi Nyambi and Larry Wilmore added to cast of Netflix  One Attempt Remaining",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yoursourceone.com/entertainment/yara-shahidi-nyambi-nyambi-and-larry-wilmore-added-to-cast-of-netflixs-one-attempt-remaining/article_9be18450-dd4d-5d35-989e-0a4af83dddff.html"
+    },
+    {
+      "timestamp": "2026-03-11T00:15:00",
+      "source": "ksyl.com",
+      "headline": "Entertainment - KSYL - AM",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ksyl.com/entertainment/f5173a96203302a76286cf23f2d5d04a"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "newsway.co.kr",
+      "headline": "1달러가 있더라도 안 사  아서 헤이즈가 말한 비트코인 매수 타이밍",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://newsway.co.kr/news/view?ud=2026031114252428302"
+    },
+    {
+      "timestamp": "2026-03-11T23:30:00",
+      "source": "pymnts.com",
+      "headline": "Wells Fargo Files Plan for WFUSD Digital Assets Effort",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/news/banking/2026/wells-fargo-files-plan-for-wfusd-digital-assets-effort/"
+    },
+    {
+      "timestamp": "2026-03-11T02:45:00",
+      "source": "thanhnien.vn",
+      "headline": "Giá Bitcoin hôm nay 11 . 3 . 2026 : Tăng vọt lên 71 . 000 USD sau cơn khủng hoảng",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://thanhnien.vn/gia-bitcoin-hom-nay-1132026-tang-vot-len-71000-usd-sau-con-khung-hoang-185260311070330227.htm"
+    },
+    {
+      "timestamp": "2026-03-11T13:00:00",
+      "source": "theportugalnews.com",
+      "headline": "XRP ETF Inflows Reach Record Levels as XRP Holders Explore NOW DeFi Cloud Mining With Potential Daily Earnings of $9 , 777",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.theportugalnews.com/news/2026-03-11/xrp-etf-inflows-reach-record-levels-as-xrp-holders-explore-now-defi-cloud-mining-with-potential-daily-earnings-of-9777/988355"
+    },
+    {
+      "timestamp": "2026-03-11T19:30:00",
+      "source": "lexology.com",
+      "headline": "Troutman Pepper Locke Weekly Consumer Financial Services Newsletter - March 10 , 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.lexology.com/library/detail.aspx?g=1c1db79b-2ae5-40ad-b3aa-cc10d01b1220"
+    },
+    {
+      "timestamp": "2026-03-11T06:00:00",
+      "source": "dallasnews.com",
+      "headline": "Letters to the Editor - Primary voting ; online school ; bitcoin ; Waymo ; city hall ; Iran",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dallasnews.com/opinion/letters-to-the-editor/2026/03/11/letters-to-the-editor-primary-voting-online-school-bitcoin-waymo-city-hall-iran/"
+    },
+    {
+      "timestamp": "2026-03-11T10:30:00",
+      "source": "baomoi.com",
+      "headline": "Giá bitcoin tăng mạnh sau phát ngôn của ông Trump",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://baomoi.com/gia-bitcoin-tang-manh-sau-phat-ngon-cua-ong-trump-c54665466.epi"
+    },
+    {
+      "timestamp": "2026-03-11T18:45:00",
+      "source": "fox7austin.com",
+      "headline": "Nancy Guthrie disappearance : Day 39 latest updates",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fox7austin.com/news/nancy-guthrie-disappearance-day-39-latest-updates"
+    },
+    {
+      "timestamp": "2026-03-11T08:30:00",
+      "source": "dantri.com.vn",
+      "headline": "Bitcoin tăng mạnh sau một phát biểu của Tổng thống Trump",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://dantri.com.vn/kinh-doanh/bitcoin-tang-manh-sau-mot-phat-bieu-cua-tong-thong-trump-20260311105259942.htm"
+    },
+    {
+      "timestamp": "2026-03-11T01:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Crypto ETNs Banned From united kingdom ISAs : What the April 6 Rule Change Means for Investors",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/crypto-etns-banned-uk-isas-130215090.html"
+    },
+    {
+      "timestamp": "2026-03-11T06:45:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto Bill Can Advance , but Lobbyists Will Be Unhappy : Senator",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/crypto-banks-need-to-be-unhappy-crypto-bill-advance-senator"
+    },
+    {
+      "timestamp": "2026-03-11T08:30:00",
+      "source": "n.yam.com",
+      "headline": "美伊衝突若延燒 分析師 ： 比特幣有望成避險資產大贏家",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://n.yam.com/Article/20260311838430"
+    },
+    {
+      "timestamp": "2026-03-11T01:15:00",
+      "source": "dp.ru",
+      "headline": "Биткоин за неделю восстановился после обвала на ближневосточном конфликте",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dp.ru:443/a/2026/03/11/bitkoin-za-nedelju-vosstanovilsja"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "ec.ltn.com.tw",
+      "headline": "比特幣衝上100萬美元並非癡人說夢 加密幣首席投資長透露驚人計算法",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5366768"
+    },
+    {
+      "timestamp": "2026-03-11T01:15:00",
+      "source": "english.elpais.com",
+      "headline": "From millions of dollars to under a grand : The dramatic fall of the NFT",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://english.elpais.com/culture/2026-03-10/from-millions-of-dollars-to-under-a-grand-the-dramatic-fall-of-the-nft.html"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "allafrica.com",
+      "headline": "South Africa : Eskom Plans to Sell Spare Daytime Power to Bitcoin Miners",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://allafrica.com/stories/202603110328.html"
+    },
+    {
+      "timestamp": "2026-03-11T03:45:00",
+      "source": "newsbtc.com",
+      "headline": "XRP Price Could Stage 1 , 500 % Rally To $20 If It Mirrors This 2017 Move",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/analysis/xrp/xrp-could-stage-1500-rally/"
+    },
+    {
+      "timestamp": "2026-03-11T06:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Solana reaches historic milestone against Ethereum in RWA market",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/solana-reaches-historic-milestone-against-175522826.html"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "manilatimes.net",
+      "headline": "Global Settlement Acquires InvestReady and Accreditoken to Launch GSX Identity",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/11/tmt-newswire/globenewswire/global-settlement-acquires-investready-and-accreditoken-to-launch-gsx-identity/2298037"
+    },
+    {
+      "timestamp": "2026-03-11T23:00:00",
+      "source": "newsbtc.com",
+      "headline": "Will XRP Reach $4 In 2026 ? Analyst Predicts How Far Price Can Go",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/analysis/xrp/will-xrp-reach-4-in-2026/"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "coindesk.com",
+      "headline": "Next week could spice things up for BTC as seven central banks face an inflation test",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/next-week-could-spice-things-up-for-bitcoin-as-seven-central-banks-face-an-inflation-test"
+    },
+    {
+      "timestamp": "2026-03-11T16:00:00",
+      "source": "finbold.com",
+      "headline": "RedotPay Strengthens Compliance Infrastructure for Digital Asset Across Argentina , Canada , and the U . S .",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finbold.com/redotpay-strengthens-compliance-infrastructure-for-digital-asset-across-argentina-canada-and-the-u-s/"
+    },
+    {
+      "timestamp": "2026-03-11T08:00:00",
+      "source": "mignews.com",
+      "headline": "США изъяли криптовалюту на $584 млн у сети китайских мошенников | MigNews - Новости Израиля и Мира на русском языке",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://mignews.com/news/economics/ssha-izyali-kriptovalyutu-na-584-mln-u-seti-kitajskih-moshennikov.html"
+    },
+    {
+      "timestamp": "2026-03-11T13:30:00",
+      "source": "gdnonline.com",
+      "headline": "UAE Business : DSIG unveils Responsible Investor Initiative ( RII )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.gdnonline.com:443/Details/1378284/DSIG-unveils-Responsible-Investor-Initiative-(RII)"
+    },
+    {
+      "timestamp": "2026-03-11T04:45:00",
+      "source": "banklesstimes.com",
+      "headline": "Ripple Labs to Get Australia License as XRP Price Shows Bottoming Signs",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.banklesstimes.com/articles/2026/03/11/ripple-labs-to-get-australia-license-as-xrp-price-shows-bottoming-signs/"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "coindesk.com",
+      "headline": "XRP news : Ripple - linked network transactions jump to 2 . 7M as price stays muted",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/03/11/xrp-ledger-transactions-jump-to-2-7m-as-price-stays-rangebound"
+    },
+    {
+      "timestamp": "2026-03-11T12:15:00",
+      "source": "finanznachrichten.de",
+      "headline": "Bitcoin und Krypto - ETPs - digitale Assets als neue Anlagechance",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-03/67914990-bitcoin-und-krypto-etps-digitale-assets-als-neue-anlagechance-392.htm"
+    },
+    {
+      "timestamp": "2026-03-11T09:30:00",
+      "source": "webrazzi.com",
+      "headline": "Paribu , merkeziyetsiz akıllı cüzdan Clavei bünyesine kattı",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://webrazzi.com/2026/03/11/paribu-merkeziyetsiz-akilli-cuzdan-clave-i-bunyesine-katti/"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "onedio.com",
+      "headline": "Dünyanın En Zengini : Bill Gatesi Servette Geçen İsim",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://onedio.com/haber/hapisten-cikti-bill-gates-i-tarihe-gomdu-binance-kurucusunun-inanilmaz-serveti-1347244"
+    },
+    {
+      "timestamp": "2026-03-11T05:15:00",
+      "source": "business.scoop.co.nz",
+      "headline": "Business . Scoop » Queenstown - Based Tech Entrepreneur Brian Cartmell Donating Hundreds Of Thousands To Political Parties",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://business.scoop.co.nz/2026/03/11/queenstown-based-tech-entrepreneur-brian-cartmell-donating-hundreds-of-thousands-to-political-parties/"
+    },
+    {
+      "timestamp": "2026-03-11T06:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "kpk ETH Yield price live today ( 11 Mar 2026 ) - Why kpk ETH Yield price is falling by 0 . 04 % today",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/kpk-eth-yield-price/cryptodetail/symbol-kpk%20eth%20yield.cms"
+    },
+    {
+      "timestamp": "2026-03-11T06:00:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "kpk ETH Prime price live today ( 11 Mar 2026 ) - Why kpk ETH Prime price is falling by 0 . 04 % today",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/kpk-eth-prime-price/cryptodetail/symbol-kpk%20eth%20prime.cms"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "internethaber.com",
+      "headline": "BtcTurkten yeni yatırımcılara hediye çeki fırsatı",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.internethaber.com/btcturkten-yeni-yatirimcilara-hediye-ceki-firsati-2434754h.htm"
+    },
+    {
+      "timestamp": "2026-03-11T16:00:00",
+      "source": "openpr.com",
+      "headline": "Best Crypto Presale : Crypto Funds Pull $619M as Fear Index Hits 8",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4420805/best-crypto-presale-crypto-funds-pull-619m-as-fear-index-hits-8"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "dailynews.co.th",
+      "headline": "บุกทลายเหมืองบิตคอยน์โคราช ! แอบต่อตรงไฟหลวง ทำรัฐสูญกว่า 2 ล้านบาท",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailynews.co.th/news/5677832/"
+    },
+    {
+      "timestamp": "2026-03-11T19:15:00",
+      "source": "livemint.com",
+      "headline": "Dollar rises , as investors remain on edge about Middle East risks",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.livemint.com/market/dollar-rises-as-investors-remain-on-edge-about-middle-east-risks-11773254996523.html"
+    },
+    {
+      "timestamp": "2026-03-11T10:15:00",
+      "source": "de.investing.com",
+      "headline": "VW und Meta Analyse : Interessante Perspektive",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://de.investing.com/analysis/vw-und-meta-analyse-interessante-perspektive-200506844"
+    },
+    {
+      "timestamp": "2026-03-11T14:00:00",
+      "source": "manilatimes.net",
+      "headline": "OpenVPP Launches 2 . 0 as Over $25M in Tokenized RWAs Power Next - Generation Energy Settlement on Base",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/03/11/tmt-newswire/globenewswire/openvpp-launches-20-as-over-25m-in-tokenized-rwas-power-next-generation-energy-settlement-on-base/2297964"
+    },
+    {
+      "timestamp": "2026-03-11T19:30:00",
+      "source": "finanzen.ch",
+      "headline": "Dogecoin : So viel hätte eine Investition von vor 10 Jahren abgeworfen",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.ch/nachrichten/devisen/dogecoin-so-viel-haette-eine-investition-von-vor-10-jahren-abgeworfen-1035920411"
+    },
+    {
+      "timestamp": "2026-03-11T01:45:00",
+      "source": "dailymail.co.uk",
+      "headline": "Phantom investment  scandal rocking Britain : These firms pledged billions to revolutionise the united kingdom ... but , a year on , FRED KELLY reveals what really happened to their plans ... and why one planned site is now a scrapyard",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailymail.co.uk/news/article-15633681/Phantom-investment-scandal-rocking-Britain-firms-pledged-billions-revolutionise-UK-year-FRED-KELLY-reveals-whats-really-happened-plans-one-planned-site-scrapyard.html"
+    },
+    {
+      "timestamp": "2026-03-11T11:15:00",
+      "source": "musavat.com",
+      "headline": "Dünya ÇALXALANIR - Cənubi Qafqaz n TƏHLÜKƏ",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://musavat.com/news/dunya-calxalanir-cenubi-qafqaz-ucun-tehluke_1246028.html"
+    },
+    {
+      "timestamp": "2026-03-11T19:45:00",
+      "source": "readme.readmedia.com",
+      "headline": "Attorney General James and Advocates To Hold Listening Session With Victims of Online Scams",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://readme.readmedia.com/Attorney-General-James-and-Advocates-To-Hold-Listening-Session-With-Victims-of-Online-Scams/21355396"
+    },
+    {
+      "timestamp": "2026-03-11T12:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "SquareFi exits stealth with stablecoin payments infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/squarefi-exits-stealth-stablecoin-payments-115801576.html"
+    },
+    {
+      "timestamp": "2026-03-11T19:45:00",
+      "source": "techstory.in",
+      "headline": "How North Korean Hackers Stole Millions Through an AirDrop",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://techstory.in/the-invisible-heist-how-north-korean-hackers-stole-millions-through-an-airdrop/"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "dobreprogramy.pl",
+      "headline": "Oszustwo na Starlinka . Zmieniają telefony w koparki kryptowalut",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dobreprogramy.pl/oszustwo-na-starlinka-zmieniaja-telefony-w-koparki-kryptowalut,7263066794023200a"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "source": "pymnts.com",
+      "headline": "SquareFi Launches Stablecoin Infrastructure for B2B Payments",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/squarefi-launches-stablecoin-infrastructure-for-cross-border-b2b-payments/"
+    },
+    {
+      "timestamp": "2026-03-11T11:15:00",
+      "source": "misanec.ru",
+      "headline": "Ульяновец потерял более 230 тысяч рублей , пытаясь заработать на криптовалюте | Новости Ульяновска . Смотреть онлайн",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://misanec.ru/2026/03/11/%D1%83%D0%BB%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2%D0%B5%D1%86-%D0%BF%D0%BE%D1%82%D0%B5%D1%80%D1%8F%D0%BB-%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5-230-%D1%82%D1%8B%D1%81%D1%8F%D1%87-%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9/"
+    },
+    {
+      "timestamp": "2026-03-11T09:45:00",
+      "source": "knews.kg",
+      "headline": "ИИ - агент Alibaba пытался самостоятельно заняться майнингом криптовалюты",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://knews.kg/2026/03/11/ii-agent-alibaba-pytalsya-samostoyatelno-zanyatsya-majningom-kriptovalyuty/"
+    },
+    {
+      "timestamp": "2026-03-11T21:00:00",
+      "source": "financial-news.co.uk",
+      "headline": "Datavault AI ( NASDAQ : DVLT )  CEO Nate Bradley To Present Tokenized Legacy Platform At Luminary 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.financial-news.co.uk/datavault-ai-nasdaq-dvlt-ceo-nate-bradley-to-present-tokenized-legacy-platform-at-luminary-2026/"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "chinanationalnews.com",
+      "headline": "Datavault AI CEO Nathaniel Bradley to Present at Luminary 2026 During Oscars Weekend in Los Angeles",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.chinanationalnews.com/news/278915388/datavault-ai-ceo-nathaniel-bradley-to-present-at-luminary-2026-during-oscars-weekend-in-los-angeles"
+    },
+    {
+      "timestamp": "2026-03-11T14:30:00",
+      "source": "londonmercury.com",
+      "headline": "Datavault AI CEO Nathaniel Bradley to Present at Luminary 2026 During Oscars Weekend in Los Angeles",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.londonmercury.com/news/278915388/datavault-ai-ceo-nathaniel-bradley-to-present-at-luminary-2026-during-oscars-weekend-in-los-angeles"
+    },
+    {
+      "timestamp": "2026-03-11T12:15:00",
+      "source": "hongkongherald.com",
+      "headline": "Datavault AI CEO Nathaniel Bradley to Present at Luminary 2026 During Oscars Weekend in Los Angeles",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.hongkongherald.com/news/278915388/datavault-ai-ceo-nathaniel-bradley-to-present-at-luminary-2026-during-oscars-weekend-in-los-angeles"
+    },
+    {
+      "timestamp": "2026-03-11T14:00:00",
+      "source": "argentinastar.com",
+      "headline": "Datavault AI CEO Nathaniel Bradley to Present at Luminary 2026 During Oscars Weekend in Los Angeles",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.argentinastar.com/news/278915388/datavault-ai-ceo-nathaniel-bradley-to-present-at-luminary-2026-during-oscars-weekend-in-los-angeles"
+    },
+    {
+      "timestamp": "2026-03-11T14:00:00",
+      "source": "irishsun.com",
+      "headline": "Datavault AI CEO Nathaniel Bradley to Present at Luminary 2026 During Oscars Weekend in Los Angeles",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.irishsun.com/news/278915388/datavault-ai-ceo-nathaniel-bradley-to-present-at-luminary-2026-during-oscars-weekend-in-los-angeles"
+    },
+    {
+      "timestamp": "2026-03-11T16:30:00",
+      "source": "euronews.com",
+      "headline": "US Justice Department digs into Iran sanctions evasion via Binance",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.euronews.com/business/2026/03/11/us-justice-department-digs-into-irans-sanctions-evasion-via-binance"
+    },
+    {
+      "timestamp": "2026-03-11T05:45:00",
+      "source": "hedgeco.net",
+      "headline": "Institutional Investors Reevaluate Gold Allocations :",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.hedgeco.net/news/03/2026/institutional-investors-reevaluate-gold-allocations.html"
+    },
+    {
+      "timestamp": "2026-03-11T08:45:00",
+      "source": "forbes.com",
+      "headline": "Cuba Blackout Reveals Grid Flaws Bitcoin May Fix",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/03/11/cubas-blackout-reveals-grid-flaws-bitcoin-may-fix/"
+    },
+    {
+      "timestamp": "2026-03-11T18:45:00",
+      "source": "asia.nikkei.com",
+      "headline": "Bhutan seeks economic revival with special city backed by bitcoin mining",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://asia.nikkei.com/spotlight/cryptocurrencies/bhutan-seeks-economic-revival-with-special-city-backed-by-bitcoin-mining"
+    },
+    {
+      "timestamp": "2026-03-11T02:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitcoin price rises as Iran war pushes oil above $115 : QCP Capital",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/news/bitcoin-price-rises-iran-war-144808008.html"
+    },
+    {
+      "timestamp": "2026-03-11T09:15:00",
+      "source": "busan.com",
+      "headline": "금감원 , 60조  유령코인  빗썸 사태 검사 종료 … 제재수위 심사 돌입",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.busan.com/view/busan/view.php?code=2026031115374806140"
+    },
+    {
+      "timestamp": "2026-03-11T03:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Metalpha Technology Holding Limited ( NASDAQ : MATH ) Short Interest Update",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/03/10/metalpha-technology-holding-limited-nasdaqmath-short-interest-update.html"
+    },
+    {
+      "timestamp": "2026-03-11T12:15:00",
+      "source": "wallstreet-online.de",
+      "headline": "Bitcoin stabil bei knapp 70 . 000 US - Dollar",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wallstreet-online.de/nachricht/20602297-bitcoin-stabil-knapp-70-000-us-dollar"
+    },
+    {
+      "timestamp": "2026-03-11T05:45:00",
+      "source": "kwtx.com",
+      "headline": "ExxonMobil set to to move its legal home to Texas , citing business friendly environment",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kwtx.com/2026/03/11/exxonmobil-set-to-move-its-legal-home-texas-citing-business-friendly-environment/"
     }
   ]
 }

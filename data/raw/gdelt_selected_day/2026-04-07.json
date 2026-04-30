@@ -2,9 +2,10 @@
   "cache_schema_version": 7,
   "date": "2026-04-07",
   "status": "live",
-  "message": "Loaded selected-day headlines and TimelineVolRaw from GDELT DOC API; TimelineTone unavailable.",
+  "data_quality": "full",
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
   "news_count": 2758,
-  "avg_tone": -0.042652786158640515,
+  "avg_tone": -1.2600155154701476,
   "theme_count_crypto": 76,
   "theme_count_regulation": 19,
   "theme_count_election": 27,
@@ -13,124 +14,126 @@
     {
       "timestamp": "2026-04-07T00:00:00.000Z",
       "news_count": 88,
-      "average_tone": 0.15
+      "average_tone": -2.6217
     },
     {
       "timestamp": "2026-04-07T01:00:00.000Z",
       "news_count": 179,
-      "average_tone": 0.0
+      "average_tone": -2.5002333333333335
     },
     {
       "timestamp": "2026-04-07T02:00:00.000Z",
       "news_count": 49,
-      "average_tone": 0.0
+      "average_tone": -0.9956
     },
     {
       "timestamp": "2026-04-07T03:00:00.000Z",
       "news_count": 50,
-      "average_tone": 0.0
+      "average_tone": -0.9049
     },
     {
       "timestamp": "2026-04-07T04:00:00.000Z",
       "news_count": 36,
-      "average_tone": -0.12
+      "average_tone": -0.23015
     },
     {
       "timestamp": "2026-04-07T05:00:00.000Z",
       "news_count": 41,
-      "average_tone": 0.0
+      "average_tone": -1.0249666666666666
     },
     {
       "timestamp": "2026-04-07T06:00:00.000Z",
       "news_count": 49,
-      "average_tone": 0.0
+      "average_tone": 0.1721999999999999
     },
     {
       "timestamp": "2026-04-07T07:00:00.000Z",
       "news_count": 60,
-      "average_tone": -0.15
+      "average_tone": -1.2406
     },
     {
       "timestamp": "2026-04-07T08:00:00.000Z",
       "news_count": 22,
-      "average_tone": 0.0
+      "average_tone": -1.30835
     },
     {
       "timestamp": "2026-04-07T09:00:00.000Z",
       "news_count": 163,
-      "average_tone": -0.075
+      "average_tone": -0.576275
     },
     {
       "timestamp": "2026-04-07T10:00:00.000Z",
       "news_count": 78,
-      "average_tone": 0.0
+      "average_tone": -0.42765
     },
     {
       "timestamp": "2026-04-07T11:00:00.000Z",
       "news_count": 157,
-      "average_tone": 0.04285714285714286
+      "average_tone": -0.5384749999999999
     },
     {
       "timestamp": "2026-04-07T12:00:00.000Z",
       "news_count": 134,
-      "average_tone": 0.0
+      "average_tone": -1.2537333333333334
     },
     {
       "timestamp": "2026-04-07T13:00:00.000Z",
       "news_count": 155,
-      "average_tone": 0.0
+      "average_tone": -0.4579
     },
     {
       "timestamp": "2026-04-07T14:00:00.000Z",
       "news_count": 251,
-      "average_tone": -0.22499999999999998
+      "average_tone": -1.75155
     },
     {
       "timestamp": "2026-04-07T15:00:00.000Z",
       "news_count": 292,
-      "average_tone": -0.058536585365853655
+      "average_tone": -1.926875
     },
     {
       "timestamp": "2026-04-07T16:00:00.000Z",
       "news_count": 256,
-      "average_tone": 0.0
+      "average_tone": -1.686375
     },
     {
       "timestamp": "2026-04-07T17:00:00.000Z",
       "news_count": 167,
-      "average_tone": -0.049999999999999996
+      "average_tone": -2.11645
     },
     {
       "timestamp": "2026-04-07T18:00:00.000Z",
       "news_count": 59,
-      "average_tone": -0.19999999999999998
+      "average_tone": -0.9586666666666667
     },
     {
       "timestamp": "2026-04-07T19:00:00.000Z",
       "news_count": 113,
-      "average_tone": -0.10909090909090909
+      "average_tone": -0.666475
     },
     {
       "timestamp": "2026-04-07T20:00:00.000Z",
       "news_count": 133,
-      "average_tone": -0.075
+      "average_tone": -0.95045
     },
     {
       "timestamp": "2026-04-07T21:00:00.000Z",
       "news_count": 129,
-      "average_tone": 0.0
+      "average_tone": 0.2894
     },
     {
       "timestamp": "2026-04-07T22:00:00.000Z",
       "news_count": 77,
-      "average_tone": 0.0
+      "average_tone": -1.1767999999999998
     },
     {
       "timestamp": "2026-04-07T23:00:00.000Z",
       "news_count": 20,
-      "average_tone": 0.19999999999999998
+      "average_tone": -0.39683333333333337
     }
   ],
+  "timeline_status": "ok",
+  "volume_status": "ok",
   "top_headlines": [
     "Bitcoin Holds $67K as Wintermute Flags Sentiment Divergence",
     "Can FBI track Bitcoin to solve Nancy Guthrie disappearance : How is the FBI tracing Bitcoin blockchain transactions to crack the Nancy Guthrie disappearance can crypto ransom trails expose suspects , locations , and hidden networks ?",
@@ -2526,8 +2529,5 @@
       "raw_v2_tone": null,
       "url": "https://miss103.iheart.com/content/2026-04-07-today-staff-given-instructions-for-savannah-guthries-return-report/"
     }
-  ],
-  "data_quality": "partial_missing_timeline",
-  "timeline_status": "unavailable",
-  "volume_status": "ok"
+  ]
 }

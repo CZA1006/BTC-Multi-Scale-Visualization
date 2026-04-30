@@ -72,6 +72,7 @@ def build_daily_features(btc_daily: pd.DataFrame) -> pd.DataFrame:
     features["volume_zscore"] = compute_volume_zscore(features["volume"])
     features["rolling_volatility_7d"] = features["daily_return"].rolling(window=7).std()
     features["rolling_volatility_30d"] = features["daily_return"].rolling(window=30).std()
+    features["rolling_return_7d"] = features["daily_return"].rolling(window=7).mean()
 
     rolling_30d_high = features["close"].rolling(window=30, min_periods=1).max()
     features["drawdown_from_30d_high"] = (
@@ -87,6 +88,7 @@ def build_daily_features(btc_daily: pd.DataFrame) -> pd.DataFrame:
             "volume_zscore",
             "rolling_volatility_7d",
             "rolling_volatility_30d",
+            "rolling_return_7d",
             "drawdown_from_30d_high",
         ]
     ].copy()

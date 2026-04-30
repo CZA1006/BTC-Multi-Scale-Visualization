@@ -65,7 +65,7 @@ export function rollingStd(values, window) {
         count -= 1;
       }
     }
-    if (count > 1) {
+    if (count > 0) {
       const mean = sum / count;
       const variance = Math.max(0, sumSq / count - mean * mean);
       out[i] = Math.sqrt(variance);

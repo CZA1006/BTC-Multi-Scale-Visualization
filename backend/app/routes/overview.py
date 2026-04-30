@@ -14,6 +14,7 @@ DERIVED_DIR = REPO_ROOT / "data" / "derived"
 BTC_DAILY_PATH = PROCESSED_DIR / "btc_daily.csv"
 EXTERNAL_ASSETS_PATH = PROCESSED_DIR / "external_assets_daily.csv"
 GDELT_DAILY_SIGNALS_PATH = DERIVED_DIR / "gdelt_daily_signals.csv"
+DAILY_FEATURES_PATH = DERIVED_DIR / "daily_features.csv"
 
 router = APIRouter(prefix="/api/overview", tags=["overview"])
 
@@ -83,6 +84,23 @@ def load_optional_csv_records(
     return load_csv_records(path, row_limit=row_limit, start=start, end=end)
 
 
+def load_full_daily_features() -> list[dict[str, Any]]:
+    """Load full daily_features (all dates, no filtering).
+    This is used for metrics like rolling_return_7d and rolling_volatility_30d
+    which should be computed on full history, not just the selected range."""
+    if not DAILY_FEATURES_PATH.exists():
+        return []
+
+    try:
+        frame = pd.read_csv(DAILY_FEATURES_PATH)
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500, detail=f"Failed to load daily_features.csv: {exc}"
+        ) from exc
+
+    return frame.where(pd.notna(frame), None).to_dict(orient="records")
+
+
 @router.get("")
 def get_overview(start: date | None = None, end: date | None = None) -> dict[str, Any]:
     return {
@@ -98,4 +116,5 @@ def get_overview(start: date | None = None, end: date | None = None) -> dict[str
         "gdelt_daily_signals": load_optional_csv_records(
             GDELT_DAILY_SIGNALS_PATH, start=start, end=end
         ),
+        "daily_features": load_full_daily_features(),
     }

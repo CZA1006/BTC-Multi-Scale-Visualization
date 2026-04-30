@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import { fetchOverview } from '../api/overview.js';
 import { useAppStore } from '../store/useAppStore.js';
-import { pctChange, rollingMean, rollingStd } from '../utils/derived.js';
 
 const TIME_RANGE_OPTIONS = [
   {
@@ -55,6 +54,7 @@ export function MacroView() {
     btc_daily: [],
     external_assets_daily: [],
     gdelt_daily_signals: [],
+    daily_features: [],
   });
   const [isLoading, setIsLoading] = useState(true);
   const [brushSelection, setBrushSelection] = useState(null);
@@ -249,30 +249,56 @@ export function MacroView() {
 
   const shortTermPanels = (() => {
     if (!hasTimelineData) return { return7d: [], vol30dAnnualized: [] };
-    const closes = timelineRows.map((r) => r.closeValue);
-    const ret = pctChange(closes);
-    const ret7d = rollingMean(ret, 7);
-    const vol30d = rollingStd(ret, 30).map((value) =>
-      Number.isFinite(value) ? value * Math.sqrt(365) : value,
+    
+    // Create a map of date -> daily_features for quick lookup
+    const featuresByDate = new Map(
+      overview.daily_features.map((row) => [row.date, row])
     );
+
     return {
-      return7d: timelineRows.map((row, i) => ({ date: row.date, parsedDate: row.parsedDate, value: ret7d[i] })),
-      vol30dAnnualized: timelineRows.map((row, i) => ({
-        date: row.date,
-        parsedDate: row.parsedDate,
-        value: vol30d[i],
-      })),
+      return7d: timelineRows.map((row) => {
+        const feature = featuresByDate.get(row.date);
+        const value = feature?.rolling_return_7d
+          ? Number(feature.rolling_return_7d)
+          : null;
+        return {
+          date: row.date,
+          parsedDate: row.parsedDate,
+          value: Number.isFinite(value) ? value : null,
+        };
+      }),
+      vol30dAnnualized: timelineRows.map((row) => {
+        const feature = featuresByDate.get(row.date);
+        let value = feature?.rolling_volatility_30d
+          ? Number(feature.rolling_volatility_30d)
+          : null;
+        // Annualize the volatility
+        if (Number.isFinite(value) && value !== null) {
+          value = value * Math.sqrt(365);
+        }
+        return {
+          date: row.date,
+          parsedDate: row.parsedDate,
+          value: Number.isFinite(value) ? value : null,
+        };
+      }),
     };
   })();
 
   const returnRows = shortTermPanels.return7d.filter((row) => Number.isFinite(row.value));
   const volatilityRows = shortTermPanels.vol30dAnnualized.filter((row) => Number.isFinite(row.value));
-  const sortedAbsReturns = returnRows
-    .map((row) => Math.abs(row.value))
-    .filter((value) => Number.isFinite(value))
+  
+  // Calculate P95 from FULL history (overview.daily_features is never filtered by time range).
+  // This keeps the Y-axis completely stable when brushing different ranges.
+  const allReturnValuesFromFeatures = overview.daily_features
+    .map((row) => {
+      const val = Number(row.rolling_return_7d);
+      return Number.isFinite(val) ? Math.abs(val) : null;
+    })
+    .filter((value) => value !== null)
     .sort((a, b) => a - b);
   const returnAbsP95 =
-    sortedAbsReturns.length > 0 ? d3.quantileSorted(sortedAbsReturns, 0.95) ?? 0 : 0;
+    allReturnValuesFromFeatures.length > 0 ? d3.quantileSorted(allReturnValuesFromFeatures, 0.95) ?? 0 : 0;
 
   const shortTermHeight = 250;
   const shortTermLeft = chartMargin.left;

@@ -9,7 +9,7 @@ const TIME_RANGE_OPTIONS = [
     label: 'Full Range',
     value: {
       start: '2019-01-01',
-      end: '2026-04-23',
+      end: '2026-04-30',
     },
   },
   {
@@ -37,7 +37,7 @@ const TIME_RANGE_OPTIONS = [
     label: 'Iran Window',
     value: {
       start: '2026-03-01',
-      end: '2026-04-23',
+      end: '2026-04-30',
     },
   },
 ];

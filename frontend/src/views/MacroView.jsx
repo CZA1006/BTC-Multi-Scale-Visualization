@@ -9,7 +9,7 @@ const TIME_RANGE_OPTIONS = [
     label: 'Full Range',
     value: {
       start: '2019-01-01',
-      end: '2026-04-30',
+      end: '2026-04-23',
     },
   },
   {
@@ -37,7 +37,7 @@ const TIME_RANGE_OPTIONS = [
     label: 'Iran Window',
     value: {
       start: '2026-03-01',
-      end: '2026-04-09',
+      end: '2026-04-23',
     },
   },
 ];
@@ -249,7 +249,7 @@ export function MacroView() {
 
   const shortTermPanels = (() => {
     if (!hasTimelineData) return { return7d: [], vol30dAnnualized: [] };
-    
+
     // Create a map of date -> daily_features for quick lookup
     const featuresByDate = new Map(
       overview.daily_features.map((row) => [row.date, row])
@@ -287,7 +287,7 @@ export function MacroView() {
 
   const returnRows = shortTermPanels.return7d.filter((row) => Number.isFinite(row.value));
   const volatilityRows = shortTermPanels.vol30dAnnualized.filter((row) => Number.isFinite(row.value));
-  
+
   // Calculate P95 from FULL history (overview.daily_features is never filtered by time range).
   // This keeps the Y-axis completely stable when brushing different ranges.
   const allReturnValuesFromFeatures = overview.daily_features
@@ -341,10 +341,10 @@ export function MacroView() {
   const volatilityAreaPath =
     shortTermXScale && volatilityRows.length > 1
       ? d3
-          .area()
-          .x((row) => shortTermXScale(row.parsedDate))
-          .y0(volatilityPanelTop + volatilityPanelHeight)
-          .y1((row) => volatilityYScale(row.value))(volatilityRows) ?? ''
+        .area()
+        .x((row) => shortTermXScale(row.parsedDate))
+        .y0(volatilityPanelTop + volatilityPanelHeight)
+        .y1((row) => volatilityYScale(row.value))(volatilityRows) ?? ''
       : '';
 
   const returnBarWidth = Math.max(
@@ -526,9 +526,9 @@ export function MacroView() {
     setBrushSelection((previous) =>
       previous
         ? {
-            ...previous,
-            currentPx,
-          }
+          ...previous,
+          currentPx,
+        }
         : null,
     );
   }
@@ -545,9 +545,9 @@ export function MacroView() {
 
   const activeBrushOverlay = brushSelection
     ? {
-        left: Math.min(brushSelection.startPx, brushSelection.currentPx),
-        right: Math.max(brushSelection.startPx, brushSelection.currentPx),
-      }
+      left: Math.min(brushSelection.startPx, brushSelection.currentPx),
+      right: Math.max(brushSelection.startPx, brushSelection.currentPx),
+    }
     : null;
 
   // ColorBrewer RdYlGn 7-step, Western convention: green = up, red = down.
@@ -978,7 +978,7 @@ export function MacroView() {
               })}
             </svg>
 
-              <div className="chart-caption-row">
+            <div className="chart-caption-row">
               <p className="chart-caption">Drag on the timeline to brush a narrower range</p>
             </div>
           </div>

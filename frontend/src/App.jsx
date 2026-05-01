@@ -24,7 +24,7 @@ const CASE_STUDIES = [
   {
     title: 'Iran Tension',
     description: 'Recent Middle East tension window for event-context demos.',
-    range: { start: '2026-03-01', end: '2026-04-09' },
+    range: { start: '2026-03-01', end: '2026-04-23' },
   },
 ];
 

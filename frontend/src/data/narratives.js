@@ -118,7 +118,7 @@ export const NARRATIVES = {
         body:
           'Recent Middle East tension window — GDELT live coverage available, so you can see real headline data.',
         state: {
-          selectedTimeRange: { start: '2026-03-01', end: '2026-04-09' },
+          selectedTimeRange: { start: '2026-03-01', end: '2026-04-23' },
           selectedDate: null,
           selectedCluster: null,
         },

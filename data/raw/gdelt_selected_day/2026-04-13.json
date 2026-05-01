@@ -1,55 +1,139 @@
 {
+  "cache_schema_version": 7,
   "date": "2026-04-13",
   "status": "live",
-  "message": "Loaded selected-day headlines from GDELT DOC API.",
-  "news_count": 15,
-  "avg_tone": null,
-  "theme_count_crypto": 5,
-  "theme_count_regulation": 4,
-  "theme_count_election": 1,
-  "theme_count_war": 0,
+  "data_quality": "full",
+  "message": "Loaded selected-day headlines, TimelineTone, and TimelineVolRaw from GDELT DOC API.",
+  "news_count": 1650,
+  "avg_tone": -0.5276453434343434,
+  "theme_count_crypto": 66,
+  "theme_count_regulation": 13,
+  "theme_count_election": 30,
+  "theme_count_war": 12,
   "hourly_tones": [
     {
-      "timestamp": "2026-04-13T02:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-13T00:00:00.000Z",
+      "news_count": 50,
+      "average_tone": -0.8977333333333334
     },
     {
-      "timestamp": "2026-04-13T11:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-13T01:00:00.000Z",
+      "news_count": 36,
+      "average_tone": -1.0869333333333333
     },
     {
-      "timestamp": "2026-04-13T13:00:00",
-      "news_count": 3,
-      "average_tone": null
+      "timestamp": "2026-04-13T02:00:00.000Z",
+      "news_count": 29,
+      "average_tone": -0.8403
     },
     {
-      "timestamp": "2026-04-13T14:00:00",
-      "news_count": 4,
-      "average_tone": null
+      "timestamp": "2026-04-13T03:00:00.000Z",
+      "news_count": 28,
+      "average_tone": 0.4760333333333333
     },
     {
-      "timestamp": "2026-04-13T19:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-13T04:00:00.000Z",
+      "news_count": 43,
+      "average_tone": 0.05046666666666668
     },
     {
-      "timestamp": "2026-04-13T20:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-13T05:00:00.000Z",
+      "news_count": 70,
+      "average_tone": -0.5883499999999999
     },
     {
-      "timestamp": "2026-04-13T22:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-13T06:00:00.000Z",
+      "news_count": 139,
+      "average_tone": 0.11366666666666665
     },
     {
-      "timestamp": "2026-04-13T23:00:00",
-      "news_count": 1,
-      "average_tone": null
+      "timestamp": "2026-04-13T07:00:00.000Z",
+      "news_count": 6,
+      "average_tone": -0.2473
+    },
+    {
+      "timestamp": "2026-04-13T08:00:00.000Z",
+      "news_count": 78,
+      "average_tone": -0.4414249999999999
+    },
+    {
+      "timestamp": "2026-04-13T09:00:00.000Z",
+      "news_count": 44,
+      "average_tone": 0.29930000000000007
+    },
+    {
+      "timestamp": "2026-04-13T10:00:00.000Z",
+      "news_count": 63,
+      "average_tone": 0.3543
+    },
+    {
+      "timestamp": "2026-04-13T11:00:00.000Z",
+      "news_count": 231,
+      "average_tone": 0.4185000000000001
+    },
+    {
+      "timestamp": "2026-04-13T12:00:00.000Z",
+      "news_count": 38,
+      "average_tone": -0.5902999999999999
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00.000Z",
+      "news_count": 132,
+      "average_tone": -2.98285
+    },
+    {
+      "timestamp": "2026-04-13T14:00:00.000Z",
+      "news_count": 123,
+      "average_tone": 0.329075
+    },
+    {
+      "timestamp": "2026-04-13T15:00:00.000Z",
+      "news_count": 25,
+      "average_tone": -2.2927
+    },
+    {
+      "timestamp": "2026-04-13T16:00:00.000Z",
+      "news_count": 61,
+      "average_tone": -0.03866666666666666
+    },
+    {
+      "timestamp": "2026-04-13T17:00:00.000Z",
+      "news_count": 16,
+      "average_tone": -0.3523
+    },
+    {
+      "timestamp": "2026-04-13T18:00:00.000Z",
+      "news_count": 18,
+      "average_tone": -1.6651
+    },
+    {
+      "timestamp": "2026-04-13T19:00:00.000Z",
+      "news_count": 93,
+      "average_tone": -0.364075
+    },
+    {
+      "timestamp": "2026-04-13T20:00:00.000Z",
+      "news_count": 128,
+      "average_tone": -1.62655
+    },
+    {
+      "timestamp": "2026-04-13T21:00:00.000Z",
+      "news_count": 105,
+      "average_tone": -0.56445
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00.000Z",
+      "news_count": 68,
+      "average_tone": -0.8072250000000001
+    },
+    {
+      "timestamp": "2026-04-13T23:00:00.000Z",
+      "news_count": 26,
+      "average_tone": -0.8231
     }
   ],
+  "timeline_status": "ok",
+  "volume_status": "ok",
   "top_headlines": [
     "Bank of Korea calls for stock - style circuit breakers on BTC exchanges",
     "Popular Musician Loses Life Savings Through Malicious Crypto Wallet in Apple App Store",
@@ -64,6 +148,7 @@
       "headline": "Bank of Korea calls for stock - style circuit breakers on BTC exchanges",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.coindesk.com/markets/2026/04/13/bank-of-korea-calls-for-stock-style-circuit-breakers-on-btc-exchanges"
     },
     {
@@ -72,6 +157,7 @@
       "headline": "Popular Musician Loses Life Savings Through Malicious Crypto Wallet in Apple App Store",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://gizmodo.com/popular-musician-loses-life-savings-through-malicious-crypto-wallet-in-apples-app-store-2000745902"
     },
     {
@@ -80,6 +166,7 @@
       "headline": "Farage fronts £2m bitcoin purchase despite crypto price tumble",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.cityam.com/farage-fronts-2m-bitcoin-purchase-despite-price-tumble/"
     },
     {
@@ -88,6 +175,7 @@
       "headline": "South Korea Crypto  Flash Crash : Bithumb 42 Billion USD Glitch Triggers Regulatory Overhaul",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "http://www.econotimes.com/South-Koreas-Crypto-Flash-Crash-Bithumbs-42-Billion-USD-Glitch-Triggers-Regulatory-Overhaul-1738834"
     },
     {
@@ -96,6 +184,7 @@
       "headline": "Bitcoin , Ethereum , XRP , Dogecoin Fall As Trump Moves To Block Strait Of Hormuz : Analyst Says Risk - On Asse",
       "category": "election",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51771609/bitcoin-ethereum-xrp-dogecoin-fall-trump-hormuz-risk-assets-pressure"
     },
     {
@@ -104,6 +193,7 @@
       "headline": "STASIS EURO ( EURS ) Hits 24 Hour Trading Volume of $987 . 33",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/13/stasis-euro-eurs-hits-24-hour-trading-volume-of-987-33.html"
     },
     {
@@ -112,6 +202,7 @@
       "headline": "What If You Invested $10 , 000 in Ripple ( XRP ) 5 Years Ago ? Here What Youd Have Today",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://247wallst.com/investing/2026/04/13/what-if-you-invested-10000-in-ripple-xrp-5-years-ago-heres-what-youd-have-today/"
     },
     {
@@ -120,6 +211,7 @@
       "headline": "What the Difference Between the FBTC and IBIT Bitcoin ETFs ?",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.fool.com/coverage/etfs/2026/04/13/what-s-the-difference-between-the-fbtc-and-ibit-bitcoin-etfs/?source=iedfolrf0000001"
     },
     {
@@ -128,6 +220,7 @@
       "headline": "Aussie regulators should view wild new crypto mortgage trend catching fire in the US with caution",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.skynews.com.au/insights-and-analysis/aussie-regulators-should-view-wild-new-crypto-mortgage-trend-catching-fire-in-the-us-with-caution/news-story/d4e4665340a38a212c6a89f704d03830?nk=04bb57f6d7c2c6b1b3fd139ce87e2058-1776112313"
     },
     {
@@ -136,6 +229,7 @@
       "headline": "BTC price anchors near $70 , 000 as RAVE 3 , 400 % surge signals speculative froth : Crypto Daily",
       "category": "crypto",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.coindesk.com/daybook-us/2026/04/13/bitcoin-anchors-near-usd70-000-as-rave-s-3-400-surge-signals-speculative-froth"
     },
     {
@@ -144,6 +238,7 @@
       "headline": "NikolAI ( NIKO ) Trading Up 40 . 4 % Over Last 7 Days",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.themarketsdaily.com/2026/04/13/nikolai-niko-trading-up-40-4-over-last-7-days.html"
     },
     {
@@ -152,6 +247,7 @@
       "headline": "SEC Proposes Certain Crypto Interfaces Dont Need to Register as Brokers",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://cointelegraph.com/news/sec-crypto-interfaces-registration-broker"
     },
     {
@@ -160,6 +256,7 @@
       "headline": "LM Funding America Announces March 2026 Production and Operational Update",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/lm-funding-america-announces-march-2026-production-and-operational-update/2319118"
     },
     {
@@ -168,6 +265,7 @@
       "headline": "Bitcoin Everlight Reports Phase 5 Presale Progress and Reinforces Pre - Launch Security Framework",
       "category": "regulation",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/bitcoin-everlight-reports-phase-5-presale-progress-and-reinforces-pre-launch-security-framework/2319076"
     },
     {
@@ -176,7 +274,2260 @@
       "headline": "Ailey ( ALE ) 1 - Day Volume Tops $166 . 08 Thousand",
       "category": "general",
       "sentiment": null,
+      "raw_v2_tone": null,
       "url": "https://www.dailypolitical.com/2026/04/13/ailey-ale-1-day-volume-tops-166-08-thousand.html"
+    }
+  ],
+  "all_articles": [
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "coindesk.com",
+      "headline": "Bank of Korea calls for stock - style circuit breakers on BTC exchanges",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/04/13/bank-of-korea-calls-for-stock-style-circuit-breakers-on-btc-exchanges"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "gizmodo.com",
+      "headline": "Popular Musician Loses Life Savings Through Malicious Crypto Wallet in Apple App Store",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://gizmodo.com/popular-musician-loses-life-savings-through-malicious-crypto-wallet-in-apples-app-store-2000745902"
+    },
+    {
+      "timestamp": "2026-04-13T14:30:00",
+      "source": "cityam.com",
+      "headline": "Farage fronts £2m bitcoin purchase despite crypto price tumble",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cityam.com/farage-fronts-2m-bitcoin-purchase-despite-price-tumble/"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "econotimes.com",
+      "headline": "South Korea Crypto  Flash Crash : Bithumb 42 Billion USD Glitch Triggers Regulatory Overhaul",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.econotimes.com/South-Koreas-Crypto-Flash-Crash-Bithumbs-42-Billion-USD-Glitch-Triggers-Regulatory-Overhaul-1738834"
+    },
+    {
+      "timestamp": "2026-04-13T02:15:00",
+      "source": "benzinga.com",
+      "headline": "Bitcoin , Ethereum , XRP , Dogecoin Fall As Trump Moves To Block Strait Of Hormuz : Analyst Says Risk - On Asse",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51771609/bitcoin-ethereum-xrp-dogecoin-fall-trump-hormuz-risk-assets-pressure"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "STASIS EURO ( EURS ) Hits 24 Hour Trading Volume of $987 . 33",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/stasis-euro-eurs-hits-24-hour-trading-volume-of-987-33.html"
+    },
+    {
+      "timestamp": "2026-04-13T19:45:00",
+      "source": "247wallst.com",
+      "headline": "What If You Invested $10 , 000 in Ripple ( XRP ) 5 Years Ago ? Here What Youd Have Today",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://247wallst.com/investing/2026/04/13/what-if-you-invested-10000-in-ripple-xrp-5-years-ago-heres-what-youd-have-today/"
+    },
+    {
+      "timestamp": "2026-04-13T14:00:00",
+      "source": "fool.com",
+      "headline": "What the Difference Between the FBTC and IBIT Bitcoin ETFs ?",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/coverage/etfs/2026/04/13/what-s-the-difference-between-the-fbtc-and-ibit-bitcoin-etfs/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-04-13T20:45:00",
+      "source": "skynews.com.au",
+      "headline": "Aussie regulators should view wild new crypto mortgage trend catching fire in the US with caution",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.skynews.com.au/insights-and-analysis/aussie-regulators-should-view-wild-new-crypto-mortgage-trend-catching-fire-in-the-us-with-caution/news-story/d4e4665340a38a212c6a89f704d03830?nk=04bb57f6d7c2c6b1b3fd139ce87e2058-1776112313"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "coindesk.com",
+      "headline": "BTC price anchors near $70 , 000 as RAVE 3 , 400 % surge signals speculative froth : Crypto Daily",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/daybook-us/2026/04/13/bitcoin-anchors-near-usd70-000-as-rave-s-3-400-surge-signals-speculative-froth"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "NikolAI ( NIKO ) Trading Up 40 . 4 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/nikolai-niko-trading-up-40-4-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-04-13T23:45:00",
+      "source": "cointelegraph.com",
+      "headline": "SEC Proposes Certain Crypto Interfaces Dont Need to Register as Brokers",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/sec-crypto-interfaces-registration-broker"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "manilatimes.net",
+      "headline": "LM Funding America Announces March 2026 Production and Operational Update",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/lm-funding-america-announces-march-2026-production-and-operational-update/2319118"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "manilatimes.net",
+      "headline": "Bitcoin Everlight Reports Phase 5 Presale Progress and Reinforces Pre - Launch Security Framework",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/bitcoin-everlight-reports-phase-5-presale-progress-and-reinforces-pre-launch-security-framework/2319076"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Ailey ( ALE ) 1 - Day Volume Tops $166 . 08 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/ailey-ale-1-day-volume-tops-166-08-thousand.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "GOHOME Achieves Self Reported Market Cap of $43 . 08 Million ( GOHOME )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/gohome-achieves-self-reported-market-cap-of-43-08-million-gohome.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "SoSoValue One Day Trading Volume Hits $3 . 53 Million ( SOSO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/sosovalue-one-day-trading-volume-hits-3-53-million-soso.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Usual ( USUAL ) Trading Down 1 . 2 % This Week",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/usual-usual-trading-down-1-2-this-week.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Wrapped Islamic Coin ( WISLM ) Hits Self Reported Market Capitalization of $44 . 41 Million",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/wrapped-islamic-coin-wislm-hits-self-reported-market-capitalization-of-44-41-million.html"
+    },
+    {
+      "timestamp": "2026-04-13T00:00:00",
+      "source": "el-balad.com",
+      "headline": "Morgan Stanley and the human side of a Bitcoin trust debut",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.el-balad.com/16911197"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Parcl Price Hits $0 . 0137 on Exchanges ( PRCL )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/parcl-price-hits-0-0137-on-exchanges-prcl.html"
+    },
+    {
+      "timestamp": "2026-04-13T05:00:00",
+      "source": "manilatimes.net",
+      "headline": "Bitcoin Poker No Deposit Bonus 2026 : BC Poker Offers $10 Free to Play Online Poker for Real Money With No Cashout Cap , Provably Fair Tables , and Instant Crypto Withdrawals",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/bitcoin-poker-no-deposit-bonus-2026-bc-poker-offers-10-free-to-play-online-poker-for-real-money-with-no-cashout-cap-provably-fair-tables-and-instant-crypto-withdrawals/2318729"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "STBL ( STBL ) Price Up 7 . 1 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/stbl-stbl-price-up-7-1-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "NEXPACE Achieves Self Reported Market Capitalization of $72 . 35 Million ( NXPC )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/nexpace-achieves-self-reported-market-capitalization-of-72-35-million-nxpc.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "Saros Self Reported Market Capitalization Achieves $1 . 10 Million ( SAROS )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/saros-self-reported-market-capitalization-achieves-1-10-million-saros.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Fogo Trading 9 % Lower This Week ( FOGO )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/fogo-trading-9-lower-this-week-fogo.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "Lift Dollar ( USDL ) 24 - Hour Trading Volume Hits $82 . 08 Thousand",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/lift-dollar-usdl-24-hour-trading-volume-hits-82-08-thousand.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "dailypolitical.com",
+      "headline": "Midnight ( NIGHT ) Price Hits $0 . 0385 on Top Exchanges",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/midnight-night-price-hits-0-0385-on-top-exchanges.html"
+    },
+    {
+      "timestamp": "2026-04-13T15:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Fake Ledger App on Apple App Store Drains 5 . 9 BTC in Wallet Security Alert",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coinspeaker.com/fake-ledger-app-apple-store-drains-btc/"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "bankier.pl",
+      "headline": "BITCOIN - Notowania - Cena - Kryptowaluty",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bankier.pl/kryptowaluty/notowania/bitcoin"
+    },
+    {
+      "timestamp": "2026-04-13T16:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "How to start buying crypto with $100",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/how-to-invest-in-crypto-with-100-155125790.html"
+    },
+    {
+      "timestamp": "2026-04-13T06:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "5 On - Chain Signals Suggest Bitcoin War - Driven Dip Masks a Quiet Wealth Transfer",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/5-chain-signals-suggest-bitcoin-055125622.html"
+    },
+    {
+      "timestamp": "2026-04-13T19:00:00",
+      "source": "rttnews.com",
+      "headline": "Cryptos Firm Above Flatline Despite Middle East Escalations",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.rttnews.com/3638569/cryptos-firm-above-flatline-despite-middle-east-escalations.aspx"
+    },
+    {
+      "timestamp": "2026-04-13T02:00:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto News : Pepeto Announces Investments Growth While Bitcoin Price Prediction Moves After Iran Talks Collapse",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/crypto-news-pepeto-announces-investments-growth-while-bitcoin-price-prediction-moves-after-iran-talks-collapse/2318709"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "coindesk.com",
+      "headline": "As AI agents scale in crypto , researchers warn of a critical security gap",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/tech/2026/04/13/ai-agents-are-set-to-power-crypto-payments-but-a-hidden-flaw-could-expose-wallets"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "fool.com",
+      "headline": "Where Will Bitcoin Be in 10 Years ? | The Motley Fool",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/04/13/where-will-bitcoin-be-in-10-years/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "coindesk.com",
+      "headline": "Memecoins outperform as bitcoin traders turn defensive",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/04/13/crypto-markets-stall-as-oil-surges-past-usd100-on-strait-of-hormuz-blockade"
+    },
+    {
+      "timestamp": "2026-04-13T16:15:00",
+      "source": "ibtimes.com.au",
+      "headline": "MARA Stock Surges Nearly 5 % to $10 . 02 as Bitcoin Miner Pushes AI Pivot Amid Debt Reduction",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ibtimes.com.au/mara-stock-surges-nearly-5-1002-bitcoin-miner-pushes-ai-pivot-amid-debt-reduction-1866417"
+    },
+    {
+      "timestamp": "2026-04-13T11:00:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto . com launches  Level - Up  program to accelerate the world transition to cryptocurrency",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/cryptocom-launches-level-up-program-to-accelerate-the-worlds-transition-to-cryptocurrency/2318919"
+    },
+    {
+      "timestamp": "2026-04-13T19:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Foundry Launches Zcash Mining Pool Alongside Industry - Leading Bitcoin Pool",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/foundry-launches-zcash-mining-pool-152138234.html"
+    },
+    {
+      "timestamp": "2026-04-13T00:30:00",
+      "source": "forbes.com",
+      "headline": "Bitcoin Price Prediction : Kraken Fed Approval 2026",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.forbes.com/sites/digital-assets/2026/04/12/first-crypto-bank-krakens-fed-approval-sparks-100k-bitcoin-warning/"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Morphware ( XMW ) One Day Trading Volume Tops $68 . 46 Thousand",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/morphware-xmw-one-day-trading-volume-tops-68-46-thousand.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "KickToken 24 - Hour Volume Reaches $0 . 12 ( KICK )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/kicktoken-24-hour-volume-reaches-0-12-kick.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "themarketsdaily.com",
+      "headline": "Nexusmind ( NMD ) Hits 24 - Hour Trading Volume of $157 . 93",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/nexusmind-nmd-hits-24-hour-trading-volume-of-157-93.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "Hop Protocol 24 - Hour Trading Volume Hits $5 . 36 ( HOP )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/hop-protocol-24-hour-trading-volume-hits-5-36-hop.html"
+    },
+    {
+      "timestamp": "2026-04-13T21:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "Evercore ISI Cuts Franklin Resources ( BEN ) Target , TD Cowen Also Lowers Estimates Ahead of Q1",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/evercore-isi-cuts-franklin-resources-205122340.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "dailypolitical.com",
+      "headline": "GameStop ( gamestop - coin . vip ) ( GME ) Price Down 4 . 6 % Over Last 7 Days",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/gamestop-gamestop-coin-vip-gme-price-down-4-6-over-last-7-days.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "dForce USD ( USX ) Hits 1 - Day Volume of $226 . 19",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/dforce-usd-usx-hits-1-day-volume-of-226-19.html"
+    },
+    {
+      "timestamp": "2026-04-13T21:15:00",
+      "source": "livemint.com",
+      "headline": "Kraken Crypto Exchange Says Criminal Group Claims Access to Some Customer Data",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.livemint.com/market/kraken-crypto-exchange-says-criminal-group-claims-access-to-some-customer-data-11776112633155.html"
+    },
+    {
+      "timestamp": "2026-04-13T04:00:00",
+      "source": "newsbtc.com",
+      "headline": "Bitcoin Price at Risk Again as Peace Talks Collapse , Downside Looms",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/analysis/btc/bitcoin-price-at-risk-again-70500/"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "durangoherald.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.durangoherald.com/articles/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office-2/"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "fool.com",
+      "headline": "This 1 Bold Prediction About Bitcoin Could Change How to Invest in It Forever",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/04/12/this-1-bold-prediction-about-bitcoin-could-change/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-04-13T21:15:00",
+      "source": "livemint.com",
+      "headline": "World Liberty investor Justin Sun claims Trump crypto venture secretly installed tool to freeze user holdings",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.livemint.com/companies/world-liberty-investor-justin-sun-claims-trump-crypto-venture-secretly-installed-tool-to-freeze-user-holdings-11776108040066.html"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "pilotonline.com",
+      "headline": "Trump family deals could open door for presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pilotonline.com/2026/04/13/trump-family-deals-business/"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "coindesk.com",
+      "headline": "Bitmine Tom Lee calls ether  the wartime store of value  as holdings hit 4 . 87 million ETH",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/04/13/bitmine-s-tom-lee-calls-ether-the-wartime-store-of-value-as-holdings-hit-4-87-million-eth"
+    },
+    {
+      "timestamp": "2026-04-13T16:45:00",
+      "source": "openpr.com",
+      "headline": "Cardano Price Prediction : JPMorgan Doubles Blockchain Volume",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4468601/cardano-price-prediction-jpmorgan-doubles-blockchain-volume"
+    },
+    {
+      "timestamp": "2026-04-13T16:15:00",
+      "source": "benzinga.com",
+      "headline": "Strategy Buys 13 , 927 Bitcoin For $1 Billion As MSTR Squeezes Into A Make - Or - Break Level - Strategy ( NASDA",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51781825/strategy-buys-13927-bitcoin-for-1-billion-as-mstr-squeezes-into-a-make-or-break-level"
+    },
+    {
+      "timestamp": "2026-04-13T05:30:00",
+      "source": "economictimes.indiatimes.com",
+      "headline": "Bitcoin stays firm above $71K after CPI - led rally triggers profit booking",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-stays-firm-above-71k-after-cpi-led-rally-triggers-profit-booking/articleshow/130225477.cms"
+    },
+    {
+      "timestamp": "2026-04-13T19:30:00",
+      "source": "nbcnewyork.com",
+      "headline": "How Trump uses the presidency to enrich his family businesses – NBC New York",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.nbcnewyork.com/news/national-international/trump-organization-profits-office-president-conflicts-of-interest/6489185/"
+    },
+    {
+      "timestamp": "2026-04-13T22:45:00",
+      "source": "wxii12.com",
+      "headline": "Trump family business expands abroad as conflicts of interest grow",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wxii12.com/article/trump-profit-from-office/71007307"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "wsls.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wsls.com/business/2026/04/13/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/"
+    },
+    {
+      "timestamp": "2026-04-13T01:15:00",
+      "source": "timesfreepress.com",
+      "headline": "Cryptocurrency accounts seized in $2 . 3M money laundering scheme | Chattanooga Times Free Press",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.timesfreepress.com/news/2026/apr/12/cryptocurrency-accounts-seized-in-23m-money/"
+    },
+    {
+      "timestamp": "2026-04-13T18:00:00",
+      "source": "pasadenastarnews.com",
+      "headline": "Trump family deals could open door for presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pasadenastarnews.com/2026/04/13/trump-family-deals-business/"
+    },
+    {
+      "timestamp": "2026-04-13T22:45:00",
+      "source": "wdsu.com",
+      "headline": "Trump family business expands abroad as conflicts of interest grow",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wdsu.com/article/trump-profit-from-office/71007307"
+    },
+    {
+      "timestamp": "2026-04-13T21:00:00",
+      "source": "newstalkkit.com",
+      "headline": "Could Bitcoin Machines Disappear Soon in Kennewick ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://newstalkkit.com/ixp/136/p/kennewick-might-ban-bitcoin-kiosks/"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "1027kord.com",
+      "headline": "Could Bitcoin Machines Disappear Soon in Kennewick ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://1027kord.com/ixp/136/p/kennewick-might-ban-bitcoin-kiosks/"
+    },
+    {
+      "timestamp": "2026-04-13T20:45:00",
+      "source": "keyw.com",
+      "headline": "Could Bitcoin Machines Disappear Soon in Kennewick ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://keyw.com/ixp/136/p/kennewick-might-ban-bitcoin-kiosks/"
+    },
+    {
+      "timestamp": "2026-04-13T20:00:00",
+      "source": "97rockonline.com",
+      "headline": "Could Bitcoin Machines Disappear Soon in Kennewick ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://97rockonline.com/ixp/136/p/kennewick-might-ban-bitcoin-kiosks/"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "wmtw.com",
+      "headline": "Trump family business expands abroad as conflicts of interest grow",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wmtw.com/article/trump-profit-from-office/71007307"
+    },
+    {
+      "timestamp": "2026-04-13T19:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "World Liberty investor Justin Sun claims Trump crypto venture  secretly  installed tool to freeze user holdings",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/world-liberty-investor-justin-sun-192026595.html"
+    },
+    {
+      "timestamp": "2026-04-13T18:00:00",
+      "source": "thenewsherald.com",
+      "headline": "Trump family deals could open door for presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thenewsherald.com/2026/04/13/trump-family-deals-business/"
+    },
+    {
+      "timestamp": "2026-04-13T23:45:00",
+      "source": "koco.com",
+      "headline": "Trump family business expands abroad as conflicts of interest grow",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.koco.com/article/trump-profit-from-office/71007307"
+    },
+    {
+      "timestamp": "2026-04-13T04:15:00",
+      "source": "deadline.com",
+      "headline": "Ben McKenzie On Confronting Sam Bankman - Fried About Crypto Fraud",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://deadline.com/2026/04/ben-mckenzie-everyone-is-lying-to-you-for-money-miami-film-festival-1236858641/"
+    },
+    {
+      "timestamp": "2026-04-13T05:45:00",
+      "source": "deadline.com",
+      "headline": "Deadline",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://deadline.com/print-article/1236858641/"
+    },
+    {
+      "timestamp": "2026-04-13T19:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "We Will Not Pay These Criminal : Crypto Exchange Kraken Is Being Extorted Over Stolen Data",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/not-pay-criminals-crypto-exchange-180522559.html"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "moneycontrol.com",
+      "headline": "Bitcoin slips below $71K amid pressure as failed US - Iran talks heighten geopolitical uncertainty",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.moneycontrol.com/news/business/personal-finance/bitcoin-slips-below-71k-amid-pressure-as-failed-us-iran-talks-heighten-geopolitical-uncertainty-13887257.html"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "Orbital - Rise Presale Crypto 2026 : Blazpay Climbs Beyond",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466873/orbital-rise-presale-crypto-2026-blazpay-climbs-beyond"
+    },
+    {
+      "timestamp": "2026-04-13T09:15:00",
+      "source": "coindesk.com",
+      "headline": "Alameda moves $16 million in Solana SOL token for possible creditor payments",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/04/13/alameda-moves-usd16-million-in-solana-s-sol-token-for-possible-creditor-distribution"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "ibtimes.co.uk",
+      "headline": "Who Is Joe McCann ? Ashlee Jenae Death Puts Crypto Millionaire Fiancé Under Scrutiny After Tanzania Incident",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ibtimes.co.uk/crypto-investor-joe-mccann-fiancee-death-tanzania-1791425"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "yeniasir.com.tr",
+      "headline": "Kripto para piyasasında sert düşüş",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.yeniasir.com.tr/ekonomi/2026/04/13/kripto-para-piyasasinda-sert-dusus"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "pymnts.com",
+      "headline": "SEC Exempts Crypto Interfaces From Broker Registration",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/cryptocurrency/2026/sec-exempts-crypto-interfaces-from-broker-registration/"
+    },
+    {
+      "timestamp": "2026-04-13T13:45:00",
+      "source": "haberler.com",
+      "headline": "Bitcoin madencileri yeni döneme hazırlanıyor",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haberler.com/kripto-para/bitcoin-madencileri-yeni-doneme-hazirlaniyor-19745523-haberi/"
+    },
+    {
+      "timestamp": "2026-04-13T20:00:00",
+      "source": "winnipegfreepress.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office – Winnipeg Free Press",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.winnipegfreepress.com/business/2026/04/13/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office-2"
+    },
+    {
+      "timestamp": "2026-04-13T20:00:00",
+      "source": "dailybulletin.com",
+      "headline": "Trump family deals could open door for presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailybulletin.com/2026/04/13/trump-family-deals-business/"
+    },
+    {
+      "timestamp": "2026-04-13T20:00:00",
+      "source": "fortmorgantimes.com",
+      "headline": "Trump family deals could open door for presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fortmorgantimes.com/2026/04/13/trump-family-deals-business/"
+    },
+    {
+      "timestamp": "2026-04-13T21:00:00",
+      "source": "sgvtribune.com",
+      "headline": "Trump family deals could open door for presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sgvtribune.com/2026/04/13/trump-family-deals-business/"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "sbsun.com",
+      "headline": "Trump family deals could open door for presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sbsun.com/2026/04/13/trump-family-deals-business/"
+    },
+    {
+      "timestamp": "2026-04-13T21:45:00",
+      "source": "africa.com",
+      "headline": "Changpeng Zhao ( CZ ) Releases Freedom of Money , a Memoir Reflecting on the Rise of Crypto and the Story Behind Binance | Africa News",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://africa.com/changpeng-zhao-cz-releases-freedom-of-money-a-memoir-reflecting-on-the-rise-of-crypto-and-the-story-behind-binance/"
+    },
+    {
+      "timestamp": "2026-04-13T21:00:00",
+      "source": "idahostatejournal.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.idahostatejournal.com/news/national/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/article_55d97e2c-7043-594e-85fb-34a3d6c02b47.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "koreaherald.com",
+      "headline": "Coinone fined , faces biz suspension over anti - money laundering lapses",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.koreaherald.com/article/10716268"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "coindesk.com",
+      "headline": "Foundry unveils Zcash block explorer as mining pool reaches 30 % of hashrate",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/business/2026/04/13/foundry-unveils-zcash-block-explorer-as-mining-pool-reaches-30-of-hashrate"
+    },
+    {
+      "timestamp": "2026-04-13T06:45:00",
+      "source": "news.day.az",
+      "headline": "Биткоин упал в цене",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://news.day.az/economy/1827511.html"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "openpr.com",
+      "headline": "Best Crypto Presale : IONIX Emerges as High ‐ Beta AI Play While",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4467873/best-crypto-presale-ionix-emerges-as-high-beta-ai-play-while"
+    },
+    {
+      "timestamp": "2026-04-14T00:00:00",
+      "source": "wpbf.com",
+      "headline": "Trump family business expands abroad as conflicts of interest grow",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wpbf.com/article/trump-profit-from-office/71007307"
+    },
+    {
+      "timestamp": "2026-04-13T21:45:00",
+      "source": "ksbw.com",
+      "headline": "Trump family business expands abroad as conflicts of interest grow",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ksbw.com/article/trump-profit-from-office/71007307"
+    },
+    {
+      "timestamp": "2026-04-13T20:15:00",
+      "source": "union-bulletin.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.union-bulletin.com/news/national/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/article_c8787aa6-ba0e-5972-928f-8873e031fb65.html"
+    },
+    {
+      "timestamp": "2026-04-13T20:00:00",
+      "source": "2news.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.2news.com/news/national/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/article_02983b6e-57d4-56c4-abd0-9e5892345363.html"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "mymotherlode.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://mymotherlode.com/news/national/10732964/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office.html"
+    },
+    {
+      "timestamp": "2026-04-13T17:45:00",
+      "source": "richmondandtwickenhamtimes.co.uk",
+      "headline": "Tory defectors to Reform could be hauled in front of  Boriswave  migration probe",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.richmondandtwickenhamtimes.co.uk/news/national/26016466.tory-defectors-reform-hauled-front-boriswave-migration-probe/"
+    },
+    {
+      "timestamp": "2026-04-13T17:45:00",
+      "source": "brentwoodlive.co.uk",
+      "headline": "Tory defectors to Reform could be hauled in front of  Boriswave  migration probe",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.brentwoodlive.co.uk/news/national/26016466.tory-defectors-reform-hauled-front-boriswave-migration-probe/"
+    },
+    {
+      "timestamp": "2026-04-13T18:15:00",
+      "source": "eastlothiancourier.com",
+      "headline": "Tory defectors to Reform could be hauled in front of  Boriswave  migration probe",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.eastlothiancourier.com/news/national/26016466.tory-defectors-reform-hauled-front-boriswave-migration-probe/"
+    },
+    {
+      "timestamp": "2026-04-13T19:00:00",
+      "source": "gazette-news.co.uk",
+      "headline": "Tory defectors to Reform could be hauled in front of  Boriswave  migration probe",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.gazette-news.co.uk/news/national/26016466.tory-defectors-reform-hauled-front-boriswave-migration-probe/"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "fool.com",
+      "headline": "Should You Be Using Polymarket to Invest in Crypto ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/04/12/should-you-be-using-polymarket-to-invest-in-crypto/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "Coinpedia Forecasts Hedera ( HBAR ) Above $1 While T4urox IO",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466899/coinpedia-forecasts-hedera-hbar-above-1-while-t4urox-io"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "73 , 000 Active Dogecoin ( DOGE ) Addresses Signal Momentum Shift",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466881/73-000-active-dogecoin-doge-addresses-signal-momentum-shift"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "Best Crypto Presale : 488 AI Agents Register on Decentralized",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466878/best-crypto-presale-488-ai-agents-register-on-decentralized"
+    },
+    {
+      "timestamp": "2026-04-13T05:15:00",
+      "source": "24tv.ua",
+      "headline": "Возможна ли пенсия в криптовалюте - какие перспективы через 50 лет",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://24tv.ua/ru/vozmozhna-li-pensija-kriptovaljute-kakie-perspektivy-cherez-50_n3046017"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "bankier.pl",
+      "headline": "Bomba zegarowa za 150 mld dolarów tyka . Alarm dla rynku kryptowalut",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bankier.pl/wiadomosc/Bomba-zegarowa-za-150-mld-dolarow-tyka-Alarm-dla-rynku-kryptowalut-9112873.html"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "ru.apa.az",
+      "headline": "Цена биткоина опустилась ниже 71 тысячи долларов",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ru.apa.az/kriptovalyuta/cena-bitkoina-opustilas-nize-71-tysyaci-dollarov-645766"
+    },
+    {
+      "timestamp": "2026-04-13T06:45:00",
+      "source": "haber3.com",
+      "headline": "Hürmüz ablukası piyasaları vurdu : Petrol fırladı , altın ve dolarda hareketlilik ! İşte son rakamlar",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.haber3.com/guncel/hurmuz-ablukasi-piyasalari-vurdu-petrol-firladi-altin-ve-dolarda-hareketlilik-iste-son-rakamlar-haberi-6252487"
+    },
+    {
+      "timestamp": "2026-04-13T05:15:00",
+      "source": "insidermonkey.com",
+      "headline": "15 Cash - Rich Dividend Stocks to Invest In Right Now",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.insidermonkey.com/blog/15-cash-rich-dividend-stocks-to-invest-in-right-now-1736994/"
+    },
+    {
+      "timestamp": "2026-04-13T14:30:00",
+      "source": "finanznachrichten.de",
+      "headline": "Bringing Agentic Finance to Telegram : Byreal Debuts RealClaw , Transitioning Onchain Finance to an Agent - First Economy",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68183361-bringing-agentic-finance-to-telegram-byreal-debuts-realclaw-transitioning-onchain-finance-to-an-agent-first-economy-008.htm"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "Ripple ( XRP ) Price Prediction : UBS Wealth Management",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466575/ripple-xrp-price-prediction-ubs-wealth-management"
+    },
+    {
+      "timestamp": "2026-04-13T18:15:00",
+      "source": "ventureburn.com",
+      "headline": "6 Best Cryptocurrency Platforms for Passive Income ( 2026 )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://ventureburn.com/6-cryptocurrency-platforms-for-passive-income-2026-overview/"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "fool.com",
+      "headline": "Why XRP Is Gaining Today | The Motley Fool",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/04/13/why-xrp-is-gaining-today/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-04-13T05:00:00",
+      "source": "independent.ie",
+      "headline": "Family of crypto boss held at knifepoint by gang who demanded key to his electronic wallet during home invasion",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.independent.ie/world-news/britain/family-of-crypto-boss-held-at-knifepoint-by-gang-who-demanded-key-to-his-electronic-wallet-during-home-invasion/a1133018672.html"
+    },
+    {
+      "timestamp": "2026-04-13T20:45:00",
+      "source": "benzinga.com",
+      "headline": "Coinspaid Announces Strategic Partnership with The Residency",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/pressreleases/26/04/51785897/coinspaid-announces-strategic-partnership-with-the-residency"
+    },
+    {
+      "timestamp": "2026-04-13T21:45:00",
+      "source": "duluthnewstribune.com",
+      "headline": "Minn . Legislature moves closer to banning crypto ATMs over scam concerns",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.duluthnewstribune.com/news/minnesota/minn-legislature-moves-closer-to-banning-crypto-atms-over-scam-concerns"
+    },
+    {
+      "timestamp": "2026-04-13T21:15:00",
+      "source": "postbulletin.com",
+      "headline": "Minn . Legislature moves closer to banning crypto ATMs over scam concerns",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.postbulletin.com/news/minnesota/minn-legislature-moves-closer-to-banning-crypto-atms-over-scam-concerns"
+    },
+    {
+      "timestamp": "2026-04-13T20:45:00",
+      "source": "financial-news.co.uk",
+      "headline": "Uquid Tickets Launches on TRON , Enabling Crypto Native Purchases for Global Events",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.financial-news.co.uk/uquid-tickets-launches-on-tron-enabling-crypto-native-purchases-for-global-events/"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "koreaherald.com",
+      "headline": "Dunamu , Circle team up to boost digital asset ecosystem",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.koreaherald.com/article/10716279"
+    },
+    {
+      "timestamp": "2026-04-13T10:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "Bitdeer Technologies Group ( BTDR ) Rating Lowered by Cantor Fitzgerald Amid Execution Concerns",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitdeer-technologies-group-btdr-rating-093048899.html"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "coindesk.com",
+      "headline": "Donald Trump backed World Liberty Financial mints $25 million in fresh USD1",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/04/13/wlfi-mints-usd25-million-in-fresh-usd1-and-burns-usd3-million-days-after-repayment-claim"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Here Are Monday Top Wall Street Analyst Research Calls : Adobe , Best Buy , Bilibili , Constellation Brands , CoreWeave , Nike , Starbucks , T - Mobile , and More",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/monday-top-wall-street-analyst-105044027.html"
+    },
+    {
+      "timestamp": "2026-04-13T19:45:00",
+      "source": "africa-newsroom.com",
+      "headline": "APO Group - Africa Newsroom / Press release | Changpeng Zhao ( CZ ) Releases Freedom of Money , a Memoir Reflecting on the Rise of Crypto and the Story Behind Binance",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.africa-newsroom.com/press/changpeng-zhao-cz-releases-freedom-of-money-a-memoir-reflecting-on-the-rise-of-crypto-and-the-story-behind-binance"
+    },
+    {
+      "timestamp": "2026-04-13T21:00:00",
+      "source": "cecildaily.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cecildaily.com/ap/nation/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/article_a0936c0f-c8fe-548b-bc6d-0e4612a6dba8.html"
+    },
+    {
+      "timestamp": "2026-04-13T22:30:00",
+      "source": "stardem.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.stardem.com/ap/nation/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/article_e336aca8-dc2b-5dce-9935-54b2a170a3ab.html"
+    },
+    {
+      "timestamp": "2026-04-13T20:15:00",
+      "source": "union-bulletin.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.union-bulletin.com/news/national/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/article_d2173aec-4294-59d9-a7a9-b4153767d300.html"
+    },
+    {
+      "timestamp": "2026-04-13T20:45:00",
+      "source": "postregister.com",
+      "headline": "Trump family deal spree could open door for future presidents to profit from office",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.postregister.com/businessreport/healthcare/trump-family-deal-spree-could-open-door-for-future-presidents-to-profit-from-office/article_01143db2-695c-5875-a380-68e365da15c6.html"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "itweb.co.za",
+      "headline": "Tech personality Masie leaves ABC board",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.itweb.co.za/article/tech-personality-masie-leaves-abc-board/mYZRX79g3Y6qOgA8"
+    },
+    {
+      "timestamp": "2026-04-13T16:15:00",
+      "source": "ibtimes.com.au",
+      "headline": "Bitmine Immersion Technologies Stock Climbs to $21 . 57 on NYSE Debut and Massive $11 . 8B Ethereum Treasury",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ibtimes.com.au/bitmine-immersion-technologies-stock-climbs-2157-nyse-debut-massive-118b-ethereum-treasury-1866415"
+    },
+    {
+      "timestamp": "2026-04-13T21:00:00",
+      "source": "dailypolitical.com",
+      "headline": "MicroStrategy Incorporated – 8 . 00 % Series A Perpetual Strike Preferred Stock ( NASDAQ : STRK ) Sees Significant Increase in Short Interest",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dailypolitical.com/2026/04/13/microstrategy-incorporated-8-00-series-a-perpetual-strike-preferred-stock-nasdaqstrk-sees-significant-increase-in-short-interest.html"
+    },
+    {
+      "timestamp": "2026-04-13T14:00:00",
+      "source": "manilatimes.net",
+      "headline": "Exodus Movement Files Lawsuit to Compel W3C Corp to Complete Sale",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/exodus-movement-files-lawsuit-to-compel-w3c-corp-to-complete-sale/2319193"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "pymnts.com",
+      "headline": "Circle CEO Defends Company Response to Stablecoin Hacks",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pymnts.com/cryptocurrency/2026/circle-ceo-defends-companys-response-to-stablecoin-hacks/"
+    },
+    {
+      "timestamp": "2026-04-13T02:15:00",
+      "source": "busan.com",
+      "headline": "[ 단독 ] 삼성 파운드리 2나노 수율 55 %… 양산 60 % 벽에 막혔다",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.busan.com/view/busan/view.php?code=2026041309435453900"
+    },
+    {
+      "timestamp": "2026-04-13T14:00:00",
+      "source": "veropatriot.iheart.com",
+      "headline": "What Up w / Stocks , Cryptos , Gold & Silver ? April 13th , 2026 | Vero Patriot",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://veropatriot.iheart.com/featured/brian-mudd/content/2026-04-13-whats-up-wstocks-cryptos-gold-silver-april-13th-2026/"
+    },
+    {
+      "timestamp": "2026-04-13T05:00:00",
+      "source": "manilatimes.net",
+      "headline": "New Crypto Pepeto DeFi Exchange Update While Dogecoin Price Holds at $0 . 09 and Shiba Inu Eyes Recovery",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/new-crypto-pepeto-defi-exchange-update-while-dogecoin-price-holds-at-009-and-shiba-inu-eyes-recovery/2318735"
+    },
+    {
+      "timestamp": "2026-04-13T02:15:00",
+      "source": "portal.sina.com.hk",
+      "headline": "Ethereum Based Crypto Pepeto Closes In on Binance Listing While Cardano Price Prediction Builds Strong Momentum",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/04/13/1691221/ethereum-based-crypto-pepeto-closes-in-on-binance-listing-while-cardano-price-prediction-builds-strong-momentum/"
+    },
+    {
+      "timestamp": "2026-04-13T02:00:00",
+      "source": "manilatimes.net",
+      "headline": "Ethereum Based Crypto Pepeto Closes In on Binance Listing While Cardano Price Prediction Builds Strong Momentum",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/ethereum-based-crypto-pepeto-closes-in-on-binance-listing-while-cardano-price-prediction-builds-strong-momentum/2318716"
+    },
+    {
+      "timestamp": "2026-04-13T09:15:00",
+      "source": "coindesk.com",
+      "headline": "Clarity Act returns to U . S . Senate , Bank earnings : Crypto Week Ahead",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coindesk.com/markets/2026/04/13/clarity-act-returns-to-u-s-senate-bank-earnings-crypto-week-ahead"
+    },
+    {
+      "timestamp": "2026-04-13T12:30:00",
+      "source": "manilatimes.net",
+      "headline": "MEXC brand upgrade : Infinite opportunities with 0 fees",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/mexc-brand-upgrade-infinite-opportunities-with-0-fees/2319014"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "businesstimes.com.sg",
+      "headline": "Trump - linked World Liberty crypto project faces investor revolt",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.businesstimes.com.sg/wealth/crypto-alternative-assets/trump-linked-world-liberty-crypto-project-faces-investor-revolt"
+    },
+    {
+      "timestamp": "2026-04-13T05:15:00",
+      "source": "benzinga.com",
+      "headline": "Trump - Family Backed World Liberty Financial Accused Of Facilitating Token Scandal By Crypto Billionaire",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51771775/trump-family-world-liberty-financial-token-scandal-justin-sun"
+    },
+    {
+      "timestamp": "2026-04-13T21:15:00",
+      "source": "parkrapidsenterprise.com",
+      "headline": "Minn . Legislature moves closer to banning crypto ATMs over scam concerns",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.parkrapidsenterprise.com/news/minnesota/minn-legislature-moves-closer-to-banning-crypto-atms-over-scam-concerns"
+    },
+    {
+      "timestamp": "2026-04-13T23:45:00",
+      "source": "dglobe.com",
+      "headline": "Minn . Legislature moves closer to banning crypto ATMs over scam concerns",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dglobe.com/news/minnesota/minn-legislature-moves-closer-to-banning-crypto-atms-over-scam-concerns"
+    },
+    {
+      "timestamp": "2026-04-13T23:30:00",
+      "source": "perhamfocus.com",
+      "headline": "Minn . Legislature moves closer to banning crypto ATMs over scam concerns",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.perhamfocus.com/news/minnesota/minn-legislature-moves-closer-to-banning-crypto-atms-over-scam-concerns"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "wctrib.com",
+      "headline": "Minn . Legislature moves closer to banning crypto ATMs over scam concerns",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wctrib.com/news/minnesota/minn-legislature-moves-closer-to-banning-crypto-atms-over-scam-concerns"
+    },
+    {
+      "timestamp": "2026-04-13T02:00:00",
+      "source": "finance.yahoo.com",
+      "headline": "SoFi Technologies vs . Upstart : Which Fintech Stock Is the Better Long - Term Buy ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sofi-technologies-vs-upstart-fintech-012000577.html"
+    },
+    {
+      "timestamp": "2026-04-13T19:45:00",
+      "source": "regions.ru",
+      "headline": "Разменял рубли на USDT ? Когда простая сделка может повлечь уголовную ответственность",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://regions.ru/ekonomika/razmenjal-rubli-na-usdt-kogda-prostaja-sdelka-mozhet-povlech-ugolovnuju-otvetstvennost"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "benzinga.com",
+      "headline": "Circle Wont Freeze Stolen USDC Without Court Order , CEO Points Out - Circle Internet Group ( NYSE : CRCL )",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51788384/circle-wont-freeze-stolen-usdc-without-court-order-ceo-points-out"
+    },
+    {
+      "timestamp": "2026-04-13T02:15:00",
+      "source": "zerohedge.com",
+      "headline": "Oil Jumps , Stocks Dump As Peace Talks Fail , Hormuz Blockade Looms",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.zerohedge.com/markets/oil-jumps-stocks-dump-peace-talks-fail-hormuz-blockade-looms"
+    },
+    {
+      "timestamp": "2026-04-13T06:45:00",
+      "source": "busan.com",
+      "headline": "빗썸  62조 유령코인  재발 … 한은  코인도  서킷 브레이커  도입해야",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.busan.com/view/busan/view.php?code=2026041313265744883"
+    },
+    {
+      "timestamp": "2026-04-13T17:45:00",
+      "source": "dw.com",
+      "headline": "Незаконный оборот крипты станет в РФ уголовным преступлением",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dw.com/ru/nezakonnyj-oborot-kriptovaluty-stanet-v-rf-ugolovnym-prestupleniem/a-76767694"
+    },
+    {
+      "timestamp": "2026-04-13T14:30:00",
+      "source": "wishtv.com",
+      "headline": "Scammers exploit A . I ., costing Americans $12 . 5 billion a year - Indianapolis News | Indiana Weather | Indiana Traffic | WISH - TV",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.wishtv.com/news/protecting-yourself-from-scams/"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Antier Solutions : EduBlock Pro Wins STPI Award at TiECON Chandigarh 2026 , Cementing Its Position as India Most Trusted Blockchain - Powered Exam Integrity Platform",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68176942-antier-solutions-edublock-pro-wins-stpi-award-at-tiecon-chandigarh-2026-cementing-its-position-as-india-s-most-trusted-blockchain-powered-exam-integ-008.htm"
+    },
+    {
+      "timestamp": "2026-04-13T14:45:00",
+      "source": "dnd.com.pk",
+      "headline": "XRP Price Prediction Today – XRP Eyes $1 . 34 as Bulls Defend $1 . 32",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://dnd.com.pk/xrp-price-prediction-today/329315/"
+    },
+    {
+      "timestamp": "2026-04-13T23:45:00",
+      "source": "newsbtc.com",
+      "headline": "How XRP Ledger Positions Itself At The Center Of Institutional Capital Flows",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsbtc.com/xrp-news/xrp-ledger-anchors-capital-flows/"
+    },
+    {
+      "timestamp": "2026-04-13T00:30:00",
+      "source": "etoday.co.kr",
+      "headline": "이더리움 5 . 2 % 하락 … 비트코인 · 리플 등 코인 시세는 ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.etoday.co.kr/news/view/2575011"
+    },
+    {
+      "timestamp": "2026-04-13T08:30:00",
+      "source": "itnewsonline.com",
+      "headline": "BitradeX Announces Strategic Ecosystem Upgrade and Launch of BitradeX Capital with BXC Token",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.itnewsonline.com/PRNewswire/BitradeX-Announces-Strategic-Ecosystem-Upgrade-and-Launch-of-BitradeX-Capital-with-BXC-Token/1122549"
+    },
+    {
+      "timestamp": "2026-04-13T04:15:00",
+      "source": "finance.yahoo.com",
+      "headline": "This 1 Bold Prediction About Bitcoin Could Change How to Invest in It Forever",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/crypto/articles/1-bold-prediction-bitcoin-could-033500630.html"
+    },
+    {
+      "timestamp": "2026-04-13T08:15:00",
+      "source": "koreatimes.com",
+      "headline": "NYT , 비트코인 창시자  찾았다 보도 - 미주 한국일보",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "http://www.koreatimes.com/article/20260412/1608929"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "biz.heraldcorp.com",
+      "headline": "한은  가상자산 거래소에도 서킷브레이커 도입 검토해야",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://biz.heraldcorp.com/article/10716053"
+    },
+    {
+      "timestamp": "2026-04-13T20:45:00",
+      "source": "benzinga.com",
+      "headline": "Could This Be Bitcoin Breakout Moment As Peace Talks Implode And A US Blockade Is Born",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.benzinga.com/news/26/04/51791420/could-this-be-bitcoins-breakout-moment-as-peace-talks-implode-and-a-us-blockade-is-born"
+    },
+    {
+      "timestamp": "2026-04-13T18:15:00",
+      "source": "amic.ru",
+      "headline": "Правительство одобрило уголовную ответственность за незаконные операции с криптовалютой",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.amic.ru/news/pravitelstvo-odobrilo-ugolovnuyu-otvetstvennost-za-nezakonnye-operacii-s-kriptovalyutoy-581845"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "ddaily.co.kr",
+      "headline": "유령 코인 대참사 막아라 … 한은 , 가상자산  서킷브레이커  전격 제언",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ddaily.co.kr:443/page/view/2026041313004627499"
+    },
+    {
+      "timestamp": "2026-04-13T04:00:00",
+      "source": "sciencealert.com",
+      "headline": "Quantum Computers Could Break Encryption Far Sooner Than We Realized",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.sciencealert.com/quantum-computers-could-break-encryption-far-sooner-than-we-realized"
+    },
+    {
+      "timestamp": "2026-04-13T08:30:00",
+      "source": "bankier.pl",
+      "headline": "Ceny ropy wracają powyżej 100 dol . za baryłkę . Fiasko rozmów i blokada cieśniny Ormuz przez united states",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bankier.pl/wiadomosc/Ceny-ropy-wracaja-powyzej-100-dol-za-barylke-Fiasko-rozmow-i-blokada-ciesniny-Ormuz-przez-USA-9112763.html"
+    },
+    {
+      "timestamp": "2026-04-13T00:00:00",
+      "source": "biz.heraldcorp.com",
+      "headline": "비트코인 , 美 · 이란 협상 결렬에 7만달러선 또 위협 [ 크립토360 ]",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://biz.heraldcorp.com/article/10715474"
+    },
+    {
+      "timestamp": "2026-04-13T19:30:00",
+      "source": "cointelegraph.com",
+      "headline": "Crypto - Aligned Super PAC Begins to Endorse Candidates for US Midterms",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/crypto-super-pac-fellowship-endorsements-spending"
+    },
+    {
+      "timestamp": "2026-04-13T22:15:00",
+      "source": "jdsupra.com",
+      "headline": "Cybercrime Trends to Watch : Takeaways from the FBI 2025 IC3 Annual Report | Alston & Bird",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jdsupra.com/legalnews/cybercrime-trends-to-watch-takeaways-6390565/"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "vz.ru",
+      "headline": "Деньги Долиной после аферы перевели в криптовалюту :: Новости дня / ВЗГЛЯД",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://vz.ru/news/2026/4/13/1410347.html"
+    },
+    {
+      "timestamp": "2026-04-13T14:45:00",
+      "source": "newsx.com",
+      "headline": "Who Was Ashlee Jenae ? 31 - Year - Old Miami Influencer White Fiancé Comes Under Suspicion After Her Mysterious Death During Tanzania Trip , Fake Suicide Narrative Gets Questioned",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.newsx.com/world/who-was-ashlee-jenae-31-year-old-miami-influencers-white-fianc-comes-under-suspicion-after-her-mysterious-death-during-tanzania-trip-fake-suicide-narrative-gets-questioned-198495/"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "zdnet.co.kr",
+      "headline": "양자컴퓨터 오면 비트코인 · 금융 시스템 사라질까",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://zdnet.co.kr/view/?no=20260413145933"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Kaj Labs : Lithosphere Advances AI - Native Smart Contracts with Lithic Execution Model",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68176702-kaj-labs-lithosphere-advances-ai-native-smart-contracts-with-lithic-execution-model-296.htm"
+    },
+    {
+      "timestamp": "2026-04-13T08:30:00",
+      "source": "pnp.ru",
+      "headline": "В России пресекли деятельность фондовых мошенников в Telegram",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.pnp.ru/social/v-rossii-presekli-deyatelnost-telegram-kanalov-dlya-manipulyaciy-fondovym-rynkom.html"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "fool.com",
+      "headline": "SoFi Technologies vs . Upstart : Which Fintech Stock Is the Better Long - Term Buy ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fool.com/investing/2026/04/12/sofi-upstart-fintech-stock-better-long-term-buy/?source=iedfolrf0000001"
+    },
+    {
+      "timestamp": "2026-04-14T00:00:00",
+      "source": "npr.org",
+      "headline": "After years of speculation , a reporter claims to have uncovered the founder of Bitcoin",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.npr.org/2026/04/13/nx-s1-5778501/after-years-of-speculation-a-reporter-claims-to-have-uncovered-the-founder-of-bitcoin"
+    },
+    {
+      "timestamp": "2026-04-13T14:30:00",
+      "source": "cointelegraph.com",
+      "headline": "South Korea Flags API Trading at 30 % of Crypto Volume",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://cointelegraph.com/news/south-korea-api-crypto-trading-30-percent-manipulation-risk"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "openpr.com",
+      "headline": "Cardano ( ADA ) Price Prediction : April Range of $0 . 247 to $0 . 263",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4467809/cardano-ada-price-prediction-april-range-of-0-247-to-0-263"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "ADA Price Prediction : Four Q2 2026 Catalysts Converge",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466711/ada-price-prediction-four-q2-2026-catalysts-converge"
+    },
+    {
+      "timestamp": "2026-04-13T23:30:00",
+      "source": "bravenewcoin.com",
+      "headline": "How to Use AI Trading Bots ? 6 Profitable Crypto Automated Trading Platforms in 2026",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bravenewcoin.com/sponsored/article/how-to-use-ai-trading-bots-6-profitable-crypto-automated-trading-platforms-in-2026"
+    },
+    {
+      "timestamp": "2026-04-13T16:15:00",
+      "source": "ibtimes.com.au",
+      "headline": "SoFi Stock Surges 2 % + Amid Fintech Volatility : SOFI Hits $16 . 58 as Q1 Earnings Loom and Big Banking Launches",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.ibtimes.com.au/sofi-stock-surges-2-amid-fintech-volatility-sofi-hits-1658-q1-earnings-loom-big-banking-1866414"
+    },
+    {
+      "timestamp": "2026-04-13T19:30:00",
+      "source": "bobsguide.com",
+      "headline": "Why the united kingdom Fintech Sector is Bleeding Capital While the World Recovers",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.bobsguide.com/why-uk-fintech-sector-is-bleeding-capital-while-world-recovers/"
+    },
+    {
+      "timestamp": "2026-04-13T22:30:00",
+      "source": "biometricupdate.com",
+      "headline": "Self Labs acquires startup Loam to build agentic AI digital identity infrastructure",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.biometricupdate.com/202604/self-labs-acquires-startup-loam-to-build-agentic-ais-digital-identity-infrastructure"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "finance.yahoo.com",
+      "headline": "Ramsey to Single Mom With $74K in Debt : You Can Be a Millionaire at Son Wedding",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/options/articles/ramsey-single-mom-74k-debt-105505705.html"
+    },
+    {
+      "timestamp": "2026-04-13T08:45:00",
+      "source": "briefingwire.com",
+      "headline": "Blockchain Technology Market Trends , Size and Report",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.briefingwire.com/pr/blockchain-technology-market-trends-size-and-report-2035"
+    },
+    {
+      "timestamp": "2026-04-13T22:15:00",
+      "source": "jdsupra.com",
+      "headline": "Proposed Legislation Pending in Oklahoma State Legislature Would Impact Responsibility for Payment of Costs Associated with Data Centers and Other Large Load Facilities | Foley & Lardner LLP",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jdsupra.com/legalnews/proposed-legislation-pending-in-1753074/"
+    },
+    {
+      "timestamp": "2026-04-13T00:00:00",
+      "source": "manilatimes.net",
+      "headline": "New Crypto : Pepeto Announces $8 . 969M Raised While Ethereum Price Prediction Could Reach $15 , 000 by Year End",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/new-crypto-pepeto-announces-8969m-raised-while-ethereum-price-prediction-could-reach-15000-by-year-end/2318705"
+    },
+    {
+      "timestamp": "2026-04-13T03:00:00",
+      "source": "biz.heraldcorp.com",
+      "headline": "묻지마 투자  는 끝 … 알트코인 투자도 매출 · 수익구조가 핵심 [ 머니 인사이트 ]",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://biz.heraldcorp.com/article/10715869"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "u-f.ru",
+      "headline": "В ЦБ высказались о допуске россиян к криптовалютам и лимитах на них",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://u-f.ru/news/economics/u9/2026/04/13/415301"
+    },
+    {
+      "timestamp": "2026-04-13T10:30:00",
+      "source": "fnnews.com",
+      "headline": "원화 스테이블코인  밑그림 짠 한은 … 은행 중심 발행 못박아",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.fnnews.com/news/202604131827509306"
+    },
+    {
+      "timestamp": "2026-04-13T17:45:00",
+      "source": "jdsupra.com",
+      "headline": "Prediction Markets Go on Offense : This Week Major Victories and CFTC Actions | Katten Muchin Rosenman LLP",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jdsupra.com/legalnews/prediction-markets-go-on-offense-this-4385134/"
+    },
+    {
+      "timestamp": "2026-04-13T03:45:00",
+      "source": "technews.tw",
+      "headline": "礦場翻身變身 AI 基地 ， 電力紅利引爆轉型商機",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://technews.tw/2026/04/13/bitcoin-miners/"
+    },
+    {
+      "timestamp": "2026-04-13T21:45:00",
+      "source": "themarketsdaily.com",
+      "headline": "Jarrod Patten Sells 1 , 900 Shares of Strategy Inc Variable Rate Series A Perpetual Stretch Preferred Stock ( NASDAQ : STRC ) Stock",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.themarketsdaily.com/2026/04/13/jarrod-patten-sells-1900-shares-of-strategy-inc-variable-rate-series-a-perpetual-stretch-preferred-stock-nasdaqstrc-stock.html"
+    },
+    {
+      "timestamp": "2026-04-13T01:45:00",
+      "source": "evening-kazan.ru",
+      "headline": "Денис Поляков : « Подвижек в смягчении запрета на оплату в криптовалюте нет » Вечерняя Казань",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.evening-kazan.ru/ekonomika/articles/denis-polyakov-podvizhek-v-smyagchenii-zapreta-na-oplatu-v-kriptovalyute-net"
+    },
+    {
+      "timestamp": "2026-04-13T06:45:00",
+      "source": "cnnturk.com",
+      "headline": "Uygulama mağazalarının güvenlik filtrelerini aşıyor - Bilim Teknoloji Haberleri",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.cnnturk.com/teknoloji/uygulama-magazalarinin-guvenlik-filtrelerini-asiyor-2416246"
+    },
+    {
+      "timestamp": "2026-04-13T17:30:00",
+      "source": "finance.yahoo.com",
+      "headline": "Were 62 and Plan to Sell Our $1 . 2 Million House to Retire , but Our Daughter and Grandkids Live With Us . Im Ready to Ask Them to Move .",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://finance.yahoo.com/markets/options/articles/62-plan-sell-1-2-164721118.html"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "seekingalpha.com",
+      "headline": "Trump - linked crypto venture faces investor revolt over fund freeze allegations",
+      "category": "election",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://seekingalpha.com/news/4574253-trump-linked-crypto-venture-faces-investor-revolt-over-fund-freeze-allegations"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Press Release : WISeSat and Swiss Space Command of the Swiss Armed Forces Complete Pilot Phase and Prepare Next - Generation WISeSat 6U Mission Planned for November 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68176891-press-release-wisesat-and-swiss-space-command-of-the-swiss-armed-forces-complete-pilot-phase-and-prepare-next-generation-wisesat-6u-mission-planned-f-015.htm"
+    },
+    {
+      "timestamp": "2026-04-13T15:15:00",
+      "source": "coinspeaker.com",
+      "headline": "Researchers Warn Malicious AI Agent Routers Can Steal Crypto in New Attack Vector",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.coinspeaker.com/malicious-ai-agent-routers-steal-crypto-attack-vector/"
+    },
+    {
+      "timestamp": "2026-04-13T07:00:00",
+      "source": "russian.rt.com",
+      "headline": "Похитившие деньги Ларисы Долиной мошенники использовали криптокошельки",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://russian.rt.com/russia/news/1619161-dolina-dengi-moshenniki-kriptovalyuta"
+    },
+    {
+      "timestamp": "2026-04-13T02:00:00",
+      "source": "manilatimes.net",
+      "headline": "Crypto News : Pepeto Announces Fast Stage Sell Out While BNB Price Prediction Targets $900 and Whale Wallets Quietly Move Elsewhere",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.manilatimes.net/2026/04/13/tmt-newswire/globenewswire/crypto-news-pepeto-announces-fast-stage-sell-out-while-bnb-price-prediction-targets-900-and-whale-wallets-quietly-move-elsewhere/2318717"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "thebiglead.com",
+      "headline": "WNBA star Cameron Brink flexes  6 - pack  abs at Coachella",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.thebiglead.com/wnba-star-cameron-brink-flexes-toned-6-pack-abs-coachella/"
+    },
+    {
+      "timestamp": "2026-04-13T18:15:00",
+      "source": "finanzen.net",
+      "headline": "Ethereum Classic : So viel Wert wäre mit einem Investment von vor 3 Jahren verloren gegangen",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.net/nachricht/devisen/ethereum-classic-so-viel-wert-waere-mit-einem-investment-von-vor-3-jahren-verloren-gegangen-15608153"
+    },
+    {
+      "timestamp": "2026-04-13T04:30:00",
+      "source": "markets.com",
+      "headline": "CFDs vs Futures : What the Difference ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/education-centre/cf-ds-vs-futures-what-s-the-difference"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "markets.com",
+      "headline": "BTC , ETH , XRP : What going on with the top 3 cryptos ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/research/btc-eth-xrp-what-s-going-on-with-the-top-3-cryptos"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "markets.com",
+      "headline": "Bitcoin CFDs : What Are They and How Do They Work ?",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/education-centre/bitcoin-cf-ds-what-are-they-and-how-do-they-work"
+    },
+    {
+      "timestamp": "2026-04-13T09:15:00",
+      "source": "markets.com",
+      "headline": "Gold price analysis ( XAU / USD ): Will gold rate decrease in coming days in 2026 ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/analysis/gold-price-analysis-xau-usd-will-gold-rate-decrease-in-coming-days-in-2026"
+    },
+    {
+      "timestamp": "2026-04-13T09:15:00",
+      "source": "markets.com",
+      "headline": "UAE Economy News : Non - Oil Sectors Drive Growth as Abu Dhabi Prepares for 2029 IMF Meetings",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/news/uae-economy-news-non-oil-sectors-drive-growth-as-abu-dhabi-prepares-for-2029-imf-meetings"
+    },
+    {
+      "timestamp": "2026-04-13T09:15:00",
+      "source": "markets.com",
+      "headline": "Gold Price Today , April 13 : Gold ( XAU / USD ) is currently trading around $4 , 726 – $4 , 729 per ounce",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.markets.com/news/gold-price-today-april-13-gold-xau-usd-is-currently-trading-around-4-726-4-729-per-ounce"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "lenta.ru",
+      "headline": "Похитителей миллионов Долиной связали с криптобиржами",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://lenta.ru/news/2026/04/13/pohititeley-millionov-dolinoy-svyazali-s-kriptobirzhami/"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "investegate.co.uk",
+      "headline": "WISeSat and Swiss Space Command of the Swiss Armed Forces Complete Pilot Phase and Prepare Next - Generation WISeSat 6U Mission Planned for November 2026 | Company Announcement",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.investegate.co.uk/announcement/gnw/wisekey-international-holding-ag-n--0rf1/wisesat-and-swiss-space-command-of-the-swiss-/9515585"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Wisekey International Holding Ltd .: WISeSat and Swiss Space Command of the Swiss Armed Forces Complete Pilot Phase and Prepare Next - Generation WISeSat 6U Mission Planned for November 2026",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68176758-wisekey-international-holding-ltd-wisesat-and-swiss-space-command-of-the-swiss-armed-forces-complete-pilot-phase-and-prepare-next-generation-wisesat-399.htm"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "bitcoinmagazine.com",
+      "headline": "Crypto Exchange Kraken Faces Extortion Attempt After Insider Access Incidents Involving Support Staff",
+      "category": "crypto",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://bitcoinmagazine.com/news/crypto-exchange-kraken-extortion-attempt"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "openpr.com",
+      "headline": "Hedera ( HBAR ) Price Prediction : Fed Holds Rates at 3 . 75 % as",
+      "category": "macro",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4467861/hedera-hbar-price-prediction-fed-holds-rates-at-3-75-as"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "openpr.com",
+      "headline": "Ripple ( XRP ) Price Prediction : Extreme Fear Index at 11 Collides",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4467856/ripple-xrp-price-prediction-extreme-fear-index-at-11-collides"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "openpr.com",
+      "headline": "Cardano ( ADA ) Midnight Sidechain Signs Google Cloud",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4467917/cardano-ada-midnight-sidechain-signs-google-cloud"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "openpr.com",
+      "headline": "CoinCodex Algorithm Forecasts Solana ( SOL ) at $89 . 64 in April",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4467868/coincodex-algorithm-forecasts-solana-sol-at-89-64-in-april"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "Reciprocal Tariffs Hit 50 Countries at Up to 50 % as Solana ( SOL )",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466933/reciprocal-tariffs-hit-50-countries-at-up-to-50-as-solana-sol"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "CoinCodex Forecasts Pepe ( PEPE ) Below 0 . 000003 in April as",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466910/coincodex-forecasts-pepe-pepe-below-0-000003-in-april-as"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "openpr.com",
+      "headline": "Charles Schwab Confirms Ethereum ( ETH ) Trading for 2026 as Banks",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.openpr.com/news/4466907/charles-schwab-confirms-ethereum-eth-trading-for-2026-as-banks"
+    },
+    {
+      "timestamp": "2026-04-13T01:00:00",
+      "source": "kwch.com",
+      "headline": "Wichita police warn residents about jury duty scam calls",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kwch.com/2026/04/12/wichita-police-warn-residents-about-jury-duty-scam-calls/"
+    },
+    {
+      "timestamp": "2026-04-13T17:30:00",
+      "source": "index.hr",
+      "headline": "U Njemačkoj živi 21 . 8 milijuna ljudi s imigracijskom poviješću",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/broj-imigranata-u-njemackoj-u-20-godina-porastao-za-67-posto/2781458.aspx"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "glasistre.hr",
+      "headline": "Paraatletski klub Pula treći nakon 2 . kola , osvojena i medaljna mjesta u Velikoj Gorici",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.glasistre.hr/tenis/2026/04/13/paraatletski-klub-pula-treci-nakon-2-kola-osvojena-i-medaljna-mjesta-u-velikoj-gorici-1062579"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "index.hr",
+      "headline": "Pogledajte cijene hrane na Coachelli - ljudi diljem svijeta ne mogu vjerovati",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/food/clanak/pogledajte-cijene-hrane-na-coachelli-ljudi-diljem-svijeta-ne-mogu-vjerovati/2781260.aspx"
+    },
+    {
+      "timestamp": "2026-04-13T02:45:00",
+      "source": "zdnet.co.kr",
+      "headline": "최종원 헥토파이낸셜 대표 , 서클 창업자와 오찬 … 스테이블코인 협력 모색",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://zdnet.co.kr/view/?no=20260413103951"
+    },
+    {
+      "timestamp": "2026-04-13T03:45:00",
+      "source": "lavozdegalicia.es",
+      "headline": "Expourense desvelará las claves para abaratar el recibo energético en sectores como el vino o el bitcóin",
+      "category": "regulation",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.lavozdegalicia.es/noticia/ourense/2026/04/10/expourense-desvelara-claves-abaratar-recibo-energetico-sectores-vino-bitcoin/00031775821220825227227.htm"
+    },
+    {
+      "timestamp": "2026-04-13T21:15:00",
+      "source": "tportal.hr",
+      "headline": "Zarine traperice koje prizivaju 90 - e najbolji su ulov ovog proljeća , a tek ta cijena ...",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.tportal.hr/lifestyle/clanak/zarine-traperice-koje-prizivaju-90-e-najbolji-su-ulov-ovog-proljeca-a-tek-ta-cijena-foto-20260413"
+    },
+    {
+      "timestamp": "2026-04-13T11:45:00",
+      "source": "vecernji.hr",
+      "headline": "Znate li koji su najbolje plaćeni poslovi u Hrvatskoj :  Kako žive ti ljudi ...?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vecernji.hr/barkod/znate-li-koji-su-najbolje-placeni-poslovi-u-hrvatskoj-kako-zive-ti-ljudi-1950894"
+    },
+    {
+      "timestamp": "2026-04-13T06:30:00",
+      "source": "zdnet.co.kr",
+      "headline": "삼성전자 , ASMPT와 HBM TC본더 평가 ... 공급망 다변화 지속",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://zdnet.co.kr/view/?no=20260413092559"
+    },
+    {
+      "timestamp": "2026-04-13T14:45:00",
+      "source": "dnevno.hr",
+      "headline": "Lelekice zapjevale s predstavnicima Srbije , pjesma pala u drugi plan :  Kao da je natjeran , grozno",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.dnevno.hr/magazin/lelekice-zapjevale-s-predstavnicima-srbije-pjesma-pala-u-drugi-plan-kao-da-je-natjeran-grozno-3273338/"
+    },
+    {
+      "timestamp": "2026-04-13T05:00:00",
+      "source": "finanzen.net",
+      "headline": "VibroSense Dynamics ( B ) legte Quartalsergebnis vor",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanzen.net/nachricht/aktien/vibrosense-dynamics-b-legte-quartalsergebnis-vor-15606455"
+    },
+    {
+      "timestamp": "2026-04-13T04:15:00",
+      "source": "segye.com",
+      "headline": "이제 막 돈 좀 번다 싶었더니 … 삼전 노조  성과급 45조 달라",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://segye.com:443/newsView/20260412509043"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "kmib.co.kr",
+      "headline": "삼성전자  勞심초사 - 국민일보",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kmib.co.kr/article/view.asp?arcid=1776070999&code=11151400&sid1=eco"
+    },
+    {
+      "timestamp": "2026-04-13T13:00:00",
+      "source": "index.hr",
+      "headline": "Glumac progovorio o 18+ scenama s Elle Fanning :  Na kraju me sve boljelo",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/magazin/clanak/glumac-progovorio-o-18-scenama-s-elle-fanning-na-kraju-me-sve-boljelo/2781297.aspx"
+    },
+    {
+      "timestamp": "2026-04-13T06:00:00",
+      "source": "finanznachrichten.de",
+      "headline": "Press Release : WISeSat and Swiss Space Command of - 2 -",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68176892-press-release-wisesat-and-swiss-space-command-of-2-015.htm"
+    },
+    {
+      "timestamp": "2026-04-13T22:45:00",
+      "source": "afr.com",
+      "headline": "Andrew Forrest $60m war on Facebook over scam investment ads",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.afr.com/technology/dad-it-s-a-fraud-call-that-sparked-forrest-s-60m-war-on-facebook-20260409-p5zml9"
+    },
+    {
+      "timestamp": "2026-04-13T23:00:00",
+      "source": "poslovni.hr",
+      "headline": "Što nam govori odnos cijene i zarade tvrtki iz indeksa CROBEX10 ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.poslovni.hr/burze/sto-nam-govori-odnos-cijene-i-zarade-tvrtki-iz-indeksa-crobex10-4531891"
+    },
+    {
+      "timestamp": "2026-04-13T01:15:00",
+      "source": "vesti.ru",
+      "headline": "Десять лет дали женщине - наркокурьеру из Владивостока",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.vesti.ru/ns/desyat-let-dali-zhenshchine-narkokureru-iz-vladivostoka"
+    },
+    {
+      "timestamp": "2026-04-13T11:30:00",
+      "source": "jutarnji.hr",
+      "headline": "Jutarnji list - Hrvatski glumci kad govore srpski ispadaju smiješni . Zanimljivo su se snašli u Kerempuhu",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.jutarnji.hr/kultura/kazaliste/kerempuh-putujuce-kazaliste-sopalovic-popovski-simovic-recenzija-15698254"
+    },
+    {
+      "timestamp": "2026-04-13T21:15:00",
+      "source": "telegram.hr",
+      "headline": "Celine predstavio balzam za usne s mat završnim efektom",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.telegram.hr/super1/shopping-vodic/celine-mat-balzam-za-usne/"
+    },
+    {
+      "timestamp": "2026-04-13T09:30:00",
+      "source": "index.hr",
+      "headline": "Zašto biste mrkve uvijek trebali kupovati s lišćem ?",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/food/clanak/zasto-biste-mrkve-uvijek-trebali-kupovati-s-liscem/2781180.aspx"
+    },
+    {
+      "timestamp": "2026-04-13T14:15:00",
+      "source": "livelaw.in",
+      "headline": "Mere Discrepancy In DOB Not Fraud Without Intent to Deceive : Allahabad HC",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-hc-dob-discrepancy-not-fraud-teacher-reinstated-530118"
+    },
+    {
+      "timestamp": "2026-04-13T20:30:00",
+      "source": "slobodna-bosna.ba",
+      "headline": "RAT KOJI JE OBOGATIO IRAN : Izvoz nafte skočio , popust nestao – a Zapad ulazi u recesiju koju je sam izazvao",
+      "category": "war",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.slobodna-bosna.ba/vijest/478124/rat_koji_je_obogatio_iran_izvoz_nafte_skochio_popust_nestao_a_zapad_ulazi_u_recesiju_koju_je_sam_izazvao.html"
+    },
+    {
+      "timestamp": "2026-04-13T15:15:00",
+      "source": "index.hr",
+      "headline": "Magyar : Da razgovaram s Putinom , rekao bih mu da prestane s ubijanjem i završi rat",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/vijesti/clanak/magyar-da-razgovaram-s-putinom-rekao-bih-mu-da-prestane-s-ubijanjem-i-zavrsi-rat/2781400.aspx?index_tid=986898&index_ref=naslovnica_vijesti_najnovije_d"
+    },
+    {
+      "timestamp": "2026-04-13T11:00:00",
+      "source": "index.hr",
+      "headline": "Bio sam u budimpeštanskoj pizzeriji - jednu stvar rade u rangu ozbiljnih pizzerija",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/food/clanak/ako-se-nadjete-u-budimpesti-jednu-pizzeriju-vrijedi-posjetiti/2781203.aspx"
+    },
+    {
+      "timestamp": "2026-04-13T09:00:00",
+      "source": "index.hr",
+      "headline": "Chef otkriva koji je dio mrkve najbolji pokazatelj njezine svježine",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.index.hr/food/clanak/chef-otkriva-koji-je-dio-mrkve-najbolji-pokazatelj-njezine-svjezine/2781180.aspx?index_tid=986177&index_ref=naslovnica_food_d"
+    },
+    {
+      "timestamp": "2026-04-13T12:00:00",
+      "source": "telegram.hr",
+      "headline": "Čovjek nakon prometne kod Karlovca išetao iz kombija i pao s nadvožnjaka",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.telegram.hr/vijesti/strava-u-karlovcu-muskarac-nakon-nesrece-skocio-s-vijadukta-i-poginuo-nije-bio-svjestan-na-kojoj-je-visini/"
+    },
+    {
+      "timestamp": "2026-04-13T22:00:00",
+      "source": "kmib.co.kr",
+      "headline": "영업이익 세계 1등 코앞인데 … 아직 머나먼  30만 전자 - 국민일보",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.kmib.co.kr/article/view.asp?arcid=0029675399&code=61141411&sid1=eco"
+    },
+    {
+      "timestamp": "2026-04-13T21:45:00",
+      "source": "strettoweb.com",
+      "headline": "Messina , attività di controllo con Autovelox e Scout sino a domenica prossima",
+      "category": "general",
+      "sentiment": null,
+      "raw_v2_tone": null,
+      "url": "https://www.strettoweb.com/2026/04/messina-attivita-di-controllo-con-autovelox-e-scout-sino-a-domenica-prossima-dettagli/2069772/"
     }
   ]
 }

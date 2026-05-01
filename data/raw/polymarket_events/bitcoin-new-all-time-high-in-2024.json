@@ -83,6 +83,17 @@
       "cyom": false,
       "pagerDutyNotificationEnabled": false,
       "approved": true,
+      "clobRewards": [
+        {
+          "id": "6798",
+          "conditionId": "0xc74c7e76a0d354a27c1cf1b562686e7dc985e2df6762c2c9f5e81ee00448b755",
+          "assetAddress": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+          "rewardsAmount": 0,
+          "rewardsDailyRate": 15,
+          "startDate": "2024-09-20",
+          "endDate": "2500-12-31"
+        }
+      ],
       "rewardsMinSize": 50,
       "rewardsMaxSpread": 3.5,
       "spread": 0.001,

@@ -1,20 +1,20 @@
 /**
- * KMeans `cluster_id` semantics and colors — calibrated against full-sample stats
- * in `daily_features` + `embedding_results` (Bearish pullback cluster, Bullish surge
- * cluster, Low-vol consolidation cluster).
+ * KMeans `cluster_id` → label + hue, re-checked on merged `daily_features` +
+ * `embedding_results`. Sklearn cluster ids permute across refits: after the latest
+ * full embedding rebuild, id 1 = low-vol / near-flat returns, id 2 = bullish surge.
  */
 
 export const CLUSTER_LABEL_MAP = Object.freeze({
   0: 'Bearish Drawdown',
-  1: 'Bullish Surge',
-  2: 'Low-Vol Consolidation',
+  1: 'Low-Vol Consolidation',
+  2: 'Bullish Surge',
 });
 
-/** Fill colors: bear/red, bull/green, range-bound/blue; unknown buckets → gray */
+/** Bear/red · low-vol/blue · bull/green — colors track empirical regime, not id order */
 export const CLUSTER_COLOR_MAP = Object.freeze({
   0: '#d9485f',
-  1: '#2f9e44',
-  2: '#407bff',
+  1: '#407bff',
+  2: '#2f9e44',
 });
 
 export const CLUSTER_UNKNOWN_COLOR_HEX = '#868e96';

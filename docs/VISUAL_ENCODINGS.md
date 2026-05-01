@@ -36,9 +36,9 @@ that informed the P6 craft pass.
 1. **Return sign stays on green/red.** KPI chips, candles, horizon, correlation
    matrix, heatmaps still encode *gain/loss* with `--pos` / `--neg` — orthogonal
    to Meso clustering.
-2. **Meso cluster hue** maps `cluster_id →` fixed hexes aligned with calibrated
-   KMeans regimes (bear/red `#d9485f`, bull/green `#2f9e44`, low-vol/blue `#407bff`),
-   defined in `frontend/src/utils/clusterLabels.js`. BTC accent orange remains
+2. **Meso cluster hue** maps `cluster_id →` fixed hexes tied to empirical regime
+   (after the latest embedding refit): `0` bear/red `#d9485f`, `1` low-vol/blue `#407bff`,
+   `2` bull/green `#2f9e44`, defined in `frontend/src/utils/clusterLabels.js`. BTC accent orange remains
    exclusive to BTC-overlaidseries to avoid accidental double-encoding outside Meso.
 3. **Diverging scales** (heatmap, correlation matrix) use ColorBrewer
    `RdYlGn` 7-step, anchored at zero — not min/max — so the neutral band

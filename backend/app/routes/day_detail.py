@@ -22,8 +22,8 @@ WINDOW_RADIUS = 7
 # Calibrated Meso regime names — mirrors `frontend/src/utils/clusterLabels.js`.
 MESO_CLUSTER_LABELS: dict[int, str] = {
     0: "Bearish Drawdown",
-    1: "Bullish Surge",
-    2: "Low-Vol Consolidation",
+    1: "Low-Vol Consolidation",
+    2: "Bullish Surge",
 }
 
 router = APIRouter(prefix="/api/day-detail", tags=["day-detail"])

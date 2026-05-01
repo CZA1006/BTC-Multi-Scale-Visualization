@@ -121,6 +121,13 @@ def download_daily_history(ticker: str) -> MarketDownload:
     )
     if frame.empty:
         raise ValueError(f"No daily data returned for {ticker}")
+
+    # print(f"Ticker: {ticker}")
+    # print(f" (Index Type): {type(frame.index)}")
+    # print(f" (Timezone): {frame.index.tz}")
+    # print("last 5 rows:")
+    # print(frame.tail(5))
+
     return MarketDownload(ticker=ticker, frame=clean_ohlcv_frame(frame))
 
 

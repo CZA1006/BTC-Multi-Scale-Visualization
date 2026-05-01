@@ -33,11 +33,13 @@ that informed the P6 craft pass.
 
 ### Color discipline
 
-1. **One semantic per hue.** Green/red mean *return sign* everywhere
-   (KPI delta chips, candlesticks, heatmap, horizon, correlation matrix).
-   They never encode cluster membership.
-2. **Cluster palette** is `d3.schemeSet2` with the orange entry skipped
-   so it can never collide with the BTC accent.
+1. **Return sign stays on green/red.** KPI chips, candles, horizon, correlation
+   matrix, heatmaps still encode *gain/loss* with `--pos` / `--neg` — orthogonal
+   to Meso clustering.
+2. **Meso cluster hue** maps `cluster_id →` fixed hexes aligned with calibrated
+   KMeans regimes (bear/red `#d9485f`, bull/green `#2f9e44`, low-vol/blue `#407bff`),
+   defined in `frontend/src/utils/clusterLabels.js`. BTC accent orange remains
+   exclusive to BTC-overlaidseries to avoid accidental double-encoding outside Meso.
 3. **Diverging scales** (heatmap, correlation matrix) use ColorBrewer
    `RdYlGn` 7-step, anchored at zero — not min/max — so the neutral band
    keeps its meaning across windows.
@@ -99,7 +101,7 @@ that informed the P6 craft pass.
 |---|---|
 | **What** | Each mark is one BTC trading day projected from a 14-D feature space → 2-D. |
 | **Why** | Pattern discovery: similar trading days should cluster spatially. |
-| **How** | Mark = filled circle (point — Bertin). Position (x, y) = quantitative → Mackinlay #1. Hue = nominal cluster id from `KMeans(k=5)`. Density underlay = `d3.contourDensity` to make the local mass legible even when points overlap (Tufte's "small multiples of the same data"). Convex hulls drawn at α = 0.18 + centroid label confirm cluster membership without re-firing the legend. |
+| **How** | Mark = filled circle (point — Bertin). Position (x, y) = quantitative → Mackinlay #1. Hue = nominal cluster id from `KMeans(k=3)` with **stable** bear/bull/consolidation colors (see §1 Global design tokens · color discipline #2). Convex hulls drawn at α = 0.18 + centroid label confirm cluster membership without re-firing the legend. |
 
 - **Why a density splat *behind* points and not just dots?** When the
   scatter has > 1 000 marks the over-plotting destroys the very signal

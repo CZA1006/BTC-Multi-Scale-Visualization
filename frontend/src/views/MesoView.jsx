@@ -1,9 +1,14 @@
 import React from 'react';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { fetchMeso } from '../api/meso.js';
 import { useAppStore } from '../store/useAppStore.js';
-import { getClusterSemanticLabel } from '../utils/clusterLabels.js';
+import {
+  CLUSTER_COLOR_SCALE_DOMAIN_STRINGS,
+  CLUSTER_COLOR_SCALE_RANGE,
+  CLUSTER_UNKNOWN_COLOR_HEX,
+  getClusterSemanticLabel,
+} from '../utils/clusterLabels.js';
 import { ParallelCoordsChart } from '../components/ParallelCoordsChart.jsx';
 import { CorrelationMatrix } from '../components/CorrelationMatrix.jsx';
 import { ClusterSummaryTable } from '../components/ClusterSummaryTable.jsx';
@@ -148,6 +153,17 @@ export function MesoView() {
 
   const semanticLabelForCluster = (clusterId) => getClusterSemanticLabel(clusterId);
 
+  /** Fixed id → color (not order of visible ids) so hue matches financial semantics */
+  const clusterColorScale = useMemo(
+    () =>
+      d3
+        .scaleOrdinal()
+        .domain([...CLUSTER_COLOR_SCALE_DOMAIN_STRINGS])
+        .range([...CLUSTER_COLOR_SCALE_RANGE])
+        .unknown(CLUSTER_UNKNOWN_COLOR_HEX),
+    [],
+  );
+
   const uniqueClusterIds = [
     ...new Set(
       visibleEmbeddingRows
@@ -210,23 +226,7 @@ export function MesoView() {
       .filter(Boolean);
   }
 
-  // ColorBrewer Set2 — BTC orange (#f7931a) deliberately excluded so the BTC
-  // price line stays unique. Eight colors cover up to 8 clusters.
   const [hoveredClusterId, setHoveredClusterId] = useState(null);
-
-  const clusterColorScale = d3
-    .scaleOrdinal()
-    .domain(uniqueClusterIds.map(String))
-    .range([
-      '#66c2a5',
-      '#8da0cb',
-      '#e78ac3',
-      '#a6d854',
-      '#ffd92f',
-      '#e5c494',
-      '#b3b3b3',
-      '#fc8d62',
-    ]);
 
   const clusterProfiles = uniqueClusterIds
     .map((clusterId) => {

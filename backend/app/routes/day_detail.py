@@ -19,6 +19,13 @@ DAILY_FEATURES_PATH = DERIVED_DIR / "daily_features.csv"
 EMBEDDING_RESULTS_PATH = DERIVED_DIR / "embedding_results.csv"
 WINDOW_RADIUS = 7
 
+# Calibrated Meso regime names — mirrors `frontend/src/utils/clusterLabels.js`.
+MESO_CLUSTER_LABELS: dict[int, str] = {
+    0: "Bearish Drawdown",
+    1: "Bullish Surge",
+    2: "Low-Vol Consolidation",
+}
+
 router = APIRouter(prefix="/api/day-detail", tags=["day-detail"])
 
 
@@ -252,7 +259,11 @@ def build_context_payload(
             },
             "meso": {
                 "cluster_id": cluster_id,
-                "cluster_label": f"Cluster {cluster_id}" if cluster_id is not None else "No cluster match",
+                "cluster_label": (
+                    MESO_CLUSTER_LABELS.get(cluster_id, "Unknown")
+                    if cluster_id is not None
+                    else "No cluster match"
+                ),
                 "embedding_x": embedding_x,
                 "embedding_y": embedding_y,
             },

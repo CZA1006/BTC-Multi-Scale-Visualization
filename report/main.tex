@@ -141,8 +141,8 @@ tension window — exercises every link in the chain.
 \section{Related Work}
 \label{sec:related}
 
-Our design rests on the foundational visualization literature taught
-in MSBD5005.  Munzner's what/why/how triple~\cite{munzner2014},
+Our design rests on the foundational visualization literature.
+Munzner's what/why/how triple~\cite{munzner2014},
 Shneiderman's overview-first mantra~\cite{shneiderman1996}, Mackinlay's
 channel rankings~\cite{mackinlay1986} and Cleveland and McGill's
 perceptual experiments~\cite{cleveland1984} jointly justify our
@@ -172,20 +172,20 @@ catalog.
 \section{Design Tasks and Requirements}
 \label{sec:design}
 
-We follow Munzner's nested-model task abstraction~\cite{munzner2014}
-(Lec.~4): each domain question is mapped first to an abstract task,
-then to a visualization \emph{idiom}.  T1 (\emph{market evolution}) is
-an abstract \texttt{summarise+identify} task over ordered temporal
-data, served by linear and grid time-series layouts (Lec.~5-1).  T2
-(\emph{pattern discovery}) is an abstract \texttt{cluster+compare}
-task over multidimensional data, served by the dimension-reduction +
-clustering + parallel-coordinates idiom from Lec.~7.  T3
-(\emph{day-level explanation}) is an abstract \texttt{identify+inspect}
-task over an aligned multivariate intraday slice, served again by
-linear layouts on a common $x$-axis.  T4 (\emph{cross-market
-context}) is an abstract \texttt{lookup+compare} task that crosses
-quantitative (asset prices), categorical (news themes), and ordinal
-(prediction-market probabilities) data types in a single layout.
+We follow Munzner's nested-model task abstraction~\cite{munzner2014}:
+each domain question is mapped first to an abstract task, then to a
+visualization \emph{idiom}.  T1 (\emph{market evolution}) is an
+abstract \texttt{summarise+identify} task over ordered temporal data,
+served by linear and grid time-series layouts.  T2 (\emph{pattern
+discovery}) is an abstract \texttt{cluster+compare} task over
+multidimensional data, served by a dimension-reduction + clustering +
+parallel-coordinates idiom.  T3 (\emph{day-level explanation}) is an
+abstract \texttt{identify+inspect} task over an aligned multivariate
+intraday slice, served again by linear layouts on a common $x$-axis.
+T4 (\emph{cross-market context}) is an abstract \texttt{lookup+compare}
+task that crosses quantitative (asset prices), categorical (news
+themes), and ordinal (prediction-market probabilities) data types in a
+single layout.
 
 Six concrete requirements followed.  \textbf{R1: single-screen
 overview} --- all three views fit on a 1440-px laptop without
@@ -200,7 +200,7 @@ that drove the curated-bucket data design (\cref{sec:curated}).
 \textbf{R4: brushing-and-linking as causation control} --- any
 selection propagates to all views in the same render cycle, so the
 user can hold a hypothesis and confirm or refute it across scales
-without breaking flow (Lec.~7's interaction discipline).  \textbf{R5:
+without breaking flow.  \textbf{R5:
 color-blind safety} --- every diverging scale uses ColorBrewer
 RdYlGn-7~\cite{colorbrewer}; every categorical scale uses Set2 with
 BTC orange excluded; chip glyphs use redundant shape+hue
@@ -219,8 +219,8 @@ chart library is used as a black box for our novel encodings.
 
 \subsection{Macro view (T1) --- linear and grid layouts for time series}
 
-The Macro view answers \emph{when}.  Following the temporal-data
-taxonomy from Lec.~5-1~\cite{munzner2014}, we combine two
+The Macro view answers \emph{when}.  Following the standard
+temporal-data taxonomy~\cite{munzner2014}, we combine two
 complementary layouts: a \emph{linear} layout (the BTC daily timeline,
 $x$ = time, $y$ = close price) and a \emph{grid} layout (the calendar
 heatmap, one cell per trading day, color-encoding daily return).  We
@@ -236,21 +236,20 @@ channel for quantitative data~\cite{mackinlay1986} --- and is overlaid
 with five canonical event markers (FOMC pivots, war onsets, ETF
 approvals) using shape redundantly with hue.  The calendar heatmap
 uses a ColorBrewer RdYlGn-7 \emph{diverging} scale~\cite{colorbrewer}
-anchored at zero, the textbook encoding for centred quantities
-(Lec.~2-2): green for positive return, red for negative, yellow for
-near-zero.  A small dot in the corner of each cell encodes the
+anchored at zero, the textbook encoding for centred quantities: green
+for positive return, red for negative, yellow for near-zero.  A small dot in the corner of each cell encodes the
 GDELT-event-density signal --- a redundant channel so users with
 red-green deficiencies still spot event-heavy days.  Clicking any cell
 sets \texttt{selectedDate} (\cref{fig:macro}); the brush above the
 timeline updates \texttt{selectedTimeRange}.  Both selections propagate
 through the shared store in the same render cycle, the
-\emph{brushing-and-linking} pattern from Lec.~7.
+\emph{brushing-and-linking} interaction pattern.
 
 \subsection{Meso view (T2) --- multidimensional analysis}
 
-The Meso view answers \emph{what kind of day}.  Lec.~7 lists three
-multidimensional techniques (clustering, classification, dimension
-reduction) that are best paired with visualization for pattern
+The Meso view answers \emph{what kind of day}.  Three classical
+multidimensional analysis techniques (clustering, classification, and
+dimension reduction) are best paired with visualization for pattern
 detection and outlier hunting; we apply two of them.  We
 \emph{dimension-reduce} the eight-dimensional daily feature vector to
 2D via UMAP~\cite{mcinnes2018umap} (preserving non-linear local and
@@ -261,7 +260,7 @@ similarity}: nearby points are similar trading days; cluster color
 encodes the \emph{regime label}.  Cluster colors are ColorBrewer Set2
 (categorical, CB-safe) and explicitly exclude orange so the
 categorical scale never collides with BTC's house color --- a direct
-application of Lec.~2-2's purpose-of-color discipline (``label, not
+application of the purpose-of-color discipline (``label, not
 decorate'') and Tufte's ``do no harm''~\cite{tufte2001}.
 
 A regime summary band below the scatter makes the cluster story
@@ -287,9 +286,9 @@ The Micro view answers \emph{what happened} on a selected day and
 elements compose it.~(1)~\emph{Summary cards} report selected-day
 open/high/low/close, intraday range, and 24-hour change; the up/down
 chip uses redundant shape (\,$\blacktriangle/\blacktriangledown$\,) and
-hue, satisfying the redundancy guideline from Lec.~2-2 for color-blind
+hue, satisfying the redundancy guideline for color-blind
 accessibility~\cite{wong2011points}.~(2)~The \emph{intraday chart}
-follows the time-series linear-layout idiom (Lec.~5-1): two stacked
+follows the time-series linear-layout idiom: two stacked
 grids (candlesticks above, volume bars below) sharing one $x$-axis,
 so \emph{position-on-common-scale} carries the alignment between price
 and traded volume (Mackinlay's top-ranked
@@ -300,8 +299,8 @@ the rest of the risk-asset complex move with BTC?''
 ~(4)~The~\emph{headline panel} (T4) lists GDELT articles for the
 selected day, sorted by tone and tagged with one of seven theme
 buckets (war, election, covid, regulation, macro, crypto, other) ---
-text-visualization in the categorical-tagging mode of Lec.~9 rather
-than the word-cloud mode, to keep the reader's attention on which
+text-visualization in the categorical-tagging mode rather than the
+word-cloud mode, to keep the reader's attention on which
 \emph{narrative} dominates a given hour rather than on individual
 keywords.  The active GDELT \emph{bucket} (curated case-study window)
 appears as a provenance line above the panel.  (5)~The
@@ -501,34 +500,36 @@ methodological finding of the case study, not the price move itself.
 \section{Discussion}
 \label{sec:discussion}
 
-\subsection{Knowledge applied from the course}
+\subsection{Visualization principles applied}
 \label{sec:knowledge}
 
-The system is a deliberate exercise in the MSBD5005 syllabus.
-\Cref{tab:lecture-map} summarises which lecture supplied which design
-choice; \emph{every} chart has a single-line justification in the
-course material.
+\Cref{tab:concept-map} summarises the visualization concepts the
+project applies and where each one shows up in the system.  Every
+chart in \cref{sec:system} has a single-line justification in this
+canon; the table is intentionally exhaustive so the relationship
+between principles and built artefacts is auditable.
 
 \begin{table}[t]
 \centering
-\caption{Mapping from MSBD5005 lectures to concrete design choices.}
-\label{tab:lecture-map}
+\caption{Visualization concepts applied in this system, with the
+concrete design decision each one drives.}
+\label{tab:concept-map}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.05}
-\begin{tabular}{@{}p{0.18\linewidth} p{0.74\linewidth}@{}}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}p{0.30\linewidth} p{0.62\linewidth}@{}}
 \toprule
-\textbf{Lecture} & \textbf{Where applied in our system} \\
+\textbf{Concept} & \textbf{Where applied in our system} \\
 \midrule
-2-1 Perception        & Position-on-common-scale for OHLC and volume; redundant shape+hue $\blacktriangle/\blacktriangledown$ direction chips. \\
-2-2 Color             & RdYlGn-7 diverging for centred quantities (returns, correlation); Set2 categorical for clusters with BTC orange excluded; Tufte's ``do no harm.'' \\
-3 Visual Design       & Semantic cluster labels (``Risk-Off,'' ``Bullish-Momentum'') replace numeric IDs; every chart is justified by data type and task before idiom. \\
-4 Design Tasks        & Munzner nested-model task abstraction: T1--T4 stated as abstract tasks before idiom selection. \\
-5-1 Temporal Data     & Linear layout for Macro line and Micro intraday; grid layout for Macro calendar heatmap; circular and horizon-graph alternatives considered and rejected with reasons. \\
-7 Multi-D Analysis    & UMAP dimension reduction of an 8-D daily feature vector; KMeans $k=5$; parallel coordinates over 7 features; bidirectional brushing-and-linking across all three views. \\
-9 Text Visualization  & 7-bucket theme map (war / election / covid / regulation / macro / crypto / other) over GDELT articles, each tagged with theme and tone. \\
-10-1 Evaluation       & Internal heuristic evaluation against Munzner's triple (\texttt{HEURISTIC\_EVALUATION.md}); a between-subject study protocol is drafted but deferred. \\
-10-2 Narrative        & Case-study navigator: four prepared windows give an author-driven entry; free brushing takes over once inside a window. \\
+Channel rankings; pre-attentive perception            & Position-on-common-scale for OHLC and volume; redundant shape+hue $\blacktriangle/\blacktriangledown$ chips. \\
+Diverging vs.\ categorical color encodings; Tufte's ``do no harm''     & RdYlGn-7 diverging for centred quantities (returns, correlation); Set2 categorical for clusters with BTC orange excluded. \\
+Semantic meaning over identity                        & Cluster labels (``Risk-Off,'' ``Bullish-Momentum'') replace numeric IDs; every chart is justified by data type and task before its idiom is chosen. \\
+Munzner's nested-model task abstraction               & T1--T4 stated as abstract tasks (\texttt{summarise+identify}, \texttt{cluster+compare}, \texttt{identify+inspect}, \texttt{lookup+compare}) before idiom selection. \\
+Time-series layouts: linear / grid / circular / timeline & Linear layout for Macro line and Micro intraday OHLC; grid layout for Macro calendar heatmap; circular and horizon-graph alternatives considered and rejected with reasons. \\
+Dimension reduction; clustering; parallel coordinates & UMAP projection of the 8-D daily feature vector; KMeans $k=5$; parallel coordinates over 7 features; bidirectional brushing-and-linking across all three views. \\
+Text visualization: theme tagging                     & 7-bucket theme map (war / election / covid / regulation / macro / crypto / other) over GDELT articles, each tagged with theme and tone. \\
+Heuristic evaluation; controlled study design         & Internal heuristic evaluation against Munzner's triple recorded in \texttt{HEURISTIC\_EVALUATION.md}; a between-subject study protocol is drafted in \texttt{USER\_STUDY\_PROTOCOL.md} but deferred. \\
+Narrative visualization: author-driven $\to$ reader-driven & Case-study navigator: four prepared windows (COVID, War, Election, Iran) give an author-driven entry; free brushing takes over once inside a window. \\
 \bottomrule
 \end{tabular}
 \end{table}

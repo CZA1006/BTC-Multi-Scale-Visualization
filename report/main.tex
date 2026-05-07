@@ -121,84 +121,72 @@ tension window — exercises every link in the chain.
 \section{Related Work}
 \label{sec:related}
 
-Our design draws on four threads of prior visualization work.
+Our design rests on the foundational visualization literature taught
+in MSBD5005.  Munzner's what/why/how triple~\cite{munzner2014},
+Shneiderman's overview-first mantra~\cite{shneiderman1996}, Mackinlay's
+channel rankings~\cite{mackinlay1986} and Cleveland and McGill's
+perceptual experiments~\cite{cleveland1984} jointly justify our
+encoding choices: position-on-common-scale for OHLC and volume,
+color-on-diverging-scale only for centred quantities, and a
+Macro$\to$Meso$\to$Micro flow that always shows the overview first.
+Van Wijk and van Selow's calendar-cell layout~\cite{vanwijk1999} is the
+canonical grid encoding we adopt for daily returns; Heer et
+al.~\cite{heer2009} characterise the horizon-graph alternative we
+considered but did not adopt once event markers were added.  For
+multidimensional days we apply UMAP~\cite{mcinnes2018umap} together
+with Inselberg's parallel coordinates~\cite{inselberg1985}, and Tufte's
+small-multiples and data-ink principles~\cite{tufte2001} drive our
+equity-curve sparklines.  The case-study navigator borrows Segel and
+Heer's author-driven $\to$ reader-driven
+spectrum~\cite{segel2010narrative}; all categorical encodings follow
+Wong's color-blindness guidance~\cite{wong2011points} and ColorBrewer
+discipline~\cite{colorbrewer}.
 
-\textbf{Coordinated multiple views and the overview-first pipeline.}
-Munzner~\cite{munzner2014} formalizes the what/why/how triple that we
-use to justify each chart: the Macro timeline is a position-on-common-
-scale derive, the Meso scatterplot is a 2D-attribute summary, the Micro
-panel is a time-aligned identity drill-down.  The Macro$\to$Meso$\to$Micro
-flow follows Shneiderman's overview-first, zoom-and-filter,
-details-on-demand mantra~\cite{shneiderman1996}.
-
-\textbf{Calendar heatmaps and time-series overviews.}
-Van Wijk and van Selow~\cite{vanwijk1999} introduced the calendar-cell
-layout we use to encode daily returns in Macro.  Heer and
-Bostock~\cite{heer2009} documented the horizon-graph pattern for
-high-density time series; we considered it but reverted to a
-single-band timeline once event markers were added, since the marker
-layer already supplies the vertical-density payoff.
-
-\textbf{Dimensionality reduction for daily market states.}
-Each trading day is summarized by an eight-dimensional feature vector
-(return, open-close change, high-low range, volume z-score, two rolling
-volatilities, a 30-day drawdown, and a news-tone field).  We project
-to 2D with UMAP~\cite{mcinnes2018umap} because, unlike PCA, it
-preserves both local neighborhood and global cluster structure for
-non-linear feature mixes, and unlike t-SNE it is reproducible across
-runs once a seed is fixed.  We then overlay $k=5$ KMeans clusters with
-semantically calibrated labels (e.g., ``Risk-Off,'' ``Bullish
-Momentum'').
-
-\textbf{Parallel coordinates and small-multiples summaries.}
-Inselberg's parallel coordinates~\cite{inselberg1985} are the natural
-pairing to a 2D embedding: they restore the original feature axes that
-UMAP collapsed.  Our cluster summary table follows the small-multiples
-idiom (Tufte's ``equity-curve sparklines'' applied to per-cluster
-cumulative returns).
-
-\textbf{News and prediction-market overlays in financial dashboards.}
 Most public crypto dashboards (Glassnode, CoinGecko, TradingView) treat
-news as a sidebar, decoupled from the chart.  Closer to our intent are
-ThemeRiver-style co-displays~\cite{havre2002themeriver} and narrative
-visualization patterns~\cite{segel2010narrative}.  Our date-aware
-historical extension to GDELT~\cite{gdelt} and
-Polymarket~\cite{polymarket} — two APIs that are structurally biased
-toward \emph{today} — is, to our knowledge, the practical contribution
-that distinguishes this work from a chart catalog.
+news as a sidebar decoupled from the chart.  Our date-aware historical
+extension to GDELT~\cite{gdelt} and Polymarket~\cite{polymarket} ---
+two APIs that are structurally biased toward \emph{today} --- is the
+practical contribution that distinguishes this work from a chart
+catalog.
 
 \section{Design Tasks and Requirements}
 \label{sec:design}
 
-The four analytical tasks above translate into a small set of concrete
-design requirements that shaped every chart choice.
+We follow Munzner's nested-model task abstraction~\cite{munzner2014}
+(Lec.~4): each domain question is mapped first to an abstract task,
+then to a visualization \emph{idiom}.  T1 (\emph{market evolution}) is
+an abstract \texttt{summarise+identify} task over ordered temporal
+data, served by linear and grid time-series layouts (Lec.~5-1).  T2
+(\emph{pattern discovery}) is an abstract \texttt{cluster+compare}
+task over multidimensional data, served by the dimension-reduction +
+clustering + parallel-coordinates idiom from Lec.~7.  T3
+(\emph{day-level explanation}) is an abstract \texttt{identify+inspect}
+task over an aligned multivariate intraday slice, served again by
+linear layouts on a common $x$-axis.  T4 (\emph{cross-market
+context}) is an abstract \texttt{lookup+compare} task that crosses
+quantitative (asset prices), categorical (news themes), and ordinal
+(prediction-market probabilities) data types in a single layout.
 
-\begin{description}
-  \item[\textbf{R1.~Single-screen overview.}]  All three views fit on a
-    1440-px laptop without scrolling for the active window.  This rules
-    out heavy multi-tab terminals; it also forces information-density
-    choices (e.g., sparklines instead of full charts where appropriate).
-  \item[\textbf{R2.~Regime visibility.}]  The Meso view must make the
-    cluster membership of \emph{every} day in the brushed window legible
-    at a glance.  UMAP plus colored hulls plus a parallel-coordinates
-    overlay collectively satisfy R2.
-  \item[\textbf{R3.~Date-aware historical context.}]  News and
-    prediction-market panels must show what was true on the
-    \emph{selected} date, not today.  This is the requirement that drove
-    the curated-bucket data design (\cref{sec:system}).
-  \item[\textbf{R4.~Brushing as causation control.}]  Linking is
-    bidirectional and constant-time: any selection propagates to all
-    views in the same render cycle, so the user can hold a hypothesis
-    (``March~23 looks anomalous'') and confirm or refute it across
-    scales without breaking flow.
-  \item[\textbf{R5.~Color-blind safety.}]  Every diverging scale uses
-    ColorBrewer RdYlGn-7~\cite{colorbrewer}; every categorical scale uses
-    ColorBrewer Set2 with BTC orange excluded from cluster colors to
-    avoid the BTC--cluster confusion.
-  \item[\textbf{R6.~Bundle budget.}]  $\le 6$~KB CSS gzip, $\le 130$~KB
-    initial JS gzip; ECharts loaded lazily.  Current production build:
-    5.00~KB CSS, 106.5~KB JS.
-\end{description}
+Six concrete requirements followed.  \textbf{R1: single-screen
+overview} --- all three views fit on a 1440-px laptop without
+scrolling, forcing information-density choices (sparklines over full
+charts where appropriate).  \textbf{R2: regime visibility} --- the
+Meso view must make the cluster membership of \emph{every} day in the
+brushed window legible at a glance (UMAP + hulls + parallel
+coordinates collectively satisfy this).  \textbf{R3: date-aware
+historical context} --- news and prediction-market panels must show
+what was true on the \emph{selected} date, not today, the requirement
+that drove the curated-bucket data design (\cref{sec:curated}).
+\textbf{R4: brushing-and-linking as causation control} --- any
+selection propagates to all views in the same render cycle, so the
+user can hold a hypothesis and confirm or refute it across scales
+without breaking flow (Lec.~7's interaction discipline).  \textbf{R5:
+color-blind safety} --- every diverging scale uses ColorBrewer
+RdYlGn-7~\cite{colorbrewer}; every categorical scale uses Set2 with
+BTC orange excluded; chip glyphs use redundant shape+hue
+encoding~\cite{wong2011points}.  \textbf{R6: bundle budget} ---
+$\le 6$~KB CSS gzip, $\le 130$~KB initial JS gzip with ECharts loaded
+lazily.  The production build measures 5.00~KB CSS and 106.5~KB JS.
 
 \section{System and Visualization Design}
 \label{sec:system}
@@ -209,66 +197,98 @@ The system is a FastAPI backend serving three JSON endpoints
 frontend.  All visualizations are written in D3 v7 and ECharts v6; no
 chart library is used as a black box for our novel encodings.
 
-\subsection{Macro view (T1)}
+\subsection{Macro view (T1) --- linear and grid layouts for time series}
 
-The Macro view answers \emph{when}: it shows the BTC daily timeline
-together with a calendar heatmap of daily returns, both bound to the
-same \texttt{selectedTimeRange}.  The line uses position on a common
-scale --- Mackinlay's top-ranked channel for quantitative
-data~\cite{mackinlay1986} --- and is overlaid with five canonical event
-markers (FOMC pivots, war onsets, ETF approvals).  The calendar heatmap
-uses ColorBrewer RdYlGn-7 anchored at zero, so a single deep-red or
-deep-green cell is the visual question that triggers a Micro
-drill-down.  An event-density dot in the corner of each cell signals
-days with $\ge 1$ GDELT article; the user can click any cell to set
-\texttt{selectedDate} (\cref{fig:macro}).
+The Macro view answers \emph{when}.  Following the temporal-data
+taxonomy from Lec.~5-1~\cite{munzner2014}, we combine two
+complementary layouts: a \emph{linear} layout (the BTC daily timeline,
+$x$ = time, $y$ = close price) and a \emph{grid} layout (the calendar
+heatmap, one cell per trading day, color-encoding daily return).  We
+deliberately avoided the \emph{circular} layout because BTC has no
+strong intra-week or intra-month cyclicality at the daily granularity,
+and we considered but did not adopt the horizon-graph
+alternative~\cite{heer2009} once the event-marker layer was added: the
+markers already supply the vertical-density payoff that horizon
+graphs provide.
 
-\subsection{Meso view (T2)}
+The line uses position-on-common-scale --- Mackinlay's top-ranked
+channel for quantitative data~\cite{mackinlay1986} --- and is overlaid
+with five canonical event markers (FOMC pivots, war onsets, ETF
+approvals) using shape redundantly with hue.  The calendar heatmap
+uses a ColorBrewer RdYlGn-7 \emph{diverging} scale~\cite{colorbrewer}
+anchored at zero, the textbook encoding for centred quantities
+(Lec.~2-2): green for positive return, red for negative, yellow for
+near-zero.  A small dot in the corner of each cell encodes the
+GDELT-event-density signal --- a redundant channel so users with
+red-green deficiencies still spot event-heavy days.  Clicking any cell
+sets \texttt{selectedDate} (\cref{fig:macro}); the brush above the
+timeline updates \texttt{selectedTimeRange}.  Both selections propagate
+through the shared store in the same render cycle, the
+\emph{brushing-and-linking} pattern from Lec.~7.
 
-The Meso view answers \emph{what kind of day}.  Its centerpiece is a
-UMAP projection of the eight-dimensional daily feature vector to 2D,
-colored by KMeans cluster with convex hulls drawn around each cluster's
-points.  Cluster colors are deliberately Set2 (CB-safe) and explicitly
-exclude orange to keep BTC's house color out of the categorical scale.
+\subsection{Meso view (T2) --- multidimensional analysis}
 
-A regime summary band below the scatterplot makes the cluster story
-quantitative.  A \emph{cluster summary table} reports $n$, mean daily
-return, annualized volatility, and a 60-point equity-curve sparkline
-for each cluster --- small multiples (Tufte) so the reader compares
-regimes by \emph{shape}, not by scrolling between numbers.  A
-$4{\times}4$ cross-asset \emph{correlation matrix} (Pearson over the
-active window) over BTC, COIN, MSTR, and QQQ uses a diverging
-green$\leftrightarrow$red scale anchored at zero.  A toggleable
-\emph{parallel-coordinates plot} over seven engineered features
-(Inselberg) restores the axes UMAP collapsed.  Selecting a cluster in
-the legend filters all four panels in one render
-(\cref{fig:meso}).
+The Meso view answers \emph{what kind of day}.  Lec.~7 lists three
+multidimensional techniques (clustering, classification, dimension
+reduction) that are best paired with visualization for pattern
+detection and outlier hunting; we apply two of them.  We
+\emph{dimension-reduce} the eight-dimensional daily feature vector to
+2D via UMAP~\cite{mcinnes2018umap} (preserving non-linear local and
+global structure where PCA would not), then \emph{cluster} the same
+feature vectors with KMeans and overlay $k=5$ convex hulls on the
+projection.  Spatial proximity in the scatter encodes \emph{market
+similarity}: nearby points are similar trading days; cluster color
+encodes the \emph{regime label}.  Cluster colors are ColorBrewer Set2
+(categorical, CB-safe) and explicitly exclude orange so the
+categorical scale never collides with BTC's house color --- a direct
+application of Lec.~2-2's purpose-of-color discipline (``label, not
+decorate'') and Tufte's ``do no harm''~\cite{tufte2001}.
 
-\subsection{Micro view (T3, T4)}
+A regime summary band below the scatter makes the cluster story
+quantitative through three coordinated panels.  (1)~A \emph{cluster
+summary table} reports $n$, mean daily return, annualized volatility,
+and a 60-point equity-curve \emph{sparkline} for each
+cluster~\cite{tufte2001} --- the small-multiples idiom so the reader
+compares regimes by \emph{shape}, not by scrolling between
+numbers.~(2)~A toggleable \emph{parallel-coordinates}
+plot~\cite{inselberg1985} over the seven engineered features restores
+the axes UMAP collapsed; the selected day is drawn as a thick line on
+top of a faded cluster average, supporting per-day-vs-regime
+comparison directly.~(3)~A $4{\times}4$ cross-asset \emph{correlation
+matrix} (Pearson over the active window) over BTC, COIN, MSTR, and QQQ
+uses a green$\leftrightarrow$red diverging scale anchored at zero.
+Selecting a cluster in the legend filters all three panels in one
+render (\cref{fig:meso}).
 
-The Micro view answers \emph{what happened} on a selected day.  It is
-composed of:
+\subsection{Micro view (T3, T4) --- intraday detail and context layer}
 
-\begin{enumerate}
-  \item \emph{Summary cards.}~Selected-day open/high/low/close, intraday
-    range, and 24-hour change with a redundant shape+hue
-    $\blacktriangle/\blacktriangledown$ chip.
-  \item \emph{Intraday chart.}~Stacked OHLC candlesticks and volume bars
-    sharing one $x$-axis, so position-on-common-scale carries the
-    alignment (\cref{fig:micro-intraday}).
-  \item \emph{External-asset context strip.}~Three small sparklines
-    (COIN, MSTR, QQQ) over the same window, answering ``did everything
-    else move with BTC?''
-  \item \emph{Headline panel (T4).}~GDELT articles for the selected
-    day, sorted by tone, tagged with one of seven theme buckets (war,
-    election, covid, regulation, macro, crypto, other).  The active
-    GDELT \emph{bucket} (curated case-study window) is shown as a
-    provenance line above the panel.
-  \item \emph{Polymarket panel (T4).}~Per-curated-market cards each
-    showing a daily YES-probability sparkline with a marker at the
-    selected date, the YES price observed at that date, and the current
-    resolution price (\cref{fig:micro-context}).
-\end{enumerate}
+The Micro view answers \emph{what happened} on a selected day and
+\emph{how} cross-market signals relate to it.  Five coordinated
+elements compose it.~(1)~\emph{Summary cards} report selected-day
+open/high/low/close, intraday range, and 24-hour change; the up/down
+chip uses redundant shape (\,$\blacktriangle/\blacktriangledown$\,) and
+hue, satisfying the redundancy guideline from Lec.~2-2 for color-blind
+accessibility~\cite{wong2011points}.~(2)~The \emph{intraday chart}
+follows the time-series linear-layout idiom (Lec.~5-1): two stacked
+grids (candlesticks above, volume bars below) sharing one $x$-axis,
+so \emph{position-on-common-scale} carries the alignment between price
+and traded volume (Mackinlay's top-ranked
+channel~\cite{mackinlay1986}; \cref{fig:micro-intraday}).~(3)~The
+\emph{external-asset context strip} renders three sparklines (COIN,
+MSTR, QQQ) over the same window --- small multiples answering ``did
+the rest of the risk-asset complex move with BTC?''
+~(4)~The~\emph{headline panel} (T4) lists GDELT articles for the
+selected day, sorted by tone and tagged with one of seven theme
+buckets (war, election, covid, regulation, macro, crypto, other) ---
+text-visualization in the categorical-tagging mode of Lec.~9 rather
+than the word-cloud mode, to keep the reader's attention on which
+\emph{narrative} dominates a given hour rather than on individual
+keywords.  The active GDELT \emph{bucket} (curated case-study window)
+appears as a provenance line above the panel.  (5)~The
+\emph{Polymarket panel} (T4) renders per-curated-market cards, each
+showing a daily YES-probability sparkline with a marker at the
+selected date, the YES price observed at that date, and the current
+resolution price (\cref{fig:micro-context}).
 
 \subsection{Date-aware historical context: the data-design contribution}
 \label{sec:curated}
@@ -424,33 +444,69 @@ not any one chart.
 \section{Discussion}
 \label{sec:discussion}
 
-\textbf{Knowledge from the course.}  The system is a deliberate
-exercise in the course material: Munzner's what/why/how triple drives
-every chart choice, Mackinlay's channel rankings drive the encodings
-(position-on-common-scale for the asset chart, color-on-diverging-scale
-for returns and correlation), Shneiderman's mantra drives the
-Macro$\to$Meso$\to$Micro ordering, calendar heatmaps come from van
-Wijk and van Selow, parallel coordinates from Inselberg, and CB-safe
-palettes from ColorBrewer.
+\subsection{Knowledge applied from the course}
+\label{sec:knowledge}
 
-\textbf{Sophistication.}  The chart inventory is intentionally
-mainstream --- the project's design ambition is the \emph{coordinated
-flow}, not novel chart shapes.  The genuinely novel piece is the
-data-design contribution in \cref{sec:curated}: per-window curated
-GDELT queries plus curated Polymarket event slugs convert two
-recency-biased public APIs into a date-aware historical context
-engine, which is what makes the case-study workflow work at all on
-2020/2022/2024 dates.
+The system is a deliberate exercise in the MSBD5005 syllabus.
+\Cref{tab:lecture-map} summarises which lecture supplied which design
+choice; \emph{every} chart has a single-line justification in the
+course material.
 
-\textbf{Limitations.}  The GDELT cache is currently $\sim$60\,\%
-complete across the COVID, War, and Election windows (the Iran window
-is fully covered).  GDELT's DOC API rate-limits at one request per
-five seconds, so filling the gap is an incremental top-up rather than
-a code change.  Polymarket coverage is by design limited to the 2024
-Election and 2026 Iran windows; the 2020 and 2022 windows return a
-friendly ``no Polymarket coverage for this period'' message rather
-than empty cards.  A light-theme palette and a side-by-side
-cross-window comparison view are deferred.
+\begin{table}[t]
+\centering
+\caption{Mapping from MSBD5005 lectures to concrete design choices.}
+\label{tab:lecture-map}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{}p{0.18\linewidth} p{0.74\linewidth}@{}}
+\toprule
+\textbf{Lecture} & \textbf{Where applied in our system} \\
+\midrule
+2-1 Perception        & Position-on-common-scale for OHLC and volume; redundant shape+hue $\blacktriangle/\blacktriangledown$ direction chips. \\
+2-2 Color             & RdYlGn-7 diverging for centred quantities (returns, correlation); Set2 categorical for clusters with BTC orange excluded; Tufte's ``do no harm.'' \\
+3 Visual Design       & Semantic cluster labels (``Risk-Off,'' ``Bullish-Momentum'') replace numeric IDs; every chart is justified by data type and task before idiom. \\
+4 Design Tasks        & Munzner nested-model task abstraction: T1--T4 stated as abstract tasks before idiom selection. \\
+5-1 Temporal Data     & Linear layout for Macro line and Micro intraday; grid layout for Macro calendar heatmap; circular and horizon-graph alternatives considered and rejected with reasons. \\
+7 Multi-D Analysis    & UMAP dimension reduction of an 8-D daily feature vector; KMeans $k=5$; parallel coordinates over 7 features; bidirectional brushing-and-linking across all three views. \\
+9 Text Visualization  & 7-bucket theme map (war / election / covid / regulation / macro / crypto / other) over GDELT articles, each tagged with theme and tone. \\
+10-1 Evaluation       & Internal heuristic evaluation against Munzner's triple (\texttt{HEURISTIC\_EVALUATION.md}); a between-subject study protocol is drafted but deferred. \\
+10-2 Narrative        & Case-study navigator: four prepared windows give an author-driven entry; free brushing takes over once inside a window. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Sophistication and findings}
+
+The chart inventory is intentionally mainstream; the project's design
+ambition is the \emph{coordinated flow}, not novel chart shapes.  The
+genuinely novel piece is the data-design contribution in
+\cref{sec:curated}: per-window curated GDELT queries plus curated
+Polymarket event slugs convert two recency-biased public APIs into a
+date-aware historical context engine, which is what makes the
+case-study workflow work at all on 2020 / 2022 / 2024 dates.  The
+2026-03-23 case study (\cref{sec:case}) is the empirical demonstration
+that all four scales line up: a midday breakout visible in Macro
+($+$3.4\,\% return cell) clusters with prior-cycle breakout days in
+Meso, splits cleanly into three intraday regimes in Micro, and is
+anticipated by a discrete shift in the curated Iran-tension Polymarket
+markets in T4.  The finding we want to highlight is methodological:
+\emph{news flow lags price even on highly news-driven days} --- the
+midday-breakout candle prints before the mainstream-financial press
+files its breakout reports, a pattern only visible because all three
+scales share one $x$-axis-aligned selection.
+
+\subsection{Limitations}
+
+The GDELT cache is currently $\sim$60\,\% complete across the COVID,
+War, and Election windows (the Iran window is fully covered).  GDELT's
+DOC API rate-limits at one request per five seconds, so filling the
+gap is an incremental top-up rather than a code change.  Polymarket
+coverage is by design limited to the 2024 Election and 2026 Iran
+windows; the 2020 and 2022 windows return a friendly ``no Polymarket
+coverage for this period'' message rather than empty cards.  A
+light-theme palette and a side-by-side cross-window comparison view
+are deferred to future work.
 
 \section{Conclusion}
 \label{sec:conclusion}

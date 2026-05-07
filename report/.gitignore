@@ -11,8 +11,14 @@
 *.nav
 *.snm
 *.vrb
+*.run.xml
+*.lof
+*.lot
+*.brf
+
+# Output PDF (we DO want template.pdf as a reference, but not main.pdf
+# since it gets regenerated; toggle this if you want it tracked).
 main.pdf
 
-# VGTC class files — drop them in locally; do not commit (license)
-vgtc.cls
-*.bst
+# macOS
+.DS_Store

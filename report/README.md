@@ -1,63 +1,73 @@
 # Final Report
 
-LaTeX source for the MSBD5005 final report (Team USTVIS14).
+LaTeX source for the MSBD5005 (Spring 2026) final project report —
+Team USTVIS14.
+
+Built against the **IEEE VGTC TVCG journal LaTeX template**
+(release `2026-01-30`, dropped into this folder verbatim).
 
 ## Files
 
 ```
-main.tex          # paper source
-references.bib    # bibliography
-figures/          # screenshots (placeholders for now)
+main.tex                  Our paper (the only file you usually edit)
+references.bib            Our bibliography
+figures/                  Drop screenshots here (.png)
+
+# VGTC template (do not edit; treat as vendored)
+vgtc.cls                  document class
+abbrv-doi*.bst            4 bibliography styles (we use abbrv-doi-hyperref)
+template.tex              upstream sample paper — useful as a reference
+template.bib              upstream sample bibliography
+template.pdf              upstream rendered sample
+diamondrule.{eps,pdf}     section separator art (loaded by vgtc.cls)
+figs/                     upstream sample figures
+makefile                  upstream makefile (works alongside our latexmk)
+README                    upstream README
+
+.latexmkrc                tells latexmk + LaTeX Workshop how to build
+.gitignore                ignores .aux/.log/main.pdf, keeps everything else
 ```
 
-## One-time setup (no Overleaf — local LaTeX)
-
-The paper uses the IEEE VGTC conference template. The class file is **not**
-checked into the repo (license + binary) — drop it in once and you are set.
-
-### macOS
+## One-time setup (already done if you got this far)
 
 ```bash
-# 1. Install MacTeX (full distribution; ~5 GB).  BasicTeX is too small.
-brew install --cask mactex
-# OR a smaller full distribution:
-# brew install --cask mactex-no-gui
-
-# 2. Make sure latexmk is on PATH (re-open shell after install).
-which latexmk
-
-# 3. Download the VGTC template bundle.
-#    Source: https://tc.computer.org/vgtc/publications/journal
-#    The file you want is the LaTeX style: vgtc.cls (and vgtc-conf.bst,
-#    abbrv-doi.bst, etc.).  Drop the unpacked .cls and .bst files into
-#    this `report/` folder alongside main.tex.
-
-# 4. Build.
-cd report
-latexmk -pdf -interaction=nonstopmode main.tex
+brew install --cask basictex
+sudo /Library/TeX/texbin/tlmgr update --self
+sudo /Library/TeX/texbin/tlmgr install \
+    enumitem cleveref ccicons mwe lipsum tabu varwidth changepage hyperref \
+    silence scalerel helvetic collection-fontsrecommended
 ```
 
-### VS Code workflow
+After install, restart your terminal so `/Library/TeX/texbin` is on PATH.
+
+## Build (every time)
+
+```bash
+cd report
+latexmk -pdf main.tex            # auto-runs pdflatex/bibtex as needed
+open main.pdf                    # macOS preview
+```
+
+`latexmk` reads `.latexmkrc` and runs the right number of pdflatex/bibtex
+passes. It is incremental — it skips passes when nothing changed.
+
+To clean build artifacts:
+
+```bash
+latexmk -C                       # nukes everything except main.tex/.bib
+```
+
+## VS Code workflow
 
 1. Install the **LaTeX Workshop** extension (`james-yu.latex-workshop`).
-2. Open the repo folder in VS Code; open `report/main.tex`.
-3. Use the side-panel build button or `⌘⇧B` (auto-detected from
-   `latexmkrc`-style defaults) — LaTeX Workshop runs `latexmk` and shows
-   the PDF in the right preview pane with sync-jump.
-4. Errors land in the Problems tab and the rendered PDF auto-refreshes on
-   save.
-
-### If you don't want to install MacTeX yet
-
-The `main.tex` has a commented-out `article`-class fallback near the top.
-Uncomment those three lines and comment out the VGTC `\documentclass`
-line, and the paper will compile against any vanilla LaTeX install for
-draft / word-count purposes (final submission still uses VGTC).
+2. Open the repo folder; open `report/main.tex`.
+3. Save (`⌘S`) — LaTeX Workshop auto-builds via `latexmk` and shows the
+   PDF in the preview pane on the right.
+4. Errors land in the Problems tab and the rendered PDF auto-refreshes.
 
 ## Figures
 
-`figures/` is empty for now. Capture screenshots from the running dashboard
-and save them as:
+Once a teammate captures screenshots, save them under `figures/` as:
 
 ```
 figures/macro.png            (Macro view, Iran-tension window brushed)
@@ -66,19 +76,21 @@ figures/micro-intraday.png   (3-grid intraday OHLC + volume for 2026-03-23)
 figures/micro-context.png    (Headline panel + Polymarket panel)
 ```
 
-Recommended resolution: at least 1600 × 900, PNG. The `\fbox{...}`
-placeholders in `main.tex` will be replaced with `\includegraphics{...}` —
-those `\includegraphics` lines are already commented in next to each
-placeholder.
-
-## Word count
-
-The current draft is sized for the 4-page VGTC two-column layout. Run a
-build and check; if the body overflows, the discussion or related-work
-section is the most flexible place to trim.
+In `main.tex`, each `\fbox{...}` placeholder has a commented
+`\includegraphics{...}` line right above it — uncomment that line and
+delete the `\fbox{...}` placeholder line. Recommended resolution
+1600 × 900+ PNG.
 
 ## Submission
 
 May 13. One team member uploads the report PDF + a separate source-code
-archive (the `.zip` of this repo). Per course instructions: `report and
-source code in two separate files`.
+archive of the repo. Per course instructions: *report and source code
+in two separate files*.
+
+## Current status
+
+- 4 pages exactly (target hit)
+- 155 KB PDF
+- All 12 references compile cleanly with `abbrv-doi-hyperref` style
+- Only warnings are underfull boxes around the figure placeholders;
+  these will resolve once screenshots replace the `\fbox{...}` boxes

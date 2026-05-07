@@ -174,21 +174,35 @@ python3 backend/scripts/build_daily_features.py
 python3 backend/scripts/build_embedding.py
 # →  data/derived/embedding_results.csv
 
-# GDELT recent-window event signals + selected-day headline JSON
+# GDELT — recent rolling window (kept for live demos)
 python3 backend/scripts/fetch_gdelt_context.py
 # →  data/raw/gdelt_selected_day/*.json
 #    data/derived/gdelt_daily_signals.csv
 
-# Polymarket current-snapshot context
-python3 backend/scripts/fetch_polymarket_context.py
-# →  data/raw/polymarket_selected_day/*.json
-#    data/derived/polymarket_daily.csv
+# GDELT — historical case-study coverage (P9): per-window curated DOC
+# queries that backfill COVID / War / Election / Iran windows with the
+# right narrative themes (war / election / covid / regulation / macro / crypto).
+python3 backend/scripts/fetch_gdelt_historical.py            # 32 hot dates only
+python3 backend/scripts/fetch_gdelt_historical.py --full      # every day in every window
+python3 backend/scripts/fetch_gdelt_historical.py --rebuild-signals  # cache-only rollup
+
+# Polymarket — historical event series (P8): per-event CLOB price-history
+# for curated 2024 election + 2026 Iran tension markets.
+python3 backend/scripts/fetch_polymarket_history.py
+# →  data/raw/polymarket_events/*.json
+#    data/raw/polymarket_history/*.json
+#    data/derived/polymarket_history_daily.csv
 ```
 
-GDELT is **rolling 60-day** through the DOC API — historical case-study
-windows (COVID, war, election) intentionally show no event markers; the
-dashboard surfaces explanatory copy instead of looking broken. Polymarket
-is a non-historical *snapshot*. See `docs/DATA_AND_APIS.md`.
+GDELT history goes back to **8 years** through the DOC API — the legacy
+60-day guard was overly conservative. P9 added per-window curated
+queries so each case-study window (COVID / War / Election / Iran)
+surfaces narrative-relevant headlines, not crypto-only news.
+
+Polymarket is a **historical time series** (P8) — the asset-context
+strip in Micro shows what the crowd believed *on the selected date*,
+with a 14-day post-resolution grace window so day-after-election
+markets still surface. See `docs/DATA_AND_APIS.md`.
 
 ---
 
@@ -237,9 +251,9 @@ For a complete walkthrough of every interaction, read
 
 ---
 
-## What changed across P1–P7
+## What changed across P1–P9
 
-The dashboard was matured through seven approved, file-by-file priorities.
+The dashboard was matured through nine approved, file-by-file priorities.
 Each priority shipped *additively* — no chart, fetch path, or store slice
 from earlier work was removed.
 
@@ -265,6 +279,20 @@ from earlier work was removed.
   any view; localStorage-backed log; restore-context per row; JSON export;
   three new docs (`HEURISTIC_EVALUATION`, `USER_STUDY_PROTOCOL`,
   `INSIGHT_LOG`).
+- **P8 — Date-aware historical Polymarket.** Replaces the today-only
+  Gamma snapshot with curated event slugs per case-study window
+  (Election 2024 + Iran 2026), CLOB `/prices-history` daily series, a
+  per-market sparkline with a marker at the selected date, and a $1k
+  volume floor + top-8 cap so the Iran 41-market firehose stays
+  legible.
+- **P9 — Date-aware historical GDELT.** Replaces the crypto-only DOC
+  query + 90-day guard with **per-window curated queries** (COVID /
+  War / Election / Iran) and an 8-year lookback. Topical breadth: the
+  6-category theme map (war / election / covid / regulation / macro /
+  crypto) keeps the headline panel and theme river populated through
+  non-crypto windows. Bulk-warm script seeds 287 cached days across
+  all 4 windows; the auto-rollup keeps `gdelt_daily_signals.csv` in
+  sync.
 
 (P2 was a planning-only step on the original ladder and produced no code
 artifact — it set the stage for P3's depth additions.)
@@ -273,12 +301,17 @@ artifact — it set the stage for P3's depth additions.)
 
 ## Limitations
 
-- **GDELT historical coverage** — the DOC API only returns ~60 days back.
-  Older windows (COVID, war, election) deliberately render no event
-  markers; explanatory copy points the user at the Iran window for live
-  data.
-- **Polymarket** — the integration is a current snapshot, not a
-  backfilled time series. Tagged `Snapshot` in the provenance strip.
+- **GDELT cache coverage** (post-P9) — the DOC API supports the full
+  multi-year lookback we need, but it rate-limits at ~1 req / 5 s. The
+  shipped cache covers all 4 case-study windows at ~55–100% per-day
+  coverage; days inside a window that are not yet cached fall back to a
+  live (and slower) fetch. Re-running `fetch_gdelt_historical.py --full`
+  closes the gap incrementally.
+- **Polymarket coverage** (post-P8) — historical price series are
+  available for Election 2024 + Iran 2026 (curated event slugs). The
+  COVID 2020 + Russia 2022 windows have no Polymarket coverage worth
+  showing (markets too young / too thin); the UI degrades gracefully
+  with a friendly message instead of empty cards.
 - **Mobile / narrow viewport** — the dashboard collapses gracefully but is
   not optimized below ~960 px. Course demo target is laptop / projector.
 - **Color-blindness** — palettes are ColorBrewer CB-safe, but a full

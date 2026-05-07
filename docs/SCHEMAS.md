@@ -35,18 +35,25 @@
 | daily_return | float | daily return |
 | volume | float | daily volume |
 
-## gdelt_daily_signals.csv
+## gdelt_daily_signals.csv  *(P9 schema)*
+Rolled up from `data/raw/gdelt_selected_day/<YYYY-MM-DD>.json` by
+`fetch_gdelt_historical.py` (auto at end of every fetch + `--rebuild-signals`).
+
 | column | type | description |
 |---|---|---|
 | date | date | day |
 | news_count | int | count of filtered relevant articles |
-| avg_tone | float | average GDELT tone |
+| avg_tone | float | average GDELT tone (RawTone) |
 | theme_count_crypto | int | count of crypto-related themes |
 | theme_count_regulation | int | count of regulatory themes |
 | theme_count_election | int | count of election themes |
 | theme_count_war | int | count of war/geopolitical themes |
+| theme_count_macro | int | count of macro/Fed/inflation themes (P9) |
+| theme_count_covid | int | count of covid/pandemic themes (P9) |
+| bucket | string | curated case-study bucket key (P9): `covid_shock` / `war_regime` / `election_cycle` / `iran_tension` / null (generic fallback) |
+| bucket_label | string | human-readable bucket label, e.g. `"US Election Cycle (2024)"` (P9) |
 | top_headlines | string | JSON-encoded top headlines list |
-| status | string | live / cached / fetch_error / unavailable_* |
+| status | string | `live` / `cached` / `fetch_error` / `unavailable_*` |
 | message | string | fetch or cache status message |
 
 ## events_selected_day.csv
@@ -59,7 +66,7 @@
 | sentiment | float | optional sentiment score |
 | url | string | article link |
 
-## polymarket_daily.csv
+## polymarket_daily.csv  *(legacy "today" snapshot — kept for reference only)*
 | column | type | description |
 |---|---|---|
 | date | date | day |
@@ -70,6 +77,22 @@
 | theme | string | theme bucket for the selected market |
 | source_query | string | search query used to retrieve the market |
 | status | string | live / cached / fetch_error |
+
+## polymarket_history_daily.csv  *(P8 — canonical historical table)*
+Long-format daily YES-token price history per curated market. Produced
+by `fetch_polymarket_history.py` from CLOB `/prices-history` calls.
+~6,700 rows across ~70 curated markets.
+
+| column | type | description |
+|---|---|---|
+| bucket | string | case-study bucket key: `election_cycle` / `iran_tension` (etc.) |
+| event_slug | string | Polymarket Gamma event slug (e.g. `presidential-election-winner-2024`) |
+| market_slug | string | Polymarket market slug |
+| market_name | string | human-readable market question |
+| theme | string | inferred theme tag (election / iran / crypto / fed / …) |
+| ts | int | UNIX seconds for the price observation |
+| date | date | UTC calendar date of `ts` |
+| yes_price | float | YES-token price ∈ [0, 1] (probability) |
 
 ## daily_features.csv
 | column | type | description |

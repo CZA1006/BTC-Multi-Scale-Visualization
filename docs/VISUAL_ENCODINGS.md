@@ -168,7 +168,7 @@ that informed the P6 craft pass.
 
 | | |
 |---|---|
-| **What** | Stacked area of 5 theme buckets (war / regulation / crypto / election / other) over the day. |
+| **What** | Stacked area of 7 theme buckets (war / election / covid / regulation / macro / crypto / other) over the day, post-P9.1. |
 | **Why** | "Did the news lean *war* in the morning and *regulation* in the afternoon?" |
 | **How** | `d3.stack().offset(stackOffsetSilhouette)` (Havre et al. 2002 ThemeRiver) — symmetric around y = 0, so the eye reads *thickness* (length on common axis) instead of *top edge*, which is the wrong channel for additive aggregates. `curveBasis` smooths the noise without inventing data. |
 

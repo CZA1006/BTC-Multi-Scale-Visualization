@@ -28,10 +28,13 @@ Discovery and Event Explanation}
 
 \authorfooter{
   \item All authors are with the Hong Kong University of Science and
-    Technology, Department of Computer Science and Engineering, MSBD5005
-    (Spring 2026).
-    E-mail (corresponding author): zhuoangc@outlook.com.
+    Technology, MSBD5005 (Spring 2026).
+    E-mail (corresponding author): zcaiat@connect.ust.hk.
 }
+
+%% Suppress the IEEE manuscript-received boilerplate at the bottom of
+%% page 1 (course report, not an IEEE submission).
+\renewcommand{\manuscriptnotetxt}{}
 
 %% Abstract.
 \abstract{%
@@ -80,17 +83,34 @@ visual analytics, Bitcoin.}
 
 Bitcoin (BTC) sits between an asset and a narrative.  Its price has
 tripled and halved multiple times since 2019, with each regime change
-tied to a different external story: a pandemic crash, a Federal Reserve
-pivot, a sovereign war, two US elections, and a string of geopolitical
-shocks.  A line chart can show the magnitude of those moves; it cannot
-tell the analyst \emph{when} a regime began, \emph{what kind of trading
-day} sits inside that regime, or \emph{why} the market interpreted a
-given news bundle the way it did.
+tied to a different external story: a pandemic crash, a Federal
+Reserve pivot, a sovereign war, two US presidential elections, and a
+string of geopolitical shocks.  A line chart can show the magnitude
+of those moves; it cannot tell the analyst \emph{when} a regime
+began, \emph{what kind of trading day} sits inside that regime, or
+\emph{why} the market interpreted a given news bundle the way it did.
+The three questions are not independent: each requires a different
+\emph{scale of detail}, and the analyst's mental model is built only
+when all three are answered consistently for the same date.
 
-This project builds a web-based visual analytics system over a 2{,}677-day
-BTC record (2019-01-01 to 2026-04-30) that answers all three questions in
-a single interaction loop.  The system is organized around four
-analytical tasks distilled from the project requirements:
+This project builds a web-based visual analytics system over a
+2{,}677-day BTC record (2019-01-01 to 2026-04-30) that answers all
+three questions in a single interaction loop.  The system ingests
+four heterogeneous data layers --- BTC daily and hourly OHLCV from
+Yahoo Finance, three external assets (COIN, MSTR, QQQ) on the same
+calendar, $\sim 80$ thousand GDELT~\cite{gdelt} headlines covering the
+four case-study windows, and $\sim 6{,}700$ daily price points from
+70 curated Polymarket~\cite{polymarket} prediction markets --- and
+projects each trading day into an eight-dimensional engineered
+feature vector (return, open-close change, high-low range, 30-day
+volume z-score, 7-day and 30-day rolling realised volatility, 30-day
+drawdown, and an aggregated GDELT news-tone field).  This feature
+vector is the backbone of every cross-view computation in the system
+and the input to the UMAP embedding and KMeans clustering used in the
+Meso view.
+
+The dashboard is organised around four analytical tasks distilled
+from the project requirements:
 
 \begin{itemize}
   \item[\textbf{T1}] \emph{Market evolution.}~How does BTC evolve over
@@ -322,13 +342,31 @@ four case-study windows (COVID, War, Election, Iran) owns:
     panel.
 \end{itemize}
 
-A bulk-warm script seeds 287 cached headline payloads and 6{,}700+
+A bulk-warm script seeds 287 cached headline payloads and 6{,}708
 Polymarket price points across the four windows.  An auto-rollup step
 re-emits \texttt{gdelt\_daily\_signals.csv} after every fetch so the
 Macro heatmap dot indicator stays in sync.  This is the piece that
 turns two ``today-only'' APIs into a date-aware historical context
-engine; it is implemented in $\sim$300 lines of Python and is the
+engine; it is implemented in roughly 300 lines of Python and is the
 contribution we are proudest of beyond the chart inventory.
+
+\subsection{Implementation}
+\label{sec:impl}
+
+The backend is a FastAPI service of $\sim$1{,}000 lines of Python
+exposing three JSON endpoints.  The frontend is a Vite + React 18
+single-page app of $\sim$3{,}500 lines of JavaScript and JSX, with
+selection state held in a Zustand store of seven keys
+(\texttt{selectedTimeRange}, \texttt{selectedDate},
+\texttt{selectedCluster}, \ldots) that every view subscribes to.  All
+custom encodings (calendar heatmap, UMAP scatter with hulls, parallel
+coordinates, correlation matrix, Polymarket sparkline-with-marker)
+are written directly in D3~v7 and SVG; the intraday OHLC and volume
+chart is the only ECharts dependency, code-split out of the main
+bundle so it only loads when the Micro view becomes visible.  The
+production build measures 5.00~KB of CSS and 106.5~KB of JavaScript
+gzipped, comfortably inside the bundle budget defined in
+\cref{sec:design}.
 
 %%%%%%%%%%%%%% Figure placeholders (replace once screenshots are in figures/) %%%%%%%%%%%%%%
 
@@ -437,9 +475,28 @@ the sparkline placing 2026-03-23 squarely on the inflection.
 \emph{flow} provides the evidence.  Macro localises the anomaly, Meso
 shows that anomalies of this type cluster with prior breakouts, Micro
 shows the intraday regime change, and the headline+Polymarket layer
-supplies a coherent narrative for \emph{why} the regime change happened
-when it did.  The system's contribution is the coherence of the loop,
-not any one chart.
+supplies a coherent narrative for \emph{why} the regime change
+happened when it did.  Critically, three of the four panels would
+have been \emph{unable to surface this story} before our P8/P9 data
+work: the headline panel would have shown bitcoin-only news, the
+Polymarket cards would have shown today's markets, and the Meso
+cluster would have lacked the historical comparators that put a 2026
+breakout in the same neighbourhood as 2024 election-night and 2020
+post-halving days.  The system's contribution is the coherence of the
+loop, not any one chart.
+
+\textbf{A finding visible only at multi-scale.}~Because the headline
+panel is timestamped at 15-minute granularity and the intraday chart
+shares the same UTC $x$-axis, the user can see directly that on
+2026-03-23 the breakout candle prints \emph{before} the mainstream
+financial press files its breakout coverage --- the cluster of
+``BTC breaks above \$X'' headlines arrives several minutes after the
+volume spike, not before it.  This kind of micro-scale lead/lag
+between price and news flow is invisible in a single-line price chart
+and is also invisible in a single-day news feed; it is only legible
+because the two views share both a $y$-axis-aligned data backbone
+(daily UTC) and a coordinated selection.  We treat this as the
+methodological finding of the case study, not the price move itself.
 
 \section{Discussion}
 \label{sec:discussion}

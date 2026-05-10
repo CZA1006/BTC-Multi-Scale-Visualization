@@ -1,3 +1,4 @@
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Visual Analytics of Bitcoin: A Multi-Scale Dashboard
 % MSBD5005 (Spring 2026) — Team USTVIS14
@@ -29,7 +30,7 @@ Discovery and Event Explanation}
 \authorfooter{
   \item All authors are with the Hong Kong University of Science and
     Technology, MSBD5005 (Spring 2026).
-    E-mail (corresponding author): zcaiat@connect.ust.hk.
+    E-mail (corresponding author): zcaiat@connect.ust.hk, jhuangfw@connect.ust.hk, wluav@connect.ust.hk, jzhangnm@connect.ust.hk, xzhangkg@connect.ust.hk.
 }
 
 %% Suppress the IEEE manuscript-received boilerplate at the bottom of
@@ -38,24 +39,8 @@ Discovery and Event Explanation}
 
 %% Abstract.
 \abstract{%
-A price chart shows that Bitcoin moved.  It cannot show \emph{when},
-\emph{what kind of day}, or \emph{why}.  We present a coordinated
-multi-scale dashboard that answers all three across one interaction
-loop: a \textbf{Macro} long-range overview, a \textbf{Meso}
-regime-discovery view built on a UMAP projection of an eight-dimensional
-daily feature vector, and a \textbf{Micro} day-explanation view that
-pairs intraday price action with same-day GDELT headlines and Polymarket
-prediction-market odds.  The three views share a single client store, so
-a brush in one filters the others.  Beyond the chart inventory, the
-system makes a small but practical data-design contribution: per-window
-\emph{curated} GDELT queries and Polymarket event slugs that turn two
-recency-biased public APIs into a date-aware historical context engine
-for four case-study windows (COVID 2020, War 2022, Election 2024, Iran
-2026).  We validate the workflow on 2026-03-23 — an Iran-tension day
-with a midday Bitcoin breakout — tracing the narrative end-to-end from
-Macro anomaly to headline timing and prediction-market shift.
-A free copy of this paper, all source code, and the cached data
-artifacts are available at
+A price chart shows that Bitcoin moved.  It cannot show when, what kind of day, or why.  We present a coordinated multi-scale dashboard that answers all three across one interaction
+loop: a Macro long-range overview, a Meso regime-discovery view built on a UMAP projection of an eight-dimensional daily feature vector, and a Micro day-explanation view that pairs intraday price action with same-day GDELT headlines and Polymarket prediction-market odds.  The three views share a single client store, so a brush in one filters the others.  Beyond the chart inventory, the system makes a small but practical data-design contribution: per-window curated GDELT queries and Polymarket event slugs that turn two recency-biased public APIs into a date-aware historical context engine for four case-study windows (COVID 2020, War 2022, Election 2024, Iran 2026).  We validate the workflow on 2026-03-23, when Iran-related tensions coincided with a midday Bitcoin breakout, and trace the narrative end-to-end from macro anomaly to headline timing and prediction-market shifts. A free copy of this paper, all source code, and the cached data artifacts are available at
 \url{https://github.com/CZA1006/BTC-Multi-Scale-Visualization}.%
 }
 
@@ -86,28 +71,16 @@ tripled and halved multiple times since 2019, with each regime change
 tied to a different external story: a pandemic crash, a Federal
 Reserve pivot, a sovereign war, two US presidential elections, and a
 string of geopolitical shocks.  A line chart can show the magnitude
-of those moves; it cannot tell the analyst \emph{when} a regime
-began, \emph{what kind of trading day} sits inside that regime, or
-\emph{why} the market interpreted a given news bundle the way it did.
+of those moves; it cannot tell the analyst when a regime
+began, what kind of trading day sits inside that regime, or
+why the market interpreted a given news bundle the way it did.
 The three questions are not independent: each requires a different
-\emph{scale of detail}, and the analyst's mental model is built only
+scale of detail, and the analyst's mental model is built only
 when all three are answered consistently for the same date.
 
 This project builds a web-based visual analytics system over a
 2{,}677-day BTC record (2019-01-01 to 2026-04-30) that answers all
-three questions in a single interaction loop.  The system ingests
-four heterogeneous data layers --- BTC daily and hourly OHLCV from
-Yahoo Finance, three external assets (COIN, MSTR, QQQ) on the same
-calendar, $\sim 80$ thousand GDELT~\cite{gdelt} headlines covering the
-four case-study windows, and $\sim 6{,}700$ daily price points from
-70 curated Polymarket~\cite{polymarket} prediction markets --- and
-projects each trading day into an eight-dimensional engineered
-feature vector (return, open-close change, high-low range, 30-day
-volume z-score, 7-day and 30-day rolling realised volatility, 30-day
-drawdown, and an aggregated GDELT news-tone field).  This feature
-vector is the backbone of every cross-view computation in the system
-and the input to the UMAP embedding and KMeans clustering used in the
-Meso view.
+three questions in a single interaction loop.  The system ingests four heterogeneous data layers, including BTC daily and hourly OHLCV from Yahoo Finance, three external assets (COIN, MSTR, QQQ) on the same calendar, $\sim 80$  thousand GDELT~\cite{gdelt} headlines covering the four case-study windows, and $\sim 6{,}700$ daily price points from 70 curated Polymarket~\cite{polymarket} prediction markets. It then projects each trading day into an eight-dimensional engineered feature vector, consisting of return, open-close change, high-low range, 30-day volume z-score, 7-day and 30-day rolling realised volatility, 30-day drawdown, and an aggregated GDELT news-tone field. This feature vector is the backbone of every cross-view computation in the system and the input to the UMAP embedding and KMeans clustering used in the Meso view.
 
 The dashboard is organised around four analytical tasks distilled
 from the project requirements:
@@ -132,11 +105,10 @@ Micro selected date, and selecting a date in Micro highlights it back in
 Macro and Meso.  All four data layers feed the same daily-bucket index,
 making cross-view linking a constant-time lookup.
 
-The system was deliberately scoped \emph{narrow and deep}: rather than
+The system was deliberately scoped narrow and deep: rather than
 build a broad terminal-style toolkit, we focus on three high-bandwidth
 views and a case-study navigator that walks the user through four
-prepared windows.  The case study below — 2026-03-23, inside the Iran
-tension window — exercises every link in the chain.
+prepared windows.  The case study below focuses on 2026-03-23, a date within the Iran tension window, and exercises every link in the chain.
 
 \section{Related Work}
 \label{sec:related}
@@ -163,50 +135,28 @@ Wong's color-blindness guidance~\cite{wong2011points} and ColorBrewer
 discipline~\cite{colorbrewer}.
 
 Most public crypto dashboards (Glassnode, CoinGecko, TradingView) treat
-news as a sidebar decoupled from the chart.  Our date-aware historical
-extension to GDELT~\cite{gdelt} and Polymarket~\cite{polymarket} ---
-two APIs that are structurally biased toward \emph{today} --- is the
-practical contribution that distinguishes this work from a chart
-catalog.
+news as a sidebar decoupled from the chart.  GDELT~\cite{gdelt} and Polymarket~\cite{polymarket} are structurally biased toward today. Our date-aware historical extension to these two APIs is the practical contribution that distinguishes this work from a chart catalog.
 
 \section{Design Tasks and Requirements}
 \label{sec:design}
 
-We follow Munzner's nested-model task abstraction~\cite{munzner2014}:
-each domain question is mapped first to an abstract task, then to a
-visualization \emph{idiom}.  T1 (\emph{market evolution}) is an
-abstract \texttt{summarise+identify} task over ordered temporal data,
-served by linear and grid time-series layouts.  T2 (\emph{pattern
-discovery}) is an abstract \texttt{cluster+compare} task over
-multidimensional data, served by a dimension-reduction + clustering +
-parallel-coordinates idiom.  T3 (\emph{day-level explanation}) is an
-abstract \texttt{identify+inspect} task over an aligned multivariate
-intraday slice, served again by linear layouts on a common $x$-axis.
-T4 (\emph{cross-market context}) is an abstract \texttt{lookup+compare}
-task that crosses quantitative (asset prices), categorical (news
-themes), and ordinal (prediction-market probabilities) data types in a
-single layout.
+We follow Munzner's nested-model task abstraction~\cite{munzner2014} by mapping each domain question to an abstract task and then to a visualization idiom.  
+T1 (\emph{market evolution}) summarizes temporal trends and identifies abnormal days in ordered time-series data, supported by linear and grid time-series layouts. 
+T2 (\emph{pattern discovery}) compares multidimensional daily features and reveals recurring market states through dimension reduction, clustering, and parallel coordinates.  
+T3 (\emph{day-level explanation}) inspects an aligned multivariate intraday slice using coordinated linear layouts on a common \(x\)-axis.
+T4 (\emph{cross-market context}) looks up and compares heterogeneous evidence across external asset prices, news themes, and prediction-market probabilities in a coordinated contextual layout.
 
-Six concrete requirements followed.  \textbf{R1: single-screen
-overview} --- all three views fit on a 1440-px laptop without
-scrolling, forcing information-density choices (sparklines over full
-charts where appropriate).  \textbf{R2: regime visibility} --- the
-Meso view must make the cluster membership of \emph{every} day in the
-brushed window legible at a glance (UMAP + hulls + parallel
-coordinates collectively satisfy this).  \textbf{R3: date-aware
-historical context} --- news and prediction-market panels must show
-what was true on the \emph{selected} date, not today, the requirement
-that drove the curated-bucket data design (\cref{sec:curated}).
-\textbf{R4: brushing-and-linking as causation control} --- any
-selection propagates to all views in the same render cycle, so the
-user can hold a hypothesis and confirm or refute it across scales
-without breaking flow.  \textbf{R5:
-color-blind safety} --- every diverging scale uses ColorBrewer
-RdYlGn-7~\cite{colorbrewer}; every categorical scale uses Set2 with
-BTC orange excluded; chip glyphs use redundant shape+hue
-encoding~\cite{wong2011points}.  \textbf{R6: bundle budget} ---
-$\le 6$~KB CSS gzip, $\le 130$~KB initial JS gzip with ECharts loaded
-lazily.  The production build measures 5.00~KB CSS and 106.5~KB JS.
+Six concrete requirements followed.
+\textbf{R1, single-screen overview:} the Macro, Meso, and Micro views should fit on a 1440-px laptop screen without scrolling, which motivates compact encodings such as sparklines where appropriate. 
+\textbf{R2, regime visibility:} the Meso view should make the cluster membership of every day in the brushed window legible at a glance through UMAP, cluster hulls, and parallel coordinates. 
+\textbf{R3, date-aware context:} the news and prediction-market panels should reflect the selected date rather than the current API state, motivating the curated-bucket data design in \cref{sec:curated}. 
+\textbf{R4, cross-scale consistency:} selections should propagate across all views within the same render cycle, allowing users to check a hypothesis across macro, meso, and micro scales without losing context. 
+\textbf{R5, accessible encoding:} every diverging scale uses ColorBrewer RdYlGn-7~\cite{colorbrewer}; every categorical scale uses Set2 with BTC orange excluded; chip glyphs use redundant shape and hue encoding~\cite{wong2011points}.  . 
+\textbf{R6, lightweight deployment:} the interface should remain small enough for responsive web use, with a target budget of \(\le 6\)~KB gzipped CSS and \(\le 130\)~KB gzipped initial JavaScript. 
+The production build meets this budget with 5.00~KB CSS and 106.5~KB JavaScript.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \section{System and Visualization Design}
 \label{sec:system}

@@ -56,9 +56,16 @@ visual analytics, Bitcoin.}
 
 \graphicspath{{figs/}{figures/}{pictures/}{images/}{./}}
 
+
 \usepackage{booktabs}
 \usepackage{amssymb}                   % \blacktriangle / \blacktriangledown
 \usepackage{mathptmx}                  % matching math font
+
+\usepackage{hyperref} 
+
+\usepackage{cleveref}
+
+
 
 \begin{document}
 
@@ -161,13 +168,13 @@ The production build meets this budget with 5.00~KB CSS and 106.5~KB JavaScript.
 \section{System and Visualization Design}
 \label{sec:system}
 
-The system is a FastAPI backend serving three JSON endpoints
-(\texttt{/api/overview}, \texttt{/api/meso},
-\texttt{/api/day-detail}) consumed by a React 18 + Vite + Zustand
-frontend.  All visualizations are written in D3 v7 and ECharts v6; no
-chart library is used as a black box for our novel encodings.
+The system uses a FastAPI backend with three JSON endpoints:
+\texttt{/api/overview}, \texttt{/api/meso}, and \texttt{/api/day-detail}.
+The frontend is implemented in React 18 with Vite and Zustand for state management.
+Visualizations are built with D3 v7 and ECharts v6; no chart library is used as a black box for our novel encodings.
 
-\subsection{Macro view (T1) --- linear and grid layouts for time series}
+%%%%%%%%%%%%%%%4.1
+\subsection{Macro view (T1): Linear and grid layouts for time series}
 
 The Macro view answers \emph{when}.  Following the standard
 temporal-data taxonomy~\cite{munzner2014}, we combine two
@@ -181,37 +188,20 @@ alternative~\cite{heer2009} once the event-marker layer was added: the
 markers already supply the vertical-density payoff that horizon
 graphs provide.
 
-The line uses position-on-common-scale --- Mackinlay's top-ranked
-channel for quantitative data~\cite{mackinlay1986} --- and is overlaid
-with five canonical event markers (FOMC pivots, war onsets, ETF
-approvals) using shape redundantly with hue.  The calendar heatmap
-uses a ColorBrewer RdYlGn-7 \emph{diverging} scale~\cite{colorbrewer}
-anchored at zero, the textbook encoding for centred quantities: green
-for positive return, red for negative, yellow for near-zero.  A small dot in the corner of each cell encodes the
-GDELT-event-density signal --- a redundant channel so users with
-red-green deficiencies still spot event-heavy days.  Clicking any cell
-sets \texttt{selectedDate} (\cref{fig:macro}); the brush above the
-timeline updates \texttt{selectedTimeRange}.  Both selections propagate
-through the shared store in the same render cycle, the
-\emph{brushing-and-linking} interaction pattern.
+The line chart uses position on a common scale, Mackinlay's highest-ranked channel for quantitative data~\cite{mackinlay1986}. We overlay five canonical event markers, including FOMC pivots, war onsets, and ETF approvals, using shape together with hue to distinguish event categories. 
+The calendar heatmap uses a ColorBrewer RdYlGn-7 diverging scale~\cite{colorbrewer} anchored at zero, with green indicating positive return, red indicating negative return, and yellow indicating near-zero return. To reduce reliance on color alone, a small dot in the corner of each cell encodes the GDELT event-density signal. Clicking a cell updates \texttt{selectedDate}, while brushing the timeline updates \texttt{selectedTimeRange} (\cref{fig:macro}). Both selections are propagated through the shared store to support coordinated brushing and linking across views.
 
-\subsection{Meso view (T2) --- multidimensional analysis}
 
-The Meso view answers \emph{what kind of day}.  Three classical
-multidimensional analysis techniques (clustering, classification, and
-dimension reduction) are best paired with visualization for pattern
-detection and outlier hunting; we apply two of them.  We
-\emph{dimension-reduce} the eight-dimensional daily feature vector to
-2D via UMAP~\cite{mcinnes2018umap} (preserving non-linear local and
-global structure where PCA would not), then \emph{cluster} the same
-feature vectors with KMeans and overlay $k=5$ convex hulls on the
-projection.  Spatial proximity in the scatter encodes \emph{market
-similarity}: nearby points are similar trading days; cluster color
-encodes the \emph{regime label}.  Cluster colors are ColorBrewer Set2
-(categorical, CB-safe) and explicitly exclude orange so the
-categorical scale never collides with BTC's house color --- a direct
-application of the purpose-of-color discipline (``label, not
-decorate'') and Tufte's ``do no harm''~\cite{tufte2001}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%4.2 meso
+
+\subsection{Meso view (T2): Multidimensional analysis}
+
+The Meso view answers \emph{what kind of day}.  We combine dimension reduction and clustering to reveal recurring patterns in the eight-dimensional daily feature space. 
+We project each daily feature vector to 2D using UMAP~\cite{mcinnes2018umap}, which is suitable for capturing nonlinear neighborhood structure in exploratory analysis. We then cluster the original feature vectors with KMeans and overlay \(k=5\) convex hulls on the projection.
+Spatial proximity in the scatter encodes market similarity: nearby points are similar trading days; cluster color encodes the regime label.  
+We use the ColorBrewer Set2 categorical palette and exclude orange to avoid ambiguity with the primary BTC encoding, following the principle that color should primarily support labeling rather than decoration~\cite{tufte2001}.
+
+
 
 A regime summary band below the scatter makes the cluster story
 quantitative through three coordinated panels.  (1)~A \emph{cluster
@@ -229,6 +219,7 @@ uses a green$\leftrightarrow$red diverging scale anchored at zero.
 Selecting a cluster in the legend filters all three panels in one
 render (\cref{fig:meso}).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%4.3
 \subsection{Micro view (T3, T4) --- intraday detail and context layer}
 
 The Micro view answers \emph{what happened} on a selected day and
@@ -259,6 +250,8 @@ showing a daily YES-probability sparkline with a marker at the
 selected date, the YES price observed at that date, and the current
 resolution price (\cref{fig:micro-context}).
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%4.4
 \subsection{Date-aware historical context: the data-design contribution}
 \label{sec:curated}
 
@@ -299,6 +292,8 @@ turns two ``today-only'' APIs into a date-aware historical context
 engine; it is implemented in roughly 300 lines of Python and is the
 contribution we are proudest of beyond the chart inventory.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%4.5
 \subsection{Implementation}
 \label{sec:impl}
 
@@ -317,12 +312,15 @@ production build measures 5.00~KB of CSS and 106.5~KB of JavaScript
 gzipped, comfortably inside the bundle budget defined in
 \cref{sec:design}.
 
+
+
 %%%%%%%%%%%%%% Figure placeholders (replace once screenshots are in figures/) %%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%macro
 \begin{figure}[t]
   \centering
-  \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
-  % \includegraphics[width=\linewidth]{macro}
+  % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
+  \includegraphics[width=\linewidth]{macro}
   \caption{\textbf{Macro view (T1)} brushed to the 2026 Iran-tension
   window.  Calendar-heatmap cells encode daily returns on a CB-safe
   diverging RdYlGn-7 scale anchored at zero; the deepest cell on
@@ -332,10 +330,12 @@ gzipped, comfortably inside the bundle budget defined in
   \label{fig:macro}
 \end{figure}
 
+
+%%%%%%%%%%%%%%%meso
 \begin{figure}[t]
   \centering
-  \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
-  % \includegraphics[width=\linewidth]{meso}
+  % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
+  \includegraphics[width=\linewidth]{meso}
   \caption{\textbf{Meso view (T2).}  UMAP projection of the
   eight-dimensional daily feature vector colored by KMeans cluster, with
   convex hulls and the selected day (2026-03-23) marked.  The regime

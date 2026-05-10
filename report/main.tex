@@ -61,9 +61,9 @@ visual analytics, Bitcoin.}
 \usepackage{amssymb}                   % \blacktriangle / \blacktriangledown
 \usepackage{mathptmx}                  % matching math font
 
-\usepackage{hyperref} 
+% \usepackage{hyperref} 
 
-\usepackage{cleveref}
+% \usepackage{cleveref}
 
 
 
@@ -204,49 +204,24 @@ We use the ColorBrewer Set2 categorical palette and exclude orange to avoid ambi
 
 
 A regime summary band below the scatter makes the cluster story
-quantitative through three coordinated panels.  (1)~A \emph{cluster
-summary table} reports $n$, mean daily return, annualized volatility,
-and a 60-point equity-curve \emph{sparkline} for each
-cluster~\cite{tufte2001} --- the small-multiples idiom so the reader
-compares regimes by \emph{shape}, not by scrolling between
-numbers.~(2)~A toggleable \emph{parallel-coordinates}
-plot~\cite{inselberg1985} over the seven engineered features restores
-the axes UMAP collapsed; the selected day is drawn as a thick line on
-top of a faded cluster average, supporting per-day-vs-regime
-comparison directly.~(3)~A $4{\times}4$ cross-asset \emph{correlation
-matrix} (Pearson over the active window) over BTC, COIN, MSTR, and QQQ
-uses a green$\leftrightarrow$red diverging scale anchored at zero.
+quantitative through three coordinated panels.  
+~(1)~A cluster summary table reports $n$, mean daily return, annualized volatility,and a 60-point equity-curve \emph{sparkline} for each
+cluster~\cite{tufte2001}. These sparklines act as small multiples, allowing users to compare regime shapes without leaving the overview.  
+~(2)~A toggleable parallel-coordinates plot~\cite{inselberg1985} over the seven engineered features restores the axes UMAP collapsed; the selected day is drawn as a thick line on top of a faded cluster average, supporting per-day-vs-regime
+comparison directly.
+~(3)~A $4{\times}4$ cross-asset correlation matrix (Pearson over the active window) over BTC, COIN, MSTR, and QQQ uses a green$\leftrightarrow$red diverging scale anchored at zero.
 Selecting a cluster in the legend filters all three panels in one
 render (\cref{fig:meso}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%4.3
-\subsection{Micro view (T3, T4) --- intraday detail and context layer}
+\subsection{Micro view (T3, T4): Intraday detail and context layer}
 
-The Micro view answers \emph{what happened} on a selected day and
-\emph{how} cross-market signals relate to it.  Five coordinated
-elements compose it.~(1)~\emph{Summary cards} report selected-day
-open/high/low/close, intraday range, and 24-hour change; the up/down
-chip uses redundant shape (\,$\blacktriangle/\blacktriangledown$\,) and
-hue, satisfying the redundancy guideline for color-blind
-accessibility~\cite{wong2011points}.~(2)~The \emph{intraday chart}
-follows the time-series linear-layout idiom: two stacked
-grids (candlesticks above, volume bars below) sharing one $x$-axis,
-so \emph{position-on-common-scale} carries the alignment between price
-and traded volume (Mackinlay's top-ranked
-channel~\cite{mackinlay1986}; \cref{fig:micro-intraday}).~(3)~The
-\emph{external-asset context strip} renders three sparklines (COIN,
-MSTR, QQQ) over the same window --- small multiples answering ``did
-the rest of the risk-asset complex move with BTC?''
-~(4)~The~\emph{headline panel} (T4) lists GDELT articles for the
-selected day, sorted by tone and tagged with one of seven theme
-buckets (war, election, covid, regulation, macro, crypto, other) ---
-text-visualization in the categorical-tagging mode rather than the
-word-cloud mode, to keep the reader's attention on which
-\emph{narrative} dominates a given hour rather than on individual
-keywords.  The active GDELT \emph{bucket} (curated case-study window)
-appears as a provenance line above the panel.  (5)~The
-\emph{Polymarket panel} (T4) renders per-curated-market cards, each
-showing a daily YES-probability sparkline with a marker at the
+The Micro view answers \emph{what happened} on a selected day and \emph{how} cross-market signals relate to it.  The first two elements support T3 by showing what happened within the day, while the remaining three support T4 by adding external assets, news narratives, and prediction-market context.
+~(1)Summary cards report selected-day open/high/low/close, intraday range, and 24-hour change; the up/down chip uses redundant shape (\,$\blacktriangle/\blacktriangledown$\,) and hue, satisfying the redundancy guideline for color-blind accessibility~\cite{wong2011points}.
+~(2)~The intraday chart follows the time-series linear-layout idiom: two stacked grids (candlesticks above, volume bars below) sharing one $x$-axis, so position-on-common-scale carries the alignment between price and traded volume (Mackinlay's top-ranked channel~\cite{mackinlay1986}; \cref{fig:micro-intraday}).
+~(3)~The external-asset context strip shows three sparklines for COIN, MSTR, and QQQ over the same window, allowing users to compare whether related assets moved consistently with BTC. 
+~(4)~The headline panel lists GDELT articles for the selected day, sorted by tone and tagged with one of seven theme categories: war, election, covid, regulation, macro, crypto, and other. This design uses categorical tags rather than word clouds, keeping attention on the dominant narrative context instead of isolated keywords. The active GDELT bucket, corresponding to the curated case-study window, is shown as a provenance line above the panel. 
+~(5)~The Polymarket panel renders per-curated-market cards, each showing a daily YES-probability sparkline with a marker at the
 selected date, the YES price observed at that date, and the current
 resolution price (\cref{fig:micro-context}).
 
@@ -255,15 +230,12 @@ resolution price (\cref{fig:micro-context}).
 \subsection{Date-aware historical context: the data-design contribution}
 \label{sec:curated}
 
-The two public APIs we lean on for T4 are recency-biased.  GDELT's DOC
-API returned bitcoin-only headlines for any query that matched
-\texttt{bitcoin OR crypto}, leaving COVID-2020 or election-2024 days
-with near-empty headline panels.  Polymarket's keyword search returns
-\emph{today's} active markets, useless for a query asking ``what did the
-crowd believe on 2024-11-05.''
+The two public APIs used for T4 are strongly recency-biased in practice. 
+A direct GDELT DOC query using \texttt{bitcoin OR crypto} tended to return crypto-centered headlines, leaving COVID-2020 and election-2024 days with sparse contextual evidence. 
+Similarly, Polymarket keyword search primarily surfaces current or active markets, which is insufficient for asking what prediction markets implied on a historical date such as 2024-11-05.
 
-We solve both with the same \emph{curated-bucket} pattern.  Each of the
-four case-study windows (COVID, War, Election, Iran) owns:
+We address this limitation with a curated-bucket pattern. 
+Each of the four case-study windows (COVID, War, Election, Iran) owns:
 
 \begin{itemize}
   \item A tailored GDELT DOC query (e.g., the 2022 War bucket queries
@@ -272,44 +244,26 @@ four case-study windows (COVID, War, Election, Iran) owns:
     chart is always anchored, plus a six-category theme map (war,
     election, covid, regulation, macro, crypto) so non-crypto windows
     still produce a populated theme-tagged headline panel.
-  \item A short list of curated Polymarket event slugs (e.g.,
-    \texttt{presidential-election-winner-2024},
-    \texttt{us-iran-nuclear-deal-by-april-30}).  For each slug we fetch
-    the full Gamma event payload and the per-market CLOB
-    \texttt{/prices-history} daily series, then filter to markets active
-    on the selected date with a 14-day post-resolution grace window so
-    a market that resolved the day before still surfaces with its
-    closing probability.  A \$1k volume floor and top-8 cap drop the
-    long tail of zero-volume markets that would otherwise swamp the
-    panel.
+  \item A curated list of Polymarket event slugs covering the corresponding historical event window, such as the 2024 presidential election and the 2025 U.S.--Iran nuclear-deal market. 
+  For each slug we fetch the full Gamma event payload and the per-market CLOB \texttt{/prices-history} daily series, then filter to markets active on the selected date with a 14-day post-resolution grace window so a market that resolved the day before still surfaces with its closing probability.  A \$1k volume floor and top-8 cap drop the long tail of zero-volume markets that would otherwise swamp the panel.
 \end{itemize}
 
 A bulk-warm script seeds 287 cached headline payloads and 6{,}708
 Polymarket price points across the four windows.  An auto-rollup step
 re-emits \texttt{gdelt\_daily\_signals.csv} after every fetch so the
-Macro heatmap dot indicator stays in sync.  This is the piece that
-turns two ``today-only'' APIs into a date-aware historical context
-engine; it is implemented in roughly 300 lines of Python and is the
-contribution we are proudest of beyond the chart inventory.
-
+Macro heatmap dot indicator stays in sync.  
+This data-design layer converts recency-biased API outputs into a date-aware historical context engine, enabling the system to reconstruct what news and prediction-market signals were available around the selected trading day. 
+Beyond the visual arrangement of charts, this curated historical retrieval pipeline is a central practical contribution of the system.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%4.5
 \subsection{Implementation}
 \label{sec:impl}
 
 The backend is a FastAPI service of $\sim$1{,}000 lines of Python
-exposing three JSON endpoints.  The frontend is a Vite + React 18
-single-page app of $\sim$3{,}500 lines of JavaScript and JSX, with
-selection state held in a Zustand store of seven keys
-(\texttt{selectedTimeRange}, \texttt{selectedDate},
-\texttt{selectedCluster}, \ldots) that every view subscribes to.  All
-custom encodings (calendar heatmap, UMAP scatter with hulls, parallel
-coordinates, correlation matrix, Polymarket sparkline-with-marker)
-are written directly in D3~v7 and SVG; the intraday OHLC and volume
-chart is the only ECharts dependency, code-split out of the main
-bundle so it only loads when the Micro view becomes visible.  The
-production build measures 5.00~KB of CSS and 106.5~KB of JavaScript
-gzipped, comfortably inside the bundle budget defined in
+exposing three JSON endpoints.  
+The frontend is a Vite-based React 18 single-page application of \(\sim\)3{,}500 lines of JavaScript and JSX, with selection state held in a Zustand store of seven keys (\texttt{selectedTimeRange}, \texttt{selectedDate}, \texttt{selectedCluster}, \ldots) that every view subscribes to.  
+All custom encodings (calendar heatmap, UMAP scatter with hulls, parallel coordinates, correlation matrix, Polymarket sparkline-with-marker) are written directly in D3~v7 and SVG; the intraday OHLC and volume chart is the only ECharts dependency, code-split out of the main bundle so it only loads when the Micro view becomes visible.  
+The production build measures 5.00~KB of CSS and 106.5~KB of JavaScript gzipped, comfortably inside the bundle budget defined in
 \cref{sec:design}.
 
 
@@ -345,10 +299,11 @@ gzipped, comfortably inside the bundle budget defined in
   \label{fig:meso}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%micro1
 \begin{figure}[t]
   \centering
-  \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
-  % \includegraphics[width=\linewidth]{micro-intraday}
+  % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
+  \includegraphics[width=\linewidth]{micro-intraday}
   \caption{\textbf{Micro view: intraday OHLC and volume (T3)} for
   2026-03-23.  The flat morning, midday breakout, and sustained
   afternoon rally are visible in three contiguous regimes; the volume
@@ -357,10 +312,11 @@ gzipped, comfortably inside the bundle budget defined in
   \label{fig:micro-intraday}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%micro2
 \begin{figure}[t]
   \centering
-  \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
-  % \includegraphics[width=\linewidth]{micro-context}
+  % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
+  \includegraphics[width=\linewidth]{micro-context}
   \caption{\textbf{Micro view: headline panel and Polymarket panel
   (T4).}  Morning headlines lean negative and geopolitical; midday a
   concentration of mainstream price-breakout reports lands; afternoon
@@ -370,32 +326,17 @@ gzipped, comfortably inside the bundle budget defined in
   \label{fig:micro-context}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%chapter5
 \section{Case Study: 2026-03-23, Iran Tension}
 \label{sec:case}
 
-We validate the workflow on a single deep case study --- 2026-03-23,
-inside the curated Iran-tension window.  The user begins from the
-case-study navigator with no prior knowledge of the date.
+We validate the workflow through a deep case study on 2026-03-23, a trading day within the curated Iran-tension window. The analysis starts from the case-study navigator, assuming that the user has no prior knowledge of this specific date.
 
-\textbf{T1 --- locate the anomaly.}  The user clicks the
-\emph{Iran Tension} chip.  The Macro window snaps to
-2026-03-01\,\(\to\)\,2026-04-30.  In the calendar heatmap
-(\cref{fig:macro}), 2026-03-23 reads as a deep green cell --- a
-strong-positive day in an otherwise mixed window.  Hovering shows the
-daily return; clicking sets \texttt{selectedDate}, which propagates to
-Meso and Micro in the same render.
+\textbf{T1: Locate the anomaly.} 
+The user selects the Iran Tension chip, and the Macro window updates to 2026-03-01\,\(\to\)\,2026-04-30. In the calendar heatmap (\cref{fig:macro}), 2026-03-23 appears as a deep green cell, indicating a strong positive-return day within an otherwise mixed window. Hovering reveals the daily return, while clicking the cell sets \texttt{selectedDate} and propagates the selection to the Meso and Micro views.
 
-\textbf{T2 --- characterize the regime.}  In the Meso view
-(\cref{fig:meso}), the selected day lands inside the
-\emph{Bullish-Momentum} cluster --- the same cluster that contains
-other midday-breakout days from the 2024 election cycle.  The
-parallel-coordinates overlay shows that 2026-03-23's profile sits
-above the cluster mean on \texttt{rolling\_volatility\_7d} and well
-below on \texttt{drawdown\_from\_30d\_high} --- the day is volatile
-but \emph{not} correcting from a peak, which is consistent with a
-momentum breakout rather than a relief rally.  The cluster summary
-table confirms this regime has the steepest equity-curve sparkline of
-the four populated clusters.
+\textbf{T2: Characterize the regime.} 
+In the Meso view (\cref{fig:meso}), the selected day falls inside the Bullish-Momentum cluster, which also contains other midday-breakout days from the 2024 election cycle. The parallel-coordinates overlay shows that the profile of 2026-03-23 is above the cluster mean on \texttt{rolling\_volatility\_7d} and well below the mean on \texttt{drawdown\_from\_30d\_high}. This combination suggests a volatile upward move rather than a correction from a recent peak. The cluster summary table further shows that this regime has the steepest equity-curve sparkline among the populated clusters in the active window.
 
 \textbf{T3 --- drill into the day.}  In the Micro view's intraday chart
 (\cref{fig:micro-intraday}), 2026-03-23 splits cleanly into three
@@ -447,6 +388,7 @@ because the two views share both a $y$-axis-aligned data backbone
 (daily UTC) and a coordinated selection.  We treat this as the
 methodological finding of the case study, not the price move itself.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%chapter6
 \section{Discussion}
 \label{sec:discussion}
 

@@ -205,7 +205,8 @@ We use the ColorBrewer Set2 categorical palette and exclude orange to avoid ambi
 
 A regime summary band below the scatter makes the cluster story
 quantitative through three coordinated panels.  
-~(1)~A cluster summary table reports $n$, mean daily return, annualized volatility,and a 60-point equity-curve sparkline for each cluster~\cite{tufte2001}. These sparklines act as small multiples, allowing users to compare regime shapes without leaving the overview.  
+~(1)~A cluster summary table reports $n$, mean daily return, annualized volatility,and a 60-point equity-curve \emph{sparkline} for each
+cluster~\cite{tufte2001}. These sparklines act as small multiples, allowing users to compare regime shapes without leaving the overview.  
 ~(2)~A toggleable parallel-coordinates plot~\cite{inselberg1985} over the seven engineered features restores the axes UMAP collapsed; the selected day is drawn as a thick line on top of a faded cluster average, supporting per-day-vs-regime
 comparison directly.
 ~(3)~A $4{\times}4$ cross-asset correlation matrix (Pearson over the active window) over BTC, COIN, MSTR, and QQQ uses a green$\leftrightarrow$red diverging scale anchored at zero.
@@ -266,17 +267,20 @@ The production build measures 5.00~KB of CSS and 106.5~KB of JavaScript gzipped,
 \cref{sec:design}.
 
 
+
 %%%%%%%%%%%%%% Figure placeholders (replace once screenshots are in figures/) %%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%macro
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.94\linewidth]{figures/macro.png}
+  % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
+  \includegraphics[width=\linewidth]{macro}
   \caption{\textbf{Macro view (T1)} brushed to the 2026 Iran-tension
   window.  Calendar-heatmap cells encode daily returns on a CB-safe
   diverging RdYlGn-7 scale anchored at zero; the deepest cell on
   2026-03-23 is the visual question that drives the rest of the case
-  study.}
+  study.  \emph{Figure placeholder; screenshot to be supplied by the
+  team.}}
   \label{fig:macro}
 \end{figure}
 
@@ -284,45 +288,41 @@ The production build measures 5.00~KB of CSS and 106.5~KB of JavaScript gzipped,
 %%%%%%%%%%%%%%%meso
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.94\linewidth]{figures/meso.png}
+  % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
+  \includegraphics[width=\linewidth]{meso}
   \caption{\textbf{Meso view (T2).}  UMAP projection of the
   eight-dimensional daily feature vector colored by KMeans cluster, with
   convex hulls and the selected day (2026-03-23) marked.  The regime
   summary table (right) and the parallel-coordinates plot (below, not
-  shown) make the cluster characterization quantitative.}
+  shown) make the cluster characterization quantitative.
+  \emph{Placeholder.}}
   \label{fig:meso}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%micro1
 \begin{figure}[t]
   \centering
-<<<<<<< HEAD
   % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
   \includegraphics[width=\linewidth]{micro-intraday}
-=======
-  \includegraphics[width=\linewidth]{figures/micro-intraday.png}
->>>>>>> e0abb4535219b8cdca8b24b8eecce17001560b2a
   \caption{\textbf{Micro view: intraday OHLC and volume (T3)} for
   2026-03-23.  The flat morning, midday breakout, and sustained
   afternoon rally are visible in three contiguous regimes; the volume
-  bars confirm the breakout is not a thin-tape artifact.}
+  bars confirm the breakout is not a thin-tape artifact.
+  \emph{Placeholder.}}
   \label{fig:micro-intraday}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%micro2
 \begin{figure}[t]
   \centering
-<<<<<<< HEAD
   % \fbox{\rule{0pt}{40mm}\rule{0.95\linewidth}{0pt}}
   \includegraphics[width=\linewidth]{micro-context}
-=======
-  \includegraphics[width=\linewidth]{figures/micro-context.png}
->>>>>>> e0abb4535219b8cdca8b24b8eecce17001560b2a
   \caption{\textbf{Micro view: headline panel and Polymarket panel
   (T4).}  Morning headlines lean negative and geopolitical; midday a
   concentration of mainstream price-breakout reports lands; afternoon
   shifts to mixed political/regulatory.  Polymarket cards show
-  YES-probability sparklines with a marker at the selected date.}
+  YES-probability sparklines with a marker at the selected date.
+  \emph{Placeholder.}}
   \label{fig:micro-context}
 \end{figure}
 
@@ -338,7 +338,7 @@ The user selects the Iran Tension chip, and the Macro window updates to 2026-03-
 \textbf{T2: Characterize the regime.} 
 In the Meso view (\cref{fig:meso}), the selected day falls inside the Bullish-Momentum cluster, which also contains other midday-breakout days from the 2024 election cycle. The parallel-coordinates overlay shows that the profile of 2026-03-23 is above the cluster mean on \texttt{rolling\_volatility\_7d} and well below the mean on \texttt{drawdown\_from\_30d\_high}. This combination suggests a volatile upward move rather than a correction from a recent peak. The cluster summary table further shows that this regime has the steepest equity-curve sparkline among the populated clusters in the active window.
 
-\textbf{T3 --- drill into the day.}  In the Micro view's intraday chart
+\textbf{T3: Drill into the day.}  In the Micro view's intraday chart
 (\cref{fig:micro-intraday}), 2026-03-23 splits cleanly into three
 regimes: a flat-to-weak morning UTC session, a sharp midday breakout
 (the single bar in which BTC clears the prior day's high on visibly
@@ -346,47 +346,23 @@ elevated volume), and a sustained afternoon rally.  The summary cards
 report the day's intraday range and 24-hour change with a green
 $\blacktriangle$ chip.
 
-\textbf{T4 --- find supporting evidence.}  The external-asset strip
-shows COIN and MSTR both rallying in step with BTC --- the day is a
-risk-on move, not a crypto-isolated event.  The headline panel
-(\cref{fig:micro-context}) tells the chronology that the price chart
-hints at: \emph{morning} headlines are negative and geopolitical
-(Iran-deal talks stalling, regional tension); around the breakout, a
-concentration of mainstream financial outlets file ``BTC breaks above
-\$X'' reports --- the market moves first and the press reports
-second; \emph{afternoon} headlines shift to mixed political and
-regulatory commentary.  The curated Polymarket cards show small but
-visible YES-probability shifts on the
-\texttt{us-iran-nuclear-deal-by-april-30} and
-\texttt{will-trump-declare-war-on-iran-by} markets, with the marker on
-the sparkline placing 2026-03-23 squarely on the inflection.
+\textbf{T4: Add contextual evidence.}  
+The external-asset strip shows that COIN and MSTR rallied in step with BTC, suggesting that the move was aligned with related crypto-equity assets rather than isolated to BTC alone. 
+The headline panel (\cref{fig:micro-context}) provides the corresponding news chronology. Morning headlines are mainly negative and geopolitical, including stalled Iran-deal talks and regional tension. Around the breakout, mainstream financial outlets begin reporting that BTC had broken above a key level, indicating that the market moves first and the press reports second. Afternoon headlines then shift toward mixed political and regulatory commentary. 
+The curated Polymarket cards show small but visible YES-probability shifts in the U.S.--Iran nuclear-deal and war-related markets, with 2026-03-26 marker placed near the local inflection in the sparkline.
 
-\textbf{What we learn.}  No single panel proves causality; the
-\emph{flow} provides the evidence.  Macro localises the anomaly, Meso
-shows that anomalies of this type cluster with prior breakouts, Micro
-shows the intraday regime change, and the headline+Polymarket layer
-supplies a coherent narrative for \emph{why} the regime change
-happened when it did.  Critically, three of the four panels would
-have been \emph{unable to surface this story} before our P8/P9 data
-work: the headline panel would have shown bitcoin-only news, the
-Polymarket cards would have shown today's markets, and the Meso
-cluster would have lacked the historical comparators that put a 2026
-breakout in the same neighbourhood as 2024 election-night and 2020
-post-halving days.  The system's contribution is the coherence of the
-loop, not any one chart.
+\textbf{Case-study finding.}  
+No single panel proves causality; the flow provides the evidence.  
+Macro localises the anomaly, Meso shows that anomalies of this type cluster with prior breakouts, Micro shows the intraday regime change, and the headline and Polymarket layer supplies a coherent narrative for why the regime change happened when it did.  
+This story depends on the date-aware data layer. Without it, the headline panel would have shown bitcoin-only news, the Polymarket cards would have shown today's markets, and the Meso cluster would have lacked the historical comparators that put a 2026 breakout in the same neighbourhood as 2024 election-night and 2020 post-halving days.  The system's contribution is the coherence of the loop, not any one chart.
 
-\textbf{A finding visible only at multi-scale.}~Because the headline
-panel is timestamped at 15-minute granularity and the intraday chart
-shares the same UTC $x$-axis, the user can see directly that on
-2026-03-23 the breakout candle prints \emph{before} the mainstream
-financial press files its breakout coverage --- the cluster of
-``BTC breaks above \$X'' headlines arrives several minutes after the
-volume spike, not before it.  This kind of micro-scale lead/lag
-between price and news flow is invisible in a single-line price chart
-and is also invisible in a single-day news feed; it is only legible
-because the two views share both a $y$-axis-aligned data backbone
-(daily UTC) and a coordinated selection.  We treat this as the
-methodological finding of the case study, not the price move itself.
+A concrete finding becomes visible only through this multi-scale alignment.  
+Because the headline panel is timestamped at 15-minute granularity and the intraday chart uses the same UTC \(x\)-axis, the user can see that on 2026-03-23 BTC breakout precedes the news-volume peak.
+The volume spike therefore precedes much of the breakout coverage, rather than following it.  
+This micro-scale lead-lag pattern is difficult to observe from a single daily price chart or from an isolated news feed.  
+It is only legible because the two views share both a $y$-axis-aligned data backbone (daily UTC) and a coordinated selection.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%chapter6
 \section{Discussion}
@@ -426,59 +402,37 @@ Narrative visualization: author-driven $\to$ reader-driven & Case-study navigato
 \end{tabular}
 \end{table}
 
-\subsection{Sophistication and findings}
+\subsection{Design contribution and findings}
 
-The chart inventory is intentionally mainstream; the project's design
-ambition is the \emph{coordinated flow}, not novel chart shapes.  The
-genuinely novel piece is the data-design contribution in
-\cref{sec:curated}: per-window curated GDELT queries plus curated
-Polymarket event slugs convert two recency-biased public APIs into a
-date-aware historical context engine, which is what makes the
-case-study workflow work at all on 2020 / 2022 / 2024 dates.  The
-2026-03-23 case study (\cref{sec:case}) is the empirical demonstration
-that all four scales line up: a midday breakout visible in Macro
-($+$3.4\,\% return cell) clusters with prior-cycle breakout days in
-Meso, splits cleanly into three intraday regimes in Micro, and is
-anticipated by a discrete shift in the curated Iran-tension Polymarket
-markets in T4.  The finding we want to highlight is methodological:
-\emph{news flow lags price even on highly news-driven days} --- the
-midday-breakout candle prints before the mainstream-financial press
-files its breakout reports, a pattern only visible because all three
-scales share one $x$-axis-aligned selection.
+The system deliberately relies on familiar visualization idioms, including time-series layouts, calendar heatmaps, scatterplots, parallel coordinates, sparklines, and coordinated panels. The design contribution lies in how these views are linked into a coherent multi-scale workflow, rather than in introducing a new chart type. 
+The central data-design contribution is the date-aware historical context layer described in \cref{sec:curated}. 
+By combining per-window curated GDELT queries with curated Polymarket event slugs, the system converts recency-biased public API outputs into historical contextual evidence for selected trading days. This enables the case study workflow to operate normally on the dates of 2020, 2022 and 2024.
+The 2026-03-23 case study (\cref{sec:case}) demonstrates how the coordinated workflow supports interpretation across tasks. 
+The Macro view identifies the day as a strong positive-return anomaly, the Meso view relates it to prior breakout-like regimes, the Micro view separates the day into distinct intraday phases, and the contextual panels add external assets, headlines, and prediction-market signals. 
+In this case, the key observation is a lead-lag pattern between price movement and news volume. 
+BTC begins its midday breakout before related news volume reaches its peak, a pattern that becomes visible only because intraday price, trading volume, and headline volume are aligned on a common UTC \(x\)-axis and coordinated through the same linked selection.
+The finding is therefore methodological: the system makes such cross-scale timing relationships observable, while avoiding a claim that any single panel establishes causality.
 
 \subsection{Limitations}
 
-The GDELT cache is currently $\sim$60\,\% complete across the COVID,
-War, and Election windows (the Iran window is fully covered).  GDELT's
-DOC API rate-limits at one request per five seconds, so filling the
-gap is an incremental top-up rather than a code change.  Polymarket
-coverage is by design limited to the 2024 Election and 2026 Iran
-windows; the 2020 and 2022 windows return a friendly ``no Polymarket
-coverage for this period'' message rather than empty cards.  A
-light-theme palette and a side-by-side cross-window comparison view
-are deferred to future work.
+The GDELT cache is approximately \(60\%\)  complete across the COVID,
+War, and Election windows (the Iran window is fully covered).  
+Because the GDELT DOC API rate-limits requests to one per five seconds, completing the remaining cache is primarily an incremental data-collection step rather than a change to the system design or code. 
+Polymarket coverage is by design limited to the 2024 Election and 2026 Iran windows; the 2020 and 2022 windows return a friendly ``no Polymarket coverage for this period'' message rather than empty cards.  
+A light-theme palette and a side-by-side cross-window comparison view are left for future work.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-A multi-scale BTC dashboard is not, by itself, an interesting research
-artifact.  What we hope is interesting is the demonstration that a
-small visualization system can answer \emph{when}, \emph{what kind of
-day}, and \emph{why} in one interaction loop --- provided the news
-and prediction-market panels are made date-aware rather than
-today-only.  The case study traces the 2026-03-23 Iran-tension
-breakout from the deepest heatmap cell to the midday volume spike to
-the headline-and-Polymarket narrative that explains the regime
-change, with no panel switch and no manual cross-referencing.
+This work presents a compact visual analytics system for multi-scale Bitcoin analysis. 
+Its contribution is not a new chart type, but a coordinated workflow that links temporal overview, regime characterization, intraday inspection, and historical context within one interaction loop. 
+A key requirement is date-aware access to news and prediction-market data, so the contextual panels reflect the selected trading day rather than the current API state.
+The case study traces the 2026-03-23 Iran-tension breakout from the deepest heatmap cell to the midday volume spike to the headline and Polymarket narrative that explains the regime change, with no panel switch and no manual cross-referencing.
 
-Three takeaways close the work.  (i) Recurring market regimes are
-visible once daily features are projected and clustered, where a
-price line alone would obscure them.  (ii) A single-channel view is
-insufficient: return, volatility, drawdown, and volume must be
-co-displayed for anomalies to surface.  (iii) External signals (news,
-prediction markets) are best read as \emph{supporting evidence}, not
-direct proof of causality; the dashboard is designed to make that
-distinction visible to the user rather than hide it.
+The work leads to three main takeaways.   
+(i) Recurring market regimes are visible once daily features are projected and clustered, where a price line alone would obscure them.
+ (ii) A single-channel view is insufficient: return, volatility, drawdown, and volume must be co-displayed for anomalies to surface.  
+(iii) External signals (news, prediction markets) are best read as supporting evidence, not direct proof of causality; the dashboard is designed to make that distinction visible to the user rather than hide it.
 
 
 \acknowledgments{%
